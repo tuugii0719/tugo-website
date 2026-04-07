@@ -1,0 +1,1 @@
+use the the Texts.docx, pictures, logo.png and the previous unfinished web project t-site-main for your need to refine the context and understanding the project. Use the pictures usefull material for building the perfect web
