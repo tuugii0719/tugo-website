@@ -13,13 +13,13 @@ export default function NaadamPage() {
         className="text-center max-w-lg"
       >
         <p className="text-sand-500 text-xs tracking-[0.3em] uppercase mb-4">
-          July 11 – 15 · 5 Days
+          July 7 – 14 · 8 Days
         </p>
         <h1 className="font-display text-4xl md:text-5xl text-sand-100 mb-4">
           Naadam Festival
         </h1>
         <p className="text-sand-400 leading-relaxed mb-8">
-          Full tour details coming soon. Mongolia&apos;s legendary Three Manly Sports — wrestling, archery, and horse racing. 2026 marks the 820th anniversary of the Mongol Empire. The biggest cultural event of the year.
+          Full tour details coming soon. Our chill take on Naadam — a single province in central Mongolia: Ara festival tastings, Terkhiin Tsagaan Nuur, Khorgo volcano, Tsenkher hot springs, local Naadams, nomadic family stays, hikes, and hands-on milking, cooking, and herding.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

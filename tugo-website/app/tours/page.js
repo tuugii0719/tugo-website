@@ -12,77 +12,70 @@ import { FadeIn } from "@/components/animations/FadeIn";
 // with 1–2 day rest buffers between tours.
 // ============================================================================
 
+// Each tour has:
+//   id      — unique React key
+//   slug    — URL destination (multiple departures can share one slug)
+//   Tours are ordered so specific, shorter trips appear BEFORE long
+//   windows like North & Central Loop so they take visual priority on
+//   days where ranges overlap.
 const tours = [
   {
-    id: "city-discovery",
-    title: "City Discovery",
-    emoji: "🏙️",
-    dates: "June 2 – 4",
-    days: 3,
-    price: "From $450",
-    status: "available",
-    description:
-      "Ulaanbaatar at your own pace — Gandan monastery, Zaisan hill, the National Museum, and a half-day out to the Genghis Khan Equestrian Statue. A perfect warm-up before heading out to the wild.",
-    highlights: ["Gandan Monastery", "Genghis Statue", "City food"],
-    theme: "city",
-    startMonth: 5,
-    startDay: 2,
-    endMonth: 5,
-    endDay: 4,
-  },
-  {
-    id: "terelj-escape",
+    id: "terelj-jun-early",
+    slug: "terelj-escape",
     title: "Terelj Escape",
     emoji: "🌲",
-    dates: "June 7 – 9",
+    dates: "June 8 – 10",
     days: 3,
-    price: "From $550",
+    price: "TBD",
     status: "available",
     description:
-      "A weekend in Gorkhi-Terelj National Park — Turtle Rock, Aryabal Meditation Temple, horseback through alpine meadows, and a night in a family ger camp 90 minutes from the city.",
-    highlights: ["Turtle Rock", "Aryabal Temple", "Ger stay"],
+      "Any age. A gentle weekend in Gorkhi-Terelj — Turtle Rock, alpine meadow rides, and a night in a family ger camp, 90 minutes from the city.",
+    highlights: ["Turtle Rock", "Ger stay", "Steppe ride"],
     theme: "terelj",
     startMonth: 5,
-    startDay: 7,
+    startDay: 8,
     endMonth: 5,
-    endDay: 9,
+    endDay: 10,
   },
   {
-    id: "khuvsgul-pearl",
-    title: "Khuvsgul Pearl",
-    emoji: "💎",
-    dates: "June 12 – 18",
-    days: 7,
-    price: "From $1,500",
+    id: "terelj-jun-mid",
+    slug: "terelj-escape",
+    title: "Terelj Escape",
+    emoji: "🌲",
+    dates: "June 12 – 14",
+    days: 3,
+    price: "TBD",
     status: "available",
     description:
-      "A week at the Dark Blue Pearl — Mongolia's deepest lake, forested shorelines, boating and kayaking, an overnight with Tsaatan reindeer herders in the taiga, and starlit shore camps.",
-    highlights: ["Khuvsgul Lake", "Reindeer herders", "Kayak", "Taiga"],
-    theme: "khuvsgul",
+      "Second weekend departure. Same route, same family ger camp — for anyone who missed the first one.",
+    highlights: ["Turtle Rock", "Ger stay", "Steppe ride"],
+    theme: "terelj",
     startMonth: 5,
     startDay: 12,
     endMonth: 5,
-    endDay: 18,
+    endDay: 14,
   },
   {
-    id: "khustai-wild-horses",
-    title: "Khustai Wild Horses",
-    emoji: "🐴",
-    dates: "June 21 – 23",
-    days: 3,
-    price: "From $600",
+    id: "southern-gobi",
+    slug: "southern-gobi",
+    title: "Southern Gobi + Central",
+    emoji: "🏜️",
+    dates: "June 16 – 23",
+    days: 8,
+    price: "TBD",
     status: "available",
     description:
-      "Trace the takhi — the only truly wild horse species on Earth — across the golden hills of Khustai National Park at dawn and dusk when they come to drink.",
-    highlights: ["Takhi horses", "Steppe hike", "Dawn game drive"],
-    theme: "khustai",
+      "For young travellers who want to cover ground — Umnugobi, Yoliin Am ice canyon, a night sleeping in the desert, camels at Khongoriin Els, then back through central Mongolia. Tight, adventure-packed, lots of driving.",
+    highlights: ["Yoliin Am", "Desert camp", "Khongoriin Els", "Camels"],
+    theme: "southern-gobi",
     startMonth: 5,
-    startDay: 21,
+    startDay: 16,
     endMonth: 5,
     endDay: 23,
   },
   {
     id: "playtime",
+    slug: "playtime",
     title: "Playtime",
     emoji: "🦅",
     dates: "July 1 – 6",
@@ -90,8 +83,8 @@ const tours = [
     price: "From $950",
     status: "available",
     description:
-      "A playful intro to nomad life — eagle handlers, archery lessons, horseback across the Khan-Khentii steppe, traditional games, and plenty of airag under the summer sky.",
-    highlights: ["Eagle hunters", "Archery", "Steppe riding", "Games"],
+      "Meet young people. Gather the day before Mongolia's biggest music festival, party together, and take a recovery day in the city. Half festival, half fresh-air reset.",
+    highlights: ["Music festival", "Meet-up night", "City recovery"],
     theme: "playtime",
     startMonth: 6,
     startDay: 1,
@@ -100,88 +93,95 @@ const tours = [
   },
   {
     id: "naadam",
+    slug: "naadam",
     title: "Naadam Festival",
     emoji: "🏇",
-    dates: "July 11 – 15",
-    days: 5,
-    price: "From $1,200",
+    dates: "July 7 – 14",
+    days: 8,
+    price: "TBD",
     status: "limited",
     description:
-      "Mongolia's legendary Three Manly Sports — wrestling, archery, and horse racing at the National Stadium. 2026 marks the 820th anniversary of the Mongol Empire. Opening ceremony included.",
-    highlights: ["Wrestling", "Horse racing", "Archery", "Opening"],
+      "Our chill take on Naadam — a single province in central Mongolia with local village Naadams, Ara festival tastings, Terkhiin Tsagaan Nuur, Khorgo volcano, Tsenkher hot springs, nomadic family stays, hikes, and hands-on milking, cooking, and herding.",
+    highlights: ["Terkh Lake", "Khorgo volcano", "Hot springs", "Nomad stays"],
     theme: "naadam",
     startMonth: 6,
-    startDay: 11,
+    startDay: 7,
     endMonth: 6,
-    endDay: 15,
+    endDay: 14,
   },
   {
-    id: "orkhon-karakorum",
-    title: "Orkhon & Karakorum",
-    emoji: "🏛️",
-    dates: "July 18 – 20",
+    id: "terelj-jul",
+    slug: "terelj-escape",
+    title: "Terelj Escape",
+    emoji: "🌲",
+    dates: "July 16 – 18",
     days: 3,
-    price: "From $750",
+    price: "TBD",
     status: "available",
     description:
-      "Three days tracing the old empire — Orkhon Valley waterfalls, Erdene Zuu monastery, and the ruins of Karakorum, Chinggis Khaan's 13th-century capital.",
-    highlights: ["Karakorum ruins", "Erdene Zuu", "Orkhon Falls"],
-    theme: "orkhon",
+      "Third Terelj weekend, right after Naadam clears out. Same gentle route — Turtle Rock, alpine rides, family ger camp.",
+    highlights: ["Turtle Rock", "Ger stay", "Steppe ride"],
+    theme: "terelj",
     startMonth: 6,
-    startDay: 18,
+    startDay: 16,
     endMonth: 6,
-    endDay: 20,
+    endDay: 18,
   },
+  {
+    id: "altai-tavan-bogd",
+    slug: "altai-tavan-bogd",
+    title: "Altai Tavan Bogd",
+    emoji: "🏔️",
+    dates: "Aug 6 – 13",
+    days: 8,
+    price: "TBD",
+    status: "available",
+    description:
+      "Premium west — a flight in to Ölgii, the Five Holy Peaks, Potanin Glacier, and Kazakh eagle hunters in their summer pastures. Our rarest tour.",
+    highlights: ["Tavan Bogd peaks", "Potanin Glacier", "Kazakh eagles"],
+    theme: "altai",
+    startMonth: 7,
+    startDay: 6,
+    endMonth: 7,
+    endDay: 13,
+  },
+  {
+    id: "gobi-glimpse",
+    slug: "gobi-glimpse",
+    title: "Gobi Glimpse + Central",
+    emoji: "🌅",
+    dates: "Aug 18 – 28",
+    days: 11,
+    price: "TBD",
+    status: "available",
+    description:
+      "The iconic southern Gobi loop, extended through central Mongolia — Umnugobi, Yoliin Am, desert camping, camels at Khongoriin Els, then steppe and hot-spring country on the way back.",
+    highlights: ["Yoliin Am", "Desert camp", "Khongoriin Els", "Central steppe"],
+    theme: "gobi",
+    startMonth: 7,
+    startDay: 18,
+    endMonth: 7,
+    endDay: 28,
+  },
+  // North & Central Loop runs as a long window — rendered LAST so
+  // specific tours (Altai, Gobi Glimpse) take cell priority where they overlap.
   {
     id: "north-central",
+    slug: "north-central",
     title: "North & Central Loop",
     emoji: "🐪",
-    dates: "July 21 – Aug 5",
-    days: 16,
-    price: "From $2,800",
+    dates: "July 21 – Aug 31",
+    days: 42,
+    price: "TBD",
     status: "available",
     description:
-      "The signature big loop — Ulaanbaatar, Khustai takhi, Orkhon Valley, Kharakhorum, the forested north and Terelj, with camel rides, horse treks, nomadic stays, and hot-spring soaks woven through.",
-    highlights: ["Orkhon Valley", "Karakorum", "Terelj", "Nomadic stays", "Hot springs"],
+      "The long north route — Huuchin Bulgan ger camp, Khuvsgul Lake camping and hiking, the taiga, Zavkhan, and central Mongolia in between. Flexible window, mostly camping and gers with the occasional hotel.",
+    highlights: ["Bulgan ger camp", "Khuvsgul Lake", "Taiga", "Zavkhan", "Central steppe"],
     theme: "north-central",
     startMonth: 6,
     startDay: 21,
     endMonth: 7,
-    endDay: 5,
-  },
-  {
-    id: "altai-tavan-bogd",
-    title: "Altai Tavan Bogd",
-    emoji: "🏔️",
-    dates: "Aug 8 – 21",
-    days: 14,
-    price: "From $3,200",
-    status: "available",
-    description:
-      "Mongolia's remote west — the Five Holy Peaks, Potanin Glacier, Kazakh eagle hunters in their summer pastures, Malchin Peak trek, and camps beneath snow and stars. The rarest, richest tour we run.",
-    highlights: ["Tavan Bogd peaks", "Potanin Glacier", "Kazakh eagles", "Malchin trek"],
-    theme: "altai",
-    startMonth: 7,
-    startDay: 8,
-    endMonth: 7,
-    endDay: 21,
-  },
-  {
-    id: "gobi-glimpse",
-    title: "Gobi Glimpse",
-    emoji: "🏜️",
-    dates: "Aug 25 – 27",
-    days: 3,
-    price: "From $750",
-    status: "available",
-    description:
-      "A fast, rich taste of the Gobi — a short flight south to Khongoryn Els singing dunes, a camel sunset, and the Flaming Cliffs at golden hour. For travelers on tighter timelines.",
-    highlights: ["Singing dunes", "Flaming Cliffs", "Camel sunset"],
-    theme: "gobi",
-    startMonth: 7,
-    startDay: 25,
-    endMonth: 7,
-    endDay: 27,
+    endDay: 31,
   },
 ];
 
@@ -190,16 +190,6 @@ const tours = [
 // ============================================================================
 
 const themeMap = {
-  city: {
-    bg: "bg-slate-500/25",
-    bgHover: "group-hover:bg-slate-500/50",
-    border: "border-slate-400/40",
-    text: "text-slate-200",
-    dot: "bg-slate-300",
-    bar: "from-slate-400 to-slate-500",
-    pattern: "city",
-    short: "UB City Warm-Up",
-  },
   terelj: {
     bg: "bg-teal-500/25",
     bgHover: "group-hover:bg-teal-500/50",
@@ -208,27 +198,17 @@ const themeMap = {
     dot: "bg-teal-400",
     bar: "from-teal-500 to-teal-600",
     pattern: "terelj",
-    short: "Forest & Rock",
+    short: "Forest Weekend",
   },
-  khuvsgul: {
-    bg: "bg-blue-500/30",
-    bgHover: "group-hover:bg-blue-500/55",
-    border: "border-blue-400/40",
-    text: "text-blue-100",
-    dot: "bg-blue-400",
-    bar: "from-blue-500 to-blue-600",
-    pattern: "lake",
-    short: "Dark Blue Pearl",
-  },
-  khustai: {
+  "southern-gobi": {
     bg: "bg-orange-500/30",
     bgHover: "group-hover:bg-orange-500/55",
     border: "border-orange-400/40",
     text: "text-orange-100",
     dot: "bg-orange-400",
     bar: "from-orange-500 to-orange-600",
-    pattern: "horse",
-    short: "Wild Takhi",
+    pattern: "dunes",
+    short: "Fast Gobi Run",
   },
   playtime: {
     bg: "bg-emerald-500/25",
@@ -238,7 +218,7 @@ const themeMap = {
     dot: "bg-emerald-400",
     bar: "from-emerald-500 to-emerald-600",
     pattern: "feather",
-    short: "Eagles & Archery",
+    short: "Festival Meet-Up",
   },
   naadam: {
     bg: "bg-red-500/30",
@@ -248,17 +228,7 @@ const themeMap = {
     dot: "bg-red-400",
     bar: "from-red-500 to-red-600",
     pattern: "naadam",
-    short: "Three Manly Sports",
-  },
-  orkhon: {
-    bg: "bg-rose-500/25",
-    bgHover: "group-hover:bg-rose-500/50",
-    border: "border-rose-400/40",
-    text: "text-rose-200",
-    dot: "bg-rose-400",
-    bar: "from-rose-500 to-rose-600",
-    pattern: "ancient",
-    short: "Old Empire",
+    short: "Local Naadam",
   },
   "north-central": {
     bg: "bg-sky-500/25",
@@ -268,7 +238,7 @@ const themeMap = {
     dot: "bg-sky-400",
     bar: "from-sky-500 to-sky-600",
     pattern: "loop",
-    short: "Signature Loop",
+    short: "Long North Route",
   },
   altai: {
     bg: "bg-indigo-500/30",
@@ -288,7 +258,7 @@ const themeMap = {
     dot: "bg-amber-400",
     bar: "from-amber-500 to-amber-600",
     pattern: "dunes",
-    short: "Desert Sampler",
+    short: "Gobi + Central",
   },
 };
 
@@ -465,7 +435,7 @@ function DayCell({ monthIndex, day, isEmpty, onHover, onLeave, hoveredId, dayOfW
 
   return (
     <Link
-      href={`/tours/${tour.id}`}
+      href={`/tours/${tour.slug}`}
       onMouseEnter={() => onHover(tour.id)}
       onMouseLeave={onLeave}
       className={`
@@ -676,7 +646,7 @@ function Legend({ onHover, onLeave, hoveredId }) {
         return (
           <Link
             key={tour.id}
-            href={`/tours/${tour.id}`}
+            href={`/tours/${tour.slug}`}
             onMouseEnter={() => onHover(tour.id)}
             onMouseLeave={onLeave}
             className={`
@@ -716,8 +686,7 @@ function CalendarSection() {
               Pick Your Month
             </h2>
             <p className="text-sand-400 max-w-xl mx-auto">
-              Ten departures across June, July, and August. Hover a highlighted day to peek inside.
-              Click to open the tour.
+              Nine departures across June, July, and August — weekend escapes, festival meet-ups, and long flagship expeditions. Hover a highlighted day to peek inside. Click to open the tour.
             </p>
           </div>
         </FadeIn>
@@ -803,7 +772,7 @@ export default function ToursPage() {
             <p className="text-xs tracking-[0.3em] uppercase text-sand-400 mb-4">2026 SEASON</p>
             <h1 className="font-display text-4xl md:text-6xl text-white mb-4">Your Journey Starts Here</h1>
             <p className="text-sand-300 max-w-xl mx-auto px-6">
-              Three months, ten departures. Pick a date on the calendar and we&apos;ll take you there.
+              Three months, nine departures. Pick a date on the calendar and we&apos;ll take you there.
             </p>
           </motion.div>
         </div>
@@ -814,9 +783,9 @@ export default function ToursPage() {
         <div className="max-w-5xl mx-auto px-6 py-8 flex flex-wrap justify-center gap-8 md:gap-14 text-center">
           {[
             { label: "Season", value: "June – August" },
-            { label: "Departures", value: "10 Scheduled" },
+            { label: "Departures", value: "9 Scheduled" },
             { label: "Group Size", value: "6–8 Max" },
-            { label: "Starting From", value: "$450" },
+            { label: "Starting From", value: "$950" },
           ].map((stat, i) => (
             <div key={i}>
               <p className="text-sand-500 text-xs tracking-wider uppercase mb-1">{stat.label}</p>
@@ -840,31 +809,31 @@ export default function ToursPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
-                title: "City & Short Trips",
+                title: "Weekend Escapes",
                 duration: "3 Days",
-                price: "From $450",
-                items: ["City Discovery", "Terelj Escape", "Khustai Horses", "Gobi Glimpse"],
-                desc: "Short, high-impact trips — perfect for stopovers or a first taste of Mongolia.",
-                color: "from-slate-400 to-teal-500",
-                border: "border-slate-700/20 hover:border-teal-600/40",
+                price: "TBD",
+                items: ["Terelj Escape × 3", "Any age welcome"],
+                desc: "Three Terelj weekends across June and July. Gentle, ger-camp vibe, close to the city.",
+                color: "from-teal-400 to-teal-600",
+                border: "border-teal-700/20 hover:border-teal-600/40",
               },
               {
-                title: "Festival & Culture",
-                duration: "3–7 Days",
-                price: "From $750",
-                items: ["Playtime", "Naadam Festival", "Orkhon & Karakorum", "Khuvsgul Pearl"],
-                desc: "The big cultural moments — festivals, ancient capitals, and northern lakes.",
-                color: "from-emerald-500 to-red-600",
-                border: "border-emerald-700/20 hover:border-red-600/40",
+                title: "Festival & Adventure",
+                duration: "6–11 Days",
+                price: "From $950",
+                items: ["Southern Gobi + Central", "Playtime", "Local Naadam", "Gobi Glimpse + Central"],
+                desc: "Mid-length departures — festivals, desert nights, and nomadic immersion. For travellers who want to get into it.",
+                color: "from-emerald-500 to-amber-600",
+                border: "border-emerald-700/20 hover:border-amber-600/40",
               },
               {
                 title: "Grand Expeditions",
-                duration: "14–16 Days",
-                price: "From $2,800",
-                items: ["North & Central Loop", "Altai Tavan Bogd"],
-                desc: "The full Mongolian experience — deep expeditions through the country's rarest landscapes.",
-                color: "from-sky-500 to-indigo-600",
-                border: "border-sky-700/20 hover:border-indigo-600/40",
+                duration: "8–42 Days",
+                price: "TBD",
+                items: ["Altai Tavan Bogd", "North & Central Loop"],
+                desc: "The flagship tours — western peaks with Kazakh eagle hunters, and the long flexible north route through taiga, Khuvsgul, and Zavkhan.",
+                color: "from-indigo-500 to-sky-600",
+                border: "border-indigo-700/20 hover:border-sky-600/40",
               },
             ].map((route, idx) => (
               <FadeIn key={idx} delay={idx * 0.1}>

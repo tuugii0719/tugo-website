@@ -13,13 +13,13 @@ export default function GobiGlimpsePage() {
         className="text-center max-w-lg"
       >
         <p className="text-sand-500 text-xs tracking-[0.3em] uppercase mb-4">
-          Aug 25 – 27 · 3 Days
+          Aug 18 – 28 · 11 Days
         </p>
         <h1 className="font-display text-4xl md:text-5xl text-sand-100 mb-4">
-          Gobi Glimpse
+          Gobi Glimpse + Central
         </h1>
         <p className="text-sand-400 leading-relaxed mb-8">
-          Full tour details coming soon. A fast, rich taste of the Gobi — a short flight south to Khongoryn Els singing dunes, a camel sunset, and the Flaming Cliffs at golden hour.
+          Full tour details coming soon. The iconic southern Gobi loop, extended through central Mongolia — Umnugobi, Yoliin Am, desert camping, camels at Khongoriin Els, then steppe and hot-spring country on the way back.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

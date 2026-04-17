@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-export default function CityDiscoveryPage() {
+export default function SouthernGobiPage() {
   return (
     <div className="min-h-screen bg-night-950 flex items-center justify-center px-6">
       <motion.div
@@ -13,13 +13,13 @@ export default function CityDiscoveryPage() {
         className="text-center max-w-lg"
       >
         <p className="text-sand-500 text-xs tracking-[0.3em] uppercase mb-4">
-          June 2 – 4 · 3 Days
+          June 16 – 23 · 8 Days
         </p>
         <h1 className="font-display text-4xl md:text-5xl text-sand-100 mb-4">
-          City Discovery
+          Southern Gobi + Central
         </h1>
         <p className="text-sand-400 leading-relaxed mb-8">
-          Full tour details coming soon. Ulaanbaatar at your own pace — Gandan monastery, Zaisan hill, the National Museum, and a half-day out to the Genghis Khan Equestrian Statue.
+          Full tour details coming soon. For young travellers who want to cover ground — Umnugobi, Yoliin Am, a night in the desert, camels at Khongoriin Els, then back through central Mongolia. Tight, adventure-packed, lots of driving.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

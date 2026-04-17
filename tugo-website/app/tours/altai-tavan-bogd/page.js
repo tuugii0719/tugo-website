@@ -13,13 +13,13 @@ export default function AltaiTavanBogdPage() {
         className="text-center max-w-lg"
       >
         <p className="text-sand-500 text-xs tracking-[0.3em] uppercase mb-4">
-          Aug 8 – 21 · 14 Days
+          Aug 6 – 13 · 8 Days
         </p>
         <h1 className="font-display text-4xl md:text-5xl text-sand-100 mb-4">
           Altai Tavan Bogd
         </h1>
         <p className="text-sand-400 leading-relaxed mb-8">
-          Full tour details coming soon. Mongolia&apos;s remote west — the Five Holy Peaks, Potanin Glacier, Kazakh eagle hunters in their summer pastures, Malchin Peak trek, and camps beneath snow and stars.
+          Full tour details coming soon. Mongolia&apos;s remote west — a flight in to Ölgii, the Five Holy Peaks, Potanin Glacier, and Kazakh eagle hunters in their summer pastures. Our rarest tour.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

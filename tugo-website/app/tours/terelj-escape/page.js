@@ -13,13 +13,16 @@ export default function TerelJEscapePage() {
         className="text-center max-w-lg"
       >
         <p className="text-sand-500 text-xs tracking-[0.3em] uppercase mb-4">
-          June 7 – 9 · 3 Days
+          3 Departures · 3 Days each
         </p>
         <h1 className="font-display text-4xl md:text-5xl text-sand-100 mb-4">
           Terelj Escape
         </h1>
+        <p className="text-sand-400 leading-relaxed mb-4">
+          June 8–10  ·  June 12–14  ·  July 16–18
+        </p>
         <p className="text-sand-400 leading-relaxed mb-8">
-          Full tour details coming soon. A weekend in Gorkhi-Terelj — Turtle Rock, Aryabal Meditation Temple, horseback through alpine meadows, and a night in a family ger camp.
+          Full tour details coming soon. Any age. A gentle weekend in Gorkhi-Terelj — Turtle Rock, alpine meadow rides, and a night in a family ger camp, 90 minutes from the city.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

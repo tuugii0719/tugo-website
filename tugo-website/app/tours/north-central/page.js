@@ -13,13 +13,13 @@ export default function NorthCentralPage() {
         className="text-center max-w-lg"
       >
         <p className="text-sand-500 text-xs tracking-[0.3em] uppercase mb-4">
-          July 21 – Aug 5 · 16 Days
+          July 21 – Aug 31 · Long Flexible Window
         </p>
         <h1 className="font-display text-4xl md:text-5xl text-sand-100 mb-4">
           North & Central Loop
         </h1>
         <p className="text-sand-400 leading-relaxed mb-8">
-          Full tour details coming soon. The signature big loop — Ulaanbaatar, Khustai takhi, Orkhon Valley, Kharakhorum, the forested north, Terelj, camel rides, horse treks, nomadic stays, and hot-spring soaks.
+          Full tour details coming soon. The long north route — Huuchin Bulgan ger camp, Khuvsgul Lake camping and hiking, the taiga, Zavkhan, and central Mongolia in between. Mostly camping and gers with the occasional hotel.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
