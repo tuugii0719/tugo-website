@@ -13,13 +13,13 @@ export default function NaadamPage() {
         className="text-center max-w-lg"
       >
         <p className="text-sand-500 text-xs tracking-[0.3em] uppercase mb-4">
-          July 8 – 13 · 6 Days
+          July 11 – 15 · 5 Days
         </p>
         <h1 className="font-display text-4xl md:text-5xl text-sand-100 mb-4">
           Naadam Festival
         </h1>
         <p className="text-sand-400 leading-relaxed mb-8">
-          Full tour details coming soon. Mongolia&apos;s legendary &apos;Three Games of Men&apos; — wrestling, archery, and horse racing. The biggest cultural event of the year.
+          Full tour details coming soon. Mongolia&apos;s legendary Three Manly Sports — wrestling, archery, and horse racing. 2026 marks the 820th anniversary of the Mongol Empire. The biggest cultural event of the year.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
