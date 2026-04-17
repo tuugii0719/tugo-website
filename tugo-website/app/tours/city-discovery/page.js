@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-export default function SouthAugustPage() {
+export default function CityDiscoveryPage() {
   return (
     <div className="min-h-screen bg-night-950 flex items-center justify-center px-6">
       <motion.div
@@ -13,13 +13,13 @@ export default function SouthAugustPage() {
         className="text-center max-w-lg"
       >
         <p className="text-sand-500 text-xs tracking-[0.3em] uppercase mb-4">
-          Aug 8 – 20 · 13 Days
+          June 2 – 4 · 3 Days
         </p>
         <h1 className="font-display text-4xl md:text-5xl text-sand-100 mb-4">
-          South & Central Mongolia
+          City Discovery
         </h1>
         <p className="text-sand-400 leading-relaxed mb-8">
-          Full tour details coming soon. Same legendary southern route — Gobi dunes, Flaming Cliffs, nomadic culture. A second departure for those who can&apos;t make July.
+          Full tour details coming soon. Ulaanbaatar at your own pace — Gandan monastery, Zaisan hill, the National Museum, and a half-day out to the Genghis Khan Equestrian Statue.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

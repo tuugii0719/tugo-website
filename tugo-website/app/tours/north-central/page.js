@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-export default function SouthJulyPage() {
+export default function NorthCentralPage() {
   return (
     <div className="min-h-screen bg-night-950 flex items-center justify-center px-6">
       <motion.div
@@ -13,13 +13,13 @@ export default function SouthJulyPage() {
         className="text-center max-w-lg"
       >
         <p className="text-sand-500 text-xs tracking-[0.3em] uppercase mb-4">
-          July 20 – Aug 5 · 17 Days
+          July 21 – Aug 5 · 16 Days
         </p>
         <h1 className="font-display text-4xl md:text-5xl text-sand-100 mb-4">
-          South & Central Mongolia
+          North & Central Loop
         </h1>
         <p className="text-sand-400 leading-relaxed mb-8">
-          Full tour details coming soon. The Gobi desert, singing sand dunes, ice canyons, and camel treks — then north through the steppe. Mongolia&apos;s dramatic contrasts in one epic journey.
+          Full tour details coming soon. The signature big loop — Ulaanbaatar, Khustai takhi, Orkhon Valley, Kharakhorum, the forested north, Terelj, camel rides, horse treks, nomadic stays, and hot-spring soaks.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

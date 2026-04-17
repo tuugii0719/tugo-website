@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-export default function PlaytimePage() {
+export default function AltaiTavanBogdPage() {
   return (
     <div className="min-h-screen bg-night-950 flex items-center justify-center px-6">
       <motion.div
@@ -13,13 +13,13 @@ export default function PlaytimePage() {
         className="text-center max-w-lg"
       >
         <p className="text-sand-500 text-xs tracking-[0.3em] uppercase mb-4">
-          July 1 – 6 · 6 Days
+          Aug 8 – 21 · 14 Days
         </p>
         <h1 className="font-display text-4xl md:text-5xl text-sand-100 mb-4">
-          Playtime
+          Altai Tavan Bogd
         </h1>
         <p className="text-sand-400 leading-relaxed mb-8">
-          Full tour details coming soon. A playful intro to nomad life — eagle handlers, archery lessons, horseback across the Khan-Khentii steppe, traditional games, and airag under the summer sky.
+          Full tour details coming soon. Mongolia&apos;s remote west — the Five Holy Peaks, Potanin Glacier, Kazakh eagle hunters in their summer pastures, Malchin Peak trek, and camps beneath snow and stars.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

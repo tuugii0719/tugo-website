@@ -7,26 +7,79 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FadeIn } from "@/components/animations/FadeIn";
 
 // ============================================================================
-// TOUR DATA
+// TOUR DATA — 2026 SEASON (Jun–Aug)
+// Maximized revenue mix: short city tours + mid festivals + long expeditions,
+// with 1–2 day rest buffers between tours.
 // ============================================================================
 
 const tours = [
   {
-    id: "ara-festival",
-    title: "Ara Festival",
-    emoji: "🥛",
-    dates: "June 20 – 26",
-    days: 7,
-    price: "From $900",
+    id: "city-discovery",
+    title: "City Discovery",
+    emoji: "🏙️",
+    dates: "June 2 – 4",
+    days: 3,
+    price: "From $450",
     status: "available",
     description:
-      "Mongolia's traditional Ara (airag) festival — fermented mare's milk ceremonies, nomadic celebrations, horseback games, and the first taste of summer on the open steppe.",
-    highlights: ["Airag tasting", "Nomadic games", "Horseback"],
-    theme: "festival",
+      "Ulaanbaatar at your own pace — Gandan monastery, Zaisan hill, the National Museum, and a half-day out to the Genghis Khan Equestrian Statue. A perfect warm-up before heading out to the wild.",
+    highlights: ["Gandan Monastery", "Genghis Statue", "City food"],
+    theme: "city",
     startMonth: 5,
-    startDay: 20,
+    startDay: 2,
     endMonth: 5,
-    endDay: 26,
+    endDay: 4,
+  },
+  {
+    id: "terelj-escape",
+    title: "Terelj Escape",
+    emoji: "🌲",
+    dates: "June 7 – 9",
+    days: 3,
+    price: "From $550",
+    status: "available",
+    description:
+      "A weekend in Gorkhi-Terelj National Park — Turtle Rock, Aryabal Meditation Temple, horseback through alpine meadows, and a night in a family ger camp 90 minutes from the city.",
+    highlights: ["Turtle Rock", "Aryabal Temple", "Ger stay"],
+    theme: "terelj",
+    startMonth: 5,
+    startDay: 7,
+    endMonth: 5,
+    endDay: 9,
+  },
+  {
+    id: "khuvsgul-pearl",
+    title: "Khuvsgul Pearl",
+    emoji: "💎",
+    dates: "June 12 – 18",
+    days: 7,
+    price: "From $1,500",
+    status: "available",
+    description:
+      "A week at the Dark Blue Pearl — Mongolia's deepest lake, forested shorelines, boating and kayaking, an overnight with Tsaatan reindeer herders in the taiga, and starlit shore camps.",
+    highlights: ["Khuvsgul Lake", "Reindeer herders", "Kayak", "Taiga"],
+    theme: "khuvsgul",
+    startMonth: 5,
+    startDay: 12,
+    endMonth: 5,
+    endDay: 18,
+  },
+  {
+    id: "khustai-wild-horses",
+    title: "Khustai Wild Horses",
+    emoji: "🐴",
+    dates: "June 21 – 23",
+    days: 3,
+    price: "From $600",
+    status: "available",
+    description:
+      "Trace the takhi — the only truly wild horse species on Earth — across the golden hills of Khustai National Park at dawn and dusk when they come to drink.",
+    highlights: ["Takhi horses", "Steppe hike", "Dawn game drive"],
+    theme: "khustai",
+    startMonth: 5,
+    startDay: 21,
+    endMonth: 5,
+    endDay: 23,
   },
   {
     id: "playtime",
@@ -34,12 +87,12 @@ const tours = [
     emoji: "🦅",
     dates: "July 1 – 6",
     days: 6,
-    price: "From $850",
+    price: "From $950",
     status: "available",
     description:
-      "A playful intro to Mongolia — eagle encounters, horseback rides across the steppe, nomadic games, archery lessons, and wide-open grasslands before the big festival season.",
-    highlights: ["Eagle hunting", "Archery", "Steppe riding"],
-    theme: "adventure",
+      "A playful intro to nomad life — eagle handlers, archery lessons, horseback across the Khan-Khentii steppe, traditional games, and plenty of airag under the summer sky.",
+    highlights: ["Eagle hunters", "Archery", "Steppe riding", "Games"],
+    theme: "playtime",
     startMonth: 6,
     startDay: 1,
     endMonth: 6,
@@ -51,11 +104,11 @@ const tours = [
     emoji: "🏇",
     dates: "July 11 – 15",
     days: 5,
-    price: "From $1,100",
+    price: "From $1,200",
     status: "limited",
     description:
-      "Mongolia's legendary Three Manly Sports — wrestling, archery, and horse racing at the National Stadium. 2026 marks the 820th anniversary of the Mongol Empire.",
-    highlights: ["Wrestling", "Horse racing", "Archery"],
+      "Mongolia's legendary Three Manly Sports — wrestling, archery, and horse racing at the National Stadium. 2026 marks the 820th anniversary of the Mongol Empire. Opening ceremony included.",
+    highlights: ["Wrestling", "Horse racing", "Archery", "Opening"],
     theme: "naadam",
     startMonth: 6,
     startDay: 11,
@@ -63,57 +116,121 @@ const tours = [
     endDay: 15,
   },
   {
-    id: "south-july",
-    title: "South & Central Mongolia",
+    id: "orkhon-karakorum",
+    title: "Orkhon & Karakorum",
+    emoji: "🏛️",
+    dates: "July 18 – 20",
+    days: 3,
+    price: "From $750",
+    status: "available",
+    description:
+      "Three days tracing the old empire — Orkhon Valley waterfalls, Erdene Zuu monastery, and the ruins of Karakorum, Chinggis Khaan's 13th-century capital.",
+    highlights: ["Karakorum ruins", "Erdene Zuu", "Orkhon Falls"],
+    theme: "orkhon",
+    startMonth: 6,
+    startDay: 18,
+    endMonth: 6,
+    endDay: 20,
+  },
+  {
+    id: "north-central",
+    title: "North & Central Loop",
     emoji: "🐪",
     dates: "July 21 – Aug 5",
     days: 16,
-    price: "From $1,500",
+    price: "From $2,800",
     status: "available",
     description:
-      "The full Gobi experience — Khongoriin Els singing sand dunes, Yolyn Am ice canyon, Flaming Cliffs of Bayanzag, camel trekking, then north through the steppe to Orkhon Valley.",
-    highlights: ["Gobi Desert", "Sand dunes", "Ice canyon", "Camel trek"],
-    theme: "expedition",
+      "The signature big loop — Ulaanbaatar, Khustai takhi, Orkhon Valley, Kharakhorum, the forested north and Terelj, with camel rides, horse treks, nomadic stays, and hot-spring soaks woven through.",
+    highlights: ["Orkhon Valley", "Karakorum", "Terelj", "Nomadic stays", "Hot springs"],
+    theme: "north-central",
     startMonth: 6,
     startDay: 21,
     endMonth: 7,
     endDay: 5,
   },
   {
-    id: "south-august",
-    title: "South & Central Mongolia",
-    emoji: "🌅",
-    dates: "Aug 8 – 20",
-    days: 13,
-    price: "From $1,500",
+    id: "altai-tavan-bogd",
+    title: "Altai Tavan Bogd",
+    emoji: "🏔️",
+    dates: "Aug 8 – 21",
+    days: 14,
+    price: "From $3,200",
     status: "available",
     description:
-      "Same legendary southern route — Gobi dunes, Flaming Cliffs, nomadic culture, stargazing under infinite skies. A second departure for those who missed July.",
-    highlights: ["Gobi Desert", "Nomadic stays", "Stargazing"],
-    theme: "expedition-alt",
+      "Mongolia's remote west — the Five Holy Peaks, Potanin Glacier, Kazakh eagle hunters in their summer pastures, Malchin Peak trek, and camps beneath snow and stars. The rarest, richest tour we run.",
+    highlights: ["Tavan Bogd peaks", "Potanin Glacier", "Kazakh eagles", "Malchin trek"],
+    theme: "altai",
     startMonth: 7,
     startDay: 8,
     endMonth: 7,
-    endDay: 20,
+    endDay: 21,
+  },
+  {
+    id: "gobi-glimpse",
+    title: "Gobi Glimpse",
+    emoji: "🏜️",
+    dates: "Aug 25 – 27",
+    days: 3,
+    price: "From $750",
+    status: "available",
+    description:
+      "A fast, rich taste of the Gobi — a short flight south to Khongoryn Els singing dunes, a camel sunset, and the Flaming Cliffs at golden hour. For travelers on tighter timelines.",
+    highlights: ["Singing dunes", "Flaming Cliffs", "Camel sunset"],
+    theme: "gobi",
+    startMonth: 7,
+    startDay: 25,
+    endMonth: 7,
+    endDay: 27,
   },
 ];
 
 // ============================================================================
-// THEME MAP
+// THEME MAP — 10 distinct visual identities
 // ============================================================================
 
 const themeMap = {
-  festival: {
-    bg: "bg-amber-500/30",
-    bgHover: "group-hover:bg-amber-500/55",
-    border: "border-amber-400/40",
-    text: "text-amber-200",
-    dot: "bg-amber-400",
-    bar: "from-amber-500 to-amber-600",
-    pattern: "festival",
-    short: "Airag & Steppe",
+  city: {
+    bg: "bg-slate-500/25",
+    bgHover: "group-hover:bg-slate-500/50",
+    border: "border-slate-400/40",
+    text: "text-slate-200",
+    dot: "bg-slate-300",
+    bar: "from-slate-400 to-slate-500",
+    pattern: "city",
+    short: "UB City Warm-Up",
   },
-  adventure: {
+  terelj: {
+    bg: "bg-teal-500/25",
+    bgHover: "group-hover:bg-teal-500/50",
+    border: "border-teal-400/40",
+    text: "text-teal-200",
+    dot: "bg-teal-400",
+    bar: "from-teal-500 to-teal-600",
+    pattern: "terelj",
+    short: "Forest & Rock",
+  },
+  khuvsgul: {
+    bg: "bg-blue-500/30",
+    bgHover: "group-hover:bg-blue-500/55",
+    border: "border-blue-400/40",
+    text: "text-blue-100",
+    dot: "bg-blue-400",
+    bar: "from-blue-500 to-blue-600",
+    pattern: "lake",
+    short: "Dark Blue Pearl",
+  },
+  khustai: {
+    bg: "bg-orange-500/30",
+    bgHover: "group-hover:bg-orange-500/55",
+    border: "border-orange-400/40",
+    text: "text-orange-100",
+    dot: "bg-orange-400",
+    bar: "from-orange-500 to-orange-600",
+    pattern: "horse",
+    short: "Wild Takhi",
+  },
+  playtime: {
     bg: "bg-emerald-500/25",
     bgHover: "group-hover:bg-emerald-500/50",
     border: "border-emerald-400/40",
@@ -133,30 +250,50 @@ const themeMap = {
     pattern: "naadam",
     short: "Three Manly Sports",
   },
-  expedition: {
+  orkhon: {
+    bg: "bg-rose-500/25",
+    bgHover: "group-hover:bg-rose-500/50",
+    border: "border-rose-400/40",
+    text: "text-rose-200",
+    dot: "bg-rose-400",
+    bar: "from-rose-500 to-rose-600",
+    pattern: "ancient",
+    short: "Old Empire",
+  },
+  "north-central": {
     bg: "bg-sky-500/25",
     bgHover: "group-hover:bg-sky-500/50",
     border: "border-sky-400/40",
     text: "text-sky-100",
     dot: "bg-sky-400",
     bar: "from-sky-500 to-sky-600",
-    pattern: "dunes",
-    short: "Gobi Expedition",
+    pattern: "loop",
+    short: "Signature Loop",
   },
-  "expedition-alt": {
-    bg: "bg-violet-500/25",
-    bgHover: "group-hover:bg-violet-500/50",
-    border: "border-violet-400/40",
-    text: "text-violet-100",
-    dot: "bg-violet-400",
-    bar: "from-violet-500 to-violet-600",
-    pattern: "stars",
-    short: "Gobi · Second Run",
+  altai: {
+    bg: "bg-indigo-500/30",
+    bgHover: "group-hover:bg-indigo-500/55",
+    border: "border-indigo-400/40",
+    text: "text-indigo-100",
+    dot: "bg-indigo-400",
+    bar: "from-indigo-500 to-indigo-600",
+    pattern: "peaks",
+    short: "Western Heights",
+  },
+  gobi: {
+    bg: "bg-amber-500/30",
+    bgHover: "group-hover:bg-amber-500/55",
+    border: "border-amber-400/40",
+    text: "text-amber-100",
+    dot: "bg-amber-400",
+    bar: "from-amber-500 to-amber-600",
+    pattern: "dunes",
+    short: "Desert Sampler",
   },
 };
 
 // ============================================================================
-// CELL DECORATIVE PATTERNS
+// CELL DECORATIVE PATTERNS — 10 motifs, one per theme
 // ============================================================================
 
 function CellPattern({ type }) {
@@ -167,13 +304,46 @@ function CellPattern({ type }) {
     preserveAspectRatio: "none",
   };
   switch (type) {
-    case "festival":
+    case "city":
       return (
         <svg {...props}>
-          <circle cx="15" cy="48" r="1.8" fill="currentColor" opacity="0.5" />
-          <circle cx="45" cy="14" r="1.3" fill="currentColor" opacity="0.4" />
-          <circle cx="33" cy="32" r="0.9" fill="currentColor" opacity="0.4" />
-          <path d="M8 8 L 10 12 L 12 8" stroke="currentColor" strokeWidth="0.7" opacity="0.3" fill="none" strokeLinecap="round" />
+          <rect x="12" y="36" width="6" height="18" fill="currentColor" opacity="0.28" />
+          <rect x="20" y="30" width="6" height="24" fill="currentColor" opacity="0.22" />
+          <rect x="28" y="40" width="6" height="14" fill="currentColor" opacity="0.3" />
+          <rect x="36" y="32" width="6" height="22" fill="currentColor" opacity="0.22" />
+          <rect x="44" y="38" width="5" height="16" fill="currentColor" opacity="0.28" />
+        </svg>
+      );
+    case "terelj":
+      return (
+        <svg {...props}>
+          <path d="M10 50 L 14 32 L 18 50 Z" fill="currentColor" opacity="0.3" />
+          <path d="M22 52 L 27 28 L 32 52 Z" fill="currentColor" opacity="0.35" />
+          <path d="M38 52 L 43 36 L 48 52 Z" fill="currentColor" opacity="0.3" />
+          <circle cx="45" cy="14" r="2" fill="currentColor" opacity="0.3" />
+        </svg>
+      );
+    case "lake":
+      return (
+        <svg {...props}>
+          <path d="M0 46 Q 15 42, 30 46 T 60 46" stroke="currentColor" strokeWidth="1" opacity="0.45" fill="none" />
+          <path d="M0 52 Q 20 48, 40 52 T 60 50" stroke="currentColor" strokeWidth="0.8" opacity="0.35" fill="none" />
+          <path d="M0 56 Q 15 54, 30 56 T 60 56" stroke="currentColor" strokeWidth="0.6" opacity="0.28" fill="none" />
+          <circle cx="45" cy="18" r="2.5" fill="currentColor" opacity="0.35" />
+        </svg>
+      );
+    case "horse":
+      return (
+        <svg {...props}>
+          <path
+            d="M15 40 Q 18 32, 24 32 L 30 30 L 32 26 L 35 28 L 38 30 Q 44 30, 44 36 L 42 42"
+            stroke="currentColor"
+            strokeWidth="1.1"
+            opacity="0.5"
+            fill="none"
+            strokeLinecap="round"
+          />
+          <path d="M18 42 L 18 48 M 24 42 L 24 48 M 38 42 L 38 48 M 42 42 L 42 48" stroke="currentColor" strokeWidth="0.8" opacity="0.4" strokeLinecap="round" />
         </svg>
       );
     case "feather":
@@ -191,23 +361,43 @@ function CellPattern({ type }) {
           <path d="M28 20 L 36 20" stroke="currentColor" strokeWidth="0.6" opacity="0.35" strokeLinecap="round" />
         </svg>
       );
+    case "ancient":
+      return (
+        <svg {...props}>
+          <path d="M14 48 L 14 32 L 22 28 L 30 32 L 30 48 Z" stroke="currentColor" strokeWidth="0.8" opacity="0.4" fill="currentColor" fillOpacity="0.15" />
+          <path d="M34 48 L 34 36 L 44 32 L 44 48 Z" stroke="currentColor" strokeWidth="0.8" opacity="0.35" fill="currentColor" fillOpacity="0.12" />
+          <circle cx="22" cy="18" r="1.5" fill="currentColor" opacity="0.35" />
+        </svg>
+      );
+    case "loop":
+      return (
+        <svg {...props}>
+          <path
+            d="M12 30 Q 20 18, 30 24 Q 42 30, 48 22 Q 52 30, 44 38 Q 34 44, 24 40 Q 14 38, 12 30 Z"
+            stroke="currentColor"
+            strokeWidth="0.9"
+            opacity="0.45"
+            fill="none"
+            strokeDasharray="2 2"
+          />
+          <circle cx="30" cy="30" r="1.2" fill="currentColor" opacity="0.4" />
+        </svg>
+      );
+    case "peaks":
+      return (
+        <svg {...props}>
+          <path d="M4 50 L 14 24 L 22 36 L 30 18 L 40 34 L 48 26 L 56 44 L 56 54 L 4 54 Z" fill="currentColor" opacity="0.28" />
+          <path d="M26 22 L 30 18 L 34 24" stroke="white" strokeWidth="0.4" opacity="0.4" fill="none" />
+          <circle cx="50" cy="12" r="0.6" fill="currentColor" opacity="0.4" />
+          <circle cx="14" cy="14" r="0.5" fill="currentColor" opacity="0.35" />
+        </svg>
+      );
     case "dunes":
       return (
         <svg {...props}>
           <path d="M0 42 Q 15 32, 30 38 T 60 36 V60 H0 Z" fill="currentColor" opacity="0.22" />
           <path d="M0 50 Q 20 44, 40 48 T 60 46" stroke="currentColor" strokeWidth="0.7" opacity="0.35" fill="none" />
           <circle cx="48" cy="12" r="2.5" fill="currentColor" opacity="0.3" />
-        </svg>
-      );
-    case "stars":
-      return (
-        <svg {...props}>
-          <circle cx="14" cy="14" r="0.9" fill="currentColor" />
-          <circle cx="46" cy="20" r="0.7" fill="currentColor" opacity="0.75" />
-          <circle cx="24" cy="38" r="0.55" fill="currentColor" opacity="0.65" />
-          <circle cx="50" cy="46" r="0.45" fill="currentColor" opacity="0.55" />
-          <circle cx="34" cy="28" r="0.35" fill="currentColor" opacity="0.5" />
-          <path d="M14 14 L 14 11 M 14 14 L 14 17 M 14 14 L 11 14 M 14 14 L 17 14" stroke="currentColor" strokeWidth="0.3" opacity="0.4" />
         </svg>
       );
     default:
@@ -401,7 +591,6 @@ function MonthCalendar({ month, hoveredId, onHover, onLeave }) {
     cells.push({ isEmpty: true, key: `empty-end-${cells.length}` });
   }
 
-  // The hovered tour's anchor day in THIS month (if it appears here)
   const hoveredTour = tours.find((t) => t.id === hoveredId);
   let popoverAnchor = null;
   if (hoveredTour) {
@@ -419,6 +608,8 @@ function MonthCalendar({ month, hoveredId, onHover, onLeave }) {
       };
     }
   }
+
+  const totalRows = Math.ceil(cells.length / 7);
 
   return (
     <div className="relative">
@@ -453,14 +644,13 @@ function MonthCalendar({ month, hoveredId, onHover, onLeave }) {
         ))}
       </div>
 
-      {/* Popover — anchored to the hovered tour's start cell within this month */}
       <AnimatePresence>
         {popoverAnchor && hoveredTour && (
           <div
             key={hoveredTour.id}
             className="absolute z-50 pointer-events-none"
             style={{
-              top: `calc((100% - 40px) * ${(popoverAnchor.row + 1) / 6} + 56px)`,
+              top: `calc(((100% - 80px) * ${(popoverAnchor.row + 1) / totalRows}) + 60px)`,
               left: "50%",
               transform: "translate(-50%, 12px)",
             }}
@@ -479,7 +669,7 @@ function MonthCalendar({ month, hoveredId, onHover, onLeave }) {
 
 function Legend({ onHover, onLeave, hoveredId }) {
   return (
-    <div className="flex flex-wrap items-center justify-center gap-2 md:gap-3 mb-10 px-4">
+    <div className="flex flex-wrap items-center justify-center gap-2 mb-10 px-4">
       {tours.map((tour) => {
         const theme = themeMap[tour.theme];
         const active = hoveredId === tour.id;
@@ -526,7 +716,8 @@ function CalendarSection() {
               Pick Your Month
             </h2>
             <p className="text-sand-400 max-w-xl mx-auto">
-              Hover a highlighted date to peek inside. Click to open the tour.
+              Ten departures across June, July, and August. Hover a highlighted day to peek inside.
+              Click to open the tour.
             </p>
           </div>
         </FadeIn>
@@ -550,9 +741,9 @@ function CalendarSection() {
         </div>
 
         <p className="text-center text-sand-600 text-xs mt-10 tracking-wider">
-          Open days are available for custom bookings ·{" "}
+          Open days between tours are rest buffers — or build a custom trip ·{" "}
           <Link href="/book" className="text-sand-400 hover:text-sand-200 underline underline-offset-4">
-            Build a custom trip
+            Request custom dates
           </Link>
         </p>
       </div>
@@ -561,7 +752,7 @@ function CalendarSection() {
 }
 
 // ============================================================================
-// MOUNTAIN SILHOUETTE (hero bottom)
+// MOUNTAIN SILHOUETTE
 // ============================================================================
 
 function MountainSilhouette() {
@@ -612,7 +803,7 @@ export default function ToursPage() {
             <p className="text-xs tracking-[0.3em] uppercase text-sand-400 mb-4">2026 SEASON</p>
             <h1 className="font-display text-4xl md:text-6xl text-white mb-4">Your Journey Starts Here</h1>
             <p className="text-sand-300 max-w-xl mx-auto px-6">
-              Three months, five expeditions. Pick a date on the calendar and we&apos;ll take you there.
+              Three months, ten departures. Pick a date on the calendar and we&apos;ll take you there.
             </p>
           </motion.div>
         </div>
@@ -623,9 +814,9 @@ export default function ToursPage() {
         <div className="max-w-5xl mx-auto px-6 py-8 flex flex-wrap justify-center gap-8 md:gap-14 text-center">
           {[
             { label: "Season", value: "June – August" },
-            { label: "Departures", value: "5 Scheduled" },
+            { label: "Departures", value: "10 Scheduled" },
             { label: "Group Size", value: "6–8 Max" },
-            { label: "Starting From", value: "$850" },
+            { label: "Starting From", value: "$450" },
           ].map((stat, i) => (
             <div key={i}>
               <p className="text-sand-500 text-xs tracking-wider uppercase mb-1">{stat.label}</p>
@@ -649,31 +840,31 @@ export default function ToursPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               {
-                title: "Festival Tours",
-                duration: "5–7 Days",
-                price: "From $850",
-                items: ["Ara Festival", "Playtime", "Naadam"],
-                desc: "Short, punchy trips built around Mongolia's biggest cultural moments.",
-                color: "from-amber-500 to-amber-600",
-                border: "border-amber-700/20 hover:border-amber-600/40",
+                title: "City & Short Trips",
+                duration: "3 Days",
+                price: "From $450",
+                items: ["City Discovery", "Terelj Escape", "Khustai Horses", "Gobi Glimpse"],
+                desc: "Short, high-impact trips — perfect for stopovers or a first taste of Mongolia.",
+                color: "from-slate-400 to-teal-500",
+                border: "border-slate-700/20 hover:border-teal-600/40",
               },
               {
-                title: "South & Central",
-                duration: "13–17 Days",
-                price: "From $1,500",
-                items: ["Gobi Desert", "Sand Dunes", "Steppe"],
-                desc: "The full Mongolian experience — desert to grassland in one epic ride.",
-                color: "from-sky-500 to-sky-600",
-                border: "border-sky-700/20 hover:border-sky-600/40",
+                title: "Festival & Culture",
+                duration: "3–7 Days",
+                price: "From $750",
+                items: ["Playtime", "Naadam Festival", "Orkhon & Karakorum", "Khuvsgul Pearl"],
+                desc: "The big cultural moments — festivals, ancient capitals, and northern lakes.",
+                color: "from-emerald-500 to-red-600",
+                border: "border-emerald-700/20 hover:border-red-600/40",
               },
               {
-                title: "Custom Tours",
-                duration: "Flexible",
-                price: "From $900",
-                items: ["Your dates", "Your group", "Your route"],
-                desc: "Build your own adventure. Any time between May and October.",
-                color: "from-sand-400 to-sand-500",
-                border: "border-sand-700/20 hover:border-sand-600/40",
+                title: "Grand Expeditions",
+                duration: "14–16 Days",
+                price: "From $2,800",
+                items: ["North & Central Loop", "Altai Tavan Bogd"],
+                desc: "The full Mongolian experience — deep expeditions through the country's rarest landscapes.",
+                color: "from-sky-500 to-indigo-600",
+                border: "border-sky-700/20 hover:border-indigo-600/40",
               },
             ].map((route, idx) => (
               <FadeIn key={idx} delay={idx * 0.1}>
