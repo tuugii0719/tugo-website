@@ -163,24 +163,22 @@ const tours = [
     endMonth: 7,
     endDay: 28,
   },
-  // North & Central Loop runs as a long window — rendered LAST so
-  // specific tours (Altai, Gobi Glimpse) take cell priority where they overlap.
   {
     id: "north-central",
     slug: "north-central",
     title: "North & Central Loop",
     emoji: "🐪",
-    dates: "July 21 – Aug 31",
-    days: 42,
+    dates: "July 21 – 31",
+    days: 11,
     price: "TBD",
     status: "available",
     description:
-      "The long north route — Huuchin Bulgan ger camp, Khuvsgul Lake camping and hiking, the taiga, Zavkhan, and central Mongolia in between. Flexible window, mostly camping and gers with the occasional hotel.",
+      "The northern route — Huuchin Bulgan ger camp, Khuvsgul Lake camping and hiking, the taiga, Zavkhan, and central Mongolia on the way home. Mostly camping and gers with the occasional hotel.",
     highlights: ["Bulgan ger camp", "Khuvsgul Lake", "Taiga", "Zavkhan", "Central steppe"],
     theme: "north-central",
     startMonth: 6,
     startDay: 21,
-    endMonth: 7,
+    endMonth: 6,
     endDay: 31,
   },
 ];
