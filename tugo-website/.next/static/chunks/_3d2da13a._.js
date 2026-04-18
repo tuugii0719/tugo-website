@@ -251,13 +251,13 @@ function WhyTourTugoPage() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: [
-                                            "Running a tour in Mongolia isn't always easy — weather turns, roads disappear, plans bend. I won't pretend otherwise. What I'll promise is that I'll try my absolute best to handle it well for you: reading the weather, keeping the van moving, finding the right family camp, translating the jokes so you're laughing ",
+                                            "Every tour I run is a route I already know and love — trails I've traced many times over, families I already call friends. That's the whole point of this small calendar. And when the weather turns, or the plan bends, or dinner runs three hours long at a ger — that's where the trip becomes the trip. My job on the road is just to keep it smooth: reading the weather, keeping the van moving, picking the right camp, translating the jokes so you're laughing ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
                                                 children: "with"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/why-tour-tugo/page.js",
                                                 lineNumber: 69,
-                                                columnNumber: 356
+                                                columnNumber: 493
                                             }, this),
                                             " everyone."
                                         ]

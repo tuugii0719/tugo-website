@@ -66,7 +66,7 @@ export default function WhyTourTugoPage() {
                 I don&apos;t run TUGO like a business. I run it like hosting cousins from out of town. If you come on one of my trips, I&apos;m going to take care of you — fed, warm, safe, understood — and I&apos;ll be easy to hang out with while I do it. I want you to leave Mongolia with stories and friends, not just a camera roll.
               </p>
               <p>
-                Running a tour in Mongolia isn&apos;t always easy — weather turns, roads disappear, plans bend. I won&apos;t pretend otherwise. What I&apos;ll promise is that I&apos;ll try my absolute best to handle it well for you: reading the weather, keeping the van moving, finding the right family camp, translating the jokes so you&apos;re laughing <em>with</em> everyone.
+                Every tour I run is a route I already know and love — trails I&apos;ve traced many times over, families I already call friends. That&apos;s the whole point of this small calendar. And when the weather turns, or the plan bends, or dinner runs three hours long at a ger — that&apos;s where the trip becomes the trip. My job on the road is just to keep it smooth: reading the weather, keeping the van moving, picking the right camp, translating the jokes so you&apos;re laughing <em>with</em> everyone.
               </p>
             </div>
           </FadeIn>

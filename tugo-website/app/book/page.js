@@ -460,7 +460,7 @@ export default function BookPage() {
               Booking agreements
             </h2>
             <p className="text-sand-500 text-sm leading-relaxed mb-8 italic border-l-2 border-sand-800 pl-4">
-              Summer is short and busy here. The moment your deposit arrives, I lock in costs — guides, permits, domestic flights, family camps, fuel — and most of them don&apos;t come back. It&apos;s a lot to juggle, and I&apos;ll do my absolute best to take care of it all. The policy below just reflects the reality behind that promise.
+              Summer is short and busy here. The moment your deposit arrives, I lock in your spot — guides, permits, domestic flights, family camps, fuel — and most of those costs don&apos;t come back once paid out. The policy below just reflects that, so everything runs smoothly for everyone on the trip.
             </p>
             <dl className="space-y-6">
               {[

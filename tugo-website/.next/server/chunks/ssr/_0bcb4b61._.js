@@ -1209,7 +1209,7 @@ function BookPage() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-sand-500 text-sm leading-relaxed mb-8 italic border-l-2 border-sand-800 pl-4",
-                                children: "Summer is short and busy here. The moment your deposit arrives, I lock in costs — guides, permits, domestic flights, family camps, fuel — and most of them don't come back. It's a lot to juggle, and I'll do my absolute best to take care of it all. The policy below just reflects the reality behind that promise."
+                                children: "Summer is short and busy here. The moment your deposit arrives, I lock in your spot — guides, permits, domestic flights, family camps, fuel — and most of those costs don't come back once paid out. The policy below just reflects that, so everything runs smoothly for everyone on the trip."
                             }, void 0, false, {
                                 fileName: "[project]/app/book/page.js",
                                 lineNumber: 462,
