@@ -43,8 +43,8 @@ const days = [
 ];
 
 const vitals = [
-  { label: "Dates", value: "June 25 – 29, 2026" },
-  { label: "Duration", value: "5–6 days" },
+  { label: "Dates", value: "June 25 – 30, 2026" },
+  { label: "Duration", value: "6 days" },
   { label: "Group size", value: "6–8" },
   { label: "Region", value: "Khan Khentii" },
   { label: "Start / end", value: "Ulaanbaatar" },
@@ -191,7 +191,7 @@ export default function KhagiinKharNuurPage() {
               Saddle up
             </p>
             <h2 className="font-display text-3xl md:text-4xl text-sand-100 mb-4">
-              June 25 – 29, 2026  ·  $1,200
+              June 25 – 30, 2026  ·  $1,200
             </h2>
             <p className="text-sand-300 text-lg mb-8 max-w-xl leading-relaxed">
               Small group (6–8), starting and ending in Ulaanbaatar. Limited horses — reserve early.
