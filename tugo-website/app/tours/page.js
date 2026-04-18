@@ -74,6 +74,24 @@ const tours = [
     endDay: 23,
   },
   {
+    id: "khagiin-khar-nuur",
+    slug: "khagiin-khar-nuur",
+    title: "Horse Trek · Khagiin Khar Nuur",
+    emoji: "🐎",
+    dates: "June 25 – 29",
+    days: 5,
+    price: "TBD",
+    status: "available",
+    description:
+      "Five days on horseback into the Khan Khentii taiga to Khagiin Khar Nuur — a hidden alpine lake reachable only by horse. Two days riding in, a night camped on the shore, two days riding out.",
+    highlights: ["Khan Khentii taiga", "Horseback only", "Lake camp", "Remote"],
+    theme: "khentii",
+    startMonth: 5,
+    startDay: 25,
+    endMonth: 5,
+    endDay: 29,
+  },
+  {
     id: "playtime",
     slug: "playtime",
     title: "Playtime",
@@ -198,6 +216,16 @@ const themeMap = {
     pattern: "terelj",
     short: "Forest Weekend",
   },
+  khentii: {
+    bg: "bg-lime-500/25",
+    bgHover: "group-hover:bg-lime-500/50",
+    border: "border-lime-400/40",
+    text: "text-lime-200",
+    dot: "bg-lime-400",
+    bar: "from-lime-500 to-lime-600",
+    pattern: "horse",
+    short: "Taiga Horse Trek",
+  },
   "southern-gobi": {
     bg: "bg-orange-500/30",
     bgHover: "group-hover:bg-orange-500/55",
@@ -280,6 +308,21 @@ function CellPattern({ type }) {
           <rect x="28" y="40" width="6" height="14" fill="currentColor" opacity="0.3" />
           <rect x="36" y="32" width="6" height="22" fill="currentColor" opacity="0.22" />
           <rect x="44" y="38" width="5" height="16" fill="currentColor" opacity="0.28" />
+        </svg>
+      );
+    case "horse":
+      return (
+        <svg {...props}>
+          <path
+            d="M14 42 Q 18 30, 26 28 L 32 26 L 34 20 L 38 22 L 40 25 Q 46 25, 46 33 L 44 40"
+            stroke="currentColor"
+            strokeWidth="1.1"
+            opacity="0.5"
+            fill="none"
+            strokeLinecap="round"
+          />
+          <path d="M18 42 L 18 48 M 24 40 L 24 47 M 40 42 L 40 48 M 44 42 L 44 48" stroke="currentColor" strokeWidth="0.7" opacity="0.4" strokeLinecap="round" />
+          <path d="M10 52 Q 30 48, 50 52" stroke="currentColor" strokeWidth="0.6" opacity="0.3" fill="none" />
         </svg>
       );
     case "terelj":
@@ -699,7 +742,7 @@ function CalendarSection() {
               Pick Your Month
             </h2>
             <p className="text-sand-400 max-w-xl mx-auto">
-              Nine departures across June, July, and August — weekend escapes, festival meet-ups, and long flagship expeditions. Hover a highlighted day to peek inside. Click to open the tour.
+              Ten departures across June, July, and August — weekend escapes, festival meet-ups, horse treks into the taiga, and long flagship expeditions. Hover a highlighted day to peek inside. Click to open the tour.
             </p>
           </div>
         </FadeIn>
@@ -786,7 +829,7 @@ export default function ToursPage() {
             <p className="text-xs tracking-[0.3em] uppercase text-sand-400 mb-4">2026 SEASON</p>
             <h1 className="font-display text-4xl md:text-6xl text-white mb-4">Your Journey Starts Here</h1>
             <p className="text-sand-300 max-w-xl mx-auto px-6">
-              Three months, nine departures. Pick a date on the calendar and we&apos;ll take you there.
+              Three months, ten departures. Pick a date on the calendar and we&apos;ll take you there.
             </p>
           </motion.div>
         </div>
@@ -797,7 +840,7 @@ export default function ToursPage() {
         <div className="max-w-5xl mx-auto px-6 py-8 flex flex-wrap justify-center gap-8 md:gap-14 text-center">
           {[
             { label: "Season", value: "June – August" },
-            { label: "Departures", value: "9 Scheduled" },
+            { label: "Departures", value: "10 Scheduled" },
             { label: "Group Size", value: "6–8 Max" },
             { label: "Starting From", value: "$950" },
           ].map((stat, i) => (
