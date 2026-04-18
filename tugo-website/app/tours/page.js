@@ -26,7 +26,7 @@ const tours = [
     emoji: "🌲",
     dates: "June 8 – 10",
     days: 3,
-    price: "$300",
+    price: "$350",
     groupSize: "8–16",
     status: "available",
     description:
@@ -45,7 +45,7 @@ const tours = [
     emoji: "🏔️",
     dates: "June 11 – 16",
     days: 6,
-    price: "$1,200",
+    price: "$1,400",
     groupSize: "6–8",
     status: "available",
     description:
@@ -64,7 +64,7 @@ const tours = [
     emoji: "🏜️",
     dates: "June 16 – 23",
     days: 8,
-    price: "$1,000",
+    price: "$1,200",
     groupSize: "4–6",
     status: "available",
     description:
@@ -83,7 +83,7 @@ const tours = [
     emoji: "🐎",
     dates: "June 25 – 30",
     days: 6,
-    price: "$1,200",
+    price: "$1,400",
     groupSize: "6–8",
     status: "available",
     description:
@@ -102,7 +102,7 @@ const tours = [
     emoji: "🦅",
     dates: "July 1 – 6",
     days: 6,
-    price: "$800",
+    price: "$950",
     groupSize: "6–8",
     status: "available",
     description:
@@ -121,7 +121,7 @@ const tours = [
     emoji: "🏇",
     dates: "July 7 – 14",
     days: 8,
-    price: "$1,200",
+    price: "$1,400",
     groupSize: "6–8",
     status: "limited",
     description:
@@ -140,7 +140,7 @@ const tours = [
     emoji: "🌲",
     dates: "July 16 – 18",
     days: 3,
-    price: "$300",
+    price: "$350",
     groupSize: "8–16",
     status: "available",
     description:
@@ -159,7 +159,7 @@ const tours = [
     emoji: "🏔️",
     dates: "Aug 6 – 13",
     days: 8,
-    price: "$1,200",
+    price: "$1,400",
     groupSize: "6–8",
     status: "available",
     description:
@@ -178,7 +178,7 @@ const tours = [
     emoji: "🌅",
     dates: "Aug 18 – 28",
     days: 11,
-    price: "$1,500",
+    price: "$1,800",
     groupSize: "4–6",
     status: "available",
     description:
@@ -197,7 +197,7 @@ const tours = [
     emoji: "🐪",
     dates: "July 21 – 31",
     days: 11,
-    price: "$1,500",
+    price: "$1,800",
     groupSize: "4–6",
     status: "available",
     description:
@@ -858,7 +858,7 @@ export default function ToursPage() {
             { label: "Season", value: "June – August" },
             { label: "Departures", value: "10 Scheduled" },
             { label: "Group Size", value: "4–16" },
-            { label: "Starting From", value: "$300" },
+            { label: "Starting From", value: "$350" },
           ].map((stat, i) => (
             <div key={i}>
               <p className="text-sand-500 text-xs tracking-wider uppercase mb-1">{stat.label}</p>
