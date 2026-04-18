@@ -674,8 +674,23 @@ function Legend({ onHover, onLeave, hoveredId }) {
 function CalendarSection() {
   const [hoveredId, setHoveredId] = useState(null);
 
+  // The hovered tour's month range — used to bump z-index on panels
+  // that are responsible for showing the popover so it paints above
+  // sibling panels (each panel creates its own stacking context via
+  // backdrop-blur, so a popover that extends past the panel edge is
+  // otherwise covered by the next panel).
+  const hoveredTour = tours.find((t) => t.id === hoveredId);
+  const monthHasHovered = (monthIndex) => {
+    if (!hoveredTour) return false;
+    return (
+      hoveredTour.startMonth === monthIndex ||
+      hoveredTour.endMonth === monthIndex ||
+      (hoveredTour.startMonth < monthIndex && hoveredTour.endMonth > monthIndex)
+    );
+  };
+
   return (
-    <section className="relative py-16 md:py-24 overflow-hidden">
+    <section className="relative py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-6">
         <FadeIn>
           <div className="text-center mb-10">
@@ -695,6 +710,7 @@ function CalendarSection() {
           {MONTHS.map((month) => (
             <div
               key={month.index}
+              style={{ zIndex: monthHasHovered(month.index) ? 40 : 1 }}
               className="bg-night-900/30 border border-sand-900/30 rounded-2xl p-5 md:p-6 backdrop-blur-sm relative"
             >
               <MonthCalendar
