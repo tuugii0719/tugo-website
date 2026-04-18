@@ -20,17 +20,18 @@ import { FadeIn } from "@/components/animations/FadeIn";
 //   days where ranges overlap.
 const tours = [
   {
-    id: "terelj-jun-early",
+    id: "terelj-jun",
     slug: "terelj-escape",
     title: "Terelj Escape",
     emoji: "🌲",
     dates: "June 8 – 10",
     days: 3,
-    price: "TBD",
+    price: "$300",
+    groupSize: "8–16",
     status: "available",
     description:
-      "Any age. A gentle weekend in Gorkhi-Terelj — Turtle Rock, alpine meadow rides, and a night in a family ger camp, 90 minutes from the city.",
-    highlights: ["Turtle Rock", "Ger stay", "Steppe ride"],
+      "Any age. A gentle weekend in Gorkhi-Terelj — Turtle Rock, Aryabal Monastery, horseback through alpine meadows, hiking, khorkhog dinner, and a night in a family ger camp.",
+    highlights: ["Turtle Rock", "Aryabal Monastery", "Khorkhog", "Ger stay"],
     theme: "terelj",
     startMonth: 5,
     startDay: 8,
@@ -38,22 +39,23 @@ const tours = [
     endDay: 10,
   },
   {
-    id: "terelj-jun-mid",
-    slug: "terelj-escape",
-    title: "Terelj Escape",
-    emoji: "🌲",
-    dates: "June 12 – 14",
-    days: 3,
-    price: "TBD",
+    id: "altai-jun",
+    slug: "altai-tavan-bogd",
+    title: "Altai Tavan Bogd",
+    emoji: "🏔️",
+    dates: "June 11 – 16",
+    days: 6,
+    price: "$1,200",
+    groupSize: "6–8",
     status: "available",
     description:
-      "Second weekend departure. Same route, same family ger camp — for anyone who missed the first one.",
-    highlights: ["Turtle Rock", "Ger stay", "Steppe ride"],
-    theme: "terelj",
+      "Budget Altai — flight from UB to Ölgii, Khoton Lake, eagle hunter family, horseback to Baga Turgen waterfall, Potanin Glacier, and ancient petroglyphs. Everything included: flight, food, guides, lodging.",
+    highlights: ["UB flight inc.", "Khoton Lake", "Kazakh eagles", "Potanin Glacier"],
+    theme: "altai",
     startMonth: 5,
-    startDay: 12,
+    startDay: 11,
     endMonth: 5,
-    endDay: 14,
+    endDay: 16,
   },
   {
     id: "southern-gobi",
@@ -62,11 +64,12 @@ const tours = [
     emoji: "🏜️",
     dates: "June 16 – 23",
     days: 8,
-    price: "TBD",
+    price: "$1,000",
+    groupSize: "4–6",
     status: "available",
     description:
-      "For young travellers who want to cover ground — Umnugobi, Yoliin Am ice canyon, a night sleeping in the desert, camels at Khongoriin Els, then back through central Mongolia. Tight, adventure-packed, lots of driving.",
-    highlights: ["Yoliin Am", "Desert camp", "Khongoriin Els", "Camels"],
+      "For young travellers who want to cover ground — Umnugobi, Yoliin Am ice canyon, a night in the desert, camels at Khongoriin Els, then central Mongolia on the way back with hot springs, horse riding, and hiking.",
+    highlights: ["Yoliin Am", "Desert camp", "Khongoriin Els", "Hot springs", "Horse riding"],
     theme: "southern-gobi",
     startMonth: 5,
     startDay: 16,
@@ -80,11 +83,12 @@ const tours = [
     emoji: "🐎",
     dates: "June 25 – 29",
     days: 5,
-    price: "TBD",
+    price: "$1,200",
+    groupSize: "6–8",
     status: "available",
     description:
-      "Five days on horseback into the Khan Khentii taiga to Khagiin Khar Nuur — a hidden alpine lake reachable only by horse. Two days riding in, a night camped on the shore, two days riding out.",
-    highlights: ["Khan Khentii taiga", "Horseback only", "Lake camp", "Remote"],
+      "Starting from UB. Horseback into the Khan Khentii taiga to Khagiin Khar Nuur — the Pearl of the Taiga. Ger stays, tent camps, riding through forest and over Khavirga Pass, a night by the alpine lake.",
+    highlights: ["Terelj ger", "Khavirga Pass", "Khagiin Khar Lake", "Chinggis statue"],
     theme: "khentii",
     startMonth: 5,
     startDay: 25,
@@ -98,11 +102,12 @@ const tours = [
     emoji: "🦅",
     dates: "July 1 – 6",
     days: 6,
-    price: "From $950",
+    price: "$800",
+    groupSize: "6–8",
     status: "available",
     description:
-      "Meet young people. Gather the day before Mongolia's biggest music festival, party together, and take a recovery day in the city. Half festival, half fresh-air reset.",
-    highlights: ["Music festival", "Meet-up night", "City recovery"],
+      "Meet young people around Mongolia's biggest music festival. Pre-party the day before, festival together, Terelj day trips if you want, one city recovery day. Tent + water + a burrito a day.",
+    highlights: ["Music festival", "Meet-up night", "Terelj side trips", "City recovery"],
     theme: "playtime",
     startMonth: 6,
     startDay: 1,
@@ -116,11 +121,12 @@ const tours = [
     emoji: "🏇",
     dates: "July 7 – 14",
     days: 8,
-    price: "TBD",
+    price: "$1,200",
+    groupSize: "6–8",
     status: "limited",
     description:
-      "Our chill take on Naadam — a single province in central Mongolia with local village Naadams, Ara festival tastings, Terkhiin Tsagaan Nuur, Khorgo volcano, Tsenkher hot springs, nomadic family stays, hikes, and hands-on milking, cooking, and herding.",
-    highlights: ["Terkh Lake", "Khorgo volcano", "Hot springs", "Nomad stays"],
+      "Chill take on Naadam with deeper cultural immersion — local village Naadams, horse racing, wrestling, holiday foods and costumes, Terkhiin Tsagaan Nuur, Khorgo volcano, Tsenkher hot springs, nomadic family stays.",
+    highlights: ["Horse racing", "Wrestling", "Terkh Lake", "Khorgo", "Hot springs"],
     theme: "naadam",
     startMonth: 6,
     startDay: 7,
@@ -134,11 +140,12 @@ const tours = [
     emoji: "🌲",
     dates: "July 16 – 18",
     days: 3,
-    price: "TBD",
+    price: "$300",
+    groupSize: "8–16",
     status: "available",
     description:
-      "Third Terelj weekend, right after Naadam clears out. Same gentle route — Turtle Rock, alpine rides, family ger camp.",
-    highlights: ["Turtle Rock", "Ger stay", "Steppe ride"],
+      "Second Terelj departure, right after Naadam. Same route — Turtle Rock, Aryabal Monastery, horseback, hiking, khorkhog, family ger camp.",
+    highlights: ["Turtle Rock", "Aryabal Monastery", "Khorkhog", "Ger stay"],
     theme: "terelj",
     startMonth: 6,
     startDay: 16,
@@ -146,17 +153,18 @@ const tours = [
     endDay: 18,
   },
   {
-    id: "altai-tavan-bogd",
+    id: "altai-aug",
     slug: "altai-tavan-bogd",
     title: "Altai Tavan Bogd",
     emoji: "🏔️",
     dates: "Aug 6 – 13",
     days: 8,
-    price: "TBD",
+    price: "$1,200",
+    groupSize: "6–8",
     status: "available",
     description:
-      "Premium west — a flight in to Ölgii, the Five Holy Peaks, Potanin Glacier, and Kazakh eagle hunters in their summer pastures. Our rarest tour.",
-    highlights: ["Tavan Bogd peaks", "Potanin Glacier", "Kazakh eagles"],
+      "Second Altai departure — Ölgii flight, Khoton Lake, eagle hunters, horseback to waterfalls, Potanin Glacier, petroglyphs. More time than the June trip for deeper exploration.",
+    highlights: ["Khoton Lake", "Kazakh eagles", "Potanin Glacier", "Petroglyphs"],
     theme: "altai",
     startMonth: 7,
     startDay: 6,
@@ -170,11 +178,12 @@ const tours = [
     emoji: "🌅",
     dates: "Aug 18 – 28",
     days: 11,
-    price: "TBD",
+    price: "$1,500",
+    groupSize: "4–6",
     status: "available",
     description:
-      "The iconic southern Gobi loop, extended through central Mongolia — Umnugobi, Yoliin Am, desert camping, camels at Khongoriin Els, then steppe and hot-spring country on the way back.",
-    highlights: ["Yoliin Am", "Desert camp", "Khongoriin Els", "Central steppe"],
+      "The iconic southern Gobi loop, extended through central Mongolia — Umnugobi, Yoliin Am, desert camping, camels at Khongoriin Els, hot springs, horse riding, hiking on the return.",
+    highlights: ["Yoliin Am", "Desert camp", "Khongoriin Els", "Hot springs", "Horse riding"],
     theme: "gobi",
     startMonth: 7,
     startDay: 18,
@@ -188,11 +197,12 @@ const tours = [
     emoji: "🐪",
     dates: "July 21 – 31",
     days: 11,
-    price: "TBD",
+    price: "$1,500",
+    groupSize: "4–6",
     status: "available",
     description:
-      "The northern route — Huuchin Bulgan ger camp, Khuvsgul Lake camping and hiking, the taiga, Zavkhan, and central Mongolia on the way home. Mostly camping and gers with the occasional hotel.",
-    highlights: ["Bulgan ger camp", "Khuvsgul Lake", "Taiga", "Zavkhan", "Central steppe"],
+      "The northern route — Huuchin Bulgan ger camp, Khuvsgul Lake camping and hiking, the taiga, Zavkhan, hot springs, many lakes, a horse-riding day, and central Mongolia on the way home.",
+    highlights: ["Bulgan ger camp", "Khuvsgul Lake", "Taiga", "Hot springs", "Horse day"],
     theme: "north-central",
     startMonth: 6,
     startDay: 21,
@@ -549,10 +559,16 @@ function TourPopover({ tour }) {
             <span className="mr-2">{tour.emoji}</span>
             {tour.title}
           </h3>
-          <div className="flex items-center gap-2 mb-3">
+          <div className="flex items-center gap-2 mb-3 flex-wrap">
             <span className={`text-xs font-medium ${theme.text}`}>{tour.dates}</span>
             <span className="text-sand-700 text-xs">·</span>
             <span className="text-sand-500 text-xs">{tour.days} days</span>
+            {tour.groupSize && (
+              <>
+                <span className="text-sand-700 text-xs">·</span>
+                <span className="text-sand-500 text-xs">{tour.groupSize} pax</span>
+              </>
+            )}
           </div>
           <p className="text-sand-400 text-[13px] leading-relaxed mb-3">
             {tour.description}
@@ -841,8 +857,8 @@ export default function ToursPage() {
           {[
             { label: "Season", value: "June – August" },
             { label: "Departures", value: "10 Scheduled" },
-            { label: "Group Size", value: "6–8 Max" },
-            { label: "Starting From", value: "$950" },
+            { label: "Group Size", value: "4–16" },
+            { label: "Starting From", value: "$300" },
           ].map((stat, i) => (
             <div key={i}>
               <p className="text-sand-500 text-xs tracking-wider uppercase mb-1">{stat.label}</p>

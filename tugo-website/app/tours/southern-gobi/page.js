@@ -18,8 +18,11 @@ export default function SouthernGobiPage() {
         <h1 className="font-display text-4xl md:text-5xl text-sand-100 mb-4">
           Southern Gobi + Central
         </h1>
+        <p className="text-sand-400 leading-relaxed mb-4">
+          8 days · $1,000 · 4–6 pax
+        </p>
         <p className="text-sand-400 leading-relaxed mb-8">
-          Full tour details coming soon. For young travellers who want to cover ground — Umnugobi, Yoliin Am, a night in the desert, camels at Khongoriin Els, then back through central Mongolia. Tight, adventure-packed, lots of driving.
+          For young travellers who want to cover ground — Umnugobi, Yoliin Am ice canyon, a night in the desert, camels at Khongoriin Els, then central Mongolia on the way back: hot springs, horse riding, hiking. Tight, adventure-packed, a lot of driving.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

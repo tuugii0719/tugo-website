@@ -18,8 +18,11 @@ export default function PlaytimePage() {
         <h1 className="font-display text-4xl md:text-5xl text-sand-100 mb-4">
           Playtime
         </h1>
+        <p className="text-sand-400 leading-relaxed mb-4">
+          6 days · $800 · 6–8 pax
+        </p>
         <p className="text-sand-400 leading-relaxed mb-8">
-          Full tour details coming soon. A playful intro to nomad life — eagle handlers, archery lessons, horseback across the Khan-Khentii steppe, traditional games, and airag under the summer sky.
+          Meet young people around Mongolia&apos;s biggest music festival. Pre-party day the day before, festival together, optional Terelj day trips in between, one city recovery day. Tent + water + a burrito a day — simple, social, and cheap.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

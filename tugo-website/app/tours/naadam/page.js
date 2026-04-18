@@ -18,8 +18,11 @@ export default function NaadamPage() {
         <h1 className="font-display text-4xl md:text-5xl text-sand-100 mb-4">
           Naadam Festival
         </h1>
+        <p className="text-sand-400 leading-relaxed mb-4">
+          8 days · $1,200 · 6–8 pax
+        </p>
         <p className="text-sand-400 leading-relaxed mb-8">
-          Full tour details coming soon. Our chill take on Naadam — a single province in central Mongolia: Ara festival tastings, Terkhiin Tsagaan Nuur, Khorgo volcano, Tsenkher hot springs, local Naadams, nomadic family stays, hikes, and hands-on milking, cooking, and herding.
+          Chill take on Naadam with deeper cultural immersion — horse races, wrestling, holiday foods and traditional costumes, local village Naadams, Terkhiin Tsagaan Nuur, Khorgo volcano, Tsenkher hot springs, nomadic family stays.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

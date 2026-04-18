@@ -18,8 +18,11 @@ export default function GobiGlimpsePage() {
         <h1 className="font-display text-4xl md:text-5xl text-sand-100 mb-4">
           Gobi Glimpse + Central
         </h1>
+        <p className="text-sand-400 leading-relaxed mb-4">
+          11 days · $1,500 · 4–6 pax
+        </p>
         <p className="text-sand-400 leading-relaxed mb-8">
-          Full tour details coming soon. The iconic southern Gobi loop, extended through central Mongolia — Umnugobi, Yoliin Am, desert camping, camels at Khongoriin Els, then steppe and hot-spring country on the way back.
+          The iconic southern Gobi loop, extended through central Mongolia — Umnugobi, Yoliin Am, desert camping, camels at Khongoriin Els, then hot springs, horse riding, and hiking in central on the way back.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
