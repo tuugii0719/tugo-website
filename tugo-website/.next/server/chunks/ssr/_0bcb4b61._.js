@@ -964,7 +964,7 @@ function BookPage() {
                                                                 name: "agreeInsurance",
                                                                 checked: formData.agreeInsurance,
                                                                 onChange: onField,
-                                                                children: "I will arrange my own travel insurance (covering medical, evacuation, and trip cancellation) before arrival."
+                                                                children: "I'll travel with insurance covering medical, evacuation, and trip cancellation — and if I don't have a plan yet, I'll let TUGO know so we can sort one together."
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/book/page.js",
                                                                 lineNumber: 351,
@@ -1209,7 +1209,7 @@ function BookPage() {
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-sand-500 text-sm leading-relaxed mb-8 italic border-l-2 border-sand-800 pl-4",
-                                children: "Summer is a short, busy season in Mongolia. The moment your deposit arrives, we lock in costs — guides, permits, domestic flights, family camps, gear, fuel. Most of those can't come back to us. The policy below reflects that reality."
+                                children: "Summer is short and busy here. The moment your deposit arrives, I lock in costs — guides, permits, domestic flights, family camps, fuel — and most of them don't come back. It's a lot to juggle, and I'll do my absolute best to take care of it all. The policy below just reflects the reality behind that promise."
                             }, void 0, false, {
                                 fileName: "[project]/app/book/page.js",
                                 lineNumber: 462,
@@ -1231,12 +1231,12 @@ function BookPage() {
                                         d: "Altai departures include a round-trip flight to Ölgii that's non-refundable once booked (typically 45 days before departure). If you cancel after flight ticketing, you forfeit that portion in addition to the schedule above."
                                     },
                                     {
-                                        t: "If we have to cancel",
-                                        d: "Minimum viable group is 4. If we don't hit that two weeks out, we'll offer you a full refund OR a discounted seat on the closest alternative departure. Weather / safety cancellations in-country: we'll re-route rather than refund when possible."
+                                        t: "We&apos;re moving — guaranteed",
+                                        d: "Every departure on the calendar runs. People are already lining up. If something unexpected happens in-country (weather, road closure), we re-route — we don&apos;t cancel."
                                     },
                                     {
-                                        t: "Insurance — required",
-                                        d: "You must arrive with travel insurance covering medical, emergency evacuation, and trip cancellation. We can recommend providers. Without proof of insurance, we can't take you out on tour — no exceptions."
+                                        t: "Travel insurance",
+                                        d: "You&apos;ll want travel insurance covering medical, emergency evacuation, and trip cancellation. If you don&apos;t have a provider yet, tell me — I&apos;ll help you find a plan that works for your passport and tour. No stress."
                                     },
                                     {
                                         t: "Physical & pace",

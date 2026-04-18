@@ -38,7 +38,7 @@ export default function WhyTourTugoPage() {
                 <span className="text-sand-300 italic">It&apos;s me, showing you around.</span>
               </h1>
               <p className="text-sand-200 text-lg md:text-xl max-w-xl leading-relaxed">
-                I&apos;m a Mongolian guide, born in the saddle, fluent in the road. This is how I like to travel, and I&apos;m inviting you along.
+                I&apos;m a Mongolian guide who fell hard for the country early — the quiet, the wind, the way a day feels out there. This is how I like to travel, and I&apos;m inviting you along.
               </p>
             </motion.div>
           </div>
@@ -63,10 +63,10 @@ export default function WhyTourTugoPage() {
                 I grew up in Mongolia. Left for a while to see the world. Came back because it&apos;s still the best thing I know — the most open country, the kindest hosts, the quietest nights.
               </p>
               <p>
-                I don&apos;t run TUGO like a business. I run it like hosting cousins from out of town. If you come on one of my trips, I&apos;m going to take care of you — fed, warm, safe, understood — and I&apos;m going to be easy to hang out with while I do it. I want you to leave Mongolia with stories and friends, not just a camera roll.
+                I don&apos;t run TUGO like a business. I run it like hosting cousins from out of town. If you come on one of my trips, I&apos;m going to take care of you — fed, warm, safe, understood — and I&apos;ll be easy to hang out with while I do it. I want you to leave Mongolia with stories and friends, not just a camera roll.
               </p>
               <p>
-                On the road I&apos;m the one reading the weather, keeping the van moving, finding the right family camp, translating the jokes so you&apos;re laughing <em>with</em> everyone instead of at a gap. It&apos;s easy work for me. I know the shortcuts, the herders worth calling, the springs that actually have water. You&apos;re in good hands.
+                Running a tour in Mongolia isn&apos;t always easy — weather turns, roads disappear, plans bend. I won&apos;t pretend otherwise. What I&apos;ll promise is that I&apos;ll try my absolute best to handle it well for you: reading the weather, keeping the van moving, finding the right family camp, translating the jokes so you&apos;re laughing <em>with</em> everyone.
               </p>
             </div>
           </FadeIn>
@@ -97,7 +97,7 @@ export default function WhyTourTugoPage() {
                 },
                 {
                   t: "Middle",
-                  body: "Driving, riding, walking, talking. If a herder waves us down, we stop. If the light is too good to leave, we stay. If someone&apos;s quiet, I notice. The plan bends around the day.",
+                  body: "Driving, riding, walking, talking. If a herder waves us down, we stop. If the light is too good to leave, we stay. The plan bends around the day.",
                 },
                 {
                   t: "Evenings",
@@ -171,16 +171,16 @@ export default function WhyTourTugoPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
               {[
                 {
-                  t: "Fluent in three languages",
-                  d: "Mongolian, English, and the nomadic dialect of your host family. No awkward silences at the ger.",
+                  t: "Mongolian and English",
+                  d: "I translate both ways — the words and the meaning behind them. No awkward silences at the ger table.",
                 },
                 {
-                  t: "Every road, every family",
-                  d: "I know the shortcuts, the camps worth staying at, the herders with the best horses, the springs that actually have water.",
+                  t: "The routes I know",
+                  d: "Years of going up and down these roads means I have people I trust all over the country — family camps, drivers, herders — and I can lean on them when it matters.",
                 },
                 {
-                  t: "Problem-solving, always on",
-                  d: "Stuck van, bad weather, altitude headache, missed flight, dietary emergency — I&apos;ve seen it and I&apos;ve fixed it.",
+                  t: "Problem-solving, calmly",
+                  d: "Stuck van, bad weather, missed flight, altitude headache — things happen out there. My job is to keep a level head and sort it without adding stress to your trip.",
                 },
                 {
                   t: "The cultural bridge",
@@ -188,7 +188,7 @@ export default function WhyTourTugoPage() {
                 },
                 {
                   t: "Safety-first, quietly",
-                  d: "Satellite comms on remote tours. First-aid trained. Know the evac options. I won&apos;t scare you with it — I&apos;ll just have it.",
+                  d: "Satellite comms on remote tours. First-aid trained. I know the evac options. I won&apos;t scare you with it — I&apos;ll just have it.",
                 },
                 {
                   t: "Flexible on the day",

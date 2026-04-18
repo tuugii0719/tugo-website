@@ -182,7 +182,7 @@ function WhyTourTugoPage() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-sand-200 text-lg md:text-xl max-w-xl leading-relaxed",
-                                        children: "I'm a Mongolian guide, born in the saddle, fluent in the road. This is how I like to travel, and I'm inviting you along."
+                                        children: "I'm a Mongolian guide who fell hard for the country early — the quiet, the wind, the way a day feels out there. This is how I like to travel, and I'm inviting you along."
                                     }, void 0, false, {
                                         fileName: "[project]/app/why-tour-tugo/page.js",
                                         lineNumber: 40,
@@ -243,7 +243,7 @@ function WhyTourTugoPage() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        children: "I don't run TUGO like a business. I run it like hosting cousins from out of town. If you come on one of my trips, I'm going to take care of you — fed, warm, safe, understood — and I'm going to be easy to hang out with while I do it. I want you to leave Mongolia with stories and friends, not just a camera roll."
+                                        children: "I don't run TUGO like a business. I run it like hosting cousins from out of town. If you come on one of my trips, I'm going to take care of you — fed, warm, safe, understood — and I'll be easy to hang out with while I do it. I want you to leave Mongolia with stories and friends, not just a camera roll."
                                     }, void 0, false, {
                                         fileName: "[project]/app/why-tour-tugo/page.js",
                                         lineNumber: 65,
@@ -251,15 +251,15 @@ function WhyTourTugoPage() {
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: [
-                                            "On the road I'm the one reading the weather, keeping the van moving, finding the right family camp, translating the jokes so you're laughing ",
+                                            "Running a tour in Mongolia isn't always easy — weather turns, roads disappear, plans bend. I won't pretend otherwise. What I'll promise is that I'll try my absolute best to handle it well for you: reading the weather, keeping the van moving, finding the right family camp, translating the jokes so you're laughing ",
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
                                                 children: "with"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/why-tour-tugo/page.js",
                                                 lineNumber: 69,
-                                                columnNumber: 168
+                                                columnNumber: 356
                                             }, this),
-                                            " everyone instead of at a gap. It's easy work for me. I know the shortcuts, the herders worth calling, the springs that actually have water. You're in good hands."
+                                            " everyone."
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/why-tour-tugo/page.js",
@@ -338,7 +338,7 @@ function WhyTourTugoPage() {
                                     },
                                     {
                                         t: "Middle",
-                                        body: "Driving, riding, walking, talking. If a herder waves us down, we stop. If the light is too good to leave, we stay. If someone&apos;s quiet, I notice. The plan bends around the day."
+                                        body: "Driving, riding, walking, talking. If a herder waves us down, we stop. If the light is too good to leave, we stay. The plan bends around the day."
                                     },
                                     {
                                         t: "Evenings",
@@ -528,16 +528,16 @@ function WhyTourTugoPage() {
                                 className: "grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto",
                                 children: [
                                     {
-                                        t: "Fluent in three languages",
-                                        d: "Mongolian, English, and the nomadic dialect of your host family. No awkward silences at the ger."
+                                        t: "Mongolian and English",
+                                        d: "I translate both ways — the words and the meaning behind them. No awkward silences at the ger table."
                                     },
                                     {
-                                        t: "Every road, every family",
-                                        d: "I know the shortcuts, the camps worth staying at, the herders with the best horses, the springs that actually have water."
+                                        t: "The routes I know",
+                                        d: "Years of going up and down these roads means I have people I trust all over the country — family camps, drivers, herders — and I can lean on them when it matters."
                                     },
                                     {
-                                        t: "Problem-solving, always on",
-                                        d: "Stuck van, bad weather, altitude headache, missed flight, dietary emergency — I&apos;ve seen it and I&apos;ve fixed it."
+                                        t: "Problem-solving, calmly",
+                                        d: "Stuck van, bad weather, missed flight, altitude headache — things happen out there. My job is to keep a level head and sort it without adding stress to your trip."
                                     },
                                     {
                                         t: "The cultural bridge",
@@ -545,7 +545,7 @@ function WhyTourTugoPage() {
                                     },
                                     {
                                         t: "Safety-first, quietly",
-                                        d: "Satellite comms on remote tours. First-aid trained. Know the evac options. I won&apos;t scare you with it — I&apos;ll just have it."
+                                        d: "Satellite comms on remote tours. First-aid trained. I know the evac options. I won&apos;t scare you with it — I&apos;ll just have it."
                                     },
                                     {
                                         t: "Flexible on the day",
