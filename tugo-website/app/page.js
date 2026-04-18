@@ -224,10 +224,10 @@ function MongoliaRevealSection() {
           </p>
 
           <Link
-            href="/why-mongolia"
+            href="/why-tour-tugo"
             className="text-sand-400 hover:text-sand-200 text-sm tracking-wider uppercase inline-block transition-colors duration-300"
           >
-            Discover Why Mongolia →
+            Why tour with TUGO →
           </Link>
         </FadeIn>
       </div>

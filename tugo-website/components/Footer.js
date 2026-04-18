@@ -20,7 +20,7 @@ export default function Footer() {
               {[
                 { href: "/about", label: "About" },
                 { href: "/tours", label: "Tours" },
-                { href: "/why-mongolia", label: "Why Mongolia" },
+                { href: "/why-tour-tugo", label: "Why TUGO" },
                 { href: "/book", label: "Book Now" },
               ].map((link) => (
                 <Link

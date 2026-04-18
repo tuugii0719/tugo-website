@@ -2,5 +2,6 @@
   "/book/page": "app/book/page.js",
   "/page": "app/page.js",
   "/tours/page": "app/tours/page.js",
-  "/why-mongolia/page": "app/why-mongolia/page.js"
+  "/why-mongolia/page": "app/why-mongolia/page.js",
+  "/why-tour-tugo/page": "app/why-tour-tugo/page.js"
 }

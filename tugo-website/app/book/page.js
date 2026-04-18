@@ -339,7 +339,7 @@ export default function BookPage() {
                         checked={formData.agreeTerms}
                         onChange={onField}
                       >
-                        I&apos;ve read the <button type="button" onClick={() => document.getElementById("agreements")?.scrollIntoView({ behavior: "smooth" })} className="text-sand-300 underline underline-offset-4">booking terms</button> (20% deposit to confirm, balance 30 days before, cancellation policy below).
+                        I&apos;ve read the <button type="button" onClick={() => document.getElementById("agreements")?.scrollIntoView({ behavior: "smooth" })} className="text-sand-300 underline underline-offset-4">booking terms</button> — 30% deposit to confirm, balance 45 days before departure, cancellation schedule applies.
                       </Checkbox>
                       <Checkbox
                         name="agreePace"
@@ -459,31 +459,42 @@ export default function BookPage() {
             <h2 className="font-display text-3xl md:text-4xl text-sand-100 mb-10 text-center">
               Booking agreements
             </h2>
+            <p className="text-sand-500 text-sm leading-relaxed mb-8 italic border-l-2 border-sand-800 pl-4">
+              Summer is a short, busy season in Mongolia. The moment your deposit arrives, we lock in costs — guides, permits, domestic flights, family camps, gear, fuel. Most of those can&apos;t come back to us. The policy below reflects that reality.
+            </p>
             <dl className="space-y-6">
               {[
                 {
                   t: "Deposit & payment",
-                  d: "20% deposit confirms your spot. The remaining balance is due 30 days before departure. We accept bank transfer or card (card adds a 3% processing fee).",
+                  d: "A 30% deposit confirms your spot. The remaining balance is due 45 days before departure. We accept bank transfer (preferred — zero fees) or card (adds 3% processing). Late balances (inside 45 days) risk losing your spot.",
                 },
                 {
-                  t: "Cancellation",
-                  d: "60+ days before departure: full refund minus $50 admin. 30–59 days: 50% refund. Under 30 days: non-refundable, but we'll try to find you a replacement spot or a credit for next season.",
+                  t: "Cancellation & refunds",
+                  d: "90+ days before departure: full refund minus a $100 admin fee. 60–89 days: 50% refund. 30–59 days: 25% refund OR full credit toward any 2027 departure (your choice). Inside 30 days: non-refundable — we've paid for your seat by then. No partial refunds for unused days, late arrivals, or early departures.",
                 },
                 {
-                  t: "Insurance",
-                  d: "You must have travel insurance covering medical, emergency evacuation, and trip cancellation. We can recommend providers — ask.",
+                  t: "Non-refundable costs",
+                  d: "Altai departures include a round-trip flight to Ölgii that's non-refundable once booked (typically 45 days before departure). If you cancel after flight ticketing, you forfeit that portion in addition to the schedule above.",
+                },
+                {
+                  t: "If we have to cancel",
+                  d: "Minimum viable group is 4. If we don't hit that two weeks out, we'll offer you a full refund OR a discounted seat on the closest alternative departure. Weather / safety cancellations in-country: we'll re-route rather than refund when possible.",
+                },
+                {
+                  t: "Insurance — required",
+                  d: "You must arrive with travel insurance covering medical, emergency evacuation, and trip cancellation. We can recommend providers. Without proof of insurance, we can't take you out on tour — no exceptions.",
                 },
                 {
                   t: "Physical & pace",
-                  d: "These are small-group adventures, not luxury. Expect long drive days, camping, basic facilities, altitude up to 3,000m on Altai, and variable weather. Let us know about any health conditions up front so we can plan with you.",
+                  d: "Small-group adventure, not luxury. Long drive days, camping nights, basic facilities, altitudes up to 3,000 m on Altai, weather that changes hourly. Flag any health conditions when you apply so we can plan with you.",
                 },
                 {
                   t: "Liability",
-                  d: "You're responsible for your own safety — we take every reasonable precaution and hire experienced local guides, but adventure travel carries inherent risk. Signing the booking form acknowledges this.",
+                  d: "You are responsible for your own safety. We take every reasonable precaution and hire experienced local guides, but adventure travel carries inherent risk. Submitting the booking form acknowledges this.",
                 },
                 {
                   t: "Code of conduct",
-                  d: "Respect the land, the animals, the hosts. No single-use plastics on camp nights. No drones without checking first. Photography of people — always ask. We book families and camps that we want to be welcomed back to.",
+                  d: "Respect the land, the animals, the hosts. Leave every camp cleaner than you found it. No single-use plastics on camp nights. No drones without checking first. Photography of people — always ask. We book families and camps we want to be welcomed back to.",
                 },
               ].map((row) => (
                 <div key={row.t}>

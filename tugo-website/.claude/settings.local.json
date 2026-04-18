@@ -4,7 +4,23 @@
       "Read(//usr/local/bin/**)",
       "Read(//Users/2go/**)",
       "mcp__Claude_Preview__preview_start",
-      "Bash(echo $PATH)"
+      "Bash(echo $PATH)",
+      "Bash(export PATH=\"/usr/local/bin:$PATH\")",
+      "Bash(rm -rf .next)",
+      "Bash(npm run:*)",
+      "Bash(export PATH=\"/usr/local/bin:/opt/homebrew/bin:$PATH\")",
+      "Bash(brew list:*)",
+      "Bash(brew install:*)",
+      "Bash(ssh -T git@github.com)",
+      "Bash(mkdir -p ~/.ssh)",
+      "Bash(ssh-keyscan github.com)",
+      "Bash(~/.ssh/known_hosts)",
+      "WebSearch",
+      "Bash(sips -r 90 '/Users/2go/Documents/Claude/Projects/tugo web/tugo-website/public/images/tours/north-central/DSC02481.jpg' --out '/Users/2go/Documents/Claude/Projects/tugo web/tugo-website/public/images/tours/north-central/DSC02481.jpg')",
+      "Bash(sips -r 180 '/Users/2go/Documents/Claude/Projects/tugo web/tugo-website/public/images/tours/north-central/DSC02481.jpg' --out '/Users/2go/Documents/Claude/Projects/tugo web/tugo-website/public/images/tours/north-central/DSC02481.jpg')",
+      "Bash(ffmpeg -version)",
+      "Bash(grep -n 'price: \"\\\\$' \"/Users/2go/Documents/Claude/Projects/tugo web/tugo-website/app/tours/page.js\")",
+      "Bash(python3)"
     ]
   }
 }

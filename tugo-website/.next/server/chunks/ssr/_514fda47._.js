@@ -101,8 +101,8 @@ function Footer() {
                                             label: "Tours"
                                         },
                                         {
-                                            href: "/why-mongolia",
-                                            label: "Why Mongolia"
+                                            href: "/why-tour-tugo",
+                                            label: "Why TUGO"
                                         },
                                         {
                                             href: "/book",
