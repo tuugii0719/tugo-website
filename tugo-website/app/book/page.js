@@ -15,15 +15,16 @@ import { FadeIn } from "@/components/animations/FadeIn";
 const PAIR_DISCOUNT = 0.15; // 15% off per person when booking a pair
 
 const tourOptions = [
-  { id: "terelj-jun",        title: "Terelj Escape",              dates: "Jun 8 – 10",   days: 3,  price: 350,   emoji: "🌲" },
-  { id: "altai-jun",         title: "Altai Tavan Bogd",           dates: "Jun 11 – 16",  days: 6,  price: 1400,  emoji: "🏔️" },
+  { id: "terelj-jun",        title: "Terelj Escape",              dates: "Jun 1 – 3",    days: 3,  price: 350,   emoji: "🌲" },
+  { id: "altai-jun",         title: "Altai Tavan Bogd",           dates: "Jun 8 – 13",   days: 6,  price: 1400,  emoji: "🏔️" },
   { id: "southern-gobi",     title: "Southern Gobi + Central",    dates: "Jun 16 – 23",  days: 8,  price: 1200,  emoji: "🏜️" },
   { id: "khagiin-khar-nuur", title: "Horse Trek · Khagiin Khar",  dates: "Jun 25 – 30",  days: 6,  price: 1400,  emoji: "🐎" },
-  { id: "playtime",          title: "Playtime",                   dates: "Jul 1 – 6",    days: 6,  price: 950,   emoji: "🦅" },
-  { id: "naadam",            title: "Naadam Festival",            dates: "Jul 7 – 14",   days: 8,  price: 1400,  emoji: "🏇" },
+  { id: "playtime",          title: "Playtime",                   dates: "Jul 1 – 5",    days: 5,  price: 750,   emoji: "🦅" },
+  { id: "naadam",            title: "Naadam Festival",            dates: "Jul 8 – 13",   days: 6,  price: 1200,  emoji: "🏇" },
   { id: "terelj-jul",        title: "Terelj Escape",              dates: "Jul 16 – 18",  days: 3,  price: 350,   emoji: "🌲" },
   { id: "north-central",     title: "North & Central Loop",       dates: "Jul 21 – 31",  days: 11, price: 1800,  emoji: "🐪" },
-  { id: "altai-aug",         title: "Altai Tavan Bogd",           dates: "Aug 6 – 13",   days: 8,  price: 1400,  emoji: "🏔️" },
+  { id: "altai-aug",         title: "Altai Tavan Bogd",           dates: "Aug 3 – 8",    days: 6,  price: 1400,  emoji: "🏔️" },
+  { id: "terelj-aug",        title: "Terelj Escape",              dates: "Aug 11 – 13",  days: 3,  price: 350,   emoji: "🌲" },
   { id: "gobi-glimpse",      title: "Gobi Glimpse + Central",     dates: "Aug 18 – 28",  days: 11, price: 1800,  emoji: "🌅" },
 ];
 
@@ -524,6 +525,10 @@ export default function BookPage() {
                 {
                   q: "When should I book flights?",
                   a: "After we confirm your spot, not before. International flights to Ulaanbaatar go through Seoul, Istanbul, Beijing, or Frankfurt. Summer 2026 fills up — aim to book 2–4 months out.",
+                },
+                {
+                  q: "Where do I stay in Ulaanbaatar before or after the tour?",
+                  a: "Up to you — hotels and hostels in UB are easy to book. But if you want something warmer, I can hook you up with a local family to host you in their home. Honest price, homemade food, real people. Tell me when you apply if that sounds good.",
                 },
                 {
                   q: "What should I pack?",

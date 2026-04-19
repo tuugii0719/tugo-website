@@ -4,8 +4,8 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const departures = [
-  { label: "June departure", dates: "June 11 – 16, 2026", days: 6 },
-  { label: "August departure", dates: "Aug 6 – 13, 2026", days: 8 },
+  { label: "June departure", dates: "June 8 – 13, 2026", days: 6 },
+  { label: "August departure", dates: "Aug 3 – 8, 2026", days: 6 },
 ];
 
 const days = [
@@ -36,12 +36,12 @@ const days = [
 ];
 
 const vitals = [
-  { label: "Duration", value: "6–8 days" },
+  { label: "Duration", value: "6 days" },
   { label: "Departures", value: "2 in 2026" },
   { label: "Group size", value: "6–8" },
   { label: "Region", value: "Western Mongolia" },
   { label: "Start / end", value: "Ulaanbaatar" },
-  { label: "Price", value: "$1,200" },
+  { label: "Price", value: "$1,400" },
 ];
 
 const included = [
@@ -236,6 +236,29 @@ export default function AltaiTavanBogdPage() {
         </div>
       </section>
 
+      {/* CO-HOST */}
+      <section className="pb-20 md:pb-28">
+        <div className="max-w-4xl mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="rounded-2xl border border-indigo-800/30 bg-indigo-900/10 p-8 md:p-10"
+          >
+            <p className="text-indigo-300 text-xs tracking-[0.3em] uppercase mb-3">
+              Co-host on this tour
+            </p>
+            <h2 className="font-display text-2xl md:text-3xl text-sand-100 mb-4">
+              A local Altai guide joins the group.
+            </h2>
+            <p className="text-sand-400 leading-relaxed">
+              The Altai is its own world — Kazakh instead of Khalkh, eagle-hunter culture, mountains above 4,000 m. Tugi travels with the group from UB, but once we&apos;re in Ölgii a local co-host joins us: someone with years of direct experience in these peaks, family ties to the eagle hunters, and fluent Kazakh. You get the warmth of a personal tour AND the depth of someone who grew up in this specific landscape.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="pb-24 md:pb-32">
         <div className="max-w-4xl mx-auto px-6">
@@ -250,10 +273,10 @@ export default function AltaiTavanBogdPage() {
               Pick your week
             </p>
             <h2 className="font-display text-3xl md:text-4xl text-sand-100 mb-4">
-              $1,200 per person
+              $1,400 per person
             </h2>
             <p className="text-sand-300 text-lg mb-8 max-w-xl leading-relaxed">
-              Two departures in 2026 — June 11–16 or Aug 6–13. Small groups of 6–8. Flight included.
+              Two departures in 2026 — June 8–13 or Aug 3–8. Small groups of 6–8. Flight included.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link

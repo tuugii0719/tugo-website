@@ -24,38 +24,38 @@ const tours = [
     slug: "terelj-escape",
     title: "Terelj Escape",
     emoji: "🌲",
-    dates: "June 8 – 10",
+    dates: "June 1 – 3",
     days: 3,
     price: "$350",
     groupSize: "8–16",
     status: "available",
     description:
-      "Any age. A gentle weekend in Gorkhi-Terelj — Turtle Rock, Aryabal Monastery, horseback through alpine meadows, hiking, khorkhog dinner, and a night in a family ger camp.",
+      "Any age. Season opener. Gorkhi-Terelj weekend — Turtle Rock, Aryabal Monastery, horseback through alpine meadows, hiking, khorkhog, and a night in a family ger camp.",
     highlights: ["Turtle Rock", "Aryabal Monastery", "Khorkhog", "Ger stay"],
     theme: "terelj",
     startMonth: 5,
-    startDay: 8,
+    startDay: 1,
     endMonth: 5,
-    endDay: 10,
+    endDay: 3,
   },
   {
     id: "altai-jun",
     slug: "altai-tavan-bogd",
     title: "Altai Tavan Bogd",
     emoji: "🏔️",
-    dates: "June 11 – 16",
+    dates: "June 8 – 13",
     days: 6,
     price: "$1,400",
     groupSize: "6–8",
     status: "available",
     description:
-      "Budget Altai — flight from UB to Ölgii, Khoton Lake, eagle hunter family, horseback to Baga Turgen waterfall, Potanin Glacier, and ancient petroglyphs. Everything included: flight, food, guides, lodging.",
+      "Budget Altai — flight from UB to Ölgii, Khoton Lake, eagle hunter family, horseback to Baga Turgen waterfall, Potanin Glacier, and ancient petroglyphs. Everything included: flight, food, guides, lodging. Co-hosted with a local Altai guide.",
     highlights: ["UB flight inc.", "Khoton Lake", "Kazakh eagles", "Potanin Glacier"],
     theme: "altai",
     startMonth: 5,
-    startDay: 11,
+    startDay: 8,
     endMonth: 5,
-    endDay: 16,
+    endDay: 13,
   },
   {
     id: "southern-gobi",
@@ -100,38 +100,38 @@ const tours = [
     slug: "playtime",
     title: "Playtime",
     emoji: "🦅",
-    dates: "July 1 – 6",
-    days: 6,
-    price: "$950",
+    dates: "July 1 – 5",
+    days: 5,
+    price: "$750",
     groupSize: "6–8",
     status: "available",
     description:
-      "Meet young people around Mongolia's biggest music festival. Pre-party the day before, festival together, Terelj day trips if you want, one city recovery day. Tent + water + a burrito a day.",
-    highlights: ["Music festival", "Meet-up night", "Terelj side trips", "City recovery"],
+      "Meet young people around Mongolia's biggest music festival. Festival ticket, UB city tour, and a Terelj day trip all included. 3 meals a day, pre-party night, and a chill recovery day in the city.",
+    highlights: ["Festival ticket inc.", "City tour", "Terelj day", "3 meals/day"],
     theme: "playtime",
     startMonth: 6,
     startDay: 1,
     endMonth: 6,
-    endDay: 6,
+    endDay: 5,
   },
   {
     id: "naadam",
     slug: "naadam",
     title: "Naadam Festival",
     emoji: "🏇",
-    dates: "July 7 – 14",
-    days: 8,
-    price: "$1,400",
+    dates: "July 8 – 13",
+    days: 6,
+    price: "$1,200",
     groupSize: "6–8",
     status: "limited",
     description:
-      "Chill take on Naadam with deeper cultural immersion — local village Naadams, horse racing, wrestling, holiday foods and costumes, Terkhiin Tsagaan Nuur, Khorgo volcano, Tsenkher hot springs, nomadic family stays.",
-    highlights: ["Horse racing", "Wrestling", "Terkh Lake", "Khorgo", "Hot springs"],
+      "Chill take on Naadam with deeper cultural immersion — local village Naadams, horse racing, wrestling, holiday foods and costumes, Zavkhan province, Terkhiin Tsagaan Nuur, Khorgo volcano, Tsenkher hot springs, nomadic family stays. Route bends with the festival schedule.",
+    highlights: ["Horse racing", "Wrestling", "Zavkhan", "Terkh Lake", "Hot springs"],
     theme: "naadam",
     startMonth: 6,
-    startDay: 7,
+    startDay: 8,
     endMonth: 6,
-    endDay: 14,
+    endDay: 13,
   },
   {
     id: "terelj-jul",
@@ -157,17 +157,36 @@ const tours = [
     slug: "altai-tavan-bogd",
     title: "Altai Tavan Bogd",
     emoji: "🏔️",
-    dates: "Aug 6 – 13",
-    days: 8,
+    dates: "Aug 3 – 8",
+    days: 6,
     price: "$1,400",
     groupSize: "6–8",
     status: "available",
     description:
-      "Second Altai departure — Ölgii flight, Khoton Lake, eagle hunters, horseback to waterfalls, Potanin Glacier, petroglyphs. More time than the June trip for deeper exploration.",
-    highlights: ["Khoton Lake", "Kazakh eagles", "Potanin Glacier", "Petroglyphs"],
+      "Second Altai departure — same route, same everything included. Ölgii flight, Khoton Lake, eagle hunters, horseback to Baga Turgen waterfall, Potanin Glacier, petroglyphs. Co-hosted with a local Altai guide.",
+    highlights: ["UB flight inc.", "Khoton Lake", "Kazakh eagles", "Potanin Glacier"],
     theme: "altai",
     startMonth: 7,
-    startDay: 6,
+    startDay: 3,
+    endMonth: 7,
+    endDay: 8,
+  },
+  {
+    id: "terelj-aug",
+    slug: "terelj-escape",
+    title: "Terelj Escape",
+    emoji: "🌲",
+    dates: "Aug 11 – 13",
+    days: 3,
+    price: "$350",
+    groupSize: "8–16",
+    status: "available",
+    description:
+      "Third Terelj weekend — end-of-summer departure. Same gentle route — Turtle Rock, Aryabal Monastery, horseback, hiking, khorkhog, family ger camp.",
+    highlights: ["Turtle Rock", "Aryabal Monastery", "Khorkhog", "Ger stay"],
+    theme: "terelj",
+    startMonth: 7,
+    startDay: 11,
     endMonth: 7,
     endDay: 13,
   },
@@ -758,7 +777,7 @@ function CalendarSection() {
               Pick Your Month
             </h2>
             <p className="text-sand-400 max-w-xl mx-auto">
-              Ten departures across June, July, and August — weekend escapes, festival meet-ups, horse treks into the taiga, and long flagship expeditions. Hover a highlighted day to peek inside. Click to open the tour.
+              Eleven departures across June, July, and August — weekend escapes, festival meet-ups, horse treks into the taiga, and long flagship expeditions. Hover a highlighted day to peek inside. Click to open the tour.
             </p>
           </div>
         </FadeIn>
@@ -845,7 +864,7 @@ export default function ToursPage() {
             <p className="text-xs tracking-[0.3em] uppercase text-sand-400 mb-4">2026 SEASON</p>
             <h1 className="font-display text-4xl md:text-6xl text-white mb-4">Your Journey Starts Here</h1>
             <p className="text-sand-300 max-w-xl mx-auto px-6">
-              Three months, ten departures. Pick a date on the calendar and we&apos;ll take you there.
+              Three months, eleven departures. Pick a date on the calendar and we&apos;ll take you there.
             </p>
           </motion.div>
         </div>
@@ -856,7 +875,7 @@ export default function ToursPage() {
         <div className="max-w-5xl mx-auto px-6 py-8 flex flex-wrap justify-center gap-8 md:gap-14 text-center">
           {[
             { label: "Season", value: "June – August" },
-            { label: "Departures", value: "10 Scheduled" },
+            { label: "Departures", value: "11 Scheduled" },
             { label: "Group Size", value: "4–16" },
             { label: "Starting From", value: "$350" },
           ].map((stat, i) => (

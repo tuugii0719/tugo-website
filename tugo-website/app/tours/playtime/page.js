@@ -13,17 +13,27 @@ export default function PlaytimePage() {
         className="text-center max-w-lg"
       >
         <p className="text-sand-500 text-xs tracking-[0.3em] uppercase mb-4">
-          July 1 – 6 · 6 Days
+          July 1 – 5 · 5 Days
         </p>
         <h1 className="font-display text-4xl md:text-5xl text-sand-100 mb-4">
           Playtime
         </h1>
         <p className="text-sand-400 leading-relaxed mb-4">
-          6 days · $800 · 6–8 pax
+          5 days · $750 · 6–8 pax
         </p>
-        <p className="text-sand-400 leading-relaxed mb-8">
-          Meet young people around Mongolia&apos;s biggest music festival. Pre-party day the day before, festival together, optional Terelj day trips in between, one city recovery day. Tent + water + a burrito a day — simple, social, and cheap.
+        <p className="text-sand-400 leading-relaxed mb-6">
+          Meet young people around Mongolia&apos;s biggest music festival. Pre-party night the day before, festival together, a UB city day, a Terelj day, and a chill recovery day. Simple, social, and fun.
         </p>
+        <div className="text-left max-w-md mx-auto text-sand-300 text-sm leading-relaxed bg-night-900/40 border border-sand-800/40 rounded-xl p-5 mb-8">
+          <p className="font-medium text-sand-100 mb-2 text-center">What&apos;s included</p>
+          <ul className="space-y-1">
+            <li>✓  Festival ticket</li>
+            <li>✓  3 meals a day</li>
+            <li>✓  UB city tour</li>
+            <li>✓  Terelj day trip</li>
+            <li>✓  Accommodation throughout</li>
+          </ul>
+        </div>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/book"

@@ -114,7 +114,7 @@ const tourOptions = [
     {
         id: "terelj-jun",
         title: "Terelj Escape",
-        dates: "Jun 8 – 10",
+        dates: "Jun 1 – 3",
         days: 3,
         price: 350,
         emoji: "🌲"
@@ -122,7 +122,7 @@ const tourOptions = [
     {
         id: "altai-jun",
         title: "Altai Tavan Bogd",
-        dates: "Jun 11 – 16",
+        dates: "Jun 8 – 13",
         days: 6,
         price: 1400,
         emoji: "🏔️"
@@ -146,17 +146,17 @@ const tourOptions = [
     {
         id: "playtime",
         title: "Playtime",
-        dates: "Jul 1 – 6",
-        days: 6,
-        price: 950,
+        dates: "Jul 1 – 5",
+        days: 5,
+        price: 750,
         emoji: "🦅"
     },
     {
         id: "naadam",
         title: "Naadam Festival",
-        dates: "Jul 7 – 14",
-        days: 8,
-        price: 1400,
+        dates: "Jul 8 – 13",
+        days: 6,
+        price: 1200,
         emoji: "🏇"
     },
     {
@@ -178,10 +178,18 @@ const tourOptions = [
     {
         id: "altai-aug",
         title: "Altai Tavan Bogd",
-        dates: "Aug 6 – 13",
-        days: 8,
+        dates: "Aug 3 – 8",
+        days: 6,
         price: 1400,
         emoji: "🏔️"
+    },
+    {
+        id: "terelj-aug",
+        title: "Terelj Escape",
+        dates: "Aug 11 – 13",
+        days: 3,
+        price: 350,
+        emoji: "🌲"
     },
     {
         id: "gobi-glimpse",
@@ -296,14 +304,14 @@ function BookPage() {
                         priority: true
                     }, void 0, false, {
                         fileName: "[project]/app/book/page.js",
-                        lineNumber: 126,
+                        lineNumber: 127,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 bg-gradient-to-b from-night-950/40 via-night-950/40 to-night-950"
                     }, void 0, false, {
                         fileName: "[project]/app/book/page.js",
-                        lineNumber: 133,
+                        lineNumber: 134,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -327,7 +335,7 @@ function BookPage() {
                                     children: "Apply to Join"
                                 }, void 0, false, {
                                     fileName: "[project]/app/book/page.js",
-                                    lineNumber: 140,
+                                    lineNumber: 141,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -336,14 +344,14 @@ function BookPage() {
                                         "2026 Expedition",
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                             fileName: "[project]/app/book/page.js",
-                                            lineNumber: 145,
+                                            lineNumber: 146,
                                             columnNumber: 15
                                         }, this),
                                         "Applications"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/book/page.js",
-                                    lineNumber: 143,
+                                    lineNumber: 144,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -351,24 +359,24 @@ function BookPage() {
                                     children: "Small groups. Real country. A proper application, because the people on each trip are as much the trip as the places."
                                 }, void 0, false, {
                                     fileName: "[project]/app/book/page.js",
-                                    lineNumber: 147,
+                                    lineNumber: 148,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/book/page.js",
-                            lineNumber: 135,
+                            lineNumber: 136,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/book/page.js",
-                        lineNumber: 134,
+                        lineNumber: 135,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/book/page.js",
-                lineNumber: 125,
+                lineNumber: 126,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -406,7 +414,7 @@ function BookPage() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/book/page.js",
-                                    lineNumber: 164,
+                                    lineNumber: 165,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -414,7 +422,7 @@ function BookPage() {
                                     children: s.title
                                 }, void 0, false, {
                                     fileName: "[project]/app/book/page.js",
-                                    lineNumber: 165,
+                                    lineNumber: 166,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -422,23 +430,23 @@ function BookPage() {
                                     children: s.body
                                 }, void 0, false, {
                                     fileName: "[project]/app/book/page.js",
-                                    lineNumber: 166,
+                                    lineNumber: 167,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, s.n, true, {
                             fileName: "[project]/app/book/page.js",
-                            lineNumber: 163,
+                            lineNumber: 164,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/app/book/page.js",
-                    lineNumber: 156,
+                    lineNumber: 157,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/book/page.js",
-                lineNumber: 155,
+                lineNumber: 156,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -454,7 +462,7 @@ function BookPage() {
                                         children: "2026 Season"
                                     }, void 0, false, {
                                         fileName: "[project]/app/book/page.js",
-                                        lineNumber: 176,
+                                        lineNumber: 177,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -462,7 +470,7 @@ function BookPage() {
                                         children: "Pick your tour"
                                     }, void 0, false, {
                                         fileName: "[project]/app/book/page.js",
-                                        lineNumber: 177,
+                                        lineNumber: 178,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -475,19 +483,19 @@ function BookPage() {
                                                 children: "Bring a friend — save 15% each."
                                             }, void 0, false, {
                                                 fileName: "[project]/app/book/page.js",
-                                                lineNumber: 182,
+                                                lineNumber: 183,
                                                 columnNumber: 15
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/book/page.js",
-                                        lineNumber: 180,
+                                        lineNumber: 181,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/book/page.js",
-                                lineNumber: 175,
+                                lineNumber: 176,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -512,7 +520,7 @@ function BookPage() {
                                                                     children: t.emoji
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/book/page.js",
-                                                                    lineNumber: 204,
+                                                                    lineNumber: 205,
                                                                     columnNumber: 25
                                                                 }, this),
                                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -520,13 +528,13 @@ function BookPage() {
                                                                     children: t.title
                                                                 }, void 0, false, {
                                                                     fileName: "[project]/app/book/page.js",
-                                                                    lineNumber: 205,
+                                                                    lineNumber: 206,
                                                                     columnNumber: 25
                                                                 }, this)
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/book/page.js",
-                                                            lineNumber: 203,
+                                                            lineNumber: 204,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -539,13 +547,13 @@ function BookPage() {
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/book/page.js",
-                                                            lineNumber: 207,
+                                                            lineNumber: 208,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/book/page.js",
-                                                    lineNumber: 202,
+                                                    lineNumber: 203,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -556,7 +564,7 @@ function BookPage() {
                                                             children: formatUSD(t.price)
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/book/page.js",
-                                                            lineNumber: 212,
+                                                            lineNumber: 213,
                                                             columnNumber: 23
                                                         }, this),
                                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -567,36 +575,36 @@ function BookPage() {
                                                             ]
                                                         }, void 0, true, {
                                                             fileName: "[project]/app/book/page.js",
-                                                            lineNumber: 213,
+                                                            lineNumber: 214,
                                                             columnNumber: 23
                                                         }, this)
                                                     ]
                                                 }, void 0, true, {
                                                     fileName: "[project]/app/book/page.js",
-                                                    lineNumber: 211,
+                                                    lineNumber: 212,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/book/page.js",
-                                            lineNumber: 201,
+                                            lineNumber: 202,
                                             columnNumber: 19
                                         }, this)
                                     }, t.id, false, {
                                         fileName: "[project]/app/book/page.js",
-                                        lineNumber: 191,
+                                        lineNumber: 192,
                                         columnNumber: 17
                                     }, this);
                                 })
                             }, void 0, false, {
                                 fileName: "[project]/app/book/page.js",
-                                lineNumber: 186,
+                                lineNumber: 187,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/book/page.js",
-                        lineNumber: 174,
+                        lineNumber: 175,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -630,7 +638,7 @@ function BookPage() {
                                                         children: "Your application"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/book/page.js",
-                                                        lineNumber: 235,
+                                                        lineNumber: 236,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -641,14 +649,14 @@ function BookPage() {
                                                                 children: selectedTour.emoji
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/book/page.js",
-                                                                lineNumber: 237,
+                                                                lineNumber: 238,
                                                                 columnNumber: 23
                                                             }, this),
                                                             selectedTour.title
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/book/page.js",
-                                                        lineNumber: 236,
+                                                        lineNumber: 237,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -661,13 +669,13 @@ function BookPage() {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/book/page.js",
-                                                        lineNumber: 240,
+                                                        lineNumber: 241,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/book/page.js",
-                                                lineNumber: 234,
+                                                lineNumber: 235,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -678,7 +686,7 @@ function BookPage() {
                                                         children: formatUSD(perPerson)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/book/page.js",
-                                                        lineNumber: 243,
+                                                        lineNumber: 244,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -686,19 +694,19 @@ function BookPage() {
                                                         children: groupSize === "2" ? "per person · ".concat(formatUSD(totalPrice), " total") : "per person"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/book/page.js",
-                                                        lineNumber: 244,
+                                                        lineNumber: 245,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/book/page.js",
-                                                lineNumber: 242,
+                                                lineNumber: 243,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/book/page.js",
-                                        lineNumber: 233,
+                                        lineNumber: 234,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
@@ -712,7 +720,7 @@ function BookPage() {
                                                         children: "Who's coming?"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/book/page.js",
-                                                        lineNumber: 253,
+                                                        lineNumber: 254,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -738,7 +746,7 @@ function BookPage() {
                                                                         children: o.label
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/book/page.js",
-                                                                        lineNumber: 272,
+                                                                        lineNumber: 273,
                                                                         columnNumber: 27
                                                                     }, this),
                                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -746,18 +754,18 @@ function BookPage() {
                                                                         children: o.sub
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/book/page.js",
-                                                                        lineNumber: 273,
+                                                                        lineNumber: 274,
                                                                         columnNumber: 27
                                                                     }, this)
                                                                 ]
                                                             }, o.v, true, {
                                                                 fileName: "[project]/app/book/page.js",
-                                                                lineNumber: 261,
+                                                                lineNumber: 262,
                                                                 columnNumber: 25
                                                             }, this))
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/book/page.js",
-                                                        lineNumber: 256,
+                                                        lineNumber: 257,
                                                         columnNumber: 21
                                                     }, this),
                                                     groupSize === "2" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -773,13 +781,13 @@ function BookPage() {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/book/page.js",
-                                                        lineNumber: 278,
+                                                        lineNumber: 279,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/book/page.js",
-                                                lineNumber: 252,
+                                                lineNumber: 253,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -789,7 +797,7 @@ function BookPage() {
                                                         children: "About you"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/book/page.js",
-                                                        lineNumber: 286,
+                                                        lineNumber: 287,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -803,7 +811,7 @@ function BookPage() {
                                                                 required: true
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/book/page.js",
-                                                                lineNumber: 288,
+                                                                lineNumber: 289,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Input, {
@@ -815,7 +823,7 @@ function BookPage() {
                                                                 required: true
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/book/page.js",
-                                                                lineNumber: 289,
+                                                                lineNumber: 290,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Input, {
@@ -826,7 +834,7 @@ function BookPage() {
                                                                 required: true
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/book/page.js",
-                                                                lineNumber: 290,
+                                                                lineNumber: 291,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Input, {
@@ -836,13 +844,13 @@ function BookPage() {
                                                                 onChange: onField
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/book/page.js",
-                                                                lineNumber: 291,
+                                                                lineNumber: 292,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/book/page.js",
-                                                        lineNumber: 287,
+                                                        lineNumber: 288,
                                                         columnNumber: 21
                                                     }, this),
                                                     groupSize === "2" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -855,18 +863,18 @@ function BookPage() {
                                                             required: true
                                                         }, void 0, false, {
                                                             fileName: "[project]/app/book/page.js",
-                                                            lineNumber: 295,
+                                                            lineNumber: 296,
                                                             columnNumber: 25
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/book/page.js",
-                                                        lineNumber: 294,
+                                                        lineNumber: 295,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/book/page.js",
-                                                lineNumber: 285,
+                                                lineNumber: 286,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -876,7 +884,7 @@ function BookPage() {
                                                         children: "Short answers"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/book/page.js",
-                                                        lineNumber: 308,
+                                                        lineNumber: 309,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Textarea, {
@@ -888,7 +896,7 @@ function BookPage() {
                                                         rows: 4
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/book/page.js",
-                                                        lineNumber: 309,
+                                                        lineNumber: 310,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Textarea, {
@@ -899,7 +907,7 @@ function BookPage() {
                                                         rows: 3
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/book/page.js",
-                                                        lineNumber: 317,
+                                                        lineNumber: 318,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Textarea, {
@@ -910,13 +918,13 @@ function BookPage() {
                                                         rows: 2
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/book/page.js",
-                                                        lineNumber: 324,
+                                                        lineNumber: 325,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/book/page.js",
-                                                lineNumber: 307,
+                                                lineNumber: 308,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -926,7 +934,7 @@ function BookPage() {
                                                         children: "Agreements"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/book/page.js",
-                                                        lineNumber: 335,
+                                                        lineNumber: 336,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -950,14 +958,14 @@ function BookPage() {
                                                                         children: "booking terms"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/book/page.js",
-                                                                        lineNumber: 342,
+                                                                        lineNumber: 343,
                                                                         columnNumber: 44
                                                                     }, this),
                                                                     " — 30% deposit to confirm, balance 45 days before departure, cancellation schedule applies."
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/book/page.js",
-                                                                lineNumber: 337,
+                                                                lineNumber: 338,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Checkbox, {
@@ -970,14 +978,14 @@ function BookPage() {
                                                                         children: "small-group adventure"
                                                                     }, void 0, false, {
                                                                         fileName: "[project]/app/book/page.js",
-                                                                        lineNumber: 349,
+                                                                        lineNumber: 350,
                                                                         columnNumber: 48
                                                                     }, this),
                                                                     ", not luxury tourism — there will be camping, long drive days, variable weather, and limited comms."
                                                                 ]
                                                             }, void 0, true, {
                                                                 fileName: "[project]/app/book/page.js",
-                                                                lineNumber: 344,
+                                                                lineNumber: 345,
                                                                 columnNumber: 23
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Checkbox, {
@@ -987,19 +995,19 @@ function BookPage() {
                                                                 children: "I'll travel with insurance covering medical, evacuation, and trip cancellation — and if I don't have a plan yet, I'll let TUGO know so we can sort one together."
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/book/page.js",
-                                                                lineNumber: 351,
+                                                                lineNumber: 352,
                                                                 columnNumber: 23
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/app/book/page.js",
-                                                        lineNumber: 336,
+                                                        lineNumber: 337,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/book/page.js",
-                                                lineNumber: 334,
+                                                lineNumber: 335,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1012,7 +1020,7 @@ function BookPage() {
                                                         children: "Send application"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/book/page.js",
-                                                        lineNumber: 362,
+                                                        lineNumber: 363,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1022,13 +1030,13 @@ function BookPage() {
                                                         children: "Start over"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/book/page.js",
-                                                        lineNumber: 374,
+                                                        lineNumber: 375,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/book/page.js",
-                                                lineNumber: 361,
+                                                lineNumber: 362,
                                                 columnNumber: 19
                                             }, this),
                                             !allAgreed && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1036,29 +1044,29 @@ function BookPage() {
                                                 children: "Tick all three agreements to enable submit."
                                             }, void 0, false, {
                                                 fileName: "[project]/app/book/page.js",
-                                                lineNumber: 383,
+                                                lineNumber: 384,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/book/page.js",
-                                        lineNumber: 250,
+                                        lineNumber: 251,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/book/page.js",
-                                lineNumber: 232,
+                                lineNumber: 233,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/app/book/page.js",
-                            lineNumber: 225,
+                            lineNumber: 226,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/book/page.js",
-                        lineNumber: 223,
+                        lineNumber: 224,
                         columnNumber: 9
                     }, this),
                     submitted && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1077,7 +1085,7 @@ function BookPage() {
                                 children: "✓ Sent"
                             }, void 0, false, {
                                 fileName: "[project]/app/book/page.js",
-                                lineNumber: 398,
+                                lineNumber: 399,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1085,7 +1093,7 @@ function BookPage() {
                                 children: "Thanks — your application is in."
                             }, void 0, false, {
                                 fileName: "[project]/app/book/page.js",
-                                lineNumber: 399,
+                                lineNumber: 400,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1093,7 +1101,7 @@ function BookPage() {
                                 children: "I read every one personally. Expect a reply within 48 hours. If you don't see anything, check spam, then message hello@tugo.mn."
                             }, void 0, false, {
                                 fileName: "[project]/app/book/page.js",
-                                lineNumber: 400,
+                                lineNumber: 401,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1102,19 +1110,19 @@ function BookPage() {
                                 children: "Apply to another tour"
                             }, void 0, false, {
                                 fileName: "[project]/app/book/page.js",
-                                lineNumber: 403,
+                                lineNumber: 404,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/book/page.js",
-                        lineNumber: 393,
+                        lineNumber: 394,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/book/page.js",
-                lineNumber: 173,
+                lineNumber: 174,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1128,7 +1136,7 @@ function BookPage() {
                                 children: "Pricing"
                             }, void 0, false, {
                                 fileName: "[project]/app/book/page.js",
-                                lineNumber: 417,
+                                lineNumber: 418,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1136,7 +1144,7 @@ function BookPage() {
                                 children: "What you pay, what it covers"
                             }, void 0, false, {
                                 fileName: "[project]/app/book/page.js",
-                                lineNumber: 418,
+                                lineNumber: 419,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1163,7 +1171,7 @@ function BookPage() {
                                                 children: c.title
                                             }, void 0, false, {
                                                 fileName: "[project]/app/book/page.js",
-                                                lineNumber: 443,
+                                                lineNumber: 444,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1171,34 +1179,34 @@ function BookPage() {
                                                 children: c.body
                                             }, void 0, false, {
                                                 fileName: "[project]/app/book/page.js",
-                                                lineNumber: 446,
+                                                lineNumber: 447,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, i, true, {
                                         fileName: "[project]/app/book/page.js",
-                                        lineNumber: 437,
+                                        lineNumber: 438,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/app/book/page.js",
-                                lineNumber: 421,
+                                lineNumber: 422,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/book/page.js",
-                        lineNumber: 416,
+                        lineNumber: 417,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/book/page.js",
-                    lineNumber: 415,
+                    lineNumber: 416,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/book/page.js",
-                lineNumber: 414,
+                lineNumber: 415,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1213,7 +1221,7 @@ function BookPage() {
                                 children: "Terms"
                             }, void 0, false, {
                                 fileName: "[project]/app/book/page.js",
-                                lineNumber: 458,
+                                lineNumber: 459,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1221,7 +1229,7 @@ function BookPage() {
                                 children: "Booking agreements"
                             }, void 0, false, {
                                 fileName: "[project]/app/book/page.js",
-                                lineNumber: 459,
+                                lineNumber: 460,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1229,7 +1237,7 @@ function BookPage() {
                                 children: "Summer is short and busy here. The moment your deposit arrives, I lock in your spot — guides, permits, domestic flights, family camps, fuel — and most of those costs don't come back once paid out. The policy below just reflects that, so everything runs smoothly for everyone on the trip."
                             }, void 0, false, {
                                 fileName: "[project]/app/book/page.js",
-                                lineNumber: 462,
+                                lineNumber: 463,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dl", {
@@ -1274,7 +1282,7 @@ function BookPage() {
                                                 children: row.t
                                             }, void 0, false, {
                                                 fileName: "[project]/app/book/page.js",
-                                                lineNumber: 501,
+                                                lineNumber: 502,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("dd", {
@@ -1282,34 +1290,34 @@ function BookPage() {
                                                 children: row.d
                                             }, void 0, false, {
                                                 fileName: "[project]/app/book/page.js",
-                                                lineNumber: 502,
+                                                lineNumber: 503,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, row.t, true, {
                                         fileName: "[project]/app/book/page.js",
-                                        lineNumber: 500,
+                                        lineNumber: 501,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/app/book/page.js",
-                                lineNumber: 465,
+                                lineNumber: 466,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/book/page.js",
-                        lineNumber: 457,
+                        lineNumber: 458,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/book/page.js",
-                    lineNumber: 456,
+                    lineNumber: 457,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/book/page.js",
-                lineNumber: 455,
+                lineNumber: 456,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1323,7 +1331,7 @@ function BookPage() {
                                 children: "Before you come"
                             }, void 0, false, {
                                 fileName: "[project]/app/book/page.js",
-                                lineNumber: 514,
+                                lineNumber: 515,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1331,7 +1339,7 @@ function BookPage() {
                                 children: "Useful to know"
                             }, void 0, false, {
                                 fileName: "[project]/app/book/page.js",
-                                lineNumber: 515,
+                                lineNumber: 516,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1344,6 +1352,10 @@ function BookPage() {
                                     {
                                         q: "When should I book flights?",
                                         a: "After we confirm your spot, not before. International flights to Ulaanbaatar go through Seoul, Istanbul, Beijing, or Frankfurt. Summer 2026 fills up — aim to book 2–4 months out."
+                                    },
+                                    {
+                                        q: "Where do I stay in Ulaanbaatar before or after the tour?",
+                                        a: "Up to you — hotels and hostels in UB are easy to book. But if you want something warmer, I can hook you up with a local family to host you in their home. Honest price, homemade food, real people. Tell me when you apply if that sounds good."
                                     },
                                     {
                                         q: "What should I pack?",
@@ -1375,7 +1387,7 @@ function BookPage() {
                                                         children: f.q
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/book/page.js",
-                                                        lineNumber: 554,
+                                                        lineNumber: 559,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1383,13 +1395,13 @@ function BookPage() {
                                                         children: "+"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/book/page.js",
-                                                        lineNumber: 555,
+                                                        lineNumber: 560,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/book/page.js",
-                                                lineNumber: 553,
+                                                lineNumber: 558,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1397,41 +1409,41 @@ function BookPage() {
                                                 children: f.a
                                             }, void 0, false, {
                                                 fileName: "[project]/app/book/page.js",
-                                                lineNumber: 557,
+                                                lineNumber: 562,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, i, true, {
                                         fileName: "[project]/app/book/page.js",
-                                        lineNumber: 549,
+                                        lineNumber: 554,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/app/book/page.js",
-                                lineNumber: 518,
+                                lineNumber: 519,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/book/page.js",
-                        lineNumber: 513,
+                        lineNumber: 514,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/book/page.js",
-                    lineNumber: 512,
+                    lineNumber: 513,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/book/page.js",
-                lineNumber: 511,
+                lineNumber: 512,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(FeeWaiverSection, {
                 tourOptions: tourOptions
             }, void 0, false, {
                 fileName: "[project]/app/book/page.js",
-                lineNumber: 566,
+                lineNumber: 571,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1444,7 +1456,7 @@ function BookPage() {
                             children: "Custom"
                         }, void 0, false, {
                             fileName: "[project]/app/book/page.js",
-                            lineNumber: 571,
+                            lineNumber: 576,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1452,7 +1464,7 @@ function BookPage() {
                             children: "Want something different?"
                         }, void 0, false, {
                             fileName: "[project]/app/book/page.js",
-                            lineNumber: 572,
+                            lineNumber: 577,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1460,7 +1472,7 @@ function BookPage() {
                             children: "Private tours — any route, any dates, any group size — can be built on request. Tell us what you're after and we'll put something together."
                         }, void 0, false, {
                             fileName: "[project]/app/book/page.js",
-                            lineNumber: 575,
+                            lineNumber: 580,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -1469,24 +1481,24 @@ function BookPage() {
                             children: "Ask about custom"
                         }, void 0, false, {
                             fileName: "[project]/app/book/page.js",
-                            lineNumber: 578,
+                            lineNumber: 583,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/book/page.js",
-                    lineNumber: 570,
+                    lineNumber: 575,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/book/page.js",
-                lineNumber: 569,
+                lineNumber: 574,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/book/page.js",
-        lineNumber: 123,
+        lineNumber: 124,
         columnNumber: 5
     }, this);
 }
@@ -1555,7 +1567,7 @@ function FeeWaiverSection(param) {
                         children: "Fee Waiver Program"
                     }, void 0, false, {
                         fileName: "[project]/app/book/page.js",
-                        lineNumber: 632,
+                        lineNumber: 637,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1563,7 +1575,7 @@ function FeeWaiverSection(param) {
                         children: "Apply for a waived or reduced fee"
                     }, void 0, false, {
                         fileName: "[project]/app/book/page.js",
-                        lineNumber: 635,
+                        lineNumber: 640,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1575,14 +1587,14 @@ function FeeWaiverSection(param) {
                                 children: "2 – 4 spots"
                             }, void 0, false, {
                                 fileName: "[project]/app/book/page.js",
-                                lineNumber: 639,
+                                lineNumber: 644,
                                 columnNumber: 59
                             }, this),
                             " are reserved for travellers who would otherwise not make it — artists, students, journalists, people with a story to tell about Mongolia. Partial or full waivers available. Applications read personally."
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/book/page.js",
-                        lineNumber: 638,
+                        lineNumber: 643,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1608,7 +1620,7 @@ function FeeWaiverSection(param) {
                                         children: s.n
                                     }, void 0, false, {
                                         fileName: "[project]/app/book/page.js",
-                                        lineNumber: 649,
+                                        lineNumber: 654,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1616,18 +1628,18 @@ function FeeWaiverSection(param) {
                                         children: s.l
                                     }, void 0, false, {
                                         fileName: "[project]/app/book/page.js",
-                                        lineNumber: 650,
+                                        lineNumber: 655,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, s.n, true, {
                                 fileName: "[project]/app/book/page.js",
-                                lineNumber: 648,
+                                lineNumber: 653,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/app/book/page.js",
-                        lineNumber: 642,
+                        lineNumber: 647,
                         columnNumber: 11
                     }, this),
                     !open && !submitted && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -1640,7 +1652,7 @@ function FeeWaiverSection(param) {
                                         children: "What we're looking for"
                                     }, void 0, false, {
                                         fileName: "[project]/app/book/page.js",
-                                        lineNumber: 658,
+                                        lineNumber: 663,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -1658,31 +1670,31 @@ function FeeWaiverSection(param) {
                                                         children: "·"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/book/page.js",
-                                                        lineNumber: 667,
+                                                        lineNumber: 672,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                         children: l
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/book/page.js",
-                                                        lineNumber: 668,
+                                                        lineNumber: 673,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, i, true, {
                                                 fileName: "[project]/app/book/page.js",
-                                                lineNumber: 666,
+                                                lineNumber: 671,
                                                 columnNumber: 21
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/app/book/page.js",
-                                        lineNumber: 659,
+                                        lineNumber: 664,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/book/page.js",
-                                lineNumber: 657,
+                                lineNumber: 662,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1693,12 +1705,12 @@ function FeeWaiverSection(param) {
                                     children: "Start application"
                                 }, void 0, false, {
                                     fileName: "[project]/app/book/page.js",
-                                    lineNumber: 674,
+                                    lineNumber: 679,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/book/page.js",
-                                lineNumber: 673,
+                                lineNumber: 678,
                                 columnNumber: 15
                             }, this)
                         ]
@@ -1727,7 +1739,7 @@ function FeeWaiverSection(param) {
                                             children: "About you"
                                         }, void 0, false, {
                                             fileName: "[project]/app/book/page.js",
-                                            lineNumber: 694,
+                                            lineNumber: 699,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1741,7 +1753,7 @@ function FeeWaiverSection(param) {
                                                     required: true
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/book/page.js",
-                                                    lineNumber: 696,
+                                                    lineNumber: 701,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Input, {
@@ -1753,7 +1765,7 @@ function FeeWaiverSection(param) {
                                                     required: true
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/book/page.js",
-                                                    lineNumber: 697,
+                                                    lineNumber: 702,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Input, {
@@ -1764,7 +1776,7 @@ function FeeWaiverSection(param) {
                                                     required: true
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/book/page.js",
-                                                    lineNumber: 698,
+                                                    lineNumber: 703,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Input, {
@@ -1774,19 +1786,19 @@ function FeeWaiverSection(param) {
                                                     onChange: onField
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/book/page.js",
-                                                    lineNumber: 699,
+                                                    lineNumber: 704,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/book/page.js",
-                                            lineNumber: 695,
+                                            lineNumber: 700,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/book/page.js",
-                                    lineNumber: 693,
+                                    lineNumber: 698,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1796,7 +1808,7 @@ function FeeWaiverSection(param) {
                                             children: "Which tour?"
                                         }, void 0, false, {
                                             fileName: "[project]/app/book/page.js",
-                                            lineNumber: 704,
+                                            lineNumber: 709,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
@@ -1811,7 +1823,7 @@ function FeeWaiverSection(param) {
                                                     children: 'Pick one — or "Flexible" if you\'re open'
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/book/page.js",
-                                                    lineNumber: 712,
+                                                    lineNumber: 717,
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1819,7 +1831,7 @@ function FeeWaiverSection(param) {
                                                     children: "Flexible — any tour that has a spot"
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/book/page.js",
-                                                    lineNumber: 713,
+                                                    lineNumber: 718,
                                                     columnNumber: 21
                                                 }, this),
                                                 tourOptions.map((t)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
@@ -1833,19 +1845,19 @@ function FeeWaiverSection(param) {
                                                         ]
                                                     }, t.id, true, {
                                                         fileName: "[project]/app/book/page.js",
-                                                        lineNumber: 715,
+                                                        lineNumber: 720,
                                                         columnNumber: 23
                                                     }, this))
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/book/page.js",
-                                            lineNumber: 705,
+                                            lineNumber: 710,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/book/page.js",
-                                    lineNumber: 703,
+                                    lineNumber: 708,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1855,7 +1867,7 @@ function FeeWaiverSection(param) {
                                             children: "Short answers"
                                         }, void 0, false, {
                                             fileName: "[project]/app/book/page.js",
-                                            lineNumber: 723,
+                                            lineNumber: 728,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Textarea, {
@@ -1867,7 +1879,7 @@ function FeeWaiverSection(param) {
                                             required: true
                                         }, void 0, false, {
                                             fileName: "[project]/app/book/page.js",
-                                            lineNumber: 724,
+                                            lineNumber: 729,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Textarea, {
@@ -1879,7 +1891,7 @@ function FeeWaiverSection(param) {
                                             required: true
                                         }, void 0, false, {
                                             fileName: "[project]/app/book/page.js",
-                                            lineNumber: 732,
+                                            lineNumber: 737,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Textarea, {
@@ -1891,7 +1903,7 @@ function FeeWaiverSection(param) {
                                             required: true
                                         }, void 0, false, {
                                             fileName: "[project]/app/book/page.js",
-                                            lineNumber: 740,
+                                            lineNumber: 745,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Input, {
@@ -1901,13 +1913,13 @@ function FeeWaiverSection(param) {
                                             onChange: onField
                                         }, void 0, false, {
                                             fileName: "[project]/app/book/page.js",
-                                            lineNumber: 748,
+                                            lineNumber: 753,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/book/page.js",
-                                    lineNumber: 722,
+                                    lineNumber: 727,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1917,7 +1929,7 @@ function FeeWaiverSection(param) {
                                             children: "Commitment"
                                         }, void 0, false, {
                                             fileName: "[project]/app/book/page.js",
-                                            lineNumber: 757,
+                                            lineNumber: 762,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1929,18 +1941,18 @@ function FeeWaiverSection(param) {
                                                 children: "If selected, I'll show up, follow the code of conduct, and share something about the trip afterwards (a photo, a write-up, a word to a friend — we agree on the format)."
                                             }, void 0, false, {
                                                 fileName: "[project]/app/book/page.js",
-                                                lineNumber: 759,
+                                                lineNumber: 764,
                                                 columnNumber: 21
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/app/book/page.js",
-                                            lineNumber: 758,
+                                            lineNumber: 763,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/book/page.js",
-                                    lineNumber: 756,
+                                    lineNumber: 761,
                                     columnNumber: 17
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1953,7 +1965,7 @@ function FeeWaiverSection(param) {
                                             children: "Submit application"
                                         }, void 0, false, {
                                             fileName: "[project]/app/book/page.js",
-                                            lineNumber: 766,
+                                            lineNumber: 771,
                                             columnNumber: 19
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -1963,24 +1975,24 @@ function FeeWaiverSection(param) {
                                             children: "Cancel"
                                         }, void 0, false, {
                                             fileName: "[project]/app/book/page.js",
-                                            lineNumber: 776,
+                                            lineNumber: 781,
                                             columnNumber: 19
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/book/page.js",
-                                    lineNumber: 765,
+                                    lineNumber: 770,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/book/page.js",
-                            lineNumber: 686,
+                            lineNumber: 691,
                             columnNumber: 15
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/book/page.js",
-                        lineNumber: 684,
+                        lineNumber: 689,
                         columnNumber: 11
                     }, this),
                     submitted && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -1999,7 +2011,7 @@ function FeeWaiverSection(param) {
                                 children: "✓ Received"
                             }, void 0, false, {
                                 fileName: "[project]/app/book/page.js",
-                                lineNumber: 794,
+                                lineNumber: 799,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -2007,7 +2019,7 @@ function FeeWaiverSection(param) {
                                 children: "Thanks for applying."
                             }, void 0, false, {
                                 fileName: "[project]/app/book/page.js",
-                                lineNumber: 795,
+                                lineNumber: 800,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2015,7 +2027,7 @@ function FeeWaiverSection(param) {
                                 children: "I read waiver applications carefully. You'll hear back within 48 hours whether you're selected, waitlisted, or not a fit for this season."
                             }, void 0, false, {
                                 fileName: "[project]/app/book/page.js",
-                                lineNumber: 796,
+                                lineNumber: 801,
                                 columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -2024,29 +2036,29 @@ function FeeWaiverSection(param) {
                                 children: "Close"
                             }, void 0, false, {
                                 fileName: "[project]/app/book/page.js",
-                                lineNumber: 799,
+                                lineNumber: 804,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/book/page.js",
-                        lineNumber: 789,
+                        lineNumber: 794,
                         columnNumber: 13
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/book/page.js",
-                lineNumber: 631,
+                lineNumber: 636,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/book/page.js",
-            lineNumber: 630,
+            lineNumber: 635,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/book/page.js",
-        lineNumber: 629,
+        lineNumber: 634,
         columnNumber: 5
     }, this);
 }
@@ -2065,7 +2077,7 @@ function Input(param) {
                 children: label
             }, void 0, false, {
                 fileName: "[project]/app/book/page.js",
-                lineNumber: 820,
+                lineNumber: 825,
                 columnNumber: 17
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
@@ -2075,13 +2087,13 @@ function Input(param) {
                 className: "w-full bg-night-950/60 border border-sand-800/40 px-4 py-3 text-sand-100 placeholder:text-sand-600 rounded-md focus:border-sand-400/50 focus:outline-none transition"
             }, void 0, false, {
                 fileName: "[project]/app/book/page.js",
-                lineNumber: 821,
+                lineNumber: 826,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/book/page.js",
-        lineNumber: 819,
+        lineNumber: 824,
         columnNumber: 5
     }, this);
 }
@@ -2096,7 +2108,7 @@ function Textarea(param) {
                 children: label
             }, void 0, false, {
                 fileName: "[project]/app/book/page.js",
-                lineNumber: 834,
+                lineNumber: 839,
                 columnNumber: 17
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
@@ -2106,13 +2118,13 @@ function Textarea(param) {
                 className: "w-full bg-night-950/60 border border-sand-800/40 px-4 py-3 text-sand-100 placeholder:text-sand-600 rounded-md focus:border-sand-400/50 focus:outline-none resize-y transition"
             }, void 0, false, {
                 fileName: "[project]/app/book/page.js",
-                lineNumber: 835,
+                lineNumber: 840,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/book/page.js",
-        lineNumber: 833,
+        lineNumber: 838,
         columnNumber: 5
     }, this);
 }
@@ -2130,7 +2142,7 @@ function Checkbox(param) {
                 className: "mt-1 w-4 h-4 accent-sand-400 flex-shrink-0"
             }, void 0, false, {
                 fileName: "[project]/app/book/page.js",
-                lineNumber: 848,
+                lineNumber: 853,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -2138,13 +2150,13 @@ function Checkbox(param) {
                 children: children
             }, void 0, false, {
                 fileName: "[project]/app/book/page.js",
-                lineNumber: 855,
+                lineNumber: 860,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/book/page.js",
-        lineNumber: 847,
+        lineNumber: 852,
         columnNumber: 5
     }, this);
 }

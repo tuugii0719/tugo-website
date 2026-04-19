@@ -13,16 +13,16 @@ export default function NaadamPage() {
         className="text-center max-w-lg"
       >
         <p className="text-sand-500 text-xs tracking-[0.3em] uppercase mb-4">
-          July 7 – 14 · 8 Days
+          July 8 – 13 · 6 Days
         </p>
         <h1 className="font-display text-4xl md:text-5xl text-sand-100 mb-4">
           Naadam Festival
         </h1>
         <p className="text-sand-400 leading-relaxed mb-4">
-          8 days · $1,200 · 6–8 pax
+          6 days · $1,200 · 6–8 pax · Zavkhan + depends on the schedule
         </p>
         <p className="text-sand-400 leading-relaxed mb-8">
-          Chill take on Naadam with deeper cultural immersion — horse races, wrestling, holiday foods and traditional costumes, local village Naadams, Terkhiin Tsagaan Nuur, Khorgo volcano, Tsenkher hot springs, nomadic family stays.
+          Chill take on Naadam with deeper cultural immersion — horse races, wrestling, holiday foods and traditional costumes, local village Naadams, Zavkhan province, Terkhiin Tsagaan Nuur, Khorgo volcano, Tsenkher hot springs, nomadic family stays. Route bends with the festival schedule.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link

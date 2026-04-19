@@ -177,6 +177,29 @@ export default function KhagiinKharNuurPage() {
         </div>
       </section>
 
+      {/* CO-HOST */}
+      <section className="pb-20 md:pb-28">
+        <div className="max-w-4xl mx-auto px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="rounded-2xl border border-lime-800/30 bg-lime-900/10 p-8 md:p-10"
+          >
+            <p className="text-lime-300 text-xs tracking-[0.3em] uppercase mb-3">
+              Co-host on this tour
+            </p>
+            <h2 className="font-display text-2xl md:text-3xl text-sand-100 mb-4">
+              A local horse guide joins the group.
+            </h2>
+            <p className="text-sand-400 leading-relaxed">
+              Horses don&apos;t follow GPS, and neither does the taiga. Tugi is with you from UB, but on the ride itself we travel with a local horse guide who knows the Khavirga Pass trail by heart, lives with these horses, and can read the forest like a map. You&apos;re riding with the people who do this for real — not rented hands.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="pb-24 md:pb-32">
         <div className="max-w-4xl mx-auto px-6">

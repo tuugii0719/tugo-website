@@ -106,12 +106,12 @@ const tours = [
         slug: "terelj-escape",
         title: "Terelj Escape",
         emoji: "🌲",
-        dates: "June 8 – 10",
+        dates: "June 1 – 3",
         days: 3,
         price: "$350",
         groupSize: "8–16",
         status: "available",
-        description: "Any age. A gentle weekend in Gorkhi-Terelj — Turtle Rock, Aryabal Monastery, horseback through alpine meadows, hiking, khorkhog dinner, and a night in a family ger camp.",
+        description: "Any age. Season opener. Gorkhi-Terelj weekend — Turtle Rock, Aryabal Monastery, horseback through alpine meadows, hiking, khorkhog, and a night in a family ger camp.",
         highlights: [
             "Turtle Rock",
             "Aryabal Monastery",
@@ -120,21 +120,21 @@ const tours = [
         ],
         theme: "terelj",
         startMonth: 5,
-        startDay: 8,
+        startDay: 1,
         endMonth: 5,
-        endDay: 10
+        endDay: 3
     },
     {
         id: "altai-jun",
         slug: "altai-tavan-bogd",
         title: "Altai Tavan Bogd",
         emoji: "🏔️",
-        dates: "June 11 – 16",
+        dates: "June 8 – 13",
         days: 6,
         price: "$1,400",
         groupSize: "6–8",
         status: "available",
-        description: "Budget Altai — flight from UB to Ölgii, Khoton Lake, eagle hunter family, horseback to Baga Turgen waterfall, Potanin Glacier, and ancient petroglyphs. Everything included: flight, food, guides, lodging.",
+        description: "Budget Altai — flight from UB to Ölgii, Khoton Lake, eagle hunter family, horseback to Baga Turgen waterfall, Potanin Glacier, and ancient petroglyphs. Everything included: flight, food, guides, lodging. Co-hosted with a local Altai guide.",
         highlights: [
             "UB flight inc.",
             "Khoton Lake",
@@ -143,9 +143,9 @@ const tours = [
         ],
         theme: "altai",
         startMonth: 5,
-        startDay: 11,
+        startDay: 8,
         endMonth: 5,
-        endDay: 16
+        endDay: 13
     },
     {
         id: "southern-gobi",
@@ -199,47 +199,47 @@ const tours = [
         slug: "playtime",
         title: "Playtime",
         emoji: "🦅",
-        dates: "July 1 – 6",
-        days: 6,
-        price: "$950",
+        dates: "July 1 – 5",
+        days: 5,
+        price: "$750",
         groupSize: "6–8",
         status: "available",
-        description: "Meet young people around Mongolia's biggest music festival. Pre-party the day before, festival together, Terelj day trips if you want, one city recovery day. Tent + water + a burrito a day.",
+        description: "Meet young people around Mongolia's biggest music festival. Festival ticket, UB city tour, and a Terelj day trip all included. 3 meals a day, pre-party night, and a chill recovery day in the city.",
         highlights: [
-            "Music festival",
-            "Meet-up night",
-            "Terelj side trips",
-            "City recovery"
+            "Festival ticket inc.",
+            "City tour",
+            "Terelj day",
+            "3 meals/day"
         ],
         theme: "playtime",
         startMonth: 6,
         startDay: 1,
         endMonth: 6,
-        endDay: 6
+        endDay: 5
     },
     {
         id: "naadam",
         slug: "naadam",
         title: "Naadam Festival",
         emoji: "🏇",
-        dates: "July 7 – 14",
-        days: 8,
-        price: "$1,400",
+        dates: "July 8 – 13",
+        days: 6,
+        price: "$1,200",
         groupSize: "6–8",
         status: "limited",
-        description: "Chill take on Naadam with deeper cultural immersion — local village Naadams, horse racing, wrestling, holiday foods and costumes, Terkhiin Tsagaan Nuur, Khorgo volcano, Tsenkher hot springs, nomadic family stays.",
+        description: "Chill take on Naadam with deeper cultural immersion — local village Naadams, horse racing, wrestling, holiday foods and costumes, Zavkhan province, Terkhiin Tsagaan Nuur, Khorgo volcano, Tsenkher hot springs, nomadic family stays. Route bends with the festival schedule.",
         highlights: [
             "Horse racing",
             "Wrestling",
+            "Zavkhan",
             "Terkh Lake",
-            "Khorgo",
             "Hot springs"
         ],
         theme: "naadam",
         startMonth: 6,
-        startDay: 7,
+        startDay: 8,
         endMonth: 6,
-        endDay: 14
+        endDay: 13
     },
     {
         id: "terelj-jul",
@@ -269,21 +269,44 @@ const tours = [
         slug: "altai-tavan-bogd",
         title: "Altai Tavan Bogd",
         emoji: "🏔️",
-        dates: "Aug 6 – 13",
-        days: 8,
+        dates: "Aug 3 – 8",
+        days: 6,
         price: "$1,400",
         groupSize: "6–8",
         status: "available",
-        description: "Second Altai departure — Ölgii flight, Khoton Lake, eagle hunters, horseback to waterfalls, Potanin Glacier, petroglyphs. More time than the June trip for deeper exploration.",
+        description: "Second Altai departure — same route, same everything included. Ölgii flight, Khoton Lake, eagle hunters, horseback to Baga Turgen waterfall, Potanin Glacier, petroglyphs. Co-hosted with a local Altai guide.",
         highlights: [
+            "UB flight inc.",
             "Khoton Lake",
             "Kazakh eagles",
-            "Potanin Glacier",
-            "Petroglyphs"
+            "Potanin Glacier"
         ],
         theme: "altai",
         startMonth: 7,
-        startDay: 6,
+        startDay: 3,
+        endMonth: 7,
+        endDay: 8
+    },
+    {
+        id: "terelj-aug",
+        slug: "terelj-escape",
+        title: "Terelj Escape",
+        emoji: "🌲",
+        dates: "Aug 11 – 13",
+        days: 3,
+        price: "$350",
+        groupSize: "8–16",
+        status: "available",
+        description: "Third Terelj weekend — end-of-summer departure. Same gentle route — Turtle Rock, Aryabal Monastery, horseback, hiking, khorkhog, family ger camp.",
+        highlights: [
+            "Turtle Rock",
+            "Aryabal Monastery",
+            "Khorkhog",
+            "Ger stay"
+        ],
+        theme: "terelj",
+        startMonth: 7,
+        startDay: 11,
         endMonth: 7,
         endDay: 13
     },
@@ -445,7 +468,7 @@ function CellPattern({ type }) {
                         opacity: "0.28"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 316,
+                        lineNumber: 335,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -457,7 +480,7 @@ function CellPattern({ type }) {
                         opacity: "0.22"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 317,
+                        lineNumber: 336,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -469,7 +492,7 @@ function CellPattern({ type }) {
                         opacity: "0.3"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 318,
+                        lineNumber: 337,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -481,7 +504,7 @@ function CellPattern({ type }) {
                         opacity: "0.22"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 319,
+                        lineNumber: 338,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
@@ -493,13 +516,13 @@ function CellPattern({ type }) {
                         opacity: "0.28"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 320,
+                        lineNumber: 339,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 315,
+                lineNumber: 334,
                 columnNumber: 9
             }, this);
         case "horse":
@@ -515,7 +538,7 @@ function CellPattern({ type }) {
                         strokeLinecap: "round"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 326,
+                        lineNumber: 345,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -526,7 +549,7 @@ function CellPattern({ type }) {
                         strokeLinecap: "round"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 334,
+                        lineNumber: 353,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -537,13 +560,13 @@ function CellPattern({ type }) {
                         fill: "none"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 335,
+                        lineNumber: 354,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 325,
+                lineNumber: 344,
                 columnNumber: 9
             }, this);
         case "terelj":
@@ -556,7 +579,7 @@ function CellPattern({ type }) {
                         opacity: "0.3"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 341,
+                        lineNumber: 360,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -565,7 +588,7 @@ function CellPattern({ type }) {
                         opacity: "0.35"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 342,
+                        lineNumber: 361,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -574,7 +597,7 @@ function CellPattern({ type }) {
                         opacity: "0.3"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 343,
+                        lineNumber: 362,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -585,13 +608,13 @@ function CellPattern({ type }) {
                         opacity: "0.3"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 344,
+                        lineNumber: 363,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 340,
+                lineNumber: 359,
                 columnNumber: 9
             }, this);
         case "lake":
@@ -606,7 +629,7 @@ function CellPattern({ type }) {
                         fill: "none"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 350,
+                        lineNumber: 369,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -617,7 +640,7 @@ function CellPattern({ type }) {
                         fill: "none"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 351,
+                        lineNumber: 370,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -628,7 +651,7 @@ function CellPattern({ type }) {
                         fill: "none"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 352,
+                        lineNumber: 371,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -639,13 +662,13 @@ function CellPattern({ type }) {
                         opacity: "0.35"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 353,
+                        lineNumber: 372,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 349,
+                lineNumber: 368,
                 columnNumber: 9
             }, this);
         case "horse":
@@ -661,7 +684,7 @@ function CellPattern({ type }) {
                         strokeLinecap: "round"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 359,
+                        lineNumber: 378,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -672,13 +695,13 @@ function CellPattern({ type }) {
                         strokeLinecap: "round"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 367,
+                        lineNumber: 386,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 358,
+                lineNumber: 377,
                 columnNumber: 9
             }, this);
         case "feather":
@@ -694,7 +717,7 @@ function CellPattern({ type }) {
                         strokeLinecap: "round"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 373,
+                        lineNumber: 392,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -705,13 +728,13 @@ function CellPattern({ type }) {
                         strokeLinecap: "round"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 374,
+                        lineNumber: 393,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 372,
+                lineNumber: 391,
                 columnNumber: 9
             }, this);
         case "naadam":
@@ -727,7 +750,7 @@ function CellPattern({ type }) {
                         strokeLinecap: "round"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 380,
+                        lineNumber: 399,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -738,7 +761,7 @@ function CellPattern({ type }) {
                         opacity: "0.4"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 381,
+                        lineNumber: 400,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -749,13 +772,13 @@ function CellPattern({ type }) {
                         strokeLinecap: "round"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 382,
+                        lineNumber: 401,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 379,
+                lineNumber: 398,
                 columnNumber: 9
             }, this);
         case "ancient":
@@ -771,7 +794,7 @@ function CellPattern({ type }) {
                         fillOpacity: "0.15"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 388,
+                        lineNumber: 407,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -783,7 +806,7 @@ function CellPattern({ type }) {
                         fillOpacity: "0.12"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 389,
+                        lineNumber: 408,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -794,13 +817,13 @@ function CellPattern({ type }) {
                         opacity: "0.35"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 390,
+                        lineNumber: 409,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 387,
+                lineNumber: 406,
                 columnNumber: 9
             }, this);
         case "loop":
@@ -816,7 +839,7 @@ function CellPattern({ type }) {
                         strokeDasharray: "2 2"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 396,
+                        lineNumber: 415,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -827,13 +850,13 @@ function CellPattern({ type }) {
                         opacity: "0.4"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 404,
+                        lineNumber: 423,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 395,
+                lineNumber: 414,
                 columnNumber: 9
             }, this);
         case "peaks":
@@ -846,7 +869,7 @@ function CellPattern({ type }) {
                         opacity: "0.28"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 410,
+                        lineNumber: 429,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -857,7 +880,7 @@ function CellPattern({ type }) {
                         fill: "none"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 411,
+                        lineNumber: 430,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -868,7 +891,7 @@ function CellPattern({ type }) {
                         opacity: "0.4"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 412,
+                        lineNumber: 431,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -879,13 +902,13 @@ function CellPattern({ type }) {
                         opacity: "0.35"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 413,
+                        lineNumber: 432,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 409,
+                lineNumber: 428,
                 columnNumber: 9
             }, this);
         case "dunes":
@@ -898,7 +921,7 @@ function CellPattern({ type }) {
                         opacity: "0.22"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 419,
+                        lineNumber: 438,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
@@ -909,7 +932,7 @@ function CellPattern({ type }) {
                         fill: "none"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 420,
+                        lineNumber: 439,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("circle", {
@@ -920,13 +943,13 @@ function CellPattern({ type }) {
                         opacity: "0.3"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 421,
+                        lineNumber: 440,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 418,
+                lineNumber: 437,
                 columnNumber: 9
             }, this);
         default:
@@ -982,7 +1005,7 @@ function DayCell({ monthIndex, day, isEmpty, onHover, onLeave, hoveredId, dayOfW
             className: "aspect-square"
         }, void 0, false, {
             fileName: "[project]/app/tours/page.js",
-            lineNumber: 460,
+            lineNumber: 479,
             columnNumber: 12
         }, this);
     }
@@ -995,12 +1018,12 @@ function DayCell({ monthIndex, day, isEmpty, onHover, onLeave, hoveredId, dayOfW
                 children: day
             }, void 0, false, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 468,
+                lineNumber: 487,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/app/tours/page.js",
-            lineNumber: 467,
+            lineNumber: 486,
             columnNumber: 7
         }, this);
     }
@@ -1033,12 +1056,12 @@ function DayCell({ monthIndex, day, isEmpty, onHover, onLeave, hoveredId, dayOfW
                     type: theme.pattern
                 }, void 0, false, {
                     fileName: "[project]/app/tours/page.js",
-                    lineNumber: 501,
+                    lineNumber: 520,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 500,
+                lineNumber: 519,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1046,7 +1069,7 @@ function DayCell({ monthIndex, day, isEmpty, onHover, onLeave, hoveredId, dayOfW
                 children: day
             }, void 0, false, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 504,
+                lineNumber: 523,
                 columnNumber: 7
             }, this),
             isFirstDay && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1054,14 +1077,14 @@ function DayCell({ monthIndex, day, isEmpty, onHover, onLeave, hoveredId, dayOfW
                 children: tour.emoji
             }, void 0, false, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 513,
+                lineNumber: 532,
                 columnNumber: 9
             }, this),
             isFirstDay && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                 className: `absolute bottom-1 left-1 w-1 h-1 md:w-1.5 md:h-1.5 rounded-full ${theme.dot} animate-pulse`
             }, void 0, false, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 519,
+                lineNumber: 538,
                 columnNumber: 9
             }, this),
             isLastDay && !isFirstDay && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1069,13 +1092,13 @@ function DayCell({ monthIndex, day, isEmpty, onHover, onLeave, hoveredId, dayOfW
                 children: "end"
             }, void 0, false, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 523,
+                lineNumber: 542,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/tours/page.js",
-        lineNumber: 488,
+        lineNumber: 507,
         columnNumber: 5
     }, this);
 }
@@ -1127,7 +1150,7 @@ function TourPopover({ tour }) {
                     className: `h-1 bg-gradient-to-r ${theme.bar}`
                 }, void 0, false, {
                     fileName: "[project]/app/tours/page.js",
-                    lineNumber: 553,
+                    lineNumber: 572,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1138,7 +1161,7 @@ function TourPopover({ tour }) {
                             children: theme.short
                         }, void 0, false, {
                             fileName: "[project]/app/tours/page.js",
-                            lineNumber: 555,
+                            lineNumber: 574,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1149,14 +1172,14 @@ function TourPopover({ tour }) {
                                     children: tour.emoji
                                 }, void 0, false, {
                                     fileName: "[project]/app/tours/page.js",
-                                    lineNumber: 559,
+                                    lineNumber: 578,
                                     columnNumber: 13
                                 }, this),
                                 tour.title
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/tours/page.js",
-                            lineNumber: 558,
+                            lineNumber: 577,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1167,7 +1190,7 @@ function TourPopover({ tour }) {
                                     children: tour.dates
                                 }, void 0, false, {
                                     fileName: "[project]/app/tours/page.js",
-                                    lineNumber: 563,
+                                    lineNumber: 582,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1175,7 +1198,7 @@ function TourPopover({ tour }) {
                                     children: "·"
                                 }, void 0, false, {
                                     fileName: "[project]/app/tours/page.js",
-                                    lineNumber: 564,
+                                    lineNumber: 583,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1186,7 +1209,7 @@ function TourPopover({ tour }) {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/tours/page.js",
-                                    lineNumber: 565,
+                                    lineNumber: 584,
                                     columnNumber: 13
                                 }, this),
                                 tour.groupSize && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Fragment"], {
@@ -1196,7 +1219,7 @@ function TourPopover({ tour }) {
                                             children: "·"
                                         }, void 0, false, {
                                             fileName: "[project]/app/tours/page.js",
-                                            lineNumber: 568,
+                                            lineNumber: 587,
                                             columnNumber: 17
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1207,7 +1230,7 @@ function TourPopover({ tour }) {
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/tours/page.js",
-                                            lineNumber: 569,
+                                            lineNumber: 588,
                                             columnNumber: 17
                                         }, this)
                                     ]
@@ -1215,7 +1238,7 @@ function TourPopover({ tour }) {
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/tours/page.js",
-                            lineNumber: 562,
+                            lineNumber: 581,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1223,7 +1246,7 @@ function TourPopover({ tour }) {
                             children: tour.description
                         }, void 0, false, {
                             fileName: "[project]/app/tours/page.js",
-                            lineNumber: 573,
+                            lineNumber: 592,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1233,12 +1256,12 @@ function TourPopover({ tour }) {
                                     children: h
                                 }, i, false, {
                                     fileName: "[project]/app/tours/page.js",
-                                    lineNumber: 578,
+                                    lineNumber: 597,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/tours/page.js",
-                            lineNumber: 576,
+                            lineNumber: 595,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1251,7 +1274,7 @@ function TourPopover({ tour }) {
                                             children: tour.price
                                         }, void 0, false, {
                                             fileName: "[project]/app/tours/page.js",
-                                            lineNumber: 588,
+                                            lineNumber: 607,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1261,20 +1284,20 @@ function TourPopover({ tour }) {
                                                     className: `w-1 h-1 rounded-full ${theme.dot}`
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/tours/page.js",
-                                                    lineNumber: 590,
+                                                    lineNumber: 609,
                                                     columnNumber: 17
                                                 }, this),
                                                 s.label
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/app/tours/page.js",
-                                            lineNumber: 589,
+                                            lineNumber: 608,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/app/tours/page.js",
-                                    lineNumber: 587,
+                                    lineNumber: 606,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1282,30 +1305,30 @@ function TourPopover({ tour }) {
                                     children: "Open →"
                                 }, void 0, false, {
                                     fileName: "[project]/app/tours/page.js",
-                                    lineNumber: 594,
+                                    lineNumber: 613,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/tours/page.js",
-                            lineNumber: 586,
+                            lineNumber: 605,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/tours/page.js",
-                    lineNumber: 554,
+                    lineNumber: 573,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/tours/page.js",
-            lineNumber: 552,
+            lineNumber: 571,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/tours/page.js",
-        lineNumber: 545,
+        lineNumber: 564,
         columnNumber: 5
     }, this);
 }
@@ -1361,7 +1384,7 @@ function MonthCalendar({ month, hoveredId, onHover, onLeave }) {
                         children: month.name
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 644,
+                        lineNumber: 663,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1369,13 +1392,13 @@ function MonthCalendar({ month, hoveredId, onHover, onLeave }) {
                         children: month.year
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 645,
+                        lineNumber: 664,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 643,
+                lineNumber: 662,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1385,12 +1408,12 @@ function MonthCalendar({ month, hoveredId, onHover, onLeave }) {
                         children: d
                     }, i, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 650,
+                        lineNumber: 669,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 648,
+                lineNumber: 667,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1405,12 +1428,12 @@ function MonthCalendar({ month, hoveredId, onHover, onLeave }) {
                         onLeave: onLeave
                     }, cell.key, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 661,
+                        lineNumber: 680,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 659,
+                lineNumber: 678,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["AnimatePresence"], {
@@ -1425,23 +1448,23 @@ function MonthCalendar({ month, hoveredId, onHover, onLeave }) {
                         tour: hoveredTour
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 685,
+                        lineNumber: 704,
                         columnNumber: 13
                     }, this)
                 }, hoveredTour.id, false, {
                     fileName: "[project]/app/tours/page.js",
-                    lineNumber: 676,
+                    lineNumber: 695,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 674,
+                lineNumber: 693,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/tours/page.js",
-        lineNumber: 642,
+        lineNumber: 661,
         columnNumber: 5
     }, this);
 }
@@ -1467,7 +1490,7 @@ function Legend({ onHover, onLeave, hoveredId }) {
                         className: `w-2 h-2 rounded-full ${theme.dot}`
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 716,
+                        lineNumber: 735,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1478,14 +1501,14 @@ function Legend({ onHover, onLeave, hoveredId }) {
                                 children: tour.emoji
                             }, void 0, false, {
                                 fileName: "[project]/app/tours/page.js",
-                                lineNumber: 718,
+                                lineNumber: 737,
                                 columnNumber: 15
                             }, this),
                             tour.title
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 717,
+                        lineNumber: 736,
                         columnNumber: 13
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1493,19 +1516,19 @@ function Legend({ onHover, onLeave, hoveredId }) {
                         children: tour.dates
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 721,
+                        lineNumber: 740,
                         columnNumber: 13
                     }, this)
                 ]
             }, tour.id, true, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 704,
+                lineNumber: 723,
                 columnNumber: 11
             }, this);
         })
     }, void 0, false, {
         fileName: "[project]/app/tours/page.js",
-        lineNumber: 699,
+        lineNumber: 718,
         columnNumber: 5
     }, this);
 }
@@ -1538,7 +1561,7 @@ function CalendarSection() {
                                 children: "Summer 2026"
                             }, void 0, false, {
                                 fileName: "[project]/app/tours/page.js",
-                                lineNumber: 756,
+                                lineNumber: 775,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1546,26 +1569,26 @@ function CalendarSection() {
                                 children: "Pick Your Month"
                             }, void 0, false, {
                                 fileName: "[project]/app/tours/page.js",
-                                lineNumber: 757,
+                                lineNumber: 776,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 className: "text-sand-400 max-w-xl mx-auto",
-                                children: "Ten departures across June, July, and August — weekend escapes, festival meet-ups, horse treks into the taiga, and long flagship expeditions. Hover a highlighted day to peek inside. Click to open the tour."
+                                children: "Eleven departures across June, July, and August — weekend escapes, festival meet-ups, horse treks into the taiga, and long flagship expeditions. Hover a highlighted day to peek inside. Click to open the tour."
                             }, void 0, false, {
                                 fileName: "[project]/app/tours/page.js",
-                                lineNumber: 760,
+                                lineNumber: 779,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 755,
+                        lineNumber: 774,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/tours/page.js",
-                    lineNumber: 754,
+                    lineNumber: 773,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Legend, {
@@ -1574,7 +1597,7 @@ function CalendarSection() {
                     hoveredId: hoveredId
                 }, void 0, false, {
                     fileName: "[project]/app/tours/page.js",
-                    lineNumber: 766,
+                    lineNumber: 785,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1591,17 +1614,17 @@ function CalendarSection() {
                                 onLeave: ()=>setHoveredId(null)
                             }, void 0, false, {
                                 fileName: "[project]/app/tours/page.js",
-                                lineNumber: 775,
+                                lineNumber: 794,
                                 columnNumber: 15
                             }, this)
                         }, month.index, false, {
                             fileName: "[project]/app/tours/page.js",
-                            lineNumber: 770,
+                            lineNumber: 789,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/app/tours/page.js",
-                    lineNumber: 768,
+                    lineNumber: 787,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1615,24 +1638,24 @@ function CalendarSection() {
                             children: "Request custom dates"
                         }, void 0, false, {
                             fileName: "[project]/app/tours/page.js",
-                            lineNumber: 787,
+                            lineNumber: 806,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/tours/page.js",
-                    lineNumber: 785,
+                    lineNumber: 804,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/tours/page.js",
-            lineNumber: 753,
+            lineNumber: 772,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/tours/page.js",
-        lineNumber: 752,
+        lineNumber: 771,
         columnNumber: 5
     }, this);
 }
@@ -1651,12 +1674,12 @@ function MountainSilhouette() {
             fill: "currentColor"
         }, void 0, false, {
             fileName: "[project]/app/tours/page.js",
-            lineNumber: 809,
+            lineNumber: 828,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/app/tours/page.js",
-        lineNumber: 802,
+        lineNumber: 821,
         columnNumber: 5
     }, this);
 }
@@ -1675,26 +1698,26 @@ function ToursPage() {
                         priority: true
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 826,
+                        lineNumber: 845,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute inset-0 bg-gradient-to-b from-night-950/60 via-night-950/30 to-night-950"
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 833,
+                        lineNumber: 852,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         className: "absolute bottom-0 left-0 right-0 text-night-950 z-10",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(MountainSilhouette, {}, void 0, false, {
                             fileName: "[project]/app/tours/page.js",
-                            lineNumber: 836,
+                            lineNumber: 855,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 835,
+                        lineNumber: 854,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1718,7 +1741,7 @@ function ToursPage() {
                                     children: "2026 SEASON"
                                 }, void 0, false, {
                                     fileName: "[project]/app/tours/page.js",
-                                    lineNumber: 845,
+                                    lineNumber: 864,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
@@ -1726,32 +1749,32 @@ function ToursPage() {
                                     children: "Your Journey Starts Here"
                                 }, void 0, false, {
                                     fileName: "[project]/app/tours/page.js",
-                                    lineNumber: 846,
+                                    lineNumber: 865,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-sand-300 max-w-xl mx-auto px-6",
-                                    children: "Three months, ten departures. Pick a date on the calendar and we'll take you there."
+                                    children: "Three months, eleven departures. Pick a date on the calendar and we'll take you there."
                                 }, void 0, false, {
                                     fileName: "[project]/app/tours/page.js",
-                                    lineNumber: 847,
+                                    lineNumber: 866,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/tours/page.js",
-                            lineNumber: 840,
+                            lineNumber: 859,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 839,
+                        lineNumber: 858,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 825,
+                lineNumber: 844,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1765,7 +1788,7 @@ function ToursPage() {
                         },
                         {
                             label: "Departures",
-                            value: "10 Scheduled"
+                            value: "11 Scheduled"
                         },
                         {
                             label: "Group Size",
@@ -1782,7 +1805,7 @@ function ToursPage() {
                                     children: stat.label
                                 }, void 0, false, {
                                     fileName: "[project]/app/tours/page.js",
-                                    lineNumber: 864,
+                                    lineNumber: 883,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1790,28 +1813,28 @@ function ToursPage() {
                                     children: stat.value
                                 }, void 0, false, {
                                     fileName: "[project]/app/tours/page.js",
-                                    lineNumber: 865,
+                                    lineNumber: 884,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, i, true, {
                             fileName: "[project]/app/tours/page.js",
-                            lineNumber: 863,
+                            lineNumber: 882,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/app/tours/page.js",
-                    lineNumber: 856,
+                    lineNumber: 875,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 855,
+                lineNumber: 874,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(CalendarSection, {}, void 0, false, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 872,
+                lineNumber: 891,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1827,7 +1850,7 @@ function ToursPage() {
                                     children: "ROUTES"
                                 }, void 0, false, {
                                     fileName: "[project]/app/tours/page.js",
-                                    lineNumber: 878,
+                                    lineNumber: 897,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1835,13 +1858,13 @@ function ToursPage() {
                                     children: "Three Ways to Explore"
                                 }, void 0, false, {
                                     fileName: "[project]/app/tours/page.js",
-                                    lineNumber: 879,
+                                    lineNumber: 898,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/app/tours/page.js",
-                            lineNumber: 877,
+                            lineNumber: 896,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1894,7 +1917,7 @@ function ToursPage() {
                                                 className: `w-12 h-1.5 rounded-full bg-gradient-to-r ${route.color} mb-6`
                                             }, void 0, false, {
                                                 fileName: "[project]/app/tours/page.js",
-                                                lineNumber: 916,
+                                                lineNumber: 935,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
@@ -1902,7 +1925,7 @@ function ToursPage() {
                                                 children: route.title
                                             }, void 0, false, {
                                                 fileName: "[project]/app/tours/page.js",
-                                                lineNumber: 917,
+                                                lineNumber: 936,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1913,7 +1936,7 @@ function ToursPage() {
                                                         children: route.duration
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/tours/page.js",
-                                                        lineNumber: 919,
+                                                        lineNumber: 938,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1921,7 +1944,7 @@ function ToursPage() {
                                                         children: "·"
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/tours/page.js",
-                                                        lineNumber: 920,
+                                                        lineNumber: 939,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -1929,13 +1952,13 @@ function ToursPage() {
                                                         children: route.price
                                                     }, void 0, false, {
                                                         fileName: "[project]/app/tours/page.js",
-                                                        lineNumber: 921,
+                                                        lineNumber: 940,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/app/tours/page.js",
-                                                lineNumber: 918,
+                                                lineNumber: 937,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1943,7 +1966,7 @@ function ToursPage() {
                                                 children: route.desc
                                             }, void 0, false, {
                                                 fileName: "[project]/app/tours/page.js",
-                                                lineNumber: 923,
+                                                lineNumber: 942,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1956,19 +1979,19 @@ function ToursPage() {
                                                                 children: "→"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/app/tours/page.js",
-                                                                lineNumber: 927,
+                                                                lineNumber: 946,
                                                                 columnNumber: 25
                                                             }, this),
                                                             item
                                                         ]
                                                     }, i, true, {
                                                         fileName: "[project]/app/tours/page.js",
-                                                        lineNumber: 926,
+                                                        lineNumber: 945,
                                                         columnNumber: 23
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/app/tours/page.js",
-                                                lineNumber: 924,
+                                                lineNumber: 943,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -1977,34 +2000,34 @@ function ToursPage() {
                                                 children: "Book Now →"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/tours/page.js",
-                                                lineNumber: 932,
+                                                lineNumber: 951,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/tours/page.js",
-                                        lineNumber: 913,
+                                        lineNumber: 932,
                                         columnNumber: 17
                                     }, this)
                                 }, idx, false, {
                                     fileName: "[project]/app/tours/page.js",
-                                    lineNumber: 912,
+                                    lineNumber: 931,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "[project]/app/tours/page.js",
-                            lineNumber: 882,
+                            lineNumber: 901,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/tours/page.js",
-                    lineNumber: 876,
+                    lineNumber: 895,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 875,
+                lineNumber: 894,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -2018,7 +2041,7 @@ function ToursPage() {
                                 children: "Not sure which tour?"
                             }, void 0, false, {
                                 fileName: "[project]/app/tours/page.js",
-                                lineNumber: 949,
+                                lineNumber: 968,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2026,7 +2049,7 @@ function ToursPage() {
                                 children: "Every journey is flexible and personal. Contact me and we'll find the perfect adventure for you."
                             }, void 0, false, {
                                 fileName: "[project]/app/tours/page.js",
-                                lineNumber: 950,
+                                lineNumber: 969,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2038,7 +2061,7 @@ function ToursPage() {
                                         children: "Book Now"
                                     }, void 0, false, {
                                         fileName: "[project]/app/tours/page.js",
-                                        lineNumber: 954,
+                                        lineNumber: 973,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -2047,35 +2070,35 @@ function ToursPage() {
                                         children: "Ask a Question"
                                     }, void 0, false, {
                                         fileName: "[project]/app/tours/page.js",
-                                        lineNumber: 960,
+                                        lineNumber: 979,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/tours/page.js",
-                                lineNumber: 953,
+                                lineNumber: 972,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/tours/page.js",
-                        lineNumber: 948,
+                        lineNumber: 967,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/app/tours/page.js",
-                    lineNumber: 947,
+                    lineNumber: 966,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/app/tours/page.js",
-                lineNumber: 946,
+                lineNumber: 965,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/tours/page.js",
-        lineNumber: 823,
+        lineNumber: 842,
         columnNumber: 5
     }, this);
 }
