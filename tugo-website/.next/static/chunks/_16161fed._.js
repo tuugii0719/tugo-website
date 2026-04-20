@@ -554,7 +554,7 @@ function NorthCentralPage() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                        className: "font-display text-4xl md:text-6xl text-white leading-[0.95] mb-4 max-w-2xl",
+                                        className: "font-display text-5xl md:text-7xl text-white leading-[0.95] mb-5 max-w-2xl",
                                         children: "North & Central Loop"
                                     }, void 0, false, {
                                         fileName: "[project]/app/tours/north-central/page.js",
@@ -562,7 +562,7 @@ function NorthCentralPage() {
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-sand-200 text-base md:text-lg max-w-xl leading-relaxed",
+                                        className: "text-sand-200 text-lg md:text-xl max-w-xl leading-relaxed",
                                         children: "Eleven days up to the Dark Blue Pearl and back. Lakeside camping, a day on the taiga, then the central country on the way home."
                                     }, void 0, false, {
                                         fileName: "[project]/app/tours/north-central/page.js",
@@ -685,7 +685,7 @@ function NorthCentralPage() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                    className: "font-display text-2xl md:text-4xl text-sand-100 mb-4 leading-tight",
+                                    className: "font-display text-3xl md:text-5xl text-sand-100 mb-4 leading-tight",
                                     children: "UB → Khuvsgul → Zavkhan → home."
                                 }, void 0, false, {
                                     fileName: "[project]/app/tours/north-central/page.js",
@@ -693,7 +693,7 @@ function NorthCentralPage() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-sand-300 text-sm md:text-base leading-relaxed mb-4",
+                                    className: "text-sand-300 text-lg leading-relaxed mb-4",
                                     children: "Two days to climb north to the lake. Five around it. Four working our way back south-west through Zavkhan and the central highlights — Khorgo volcano, Terkhiin Tsagaan Nuur, Tsenkher hot springs, Orkhon Valley."
                                 }, void 0, false, {
                                     fileName: "[project]/app/tours/north-central/page.js",
@@ -776,7 +776,7 @@ function NorthCentralPage() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "font-display text-2xl md:text-4xl text-sand-100 mb-10 text-center leading-tight",
+                            className: "font-display text-3xl md:text-5xl text-sand-100 mb-10 text-center leading-tight",
                             children: "Eleven days, day by day"
                         }, void 0, false, {
                             fileName: "[project]/app/tours/north-central/page.js",
@@ -823,7 +823,7 @@ function NorthCentralPage() {
                                                     columnNumber: 19
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                                    className: "font-display text-base md:text-lg text-sand-100 mb-1",
+                                                    className: "font-display text-lg md:text-xl text-sand-100 mb-1",
                                                     children: day.t
                                                 }, void 0, false, {
                                                     fileName: "[project]/app/tours/north-central/page.js",
@@ -880,7 +880,7 @@ function NorthCentralPage() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                            className: "font-display text-2xl md:text-4xl text-sand-100 mb-8 text-center leading-tight",
+                            className: "font-display text-3xl md:text-5xl text-sand-100 mb-8 text-center leading-tight",
                             children: "Khuvsgul — the Dark Blue Pearl"
                         }, void 0, false, {
                             fileName: "[project]/app/tours/north-central/page.js",

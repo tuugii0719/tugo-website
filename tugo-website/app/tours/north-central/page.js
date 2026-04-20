@@ -154,10 +154,10 @@ export default function NorthCentralPage() {
               <p className="text-sky-300 text-[11px] tracking-[0.3em] uppercase mb-2">
                 Long North Route
               </p>
-              <h1 className="font-display text-4xl md:text-6xl text-white leading-[0.95] mb-4 max-w-2xl">
+              <h1 className="font-display text-5xl md:text-7xl text-white leading-[0.95] mb-5 max-w-2xl">
                 North &amp; Central Loop
               </h1>
-              <p className="text-sand-200 text-base md:text-lg max-w-xl leading-relaxed">
+              <p className="text-sand-200 text-lg md:text-xl max-w-xl leading-relaxed">
                 Eleven days up to the Dark Blue Pearl and back. Lakeside camping, a day on the taiga, then the central country on the way home.
               </p>
             </motion.div>
@@ -195,10 +195,10 @@ export default function NorthCentralPage() {
             className="lg:col-span-3"
           >
             <p className="text-sky-400 text-[11px] tracking-[0.3em] uppercase mb-3">The route</p>
-            <h2 className="font-display text-2xl md:text-4xl text-sand-100 mb-4 leading-tight">
+            <h2 className="font-display text-3xl md:text-5xl text-sand-100 mb-4 leading-tight">
               UB → Khuvsgul → Zavkhan → home.
             </h2>
-            <p className="text-sand-300 text-sm md:text-base leading-relaxed mb-4">
+            <p className="text-sand-300 text-lg leading-relaxed mb-4">
               Two days to climb north to the lake. Five around it. Four working our way
               back south-west through Zavkhan and the central highlights — Khorgo volcano,
               Terkhiin Tsagaan Nuur, Tsenkher hot springs, Orkhon Valley.
@@ -231,7 +231,7 @@ export default function NorthCentralPage() {
           <p className="text-sky-400 text-[11px] tracking-[0.3em] uppercase mb-3 text-center">
             Itinerary
           </p>
-          <h2 className="font-display text-2xl md:text-4xl text-sand-100 mb-10 text-center leading-tight">
+          <h2 className="font-display text-3xl md:text-5xl text-sand-100 mb-10 text-center leading-tight">
             Eleven days, day by day
           </h2>
 
@@ -252,7 +252,7 @@ export default function NorthCentralPage() {
                   <div className="absolute left-0 md:left-2 top-0 w-6 h-6 md:w-8 md:h-8 rounded-full bg-sky-500/20 border border-sky-400/40 flex items-center justify-center text-sky-200 font-display text-[10px] md:text-xs">
                     {day.n}
                   </div>
-                  <h3 className="font-display text-base md:text-lg text-sand-100 mb-1">
+                  <h3 className="font-display text-lg md:text-xl text-sand-100 mb-1">
                     {day.t}
                   </h3>
                   <p className="text-sand-400 text-sm leading-relaxed">{day.d}</p>
@@ -269,7 +269,7 @@ export default function NorthCentralPage() {
           <p className="text-sky-400 text-[11px] tracking-[0.3em] uppercase mb-3 text-center">
             The north leg
           </p>
-          <h2 className="font-display text-2xl md:text-4xl text-sand-100 mb-8 text-center leading-tight">
+          <h2 className="font-display text-3xl md:text-5xl text-sand-100 mb-8 text-center leading-tight">
             Khuvsgul — the Dark Blue Pearl
           </h2>
 
