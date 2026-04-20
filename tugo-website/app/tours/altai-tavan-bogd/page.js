@@ -1,243 +1,128 @@
 "use client";
 
-import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
+import {
+  TourHero, VitalsStrip, Prologue, Itinerary,
+  IncludedBring, TourFAQ, TourCTA, Departures,
+  SectionHead, PullQuote,
+} from "@/components/tours/kit";
 
-const departures = [
-  { label: "June departure", dates: "June 8 – 13, 2026", days: 6 },
-  { label: "August departure", dates: "Aug 3 – 8, 2026", days: 6 },
-];
+const G = "/images/gallery";
 
-const days = [
-  {
-    n: "01",
-    title: "Ulaanbaatar → Ölgii → Khoton Lake",
-    body:
-      "Fly west to Ölgii, then a scenic 170 km drive to the twin Khoton–Khurgan lakes. Stop with an eagle hunter family — hold the eagle. Night with a nomad family on the shore.",
-  },
-  {
-    n: "02",
-    title: "Horse ride to Baga Turgen Waterfall",
-    body:
-      "Saddle up on Mongolia's tiny tough horses. A 22 km round trip to Baga Turgen waterfall with a local guide — forest, icy rivers, green pasture, and the snow line of the China border. ~6 hours total. Drive to the next family to stay the night.",
-  },
-  {
-    n: "03",
-    title: "Northern Altai Tavan Bogd",
-    body:
-      "Drive into the northern park. High passes, hour-by-hour changing terrain, the Yak Milk White River. Overnight with a nomad family near the ranger station.",
-  },
-  {
-    n: "04",
-    title: "Sacred Ovoo, Potanin Glacier, petroglyphs",
-    body:
-      "Breakfast, then 10 km to the sacred Ovoo — a spiritual lookout with a view of the Tavan Bogd peaks and the Potanin Ice Glacier. Optional 3.5 km hike to the glacier itself. On the return to Ölgii, stop at 3,000–4,000 BC petroglyphs. Evening drop at your accommodation.",
-  },
-];
+const ACCENT = "indigo";
 
-const vitals = [
-  { label: "Duration", value: "6 days" },
-  { label: "Departures", value: "2 in 2026" },
-  { label: "Group size", value: "6–8" },
-  { label: "Region", value: "Western Mongolia" },
-  { label: "Start / end", value: "Ulaanbaatar" },
-  { label: "Price", value: "$1,400" },
-];
-
-const included = [
-  "Round-trip flight: Ulaanbaatar ↔ Ölgii",
-  "All meals (breakfast, lunch, dinner)",
-  "4×4 Russian van + driver + fuel",
-  "English-speaking guide",
-  "Horse & local riding guide",
-  "Ger camp + nomad family stays",
-  "All park permits & petroglyph site fees",
-  "Eagle hunter visit fee",
-];
+// A decorative SVG of western peaks — simple silhouette
+function PeaksBackground() {
+  return (
+    <svg
+      className="absolute bottom-0 left-0 right-0 w-full h-48 text-indigo-500/10"
+      viewBox="0 0 1200 200"
+      preserveAspectRatio="none"
+      aria-hidden="true"
+    >
+      <path d="M0 200 L 80 120 L 160 60 L 260 140 L 360 40 L 460 110 L 580 20 L 680 100 L 800 60 L 920 140 L 1040 70 L 1200 130 L 1200 200 Z" fill="currentColor" />
+      <path d="M340 60 L 360 40 L 380 65" stroke="white" strokeWidth="1" opacity="0.3" fill="none" />
+      <path d="M560 38 L 580 20 L 600 42" stroke="white" strokeWidth="1" opacity="0.3" fill="none" />
+    </svg>
+  );
+}
 
 export default function AltaiTavanBogdPage() {
   return (
     <div className="min-h-screen bg-night-950 text-sand-100">
-      {/* HERO */}
-      <section className="relative min-h-[55vh] pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/30 via-night-950 to-night-950" />
-        {/* Decorative peaks */}
-        <svg
-          className="absolute bottom-0 left-0 right-0 w-full h-48 text-indigo-500/10"
-          viewBox="0 0 1200 200"
-          preserveAspectRatio="none"
-        >
-          <path d="M0 200 L 80 120 L 160 60 L 260 140 L 360 40 L 460 110 L 580 20 L 680 100 L 800 60 L 920 140 L 1040 70 L 1200 130 L 1200 200 Z" fill="currentColor" />
-          <path d="M340 60 L 360 40 L 380 65" stroke="white" strokeWidth="1" opacity="0.3" fill="none" />
-          <path d="M560 38 L 580 20 L 600 42" stroke="white" strokeWidth="1" opacity="0.3" fill="none" />
-        </svg>
+      <TourHero
+        image={`${G}/DSC02435.jpg`}
+        kicker="Western heights"
+        meta={["2 departures", "6 days"]}
+        title="Altai<br/>Tavan Bogd"
+        subtitle="The Five Holy Peaks — glaciers, Kazakh eagle hunters, twin alpine lakes, 4,000-year-old petroglyphs. Flight in from UB, everything handled. Two departures this season."
+        accent={ACCENT}
+      />
 
-        <div className="relative max-w-5xl mx-auto px-6">
-          <Link
-            href="/tours"
-            className="inline-flex items-center gap-2 text-sand-400 text-xs tracking-[0.3em] uppercase mb-6 hover:text-sand-200 transition-colors"
-          >
-            ← 2026 Season
-          </Link>
+      <VitalsStrip
+        items={[
+          { l: "Duration", v: "6 days" },
+          { l: "Departures", v: "2 in 2026" },
+          { l: "Group", v: "6 – 8" },
+          { l: "Region", v: "Western Mongolia" },
+          { l: "Price", v: "$1,400" },
+          { l: "Co-host", v: "Kazakh local" },
+        ]}
+      />
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <p className="text-indigo-300 text-xs tracking-[0.3em] uppercase mb-3">
-              Western Heights
-            </p>
-            <h1 className="font-display text-5xl md:text-7xl text-white mb-5 leading-[0.95]">
-              Altai
-              <br />
-              Tavan Bogd
-            </h1>
-            <p className="text-sand-300 text-lg md:text-xl max-w-2xl leading-relaxed">
-              The Five Holy Peaks — glaciers, Kazakh eagle hunters, twin alpine lakes, 4,000-year-old petroglyphs. Flight in from UB, everything handled. Two departures this season.
-            </p>
-          </motion.div>
-        </div>
-      </section>
+      <Departures
+        accent={ACCENT}
+        list={[
+          { label: "June departure", dates: "Jun 8 – 13, 2026", days: 6 },
+          { label: "August departure", dates: "Aug 3 – 8, 2026", days: 6 },
+        ]}
+      />
 
-      {/* DEPARTURES */}
-      <section className="border-y border-sand-900/30 bg-night-900/40 backdrop-blur-sm">
-        <div className="max-w-6xl mx-auto px-6 py-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {departures.map((d) => (
-              <div
-                key={d.label}
-                className="border border-indigo-800/30 bg-indigo-900/10 rounded-xl p-5 flex items-center gap-4"
-              >
-                <span className="text-indigo-300 text-xs tracking-[0.2em] uppercase font-semibold">
-                  {d.label}
-                </span>
-                <span className="text-sand-700">·</span>
-                <span className="text-sand-100 font-display text-lg">{d.dates}</span>
-                <span className="text-sand-700">·</span>
-                <span className="text-sand-400 text-sm">{d.days} days</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Prologue
+        accent={ACCENT}
+        title="Mongolia&rsquo;s wildest corner, all included."
+        paragraphs={[
+          "The Altai is where Mongolia meets Russia, Kazakhstan, and China in a single mountain range. It&apos;s not like anywhere else in the country — the people are Kazakh, the culture is eagle-hunters, and the peaks start above 4,000 m.",
+          "I run this as the budget version on purpose. We fly you from UB to Ölgii so no wasted drive days, stay with nomad families (not fancy hotels), eat what they eat, and cover the absolute highlights — Khoton Lake, Baga Turgen waterfall on horseback, the Potanin Glacier viewpoint, petroglyphs older than the pyramids.",
+          "Everything is included — flight, food, guides, horses, permits. You bring your boots and a warm layer. I hand off to a local Altai co-host the moment we land in Ölgii; you get the warmth of a personal tour AND the depth of someone who grew up in this specific landscape.",
+        ]}
+      />
 
-      {/* VITALS */}
-      <section className="border-b border-sand-900/30">
-        <div className="max-w-6xl mx-auto px-6 py-8 grid grid-cols-2 md:grid-cols-6 gap-6 text-center">
-          {vitals.map((v) => (
-            <div key={v.label}>
-              <p className="text-sand-500 text-[10px] tracking-[0.2em] uppercase mb-1.5">
-                {v.label}
-              </p>
-              <p className="text-sand-100 font-display text-sm md:text-base">
-                {v.value}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
+      <Itinerary
+        accent={ACCENT}
+        title="Four days on the ground, two on the wing."
+        days={[
+          { n: "01", t: "UB → Ölgii · Khoton Lake", d: "Morning flight west to Ölgii (~3 hours). Scenic 170 km drive to the twin Khoton–Khurgan lakes. Stop with an eagle-hunter family — hold the eagle. Night with a nomad family on the shore." },
+          { n: "02", t: "Horse ride to Baga Turgen Waterfall", d: "Saddle up on Mongolia&apos;s tough little horses. 22 km round-trip to the waterfall, ~6 hours total. Forest, icy rivers, green pasture, snow-line at the China border. Drive to another family camp to stay." },
+          { n: "03", t: "Northern Altai Tavan Bogd", d: "Drive deep into the national park. High passes, hour-by-hour shifts in terrain, the Yak Milk White River. Night with a nomad family near the ranger station." },
+          { n: "04", t: "Sacred Ovoo · Potanin Glacier · petroglyphs", d: "10 km to the sacred Ovoo — the viewpoint for the Five Holy Peaks and the Potanin Ice Glacier. Optional 3.5 km hike to the glacier. Return to Ölgii via 3,000–4,000 BC petroglyphs." },
+          { n: "05", t: "Ölgii · rest + culture", d: "Recovery day. Explore Ölgii bazaar, meet Kazakh artisans, visit the Museum of Natural History. Dinner at a local spot." },
+          { n: "06", t: "Ölgii → UB", d: "Morning flight back east. Arrive in UB by afternoon with time for a shower before your onward plans." },
+        ]}
+      />
 
-      {/* INTRO */}
-      <section className="py-16 md:py-24">
-        <div className="max-w-3xl mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <p className="text-indigo-400 text-xs tracking-[0.3em] uppercase mb-4">
-              The trip
-            </p>
-            <h2 className="font-display text-3xl md:text-4xl text-sand-100 mb-6 leading-tight">
-              Mongolia&apos;s wildest corner, all included.
-            </h2>
-            <div className="space-y-5 text-sand-300 text-lg leading-relaxed">
-              <p>
-                The Altai is the most remote part of the country — the peaks that make Mongolia&apos;s western border with China, Russia, and Kazakhstan. The people here are Kazakh. The culture is eagle hunters, twin lakes, glacier-fed rivers, and skies so big they feel impossible.
-              </p>
-              <p>
-                This is the budget version: we fly you from UB to Ölgii so no driving days, stay with nomad families (not fancy hotels), eat what they eat, and cover the absolute highlights — Khoton Lake, Baga Turgen waterfall on horseback, the Potanin Glacier viewpoint, and petroglyphs older than the pyramids.
-              </p>
-              <p className="text-sand-400 italic">
-                Everything is included — flight, food, guides, horses, permits. You bring your boots and a warm layer.
-              </p>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+      {/* PHOTO ESSAY */}
+      <section className="relative py-20 md:py-28 border-b border-sand-900/30 overflow-hidden">
+        <PeaksBackground />
+        <div className="relative z-10 max-w-6xl mx-auto px-6">
+          <SectionHead kicker="Western landscape" title="The Five Holy Peaks." center accent={ACCENT} />
 
-      {/* DAY BY DAY */}
-      <section className="pb-20 md:pb-28">
-        <div className="max-w-4xl mx-auto px-6">
-          <p className="text-indigo-400 text-xs tracking-[0.3em] uppercase mb-4 text-center">
-            Day by day
-          </p>
-          <h2 className="font-display text-3xl md:text-4xl text-sand-100 mb-14 text-center">
-            Four days on the ground in the Altai
-          </h2>
+          <div className="space-y-6 md:space-y-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="relative aspect-[21/9] overflow-hidden rounded-2xl"
+            >
+              <Image src={`${G}/DSC02435.jpg`} alt="Altai landscape" fill className="object-cover" sizes="100vw" />
+            </motion.div>
 
-          <div className="relative">
-            <div className="absolute left-4 md:left-12 top-4 bottom-4 w-px bg-gradient-to-b from-indigo-500/30 via-indigo-700/20 to-transparent" />
-            <div className="space-y-8 md:space-y-12">
-              {days.map((day, idx) => (
-                <motion.div
-                  key={day.n}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, margin: "-50px" }}
-                  transition={{ duration: 0.5, delay: idx * 0.04 }}
-                  className="relative pl-14 md:pl-28"
-                >
-                  <div className="absolute left-0 md:left-6 top-1 w-8 h-8 md:w-12 md:h-12 rounded-full bg-indigo-500/20 border border-indigo-400/40 flex items-center justify-center text-indigo-200 font-display text-xs md:text-sm">
-                    {day.n}
-                  </div>
-                  <h3 className="font-display text-xl md:text-2xl text-sand-100 mb-3">
-                    {day.title}
-                  </h3>
-                  <p className="text-sand-400 leading-relaxed">{day.body}</p>
-                </motion.div>
+            <PullQuote
+              accent={ACCENT}
+              quote="The eagle weighs about seven kilos and she looks at you like you&rsquo;re prey. It&rsquo;s the longest ten seconds of the trip."
+              attribution="— On meeting the eagle hunter&rsquo;s bird."
+            />
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3">
+              {[
+                `${G}/DSC02431.jpg`,
+                `${G}/DSC02433.jpg`,
+                `${G}/DSC02429.jpg`,
+                `${G}/DSC02424.jpg`,
+              ].map((src) => (
+                <div key={src} className="relative aspect-square overflow-hidden rounded-lg group">
+                  <Image src={src} alt="" fill className="object-cover transition-transform duration-500 group-hover:scale-[1.04]" sizes="25vw" />
+                </div>
               ))}
             </div>
-          </div>
-
-          <p className="text-center text-sand-500 text-sm mt-12 italic">
-            The August departure adds 2 extra days at the lakes for deeper exploration and a second horse-ride day.
-          </p>
-        </div>
-      </section>
-
-      {/* INCLUDED */}
-      <section className="pb-20 md:pb-28">
-        <div className="max-w-4xl mx-auto px-6">
-          <p className="text-indigo-400 text-xs tracking-[0.3em] uppercase mb-4 text-center">
-            What&apos;s included
-          </p>
-          <h2 className="font-display text-3xl md:text-4xl text-sand-100 mb-10 text-center">
-            Everything handled
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-            {included.map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.4, delay: i * 0.03 }}
-                className="flex items-center gap-3 p-4 rounded-lg bg-indigo-900/10 border border-indigo-800/20"
-              >
-                <span className="text-indigo-400 text-lg">✓</span>
-                <span className="text-sand-300">{item}</span>
-              </motion.div>
-            ))}
           </div>
         </div>
       </section>
 
       {/* CO-HOST */}
-      <section className="pb-20 md:pb-28">
+      <section className="py-20 md:py-28 border-b border-sand-900/30">
         <div className="max-w-4xl mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -246,64 +131,59 @@ export default function AltaiTavanBogdPage() {
             transition={{ duration: 0.5 }}
             className="rounded-2xl border border-indigo-800/30 bg-indigo-900/10 p-8 md:p-10"
           >
-            <p className="text-indigo-300 text-xs tracking-[0.3em] uppercase mb-3">
-              Co-host on this tour
-            </p>
+            <p className="text-indigo-300 text-[11px] tracking-[0.3em] uppercase mb-3">Co-host on this tour</p>
             <h2 className="font-display text-2xl md:text-3xl text-sand-100 mb-4">
               A local Altai guide joins the group.
             </h2>
-            <p className="text-sand-400 leading-relaxed">
-              The Altai is its own world — Kazakh instead of Khalkh, eagle-hunter culture, mountains above 4,000 m. Tugi travels with the group from UB, but once we&apos;re in Ölgii a local co-host joins us: someone with years of direct experience in these peaks, family ties to the eagle hunters, and fluent Kazakh. You get the warmth of a personal tour AND the depth of someone who grew up in this specific landscape.
+            <p className="text-sand-400 leading-relaxed text-base md:text-lg">
+              The Altai is its own world — Kazakh instead of Khalkh, eagle-hunter culture, mountains above 4,000 m. I travel with the group from UB, but once we&apos;re in Ölgii a local co-host joins us: someone with years of direct experience in these peaks, family ties to the eagle hunters, and fluent Kazakh. You get the warmth of a personal tour AND the depth of someone who grew up in this specific landscape.
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="pb-24 md:pb-32">
-        <div className="max-w-4xl mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="relative overflow-hidden rounded-3xl border border-indigo-800/30 bg-gradient-to-br from-indigo-900/25 via-night-900/60 to-night-900/80 p-8 md:p-12 backdrop-blur-sm"
-          >
-            <p className="text-indigo-300 text-xs tracking-[0.3em] uppercase mb-3">
-              Pick your week
-            </p>
-            <h2 className="font-display text-3xl md:text-4xl text-sand-100 mb-4">
-              $1,400 per person
-            </h2>
-            <p className="text-sand-300 text-lg mb-8 max-w-xl leading-relaxed">
-              Two departures in 2026 — June 8–13 or Aug 3–8. Small groups of 6–8. Flight included.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/book"
-                className="inline-flex items-center justify-center gap-2 bg-indigo-500 hover:bg-indigo-400 text-white px-8 py-4 text-sm uppercase tracking-[0.15em] font-semibold transition-colors rounded-sm"
-              >
-                Reserve a Spot
-              </Link>
-              <a
-                href="mailto:hello@tugo.mn?subject=Altai%20Tavan%20Bogd%202026"
-                className="inline-flex items-center justify-center gap-2 border border-sand-400/40 hover:border-sand-300 hover:bg-sand-400/10 text-sand-300 hover:text-sand-100 px-8 py-4 text-sm uppercase tracking-[0.15em] transition-colors rounded-sm"
-              >
-                Ask a Question
-              </a>
-            </div>
-          </motion.div>
+      <IncludedBring
+        accent={ACCENT}
+        priceLabel="$1,400"
+        included={[
+          "Round-trip flight: Ulaanbaatar ↔ Ölgii",
+          "All meals (breakfast, lunch, dinner)",
+          "4×4 Russian van, driver, and fuel",
+          "English/Mongolian guide (Tugi) + local Altai co-host",
+          "Horses and local riding guide for Baga Turgen",
+          "Ger camps and nomad family stays",
+          "All park permits and site entrance fees",
+          "Eagle-hunter visit fee",
+        ]}
+        bring={[
+          "Hiking boots (broken in) + blister tape",
+          "Warm layer — nights drop below 5 °C even in August",
+          "Rain shell (Altai weather flips fast)",
+          "Sleeping bag rated to 0 °C for the ger camps",
+          "Headlamp, sunhat, sunscreen, lip balm",
+          "Altitude is up to ~3,000 m — flag any heart conditions",
+          "A 40 L duffel (no hard suitcases)",
+        ]}
+        note="Altai is physically the most demanding of our tours. The horse day is 6 hours in the saddle; the glacier hike is 3.5 km each way at altitude. Most ages handle it — just come with something in the tank."
+      />
 
-          <div className="mt-10 text-center">
-            <Link
-              href="/tours"
-              className="text-sand-500 hover:text-sand-300 text-xs tracking-[0.3em] uppercase transition-colors"
-            >
-              ← Back to all tours
-            </Link>
-          </div>
-        </div>
-      </section>
+      <TourFAQ
+        accent={ACCENT}
+        items={[
+          { q: "Is the flight really included?", a: "Yes. Round-trip UB ↔ Ölgii is built into the $1,400 price. Flight tickets go non-refundable ~45 days before departure, so if you need to cancel after that the flight portion is forfeit." },
+          { q: "How cold does it get?", a: "Days 10–20 °C, nights can drop to 0–5 °C. The wind is the real factor — it cuts through thin layers. Wool or synthetic mid-layer + wind shell beats any fleece." },
+          { q: "Do I have to ride a horse?", a: "The Baga Turgen day is on horseback with a local guide leading. If you really can&apos;t ride, we can swap it for a shorter hike — but the waterfall is the highlight and the horses are famously gentle." },
+          { q: "Is the eagle hunter real or a show?", a: "Real. We visit a hunting family that actually uses their eagles for winter hunting. Summer they&apos;re training and mostly welcoming guests like us. Most famous training grounds are within a 2-hour drive." },
+          { q: "Can I do this + North & Central?", a: "Yes — the June Altai (Jun 8–13) leaves 6 weeks before the N&C Loop (Jul 21–31). Plenty of time to reset. Or: August Altai (Aug 3–8) → Gobi Glimpse (Aug 18–28). Ask and I'll plan the combo." },
+        ]}
+      />
+
+      <TourCTA
+        accent={ACCENT}
+        title="$1,400 per person · flight included"
+        subtitle="Two departures in 2026 — June 8–13 or Aug 3–8. Small groups of 6–8. Bring a friend and save 15% each."
+        emailSubject="Altai Tavan Bogd · 2026"
+      />
     </div>
   );
 }

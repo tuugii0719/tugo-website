@@ -1,176 +1,90 @@
 "use client";
 
-import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
+import {
+  TourHero, VitalsStrip, Prologue, Itinerary,
+  IncludedBring, TourFAQ, TourCTA,
+  SectionHead, PullQuote, GerEtiquette,
+} from "@/components/tours/kit";
 
-const days = [
-  {
-    n: "01",
-    title: "Terelj National Park",
-    body:
-      "Leave Ulaanbaatar in the morning and drive to Gorkhi-Terelj National Park. Turtle Rock, a visit to Aryabal Meditation Temple (the staircase shaped like an elephant's trunk), crossing the Terelj River. Night in a traditional family ger.",
-  },
-  {
-    n: "02",
-    title: "Heading to Khagiin Khar Lake",
-    body:
-      "Pack the kitchen and bags onto the horses. Ride out across Khavirga Pass and into the quiet taiga. A long day in the saddle — tents set up for the night under the stars.",
-  },
-  {
-    n: "03",
-    title: "Arriving at Khagiin Khar Lake",
-    body:
-      "By late afternoon we reach Khagiin Khar Lake — the Pearl of the Taiga, at the southern edge of the Siberian forest. Camp by the lake with the mountains all around. If the conditions are right, we gallop a little along the shore.",
-  },
-  {
-    n: "04",
-    title: "Return ride to Khavirga Pass camp",
-    body:
-      "Back along the same trail through the taiga. Reach the area below Khavirga Pass in the afternoon and set up tents. Campfire, stories, and quiet wilderness after a long day of riding.",
-  },
-  {
-    n: "05",
-    title: "Last day of riding",
-    body:
-      "Pack up and ride back to the family camp. Night in gers again, cooking traditional dishes with the local women — a warm evening and a taste of everyday nomad life.",
-  },
-  {
-    n: "06",
-    title: "Chinggis Khaan Statue & Ulaanbaatar",
-    body:
-      "Drive back to the city. A stop at the iconic Chinggis Khaan Equestrian Statue on the way. Arrive in UB in the late afternoon.",
-  },
-];
+const G = "/images/gallery";
 
-const vitals = [
-  { label: "Dates", value: "June 25 – 30, 2026" },
-  { label: "Duration", value: "6 days" },
-  { label: "Group size", value: "6–8" },
-  { label: "Region", value: "Khan Khentii" },
-  { label: "Start / end", value: "Ulaanbaatar" },
-  { label: "Price", value: "$1,200" },
-];
+const ACCENT = "lime";
 
 export default function KhagiinKharNuurPage() {
   return (
     <div className="min-h-screen bg-night-950 text-sand-100">
-      {/* HERO */}
-      <section className="relative min-h-[50vh] pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-lime-900/20 via-night-950 to-night-950" />
+      <TourHero
+        image={`${G}/DSC01684.jpg`}
+        kicker="Taiga horse trek"
+        meta={["1 departure", "6 days"]}
+        title="Khagiin<br/>Khar Nuur"
+        subtitle="Six days on horseback into the Khan Khentii taiga — two days riding in, a night camped on the Pearl of the Taiga, two days riding out, and the Chinggis statue on the drive home."
+        accent={ACCENT}
+      />
 
-        {/* Decorative SVG of trail + mountains */}
-        <svg
-          className="absolute bottom-0 left-0 right-0 w-full h-40 text-lime-500/10"
-          viewBox="0 0 1200 160"
-          preserveAspectRatio="none"
-        >
-          <path d="M0 160 L 100 80 L 200 110 L 330 40 L 450 90 L 580 30 L 700 80 L 850 50 L 1000 100 L 1200 60 L 1200 160 Z" fill="currentColor" />
-        </svg>
+      <VitalsStrip
+        items={[
+          { l: "Dates", v: "Jun 25 – 30, 2026" },
+          { l: "Days", v: "6" },
+          { l: "Group", v: "6 – 8" },
+          { l: "Region", v: "Khan Khentii taiga" },
+          { l: "Start / end", v: "Ulaanbaatar" },
+          { l: "Price", v: "$1,400" },
+        ]}
+      />
 
-        <div className="relative max-w-5xl mx-auto px-6">
-          <Link
-            href="/tours"
-            className="inline-flex items-center gap-2 text-sand-400 text-xs tracking-[0.3em] uppercase mb-6 hover:text-sand-200 transition-colors"
-          >
-            ← 2026 Season
-          </Link>
+      <Prologue
+        accent={ACCENT}
+        title="A lake only the horses know how to reach."
+        paragraphs={[
+          "Khagiin Khar Nuur — the <em>Pearl of the Taiga</em> — sits at the southern edge of the Siberian forest, deep inside the Khan Khentii strict protected area. There is no road in. The only way is on horseback, and that is the point.",
+          "I love this tour because it slows everything down. Your legs stop checking for phones, your breath evens out, and by day three you&apos;re asleep by the fire with a dog using your jacket as a pillow.",
+          "It&apos;s real riding — two long days in the saddle each way — but the horses are patient and the pace is easy. If you&apos;ve ridden a few times before, you&apos;ll be fine. Come for the country you can only reach by horse.",
+        ]}
+      />
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <p className="text-lime-300 text-xs tracking-[0.3em] uppercase mb-3">
-              Taiga Horse Trek
-            </p>
-            <h1 className="font-display text-5xl md:text-7xl text-white mb-5 leading-[0.95]">
-              Horse Trek to
-              <br />
-              Khagiin Khar Nuur
-            </h1>
-            <p className="text-sand-300 text-lg md:text-xl max-w-2xl leading-relaxed">
-              Six days on horseback into the Khan Khentii taiga — two days riding in, a night camped on the Pearl of the Taiga, two days riding out, and the Chinggis statue on the drive home.
-            </p>
-          </motion.div>
-        </div>
-      </section>
+      <Itinerary
+        accent={ACCENT}
+        title="Six days in the saddle."
+        days={[
+          { n: "01", t: "UB → Terelj", d: "Leave Ulaanbaatar in the morning, drive to Gorkhi-Terelj. Turtle Rock, a visit to Aryabal Meditation Temple, crossing the Terelj River. Night in a traditional family ger." },
+          { n: "02", t: "Heading to Khagiin Khar Lake", d: "Pack the kitchen and bags onto the horses. Ride out across Khavirga Pass and into the quiet taiga. A long day in the saddle — tents set up for the night under the stars." },
+          { n: "03", t: "Arriving at Khagiin Khar Lake", d: "By late afternoon we reach the Pearl of the Taiga — the southern edge of the Siberian forest. Camp by the lake with mountains all around. A short canter along the shore if the ground allows." },
+          { n: "04", t: "Return ride to Khavirga Pass camp", d: "Back along the same trail through the taiga. Reach the area below Khavirga Pass in the afternoon and set up tents. Campfire, stories, quiet wilderness after a long day." },
+          { n: "05", t: "Last day of riding", d: "Pack up and ride back to the family camp. Night in gers, cooking traditional dishes with the local women — a warm evening and a taste of everyday nomad life." },
+          { n: "06", t: "Chinggis Khaan Statue & UB", d: "Drive back to the city. Stop at the iconic Chinggis Khaan Equestrian Statue on the way. Arrive in UB late afternoon." },
+        ]}
+      />
 
-      {/* VITALS */}
-      <section className="border-y border-sand-900/30 bg-night-900/40 backdrop-blur-sm">
-        <div className="max-w-6xl mx-auto px-6 py-8 grid grid-cols-2 md:grid-cols-6 gap-6 text-center">
-          {vitals.map((v) => (
-            <div key={v.label}>
-              <p className="text-sand-500 text-[10px] tracking-[0.2em] uppercase mb-1.5">
-                {v.label}
-              </p>
-              <p className="text-sand-100 font-display text-sm md:text-base">
-                {v.value}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
+      {/* PHOTO ESSAY */}
+      <section className="py-20 md:py-28 border-b border-sand-900/30">
+        <div className="max-w-6xl mx-auto px-6">
+          <SectionHead kicker="The taiga" title="What a horse week looks like." center accent={ACCENT} />
 
-      {/* INTRO */}
-      <section className="py-16 md:py-24">
-        <div className="max-w-3xl mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <p className="text-lime-400 text-xs tracking-[0.3em] uppercase mb-4">
-              The vibe
-            </p>
-            <h2 className="font-display text-3xl md:text-4xl text-sand-100 mb-6 leading-tight">
-              A lake only the horses know how to reach.
-            </h2>
-            <div className="space-y-5 text-sand-300 text-lg leading-relaxed">
-              <p>
-                Khagiin Khar Nuur — the <em>Pearl of the Taiga</em> — sits at the southern edge of the Siberian forest, deep inside the Khan Khentii strict protected area. There&apos;s no road in. The only way is on horseback, and that&apos;s the point.
-              </p>
-              <p>
-                You&apos;ll spend the first night in a family ger, meet the horses, learn the basics. Then two days in the saddle through birch and larch, over Khavirga Pass, down to the lake. One morning waking up on the shore with the mountains all around. Ride back out the same way. Finish in a ger camp cooking khuushuur with the host family before driving home past Chinggis.
-              </p>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+          <div className="space-y-6 md:space-y-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="relative aspect-[21/9] overflow-hidden rounded-2xl"
+            >
+              <Image src={`${G}/DSC01684.jpg`} alt="Orkhon / taiga canyon" fill className="object-cover" sizes="100vw" />
+            </motion.div>
 
-      {/* DAY BY DAY */}
-      <section className="pb-20 md:pb-28">
-        <div className="max-w-4xl mx-auto px-6">
-          <p className="text-lime-400 text-xs tracking-[0.3em] uppercase mb-4 text-center">
-            Day by day
-          </p>
-          <h2 className="font-display text-3xl md:text-4xl text-sand-100 mb-14 text-center">
-            Six days in the saddle
-          </h2>
+            <PullQuote
+              accent={ACCENT}
+              quote="By day three the horses know your name before your people do. You catch yourself talking to them."
+              attribution="— Something I keep noticing."
+            />
 
-          <div className="relative">
-            {/* Vertical trail */}
-            <div className="absolute left-4 md:left-12 top-4 bottom-4 w-px bg-gradient-to-b from-lime-500/30 via-lime-700/20 to-transparent" />
-
-            <div className="space-y-8 md:space-y-12">
-              {days.map((day, idx) => (
-                <motion.div
-                  key={day.n}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, margin: "-50px" }}
-                  transition={{ duration: 0.5, delay: idx * 0.04 }}
-                  className="relative pl-14 md:pl-28"
-                >
-                  {/* Node */}
-                  <div className="absolute left-0 md:left-6 top-1 w-8 h-8 md:w-12 md:h-12 rounded-full bg-lime-500/20 border border-lime-400/40 flex items-center justify-center text-lime-200 font-display text-xs md:text-sm">
-                    {day.n}
-                  </div>
-                  <h3 className="font-display text-xl md:text-2xl text-sand-100 mb-3">
-                    {day.title}
-                  </h3>
-                  <p className="text-sand-400 leading-relaxed">{day.body}</p>
-                </motion.div>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3">
+              {[`${G}/DSC02365.jpg`, `${G}/DSC02098.jpg`, `${G}/DSC01687.jpg`, `${G}/DSC01690.jpg`].map((src) => (
+                <div key={src} className="relative aspect-square overflow-hidden rounded-lg group">
+                  <Image src={src} alt="" fill className="object-cover transition-transform duration-500 group-hover:scale-[1.04]" sizes="25vw" />
+                </div>
               ))}
             </div>
           </div>
@@ -178,7 +92,7 @@ export default function KhagiinKharNuurPage() {
       </section>
 
       {/* CO-HOST */}
-      <section className="pb-20 md:pb-28">
+      <section className="py-20 md:py-28 border-b border-sand-900/30">
         <div className="max-w-4xl mx-auto px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -187,64 +101,68 @@ export default function KhagiinKharNuurPage() {
             transition={{ duration: 0.5 }}
             className="rounded-2xl border border-lime-800/30 bg-lime-900/10 p-8 md:p-10"
           >
-            <p className="text-lime-300 text-xs tracking-[0.3em] uppercase mb-3">
-              Co-host on this tour
-            </p>
+            <p className="text-lime-300 text-[11px] tracking-[0.3em] uppercase mb-3">Co-host on this tour</p>
             <h2 className="font-display text-2xl md:text-3xl text-sand-100 mb-4">
               A local horse guide joins the group.
             </h2>
-            <p className="text-sand-400 leading-relaxed">
+            <p className="text-sand-400 leading-relaxed text-base md:text-lg">
               Horses don&apos;t follow GPS, and neither does the taiga. Tugi is with you from UB, but on the ride itself we travel with a local horse guide who knows the Khavirga Pass trail by heart, lives with these horses, and can read the forest like a map. You&apos;re riding with the people who do this for real — not rented hands.
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* CTA */}
-      <section className="pb-24 md:pb-32">
-        <div className="max-w-4xl mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="relative overflow-hidden rounded-3xl border border-lime-800/30 bg-gradient-to-br from-lime-900/25 via-night-900/60 to-night-900/80 p-8 md:p-12 backdrop-blur-sm"
-          >
-            <p className="text-lime-300 text-xs tracking-[0.3em] uppercase mb-3">
-              Saddle up
-            </p>
-            <h2 className="font-display text-3xl md:text-4xl text-sand-100 mb-4">
-              June 25 – 30, 2026  ·  $1,200
-            </h2>
-            <p className="text-sand-300 text-lg mb-8 max-w-xl leading-relaxed">
-              Small group (6–8), starting and ending in Ulaanbaatar. Limited horses — reserve early.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link
-                href="/book"
-                className="inline-flex items-center justify-center gap-2 bg-lime-500 hover:bg-lime-400 text-night-950 px-8 py-4 text-sm uppercase tracking-[0.15em] font-semibold transition-colors rounded-sm"
-              >
-                Reserve a Spot
-              </Link>
-              <a
-                href="mailto:hello@tugo.mn?subject=Khagiin%20Khar%20Nuur%20horse%20trek%20—%20June%2025"
-                className="inline-flex items-center justify-center gap-2 border border-sand-400/40 hover:border-sand-300 hover:bg-sand-400/10 text-sand-300 hover:text-sand-100 px-8 py-4 text-sm uppercase tracking-[0.15em] transition-colors rounded-sm"
-              >
-                Ask a Question
-              </a>
-            </div>
-          </motion.div>
-
-          <div className="mt-10 text-center">
-            <Link
-              href="/tours"
-              className="text-sand-500 hover:text-sand-300 text-xs tracking-[0.3em] uppercase transition-colors"
-            >
-              ← Back to all tours
-            </Link>
-          </div>
+      {/* GER ETIQUETTE */}
+      <section className="py-20 md:py-28 border-b border-sand-900/30">
+        <div className="max-w-3xl mx-auto px-6">
+          <SectionHead kicker="In the ger" title="Your first ger visit." center accent={ACCENT} />
+          <GerEtiquette />
         </div>
       </section>
+
+      <IncludedBring
+        accent={ACCENT}
+        priceLabel="$1,400"
+        included={[
+          "UB ↔ Terelj transfers (private car)",
+          "Horses, tack, and local horse guide for 4 riding days",
+          "Family ger stays (nights 1, 5)",
+          "Tent camps (nights 2, 3, 4) — tents, sleeping pads, kitchen",
+          "All meals on the trail — cooked fresh at camp",
+          "English/Mongolian guide (Tugi)",
+          "Chinggis Khaan Statue entry on the way home",
+          "Khan Khentii protected-area permits",
+        ]}
+        bring={[
+          "Hiking boots + riding-friendly trousers (long + stretchy)",
+          "A padded seat-pad if you want extra cushion (I can lend one)",
+          "Sleeping bag rated to 0 °C",
+          "Rain shell — summer showers happen",
+          "A light riding helmet if you prefer (we have a few to lend)",
+          "Head torch, sunhat, bug spray, blister tape",
+          "Cash — no ATMs after UB",
+        ]}
+        note="Horse experience isn&rsquo;t required but 2–3 prior rides helps. We pair you with a patient horse and go slow on day 2."
+      />
+
+      <TourFAQ
+        accent={ACCENT}
+        items={[
+          { q: "How many hours in the saddle per day?", a: "Days 2 and 4 are ~6 hours with breaks. Day 3 is shorter, ~3–4 hours. Day 5 is ~2 hours. It&apos;s real time on a horse — expect to feel it." },
+          { q: "What if I can't keep riding?", a: "Our support 4×4 stays near the trail on the first and last rides. If you genuinely can't continue, we swap to the vehicle. We've never had to on this tour, but the option is there." },
+          { q: "How cold at night?", a: "Late June in the taiga: 5–12 °C overnight. The campfire helps. Your 0 °C bag will be comfortable." },
+          { q: "Are there bugs?", a: "Yes — June is mosquito season in the forest. Long sleeves + Deet-based repellent is essential. After day 2 you stop noticing them." },
+          { q: "What's the trail like?", a: "Soft forest floor, stream crossings, one real pass (Khavirga, ~1,800 m). Gentle elevation. The horses do the work — the riding is sustained but not technical." },
+          { q: "Can solo travellers join?", a: "Absolutely. Most riders come solo. The group bonds fast on this one." },
+        ]}
+      />
+
+      <TourCTA
+        accent={ACCENT}
+        title="June 25 – 30, 2026 · $1,400"
+        subtitle="Small group of 6 – 8. Limited horses — reserve early. Bring a friend and save 15% each."
+        emailSubject="Khagiin Khar Nuur horse trek · June 25"
+      />
     </div>
   );
 }

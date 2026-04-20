@@ -1,7 +1,8 @@
 (globalThis.TURBOPACK_CHUNK_LISTS || (globalThis.TURBOPACK_CHUNK_LISTS = [])).push({
     script: typeof document === "object" ? document.currentScript : undefined,
     chunks: [
-  "static/chunks/app_tours_altai-tavan-bogd_page_2b4033f0.js"
+  "static/chunks/node_modules_next_f06cca34._.js",
+  "static/chunks/_1d76dc17._.js"
 ],
     source: "dynamic"
 });

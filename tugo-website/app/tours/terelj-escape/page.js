@@ -1,44 +1,157 @@
 "use client";
 
-import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
+import {
+  TourHero, VitalsStrip, Prologue, Itinerary,
+  IncludedBring, TourFAQ, TourCTA, Departures,
+  SectionHead, PullQuote, GerEtiquette,
+} from "@/components/tours/kit";
+
+const G = "/images/gallery";
+
+const ACCENT = "teal";
 
 export default function TerelJEscapePage() {
   return (
-    <div className="min-h-screen bg-night-950 flex items-center justify-center px-6">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="text-center max-w-lg"
-      >
-        <p className="text-sand-500 text-xs tracking-[0.3em] uppercase mb-4">
-          3 Departures · 3 Days · $350 · 8–16 pax
-        </p>
-        <h1 className="font-display text-4xl md:text-5xl text-sand-100 mb-4">
-          Terelj Escape
-        </h1>
-        <p className="text-sand-400 leading-relaxed mb-4">
-          June 1–3  ·  July 16–18  ·  Aug 11–13
-        </p>
-        <p className="text-sand-400 leading-relaxed mb-8">
-          Any age. Gorkhi-Terelj weekend — Turtle Rock, Aryabal Meditation Monastery, horseback through alpine meadows, a hike, khorkhog (hot-stone lamb) with the family, and a night in a ger camp 90 minutes from the city.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link
-            href="/book"
-            className="inline-block bg-sand-400 px-6 py-3 text-sm uppercase tracking-wider text-night-950 transition hover:bg-sand-300"
-          >
-            Reserve Your Spot
-          </Link>
-          <Link
-            href="/tours"
-            className="inline-block border border-sand-400/40 px-6 py-3 text-sm uppercase tracking-wider text-sand-400 transition hover:bg-sand-400/10"
-          >
-            ← All Tours
-          </Link>
+    <div className="min-h-screen bg-night-950 text-sand-100">
+      <TourHero
+        image={`${G}/DSC01558.jpg`}
+        kicker="Forest weekend"
+        meta={["3 departures", "3 days each"]}
+        title="Terelj<br/>Escape"
+        subtitle="A gentle weekend in Gorkhi-Terelj — Turtle Rock, alpine meadow rides, and a night in a family ger camp, 90 minutes from the city. Any age. Season opener, mid-summer, end-of-summer."
+        accent={ACCENT}
+      />
+
+      <VitalsStrip
+        items={[
+          { l: "Days", v: "3" },
+          { l: "Price", v: "$350" },
+          { l: "Group", v: "8 – 16" },
+          { l: "Region", v: "Khentii foothills" },
+          { l: "Pace", v: "Easy · any age" },
+          { l: "Start / end", v: "Ulaanbaatar" },
+        ]}
+      />
+
+      <Departures
+        accent={ACCENT}
+        list={[
+          { label: "Jun departure", dates: "Jun 1 – 3, 2026", days: 3 },
+          { label: "Jul departure", dates: "Jul 16 – 18, 2026", days: 3 },
+          { label: "Aug departure", dates: "Aug 11 – 13, 2026", days: 3 },
+        ]}
+      />
+
+      <Prologue
+        accent={ACCENT}
+        title="The easiest yes of the season."
+        paragraphs={[
+          "Ninety minutes from Ulaanbaatar and you&apos;re in a different country. Terelj is where I take my own family — the granite stacks in the forest, the little meandering river, the one ger camp that makes the best khorkhog on the shoulder of Khentii.",
+          "This is the tour I run three times a year on purpose. It&apos;s short, it&apos;s warm, it&apos;s any-age. First-time travellers come out of this one ready for the bigger trips. Longer-time Mongolia friends come back just to sit by the fire.",
+          "If the rest of the calendar is too much, this is the one. I can all but guarantee you&apos;ll want to stay an extra night.",
+        ]}
+      />
+
+      <Itinerary
+        accent={ACCENT}
+        title="Three days, one weekend."
+        days={[
+          { n: "01", t: "UB → Terelj", d: "Drive out late morning. Stop at the Chinggis Khaan Equestrian Statue on the way. Arrive at the family ger camp for lunch, afternoon horseback, hot-stone khorkhog dinner." },
+          { n: "02", t: "Turtle Rock · Aryabal Monastery", d: "Up early for the Aryabal Meditation Temple (the staircase shaped like an elephant&apos;s trunk). Walk or ride to Turtle Rock. Afternoon free — nap, swim, or head up a hill with the family kids." },
+          { n: "03", t: "Terelj → UB", d: "Slow morning. Pack up after a final family breakfast, drive back via a viewpoint. Drop-off in UB by mid-afternoon." },
+        ]}
+      />
+
+      {/* PHOTO ESSAY */}
+      <section className="py-20 md:py-28 border-b border-sand-900/30">
+        <div className="max-w-6xl mx-auto px-6">
+          <SectionHead kicker="The weekend" title="What Terelj looks like." center accent={ACCENT} />
+
+          <div className="space-y-6 md:space-y-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="relative aspect-[21/9] overflow-hidden rounded-2xl"
+            >
+              <Image src={`${G}/DSC01558.jpg`} alt="Terelj steppe and sky" fill className="object-cover" sizes="100vw" />
+            </motion.div>
+
+            <PullQuote
+              accent={ACCENT}
+              quote="In three days you meet a family, ride a horse, eat off the fire, and remember what quiet sounds like. That's the whole thing."
+              attribution="— Something I tell every first-timer."
+            />
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3">
+              {[`${G}/DSC01810.jpg`, `${G}/DSC01820.jpg`, `${G}/DSC01846.jpg`, `${G}/DSC01861.jpg`].map((src) => (
+                <div key={src} className="relative aspect-square overflow-hidden rounded-lg group">
+                  <Image src={src} alt="" fill className="object-cover transition-transform duration-500 group-hover:scale-[1.04]" sizes="25vw" />
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-      </motion.div>
+      </section>
+
+      {/* FOOD + GER ETIQUETTE */}
+      <section className="py-20 md:py-28 border-b border-sand-900/30">
+        <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-start">
+          <div>
+            <SectionHead kicker="Family dinner" title="Khorkhog night." accent={ACCENT} />
+            <p className="text-sand-300 text-lg leading-relaxed mb-4">
+              On night one we eat <em>khorkhog</em> — lamb, potatoes, carrots, and onions seared in a milk can with river stones pulled hot from the fire. The stones cook the food from the inside out. They&apos;re also passed around after dinner — you hold them to soak up the heat.
+            </p>
+            <p className="text-sand-400 leading-relaxed">
+              If the weather is too wet for an open fire, we move inside the ger and switch to <em>buuz</em> dumplings, still hand-made, still by people you&apos;ll know by first name within an hour.
+            </p>
+          </div>
+          <GerEtiquette />
+        </div>
+      </section>
+
+      <IncludedBring
+        accent={ACCENT}
+        priceLabel="$350"
+        included={[
+          "Return transfer from UB (private car, ~90 min each way)",
+          "2 nights in a family ger camp (shared)",
+          "All meals on the road (khorkhog, buuz, breakfasts)",
+          "1 × horseback session with local horse family",
+          "Aryabal Monastery entrance fee",
+          "English/Mongolian guide (Tugi) + driver",
+        ]}
+        bring={[
+          "Comfortable clothes for horseback and hiking",
+          "A warm layer — nights can drop to 8 °C",
+          "Rain shell (Terelj catches thunderstorms)",
+          "Headlamp for the ger",
+          "Closed shoes",
+          "Any personal medications",
+        ]}
+        note="Under-12s are welcome with a parent. Kids are free under 5; half-price 5–12."
+      />
+
+      <TourFAQ
+        accent={ACCENT}
+        items={[
+          { q: "How is this different from the other weekend Terelj day tours?", a: "Most day tours from UB take you to Turtle Rock and back in 8 hours. You see the rock, you buy a souvenir, you're done. Ours is an actual weekend — a family stay, two meals with them, horses, Aryabal, and the time to actually <em>be</em> there instead of just arriving and leaving." },
+          { q: "Is it okay if I don't ride horses?", a: "Totally fine. The horseback session is optional. There are plenty of walks, river spots, and a ger to read in." },
+          { q: "What if the weather turns?", a: "We run rain or shine. Ger is warm, khorkhog is better in the rain, and Turtle Rock looks incredible with clouds rolling in. Only cancellation would be an actual safety issue like a flooded road — which is rare." },
+          { q: "How many people in the group?", a: "8–16. These departures often book up with families and friend groups, so the vibe tilts social. If you want a smaller private version, message me." },
+          { q: "Can I combine this with another tour?", a: "Yes — many people do Terelj (Jun 1–3) then rest a few days and join Altai (Jun 8–13). Or Terelj (Aug 11–13) after Gobi Glimpse. Tell me what you're thinking and I'll suggest a combo." },
+        ]}
+      />
+
+      <TourCTA
+        accent={ACCENT}
+        title="3 departures · $350 each"
+        subtitle="Pick the weekend that fits. Bring a friend and save 15% each. Applications open now."
+        emailSubject="Terelj Escape · 2026"
+      />
     </div>
   );
 }
