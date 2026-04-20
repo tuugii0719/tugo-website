@@ -186,7 +186,7 @@ export default function PlaytimePage() {
             />
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3">
-              {[posterImage, `${G}/DSC08283.jpg`, `${G}/DSC01558.jpg`, `${G}/DSC02365.jpg`].map((src) => (
+              {[posterImage, `${G}/DSC08283.jpg`, `${G}/DSC01558.jpg`, `${G}/DSC02098.jpg`].map((src) => (
                 <div key={src} className="relative aspect-square overflow-hidden rounded-lg group">
                   <Image src={src} alt="" fill className="object-cover transition-transform duration-500 group-hover:scale-[1.04]" sizes="25vw" />
                 </div>
