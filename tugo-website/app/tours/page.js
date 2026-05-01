@@ -493,6 +493,7 @@ function DayCell({ monthIndex, day, isEmpty, onHover, onLeave, hoveredId, dayOfW
   const isFirstDay = monthIndex === tour.startMonth && day === tour.startDay;
   const isLastDay = monthIndex === tour.endMonth && day === tour.endDay;
   const isHovered = hoveredId === tour.id;
+  const isAnchor = isFirstDay; // popover renders only on the first cell of the tour
   const isDimmed = hoveredId && hoveredId !== tour.id;
 
   const roundLeft = isFirstDay || dayOfWeek === 0;
@@ -503,19 +504,28 @@ function DayCell({ monthIndex, day, isEmpty, onHover, onLeave, hoveredId, dayOfW
     roundRight ? "rounded-r-xl" : "",
   ].join(" ");
 
+  // Horizontal alignment of the popover relative to the cell.
+  // Sunday (col 0) and Monday (col 1) cells: anchor LEFT so popover doesn't overflow off the left edge.
+  // Friday (col 5) and Saturday (col 6): anchor RIGHT.
+  // Middle: center.
+  let popoverAlign = "left-1/2 -translate-x-1/2";
+  if (dayOfWeek <= 1) popoverAlign = "left-0 translate-x-0";
+  else if (dayOfWeek >= 5) popoverAlign = "right-0 translate-x-0 left-auto";
+
   return (
-    <Link
-      href={`/tours/${tour.slug}`}
-      onMouseEnter={() => onHover(tour.id)}
-      onMouseLeave={onLeave}
-      className={`
-        relative aspect-square flex flex-col items-center justify-center
-        border ${theme.border} ${theme.bg} ${theme.bgHover} ${roundingClass}
-        transition-all duration-300 group cursor-pointer overflow-hidden
-        ${isHovered ? "scale-[1.12] z-20" : ""}
-        ${isDimmed ? "opacity-25" : "opacity-100"}
-      `}
-    >
+    <div className="relative aspect-square">
+      <Link
+        href={`/tours/${tour.slug}`}
+        onMouseEnter={() => onHover(tour.id)}
+        onMouseLeave={onLeave}
+        className={`
+          relative w-full h-full flex flex-col items-center justify-center
+          border ${theme.border} ${theme.bg} ${theme.bgHover} ${roundingClass}
+          transition-all duration-300 group cursor-pointer overflow-hidden
+          ${isHovered ? "scale-[1.12] z-20" : ""}
+          ${isDimmed ? "opacity-25" : "opacity-100"}
+        `}
+      >
       <div className={`${theme.text} absolute inset-0 pointer-events-none`}>
         <CellPattern type={theme.pattern} />
       </div>
@@ -543,7 +553,25 @@ function DayCell({ monthIndex, day, isEmpty, onHover, onLeave, hoveredId, dayOfW
           end
         </span>
       )}
-    </Link>
+      </Link>
+
+      {/* Popover renders inside the cell, only on the FIRST day of the tour, only when hovered */}
+      <AnimatePresence>
+        {isHovered && isAnchor && (
+          <div
+            className={`absolute top-full mt-2 z-50 ${popoverAlign}`}
+            onMouseEnter={() => onHover(tour.id)}
+            onMouseLeave={onLeave}
+          >
+            <TourPopover
+              tour={tour}
+              onMouseEnter={() => onHover(tour.id)}
+              onMouseLeave={onLeave}
+            />
+          </div>
+        )}
+      </AnimatePresence>
+    </div>
   );
 }
 
@@ -642,26 +670,6 @@ function MonthCalendar({ month, hoveredId, onHover, onLeave }) {
     cells.push({ isEmpty: true, key: `empty-end-${cells.length}` });
   }
 
-  const hoveredTour = tours.find((t) => t.id === hoveredId);
-  let popoverAnchor = null;
-  if (hoveredTour) {
-    const startsHere = hoveredTour.startMonth === month.index;
-    const endsHere = hoveredTour.endMonth === month.index;
-    const spansHere =
-      hoveredTour.startMonth < month.index && hoveredTour.endMonth > month.index;
-
-    if (startsHere || endsHere || spansHere) {
-      const anchorDay = startsHere ? hoveredTour.startDay : 1;
-      const cellIndex = firstDayOfWeek + anchorDay - 1;
-      popoverAnchor = {
-        row: Math.floor(cellIndex / 7),
-        col: cellIndex % 7,
-      };
-    }
-  }
-
-  const totalRows = Math.ceil(cells.length / 7);
-
   return (
     <div className="relative">
       <div className="flex items-baseline justify-between mb-4">
@@ -680,7 +688,7 @@ function MonthCalendar({ month, hoveredId, onHover, onLeave }) {
         ))}
       </div>
 
-      <div className="grid grid-cols-7 gap-1 relative">
+      <div className="grid grid-cols-7 gap-1">
         {cells.map((cell, idx) => (
           <DayCell
             key={cell.key}
@@ -694,29 +702,11 @@ function MonthCalendar({ month, hoveredId, onHover, onLeave }) {
           />
         ))}
       </div>
-
-      <AnimatePresence>
-        {popoverAnchor && hoveredTour && (
-          <div
-            key={hoveredTour.id}
-            className="absolute z-50 pointer-events-none"
-            style={{
-              top: `calc(((100% - 80px) * ${(popoverAnchor.row + 1) / totalRows}) + 60px)`,
-              left: "50%",
-              transform: "translate(-50%, 12px)",
-            }}
-          >
-            <TourPopover
-              tour={hoveredTour}
-              onMouseEnter={() => onHover(hoveredTour.id)}
-              onMouseLeave={onLeave}
-            />
-          </div>
-        )}
-      </AnimatePresence>
     </div>
   );
 }
+
+// (legacy popover anchor block removed — popover now renders inside DayCell)
 
 // ============================================================================
 // LEGEND
