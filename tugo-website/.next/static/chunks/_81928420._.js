@@ -1256,12 +1256,12 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
-"[project]/app/tours/playtime/page.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/app/tours/khagiin-khar-nuur/page.js [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
     "default",
-    ()=>PlaytimePage
+    ()=>KhagiinKharNuurPage
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
@@ -1273,391 +1273,109 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2
 ;
 ;
 const G = "/images/gallery";
-const P = "/images/playtime";
-// Image paths with fallback to gallery photos until the user drops the real
-// festival shots (the crowd photo and the 2026 lineup poster) into
-// /public/images/playtime/ as `hero.jpg` and `poster.jpg`.
-const heroImage = "".concat(G, "/DSC02098.jpg"); // swap to `${P}/hero.jpg` when ready
-const crowdImage = "".concat(G, "/DSC02098.jpg"); // swap to `${P}/crowd.jpg` when ready
-const posterImage = "".concat(G, "/DSC02365.jpg"); // swap to `${P}/poster.jpg` when ready
-const ACCENT = "emerald";
-// Real Playtime 2026 lineup — Ulaanbaatar, July 2-4
-const lineup = [
-    {
-        day: "Thursday",
-        date: "Jul 2",
-        headliner: "MOLCHAT DOMA",
-        highlights: [
-            "Teresa in the Moon",
-            "Magnolian",
-            "Blindfold",
-            "Night Train",
-            "Aaguu",
-            "Diskonnected",
-            "Fat Hamster × Kang New",
-            "Jesse You",
-            "Ouissam",
-            "Torden"
-        ]
-    },
-    {
-        day: "Friday",
-        date: "Jul 3",
-        headliner: "KINGS OF CONVENIENCE · DIIV",
-        highlights: [
-            "Fazi",
-            "OMA × Shing02 with Spin Master A-1",
-            "Horse Radio",
-            "The Colors",
-            "Dotor Khuree",
-            "Aisha Devi",
-            "b.ai",
-            "JASSS",
-            "Gabbs",
-            "Rhom Omit",
-            "Sailor Honeymoon"
-        ]
-    },
-    {
-        day: "Saturday",
-        date: "Jul 4",
-        headliner: "STEREOLAB · HYUKOH",
-        highlights: [
-            "Helena Hauff",
-            "DJ Stingray 313",
-            "Identified Patient",
-            "The Lemons",
-            "HONH",
-            "Lord Spikeheart",
-            "IWKC",
-            "One Click Straight",
-            "Fat Cat Jazz Club",
-            "Tumen Ekh Ensemble"
-        ]
-    }
-];
-function PlaytimePage() {
+const ACCENT = "lime";
+function KhagiinKharNuurPage() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "min-h-screen bg-night-950 text-sand-100",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TourHero"], {
-                image: heroImage,
-                kicker: "Playtime Music Festival · UB",
+                image: "".concat(G, "/DSC01684.jpg"),
+                kicker: "Taiga horse trek",
                 meta: [
                     "1 departure",
-                    "5 days",
-                    "Jul 1 – 5"
+                    "6 days"
                 ],
-                title: "Playtime<br/>Music Festival",
-                subtitle: "Molchat Doma, Kings of Convenience, DIIV, Stereolab, Hyukoh — Mongolia’s biggest festival. A 5-day crew trip built around the long weekend. Ticket, meals, camping, city, Terelj — all in.",
+                title: "Khagiin<br/>Khar Nuur",
+                subtitle: "Six days on horseback into the Khan Khentii taiga — two days riding in, a night camped on the Pearl of the Taiga, two days riding out, and the Chinggis statue on the drive home.",
                 accent: ACCENT
             }, void 0, false, {
-                fileName: "[project]/app/tours/playtime/page.js",
-                lineNumber: 60,
+                fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                lineNumber: 18,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["VitalsStrip"], {
                 items: [
                     {
-                        l: "Tour dates",
-                        v: "Jul 1 – 5, 2026"
-                    },
-                    {
-                        l: "Festival",
-                        v: "Jul 2 – 4"
+                        l: "Dates",
+                        v: "Jun 25 – 30, 2026"
                     },
                     {
                         l: "Days",
-                        v: "5"
+                        v: "6"
                     },
                     {
                         l: "Group",
                         v: "6 – 8"
                     },
                     {
-                        l: "Venue",
-                        v: "Playtime Field, Nalaikh"
+                        l: "Region",
+                        v: "Khan Khentii taiga"
+                    },
+                    {
+                        l: "Start / end",
+                        v: "Ulaanbaatar"
                     },
                     {
                         l: "Price",
-                        v: "$750"
+                        v: "$1,400"
                     }
                 ]
             }, void 0, false, {
-                fileName: "[project]/app/tours/playtime/page.js",
-                lineNumber: 69,
+                fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                lineNumber: 27,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Prologue"], {
                 accent: ACCENT,
-                title: "Come for the headliners. Stay for the crew.",
+                title: "A lake only the horses know how to reach.",
                 paragraphs: [
-                    "Playtime is the festival weekend I build my July around. It runs in a field just outside Ulaanbaatar — three days, three stages, and a lineup that sneaks international acts into a Mongolian crowd in the middle of the steppe. 2026 brings Molchat Doma, Kings of Convenience, DIIV, Stereolab, and Hyukoh. That&apos;s a real roster.",
-                    "This tour is for the people who&apos;d go alone but would rather not. We gather Wednesday night before the gates open — introductions, Mongolian BBQ, cheap beer, you know everyone&apos;s name before you hear any music. Thursday through Saturday: the festival. Sunday is a reset — morning in UB, afternoon out at Terelj, drop-off that evening so you can fly home.",
-                    "It&apos;s the cheapest tour on the calendar on purpose. Festival ticket, all meals, camping kit, transfers, the hostel nights, the city day, the Terelj day — all in the $750. I want it to be a yes for students, first-timers, and anyone who just wants to show up and see who they meet."
+                    "Khagiin Khar Nuur — the <em>Pearl of the Taiga</em> — sits at the southern edge of the Siberian forest, deep inside the Khan Khentii strict protected area. There is no road in. The only way is on horseback, and that is the point.",
+                    "I love this tour because it slows everything down. Your legs stop checking for phones, your breath evens out, and by day three you&apos;re asleep by the fire with a dog using your jacket as a pillow.",
+                    "It&apos;s real riding — two long days in the saddle each way — but the horses are patient and the pace is easy. If you&apos;ve ridden a few times before, you&apos;ll be fine. Come for the country you can only reach by horse."
                 ]
             }, void 0, false, {
-                fileName: "[project]/app/tours/playtime/page.js",
-                lineNumber: 80,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "py-20 md:py-28 border-b border-sand-900/30",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "max-w-5xl mx-auto px-6",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SectionHead"], {
-                            kicker: "2026 Lineup",
-                            title: "Who’s playing.",
-                            center: true,
-                            accent: ACCENT
-                        }, void 0, false, {
-                            fileName: "[project]/app/tours/playtime/page.js",
-                            lineNumber: 93,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid md:grid-cols-3 gap-4",
-                            children: lineup.map((day)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                    initial: {
-                                        opacity: 0,
-                                        y: 20
-                                    },
-                                    whileInView: {
-                                        opacity: 1,
-                                        y: 0
-                                    },
-                                    viewport: {
-                                        once: true,
-                                        margin: "-40px"
-                                    },
-                                    transition: {
-                                        duration: 0.5
-                                    },
-                                    className: "rounded-2xl border border-emerald-800/30 bg-emerald-900/10 p-6 md:p-8 flex flex-col",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "flex items-baseline justify-between mb-5",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-emerald-300 text-xs tracking-[0.25em] uppercase font-semibold",
-                                                    children: day.day
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/tours/playtime/page.js",
-                                                    lineNumber: 106,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-sand-500 text-xs tracking-wider",
-                                                    children: day.date
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/tours/playtime/page.js",
-                                                    lineNumber: 109,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/app/tours/playtime/page.js",
-                                            lineNumber: 105,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "font-display text-lg md:text-xl text-sand-100 leading-tight mb-5",
-                                            children: day.headliner
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/tours/playtime/page.js",
-                                            lineNumber: 111,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "border-t border-emerald-800/30 pt-4 mt-auto",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-sand-500 text-[10px] tracking-[0.2em] uppercase mb-2",
-                                                    children: "Also playing"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/tours/playtime/page.js",
-                                                    lineNumber: 115,
-                                                    columnNumber: 19
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-sand-400 text-xs leading-relaxed",
-                                                    children: day.highlights.join(" · ")
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/tours/playtime/page.js",
-                                                    lineNumber: 118,
-                                                    columnNumber: 19
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/app/tours/playtime/page.js",
-                                            lineNumber: 114,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, day.day, true, {
-                                    fileName: "[project]/app/tours/playtime/page.js",
-                                    lineNumber: 97,
-                                    columnNumber: 15
-                                }, this))
-                        }, void 0, false, {
-                            fileName: "[project]/app/tours/playtime/page.js",
-                            lineNumber: 95,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                            className: "text-center text-sand-500 text-xs mt-8 italic",
-                            children: [
-                                "80+ artists across three stages. Full lineup on ",
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                    href: "https://playtime.mn",
-                                    target: "_blank",
-                                    rel: "noreferrer",
-                                    className: "text-sand-300 underline underline-offset-4 hover:text-sand-100",
-                                    children: "playtime.mn"
-                                }, void 0, false, {
-                                    fileName: "[project]/app/tours/playtime/page.js",
-                                    lineNumber: 127,
-                                    columnNumber: 61
-                                }, this),
-                                "."
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/app/tours/playtime/page.js",
-                            lineNumber: 126,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/app/tours/playtime/page.js",
-                    lineNumber: 92,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/app/tours/playtime/page.js",
-                lineNumber: 91,
+                fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                lineNumber: 38,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Itinerary"], {
                 accent: ACCENT,
-                title: "Five days, three acts.",
+                title: "Six days in the saddle.",
                 days: [
                     {
                         n: "01",
-                        t: "Wed Jul 1 · Arrive & pre-party",
-                        d: "Pick you up from UB airport or your hostel. Afternoon city tour — Gandan monastery, Zaisan hill, a Mongolian BBQ dinner. Names and faces before the field."
+                        t: "UB → Terelj",
+                        d: "Leave Ulaanbaatar in the morning, drive to Gorkhi-Terelj. Turtle Rock, a visit to Aryabal Meditation Temple, crossing the Terelj River. Night in a traditional family ger."
                     },
                     {
                         n: "02",
-                        t: "Thu Jul 2 · Festival Day 1",
-                        d: "Drive out to Playtime Field in Nalaikh (~40 min). Set up camp. Day stages from 2 pm. Molchat Doma headlines. Stay at the festival overnight — tent included."
+                        t: "Heading to Khagiin Khar Lake",
+                        d: "Pack the kitchen and bags onto the horses. Ride out across Khavirga Pass and into the quiet taiga. A long day in the saddle — tents set up for the night under the stars."
                     },
                     {
                         n: "03",
-                        t: "Fri Jul 3 · Festival Day 2",
-                        d: "Second festival day. Kings of Convenience and DIIV headline. International stage builds late — Aisha Devi and JASSS if that&apos;s your thing."
+                        t: "Arriving at Khagiin Khar Lake",
+                        d: "By late afternoon we reach the Pearl of the Taiga — the southern edge of the Siberian forest. Camp by the lake with mountains all around. A short canter along the shore if the ground allows."
                     },
                     {
                         n: "04",
-                        t: "Sat Jul 4 · Festival Day 3",
-                        d: "Final day. Stereolab and Hyukoh headline. Helena Hauff and DJ Stingray 313 push the night late. Back to UB for one proper bed."
+                        t: "Return ride to Khavirga Pass camp",
+                        d: "Back along the same trail through the taiga. Reach the area below Khavirga Pass in the afternoon and set up tents. Campfire, stories, quiet wilderness after a long day."
                     },
                     {
                         n: "05",
-                        t: "Sun Jul 5 · Recovery + Terelj + fly out",
-                        d: "Slow UB morning. Drive out to Gorkhi-Terelj National Park after lunch — Turtle Rock, family ger dinner, khorkhog if you can still eat. Drop-off at UB airport or hostel by 9 pm."
+                        t: "Last day of riding",
+                        d: "Pack up and ride back to the family camp. Night in gers, cooking traditional dishes with the local women — a warm evening and a taste of everyday nomad life."
+                    },
+                    {
+                        n: "06",
+                        t: "Chinggis Khaan Statue & UB",
+                        d: "Drive back to the city. Stop at the iconic Chinggis Khaan Equestrian Statue on the way. Arrive in UB late afternoon."
                     }
                 ]
             }, void 0, false, {
-                fileName: "[project]/app/tours/playtime/page.js",
-                lineNumber: 132,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "py-20 md:py-28 border-b border-sand-900/30",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "max-w-5xl mx-auto px-6",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SectionHead"], {
-                            kicker: "The price covers",
-                            title: "Everything you need for 5 days.",
-                            center: true,
-                            accent: ACCENT
-                        }, void 0, false, {
-                            fileName: "[project]/app/tours/playtime/page.js",
-                            lineNumber: 147,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "grid sm:grid-cols-2 md:grid-cols-4 gap-4",
-                            children: [
-                                {
-                                    icon: "🎟",
-                                    title: "Festival ticket",
-                                    body: "3-day general admission. We sort your wristband in advance."
-                                },
-                                {
-                                    icon: "🍽",
-                                    title: "3 meals a day",
-                                    body: "Breakfasts, lunches, dinners on the road. Local food, no hunger."
-                                },
-                                {
-                                    icon: "🏛",
-                                    title: "UB city tour",
-                                    body: "Gandan, Zaisan, lunch. Half-day, solid intro."
-                                },
-                                {
-                                    icon: "🌲",
-                                    title: "Terelj day trip",
-                                    body: "Turtle Rock, horseback, family ger. Sunday reset."
-                                }
-                            ].map((x)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "rounded-xl border border-sand-800/40 bg-night-900/40 p-6",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "text-3xl mb-3",
-                                            children: x.icon
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/tours/playtime/page.js",
-                                            lineNumber: 157,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "font-display text-lg text-sand-100 mb-1",
-                                            children: x.title
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/tours/playtime/page.js",
-                                            lineNumber: 158,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-sand-400 text-sm leading-relaxed",
-                                            children: x.body
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/tours/playtime/page.js",
-                                            lineNumber: 159,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, x.title, true, {
-                                    fileName: "[project]/app/tours/playtime/page.js",
-                                    lineNumber: 156,
-                                    columnNumber: 15
-                                }, this))
-                        }, void 0, false, {
-                            fileName: "[project]/app/tours/playtime/page.js",
-                            lineNumber: 149,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/app/tours/playtime/page.js",
-                    lineNumber: 146,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/app/tours/playtime/page.js",
-                lineNumber: 145,
+                fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                lineNumber: 48,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1666,13 +1384,13 @@ function PlaytimePage() {
                     className: "max-w-6xl mx-auto px-6",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SectionHead"], {
-                            kicker: "The field",
-                            title: "What Playtime looks like.",
+                            kicker: "The taiga",
+                            title: "What a horse week looks like.",
                             center: true,
                             accent: ACCENT
                         }, void 0, false, {
-                            fileName: "[project]/app/tours/playtime/page.js",
-                            lineNumber: 169,
+                            fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                            lineNumber: 64,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1695,37 +1413,37 @@ function PlaytimePage() {
                                     },
                                     className: "relative aspect-[21/9] overflow-hidden rounded-2xl",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        src: crowdImage,
-                                        alt: "Playtime crowd at night",
+                                        src: "".concat(G, "/DSC01684.jpg"),
+                                        alt: "Orkhon / taiga canyon",
                                         fill: true,
                                         className: "object-cover",
                                         sizes: "100vw"
                                     }, void 0, false, {
-                                        fileName: "[project]/app/tours/playtime/page.js",
-                                        lineNumber: 179,
+                                        fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                                        lineNumber: 74,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
-                                    fileName: "[project]/app/tours/playtime/page.js",
-                                    lineNumber: 172,
+                                    fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                                    lineNumber: 67,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PullQuote"], {
                                     accent: ACCENT,
-                                    quote: "You come for the music. You leave with friends on four continents.",
-                                    attribution: "— Someone who came solo two years in a row."
+                                    quote: "By day three the horses know your name before your people do. You catch yourself talking to them.",
+                                    attribution: "— Something I keep noticing."
                                 }, void 0, false, {
-                                    fileName: "[project]/app/tours/playtime/page.js",
-                                    lineNumber: 182,
+                                    fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                                    lineNumber: 77,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3",
                                     children: [
-                                        posterImage,
-                                        "".concat(G, "/DSC08283.jpg"),
-                                        "".concat(G, "/DSC01558.jpg"),
-                                        "".concat(G, "/DSC02098.jpg")
+                                        "".concat(G, "/DSC02365.jpg"),
+                                        "".concat(G, "/DSC02098.jpg"),
+                                        "".concat(G, "/DSC01687.jpg"),
+                                        "".concat(G, "/DSC01690.jpg")
                                     ].map((src)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "relative aspect-square overflow-hidden rounded-lg group",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1735,125 +1453,214 @@ function PlaytimePage() {
                                                 className: "object-cover transition-transform duration-500 group-hover:scale-[1.04]",
                                                 sizes: "25vw"
                                             }, void 0, false, {
-                                                fileName: "[project]/app/tours/playtime/page.js",
-                                                lineNumber: 191,
+                                                fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                                                lineNumber: 86,
                                                 columnNumber: 19
                                             }, this)
                                         }, src, false, {
-                                            fileName: "[project]/app/tours/playtime/page.js",
-                                            lineNumber: 190,
+                                            fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                                            lineNumber: 85,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
-                                    fileName: "[project]/app/tours/playtime/page.js",
-                                    lineNumber: 188,
+                                    fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                                    lineNumber: 83,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
-                            fileName: "[project]/app/tours/playtime/page.js",
-                            lineNumber: 171,
+                            fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                            lineNumber: 66,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
-                    fileName: "[project]/app/tours/playtime/page.js",
-                    lineNumber: 168,
+                    fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                    lineNumber: 63,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
-                fileName: "[project]/app/tours/playtime/page.js",
-                lineNumber: 167,
+                fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                lineNumber: 62,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                className: "py-20 md:py-28 border-b border-sand-900/30",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "max-w-4xl mx-auto px-6",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        initial: {
+                            opacity: 0,
+                            y: 20
+                        },
+                        whileInView: {
+                            opacity: 1,
+                            y: 0
+                        },
+                        viewport: {
+                            once: true
+                        },
+                        transition: {
+                            duration: 0.5
+                        },
+                        className: "rounded-2xl border border-lime-800/30 bg-lime-900/10 p-8 md:p-10",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-lime-300 text-[11px] tracking-[0.3em] uppercase mb-3",
+                                children: "Co-host on this tour"
+                            }, void 0, false, {
+                                fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                                lineNumber: 104,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                className: "font-display text-2xl md:text-3xl text-sand-100 mb-4",
+                                children: "A local horse guide joins the group."
+                            }, void 0, false, {
+                                fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                                lineNumber: 105,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-sand-400 leading-relaxed text-base md:text-lg",
+                                children: "Horses don't follow GPS, and neither does the taiga. Tugi is with you from UB, but on the ride itself we travel with a local horse guide who knows the Khavirga Pass trail by heart, lives with these horses, and can read the forest like a map. You're riding with the people who do this for real — not rented hands."
+                            }, void 0, false, {
+                                fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                                lineNumber: 108,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                        lineNumber: 97,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                    lineNumber: 96,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                lineNumber: 95,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                className: "py-20 md:py-28 border-b border-sand-900/30",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "max-w-3xl mx-auto px-6",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SectionHead"], {
+                            kicker: "In the ger",
+                            title: "Your first ger visit.",
+                            center: true,
+                            accent: ACCENT
+                        }, void 0, false, {
+                            fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                            lineNumber: 118,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["GerEtiquette"], {}, void 0, false, {
+                            fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                            lineNumber: 119,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                    lineNumber: 117,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                lineNumber: 116,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["IncludedBring"], {
                 accent: ACCENT,
-                priceLabel: "$750",
+                priceLabel: "$1,400",
                 included: [
-                    "3-day Playtime Festival ticket (general admission)",
-                    "All transfers: airport → UB → festival → UB → Terelj → airport",
-                    "3 meals a day, all 5 days",
-                    "2 nights camping at the festival (tent + mat included)",
-                    "2 nights in a UB hostel (shared dorm — private option +$100)",
-                    "UB half-day city tour + Terelj day trip",
-                    "English/Mongolian guide (Tugi) throughout"
+                    "UB ↔ Terelj transfers (private car)",
+                    "Horses, tack, and local horse guide for 4 riding days",
+                    "Family ger stays (nights 1, 5)",
+                    "Tent camps (nights 2, 3, 4) — tents, sleeping pads, kitchen",
+                    "All meals on the trail — cooked fresh at camp",
+                    "English/Mongolian guide (Tugi)",
+                    "Chinggis Khaan Statue entry on the way home",
+                    "Khan Khentii protected-area permits"
                 ],
                 bring: [
-                    "Festival-appropriate clothes (rain possible, cold at night)",
-                    "Warm jacket for festival evenings (~8 °C)",
-                    "Sleeping bag rated to 5 °C (or rent for $30)",
-                    "Rain shell, ear plugs, water bottle",
-                    "Photo ID (wristband pickup requires passport)",
-                    "Phone charger / power bank",
-                    "Cash — MNT or USD, small bills for snacks"
+                    "Hiking boots + riding-friendly trousers (long + stretchy)",
+                    "A padded seat-pad if you want extra cushion (I can lend one)",
+                    "Sleeping bag rated to 0 °C",
+                    "Rain shell — summer showers happen",
+                    "A light riding helmet if you prefer (we have a few to lend)",
+                    "Head torch, sunhat, bug spray, blister tape",
+                    "Cash — no ATMs after UB"
                 ],
-                note: "Venue is <strong>Playtime Field, Nalaikh</strong> — ~40 minutes from central UB. Official festival dates: July 2 – 4, 2026."
+                note: "Horse experience isn’t required but 2–3 prior rides helps. We pair you with a patient horse and go slow on day 2."
             }, void 0, false, {
-                fileName: "[project]/app/tours/playtime/page.js",
-                lineNumber: 199,
+                fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                lineNumber: 123,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TourFAQ"], {
                 accent: ACCENT,
                 items: [
                     {
-                        q: "Who&apos;s on the 2026 lineup?",
-                        a: "Thursday: Molchat Doma + Teresa in the Moon, Magnolian, Night Train. Friday: Kings of Convenience, DIIV + Fazi, Aisha Devi, JASSS. Saturday: Stereolab, Hyukoh + Helena Hauff, DJ Stingray 313, Identified Patient. 80+ acts across three stages. Full lineup at playtime.mn."
+                        q: "How many hours in the saddle per day?",
+                        a: "Days 2 and 4 are ~6 hours with breaks. Day 3 is shorter, ~3–4 hours. Day 5 is ~2 hours. It&apos;s real time on a horse — expect to feel it."
                     },
                     {
-                        q: "How old is the Playtime crowd?",
-                        a: "Most of the crowd is 20 – 35, and about a third are international. It&apos;s the single most global weekend in the Mongolian calendar — expect Seoul, Berlin, Melbourne, New York all within ten metres."
+                        q: "What if I can't keep riding?",
+                        a: "Our support 4×4 stays near the trail on the first and last rides. If you genuinely can't continue, we swap to the vehicle. We've never had to on this tour, but the option is there."
                     },
                     {
-                        q: "Do I have to camp?",
-                        a: "The price includes camping at the festival site on the two nights of music. If you&apos;d rather come back to UB each night, say the word and we&apos;ll arrange transport — but camping is part of the experience most people love."
+                        q: "How cold at night?",
+                        a: "Late June in the taiga: 5–12 °C overnight. The campfire helps. Your 0 °C bag will be comfortable."
                     },
                     {
-                        q: "Is there food and water on site?",
-                        a: "Yes, Playtime has serious food vendors and refill stations. Your 3-meals-a-day on festival days are covered by us at the festival&apos;s better stalls (Mongolian BBQ, ramen, vegetarian options) — just show up."
+                        q: "Are there bugs?",
+                        a: "Yes — June is mosquito season in the forest. Long sleeves + Deet-based repellent is essential. After day 2 you stop noticing them."
                     },
                     {
-                        q: "What if there&apos;s a big act I don&apos;t want to miss?",
-                        a: "Tell me Wednesday and I&apos;ll build the Thursday-Saturday schedule so your must-sees are covered. We don&apos;t move as one blob — you&apos;re free to wander."
+                        q: "What's the trail like?",
+                        a: "Soft forest floor, stream crossings, one real pass (Khavirga, ~1,800 m). Gentle elevation. The horses do the work — the riding is sustained but not technical."
                     },
                     {
-                        q: "Can I bring a partner?",
-                        a: "Yes — and take 15% off each of you. Private hostel room on the UB nights is a $100 add-on."
-                    },
-                    {
-                        q: "What if I arrive late on Wednesday?",
-                        a: "No problem — the pre-party runs until about midnight. Text me your landing time and I&apos;ll hold dinner."
+                        q: "Can solo travellers join?",
+                        a: "Absolutely. Most riders come solo. The group bonds fast on this one."
                     }
                 ]
             }, void 0, false, {
-                fileName: "[project]/app/tours/playtime/page.js",
-                lineNumber: 223,
+                fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                lineNumber: 148,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TourCTA"], {
                 accent: ACCENT,
-                title: "July 1 – 5, 2026 · $750",
-                subtitle: "The easiest way to see the festival with company. Small group of 6 – 8. Applications open — spots go fast once travellers see the lineup.",
-                emailSubject: "Playtime Festival · July 2026"
+                title: "June 25 – 30, 2026 · $1,400",
+                subtitle: "Small group of 6 – 8. Limited horses — reserve early. Bring a friend and save 15% each.",
+                emailSubject: "Khagiin Khar Nuur horse trek · June 25"
             }, void 0, false, {
-                fileName: "[project]/app/tours/playtime/page.js",
-                lineNumber: 236,
+                fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+                lineNumber: 160,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
-        fileName: "[project]/app/tours/playtime/page.js",
-        lineNumber: 59,
+        fileName: "[project]/app/tours/khagiin-khar-nuur/page.js",
+        lineNumber: 17,
         columnNumber: 5
     }, this);
 }
-_c = PlaytimePage;
+_c = KhagiinKharNuurPage;
 var _c;
-__turbopack_context__.k.register(_c, "PlaytimePage");
+__turbopack_context__.k.register(_c, "KhagiinKharNuurPage");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
 ]);
 
-//# sourceMappingURL=_28404f05._.js.map
+//# sourceMappingURL=_81928420._.js.map

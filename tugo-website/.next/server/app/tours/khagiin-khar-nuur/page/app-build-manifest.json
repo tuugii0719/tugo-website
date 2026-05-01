@@ -1,14 +1,14 @@
 {
   "pages": {
-    "/page": [
+    "/tours/khagiin-khar-nuur/page": [
       "static/chunks/app_globals_71f961d1.css",
       "static/chunks/node_modules_49668a0b._.js",
       "static/chunks/components_Navigation_ee437049.js",
       "static/chunks/app_layout_0a548d63.js",
       "static/chunks/node_modules_next_dist_client_components_builtin_global-error_3089755e.js",
-      "static/chunks/_71873c5c._.js",
-      "static/chunks/node_modules_b71d2428._.js",
-      "static/chunks/app_page_3089755e.js",
+      "static/chunks/node_modules_next_f06cca34._.js",
+      "static/chunks/_81928420._.js",
+      "static/chunks/app_tours_khagiin-khar-nuur_page_3089755e.js",
       "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_57d40746._.js",
       "static/chunks/node_modules_next_dist_compiled_react-dom_1e674e59._.js",
       "static/chunks/node_modules_next_dist_compiled_next-devtools_index_a9cb0712.js",

@@ -159,10 +159,119 @@ function SeasonStrip() {
 }
 
 // ============================================================================
-// INTRO — personal warm block
+// TAGLINE + TOURS SLIDER — the home page centerpiece
 // ============================================================================
 
-function IntroSection() {
+const sliderTours = [
+  { slug: "terelj-escape",       title: "Terelj Escape",            emoji: "🌲", dates: "Jun 1 – 3",   days: 3,  price: "$350",   img: "/images/gallery/DSC01558.jpg",                accent: "text-teal-300" },
+  { slug: "altai-tavan-bogd",    title: "Altai Tavan Bogd",         emoji: "🏔️", dates: "Jun 8 – 13",  days: 6,  price: "$1,400", img: "/images/gallery/DSC02435.jpg",                accent: "text-indigo-300" },
+  { slug: "southern-gobi",       title: "Southern Gobi + Central",  emoji: "🏜️", dates: "Jun 16 – 23", days: 8,  price: "$1,200", img: "/images/gallery/DSC08000.jpg",                accent: "text-orange-300" },
+  { slug: "khagiin-khar-nuur",   title: "Horse Trek · Khagiin Khar",emoji: "🐎", dates: "Jun 25 – 30", days: 6,  price: "$1,400", img: "/images/gallery/DSC01684.jpg",                accent: "text-lime-300" },
+  { slug: "playtime",            title: "Playtime Music Festival",  emoji: "🦅", dates: "Jul 1 – 5",   days: 5,  price: "$750",   img: "/images/gallery/DSC02098.jpg",                accent: "text-emerald-300" },
+  { slug: "naadam",              title: "Naadam Festival",          emoji: "🏇", dates: "Jul 8 – 13",  days: 6,  price: "$1,200", img: "/images/gallery/DSC02365.jpg",                accent: "text-red-300" },
+  { slug: "north-central",       title: "North & Central Loop",     emoji: "🐪", dates: "Jul 21 – 31", days: 11, price: "$1,800", img: "/images/tours/north-central/DSC02464.jpg",    accent: "text-sky-300" },
+  { slug: "altai-tavan-bogd",    title: "Altai Tavan Bogd · Aug",   emoji: "🏔️", dates: "Aug 3 – 8",   days: 6,  price: "$1,400", img: "/images/gallery/DSC02431.jpg",                accent: "text-indigo-300" },
+  { slug: "gobi-glimpse",        title: "Gobi Glimpse + Central",   emoji: "🌅", dates: "Aug 18 – 28", days: 11, price: "$1,800", img: "/images/gallery/DSC08023.jpg",                accent: "text-amber-300" },
+];
+
+function TaglineSection() {
+  return (
+    <section className="py-20 md:py-28 lg:py-32 border-y border-sand-900/30 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+        {/* Left — the tagline */}
+        <div className="lg:col-span-5 min-w-0">
+          <FadeIn>
+            <p className="text-sand-400 text-xs tracking-[0.3em] uppercase mb-6">
+              Hi — Tugi here
+            </p>
+            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-sand-100 leading-[1] mb-8">
+              It&apos;s not
+              <br />a tour company.
+              <br />
+              <span className="text-sand-300 italic">It&apos;s me, showing you around.</span>
+            </h2>
+            <p className="text-sand-400 text-base md:text-lg leading-relaxed mb-8 max-w-md">
+              Camp by Khuvsgul, ride into the taiga, stand below the Altai peaks with Kazakh eagle hunters, sleep under Gobi dunes, soak in central hot springs. Routes I already know and love.
+            </p>
+            <Link
+              href="/why-tour-tugo"
+              className="inline-flex items-center gap-2 text-sand-400 hover:text-sand-100 text-xs tracking-[0.3em] uppercase transition-colors"
+            >
+              Why tour with me →
+            </Link>
+          </FadeIn>
+        </div>
+
+        {/* Right — sliding tour rail */}
+        <div className="lg:col-span-7 relative w-full min-w-0">
+          <FadeIn delay={0.15}>
+            {/* Section label + scroll hint */}
+            <div className="flex items-baseline justify-between mb-5 px-1">
+              <p className="text-sand-500 text-[10px] tracking-[0.3em] uppercase">
+                The 2026 lineup
+              </p>
+              <p className="text-sand-600 text-[10px] tracking-wider hidden md:block">
+                ← scroll →
+              </p>
+            </div>
+
+            <div
+              className="flex gap-3 md:gap-4 overflow-x-auto snap-x snap-mandatory pb-4 -mx-6 px-6 lg:-mr-12 lg:pr-12 [&::-webkit-scrollbar]:hidden"
+              style={{ scrollbarWidth: "none", WebkitOverflowScrolling: "touch" }}
+            >
+              {sliderTours.map((t, i) => (
+                <Link
+                  key={`${t.slug}-${i}`}
+                  href={`/tours/${t.slug}`}
+                  className="snap-start flex-shrink-0 w-[240px] md:w-[260px] rounded-2xl overflow-hidden border border-sand-800/40 bg-night-900/40 hover:border-sand-600/60 transition-colors group"
+                >
+                  <div className="relative aspect-[4/5]">
+                    <Image
+                      src={t.img}
+                      alt={t.title}
+                      fill
+                      className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                      sizes="260px"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-night-950 via-night-950/30 to-transparent" />
+                    <div className="absolute bottom-0 left-0 right-0 p-5">
+                      <p className={`${t.accent} text-[10px] tracking-[0.25em] uppercase mb-1.5`}>
+                        {t.dates}
+                      </p>
+                      <h3 className="font-display text-lg text-sand-100 leading-tight mb-1">
+                        <span className="mr-1.5">{t.emoji}</span>
+                        {t.title}
+                      </h3>
+                      <p className="text-sand-400 text-xs">
+                        {t.days} days · {t.price}
+                      </p>
+                    </div>
+                  </div>
+                </Link>
+              ))}
+              {/* End cap */}
+              <Link
+                href="/tours"
+                className="snap-start flex-shrink-0 w-[200px] md:w-[220px] rounded-2xl border border-sand-700/30 bg-sand-400/5 hover:bg-sand-400/15 hover:border-sand-500/50 transition-colors flex items-center justify-center text-center p-6"
+              >
+                <div>
+                  <p className="font-display text-2xl text-sand-100 mb-2">See all 11 →</p>
+                  <p className="text-sand-500 text-xs">Calendar view</p>
+                </div>
+              </Link>
+            </div>
+          </FadeIn>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ============================================================================
+// INTRO — kept (unused) for reference; replaced by TaglineSection
+// ============================================================================
+
+function IntroSection_unused() {
   return (
     <section className="py-24 md:py-32">
       <div className="max-w-3xl mx-auto px-6 text-center">
@@ -576,7 +685,7 @@ export default function Home() {
     <main className="w-full bg-night-950 text-sand-100">
       <HeroSection />
       <SeasonStrip />
-      <IntroSection />
+      <TaglineSection />
       <RoutesSection />
       <GalleryTeaser />
       <WhySection />

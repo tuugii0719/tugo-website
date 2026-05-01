@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FadeIn } from "@/components/animations/FadeIn";
 
@@ -551,7 +551,7 @@ function DayCell({ monthIndex, day, isEmpty, onHover, onLeave, hoveredId, dayOfW
 // TOOLTIP POPOVER
 // ============================================================================
 
-function TourPopover({ tour }) {
+function TourPopover({ tour, onMouseEnter, onMouseLeave }) {
   const theme = themeMap[tour.theme];
   const statusConfig = {
     available: { cls: "bg-emerald-500/15 text-emerald-300 border-emerald-500/30", label: "Spots Available" },
@@ -566,9 +566,14 @@ function TourPopover({ tour }) {
       animate={{ opacity: 1, y: 0, scale: 1 }}
       exit={{ opacity: 0, y: -8, scale: 0.96 }}
       transition={{ duration: 0.18, ease: "easeOut" }}
-      className="pointer-events-none absolute z-50"
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+      className="pointer-events-auto absolute z-50"
     >
-      <div className="bg-night-900/95 backdrop-blur-lg border border-sand-800/50 rounded-2xl shadow-2xl overflow-hidden w-[320px] max-w-[92vw]">
+      <Link
+        href={`/tours/${tour.slug}`}
+        className="block bg-night-900/95 backdrop-blur-lg border border-sand-800/50 hover:border-sand-700/70 rounded-2xl shadow-2xl overflow-hidden w-[320px] max-w-[92vw] transition-colors"
+      >
         <div className={`h-1 bg-gradient-to-r ${theme.bar}`} />
         <div className="p-5">
           <p className={`text-[10px] tracking-[0.18em] uppercase mb-1.5 ${theme.text}`}>
@@ -615,7 +620,7 @@ function TourPopover({ tour }) {
             </span>
           </div>
         </div>
-      </div>
+      </Link>
     </motion.div>
   );
 }
@@ -701,7 +706,11 @@ function MonthCalendar({ month, hoveredId, onHover, onLeave }) {
               transform: "translate(-50%, 12px)",
             }}
           >
-            <TourPopover tour={hoveredTour} />
+            <TourPopover
+              tour={hoveredTour}
+              onMouseEnter={() => onHover(hoveredTour.id)}
+              onMouseLeave={onLeave}
+            />
           </div>
         )}
       </AnimatePresence>
@@ -751,6 +760,22 @@ function Legend({ onHover, onLeave, hoveredId }) {
 
 function CalendarSection() {
   const [hoveredId, setHoveredId] = useState(null);
+  const leaveTimerRef = useRef(null);
+
+  // Hover handlers with a small grace period so the user can move the
+  // pointer from a day cell to the popover (or vice versa) without
+  // the popover dismissing.
+  const onHover = (id) => {
+    if (leaveTimerRef.current) {
+      clearTimeout(leaveTimerRef.current);
+      leaveTimerRef.current = null;
+    }
+    setHoveredId(id);
+  };
+  const onLeave = () => {
+    if (leaveTimerRef.current) clearTimeout(leaveTimerRef.current);
+    leaveTimerRef.current = setTimeout(() => setHoveredId(null), 150);
+  };
 
   // The hovered tour's month range — used to bump z-index on panels
   // that are responsible for showing the popover so it paints above
@@ -782,7 +807,7 @@ function CalendarSection() {
           </div>
         </FadeIn>
 
-        <Legend onHover={setHoveredId} onLeave={() => setHoveredId(null)} hoveredId={hoveredId} />
+        <Legend onHover={onHover} onLeave={onLeave} hoveredId={hoveredId} />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {MONTHS.map((month) => (
@@ -794,8 +819,8 @@ function CalendarSection() {
               <MonthCalendar
                 month={month}
                 hoveredId={hoveredId}
-                onHover={setHoveredId}
-                onLeave={() => setHoveredId(null)}
+                onHover={onHover}
+                onLeave={onLeave}
               />
             </div>
           ))}
