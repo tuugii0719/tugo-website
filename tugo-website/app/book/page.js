@@ -19,7 +19,7 @@ const tourOptions = [
   { id: "altai-jun",         title: "Altai Tavan Bogd",           dates: "Jun 8 – 13",   days: 6,  price: 1400,  emoji: "🏔️" },
   { id: "southern-gobi",     title: "Southern Gobi + Central",    dates: "Jun 16 – 23",  days: 8,  price: 1200,  emoji: "🏜️" },
   { id: "khagiin-khar-nuur", title: "Horse Trek · Khagiin Khar",  dates: "Jun 25 – 30",  days: 6,  price: 1400,  emoji: "🐎" },
-  { id: "playtime",          title: "Playtime",                   dates: "Jul 1 – 5",    days: 5,  price: 750,   emoji: "🦅" },
+  { id: "playtime",          title: "Playtime Music Festival",    dates: "Jul 1 – 4",    days: 4,  price: 750,   emoji: "🎶" },
   { id: "naadam",            title: "Naadam Festival",            dates: "Jul 8 – 13",   days: 6,  price: 1200,  emoji: "🏇" },
   { id: "terelj-jul",        title: "Terelj Escape",              dates: "Jul 16 – 18",  days: 3,  price: 350,   emoji: "🌲" },
   { id: "north-central",     title: "North & Central Loop",       dates: "Jul 21 – 31",  days: 11, price: 1800,  emoji: "🐪" },

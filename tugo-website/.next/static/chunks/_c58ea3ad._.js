@@ -213,24 +213,24 @@ const tours = [
         id: "playtime",
         slug: "playtime",
         title: "Playtime Music Festival",
-        emoji: "🦅",
-        dates: "July 1 – 5",
-        days: 5,
+        emoji: "🎶",
+        dates: "July 1 – 4",
+        days: 4,
         price: "$750",
         groupSize: "6–8",
         status: "available",
-        description: "Meet young people around Mongolia's biggest music festival. Festival ticket, UB city tour, and a Terelj day trip all included. 3 meals a day, pre-party night, and a chill recovery day in the city.",
+        description: "Mongolia's biggest music festival — Molchat Doma, Kings of Convenience, DIIV, Stereolab, Hyukoh. Festival ticket, transfers, camping, meals — all in. Pre-party Wednesday, three days at Playtime Field.",
         highlights: [
             "Festival ticket inc.",
-            "City tour",
-            "Terelj day",
-            "3 meals/day"
+            "3-night camping",
+            "Pre-party",
+            "All meals"
         ],
         theme: "playtime",
         startMonth: 6,
         startDay: 1,
         endMonth: 6,
-        endDay: 5
+        endDay: 4
     },
     {
         id: "naadam",

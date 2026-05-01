@@ -25,7 +25,7 @@ const sliderTours = [
   { slug: "altai-tavan-bogd",  title: "Altai Tavan Bogd",         emoji: "🏔️", dates: "Jun 8 – 13",  days: 6,  price: "$1,400", img: "/images/gallery/DSC02435.jpg",                accent: "text-indigo-300" },
   { slug: "southern-gobi",     title: "Southern Gobi + Central",  emoji: "🏜️", dates: "Jun 16 – 23", days: 8,  price: "$1,200", img: "/images/gallery/DSC08000.jpg",                accent: "text-orange-300" },
   { slug: "khagiin-khar-nuur", title: "Horse Trek · Khagiin Khar",emoji: "🐎", dates: "Jun 25 – 30", days: 6,  price: "$1,400", img: "/images/gallery/DSC01684.jpg",                accent: "text-lime-300" },
-  { slug: "playtime",          title: "Playtime Music Festival",  emoji: "🦅", dates: "Jul 1 – 5",   days: 5,  price: "$750",   img: "/images/gallery/DSC02098.jpg",                accent: "text-emerald-300" },
+  { slug: "playtime",          title: "Playtime Music Festival",  emoji: "🎶", dates: "Jul 1 – 4",   days: 4,  price: "$750",   img: "/images/playtime/poster.jpg",                 accent: "text-fuchsia-300" },
   { slug: "naadam",            title: "Naadam Festival",          emoji: "🏇", dates: "Jul 8 – 13",  days: 6,  price: "$1,200", img: "/images/gallery/DSC02365.jpg",                accent: "text-red-300" },
   { slug: "north-central",     title: "North & Central Loop",     emoji: "🐪", dates: "Jul 21 – 31", days: 11, price: "$1,800", img: "/images/tours/north-central/DSC02464.jpg",    accent: "text-sky-300" },
   { slug: "altai-tavan-bogd",  title: "Altai Tavan Bogd · Aug",   emoji: "🏔️", dates: "Aug 3 – 8",   days: 6,  price: "$1,400", img: "/images/gallery/DSC02431.jpg",                accent: "text-indigo-300" },

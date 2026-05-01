@@ -165,12 +165,12 @@ const sliderTours = [
     {
         slug: "playtime",
         title: "Playtime Music Festival",
-        emoji: "🦅",
-        dates: "Jul 1 – 5",
-        days: 5,
+        emoji: "🎶",
+        dates: "Jul 1 – 4",
+        days: 4,
         price: "$750",
-        img: "/images/gallery/DSC02098.jpg",
-        accent: "text-emerald-300"
+        img: "/images/playtime/poster.jpg",
+        accent: "text-fuchsia-300"
     },
     {
         slug: "naadam",
