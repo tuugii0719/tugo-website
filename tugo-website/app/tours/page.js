@@ -98,7 +98,7 @@ const tours = [
   {
     id: "playtime",
     slug: "playtime",
-    title: "Playtime",
+    title: "Playtime Music Festival",
     emoji: "🦅",
     dates: "July 1 – 5",
     days: 5,
@@ -913,7 +913,7 @@ export default function ToursPage() {
                 title: "Festival & Adventure",
                 duration: "6–11 Days",
                 price: "From $950",
-                items: ["Southern Gobi + Central", "Playtime", "Local Naadam", "Gobi Glimpse + Central"],
+                items: ["Southern Gobi + Central", "Playtime Music Festival", "Local Naadam", "Gobi Glimpse + Central"],
                 desc: "Mid-length departures — festivals, desert nights, and nomadic immersion. For travellers who want to get into it.",
                 color: "from-emerald-500 to-amber-600",
                 border: "border-emerald-700/20 hover:border-amber-600/40",

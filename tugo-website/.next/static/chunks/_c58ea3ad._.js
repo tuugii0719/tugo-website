@@ -212,7 +212,7 @@ const tours = [
     {
         id: "playtime",
         slug: "playtime",
-        title: "Playtime",
+        title: "Playtime Music Festival",
         emoji: "🦅",
         dates: "July 1 – 5",
         days: 5,
@@ -1908,7 +1908,7 @@ function ToursPage() {
                                     price: "From $950",
                                     items: [
                                         "Southern Gobi + Central",
-                                        "Playtime",
+                                        "Playtime Music Festival",
                                         "Local Naadam",
                                         "Gobi Glimpse + Central"
                                     ],

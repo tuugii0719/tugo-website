@@ -59,9 +59,9 @@ export default function PlaytimePage() {
     <div className="min-h-screen bg-night-950 text-sand-100">
       <TourHero
         image={heroImage}
-        kicker="Playtime Festival · UB"
+        kicker="Playtime Music Festival · UB"
         meta={["1 departure", "5 days", "Jul 1 – 5"]}
-        title="Playtime"
+        title="Playtime<br/>Music Festival"
         subtitle="Molchat Doma, Kings of Convenience, DIIV, Stereolab, Hyukoh — Mongolia&rsquo;s biggest festival. A 5-day crew trip built around the long weekend. Ticket, meals, camping, city, Terelj — all in."
         accent={ACCENT}
       />

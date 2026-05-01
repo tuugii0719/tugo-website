@@ -1,12 +1,7 @@
 {
-  "/_not-found/page": "app/_not-found/page.js",
-  "/about/page": "app/about/page.js",
   "/book/page": "app/book/page.js",
   "/gallery/page": "app/gallery/page.js",
   "/page": "app/page.js",
-  "/tours/altai-tavan-bogd/page": "app/tours/altai-tavan-bogd/page.js",
-  "/tours/north-central/page": "app/tours/north-central/page.js",
-  "/tours/page": "app/tours/page.js",
-  "/tours/playtime/page": "app/tours/playtime/page.js",
-  "/why-tour-tugo/page": "app/why-tour-tugo/page.js"
+  "/tours/naadam/page": "app/tours/naadam/page.js",
+  "/tours/page": "app/tours/page.js"
 }

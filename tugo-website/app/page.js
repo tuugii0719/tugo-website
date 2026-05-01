@@ -14,27 +14,27 @@ const heroSlides = [
   {
     src: "/images/tours/north-central/DSC02464-hero.jpg",
     kicker: "Khuvsgul · the Dark Blue Pearl",
-    headline: "The country you remember later.",
+    headline: "A trip to remember.",
   },
   {
     src: "/images/gallery/DSC01684.jpg",
     kicker: "Orkhon Valley",
-    headline: "Not tourism. A side quest.",
+    headline: "The ultimate side quest.",
   },
   {
     src: "/images/gallery/DSC02365.jpg",
     kicker: "Central Steppe",
-    headline: "Small groups. Real Mongolia.",
+    headline: "Witness authentic Mongolia.",
   },
   {
     src: "/images/gallery/DSC08000.jpg",
     kicker: "Southern Gobi",
-    headline: "Ride the wind of the day.",
+    headline: "Priceless.",
   },
   {
     src: "/images/gallery/DSC08200.jpg",
     kicker: "On the road",
-    headline: "One guide, one van, one summer.",
+    headline: "Your summer, the way it should be.",
   },
 ];
 
@@ -176,7 +176,7 @@ function IntroSection() {
             <span className="text-sand-300 italic">It&apos;s me, showing you around.</span>
           </h2>
           <p className="text-sand-300 text-lg leading-relaxed">
-            I&apos;m a Mongolian guide who fell hard for the country early. Every summer I run a handful of trips on routes I already know and love — lakeside camps at Khuvsgul, horse treks into the taiga, the Altai peaks with Kazakh eagle hunters, Gobi dunes under vast sky, and the central country&apos;s waterfalls and hot springs. Small groups, real hosts, no coach buses.
+            You&apos;ll camp by Khuvsgul, ride into the taiga, stand below the Altai peaks with Kazakh eagle hunters, sleep under Gobi dunes, soak in central hot springs — all of it on routes I already know and love. Small groups, real hosts, no coach buses. Just the country, the way it&apos;s meant to feel.
           </p>
 
           <div className="mt-10">
@@ -214,7 +214,7 @@ const routes = [
     duration: "5–11 days",
     priceFrom: "$750",
     items: [
-      "Playtime · Jul 1–5",
+      "Playtime Music Festival · Jul 1–5",
       "Naadam Festival · Jul 8–13",
       "Southern Gobi + Central · Jun 16–23",
       "Horse Trek · Khagiin Khar · Jun 25–30",
