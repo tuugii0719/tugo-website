@@ -1,29 +1,95 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import {
-  TourHero, VitalsStrip, Prologue, Itinerary,
+  VitalsStrip, Prologue, Itinerary,
   IncludedBring, TourFAQ, TourCTA,
   SectionHead, PullQuote, GerEtiquette,
 } from "@/components/tours/kit";
 import CentralMongoliaSection from "@/components/tours/CentralMongoliaSection";
 
 const G = "/images/gallery";
+const D = "/images/destinations";
 
 const ACCENT = "red";
 
 export default function NaadamPage() {
   return (
-    <div className="min-h-screen bg-night-950 text-sand-100">
-      <TourHero
-        image={`${G}/DSC02098.jpg`}
-        kicker="Local Naadam"
-        meta={["1 departure", "6 days"]}
-        title="Naadam<br/>Festival"
-        subtitle="Our chill take on Mongolia's biggest holiday — a single central province, horse racing, wrestling, holiday food, nomadic family stays, hot springs, and a volcano on the way home."
-        accent={ACCENT}
-      />
+    <div className="min-h-screen bg-night-950 text-sand-100 overflow-x-hidden">
+
+      {/* HERO — red/gold festival treatment */}
+      <section className="relative pt-24 md:pt-32 pb-16 md:pb-20 px-4 md:px-8 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-red-900/40 via-amber-900/30 to-orange-900/20 pointer-events-none" />
+        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-red-500/15 blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] rounded-full bg-amber-500/15 blur-3xl pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto relative">
+          <Link href="/tours" className="inline-flex items-center gap-2 text-sand-300 text-[11px] tracking-[0.3em] uppercase mb-8 hover:text-amber-300 transition-colors">
+            ← 2026 Season
+          </Link>
+
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            <div className="lg:col-span-7 lg:order-1 order-2">
+              <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                <p className="text-amber-300 text-[11px] tracking-[0.4em] uppercase mb-4 font-medium">
+                  Mongolia&apos;s national holiday · 820th anniversary
+                </p>
+                <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-white leading-[0.92] mb-6">
+                  <span className="block">Naadam</span>
+                  <span className="block bg-gradient-to-r from-red-400 via-amber-400 to-orange-400 bg-clip-text text-transparent italic">
+                    Festival
+                  </span>
+                </h1>
+                <p className="text-sand-200 text-lg md:text-xl max-w-xl leading-relaxed mb-8">
+                  The Three Manly Sports — wrestling, horse racing, archery — done right. Not the UB stadium spectacle. A single central province, a village stadium, the families who&apos;ve hosted me for years.
+                </p>
+
+                <div className="flex flex-wrap gap-2 mb-8">
+                  {[
+                    { l: "Tour", v: "Jul 8 – 13" },
+                    { l: "Days", v: "6" },
+                    { l: "Group", v: "6 – 8" },
+                    { l: "Price", v: "$1,200" },
+                  ].map((p) => (
+                    <span key={p.l} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-night-950/60 backdrop-blur-md border border-amber-400/30">
+                      <span className="text-amber-300 text-[10px] tracking-[0.2em] uppercase">{p.l}</span>
+                      <span className="text-sand-100 text-sm font-medium">{p.v}</span>
+                    </span>
+                  ))}
+                </div>
+
+                <div className="flex flex-wrap gap-3">
+                  <Link href="/book" className="inline-flex items-center gap-2 bg-gradient-to-r from-red-500 to-amber-500 hover:from-red-400 hover:to-amber-400 text-white px-7 py-3.5 rounded-full text-xs uppercase tracking-[0.15em] font-semibold transition-all shadow-[0_10px_30px_-10px_rgba(239,68,68,0.6)]">
+                    Reserve a Spot
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
+
+            <div className="lg:col-span-5 lg:order-2 order-1">
+              <motion.div initial={{ opacity: 0, scale: 0.96, rotate: 2 }} animate={{ opacity: 1, scale: 1, rotate: 0 }} transition={{ duration: 0.9, delay: 0.2 }} className="relative max-w-sm mx-auto">
+                <div className="absolute -inset-4 bg-gradient-to-br from-red-500/40 via-amber-500/30 to-orange-500/40 rounded-3xl blur-2xl" />
+                <div className="relative grid grid-cols-2 grid-rows-2 gap-2">
+                  <div className="relative col-span-2 aspect-[16/10] rounded-2xl overflow-hidden border-2 border-white/20 shadow-2xl">
+                    <Image src={`${D}/naadam-horse-race.jpg`} alt="Naadam horse race" fill className="object-cover" priority />
+                  </div>
+                  <div className="relative aspect-square rounded-2xl overflow-hidden border-2 border-white/20 shadow-xl">
+                    <Image src={`${D}/naadam-wrestling.jpg`} alt="Mongolian wrestling at Naadam" fill className="object-cover" />
+                  </div>
+                  <div className="relative aspect-square rounded-2xl overflow-hidden border-2 border-white/20 shadow-xl">
+                    <Image src={`${D}/naadam-archery.jpg`} alt="Naadam archery" fill className="object-cover" />
+                  </div>
+                </div>
+                <p className="text-center text-amber-300/70 text-[10px] tracking-[0.3em] uppercase mt-4">
+                  The three manly sports
+                </p>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <VitalsStrip
         items={[

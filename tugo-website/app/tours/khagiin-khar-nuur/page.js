@@ -1,9 +1,10 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import {
-  TourHero, VitalsStrip, Prologue, Itinerary,
+  VitalsStrip, Prologue, Itinerary,
   IncludedBring, TourFAQ, TourCTA,
   SectionHead, PullQuote, GerEtiquette,
 } from "@/components/tours/kit";
@@ -14,15 +15,74 @@ const ACCENT = "lime";
 
 export default function KhagiinKharNuurPage() {
   return (
-    <div className="min-h-screen bg-night-950 text-sand-100">
-      <TourHero
-        image={`${G}/DSC01684.jpg`}
-        kicker="Taiga horse trek"
-        meta={["1 departure", "6 days"]}
-        title="Khagiin<br/>Khar Nuur"
-        subtitle="Six days on horseback into the Khan Khentii taiga — two days riding in, a night camped on the Pearl of the Taiga, two days riding out, and the Chinggis statue on the drive home."
-        accent={ACCENT}
-      />
+    <div className="min-h-screen bg-night-950 text-sand-100 overflow-x-hidden">
+
+      {/* HERO — taiga horse trek, forest greens */}
+      <section className="relative pt-24 md:pt-32 pb-16 md:pb-20 px-4 md:px-8 overflow-hidden min-h-[80vh] flex items-center">
+        <div className="absolute inset-0">
+          <Image src={`${G}/DSC01684.jpg`} alt="Khan Khentii taiga river canyon" fill priority className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0 bg-gradient-to-br from-night-950/85 via-lime-900/35 to-emerald-900/30" />
+        </div>
+        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-lime-400/12 blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] rounded-full bg-emerald-400/15 blur-3xl pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto relative w-full">
+          <Link href="/tours" className="inline-flex items-center gap-2 text-sand-200 text-[11px] tracking-[0.3em] uppercase mb-8 hover:text-lime-200 transition-colors">
+            ← 2026 Season
+          </Link>
+
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            <div className="lg:col-span-7">
+              <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                <p className="text-lime-200 text-[11px] tracking-[0.4em] uppercase mb-4 font-medium">
+                  Khan Khentii taiga · horseback only
+                </p>
+                <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-white leading-[0.92] mb-6">
+                  <span className="block">Khagiin</span>
+                  <span className="block bg-gradient-to-r from-lime-300 via-emerald-300 to-teal-300 bg-clip-text text-transparent italic">
+                    Khar Nuur
+                  </span>
+                </h1>
+                <p className="text-sand-100 text-lg md:text-xl max-w-xl leading-relaxed mb-8">
+                  Six days on horseback into the Khan Khentii taiga to the Pearl of the Taiga — a hidden alpine lake reachable only by horse. No road in. No phone signal. Just trail, river, fire.
+                </p>
+
+                <div className="flex flex-wrap gap-2 mb-8">
+                  {[
+                    { l: "Tour", v: "Jun 25 – 30" },
+                    { l: "Days", v: "6" },
+                    { l: "Group", v: "6 – 8" },
+                    { l: "Price", v: "$1,400" },
+                  ].map((p) => (
+                    <span key={p.l} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-night-950/55 backdrop-blur-md border border-lime-300/30">
+                      <span className="text-lime-200 text-[10px] tracking-[0.2em] uppercase">{p.l}</span>
+                      <span className="text-white text-sm font-medium">{p.v}</span>
+                    </span>
+                  ))}
+                </div>
+
+                <Link href="/book" className="inline-flex items-center gap-2 bg-gradient-to-r from-lime-500 to-emerald-500 hover:from-lime-400 hover:to-emerald-400 text-night-950 px-7 py-3.5 rounded-full text-xs uppercase tracking-[0.15em] font-semibold transition-all shadow-[0_10px_30px_-10px_rgba(132,204,22,0.6)]">
+                  Reserve a Spot
+                </Link>
+              </motion.div>
+            </div>
+
+            <div className="lg:col-span-5">
+              <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.9, delay: 0.2 }} className="relative">
+                <div className="absolute -inset-4 bg-gradient-to-br from-lime-400/30 to-emerald-400/30 rounded-3xl blur-2xl" />
+                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-lime-200/30 shadow-2xl">
+                  <Image src={`${G}/DSC02365.jpg`} alt="Mongolian horses on the steppe" fill className="object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-night-950/50 via-transparent to-transparent" />
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <p className="text-[10px] tracking-[0.3em] uppercase opacity-80">Pearl of the Taiga</p>
+                    <p className="font-display text-lg leading-tight">Two days in. One night by the lake.</p>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <VitalsStrip
         items={[

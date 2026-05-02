@@ -1,15 +1,17 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import {
-  TourHero, VitalsStrip, Prologue, Itinerary,
+  VitalsStrip, Prologue, Itinerary,
   IncludedBring, TourFAQ, TourCTA,
   SectionHead, PullQuote, GerEtiquette,
 } from "@/components/tours/kit";
 import CentralMongoliaSection from "@/components/tours/CentralMongoliaSection";
 
 const G = "/images/gallery";
+const D = "/images/destinations";
 
 const ACCENT = "amber";
 
@@ -20,15 +22,74 @@ const acts = [
 
 export default function GobiGlimpsePage() {
   return (
-    <div className="min-h-screen bg-night-950 text-sand-100">
-      <TourHero
-        image={`${G}/DSC08000.jpg`}
-        kicker="Gobi + Central"
-        meta={["1 departure", "11 days"]}
-        title="Gobi Glimpse<br/>+ Central"
-        subtitle="The iconic southern Gobi loop, extended through central Mongolia. Same places as June&rsquo;s fast run — with three more days to actually be in them."
-        accent={ACCENT}
-      />
+    <div className="min-h-screen bg-night-950 text-sand-100 overflow-x-hidden">
+
+      {/* HERO — golden hour / slower pace */}
+      <section className="relative pt-24 md:pt-32 pb-16 md:pb-20 px-4 md:px-8 overflow-hidden min-h-[80vh] flex items-center">
+        <div className="absolute inset-0">
+          <Image src={`${D}/khongoryn-2.jpg`} alt="Khongoryn Els at golden hour" fill priority className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0 bg-gradient-to-br from-amber-900/80 via-yellow-900/55 to-orange-900/60" />
+        </div>
+        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-amber-400/20 blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] rounded-full bg-yellow-400/15 blur-3xl pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto relative w-full">
+          <Link href="/tours" className="inline-flex items-center gap-2 text-sand-200 text-[11px] tracking-[0.3em] uppercase mb-8 hover:text-amber-200 transition-colors">
+            ← 2026 Season
+          </Link>
+
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            <div className="lg:col-span-7">
+              <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                <p className="text-amber-200 text-[11px] tracking-[0.4em] uppercase mb-4 font-medium">
+                  Slow Gobi · 11 days · golden hour
+                </p>
+                <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-white leading-[0.92] mb-6">
+                  <span className="block">Gobi Glimpse</span>
+                  <span className="block bg-gradient-to-r from-amber-300 via-yellow-300 to-orange-300 bg-clip-text text-transparent italic">
+                    + Central
+                  </span>
+                </h1>
+                <p className="text-sand-100 text-lg md:text-xl max-w-xl leading-relaxed mb-8">
+                  The iconic southern Gobi loop, extended. Same places as June&apos;s fast run — with three extra days to actually <em>be</em> in them. Late August: warmer light, cooler nights, fewer flies.
+                </p>
+
+                <div className="flex flex-wrap gap-2 mb-8">
+                  {[
+                    { l: "Tour", v: "Aug 18 – 28" },
+                    { l: "Days", v: "11" },
+                    { l: "Group", v: "4 – 6" },
+                    { l: "Price", v: "$1,800" },
+                  ].map((p) => (
+                    <span key={p.l} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-night-950/50 backdrop-blur-md border border-amber-300/30">
+                      <span className="text-amber-200 text-[10px] tracking-[0.2em] uppercase">{p.l}</span>
+                      <span className="text-white text-sm font-medium">{p.v}</span>
+                    </span>
+                  ))}
+                </div>
+
+                <Link href="/book" className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-night-950 px-7 py-3.5 rounded-full text-xs uppercase tracking-[0.15em] font-semibold transition-all shadow-[0_10px_30px_-10px_rgba(245,158,11,0.7)]">
+                  Reserve a Spot
+                </Link>
+              </motion.div>
+            </div>
+
+            <div className="lg:col-span-5">
+              <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.9, delay: 0.2 }} className="relative">
+                <div className="absolute -inset-4 bg-gradient-to-br from-amber-400/40 to-yellow-400/40 rounded-3xl blur-2xl" />
+                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-amber-200/30 shadow-2xl">
+                  <Image src={`${D}/khongoryn-1.jpg`} alt="Sand dunes at Khongoryn Els" fill className="object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-night-950/50 via-transparent to-transparent" />
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <p className="text-[10px] tracking-[0.3em] uppercase opacity-80">Khongoryn Els</p>
+                    <p className="font-display text-lg leading-tight">The Singing Dunes</p>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <VitalsStrip
         items={[

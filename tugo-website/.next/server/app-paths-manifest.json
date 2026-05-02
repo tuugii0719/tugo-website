@@ -9,6 +9,7 @@
   "/tours/north-central/page": "app/tours/north-central/page.js",
   "/tours/page": "app/tours/page.js",
   "/tours/playtime/page": "app/tours/playtime/page.js",
+  "/tours/southern-gobi/page": "app/tours/southern-gobi/page.js",
   "/tours/terelj-escape/page": "app/tours/terelj-escape/page.js",
   "/why-tour-tugo/page": "app/why-tour-tugo/page.js"
 }

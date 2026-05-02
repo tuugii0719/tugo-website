@@ -1,28 +1,89 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import {
-  TourHero, VitalsStrip, Prologue, Itinerary,
+  VitalsStrip, Prologue, Itinerary,
   IncludedBring, TourFAQ, TourCTA, Departures,
   SectionHead, PullQuote, GerEtiquette,
 } from "@/components/tours/kit";
 
 const G = "/images/gallery";
+const D = "/images/destinations";
 
 const ACCENT = "teal";
 
 export default function TerelJEscapePage() {
   return (
-    <div className="min-h-screen bg-night-950 text-sand-100">
-      <TourHero
-        image={`${G}/DSC01558.jpg`}
-        kicker="Forest weekend"
-        meta={["3 departures", "3 days each"]}
-        title="Terelj<br/>Escape"
-        subtitle="A gentle weekend in Gorkhi-Terelj — Turtle Rock, alpine meadow rides, and a night in a family ger camp, 90 minutes from the city. Any age. Season opener, mid-summer, end-of-summer."
-        accent={ACCENT}
-      />
+    <div className="min-h-screen bg-night-950 text-sand-100 overflow-x-hidden">
+
+      {/* HERO — soft forest weekend */}
+      <section className="relative pt-24 md:pt-32 pb-16 md:pb-20 px-4 md:px-8 overflow-hidden min-h-[80vh] flex items-center">
+        <div className="absolute inset-0">
+          <Image src={`${D}/terelj-park.jpg`} alt="Gorkhi-Terelj National Park" fill priority className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0 bg-gradient-to-br from-night-950/85 via-teal-900/40 to-emerald-900/30" />
+        </div>
+        <div className="absolute -top-40 -left-40 w-[600px] h-[600px] rounded-full bg-teal-400/15 blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-40 -right-40 w-[600px] h-[600px] rounded-full bg-emerald-400/12 blur-3xl pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto relative w-full">
+          <Link href="/tours" className="inline-flex items-center gap-2 text-sand-200 text-[11px] tracking-[0.3em] uppercase mb-8 hover:text-teal-200 transition-colors">
+            ← 2026 Season
+          </Link>
+
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            <div className="lg:col-span-7">
+              <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                <p className="text-teal-200 text-[11px] tracking-[0.4em] uppercase mb-4 font-medium">
+                  Forest weekend · 3 departures · any age
+                </p>
+                <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-white leading-[0.92] mb-6">
+                  <span className="block">Terelj</span>
+                  <span className="block bg-gradient-to-r from-teal-300 via-emerald-300 to-lime-300 bg-clip-text text-transparent italic">
+                    Escape
+                  </span>
+                </h1>
+                <p className="text-sand-100 text-lg md:text-xl max-w-xl leading-relaxed mb-8">
+                  A gentle weekend in Gorkhi-Terelj — Turtle Rock, alpine rides, Aryabal Monastery, khorkhog with a family, and a night in a ger camp 90 minutes from the city. Three weekends across the season.
+                </p>
+
+                <div className="flex flex-wrap gap-2 mb-8">
+                  {[
+                    { l: "Departures", v: "3" },
+                    { l: "Days", v: "3 each" },
+                    { l: "Group", v: "8 – 16" },
+                    { l: "Price", v: "$350" },
+                  ].map((p) => (
+                    <span key={p.l} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-night-950/55 backdrop-blur-md border border-teal-300/30">
+                      <span className="text-teal-200 text-[10px] tracking-[0.2em] uppercase">{p.l}</span>
+                      <span className="text-white text-sm font-medium">{p.v}</span>
+                    </span>
+                  ))}
+                </div>
+
+                <Link href="/book" className="inline-flex items-center gap-2 bg-gradient-to-r from-teal-500 to-emerald-500 hover:from-teal-400 hover:to-emerald-400 text-night-950 px-7 py-3.5 rounded-full text-xs uppercase tracking-[0.15em] font-semibold transition-all shadow-[0_10px_30px_-10px_rgba(20,184,166,0.6)]">
+                  Reserve a Spot
+                </Link>
+              </motion.div>
+            </div>
+
+            <div className="lg:col-span-5">
+              <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.9, delay: 0.2 }} className="relative">
+                <div className="absolute -inset-4 bg-gradient-to-br from-teal-400/30 to-emerald-400/30 rounded-3xl blur-2xl" />
+                <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border-2 border-teal-200/30 shadow-2xl">
+                  <Image src={`${G}/DSC01810.jpg`} alt="Family ger camp evening" fill className="object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-night-950/50 via-transparent to-transparent" />
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <p className="text-[10px] tracking-[0.3em] uppercase opacity-80">Family camp</p>
+                    <p className="font-display text-lg leading-tight">Khorkhog night</p>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <VitalsStrip
         items={[

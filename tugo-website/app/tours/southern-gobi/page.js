@@ -1,15 +1,17 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import {
-  TourHero, VitalsStrip, Prologue, Itinerary,
+  VitalsStrip, Prologue, Itinerary,
   IncludedBring, TourFAQ, TourCTA,
   SectionHead, PullQuote, GerEtiquette,
 } from "@/components/tours/kit";
 import CentralMongoliaSection from "@/components/tours/CentralMongoliaSection";
 
 const G = "/images/gallery";
+const D = "/images/destinations";
 
 const ACCENT = "orange";
 
@@ -20,15 +22,79 @@ const acts = [
 
 export default function SouthernGobiPage() {
   return (
-    <div className="min-h-screen bg-night-950 text-sand-100">
-      <TourHero
-        image={`${G}/DSC08000.jpg`}
-        kicker="Fast Gobi run"
-        meta={["1 departure", "8 days"]}
-        title="Southern Gobi<br/>+ Central"
-        subtitle="For young travellers who want to cover ground. Umnugobi, Yoliin Am ice canyon, a night in the desert, camels at Khongoriin Els, then central Mongolia on the way home. Packed."
-        accent={ACCENT}
-      />
+    <div className="min-h-screen bg-night-950 text-sand-100 overflow-x-hidden">
+
+      {/* HERO — desert sunset gradient */}
+      <section className="relative pt-24 md:pt-32 pb-16 md:pb-20 px-4 md:px-8 overflow-hidden min-h-[80vh] flex items-center">
+        <div className="absolute inset-0">
+          <Image src={`${D}/khongoryn-1.jpg`} alt="Khongoryn Els sand dunes" fill priority className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0 bg-gradient-to-br from-orange-900/85 via-amber-900/60 to-red-900/40" />
+        </div>
+        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-orange-500/20 blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] rounded-full bg-amber-500/20 blur-3xl pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto relative w-full">
+          <Link href="/tours" className="inline-flex items-center gap-2 text-sand-200 text-[11px] tracking-[0.3em] uppercase mb-8 hover:text-amber-200 transition-colors">
+            ← 2026 Season
+          </Link>
+
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            <div className="lg:col-span-7">
+              <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                <p className="text-amber-200 text-[11px] tracking-[0.4em] uppercase mb-4 font-medium">
+                  Fast Gobi run · 8 days · 4 – 6 pax
+                </p>
+                <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-white leading-[0.92] mb-6">
+                  <span className="block">Southern Gobi</span>
+                  <span className="block bg-gradient-to-r from-amber-300 via-orange-300 to-red-300 bg-clip-text text-transparent italic">
+                    + Central
+                  </span>
+                </h1>
+                <p className="text-sand-100 text-lg md:text-xl max-w-xl leading-relaxed mb-8">
+                  For young travellers who want to cover ground. Yoliin Am ice canyon, a night in the desert, camels at Khongoryn Els, the Flaming Cliffs, then central Mongolia on the way home. Tight, adventure-packed, lots of driving.
+                </p>
+
+                <div className="flex flex-wrap gap-2 mb-8">
+                  {[
+                    { l: "Tour", v: "Jun 16 – 23" },
+                    { l: "Days", v: "8" },
+                    { l: "Group", v: "4 – 6" },
+                    { l: "Price", v: "$1,200" },
+                  ].map((p) => (
+                    <span key={p.l} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-night-950/50 backdrop-blur-md border border-amber-300/30">
+                      <span className="text-amber-200 text-[10px] tracking-[0.2em] uppercase">{p.l}</span>
+                      <span className="text-white text-sm font-medium">{p.v}</span>
+                    </span>
+                  ))}
+                </div>
+
+                <div className="flex flex-wrap gap-3">
+                  <Link href="/book" className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-400 hover:to-amber-400 text-night-950 px-7 py-3.5 rounded-full text-xs uppercase tracking-[0.15em] font-semibold transition-all shadow-[0_10px_30px_-10px_rgba(249,115,22,0.7)]">
+                    Reserve a Spot
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
+
+            <div className="lg:col-span-5">
+              <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.9, delay: 0.2 }} className="relative">
+                <div className="absolute -inset-4 bg-gradient-to-br from-orange-500/40 to-amber-500/40 rounded-3xl blur-2xl" />
+                <div className="relative grid grid-cols-2 gap-2">
+                  <div className="relative col-span-2 aspect-[16/10] rounded-2xl overflow-hidden border-2 border-amber-200/30 shadow-2xl">
+                    <Image src={`${D}/khongoryn-2.jpg`} alt="Khongoryn Els dunes from above" fill className="object-cover" />
+                  </div>
+                  <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-amber-200/30 shadow-xl">
+                    <Image src={`${D}/yolyn-am.jpg`} alt="Yoliin Am ice canyon" fill className="object-cover" />
+                  </div>
+                  <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-amber-200/30 shadow-xl">
+                    <Image src={`${G}/DSC08000.jpg`} alt="Gobi desert footprints" fill className="object-cover" />
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <VitalsStrip
         items={[

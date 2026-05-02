@@ -1,26 +1,22 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import {
-  TourHero, VitalsStrip, Prologue, Itinerary,
+  VitalsStrip, Prologue, Itinerary,
   IncludedBring, TourFAQ, TourCTA, Departures,
   SectionHead, PullQuote,
 } from "@/components/tours/kit";
 
 const G = "/images/gallery";
+const D = "/images/destinations";
 
 const ACCENT = "indigo";
 
-// A decorative SVG of western peaks — simple silhouette
 function PeaksBackground() {
   return (
-    <svg
-      className="absolute bottom-0 left-0 right-0 w-full h-48 text-indigo-500/10"
-      viewBox="0 0 1200 200"
-      preserveAspectRatio="none"
-      aria-hidden="true"
-    >
+    <svg className="absolute bottom-0 left-0 right-0 w-full h-48 text-indigo-500/10" viewBox="0 0 1200 200" preserveAspectRatio="none" aria-hidden="true">
       <path d="M0 200 L 80 120 L 160 60 L 260 140 L 360 40 L 460 110 L 580 20 L 680 100 L 800 60 L 920 140 L 1040 70 L 1200 130 L 1200 200 Z" fill="currentColor" />
       <path d="M340 60 L 360 40 L 380 65" stroke="white" strokeWidth="1" opacity="0.3" fill="none" />
       <path d="M560 38 L 580 20 L 600 42" stroke="white" strokeWidth="1" opacity="0.3" fill="none" />
@@ -30,15 +26,77 @@ function PeaksBackground() {
 
 export default function AltaiTavanBogdPage() {
   return (
-    <div className="min-h-screen bg-night-950 text-sand-100">
-      <TourHero
-        image={`${G}/DSC02435.jpg`}
-        kicker="Western heights"
-        meta={["2 departures", "6 days"]}
-        title="Altai<br/>Tavan Bogd"
-        subtitle="The Five Holy Peaks — glaciers, Kazakh eagle hunters, twin alpine lakes, 4,000-year-old petroglyphs. Flight in from UB, everything handled. Two departures this season."
-        accent={ACCENT}
-      />
+    <div className="min-h-screen bg-night-950 text-sand-100 overflow-x-hidden">
+
+      {/* HERO — full-bleed peaks photo with frosted glass card */}
+      <section className="relative pt-24 md:pt-32 pb-16 md:pb-20 px-4 md:px-8 overflow-hidden min-h-[80vh] flex items-center">
+        {/* Background image */}
+        <div className="absolute inset-0">
+          <Image src={`${D}/altai-peaks.jpg`} alt="Tavan Bogd peaks and glaciers" fill priority className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0 bg-gradient-to-br from-indigo-950/85 via-night-950/70 to-slate-900/60" />
+        </div>
+        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-indigo-500/15 blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] rounded-full bg-blue-500/10 blur-3xl pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto relative w-full">
+          <Link href="/tours" className="inline-flex items-center gap-2 text-sand-300 text-[11px] tracking-[0.3em] uppercase mb-8 hover:text-indigo-300 transition-colors">
+            ← 2026 Season
+          </Link>
+
+          <div className="grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            <div className="lg:col-span-7">
+              <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
+                <p className="text-indigo-300 text-[11px] tracking-[0.4em] uppercase mb-4 font-medium">
+                  Mongolia&apos;s remote west · Five Holy Peaks
+                </p>
+                <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-white leading-[0.92] mb-6">
+                  <span className="block">Altai</span>
+                  <span className="block bg-gradient-to-r from-indigo-300 via-blue-200 to-slate-100 bg-clip-text text-transparent italic">
+                    Tavan Bogd
+                  </span>
+                </h1>
+                <p className="text-sand-200 text-lg md:text-xl max-w-xl leading-relaxed mb-8">
+                  Glaciers, twin alpine lakes, Kazakh eagle hunters, 4,000-year-old petroglyphs. Flight in from UB, everything handled. The most remote tour I run — and the one most travellers come back for.
+                </p>
+
+                <div className="flex flex-wrap gap-2 mb-8">
+                  {[
+                    { l: "Duration", v: "6 days" },
+                    { l: "Departures", v: "2 / season" },
+                    { l: "Flight", v: "Included" },
+                    { l: "Price", v: "$1,400" },
+                  ].map((p) => (
+                    <span key={p.l} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-night-950/60 backdrop-blur-md border border-indigo-300/30">
+                      <span className="text-indigo-200 text-[10px] tracking-[0.2em] uppercase">{p.l}</span>
+                      <span className="text-sand-100 text-sm font-medium">{p.v}</span>
+                    </span>
+                  ))}
+                </div>
+
+                <div className="flex flex-wrap gap-3">
+                  <Link href="/book" className="inline-flex items-center gap-2 bg-gradient-to-r from-indigo-500 to-blue-500 hover:from-indigo-400 hover:to-blue-400 text-white px-7 py-3.5 rounded-full text-xs uppercase tracking-[0.15em] font-semibold transition-all shadow-[0_10px_30px_-10px_rgba(99,102,241,0.6)]">
+                    Reserve a Spot
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
+
+            <div className="lg:col-span-5">
+              <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.9, delay: 0.2 }} className="relative">
+                <div className="absolute -inset-4 bg-gradient-to-br from-indigo-500/30 to-blue-500/30 rounded-3xl blur-2xl" />
+                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-white/20 shadow-2xl">
+                  <Image src={`${D}/altai-plateau.jpg`} alt="Altai plateau and snow peaks" fill className="object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-night-950/40 via-transparent to-transparent" />
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <p className="text-[10px] tracking-[0.3em] uppercase opacity-80">Tavan Bogd massif</p>
+                    <p className="font-display text-lg leading-tight">View from the Ukok Plateau</p>
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <VitalsStrip
         items={[

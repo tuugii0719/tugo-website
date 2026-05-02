@@ -1425,16 +1425,15 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
-"[project]/app/tours/naadam/page.js [app-client] (ecmascript)", ((__turbopack_context__) => {
+"[project]/app/tours/southern-gobi/page.js [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
 __turbopack_context__.s([
     "default",
-    ()=>NaadamPage
+    ()=>SouthernGobiPage
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/tours/kit.jsx [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$CentralMongoliaSection$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/tours/CentralMongoliaSection.jsx [app-client] (ecmascript)");
@@ -1444,330 +1443,58 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$Centr
 ;
 ;
 ;
-;
 const G = "/images/gallery";
-const D = "/images/destinations";
-const ACCENT = "red";
-function NaadamPage() {
+const ACCENT = "orange";
+const acts = [
+    {
+        label: "Gobi",
+        accent: "orange"
+    },
+    {
+        label: "Central",
+        accent: "rose"
+    }
+];
+function SouthernGobiPage() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-        className: "min-h-screen bg-night-950 text-sand-100 overflow-x-hidden",
+        className: "min-h-screen bg-night-950 text-sand-100",
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "relative pt-24 md:pt-32 pb-16 md:pb-20 px-4 md:px-8 overflow-hidden",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute inset-0 bg-gradient-to-br from-red-900/40 via-amber-900/30 to-orange-900/20 pointer-events-none"
-                    }, void 0, false, {
-                        fileName: "[project]/app/tours/naadam/page.js",
-                        lineNumber: 24,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-red-500/15 blur-3xl pointer-events-none"
-                    }, void 0, false, {
-                        fileName: "[project]/app/tours/naadam/page.js",
-                        lineNumber: 25,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "absolute -bottom-40 -left-40 w-[600px] h-[600px] rounded-full bg-amber-500/15 blur-3xl pointer-events-none"
-                    }, void 0, false, {
-                        fileName: "[project]/app/tours/naadam/page.js",
-                        lineNumber: 26,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "max-w-7xl mx-auto relative",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                href: "/tours",
-                                className: "inline-flex items-center gap-2 text-sand-300 text-[11px] tracking-[0.3em] uppercase mb-8 hover:text-amber-300 transition-colors",
-                                children: "← 2026 Season"
-                            }, void 0, false, {
-                                fileName: "[project]/app/tours/naadam/page.js",
-                                lineNumber: 29,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "grid lg:grid-cols-12 gap-8 lg:gap-12 items-center",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "lg:col-span-7 lg:order-1 order-2",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                            initial: {
-                                                opacity: 0,
-                                                y: 30
-                                            },
-                                            animate: {
-                                                opacity: 1,
-                                                y: 0
-                                            },
-                                            transition: {
-                                                duration: 0.8
-                                            },
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-amber-300 text-[11px] tracking-[0.4em] uppercase mb-4 font-medium",
-                                                    children: "Mongolia's national holiday · 820th anniversary"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/tours/naadam/page.js",
-                                                    lineNumber: 36,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
-                                                    className: "font-display text-5xl md:text-7xl lg:text-8xl text-white leading-[0.92] mb-6",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "block",
-                                                            children: "Naadam"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/tours/naadam/page.js",
-                                                            lineNumber: 40,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "block bg-gradient-to-r from-red-400 via-amber-400 to-orange-400 bg-clip-text text-transparent italic",
-                                                            children: "Festival"
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/tours/naadam/page.js",
-                                                            lineNumber: 41,
-                                                            columnNumber: 19
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/app/tours/naadam/page.js",
-                                                    lineNumber: 39,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-sand-200 text-lg md:text-xl max-w-xl leading-relaxed mb-8",
-                                                    children: "The Three Manly Sports — wrestling, horse racing, archery — done right. Not the UB stadium spectacle. A single central province, a village stadium, the families who've hosted me for years."
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/tours/naadam/page.js",
-                                                    lineNumber: 45,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex flex-wrap gap-2 mb-8",
-                                                    children: [
-                                                        {
-                                                            l: "Tour",
-                                                            v: "Jul 8 – 13"
-                                                        },
-                                                        {
-                                                            l: "Days",
-                                                            v: "6"
-                                                        },
-                                                        {
-                                                            l: "Group",
-                                                            v: "6 – 8"
-                                                        },
-                                                        {
-                                                            l: "Price",
-                                                            v: "$1,200"
-                                                        }
-                                                    ].map((p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                            className: "inline-flex items-center gap-2 px-4 py-2 rounded-full bg-night-950/60 backdrop-blur-md border border-amber-400/30",
-                                                            children: [
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "text-amber-300 text-[10px] tracking-[0.2em] uppercase",
-                                                                    children: p.l
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/app/tours/naadam/page.js",
-                                                                    lineNumber: 57,
-                                                                    columnNumber: 23
-                                                                }, this),
-                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                                    className: "text-sand-100 text-sm font-medium",
-                                                                    children: p.v
-                                                                }, void 0, false, {
-                                                                    fileName: "[project]/app/tours/naadam/page.js",
-                                                                    lineNumber: 58,
-                                                                    columnNumber: 23
-                                                                }, this)
-                                                            ]
-                                                        }, p.l, true, {
-                                                            fileName: "[project]/app/tours/naadam/page.js",
-                                                            lineNumber: 56,
-                                                            columnNumber: 21
-                                                        }, this))
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/tours/naadam/page.js",
-                                                    lineNumber: 49,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "flex flex-wrap gap-3",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                        href: "/book",
-                                                        className: "inline-flex items-center gap-2 bg-gradient-to-r from-red-500 to-amber-500 hover:from-red-400 hover:to-amber-400 text-white px-7 py-3.5 rounded-full text-xs uppercase tracking-[0.15em] font-semibold transition-all shadow-[0_10px_30px_-10px_rgba(239,68,68,0.6)]",
-                                                        children: "Reserve a Spot"
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/app/tours/naadam/page.js",
-                                                        lineNumber: 64,
-                                                        columnNumber: 19
-                                                    }, this)
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/tours/naadam/page.js",
-                                                    lineNumber: 63,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/app/tours/naadam/page.js",
-                                            lineNumber: 35,
-                                            columnNumber: 15
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/tours/naadam/page.js",
-                                        lineNumber: 34,
-                                        columnNumber: 13
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "lg:col-span-5 lg:order-2 order-1",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                                            initial: {
-                                                opacity: 0,
-                                                scale: 0.96,
-                                                rotate: 2
-                                            },
-                                            animate: {
-                                                opacity: 1,
-                                                scale: 1,
-                                                rotate: 0
-                                            },
-                                            transition: {
-                                                duration: 0.9,
-                                                delay: 0.2
-                                            },
-                                            className: "relative max-w-sm mx-auto",
-                                            children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "absolute -inset-4 bg-gradient-to-br from-red-500/40 via-amber-500/30 to-orange-500/40 rounded-3xl blur-2xl"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/tours/naadam/page.js",
-                                                    lineNumber: 73,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "relative grid grid-cols-2 grid-rows-2 gap-2",
-                                                    children: [
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "relative col-span-2 aspect-[16/10] rounded-2xl overflow-hidden border-2 border-white/20 shadow-2xl",
-                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                                src: "".concat(D, "/naadam-horse-race.jpg"),
-                                                                alt: "Naadam horse race",
-                                                                fill: true,
-                                                                className: "object-cover",
-                                                                priority: true
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/app/tours/naadam/page.js",
-                                                                lineNumber: 76,
-                                                                columnNumber: 21
-                                                            }, this)
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/tours/naadam/page.js",
-                                                            lineNumber: 75,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "relative aspect-square rounded-2xl overflow-hidden border-2 border-white/20 shadow-xl",
-                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                                src: "".concat(D, "/naadam-wrestling.jpg"),
-                                                                alt: "Mongolian wrestling at Naadam",
-                                                                fill: true,
-                                                                className: "object-cover"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/app/tours/naadam/page.js",
-                                                                lineNumber: 79,
-                                                                columnNumber: 21
-                                                            }, this)
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/tours/naadam/page.js",
-                                                            lineNumber: 78,
-                                                            columnNumber: 19
-                                                        }, this),
-                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                            className: "relative aspect-square rounded-2xl overflow-hidden border-2 border-white/20 shadow-xl",
-                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                                src: "".concat(D, "/naadam-archery.jpg"),
-                                                                alt: "Naadam archery",
-                                                                fill: true,
-                                                                className: "object-cover"
-                                                            }, void 0, false, {
-                                                                fileName: "[project]/app/tours/naadam/page.js",
-                                                                lineNumber: 82,
-                                                                columnNumber: 21
-                                                            }, this)
-                                                        }, void 0, false, {
-                                                            fileName: "[project]/app/tours/naadam/page.js",
-                                                            lineNumber: 81,
-                                                            columnNumber: 19
-                                                        }, this)
-                                                    ]
-                                                }, void 0, true, {
-                                                    fileName: "[project]/app/tours/naadam/page.js",
-                                                    lineNumber: 74,
-                                                    columnNumber: 17
-                                                }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    className: "text-center text-amber-300/70 text-[10px] tracking-[0.3em] uppercase mt-4",
-                                                    children: "The three manly sports"
-                                                }, void 0, false, {
-                                                    fileName: "[project]/app/tours/naadam/page.js",
-                                                    lineNumber: 85,
-                                                    columnNumber: 17
-                                                }, this)
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "[project]/app/tours/naadam/page.js",
-                                            lineNumber: 72,
-                                            columnNumber: 15
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/tours/naadam/page.js",
-                                        lineNumber: 71,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/tours/naadam/page.js",
-                                lineNumber: 33,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/app/tours/naadam/page.js",
-                        lineNumber: 28,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/app/tours/naadam/page.js",
-                lineNumber: 23,
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TourHero"], {
+                image: "".concat(G, "/DSC08000.jpg"),
+                kicker: "Fast Gobi run",
+                meta: [
+                    "1 departure",
+                    "8 days"
+                ],
+                title: "Southern Gobi<br/>+ Central",
+                subtitle: "For young travellers who want to cover ground. Umnugobi, Yoliin Am ice canyon, a night in the desert, camels at Khongoriin Els, then central Mongolia on the way home. Packed.",
+                accent: ACCENT
+            }, void 0, false, {
+                fileName: "[project]/app/tours/southern-gobi/page.js",
+                lineNumber: 24,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["VitalsStrip"], {
                 items: [
                     {
                         l: "Dates",
-                        v: "Jul 8 – 13, 2026"
+                        v: "Jun 16 – 23, 2026"
                     },
                     {
                         l: "Days",
-                        v: "6"
+                        v: "8"
                     },
                     {
                         l: "Group",
-                        v: "6 – 8"
+                        v: "4 – 6"
                     },
                     {
                         l: "Region",
-                        v: "Zavkhan + central"
+                        v: "South + Central"
                     },
                     {
-                        l: "Festival",
-                        v: "Local village"
+                        l: "Pace",
+                        v: "Tight · lots of driving"
                     },
                     {
                         l: "Price",
@@ -1775,61 +1502,80 @@ function NaadamPage() {
                     }
                 ]
             }, void 0, false, {
-                fileName: "[project]/app/tours/naadam/page.js",
-                lineNumber: 94,
+                fileName: "[project]/app/tours/southern-gobi/page.js",
+                lineNumber: 33,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Prologue"], {
                 accent: ACCENT,
-                title: "Mongolia’s biggest holiday, without the crowd.",
+                title: "Eight days. Desert to steppe. One loop.",
                 paragraphs: [
-                    "Naadam is the three-day national holiday — wrestling, horse racing, archery — that happens every July. Most travellers see it in Ulaanbaatar: a stadium, a lot of tourists, a great show but a packaged one.",
-                    "I run this one differently. We drive out to a single central-Mongolian province and catch the <em>local</em> Naadam there — the village version. Smaller stadium (sometimes just a roped-off field), actual neighbours wrestling, horse races you can watch from the fence, women in full holiday <em>deel</em>, the best <em>khuushuur</em> you&apos;ll ever eat.",
-                    "Around it we wrap the central highlights — Zavkhan&apos;s lakes and forests, Terkhiin Tsagaan Nuur, Khorgo&apos;s crater rim, Tsenkher hot springs, and a couple of nights with a nomadic family we know. The route bends with the festival schedule — which is the whole idea."
+                    "This is the tour I built for the young crew on a tight window. You&apos;ve got a week-plus in Mongolia, you want the Gobi, and you still want the central steppe. The trade-off is a lot of driving — and the driving is worth it.",
+                    "We push hard the first half: UB to the Gobi in two days, then 2 – 3 days moving between the desert&apos;s big three — Yoliin Am ice canyon, Khongoriin Els singing dunes, and the Flaming Cliffs. Camel trek included. Desert night included.",
+                    "The back half is the reset. We roll north through central Mongolia, stop for hot springs, horseback, hikes, one last khorkhog dinner with a family. Then home. If you want more chill, take Gobi Glimpse in August instead — this one is for people who like the pace."
                 ]
             }, void 0, false, {
-                fileName: "[project]/app/tours/naadam/page.js",
-                lineNumber: 105,
+                fileName: "[project]/app/tours/southern-gobi/page.js",
+                lineNumber: 44,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Itinerary"], {
                 accent: ACCENT,
-                title: "Six days with the holiday at the middle.",
+                acts: acts,
+                title: "Eight days, two acts.",
                 days: [
                     {
                         n: "01",
-                        t: "UB → Central Mongolia",
-                        d: "Morning drive west out of UB. Lunch at a roadside <em>guanz</em>. Arrive at our first family ger camp by evening."
+                        act: 0,
+                        t: "UB → Middle Gobi",
+                        d: "Early drive south. Stop at the Baga Gazriin Chuluu granite outcrops. Tonight: ger camp on the edge of the steppe."
                     },
                     {
                         n: "02",
-                        t: "Local Naadam — opening day",
-                        d: "Horse race in the morning (riders are kids aged 6–12 on Mongolian horses, some galloping 25 km). Wrestling in the afternoon. Archery alongside. Holiday food all day."
+                        act: 0,
+                        t: "Middle → Yoliin Am",
+                        d: "Drive into Umnugobi. Yoliin Am ice canyon — a valley that holds ice into July. Walk 2 km up the gorge and back. Overnight at a family camp."
                     },
                     {
                         n: "03",
-                        t: "Naadam finals",
-                        d: "Second day of the village Naadam. Final wrestling matches, the horse races that crown the champions, costumes and speeches. Night around a fire."
+                        act: 0,
+                        t: "Khongoriin Els",
+                        d: "Four hours driving to the Singing Dunes. Camel ride at golden hour (~2 hours). Climb the tallest dune for sunset. Sleep in the desert."
                     },
                     {
                         n: "04",
-                        t: "Terkhiin Tsagaan Nuur + Khorgo",
-                        d: "Drive east to the lava-dammed White Lake. Hike the crater rim of Khorgo volcano (~40 min up). Swim in the lake if you&apos;re brave."
+                        act: 0,
+                        t: "Flaming Cliffs + dinosaur country",
+                        d: "Drive to Bayanzag (the Flaming Cliffs) — where the first dinosaur eggs were found in 1923. Red-rock hike at golden hour. Ger camp."
                     },
                     {
                         n: "05",
-                        t: "Tsenkher hot springs",
-                        d: "South to the springs. 86 °C water piped into wooden pools under the stars. A proper reset after three hard-and-happy days."
+                        act: 1,
+                        t: "Gobi → Orkhon Valley",
+                        d: "The long transition day, ~8 hours on the road. Camel saddle sore by now but the landscape starts to green up by afternoon. Orkhon Valley family camp for the night."
                     },
                     {
                         n: "06",
+                        act: 1,
+                        t: "Tsenkher hot springs",
+                        d: "Shorter drive, ~3 hours. Hot-spring soak. First proper bath since UB. Everyone sleeps well."
+                    },
+                    {
+                        n: "07",
+                        act: 1,
+                        t: "Central family day",
+                        d: "A chill day — optional horseback in the morning, hike up the hill behind the family camp, help cook dinner. Khorkhog night."
+                    },
+                    {
+                        n: "08",
+                        act: 1,
                         t: "Back to UB",
-                        d: "Slow morning at the springs, then the drive back east. Stop at Erdene Zuu Monastery and Karakorum ruins. UB by evening."
+                        d: "Drive back east, ~6 hours. Stop at Erdene Zuu Monastery in Karakorum. UB by evening."
                     }
                 ]
             }, void 0, false, {
-                fileName: "[project]/app/tours/naadam/page.js",
-                lineNumber: 115,
+                fileName: "[project]/app/tours/southern-gobi/page.js",
+                lineNumber: 54,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -1838,13 +1584,13 @@ function NaadamPage() {
                     className: "max-w-6xl mx-auto px-6",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SectionHead"], {
-                            kicker: "The festival",
-                            title: "Three sports, one holiday.",
+                            kicker: "Act I · The Gobi",
+                            title: "Sand, ice, and red rock.",
                             center: true,
                             accent: ACCENT
                         }, void 0, false, {
-                            fileName: "[project]/app/tours/naadam/page.js",
-                            lineNumber: 131,
+                            fileName: "[project]/app/tours/southern-gobi/page.js",
+                            lineNumber: 73,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1867,37 +1613,36 @@ function NaadamPage() {
                                     },
                                     className: "relative aspect-[21/9] overflow-hidden rounded-2xl",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        src: "".concat(G, "/DSC02098.jpg"),
-                                        alt: "Horse racing at Naadam",
+                                        src: "".concat(G, "/DSC08000.jpg"),
+                                        alt: "Gobi sand dunes",
                                         fill: true,
                                         className: "object-cover",
                                         sizes: "100vw"
                                     }, void 0, false, {
-                                        fileName: "[project]/app/tours/naadam/page.js",
-                                        lineNumber: 141,
+                                        fileName: "[project]/app/tours/southern-gobi/page.js",
+                                        lineNumber: 83,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
-                                    fileName: "[project]/app/tours/naadam/page.js",
-                                    lineNumber: 134,
+                                    fileName: "[project]/app/tours/southern-gobi/page.js",
+                                    lineNumber: 76,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PullQuote"], {
                                     accent: ACCENT,
-                                    quote: "The kid riders gallop in bareheaded and the whole village runs out to check which horse was first. That's the finish line.",
-                                    attribution: "— The Naadam horse race in one sentence."
+                                    quote: "The Singing Dunes actually sing. Sit at the top for five minutes and you hear the sand slide — a low hum you feel in your chest.",
+                                    attribution: "— Worth the climb."
                                 }, void 0, false, {
-                                    fileName: "[project]/app/tours/naadam/page.js",
-                                    lineNumber: 144,
+                                    fileName: "[project]/app/tours/southern-gobi/page.js",
+                                    lineNumber: 86,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3",
+                                    className: "grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3",
                                     children: [
-                                        "".concat(G, "/DSC02090.jpg"),
-                                        "".concat(G, "/DSC02095.jpg"),
-                                        "".concat(G, "/DSC02105.jpg"),
-                                        "".concat(G, "/DSC02132.jpg")
+                                        "".concat(G, "/DSC07959.jpg"),
+                                        "".concat(G, "/DSC08023.jpg"),
+                                        "".concat(G, "/DSC08144.jpg")
                                     ].map((src)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "relative aspect-square overflow-hidden rounded-lg group",
                                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -1905,257 +1650,200 @@ function NaadamPage() {
                                                 alt: "",
                                                 fill: true,
                                                 className: "object-cover transition-transform duration-500 group-hover:scale-[1.04]",
-                                                sizes: "25vw"
-                                            }, void 0, false, {
-                                                fileName: "[project]/app/tours/naadam/page.js",
-                                                lineNumber: 153,
-                                                columnNumber: 19
-                                            }, this)
-                                        }, src, false, {
-                                            fileName: "[project]/app/tours/naadam/page.js",
-                                            lineNumber: 152,
-                                            columnNumber: 17
-                                        }, this))
-                                }, void 0, false, {
-                                    fileName: "[project]/app/tours/naadam/page.js",
-                                    lineNumber: 150,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3",
-                                    children: [
-                                        "".concat(G, "/DSC02111.jpg"),
-                                        "".concat(G, "/DSC02138.jpg"),
-                                        "".concat(G, "/DSC02365.jpg")
-                                    ].map((src)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "relative aspect-[4/3] overflow-hidden rounded-lg group",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                                src: src,
-                                                alt: "",
-                                                fill: true,
-                                                className: "object-cover transition-transform duration-500 group-hover:scale-[1.04]",
                                                 sizes: "33vw"
                                             }, void 0, false, {
-                                                fileName: "[project]/app/tours/naadam/page.js",
-                                                lineNumber: 161,
+                                                fileName: "[project]/app/tours/southern-gobi/page.js",
+                                                lineNumber: 95,
                                                 columnNumber: 19
                                             }, this)
                                         }, src, false, {
-                                            fileName: "[project]/app/tours/naadam/page.js",
-                                            lineNumber: 160,
+                                            fileName: "[project]/app/tours/southern-gobi/page.js",
+                                            lineNumber: 94,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
-                                    fileName: "[project]/app/tours/naadam/page.js",
-                                    lineNumber: 158,
+                                    fileName: "[project]/app/tours/southern-gobi/page.js",
+                                    lineNumber: 92,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
-                            fileName: "[project]/app/tours/naadam/page.js",
-                            lineNumber: 133,
+                            fileName: "[project]/app/tours/southern-gobi/page.js",
+                            lineNumber: 75,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
-                    fileName: "[project]/app/tours/naadam/page.js",
-                    lineNumber: 130,
+                    fileName: "[project]/app/tours/southern-gobi/page.js",
+                    lineNumber: 72,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
-                fileName: "[project]/app/tours/naadam/page.js",
-                lineNumber: 129,
-                columnNumber: 7
-            }, this),
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-                className: "py-20 md:py-28 border-b border-sand-900/30",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "max-w-5xl mx-auto px-6 grid md:grid-cols-5 gap-10 items-center",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "md:col-span-3",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SectionHead"], {
-                                    kicker: "Holiday food",
-                                    title: "Khuushuur, airag, and then some.",
-                                    accent: ACCENT
-                                }, void 0, false, {
-                                    fileName: "[project]/app/tours/naadam/page.js",
-                                    lineNumber: 173,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-sand-300 text-lg leading-relaxed mb-4",
-                                    children: [
-                                        "Naadam is the biggest ",
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
-                                            children: "khuushuur"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/tours/naadam/page.js",
-                                            lineNumber: 175,
-                                            columnNumber: 37
-                                        }, this),
-                                        " weekend of the year — deep-fried mutton hand-pies eaten straight off the pan by the stadium fence. Everyone has a count. Ten is modest. The record on one of my trips is twenty-three."
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/app/tours/naadam/page.js",
-                                    lineNumber: 174,
-                                    columnNumber: 13
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                    className: "text-sand-400 leading-relaxed mb-6",
-                                    children: [
-                                        "Add fermented mare's milk (",
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
-                                            children: "airag"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/tours/naadam/page.js",
-                                            lineNumber: 178,
-                                            columnNumber: 47
-                                        }, this),
-                                        "), dried curds (",
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
-                                            children: "aaruul"
-                                        }, void 0, false, {
-                                            fileName: "[project]/app/tours/naadam/page.js",
-                                            lineNumber: 178,
-                                            columnNumber: 77
-                                        }, this),
-                                        "), milk tea, and the occasional glass of vodka someone's grandfather insists you try. We eat well."
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/app/tours/naadam/page.js",
-                                    lineNumber: 177,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/app/tours/naadam/page.js",
-                            lineNumber: 172,
-                            columnNumber: 11
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "md:col-span-2",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["GerEtiquette"], {}, void 0, false, {
-                                fileName: "[project]/app/tours/naadam/page.js",
-                                lineNumber: 182,
-                                columnNumber: 13
-                            }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/app/tours/naadam/page.js",
-                            lineNumber: 181,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/app/tours/naadam/page.js",
-                    lineNumber: 171,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
-                fileName: "[project]/app/tours/naadam/page.js",
-                lineNumber: 170,
+                fileName: "[project]/app/tours/southern-gobi/page.js",
+                lineNumber: 71,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "border-b border-sand-900/30",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$CentralMongoliaSection$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                    accent: "red",
+                    accent: "rose",
                     compact: true
                 }, void 0, false, {
-                    fileName: "[project]/app/tours/naadam/page.js",
-                    lineNumber: 189,
+                    fileName: "[project]/app/tours/southern-gobi/page.js",
+                    lineNumber: 105,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
-                fileName: "[project]/app/tours/naadam/page.js",
-                lineNumber: 188,
+                fileName: "[project]/app/tours/southern-gobi/page.js",
+                lineNumber: 104,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                className: "py-20 md:py-28 border-b border-sand-900/30",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SectionHead"], {
+                                    kicker: "Nomadic stays",
+                                    title: "Four nights with families, three in tents.",
+                                    accent: ACCENT
+                                }, void 0, false, {
+                                    fileName: "[project]/app/tours/southern-gobi/page.js",
+                                    lineNumber: 112,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-sand-300 text-lg leading-relaxed mb-4",
+                                    children: [
+                                        "In the Gobi we alternate desert tents and ger camps. In the central leg you're guests of families I already know — ",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
+                                            children: "buuz"
+                                        }, void 0, false, {
+                                            fileName: "[project]/app/tours/southern-gobi/page.js",
+                                            lineNumber: 114,
+                                            columnNumber: 135
+                                        }, this),
+                                        " on the table, milk tea going, kids teaching you to throw ankle bones."
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/app/tours/southern-gobi/page.js",
+                                    lineNumber: 113,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-sand-400 leading-relaxed",
+                                    children: "If you've never been to a ger, these pages help. The short version: right foot in, move clockwise, say yes to the tea."
+                                }, void 0, false, {
+                                    fileName: "[project]/app/tours/southern-gobi/page.js",
+                                    lineNumber: 116,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/app/tours/southern-gobi/page.js",
+                            lineNumber: 111,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["GerEtiquette"], {}, void 0, false, {
+                            fileName: "[project]/app/tours/southern-gobi/page.js",
+                            lineNumber: 120,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/app/tours/southern-gobi/page.js",
+                    lineNumber: 110,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/app/tours/southern-gobi/page.js",
+                lineNumber: 109,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["IncludedBring"], {
                 accent: ACCENT,
                 priceLabel: "$1,200",
                 included: [
-                    "4×4 vehicle, fuel, driver",
+                    "4×4 Russian van, fuel, driver",
                     "English/Mongolian guide (Tugi)",
                     "All meals on the road",
                     "Nomadic family ger stays (4 nights)",
+                    "Desert tent night (1 night)",
                     "Hot-spring camp (1 night)",
-                    "Local village Naadam entry / seating",
-                    "All park and site entrance fees",
-                    "UB airport pickup + drop-off"
+                    "Ger camp + UB arrival/departure (2 nights)",
+                    "Camel ride at Khongoriin Els",
+                    "All park permits and entrance fees"
                 ],
                 bring: [
-                    "Festival-friendly clothes — sun hat, sunglasses",
-                    "Warm layer for evenings (10–12 °C)",
-                    "Rain shell (afternoon storms in July)",
-                    "Swimsuit (hot springs + lake)",
-                    "Hiking shoes for the Khorgo crater",
-                    "Small cash bills for khuushuur and airag"
+                    "Sturdy shoes for dune climbs and canyon walks",
+                    "Layers — Gobi days are hot, nights are cold",
+                    "Sun hat, sunglasses, lip balm, SPF 50",
+                    "Scarf or buff (dust in the Gobi)",
+                    "Swimsuit (hot springs)",
+                    "Sleeping bag rated to 5 °C",
+                    "A 40 L duffel (no hard suitcases)"
                 ],
-                note: "Photography note: always ask before photographing wrestlers, riders, or families. Tugi will help with the hello."
+                note: "This tour has the longest driving days of the season. If that’s a hard no, take Gobi Glimpse in August instead — same places, more time."
             }, void 0, false, {
-                fileName: "[project]/app/tours/naadam/page.js",
-                lineNumber: 192,
+                fileName: "[project]/app/tours/southern-gobi/page.js",
+                lineNumber: 124,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TourFAQ"], {
                 accent: ACCENT,
                 items: [
                     {
-                        q: "Why the local Naadam instead of the big UB one?",
-                        a: "The stadium Naadam in UB is a huge show but also heavily commercial — thousands of tourists, assigned seats, everything behind a fence. Village Naadam is what the holiday actually is: your neighbours wrestling, kids racing, grandmothers selling khuushuur from a tent. Real."
+                        q: "How hard are the drive days really?",
+                        a: "Day 5 (Gobi → Orkhon) is ~8 hours and most of it is off-road. It&apos;s the longest. Days 1, 2, 3, and 8 are 5–7 hours each. Day 6 is 3. We stop every 90 min or so. It&apos;s doable — but you&apos;ll earn your hot-spring night."
                     },
                     {
-                        q: "Will I see opening ceremony fireworks?",
-                        a: "The village ceremony is smaller — speeches, a horse parade, maybe a military honor march. The UB ceremony is the bigger spectacle. If that matters, pair this with a day in UB around July 11 (the official holiday) for the stadium opening."
+                        q: "Can I skip the camel ride?",
+                        a: "Yes — some travellers prefer a dune walk at sunset instead. No judgement, no price difference."
                     },
                     {
-                        q: "How far is the drive?",
-                        a: "UB to the province is ~6 – 7 hours on day 1. The festival site is close to the family camp. Day 4 – 6 are shorter drives, 3 – 5 hours each, all stopping at real places."
-                    },
-                    {
-                        q: "What about the heat?",
-                        a: "July in central Mongolia: 15–26 °C, which is pleasant. Evenings drop to 10 °C. Afternoon thunderstorms are common but usually pass in 30 min."
+                        q: "What&apos;s the temperature range?",
+                        a: "Gobi in June: 15–28 °C days, 5–12 °C nights. Central: 12–24 °C days, 5–15 °C nights. Wind is the bigger factor — it can turn a warm day cold in 10 minutes."
                     },
                     {
                         q: "Is this good for photographers?",
-                        a: "Yes — the light is clean, the subjects are striking, the access is personal. Long lens for horse racing, wide for the crowd, fast prime for portraits. Tugi will help you get close without being in the way."
+                        a: "Gobi at golden hour (dunes + Flaming Cliffs) is unreal. Long days with dust mean lens cleaning kit, not just a cloth. A dust-sealed zoom is ideal."
                     },
                     {
-                        q: "What if Naadam dates shift?",
-                        a: "Naadam falls on July 11–13 nationally. Village Naadam starts a few days earlier or later. We confirm exact dates 60 days out — the Jul 8–13 window catches most cycles."
+                        q: "Can I combine this with another tour?",
+                        a: "It ends Jun 23. The Horse Trek (Jun 25–30) starts 2 days later — tight but doable. Or the July 1 Playtime. Ask and I'll sort."
                     }
                 ]
             }, void 0, false, {
-                fileName: "[project]/app/tours/naadam/page.js",
-                lineNumber: 216,
+                fileName: "[project]/app/tours/southern-gobi/page.js",
+                lineNumber: 150,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$tours$2f$kit$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TourCTA"], {
                 accent: ACCENT,
-                title: "July 8 – 13, 2026 · $1,200",
-                subtitle: "One village, one holiday, one small group. Bring a friend and save 15% each. Limited seats — Naadam is the year’s busiest week.",
-                emailSubject: "Naadam · July 8 – 13"
+                title: "June 16 – 23, 2026 · $1,200",
+                subtitle: "Small group of 4 – 6. Fast pace, high reward. Bring a friend and save 15% each.",
+                emailSubject: "Southern Gobi + Central · June 16"
             }, void 0, false, {
-                fileName: "[project]/app/tours/naadam/page.js",
-                lineNumber: 228,
+                fileName: "[project]/app/tours/southern-gobi/page.js",
+                lineNumber: 161,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
-        fileName: "[project]/app/tours/naadam/page.js",
-        lineNumber: 20,
+        fileName: "[project]/app/tours/southern-gobi/page.js",
+        lineNumber: 23,
         columnNumber: 5
     }, this);
 }
-_c = NaadamPage;
+_c = SouthernGobiPage;
 var _c;
-__turbopack_context__.k.register(_c, "NaadamPage");
+__turbopack_context__.k.register(_c, "SouthernGobiPage");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
 ]);
 
-//# sourceMappingURL=_7873d182._.js.map
+//# sourceMappingURL=_05c5cbd5._.js.map
