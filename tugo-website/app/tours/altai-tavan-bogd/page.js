@@ -33,7 +33,7 @@ export default function AltaiTavanBogdPage() {
         {/* Background image */}
         <div className="absolute inset-0">
           <Image src={`${D}/altai-peaks.jpg`} alt="Tavan Bogd peaks and glaciers" fill priority className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0 bg-gradient-to-br from-indigo-950/85 via-night-950/70 to-slate-900/60" />
+          <div className="absolute inset-0 bg-gradient-to-br from-indigo-950/85 via-black/70 to-slate-900/60" />
         </div>
         <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-indigo-500/15 blur-3xl pointer-events-none" />
         <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] rounded-full bg-blue-500/10 blur-3xl pointer-events-none" />
@@ -86,7 +86,7 @@ export default function AltaiTavanBogdPage() {
                 <div className="absolute -inset-4 bg-gradient-to-br from-indigo-500/30 to-blue-500/30 rounded-3xl blur-2xl" />
                 <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-white/20 shadow-2xl">
                   <Image src={`${D}/altai-plateau.jpg`} alt="Altai plateau and snow peaks" fill className="object-cover" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-night-950/40 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4 text-white">
                     <p className="text-[10px] tracking-[0.3em] uppercase opacity-80">Tavan Bogd massif</p>
                     <p className="font-display text-lg leading-tight">View from the Ukok Plateau</p>

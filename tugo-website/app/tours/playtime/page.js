@@ -451,7 +451,7 @@ export default function PlaytimeMusicFestivalPage() {
                   Reserve a Spot
                 </Link>
                 <a
-                  href="mailto:Tuugii7019@gmail.com?subject=Playtime%20Music%20Festival%20%C2%B7%20July%202026"
+                  href="mailto:tuklobin@gmail.com?subject=Playtime%20Music%20Festival%20%C2%B7%20July%202026"
                   className="inline-flex items-center gap-2 border-2 border-white/60 text-white px-8 py-4 rounded-full text-xs uppercase tracking-[0.15em] hover:bg-white/10 transition-colors"
                 >
                   Ask a question

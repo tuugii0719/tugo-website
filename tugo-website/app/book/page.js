@@ -15,32 +15,42 @@ import { FadeIn } from "@/components/animations/FadeIn";
 const PAIR_DISCOUNT = 0.15; // 15% off per person when booking a pair
 
 const tourOptions = [
-  { id: "terelj-jun",        title: "Terelj Escape",              dates: "Jun 1 – 3",    days: 3,  price: 350,   emoji: "🌲" },
-  { id: "altai-jun",         title: "Altai Tavan Bogd",           dates: "Jun 8 – 13",   days: 6,  price: 1400,  emoji: "🏔️" },
-  { id: "southern-gobi",     title: "Southern Gobi + Central",    dates: "Jun 16 – 23",  days: 8,  price: 1200,  emoji: "🏜️" },
-  { id: "khagiin-khar-nuur", title: "Horse Trek · Khagiin Khar",  dates: "Jun 25 – 30",  days: 6,  price: 1400,  emoji: "🐎" },
-  { id: "playtime",          title: "Playtime Music Festival",    dates: "Jul 1 – 4",    days: 4,  price: 750,   emoji: "🎶" },
-  { id: "naadam",            title: "Naadam Festival",            dates: "Jul 8 – 13",   days: 6,  price: 1200,  emoji: "🏇" },
-  { id: "terelj-jul",        title: "Terelj Escape",              dates: "Jul 16 – 18",  days: 3,  price: 350,   emoji: "🌲" },
-  { id: "north-central",     title: "North & Central Loop",       dates: "Jul 21 – 31",  days: 11, price: 1800,  emoji: "🐪" },
-  { id: "altai-aug",         title: "Altai Tavan Bogd",           dates: "Aug 3 – 8",    days: 6,  price: 1400,  emoji: "🏔️" },
-  { id: "terelj-aug",        title: "Terelj Escape",              dates: "Aug 11 – 13",  days: 3,  price: 350,   emoji: "🌲" },
-  { id: "gobi-glimpse",      title: "Gobi Glimpse + Central",     dates: "Aug 18 – 28",  days: 11, price: 1800,  emoji: "🌅" },
+  { id: "terelj-jun",        title: "Terelj Escape",              dates: "Jun 4 – 6",    days: 3,  price: 200,   emoji: "🌲" },
+  { id: "southern-gobi",     title: "Southern Gobi + Central",    dates: "Jun 9 – 16",   days: 8,  price: 650,   emoji: "🏜️" },
+  { id: "khagiin-khar-nuur", title: "Horse Trek · Khagiin Khar",  dates: "Jun 20 – 28",  days: 9,  price: 700,   emoji: "🐎", soldOut: true },
+  { id: "playtime",          title: "Playtime Music Festival",    dates: "Jul 1 – 4",    days: 4,  price: 400,   emoji: "🎶" },
+  { id: "naadam",            title: "Naadam Festival",            dates: "Jul 8 – 13",   days: 6,  price: 600,   emoji: "🏇" },
+  { id: "terelj-jul",        title: "Terelj Escape",              dates: "Jul 16 – 18",  days: 3,  price: 200,   emoji: "🌲" },
+  { id: "north-central",     title: "North & Central Loop",       dates: "Jul 21 – 31",  days: 11, price: 1100,  emoji: "🐪" },
+  { id: "altai-aug",         title: "Altai Tavan Bogd",           dates: "Aug 3 – 8",    days: 6,  price: 900,   emoji: "🏔️" },
+  { id: "terelj-aug",        title: "Terelj Escape",              dates: "Aug 11 – 13",  days: 3,  price: 200,   emoji: "🌲" },
+  { id: "gobi-glimpse",      title: "Gobi Glimpse + Central",     dates: "Aug 18 – 28",  days: 11, price: 1100,  emoji: "🌅" },
 ];
 
 const formatUSD = (n) => `$${n.toLocaleString()}`;
 
-// Stores submissions server-side. Swap to your backend of choice:
-//   - mailto:   window.location.href = `mailto:hello@tugo.mn?subject=…&body=…`
-//   - Formspree: POST to https://formspree.io/f/<your-id>
-//   - Resend + Next.js API route at /api/book
-//   - Google Sheets via Apps Script webhook
-// Until one is wired, this function no-ops and we rely on the mailto fallback.
+// Posts submissions to Formspree. Set NEXT_PUBLIC_FORMSPREE_ID in .env.local
+// (see .env.local.example). If unset or the request fails, the caller falls
+// back to opening the user's email client via buildMailto().
 async function submitApplication(kind, payload) {
-  // eslint-disable-next-line no-console
-  console.info(`[booking] ${kind} submission`, payload);
-  // await fetch("/api/book", { method: "POST", body: JSON.stringify({ kind, payload }) });
-  return { ok: true };
+  const formspreeId = process.env.NEXT_PUBLIC_FORMSPREE_ID;
+  if (!formspreeId) {
+    return { ok: false, reason: "no-backend" };
+  }
+  try {
+    const subject = kind === "waiver"
+      ? `Fee waiver · ${payload.tour || "—"}`
+      : `Booking · ${payload.tour || "—"}`;
+    const res = await fetch(`https://formspree.io/f/${formspreeId}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify({ _subject: subject, kind, ...payload }),
+    });
+    if (!res.ok) throw new Error(`Formspree ${res.status}`);
+    return { ok: true };
+  } catch (err) {
+    return { ok: false, reason: "request-failed", error: String(err) };
+  }
 }
 
 const buildMailto = (kind, payload) => {
@@ -51,7 +61,7 @@ const buildMailto = (kind, payload) => {
     .filter(([, v]) => v !== undefined && v !== "")
     .map(([k, v]) => `${k}:\n${v}\n`)
     .join("\n");
-  return `mailto:hello@tugo.mn?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  return `mailto:tuklobin@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 };
 
 // ============================================================================
@@ -69,6 +79,7 @@ export default function BookPage() {
     partnerName: "",
     dietary: "",
     experience: "",
+    priorTravel: "",
     whyThis: "",
     agreeTerms: false,
     agreePace: false,
@@ -101,9 +112,10 @@ export default function BookPage() {
       total: formatUSD(totalPrice),
       ...formData,
     };
-    await submitApplication("booking", payload);
-    // Also open mailto as a guaranteed delivery path
-    if (typeof window !== "undefined") {
+    const result = await submitApplication("booking", payload);
+    // If Formspree isn't wired or the request failed, fall back to mailto so
+    // the user can still send the application from their own inbox.
+    if (!result.ok && typeof window !== "undefined") {
       window.location.href = buildMailto("booking", payload);
     }
     setSubmitted(true);
@@ -114,7 +126,7 @@ export default function BookPage() {
     setGroupSize("solo");
     setFormData({
       name: "", email: "", country: "", phone: "", partnerName: "",
-      dietary: "", experience: "", whyThis: "",
+      dietary: "", experience: "", priorTravel: "", whyThis: "",
       agreeTerms: false, agreePace: false, agreeInsurance: false,
     });
     setSubmitted(false);
@@ -131,7 +143,7 @@ export default function BookPage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-night-950/40 via-night-950/40 to-night-950" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/40 to-night-950" />
         <div className="relative z-10 max-w-5xl mx-auto w-full px-6 pb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -316,8 +328,15 @@ export default function BookPage() {
                       rows={4}
                     />
                     <Textarea
+                      name="priorTravel"
+                      label="Where have you travelled before? Even a casual list helps me read the room — adventure trips, backpacking, group tours, anything."
+                      value={formData.priorTravel}
+                      onChange={onField}
+                      rows={3}
+                    />
+                    <Textarea
                       name="experience"
-                      label="Any relevant experience or physical notes? (horses, altitude, camping, dietary, injuries, etc.)"
+                      label="Any relevant experience or physical notes? (horses, altitude, camping, injuries, etc.)"
                       value={formData.experience}
                       onChange={onField}
                       rows={3}
@@ -354,7 +373,7 @@ export default function BookPage() {
                         checked={formData.agreeInsurance}
                         onChange={onField}
                       >
-                        I&apos;ll travel with insurance covering medical, evacuation, and trip cancellation — and if I don&apos;t have a plan yet, I&apos;ll let TUGO know so we can sort one together.
+                        I&apos;ll travel with insurance covering medical, evacuation, and trip cancellation — and if I don&apos;t have a plan yet, I&apos;ll let Tugi know so we can sort one together.
                       </Checkbox>
                     </div>
                   </div>
@@ -399,7 +418,7 @@ export default function BookPage() {
             <p className="text-emerald-300 text-xs tracking-[0.3em] uppercase mb-3">✓ Sent</p>
             <h3 className="font-display text-2xl text-sand-100 mb-3">Thanks — your application is in.</h3>
             <p className="text-sand-400 max-w-lg mx-auto">
-              I read every one personally. Expect a reply within 48 hours. If you don&apos;t see anything, check spam, then message hello@tugo.mn.
+              I read every one personally. Expect a reply within 48 hours. If you don&apos;t see anything, check spam, then message tuklobin@gmail.com.
             </p>
             <button
               onClick={resetForm}
@@ -581,7 +600,7 @@ export default function BookPage() {
             Private tours — any route, any dates, any group size — can be built on request. Tell us what you&apos;re after and we&apos;ll put something together.
           </p>
           <a
-            href="mailto:hello@tugo.mn?subject=Custom tour request"
+            href="mailto:tuklobin@gmail.com?subject=Custom tour request"
             className="inline-block border border-sand-400/40 px-6 py-3 text-sm uppercase tracking-[0.15em] text-sand-200 hover:bg-sand-400/10 rounded-sm transition"
           >
             Ask about custom
@@ -602,9 +621,11 @@ function FeeWaiverSection({ tourOptions }) {
   const [data, setData] = useState({
     name: "", email: "", country: "", pronouns: "",
     tour: "",
+    contribution: "",       // how much they can pay
     why: "",                // why this tour
     what: "",               // what you'd contribute
     context: "",            // your situation / why you need it
+    vibesProof: "",         // a selfie URL, a story, a meme — anything
     links: "",              // optional portfolio / IG / blog
     commit: false,
   });
@@ -627,7 +648,7 @@ function FeeWaiverSection({ tourOptions }) {
   const reset = () => {
     setOpen(false);
     setSubmitted(false);
-    setData({ name: "", email: "", country: "", pronouns: "", tour: "", why: "", what: "", context: "", links: "", commit: false });
+    setData({ name: "", email: "", country: "", pronouns: "", tour: "", contribution: "", why: "", what: "", context: "", vibesProof: "", links: "", commit: false });
   };
 
   return (
@@ -641,14 +662,14 @@ function FeeWaiverSection({ tourOptions }) {
             Apply for a waived or reduced fee
           </h2>
           <p className="text-sand-300 leading-relaxed text-center max-w-xl mx-auto mb-10">
-            TUGO isn&apos;t just a business. Each season, <strong className="text-sand-100">2 – 4 spots</strong> are reserved for travellers who would otherwise not make it — artists, students, journalists, people with a story to tell about Mongolia. Partial or full waivers available. Applications read personally.
+            This isn&apos;t just a business — it&apos;s also my side hustle for getting good people into the country. Each season I save <strong className="text-sand-100">as many spots as I can</strong> for travellers who&apos;d otherwise not make it: artists, students, journalists, broke-but-cool people, friends-of-friends-of-friends. Sliding scale, pay-what-you-can, full waivers when I can swing it. Good vibes count too — bring proof (a selfie with your grandma works). Every application gets read.
           </p>
 
           <div className="grid md:grid-cols-3 gap-4 mb-10">
             {[
-              { n: "2–4", l: "Waiver spots / season" },
-              { n: "50–100%", l: "Fee covered" },
-              { n: "48h", l: "Reply time" },
+              { n: "As many as fit", l: "Open spots / season" },
+              { n: "$0 – posted", l: "Sliding scale, no shame" },
+              { n: "48h", l: "Personal reply" },
             ].map((s) => (
               <div key={s.n} className="text-center p-5 rounded-xl border border-amber-800/30 bg-amber-900/5">
                 <p className="font-display text-2xl text-amber-200">{s.n}</p>
@@ -660,13 +681,14 @@ function FeeWaiverSection({ tourOptions }) {
           {!open && !submitted && (
             <>
               <div className="rounded-xl border border-sand-800/40 bg-night-900/30 p-6 mb-8">
-                <h3 className="font-display text-lg text-sand-100 mb-4">What we&apos;re looking for</h3>
+                <h3 className="font-display text-lg text-sand-100 mb-4">What I&apos;m looking for</h3>
                 <ul className="space-y-2 text-sand-400 text-sm">
                   {[
-                    "A reason cost is a real barrier (we don't audit — we trust what you tell us).",
-                    "Something you'll bring to the group or the project — a craft, a skill, a story, a perspective.",
-                    "Openness to share your experience after — photos, writing, a song, word of mouth, anything.",
-                    "Flexibility on dates — waiver spots are assigned where we have room.",
+                    "A reason cost is a real barrier (no audit, no shame — I trust what you tell me).",
+                    "Something you'll bring — a craft, a skill, a story, a song. Genuine good energy also counts (I'll need a vibe check).",
+                    "Openness to share something after — a photo, a write-up, a song, a verbal report to your mom. Whatever feels right.",
+                    "Flexibility on dates — waiver spots get assigned wherever there's still room.",
+                    "Tolerance for: my driving, vanishing wifi, and me getting visibly emotional about a sunset.",
                   ].map((l, i) => (
                     <li key={i} className="flex gap-2">
                       <span className="text-amber-400">·</span>
@@ -678,7 +700,7 @@ function FeeWaiverSection({ tourOptions }) {
               <div className="text-center">
                 <button
                   onClick={() => setOpen(true)}
-                  className="inline-block bg-amber-500 hover:bg-amber-400 text-night-950 px-8 py-3.5 text-sm uppercase tracking-[0.15em] font-semibold rounded-sm transition"
+                  className="inline-block bg-amber-500 hover:bg-amber-400 text-white px-8 py-3.5 text-sm uppercase tracking-[0.15em] font-semibold rounded-sm transition"
                 >
                   Start application
                 </button>
@@ -725,6 +747,18 @@ function FeeWaiverSection({ tourOptions }) {
                 </div>
 
                 <div>
+                  <p className="text-xs tracking-[0.2em] uppercase text-sand-500 mb-4">How much can you contribute?</p>
+                  <Input
+                    name="contribution"
+                    placeholder={`Be honest — "$0", "$200", "half", "posted price", "I'll figure something out"`}
+                    value={data.contribution}
+                    onChange={onField}
+                    required
+                  />
+                  <p className="text-sand-500 text-xs mt-2 italic">No wrong answer. Zero is fine. I&apos;d rather know your real number than your polite one.</p>
+                </div>
+
+                <div>
                   <p className="text-xs tracking-[0.2em] uppercase text-sand-500 mb-4">Short answers</p>
                   <Textarea
                     name="why"
@@ -736,7 +770,7 @@ function FeeWaiverSection({ tourOptions }) {
                   />
                   <Textarea
                     name="what"
-                    label="What will you bring back? (photography, writing, a skill, a story, energy — anything)"
+                    label="What will you bring back? (photography, writing, a skill, a story, a song — energy and good vibes also valid)"
                     value={data.what}
                     onChange={onField}
                     rows={4}
@@ -750,9 +784,16 @@ function FeeWaiverSection({ tourOptions }) {
                     rows={3}
                     required
                   />
+                  <Textarea
+                    name="vibesProof"
+                    label="Proof of vibes (optional but encouraged — link a selfie, a video, an embarrassing story, a meme, anything that says 'this person is fun to spend 8 days with')"
+                    value={data.vibesProof}
+                    onChange={onField}
+                    rows={3}
+                  />
                   <Input
                     name="links"
-                    placeholder="Portfolio, Instagram, blog (optional — if we can see your work)"
+                    placeholder="Portfolio, Instagram, blog (optional — if you've got work to show)"
                     value={data.links}
                     onChange={onField}
                   />
@@ -762,7 +803,7 @@ function FeeWaiverSection({ tourOptions }) {
                   <p className="text-xs tracking-[0.2em] uppercase text-sand-500 mb-4">Commitment</p>
                   <div className="rounded-lg border border-amber-800/30 bg-amber-900/5 p-5">
                     <Checkbox name="commit" checked={data.commit} onChange={onField}>
-                      If selected, I&apos;ll show up, follow the code of conduct, and share something about the trip afterwards (a photo, a write-up, a word to a friend — we agree on the format).
+                      If selected, I&apos;ll show up, be kind to the rest of the group, and share something about the trip afterwards — a photo, a write-up, a song, a word to a friend. We&apos;ll agree on the format. No exposure-only deals unless you&apos;re actually National Geographic.
                     </Checkbox>
                   </div>
                 </div>
@@ -773,7 +814,7 @@ function FeeWaiverSection({ tourOptions }) {
                     disabled={!data.commit}
                     className={`px-8 py-3.5 text-sm uppercase tracking-[0.15em] font-semibold rounded-sm transition
                       ${data.commit
-                        ? "bg-amber-500 hover:bg-amber-400 text-night-950"
+                        ? "bg-amber-500 hover:bg-amber-400 text-white"
                         : "bg-sand-900/40 text-sand-600 cursor-not-allowed"}`}
                   >
                     Submit application

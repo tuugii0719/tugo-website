@@ -6,7 +6,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 // ============================================================================
-// PHOTO CATALOG — categorized from 2025 summer field work
+// PHOTO CATALOG — categorized from past summer field work
 // ============================================================================
 //
 // regions: north (Khuvsgul + taiga) · central (Orkhon, horses, monasteries,
@@ -97,7 +97,7 @@ export default function GalleryPage() {
               From the road
             </h1>
             <p className="text-sand-300 max-w-xl mx-auto leading-relaxed">
-              Shots from the 2025 summer — the ones that made me want to do this full-time.
+              Shots from past summers — the ones that made me want to do this full-time.
               Everything here was taken on my trips.
             </p>
           </motion.div>
@@ -150,7 +150,7 @@ export default function GalleryPage() {
                   className="w-full h-auto transition-transform duration-500 group-hover:scale-[1.03]"
                   style={{ height: "auto" }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-night-950/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </motion.button>
             ))}
           </div>

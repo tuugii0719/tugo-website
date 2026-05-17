@@ -19,7 +19,7 @@ export default function WhyTourTugoPage() {
           priority
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-night-950/50 via-transparent to-night-950" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-night-950" />
 
         <div className="absolute inset-0 flex items-end pb-16 md:pb-24 px-6">
           <div className="max-w-5xl mx-auto w-full">
@@ -29,7 +29,7 @@ export default function WhyTourTugoPage() {
               transition={{ duration: 0.9, delay: 0.15 }}
             >
               <p className="text-sand-300 text-xs tracking-[0.3em] uppercase mb-4">
-                Why TUGO
+                Why Tugi
               </p>
               <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-white leading-[0.92] mb-6 max-w-3xl">
                 It&apos;s not
@@ -63,7 +63,7 @@ export default function WhyTourTugoPage() {
                 I grew up in Mongolia. Left for a while to see the world. Came back because it&apos;s still the best thing I know — the most open country, the kindest hosts, the quietest nights.
               </p>
               <p>
-                I don&apos;t run TUGO like a business. I run it like hosting cousins from out of town. If you come on one of my trips, I&apos;m going to take care of you — fed, warm, safe, understood — and I&apos;ll be easy to hang out with while I do it. I want you to leave Mongolia with stories and friends, not just a camera roll.
+                I don&apos;t run this like a business. I run it like hosting cousins from out of town. If you come on one of my trips, I&apos;m going to take care of you — fed, warm, safe, understood — and I&apos;ll be easy to hang out with while I do it. I want you to leave Mongolia with stories and friends, not just a camera roll.
               </p>
               <p>
                 Every tour I run is a route I already know and love — trails I&apos;ve traced many times over, families I already call friends. That&apos;s the whole point of this small calendar. And when the weather turns, or the plan bends, or dinner runs three hours long at a ger — that&apos;s where the trip becomes the trip. My job on the road is just to keep it smooth: reading the weather, keeping the van moving, picking the right camp, translating the jokes so you&apos;re laughing <em>with</em> everyone.
@@ -145,7 +145,7 @@ export default function WhyTourTugoPage() {
                   By day two, you know everyone&apos;s name, what they cook, what music they put on. By day four, you&apos;re a small strange family. That is the whole thing. It does not happen in a 20-person coach tour — and it cannot happen in a luxury retreat where everyone is in their own suite.
                 </p>
                 <p>
-                  Small groups also mean a Mongolian family can actually host us. You eat what they eat, sit in their ger, play with their kids. That experience doesn&apos;t scale — that&apos;s why I don&apos;t scale TUGO.
+                  Small groups also mean a Mongolian family can actually host us. You eat what they eat, sit in their ger, play with their kids. That experience doesn&apos;t scale — that&apos;s why I don&apos;t scale these trips.
                 </p>
               </div>
             </div>
@@ -219,7 +219,7 @@ export default function WhyTourTugoPage() {
           className="object-cover opacity-20"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-night-950 via-night-950/80 to-night-950" />
+        <div className="absolute inset-0 bg-gradient-to-b from-night-950 via-black/80 to-night-950" />
 
         <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
           <FadeIn>
@@ -328,7 +328,7 @@ export default function WhyTourTugoPage() {
                 Apply to join
               </Link>
               <a
-                href="mailto:hello@tugo.mn"
+                href="mailto:tuklobin@gmail.com"
                 className="inline-flex items-center justify-center text-sand-400 hover:text-sand-100 px-8 py-4 text-sm uppercase tracking-[0.15em] transition"
               >
                 Just say hi →

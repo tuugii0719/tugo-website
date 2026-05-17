@@ -79,7 +79,7 @@ export default function GobiGlimpsePage() {
                 <div className="absolute -inset-4 bg-gradient-to-br from-amber-400/40 to-yellow-400/40 rounded-3xl blur-2xl" />
                 <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-amber-200/30 shadow-2xl">
                   <Image src={`${D}/khongoryn-1.jpg`} alt="Sand dunes at Khongoryn Els" fill className="object-cover" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-night-950/50 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4 text-white">
                     <p className="text-[10px] tracking-[0.3em] uppercase opacity-80">Khongoryn Els</p>
                     <p className="font-display text-lg leading-tight">The Singing Dunes</p>

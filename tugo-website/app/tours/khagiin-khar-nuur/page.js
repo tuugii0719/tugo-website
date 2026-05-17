@@ -21,7 +21,7 @@ export default function KhagiinKharNuurPage() {
       <section className="relative pt-24 md:pt-32 pb-16 md:pb-20 px-4 md:px-8 overflow-hidden min-h-[80vh] flex items-center">
         <div className="absolute inset-0">
           <Image src={`${G}/DSC01684.jpg`} alt="Khan Khentii taiga river canyon" fill priority className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0 bg-gradient-to-br from-night-950/85 via-lime-900/35 to-emerald-900/30" />
+          <div className="absolute inset-0 bg-gradient-to-br from-black/85 via-lime-900/35 to-emerald-900/30" />
         </div>
         <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-lime-400/12 blur-3xl pointer-events-none" />
         <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] rounded-full bg-emerald-400/15 blur-3xl pointer-events-none" />
@@ -72,7 +72,7 @@ export default function KhagiinKharNuurPage() {
                 <div className="absolute -inset-4 bg-gradient-to-br from-lime-400/30 to-emerald-400/30 rounded-3xl blur-2xl" />
                 <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-lime-200/30 shadow-2xl">
                   <Image src={`${G}/DSC02365.jpg`} alt="Mongolian horses on the steppe" fill className="object-cover" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-night-950/50 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
                   <div className="absolute bottom-4 left-4 right-4 text-white">
                     <p className="text-[10px] tracking-[0.3em] uppercase opacity-80">Pearl of the Taiga</p>
                     <p className="font-display text-lg leading-tight">Two days in. One night by the lake.</p>

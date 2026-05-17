@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { UlziiKnot } from "./Ornaments";
 
 export default function Footer() {
   return (
@@ -7,7 +8,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <h3 className="font-display text-xl tracking-[0.2em] text-sand-200 mb-4">TUGO</h3>
+            <div className="flex flex-col leading-none mb-5">
+              <span className="text-sand-300 text-[11px] tracking-[0.32em] uppercase font-medium">
+                Wild Mongolia
+              </span>
+              <span className="text-sand-100 font-display italic text-2xl mt-1.5">
+                with Tugi
+              </span>
+              <UlziiKnot color="var(--color-sand-400)" size={26} className="mt-4 opacity-60" />
+            </div>
             <p className="text-sand-400 text-sm leading-relaxed max-w-xs">
               Small-group adventure tours across Mongolia&apos;s wild landscapes. Not a tour company — a side quest worth taking.
             </p>
@@ -21,7 +30,7 @@ export default function Footer() {
                 { href: "/about", label: "About" },
                 { href: "/tours", label: "Tours" },
                 { href: "/gallery", label: "Gallery" },
-                { href: "/why-tour-tugo", label: "Why TUGO" },
+                { href: "/why-tour-tugo", label: "Why Tugi" },
                 { href: "/book", label: "Book Now" },
               ].map((link) => (
                 <Link
@@ -39,8 +48,8 @@ export default function Footer() {
           <div>
             <h4 className="text-sand-300 text-xs uppercase tracking-[0.2em] mb-4">Connect</h4>
             <div className="flex flex-col gap-3 text-sm text-sand-400">
-              <a href="mailto:hello@tugo.mn" className="hover:text-sand-200 transition-colors">
-                hello@tugo.mn
+              <a href="mailto:tuklobin@gmail.com" className="hover:text-sand-200 transition-colors">
+                tuklobin@gmail.com
               </a>
               <a href="https://instagram.com/tugomongolia" target="_blank" rel="noopener noreferrer" className="hover:text-sand-200 transition-colors">
                 @tugomongolia
@@ -50,7 +59,12 @@ export default function Footer() {
         </div>
 
         <div className="mt-16 pt-6 border-t border-sand-900/20 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-sand-500 text-xs">© 2026 TUGO Mongolia. All rights reserved.</p>
+          <div className="flex items-center gap-4 text-xs text-sand-500">
+            <span>© 2026 Wild Mongolia with Tugi.</span>
+            <Link href="/privacy" className="hover:text-sand-200 transition-colors">
+              Privacy &amp; Terms
+            </Link>
+          </div>
           <p className="text-sand-600 text-xs italic">Designed with adventure in mind.</p>
         </div>
       </div>

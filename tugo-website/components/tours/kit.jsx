@@ -24,12 +24,12 @@ const accentButtonMap = {
   rose: "bg-rose-500 hover:bg-rose-400 text-night-950",
   teal: "bg-teal-500 hover:bg-teal-400 text-night-950",
   emerald: "bg-emerald-500 hover:bg-emerald-400 text-night-950",
-  red: "bg-red-500 hover:bg-red-400 text-white",
-  indigo: "bg-indigo-500 hover:bg-indigo-400 text-white",
+  red: "bg-red-500 hover:bg-red-400 text-night-950",
+  indigo: "bg-indigo-500 hover:bg-indigo-400 text-night-950",
   lime: "bg-lime-500 hover:bg-lime-400 text-night-950",
   orange: "bg-orange-500 hover:bg-orange-400 text-night-950",
   amber: "bg-amber-500 hover:bg-amber-400 text-night-950",
-  violet: "bg-violet-500 hover:bg-violet-400 text-white",
+  violet: "bg-violet-500 hover:bg-violet-400 text-night-950",
 };
 
 const ctaBoxMap = {
@@ -125,7 +125,7 @@ export function TourHero({ image, kicker, meta = [], title, subtitle, accent = "
   return (
     <section className="relative h-[86vh] min-h-[580px] overflow-hidden">
       <Image src={image} alt="" fill priority className="object-cover" sizes="100vw" />
-      <div className="absolute inset-0 bg-gradient-to-b from-night-950/50 via-transparent to-night-950" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-night-950" />
 
       <div className="absolute inset-0 flex items-end pb-14 md:pb-20 px-6">
         <div className="max-w-6xl mx-auto w-full">
@@ -412,7 +412,7 @@ export function TourCTA({ title, subtitle, emailSubject, accent = "sky" }) {
               Reserve a Spot
             </Link>
             <a
-              href={`mailto:Tuugii7019@gmail.com?subject=${encodeURIComponent(emailSubject || "Tour inquiry")}`}
+              href={`mailto:tuklobin@gmail.com?subject=${encodeURIComponent(emailSubject || "Tour inquiry")}`}
               className="inline-flex items-center justify-center border border-sand-400/40 hover:border-sand-300 hover:bg-sand-400/10 text-sand-300 hover:text-sand-100 px-7 py-3.5 text-xs uppercase tracking-[0.15em] rounded-sm transition"
             >
               Ask a question

@@ -17,7 +17,7 @@ export default function Navigation() {
     { href: "/about", label: "About" },
     { href: "/tours", label: "Tours" },
     { href: "/gallery", label: "Gallery" },
-    { href: "/why-tour-tugo", label: "Why TUGO" },
+    { href: "/why-tour-tugo", label: "Why Tugi" },
   ];
 
   return (
@@ -26,9 +26,14 @@ export default function Navigation() {
         scrolled ? "bg-night-950/90 backdrop-blur-md py-4" : "bg-transparent py-6"
       }`}>
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="text-sand-100 font-display text-2xl tracking-[0.2em] hover:text-sand-400 transition-colors">
-            TUGO
+          {/* Wordmark */}
+          <Link href="/" className="group flex flex-col leading-none hover:text-sand-400 transition-colors">
+            <span className="text-sand-200 text-[10px] md:text-[11px] tracking-[0.32em] uppercase font-medium">
+              Wild Mongolia
+            </span>
+            <span className="text-sand-100 font-display italic text-xl md:text-2xl mt-1">
+              with Tugi
+            </span>
           </Link>
 
           {/* Desktop Nav */}
@@ -76,6 +81,7 @@ export default function Navigation() {
             <button
               className="absolute top-6 right-6 text-sand-300 hover:text-sand-100 text-3xl"
               onClick={() => setMobileOpen(false)}
+              aria-label="Close menu"
             >
               ×
             </button>

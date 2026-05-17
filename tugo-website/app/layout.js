@@ -2,9 +2,34 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
+const SITE_URL = "https://wildmongoliatugi.com";
+
 export const metadata = {
-  title: "TUGO — Mongolia Adventure Tours",
-  description: "Small-group adventure tours across Mongolia's wild landscapes. Ride with nomads, camp under endless skies, explore one of the last truly wild places on Earth.",
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Wild Mongolia with Tugi — Adventure Tours",
+    template: "%s · Wild Mongolia with Tugi",
+  },
+  description:
+    "Small-group adventure tours across Mongolia's wild landscapes. Ride with nomads, camp under endless skies, explore one of the last truly wild places on Earth.",
+  openGraph: {
+    title: "Wild Mongolia with Tugi",
+    description:
+      "Small-group adventure tours across Mongolia — Altai peaks, Gobi dunes, Khövsgöl lake, Naadam, Playtime festival.",
+    url: "/",
+    siteName: "Wild Mongolia with Tugi",
+    images: ["/og.jpg"],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wild Mongolia with Tugi",
+    description:
+      "Small-group adventure tours across Mongolia — Altai peaks, Gobi dunes, Khövsgöl lake.",
+    images: ["/og.jpg"],
+  },
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({ children }) {

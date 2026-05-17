@@ -36,7 +36,7 @@ export default function AboutPage() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-night-950/50 via-night-950/30 to-night-950" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-night-950/30 to-night-950" />
 
         <div className="relative z-10 flex flex-col items-center justify-center">
           <motion.div
@@ -50,7 +50,7 @@ export default function AboutPage() {
             <h1 className="font-display text-4xl text-white md:text-6xl">
               Meet Your Guide
             </h1>
-            <p className="mt-4 text-sand-300">The story behind TUGO</p>
+            <p className="mt-4 text-sand-300">The story behind the trips</p>
           </motion.div>
         </div>
       </section>
@@ -64,7 +64,7 @@ export default function AboutPage() {
               <div className="relative aspect-[3/4] overflow-hidden rounded ring-1 ring-sand-800/20">
                 <Image
                   src="/images/about/guide.jpg"
-                  alt="Mike"
+                  alt="Tugi"
                   fill
                   className="object-cover"
                 />
@@ -76,7 +76,7 @@ export default function AboutPage() {
           <div className="lg:col-span-3">
             <FadeIn direction="right">
               <h2 className="mb-8 font-display text-3xl text-sand-100 md:text-4xl">
-                Hey, I&apos;m Mike
+                Hey, I&apos;m Tugi
               </h2>
 
               <p className="mb-6 leading-relaxed text-sand-300">
@@ -90,7 +90,7 @@ export default function AboutPage() {
                 After finishing my applied mathematics degree and spending time
                 abroad, I realized all the parts of me — my love for
                 photography, my instinct to serve, my thirst for adventure, and
-                my connection to people — naturally converge into TUGO.
+                my connection to people — naturally come together here.
               </p>
 
               <p className="leading-relaxed text-sand-300">

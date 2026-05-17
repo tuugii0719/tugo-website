@@ -254,7 +254,7 @@ export default function NorthCentralPage() {
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-night-950/50 via-transparent to-night-950" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-night-950" />
 
         <div className="absolute inset-0 flex items-end pb-14 md:pb-20 px-6">
           <div className="max-w-6xl mx-auto w-full">
@@ -452,7 +452,7 @@ export default function NorthCentralPage() {
                 >
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <Image src={act.image} alt={act.label} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-night-950 via-night-950/40 to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-night-950 via-black/40 to-transparent" />
                     <div className="absolute top-4 left-4 flex items-center gap-3">
                       <span className={`w-10 h-10 rounded-full bg-night-950/70 ring-1 ${accentRing} flex items-center justify-center font-display text-lg ${accentText}`}>
                         {act.n}
@@ -764,7 +764,7 @@ export default function NorthCentralPage() {
                 Reserve a Spot
               </Link>
               <a
-                href="mailto:Tuugii7019@gmail.com?subject=North%20%26%20Central%20Loop%20%E2%80%94%20July%2021"
+                href="mailto:tuklobin@gmail.com?subject=North%20%26%20Central%20Loop%20%E2%80%94%20July%2021"
                 className="inline-flex items-center justify-center border border-sand-400/40 hover:border-sand-300 hover:bg-sand-400/10 text-sand-300 hover:text-sand-100 px-7 py-3.5 text-xs uppercase tracking-[0.15em] rounded-sm transition"
               >
                 Ask a question

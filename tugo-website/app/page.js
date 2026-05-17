@@ -12,24 +12,35 @@ import { FadeIn } from "@/components/animations/FadeIn";
 // editorial pairs) but rendered in the night/sand palette.
 // ============================================================================
 
+// ============================================================================
+// HERO SLIDES — six characteristics, not six destinations.
+// The destinations sell themselves; the way *this* trip feels is the actual
+// pitch. Photos are placeholders — swap each src to match the slide's subject:
+//   1. The vibe    → calm interior moment (ger, fire, someone reading, no phones)
+//   2. The rhythm  → unhurried scene, weather rolling in, herd crossing the road
+//   3. The care    → Tugi tending to the group — tea, saddle, handing over a layer
+//   4. The camping → tents pitched at dusk, fire, stars above (or sunrise from tent)
+//   5. The hosts   → meal with a family — khorkhog, hands reaching in, kitchen scene
+//   6. The group   → small group of 4–7 walking together, intimate scale, sun behind
+// ============================================================================
 const heroSlides = [
-  { src: "/images/tours/north-central/DSC02464-hero.jpg", kicker: "Khuvsgul · the Dark Blue Pearl",  headline: "A trip to remember." },
-  { src: "/images/gallery/DSC01684.jpg",                  kicker: "Orkhon Valley",                   headline: "The ultimate side quest." },
-  { src: "/images/gallery/DSC02365.jpg",                  kicker: "Central Steppe",                  headline: "Witness authentic Mongolia." },
-  { src: "/images/gallery/DSC08000.jpg",                  kicker: "Southern Gobi",                   headline: "Priceless." },
-  { src: "/images/gallery/DSC08200.jpg",                  kicker: "On the road",                     headline: "Your summer, the way it should be." },
+  { src: "/images/tours/north-central/DSC02464-hero.jpg", kicker: "The vibe",    headline: "A trip, not a tour.",        tagline: "Slow, real, present." },
+  { src: "/images/gallery/DSC08200.jpg",                  kicker: "The rhythm",  headline: "Flexible by design.",        tagline: "Plans bend to the weather, the herds, the people." },
+  { src: "/images/gallery/DSC01810.jpg",                  kicker: "The care",    headline: "Just bring your boots.",     tagline: "I’ve got the rest." },
+  { src: "/images/gallery/DSC02431.jpg",                  kicker: "The camping", headline: "Tents over hotels.",         tagline: "Cheaper, wilder, stars uninterrupted." },
+  { src: "/images/gallery/DSC01857.jpg",                  kicker: "The hosts",   headline: "Guest, not tourist.",        tagline: "Real homes. Real food. Real welcome." },
+  { src: "/images/gallery/DSC02365.jpg",                  kicker: "The group",   headline: "Four to seven. Never more.", tagline: "Small enough to actually know each other." },
 ];
 
 const sliderTours = [
-  { slug: "terelj-escape",     title: "Terelj Escape",            emoji: "🌲", dates: "Jun 1 – 3",   days: 3,  price: "$350",   img: "/images/gallery/DSC01558.jpg",                accent: "text-teal-300" },
-  { slug: "altai-tavan-bogd",  title: "Altai Tavan Bogd",         emoji: "🏔️", dates: "Jun 8 – 13",  days: 6,  price: "$1,400", img: "/images/gallery/DSC02435.jpg",                accent: "text-indigo-300" },
-  { slug: "southern-gobi",     title: "Southern Gobi + Central",  emoji: "🏜️", dates: "Jun 16 – 23", days: 8,  price: "$1,200", img: "/images/gallery/DSC08000.jpg",                accent: "text-orange-300" },
-  { slug: "khagiin-khar-nuur", title: "Horse Trek · Khagiin Khar",emoji: "🐎", dates: "Jun 25 – 30", days: 6,  price: "$1,400", img: "/images/gallery/DSC01684.jpg",                accent: "text-lime-300" },
-  { slug: "playtime",          title: "Playtime Music Festival",  emoji: "🎶", dates: "Jul 1 – 4",   days: 4,  price: "$750",   img: "/images/playtime/poster.jpg",                 accent: "text-fuchsia-300" },
-  { slug: "naadam",            title: "Naadam Festival",          emoji: "🏇", dates: "Jul 8 – 13",  days: 6,  price: "$1,200", img: "/images/gallery/DSC02365.jpg",                accent: "text-red-300" },
-  { slug: "north-central",     title: "North & Central Loop",     emoji: "🐪", dates: "Jul 21 – 31", days: 11, price: "$1,800", img: "/images/tours/north-central/DSC02464.jpg",    accent: "text-sky-300" },
-  { slug: "altai-tavan-bogd",  title: "Altai Tavan Bogd · Aug",   emoji: "🏔️", dates: "Aug 3 – 8",   days: 6,  price: "$1,400", img: "/images/gallery/DSC02431.jpg",                accent: "text-indigo-300" },
-  { slug: "gobi-glimpse",      title: "Gobi Glimpse + Central",   emoji: "🌅", dates: "Aug 18 – 28", days: 11, price: "$1,800", img: "/images/gallery/DSC08023.jpg",                accent: "text-amber-300" },
+  { slug: "terelj-escape",     title: "Terelj Escape",            emoji: "🌲", dates: "Jun 4 – 6",   days: 3,  price: "$200",   img: "/images/destinations/terelj-park.jpg",        accent: "text-teal-300" },
+  { slug: "southern-gobi",     title: "Southern Gobi + Central",  emoji: "🏜️", dates: "Jun 9 – 16",  days: 8,  price: "$650",   img: "/images/gallery/DSC08000.jpg",                accent: "text-orange-300" },
+  { slug: "khagiin-khar-nuur", title: "Horse Trek · Khagiin Khar",emoji: "🐎", dates: "Jun 20 – 28", days: 9,  price: "$700",   img: "/images/gallery/DSC01684.jpg",                accent: "text-lime-300", soldOut: true },
+  { slug: "playtime",          title: "Playtime Music Festival",  emoji: "🎶", dates: "Jul 1 – 4",   days: 4,  price: "$400",   img: "/images/playtime/poster.jpg",                 accent: "text-fuchsia-300" },
+  { slug: "naadam",            title: "Naadam Festival",          emoji: "🏇", dates: "Jul 8 – 13",  days: 6,  price: "$600",   img: "/images/destinations/naadam-horse-racer.jpg", accent: "text-red-300" },
+  { slug: "north-central",     title: "North & Central Loop",     emoji: "🐪", dates: "Jul 21 – 31", days: 11, price: "$1,100", img: "/images/tours/north-central/DSC02464.jpg",    accent: "text-sky-300" },
+  { slug: "altai-tavan-bogd",  title: "Altai Tavan Bogd",         emoji: "🏔️", dates: "Aug 3 – 8",   days: 6,  price: "$900",   img: "/images/destinations/altai-peaks.jpg",        accent: "text-indigo-300" },
+  { slug: "gobi-glimpse",      title: "Gobi Glimpse + Central",   emoji: "🌅", dates: "Aug 18 – 28", days: 11, price: "$1,100", img: "/images/destinations/khongoryn-1.jpg",        accent: "text-amber-300" },
 ];
 
 // ============================================================================
@@ -72,12 +83,12 @@ function HeroSection() {
               </motion.div>
             </AnimatePresence>
 
-            <div className="absolute inset-0 bg-gradient-to-b from-night-950/30 via-night-950/10 to-night-950/60" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/10 to-black/60" />
 
             {/* Top frosted pill */}
-            <div className="absolute top-4 md:top-6 left-1/2 -translate-x-1/2 flex items-center gap-2 md:gap-3 px-4 py-2 md:px-5 md:py-2.5 rounded-full bg-night-950/40 backdrop-blur-md border border-sand-300/30">
+            <div className="absolute top-4 md:top-6 left-1/2 -translate-x-1/2 flex items-center gap-2 md:gap-3 px-4 py-2 md:px-5 md:py-2.5 rounded-full bg-black/40 backdrop-blur-md border border-sand-300/30">
               <div className="w-1.5 h-1.5 rounded-full bg-sand-200" />
-              <p className="text-sand-100 text-[10px] md:text-xs tracking-[0.3em] uppercase font-medium">TUGO Mongolia</p>
+              <p className="text-sand-100 text-[10px] md:text-xs tracking-[0.3em] uppercase font-medium">Wild Mongolia with Tugi</p>
               <div className="w-1.5 h-1.5 rounded-full bg-sand-200" />
             </div>
 
@@ -96,10 +107,18 @@ function HeroSection() {
                   </p>
                   <h1
                     className="font-display text-4xl md:text-6xl lg:text-7xl text-white leading-[1] max-w-3xl"
-                    style={{ textShadow: "0 4px 30px rgba(0,0,0,0.6)" }}
+                    style={{ textShadow: "0 2px 8px rgba(0,0,0,0.85), 0 8px 32px rgba(0,0,0,0.7)" }}
                   >
                     {heroSlides[i].headline}
                   </h1>
+                  {heroSlides[i].tagline && (
+                    <p
+                      className="mt-4 md:mt-5 font-display italic text-sand-200 text-base md:text-lg lg:text-xl opacity-90 max-w-2xl mx-auto"
+                      style={{ textShadow: "0 2px 8px rgba(0,0,0,0.75)" }}
+                    >
+                      {heroSlides[i].tagline}
+                    </p>
+                  )}
                 </motion.div>
               </AnimatePresence>
 
@@ -112,9 +131,9 @@ function HeroSection() {
             </div>
 
             {/* Bottom frosted pills */}
-            <div className="absolute bottom-4 md:bottom-6 left-1/2 -translate-x-1/2 hidden sm:flex items-center gap-1 md:gap-2 px-2 py-2 rounded-full bg-night-950/40 backdrop-blur-md border border-sand-300/30 text-[10px] md:text-xs">
+            <div className="absolute bottom-4 md:bottom-6 left-1/2 -translate-x-1/2 hidden sm:flex items-center gap-1 md:gap-2 px-2 py-2 rounded-full bg-black/40 backdrop-blur-md border border-sand-300/30 text-[10px] md:text-xs">
               {[
-                { icon: "✉", label: "Tuugii7019@gmail.com" },
+                { icon: "✉", label: "tuklobin@gmail.com" },
                 { icon: "@", label: "tugomongolia" },
                 { icon: "✦", label: "11 departures" },
               ].map((c) => (
@@ -383,7 +402,7 @@ function FinalCTA() {
             className="object-cover"
             sizes="(max-width: 1400px) 100vw, 1400px"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-night-950/85 via-night-950/40 to-night-950/10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/40 to-black/10" />
           <div className="absolute inset-0 flex items-center px-8 md:px-16">
             <div className="max-w-md">
               <p className="text-sand-300 text-[10px] md:text-xs tracking-[0.3em] uppercase mb-4">
@@ -391,7 +410,7 @@ function FinalCTA() {
               </p>
               <h2
                 className="font-display text-3xl md:text-5xl lg:text-6xl text-white leading-[1.05] mb-6"
-                style={{ textShadow: "0 4px 30px rgba(0,0,0,0.5)" }}
+                style={{ textShadow: "0 2px 8px rgba(0,0,0,0.85), 0 8px 32px rgba(0,0,0,0.7)" }}
               >
                 The country I love,
                 <br />the way it should be felt.
