@@ -99,7 +99,7 @@ export default function TerelJEscapePage() {
       <Departures
         accent={ACCENT}
         list={[
-          { label: "Jun departure", dates: "Jun 1 – 3, 2026", days: 3 },
+          { label: "Jun departure", dates: "Jun 4 – 6, 2026", days: 3 },
           { label: "Jul departure", dates: "Jul 16 – 18, 2026", days: 3 },
           { label: "Aug departure", dates: "Aug 11 – 13, 2026", days: 3 },
         ]}
@@ -203,7 +203,7 @@ export default function TerelJEscapePage() {
           { q: "Is it okay if I don't ride horses?", a: "Totally fine. The horseback session is optional. There are plenty of walks, river spots, and a ger to read in." },
           { q: "What if the weather turns?", a: "We run rain or shine. Ger is warm, khorkhog is better in the rain, and Turtle Rock looks incredible with clouds rolling in. Only cancellation would be an actual safety issue like a flooded road — which is rare." },
           { q: "How many people in the group?", a: "8–16. These departures often book up with families and friend groups, so the vibe tilts social. If you want a smaller private version, message me." },
-          { q: "Can I combine this with another tour?", a: "Yes — many people do Terelj (Jun 1–3) then rest a few days and join Altai (Jun 8–13). Or Terelj (Aug 11–13) after Gobi Glimpse. Tell me what you're thinking and I'll suggest a combo." },
+          { q: "Can I combine this with another tour?", a: "Yes — many people do Terelj (Jun 4–6) then rest a couple days and join Southern Gobi + Central (Jun 8–18). Or Terelj (Aug 11–13) right after Gobi Glimpse. Tell me what you're thinking and I'll suggest a combo." },
         ]}
       />
 

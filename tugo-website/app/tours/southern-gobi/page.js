@@ -42,7 +42,7 @@ export default function SouthernGobiPage() {
             <div className="lg:col-span-7">
               <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
                 <p className="text-amber-200 text-[11px] tracking-[0.4em] uppercase mb-4 font-medium">
-                  Fast Gobi run · 8 days · 4 – 6 pax
+                  Long Gobi loop · 11 days · 5 – 7 pax
                 </p>
                 <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-white leading-[0.92] mb-6">
                   <span className="block">Southern Gobi</span>
@@ -56,10 +56,10 @@ export default function SouthernGobiPage() {
 
                 <div className="flex flex-wrap gap-2 mb-8">
                   {[
-                    { l: "Tour", v: "Jun 16 – 23" },
-                    { l: "Days", v: "8" },
-                    { l: "Group", v: "4 – 6" },
-                    { l: "Price", v: "$1,200" },
+                    { l: "Tour", v: "Jun 8 – 18" },
+                    { l: "Days", v: "11" },
+                    { l: "Group", v: "5 – 7" },
+                    { l: "Price", v: "$1,100" },
                   ].map((p) => (
                     <span key={p.l} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-night-950/50 backdrop-blur-md border border-amber-300/30">
                       <span className="text-amber-200 text-[10px] tracking-[0.2em] uppercase">{p.l}</span>
@@ -98,12 +98,12 @@ export default function SouthernGobiPage() {
 
       <VitalsStrip
         items={[
-          { l: "Dates", v: "Jun 16 – 23, 2026" },
-          { l: "Days", v: "8" },
-          { l: "Group", v: "4 – 6" },
+          { l: "Dates", v: "Jun 8 – 18, 2026" },
+          { l: "Days", v: "11" },
+          { l: "Group", v: "5 – 7" },
           { l: "Region", v: "South + Central" },
           { l: "Pace", v: "Tight · lots of driving" },
-          { l: "Price", v: "$1,200" },
+          { l: "Price", v: "$1,100" },
         ]}
       />
 
@@ -189,7 +189,7 @@ export default function SouthernGobiPage() {
 
       <IncludedBring
         accent={ACCENT}
-        priceLabel="$1,200"
+        priceLabel="$1,100"
         included={[
           "4×4 Russian van, fuel, driver",
           "English/Mongolian guide (Tugi)",
@@ -226,9 +226,9 @@ export default function SouthernGobiPage() {
 
       <TourCTA
         accent={ACCENT}
-        title="June 16 – 23, 2026 · $1,200"
-        subtitle="Small group of 4 – 6. Fast pace, high reward. Bring a friend and save 15% each."
-        emailSubject="Southern Gobi + Central · June 16"
+        title="June 8 – 18, 2026 · $1,100"
+        subtitle="Small group of 5 – 7. Deeper Gobi loop with a swing through central Mongolia on the way back. Bring a friend and save 15% each."
+        emailSubject="Southern Gobi + Central · June 8"
       />
     </div>
   );

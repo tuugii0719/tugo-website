@@ -58,7 +58,7 @@ export default function GobiGlimpsePage() {
                   {[
                     { l: "Tour", v: "Aug 18 – 28" },
                     { l: "Days", v: "11" },
-                    { l: "Group", v: "4 – 6" },
+                    { l: "Group", v: "5 – 7" },
                     { l: "Price", v: "$1,800" },
                   ].map((p) => (
                     <span key={p.l} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-night-950/50 backdrop-blur-md border border-amber-300/30">
@@ -95,7 +95,7 @@ export default function GobiGlimpsePage() {
         items={[
           { l: "Dates", v: "Aug 18 – 28, 2026" },
           { l: "Days", v: "11" },
-          { l: "Group", v: "4 – 6" },
+          { l: "Group", v: "5 – 7" },
           { l: "Region", v: "South + Central" },
           { l: "Pace", v: "Medium · breathing room" },
           { l: "Price", v: "$1,800" },
@@ -208,7 +208,7 @@ export default function GobiGlimpsePage() {
           "Water bottle — we refill from a jerry can",
           "Photography: dust-sealed gear or a rain sleeve",
         ]}
-        note="If you want the fast version, Southern Gobi (June 16 – 23) covers similar ground in 8 days."
+        note="If June fits better, Southern Gobi + Central (June 8 – 18) covers similar ground earlier in the season."
       />
 
       <TourFAQ

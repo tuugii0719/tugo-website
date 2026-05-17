@@ -49,10 +49,10 @@ export default function KhagiinKharNuurPage() {
 
                 <div className="flex flex-wrap gap-2 mb-8">
                   {[
-                    { l: "Tour", v: "Jun 25 – 30" },
+                    { l: "Tour", v: "Jun 22 – 27" },
                     { l: "Days", v: "6" },
-                    { l: "Group", v: "6 – 8" },
-                    { l: "Price", v: "$1,400" },
+                    { l: "Group", v: "5 – 7" },
+                    { l: "Price", v: "$700" },
                   ].map((p) => (
                     <span key={p.l} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-night-950/55 backdrop-blur-md border border-lime-300/30">
                       <span className="text-lime-200 text-[10px] tracking-[0.2em] uppercase">{p.l}</span>
@@ -86,12 +86,12 @@ export default function KhagiinKharNuurPage() {
 
       <VitalsStrip
         items={[
-          { l: "Dates", v: "Jun 25 – 30, 2026" },
+          { l: "Dates", v: "Jun 22 – 27, 2026" },
           { l: "Days", v: "6" },
-          { l: "Group", v: "6 – 8" },
+          { l: "Group", v: "5 – 7" },
           { l: "Region", v: "Khan Khentii taiga" },
           { l: "Start / end", v: "Ulaanbaatar" },
-          { l: "Price", v: "$1,400" },
+          { l: "Price", v: "$700" },
         ]}
       />
 
@@ -182,7 +182,7 @@ export default function KhagiinKharNuurPage() {
 
       <IncludedBring
         accent={ACCENT}
-        priceLabel="$1,400"
+        priceLabel="$700"
         included={[
           "UB ↔ Terelj transfers (private car)",
           "Horses, tack, and local horse guide for 4 riding days",
@@ -219,9 +219,9 @@ export default function KhagiinKharNuurPage() {
 
       <TourCTA
         accent={ACCENT}
-        title="June 25 – 30, 2026 · $1,400"
+        title="June 22 – 27, 2026 · $700"
         subtitle="Small group of 6 – 8. Limited horses — reserve early. Bring a friend and save 15% each."
-        emailSubject="Khagiin Khar Nuur horse trek · June 25"
+        emailSubject="Khagiin Khar Nuur horse trek · June 22"
       />
     </div>
   );

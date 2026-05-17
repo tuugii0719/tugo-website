@@ -51,8 +51,8 @@ export default function Footer() {
               <a href="mailto:tuklobin@gmail.com" className="hover:text-sand-200 transition-colors">
                 tuklobin@gmail.com
               </a>
-              <a href="https://instagram.com/tugomongolia" target="_blank" rel="noopener noreferrer" className="hover:text-sand-200 transition-colors">
-                @tugomongolia
+              <a href="https://www.instagram.com/mongoladventure/" target="_blank" rel="noopener noreferrer" className="hover:text-sand-200 transition-colors">
+                @mongoladventure
               </a>
             </div>
           </div>

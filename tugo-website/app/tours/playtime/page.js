@@ -132,7 +132,7 @@ export default function PlaytimeMusicFestivalPage() {
                     { l: "Tour", v: "Jul 1 – 4" },
                     { l: "Festival", v: "Jul 2 – 4" },
                     { l: "Group", v: "6 – 8" },
-                    { l: "Price", v: "$750" },
+                    { l: "Price", v: "$650" },
                   ].map((p) => (
                     <span
                       key={p.l}
@@ -308,7 +308,7 @@ export default function PlaytimeMusicFestivalPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10 md:mb-14">
             <p className="text-fuchsia-400 text-[11px] tracking-[0.4em] uppercase mb-3 font-medium">
-              All in $750
+              All in $650
             </p>
             <h2 className="font-display text-3xl md:text-5xl text-sand-100 leading-tight">
               Everything you need.
@@ -318,7 +318,7 @@ export default function PlaytimeMusicFestivalPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
               { icon: "🎟", title: "Festival ticket", body: "3-day general admission, wristband sorted in advance." },
-              { icon: "🍽", title: "All meals", body: "3 meals a day at the festival's better food stalls." },
+              { icon: "🍳", title: "Filling breakfast", body: "Fueling breakfast each morning to start the day right. Lunch & dinner — on you at the festival stalls." },
               { icon: "⛺", title: "Camping kit", body: "Tent, mat, transfers, all set up for you on arrival." },
               { icon: "🚐", title: "All transfers", body: "UB ↔ festival, plus airport pickup and drop-off." },
             ].map((p) => (
@@ -395,7 +395,7 @@ export default function PlaytimeMusicFestivalPage() {
               { q: "Camping or hotel?", a: "Camping at the festival site for the three festival nights. Tent + mat included. Wednesday night is in a UB hostel before the trip." },
               { q: "How old is the crowd?", a: "Mid-20s to mid-30s, very international — Seoul, Berlin, NYC, Melbourne all show up. Single travellers fit in fast." },
               { q: "Can I skip a day?", a: "Yes — your wristband is yours for all three days but using it is optional. Some people nap, walk off the field, find the river." },
-              { q: "What about food?", a: "Festival has serious food vendors (Mongolian BBQ, ramen, vegetarian). Your 3 meals/day on festival days are covered there." },
+              { q: "What about food?", a: "Filling breakfast is included each morning to fuel you up. Lunch and dinner are on you — the festival has serious food vendors (Mongolian BBQ, ramen, vegetarian, plenty of options) so you can graze when you're hungry. Keeps the trip cheaper and lets you choose what you want." },
               { q: "Bring a partner?", a: "Yes — and take 15% off each of you with the pair discount. Private hostel room on the UB night is +$100 total." },
             ].map((f) => (
               <details
@@ -437,7 +437,7 @@ export default function PlaytimeMusicFestivalPage() {
                 Jul 1 – 4, 2026
                 <br />
                 <span className="bg-gradient-to-r from-pink-200 to-orange-200 bg-clip-text text-transparent italic">
-                  $750 all in.
+                  $650 all in.
                 </span>
               </h2>
               <p className="text-sand-100 text-base md:text-lg mb-8 max-w-xl mx-auto leading-relaxed">

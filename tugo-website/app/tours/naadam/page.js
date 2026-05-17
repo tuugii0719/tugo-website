@@ -48,10 +48,10 @@ export default function NaadamPage() {
 
                 <div className="flex flex-wrap gap-2 mb-8">
                   {[
-                    { l: "Tour", v: "Jul 8 – 13" },
-                    { l: "Days", v: "6" },
-                    { l: "Group", v: "6 – 8" },
-                    { l: "Price", v: "$1,200" },
+                    { l: "Tour", v: "Jul 8 – 14" },
+                    { l: "Days", v: "7" },
+                    { l: "Group", v: "5 – 7" },
+                    { l: "Price", v: "$700" },
                   ].map((p) => (
                     <span key={p.l} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-night-950/60 backdrop-blur-md border border-amber-400/30">
                       <span className="text-amber-300 text-[10px] tracking-[0.2em] uppercase">{p.l}</span>
@@ -93,12 +93,12 @@ export default function NaadamPage() {
 
       <VitalsStrip
         items={[
-          { l: "Dates", v: "Jul 8 – 13, 2026" },
+          { l: "Dates", v: "Jul 8 – 14, 2026" },
           { l: "Days", v: "6" },
           { l: "Group", v: "6 – 8" },
           { l: "Region", v: "Zavkhan + central" },
           { l: "Festival", v: "Local village" },
-          { l: "Price", v: "$1,200" },
+          { l: "Price", v: "$700" },
         ]}
       />
 
@@ -191,7 +191,7 @@ export default function NaadamPage() {
 
       <IncludedBring
         accent={ACCENT}
-        priceLabel="$1,200"
+        priceLabel="$700"
         included={[
           "4×4 vehicle, fuel, driver",
           "English/Mongolian guide (Tugi)",
@@ -227,9 +227,9 @@ export default function NaadamPage() {
 
       <TourCTA
         accent={ACCENT}
-        title="July 8 – 13, 2026 · $1,200"
+        title="July 8 – 14, 2026 · $700"
         subtitle="One village, one holiday, one small group. Bring a friend and save 15% each. Limited seats — Naadam is the year&rsquo;s busiest week."
-        emailSubject="Naadam · July 8 – 13"
+        emailSubject="Naadam · July 8 – 14"
       />
     </div>
   );

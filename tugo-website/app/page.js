@@ -18,26 +18,26 @@ import { FadeIn } from "@/components/animations/FadeIn";
 // pitch. Photos are placeholders — swap each src to match the slide's subject:
 //   1. The vibe    → calm interior moment (ger, fire, someone reading, no phones)
 //   2. The rhythm  → unhurried scene, weather rolling in, herd crossing the road
-//   3. The care    → Tugi tending to the group — tea, saddle, handing over a layer
-//   4. The camping → tents pitched at dusk, fire, stars above (or sunrise from tent)
+//   3. The care    → quiet attention — Tugi listening, hand on a shoulder, real presence
+//   4. The camping → mix of a family ger + our tent camp, fire crackling, stars or sunrise
 //   5. The hosts   → meal with a family — khorkhog, hands reaching in, kitchen scene
 //   6. The group   → small group of 4–7 walking together, intimate scale, sun behind
 // ============================================================================
 const heroSlides = [
   { src: "/images/tours/north-central/DSC02464-hero.jpg", kicker: "The vibe",    headline: "A trip, not a tour.",        tagline: "Slow, real, present." },
   { src: "/images/gallery/DSC08200.jpg",                  kicker: "The rhythm",  headline: "Flexible by design.",        tagline: "Plans bend to the weather, the herds, the people." },
-  { src: "/images/gallery/DSC01810.jpg",                  kicker: "The care",    headline: "Just bring your boots.",     tagline: "I’ve got the rest." },
-  { src: "/images/gallery/DSC02431.jpg",                  kicker: "The camping", headline: "Tents over hotels.",         tagline: "Cheaper, wilder, stars uninterrupted." },
+  { src: "/images/gallery/DSC01810.jpg",                  kicker: "The care",    headline: "Looked after, always.",      tagline: "I notice when you’re cold, quiet, or worn down. I show up." },
+  { src: "/images/gallery/DSC02431.jpg",                  kicker: "The camping", headline: "Gers &amp; tents.",          tagline: "Cheaper, wilder, stars uninterrupted." },
   { src: "/images/gallery/DSC01857.jpg",                  kicker: "The hosts",   headline: "Guest, not tourist.",        tagline: "Real homes. Real food. Real welcome." },
   { src: "/images/gallery/DSC02365.jpg",                  kicker: "The group",   headline: "Four to seven. Never more.", tagline: "Small enough to actually know each other." },
 ];
 
 const sliderTours = [
-  { slug: "terelj-escape",     title: "Terelj Escape",            emoji: "🌲", dates: "Jun 4 – 6",   days: 3,  price: "$200",   img: "/images/destinations/terelj-park.jpg",        accent: "text-teal-300" },
-  { slug: "southern-gobi",     title: "Southern Gobi + Central",  emoji: "🏜️", dates: "Jun 9 – 16",  days: 8,  price: "$650",   img: "/images/gallery/DSC08000.jpg",                accent: "text-orange-300" },
-  { slug: "khagiin-khar-nuur", title: "Horse Trek · Khagiin Khar",emoji: "🐎", dates: "Jun 20 – 28", days: 9,  price: "$700",   img: "/images/gallery/DSC01684.jpg",                accent: "text-lime-300", soldOut: true },
-  { slug: "playtime",          title: "Playtime Music Festival",  emoji: "🎶", dates: "Jul 1 – 4",   days: 4,  price: "$400",   img: "/images/playtime/poster.jpg",                 accent: "text-fuchsia-300" },
-  { slug: "naadam",            title: "Naadam Festival",          emoji: "🏇", dates: "Jul 8 – 13",  days: 6,  price: "$600",   img: "/images/destinations/naadam-horse-racer.jpg", accent: "text-red-300" },
+  { slug: "terelj-escape",     title: "Terelj Escape",            emoji: "🌲", dates: "Jun 4 – 6",   days: 3,  price: "$350",   img: "/images/destinations/terelj-park.jpg",        accent: "text-teal-300" },
+  { slug: "southern-gobi",     title: "Southern Gobi + Central",  emoji: "🏜️", dates: "Jun 8 – 18",  days: 11, price: "$1,100", img: "/images/gallery/DSC08000.jpg",                accent: "text-orange-300" },
+  { slug: "khagiin-khar-nuur", title: "Horse Trek · Khagiin Khar",emoji: "🐎", dates: "Jun 22 – 27", days: 6,  price: "$700",   img: "/images/gallery/DSC01684.jpg",                accent: "text-lime-300", soldOut: true },
+  { slug: "playtime",          title: "Playtime Music Festival",  emoji: "🎶", dates: "Jul 1 – 4",   days: 4,  price: "$650",   img: "/images/playtime/poster.jpg",                 accent: "text-fuchsia-300" },
+  { slug: "naadam",            title: "Naadam Festival",          emoji: "🏇", dates: "Jul 8 – 14",  days: 7,  price: "$700",   img: "/images/destinations/naadam-horse-racer.jpg", accent: "text-red-300" },
   { slug: "north-central",     title: "North & Central Loop",     emoji: "🐪", dates: "Jul 21 – 31", days: 11, price: "$1,100", img: "/images/tours/north-central/DSC02464.jpg",    accent: "text-sky-300" },
   { slug: "altai-tavan-bogd",  title: "Altai Tavan Bogd",         emoji: "🏔️", dates: "Aug 3 – 8",   days: 6,  price: "$900",   img: "/images/destinations/altai-peaks.jpg",        accent: "text-indigo-300" },
   { slug: "gobi-glimpse",      title: "Gobi Glimpse + Central",   emoji: "🌅", dates: "Aug 18 – 28", days: 11, price: "$1,100", img: "/images/destinations/khongoryn-1.jpg",        accent: "text-amber-300" },
@@ -55,7 +55,7 @@ function HeroSection() {
   }, []);
 
   return (
-    <section className="relative min-h-screen w-full overflow-hidden bg-night-950 pt-16 md:pt-20 px-4 md:px-8 pb-20">
+    <section className="relative min-h-screen w-full overflow-hidden bg-night-950 pt-24 sm:pt-28 md:pt-24 px-4 md:px-8 pb-20">
       {/* Subtle gradient wash so the page doesn't feel flat */}
       <div className="absolute inset-0 bg-gradient-to-b from-night-900/40 via-night-950 to-night-950 pointer-events-none" />
 
@@ -134,7 +134,7 @@ function HeroSection() {
             <div className="absolute bottom-4 md:bottom-6 left-1/2 -translate-x-1/2 hidden sm:flex items-center gap-1 md:gap-2 px-2 py-2 rounded-full bg-black/40 backdrop-blur-md border border-sand-300/30 text-[10px] md:text-xs">
               {[
                 { icon: "✉", label: "tuklobin@gmail.com" },
-                { icon: "@", label: "tugomongolia" },
+                { icon: "@", label: "mongoladventure" },
                 { icon: "✦", label: "11 departures" },
               ].map((c) => (
                 <span key={c.label} className="flex items-center gap-1.5 px-3 py-1 text-sand-100 whitespace-nowrap">
@@ -293,7 +293,7 @@ function FeatureBand() {
               <br />real hosts.
             </h3>
             <p className="text-sand-400 text-sm md:text-base leading-relaxed mb-6 max-w-md">
-              4 to 16 people max. Most nights you&apos;re in a Mongolian family&apos;s ger, eating what they eat, sitting in their kitchen. The kind of access a coach bus can&apos;t give you.
+              5 to 7 people max. Most nights you&apos;re in a Mongolian family&apos;s ger, eating what they eat, sitting in their kitchen. The kind of access a coach bus can&apos;t give you.
             </p>
             <Link
               href="/tours"
@@ -354,7 +354,7 @@ function FeatureBand() {
 function PillarsSection() {
   const pillars = [
     { icon: "✦", title: "Routes I know", body: "Every trip is a road I&apos;ve driven many times — families I trust, weather I read, camps I&apos;d stay at myself." },
-    { icon: "♦", title: "Small group", body: "4 to 16 people max. Real conversations, real depth, no losing your group at lunch." },
+    { icon: "♦", title: "Small group", body: "5 to 7 people max. Real conversations, real depth, no losing your group at lunch." },
     { icon: "○", title: "All in", body: "Most tours include flight, food, lodging, guide, permits — show up with your boots and a warm layer." },
     { icon: "△", title: "Personal", body: "I read every booking and reply within 48 hours. We confirm after a short conversation." },
   ];

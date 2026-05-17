@@ -64,7 +64,7 @@ export default function AltaiTavanBogdPage() {
                     { l: "Duration", v: "6 days" },
                     { l: "Departures", v: "2 / season" },
                     { l: "Flight", v: "Included" },
-                    { l: "Price", v: "$1,400" },
+                    { l: "Price", v: "$900" },
                   ].map((p) => (
                     <span key={p.l} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-night-950/60 backdrop-blur-md border border-indigo-300/30">
                       <span className="text-indigo-200 text-[10px] tracking-[0.2em] uppercase">{p.l}</span>
@@ -102,9 +102,9 @@ export default function AltaiTavanBogdPage() {
         items={[
           { l: "Duration", v: "6 days" },
           { l: "Departures", v: "2 in 2026" },
-          { l: "Group", v: "6 – 8" },
+          { l: "Group", v: "5 – 7" },
           { l: "Region", v: "Western Mongolia" },
-          { l: "Price", v: "$1,400" },
+          { l: "Price", v: "$900" },
           { l: "Co-host", v: "Kazakh local" },
         ]}
       />
@@ -202,7 +202,7 @@ export default function AltaiTavanBogdPage() {
 
       <IncludedBring
         accent={ACCENT}
-        priceLabel="$1,400"
+        priceLabel="$900"
         included={[
           "Round-trip flight: Ulaanbaatar ↔ Ölgii",
           "All meals (breakfast, lunch, dinner)",
@@ -228,7 +228,7 @@ export default function AltaiTavanBogdPage() {
       <TourFAQ
         accent={ACCENT}
         items={[
-          { q: "Is the flight really included?", a: "Yes. Round-trip UB ↔ Ölgii is built into the $1,400 price. Flight tickets go non-refundable ~45 days before departure, so if you need to cancel after that the flight portion is forfeit." },
+          { q: "Is the flight really included?", a: "Yes. Round-trip UB ↔ Ölgii is built into the $900 price. Flight tickets go non-refundable ~45 days before departure, so if you need to cancel after that the flight portion is forfeit." },
           { q: "How cold does it get?", a: "Days 10–20 °C, nights can drop to 0–5 °C. The wind is the real factor — it cuts through thin layers. Wool or synthetic mid-layer + wind shell beats any fleece." },
           { q: "Do I have to ride a horse?", a: "The Baga Turgen day is on horseback with a local guide leading. If you really can&apos;t ride, we can swap it for a shorter hike — but the waterfall is the highlight and the horses are famously gentle." },
           { q: "Is the eagle hunter real or a show?", a: "Real. We visit a hunting family that actually uses their eagles for winter hunting. Summer they&apos;re training and mostly welcoming guests like us. Most famous training grounds are within a 2-hour drive." },
@@ -238,7 +238,7 @@ export default function AltaiTavanBogdPage() {
 
       <TourCTA
         accent={ACCENT}
-        title="$1,400 per person · flight included"
+        title="$900 per person · flight included"
         subtitle="Two departures in 2026 — June 8–13 or Aug 3–8. Small groups of 6–8. Bring a friend and save 15% each."
         emailSubject="Altai Tavan Bogd · 2026"
       />

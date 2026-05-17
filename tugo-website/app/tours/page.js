@@ -26,11 +26,11 @@ const tours = [
     emoji: "🌲",
     dates: "June 4 – 6",
     days: 3,
-    price: "$200",
-    groupSize: "4–7",
+    price: "$350",
+    groupSize: "6–8",
     status: "available",
     description:
-      "Any age. Season opener. Gorkhi-Terelj weekend — Turtle Rock, Aryabal Monastery, horseback through alpine meadows, hiking, khorkhog, and a night in a family ger camp.",
+      "Any age. Season opener. Gorkhi-Terelj weekend — we base at a family ger camp and explore the park on our own rhythm. Turtle Rock, Aryabal Monastery, horseback through alpine meadows, hiking, khorkhog. Lots of free time to wander at your own pace.",
     highlights: ["Turtle Rock", "Aryabal Monastery", "Khorkhog", "Ger stay"],
     theme: "terelj",
     startMonth: 5,
@@ -43,38 +43,38 @@ const tours = [
     slug: "southern-gobi",
     title: "Southern Gobi + Central",
     emoji: "🏜️",
-    dates: "June 9 – 16",
-    days: 8,
-    price: "$650",
-    groupSize: "4–7",
+    dates: "June 8 – 18",
+    days: 11,
+    price: "$1,100",
+    groupSize: "5–7",
     status: "available",
     description:
-      "For young travellers who want to cover ground — Umnugobi, Yoliin Am ice canyon, a night in the desert, camels at Khongoriin Els, then central Mongolia on the way back with hot springs, horse riding, and hiking.",
+      "Eleven days through Umnugobi and central Mongolia — Yoliin Am ice canyon, desert nights, camels at Khongoriin Els, then central Mongolia on the way back with hot springs, horse riding, and hiking. The deeper version of the Gobi loop.",
     highlights: ["Yoliin Am", "Desert camp", "Khongoriin Els", "Hot springs", "Horse riding"],
     theme: "southern-gobi",
     startMonth: 5,
-    startDay: 9,
+    startDay: 8,
     endMonth: 5,
-    endDay: 16,
+    endDay: 18,
   },
   {
     id: "khagiin-khar-nuur",
     slug: "khagiin-khar-nuur",
     title: "Horse Trek · Khagiin Khar Nuur",
     emoji: "🐎",
-    dates: "June 20 – 28",
-    days: 9,
+    dates: "June 22 – 27",
+    days: 6,
     price: "$700",
-    groupSize: "4–7",
+    groupSize: "5–7",
     status: "sold_out",
     description:
       "Starting from UB. Horseback into the Khan Khentii taiga to Khagiin Khar Nuur — the Pearl of the Taiga. Ger stays, tent camps, riding through forest and over Khavirga Pass, a night by the alpine lake.",
     highlights: ["Terelj ger", "Khavirga Pass", "Khagiin Khar Lake", "Chinggis statue"],
     theme: "khentii",
     startMonth: 5,
-    startDay: 20,
+    startDay: 22,
     endMonth: 5,
-    endDay: 28,
+    endDay: 27,
   },
   {
     id: "playtime",
@@ -83,12 +83,12 @@ const tours = [
     emoji: "🎶",
     dates: "July 1 – 4",
     days: 4,
-    price: "$400",
-    groupSize: "4–7",
+    price: "$650",
+    groupSize: "6–8",
     status: "available",
     description:
-      "Mongolia's biggest music festival — Molchat Doma, Kings of Convenience, DIIV, Stereolab, Hyukoh. Festival ticket, transfers, camping, meals — all in. Pre-party Wednesday, three days at Playtime Field.",
-    highlights: ["Festival ticket inc.", "3-night camping", "Pre-party", "All meals"],
+      "Mongolia's biggest music festival — Molchat Doma, Kings of Convenience, DIIV, Stereolab, Hyukoh. Festival ticket, transfers, camping, and a filling breakfast each morning — all in. Lunch and dinner are on you (festival has stalls). Pre-party Wednesday, three days at Playtime Field.",
+    highlights: ["Festival ticket inc.", "3-night camping", "Pre-party", "Filling breakfast"],
     theme: "playtime",
     startMonth: 6,
     startDay: 1,
@@ -100,11 +100,11 @@ const tours = [
     slug: "naadam",
     title: "Naadam Festival",
     emoji: "🏇",
-    dates: "July 8 – 13",
-    days: 6,
-    price: "$600",
-    groupSize: "4–7",
-    status: "limited",
+    dates: "July 8 – 14",
+    days: 7,
+    price: "$700",
+    groupSize: "5–7",
+    status: "available",
     description:
       "Chill take on Naadam with deeper cultural immersion — local village Naadams, horse racing, wrestling, holiday foods and costumes, Zavkhan province, Terkhiin Tsagaan Nuur, Khorgo volcano, Tsenkher hot springs, nomadic family stays. Route bends with the festival schedule.",
     highlights: ["Horse racing", "Wrestling", "Zavkhan", "Terkh Lake", "Hot springs"],
@@ -112,7 +112,7 @@ const tours = [
     startMonth: 6,
     startDay: 8,
     endMonth: 6,
-    endDay: 13,
+    endDay: 14,
   },
   {
     id: "terelj-jul",
@@ -121,11 +121,11 @@ const tours = [
     emoji: "🌲",
     dates: "July 16 – 18",
     days: 3,
-    price: "$200",
-    groupSize: "4–7",
+    price: "$350",
+    groupSize: "6–8",
     status: "available",
     description:
-      "Second Terelj departure, right after Naadam. Same route — Turtle Rock, Aryabal Monastery, horseback, hiking, khorkhog, family ger camp.",
+      "Second Terelj departure, right after Naadam. Same idea — family ger camp as base, Turtle Rock, Aryabal Monastery, horseback, hiking, khorkhog. Free time to explore the park at your own pace.",
     highlights: ["Turtle Rock", "Aryabal Monastery", "Khorkhog", "Ger stay"],
     theme: "terelj",
     startMonth: 6,
@@ -141,7 +141,7 @@ const tours = [
     dates: "Aug 3 – 8",
     days: 6,
     price: "$900",
-    groupSize: "4–7",
+    groupSize: "5–7",
     status: "available",
     description:
       "Second Altai departure — same route, same everything included. Ölgii flight, Khoton Lake, eagle hunters, horseback to Baga Turgen waterfall, Potanin Glacier, petroglyphs. Co-hosted with a local Altai guide.",
@@ -159,11 +159,11 @@ const tours = [
     emoji: "🌲",
     dates: "Aug 11 – 13",
     days: 3,
-    price: "$200",
-    groupSize: "4–7",
+    price: "$350",
+    groupSize: "6–8",
     status: "available",
     description:
-      "Third Terelj weekend — end-of-summer departure. Same gentle route — Turtle Rock, Aryabal Monastery, horseback, hiking, khorkhog, family ger camp.",
+      "Third Terelj weekend — end-of-summer departure. Same gentle setup — family ger camp as base, Turtle Rock, Aryabal Monastery, horseback, hiking, khorkhog. Plenty of free time to explore on your own.",
     highlights: ["Turtle Rock", "Aryabal Monastery", "Khorkhog", "Ger stay"],
     theme: "terelj",
     startMonth: 7,
@@ -179,7 +179,7 @@ const tours = [
     dates: "Aug 18 – 28",
     days: 11,
     price: "$1,100",
-    groupSize: "4–7",
+    groupSize: "5–7",
     status: "available",
     description:
       "The iconic southern Gobi loop, extended through central Mongolia — Umnugobi, Yoliin Am, desert camping, camels at Khongoriin Els, hot springs, horse riding, hiking on the return.",
@@ -198,7 +198,7 @@ const tours = [
     dates: "July 21 – 31",
     days: 11,
     price: "$1,100",
-    groupSize: "4–7",
+    groupSize: "5–7",
     status: "available",
     description:
       "The northern route — Huuchin Bulgan ger camp, Khuvsgul Lake camping and hiking, the taiga, Zavkhan, hot springs, many lakes, a horse-riding day, and central Mongolia on the way home.",
@@ -464,18 +464,20 @@ function DayCell({ monthIndex, day, isEmpty, onHover, onLeave, hoveredId, dayOfW
 
   if (!tour) {
     return (
-      <div className="aspect-square flex items-center justify-center rounded-lg hover:bg-sand-900/10 transition-colors">
-        <span className="text-sand-700 text-xs md:text-sm tabular-nums">{day}</span>
+      <div className="aspect-square flex items-center justify-center rounded-lg hover:bg-sand-900/15 transition-colors">
+        <span className="text-sand-600 text-xs md:text-sm tabular-nums">{day}</span>
       </div>
     );
   }
 
   const theme = themeMap[tour.theme];
+  const status = statusConfig[tour.status];
   const isFirstDay = monthIndex === tour.startMonth && day === tour.startDay;
   const isLastDay = monthIndex === tour.endMonth && day === tour.endDay;
   const isHovered = hoveredId === tour.id;
   const isAnchor = isFirstDay; // popover renders only on the first cell of the tour
   const isDimmed = hoveredId && hoveredId !== tour.id;
+  const isSoldOut = tour.status === "sold_out";
 
   const roundLeft = isFirstDay || dayOfWeek === 0;
   const roundRight = isLastDay || dayOfWeek === 6;
@@ -499,17 +501,24 @@ function DayCell({ monthIndex, day, isEmpty, onHover, onLeave, hoveredId, dayOfW
         href={`/tours/${tour.slug}`}
         onMouseEnter={() => onHover(tour.id)}
         onMouseLeave={onLeave}
+        aria-label={`${tour.title} · ${tour.dates}`}
         className={`
           relative w-full h-full flex flex-col items-center justify-center
           border ${theme.border} ${theme.bg} ${theme.bgHover} ${roundingClass}
-          transition-all duration-300 group cursor-pointer overflow-hidden
-          ${isHovered ? "scale-[1.12] z-20" : ""}
+          transition-all duration-300 ease-out group cursor-pointer overflow-hidden
+          ${isHovered ? "scale-[1.1] z-20 shadow-lg shadow-black/40" : ""}
           ${isDimmed ? "opacity-25" : "opacity-100"}
+          ${isSoldOut ? "ring-1 ring-red-500/30" : ""}
         `}
       >
-      <div className={`${theme.text} absolute inset-0 pointer-events-none`}>
+      <div className={`${theme.text} absolute inset-0 pointer-events-none opacity-80`}>
         <CellPattern type={theme.pattern} />
       </div>
+
+      {/* Left-edge accent stripe marks the first day of a tour span */}
+      {isFirstDay && (
+        <span className={`absolute left-0 top-1 bottom-1 w-[3px] rounded-full ${theme.dot}`} />
+      )}
 
       <span
         className={`relative z-10 tabular-nums font-medium ${theme.text} ${
@@ -525,7 +534,17 @@ function DayCell({ monthIndex, day, isEmpty, onHover, onLeave, hoveredId, dayOfW
         </span>
       )}
 
-      {isFirstDay && (
+      {/* Status indicator on first day only — colored ring around a small dot */}
+      {isFirstDay && status && tour.status !== "available" && (
+        <span
+          className={`absolute bottom-1 left-1 px-1 py-px text-[8px] uppercase tracking-wider leading-none rounded ${status.cls}`}
+          title={status.label}
+        >
+          {tour.status === "sold_out" ? "✕" : "!"}
+        </span>
+      )}
+
+      {isFirstDay && tour.status === "available" && (
         <span className={`absolute bottom-1 left-1 w-1 h-1 md:w-1.5 md:h-1.5 rounded-full ${theme.dot} animate-pulse`} />
       )}
 
@@ -557,16 +576,21 @@ function DayCell({ monthIndex, day, isEmpty, onHover, onLeave, hoveredId, dayOfW
 }
 
 // ============================================================================
+// STATUS CONFIG (shared between popover + legend)
+// ============================================================================
+
+const statusConfig = {
+  available: { cls: "bg-emerald-500/15 text-emerald-300 border-emerald-500/30", label: "Spots Available", short: "Available" },
+  limited:   { cls: "bg-amber-500/15 text-amber-300 border-amber-500/30",       label: "Limited Spots",   short: "Limited" },
+  sold_out:  { cls: "bg-red-500/15 text-red-300 border-red-500/30",             label: "Fully Booked",    short: "Fully Booked" },
+};
+
+// ============================================================================
 // TOOLTIP POPOVER
 // ============================================================================
 
 function TourPopover({ tour, onMouseEnter, onMouseLeave }) {
   const theme = themeMap[tour.theme];
-  const statusConfig = {
-    available: { cls: "bg-emerald-500/15 text-emerald-300 border-emerald-500/30", label: "Spots Available" },
-    limited: { cls: "bg-amber-500/15 text-amber-300 border-amber-500/30", label: "Limited Spots" },
-    sold_out: { cls: "bg-red-500/15 text-red-300 border-red-500/30", label: "Fully Booked" },
-  };
   const s = statusConfig[tour.status];
 
   return (
@@ -654,7 +678,12 @@ function MonthCalendar({ month, hoveredId, onHover, onLeave }) {
   return (
     <div className="relative">
       <div className="flex items-baseline justify-between mb-4">
-        <h3 className="font-display text-2xl md:text-3xl text-sand-100">{month.name}</h3>
+        <div>
+          <h3 className="font-display text-2xl md:text-3xl text-sand-100 leading-none">{month.name}</h3>
+          <p className="text-sand-600 text-[10px] tracking-[0.2em] uppercase mt-1.5">
+            {tours.filter((t) => t.startMonth === month.index).length} trips this month
+          </p>
+        </div>
         <span className="text-sand-600 text-xs tracking-wider uppercase">{month.year}</span>
       </div>
 
@@ -690,37 +719,71 @@ function MonthCalendar({ month, hoveredId, onHover, onLeave }) {
 // (legacy popover anchor block removed — popover now renders inside DayCell)
 
 // ============================================================================
-// LEGEND
+// LEGEND — agenda list grouped by month, with date/duration/price/status
+// per row so the whole season is scannable at a glance.
 // ============================================================================
 
 function Legend({ onHover, onLeave, hoveredId }) {
+  const byMonth = MONTHS.map((m) => ({
+    month: m,
+    items: tours
+      .filter((t) => t.startMonth === m.index)
+      .sort((a, b) => a.startDay - b.startDay),
+  }));
+
   return (
-    <div className="flex flex-wrap items-center justify-center gap-2 mb-10 px-4">
-      {tours.map((tour) => {
-        const theme = themeMap[tour.theme];
-        const active = hoveredId === tour.id;
-        return (
-          <Link
-            key={tour.id}
-            href={`/tours/${tour.slug}`}
-            onMouseEnter={() => onHover(tour.id)}
-            onMouseLeave={onLeave}
-            className={`
-              group flex items-center gap-2 px-3 py-1.5 rounded-full border transition-all
-              ${active
-                ? "border-sand-500/60 bg-night-900/70 scale-105"
-                : "border-sand-800/40 bg-night-900/40 hover:border-sand-600/50 hover:bg-night-900/70"}
-            `}
-          >
-            <span className={`w-2 h-2 rounded-full ${theme.dot}`} />
-            <span className="text-sand-300 text-xs group-hover:text-sand-100 transition-colors">
-              <span className="mr-1.5">{tour.emoji}</span>
-              {tour.title}
-            </span>
-            <span className="text-sand-600 text-[10px]">{tour.dates}</span>
-          </Link>
-        );
-      })}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6 mb-10 md:mb-14">
+      {byMonth.map(({ month, items }) => (
+        <div key={month.index} className="space-y-1.5">
+          <div className="flex items-baseline justify-between mb-3 px-1">
+            <p className="text-sand-300 text-[11px] tracking-[0.32em] uppercase font-medium">
+              {month.name}
+            </p>
+            <p className="text-sand-600 text-[10px] tracking-wider">
+              {items.length} trip{items.length === 1 ? "" : "s"}
+            </p>
+          </div>
+          {items.map((tour) => {
+            const theme = themeMap[tour.theme];
+            const status = statusConfig[tour.status];
+            const showStatus = tour.status !== "available";
+            const active = hoveredId === tour.id;
+            return (
+              <Link
+                key={tour.id}
+                href={`/tours/${tour.slug}`}
+                onMouseEnter={() => onHover(tour.id)}
+                onMouseLeave={onLeave}
+                className={`
+                  group flex items-center gap-3 px-3 py-2.5 rounded-xl border transition-all
+                  ${active
+                    ? "border-sand-500/60 bg-night-900/70 scale-[1.02] shadow-lg shadow-black/30"
+                    : "border-sand-800/40 bg-night-900/40 hover:border-sand-600/50 hover:bg-night-900/70"}
+                `}
+              >
+                <span className={`shrink-0 w-2 h-2 rounded-full ${theme.dot}`} />
+                <span className="text-base shrink-0">{tour.emoji}</span>
+                <div className="flex-1 min-w-0">
+                  <p className="text-sand-200 text-[13px] leading-snug truncate group-hover:text-sand-100 transition-colors">
+                    {tour.title}
+                  </p>
+                  <p className="text-sand-500 text-[11px] mt-0.5">
+                    {tour.dates} · {tour.days}d ·{" "}
+                    <span className="text-sand-300 font-medium">{tour.price}</span>
+                  </p>
+                </div>
+                {showStatus && status && (
+                  <span
+                    className={`shrink-0 text-[9px] uppercase tracking-wider px-1.5 py-0.5 rounded border whitespace-nowrap ${status.cls}`}
+                  >
+                    {status.short}
+                  </span>
+                )}
+              </Link>
+            );
+          })}
+        </div>
+      ))}
     </div>
   );
 }
@@ -767,13 +830,13 @@ function CalendarSection() {
     <section className="relative py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-6">
         <FadeIn>
-          <div className="text-center mb-10">
+          <div className="text-center mb-10 md:mb-12">
             <p className="text-sand-400 text-xs tracking-[0.3em] uppercase mb-3">Summer 2026</p>
-            <h2 className="font-display text-3xl md:text-5xl text-sand-100 mb-3">
+            <h2 className="font-display text-3xl md:text-5xl text-sand-100 mb-4">
               Pick Your Month
             </h2>
-            <p className="text-sand-400 max-w-xl mx-auto">
-              Eleven departures across June, July, and August — weekend escapes, festival meet-ups, horse treks into the taiga, and long flagship expeditions. Hover a highlighted day to peek inside. Click to open the tour.
+            <p className="text-sand-400 max-w-2xl mx-auto leading-relaxed">
+              Ten departures across June, July, and August — weekend escapes, festivals, horse treks into the taiga, long flagship expeditions. Skim the agenda below for the full picture, or scroll the calendar to see how it lines up. Hover any highlighted day to peek inside.
             </p>
           </div>
         </FadeIn>
@@ -872,8 +935,8 @@ export default function ToursPage() {
           {[
             { label: "Season", value: "June – August" },
             { label: "Departures", value: "10 Scheduled" },
-            { label: "Group Size", value: "4–7" },
-            { label: "Starting From", value: "$200" },
+            { label: "Group Size", value: "5–8" },
+            { label: "Starting From", value: "$350" },
           ].map((stat, i) => (
             <div key={i}>
               <p className="text-sand-500 text-xs tracking-wider uppercase mb-1">{stat.label}</p>
@@ -917,7 +980,7 @@ export default function ToursPage() {
               {
                 title: "Grand Expeditions",
                 duration: "6–11 Days",
-                price: "From $1,400",
+                price: "From $1,100",
                 items: ["Altai Tavan Bogd · Aug", "North & Central Loop"],
                 desc: "The flagship tours — western peaks with Kazakh eagle hunters, and the long flexible north route through taiga, Khuvsgul, and Zavkhan.",
                 color: "from-indigo-500 to-sky-600",
