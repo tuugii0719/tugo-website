@@ -99,7 +99,7 @@ export default function TerelJEscapePage() {
       <Departures
         accent={ACCENT}
         list={[
-          { label: "Jun departure", dates: "Jun 4 – 6, 2026", days: 3 },
+          { label: "Jun departure", dates: "Jun 5 – 7, 2026", days: 3 },
           { label: "Jul departure", dates: "Jul 16 – 18, 2026", days: 3 },
           { label: "Aug departure", dates: "Aug 11 – 13, 2026", days: 3 },
         ]}
@@ -119,9 +119,27 @@ export default function TerelJEscapePage() {
         accent={ACCENT}
         title="Three days, one weekend."
         days={[
-          { n: "01", t: "UB → Terelj", d: "Drive out late morning. Stop at the Chinggis Khaan Equestrian Statue on the way. Arrive at the family ger camp for lunch, afternoon horseback, hot-stone khorkhog dinner." },
-          { n: "02", t: "Turtle Rock · Aryabal Monastery", d: "Up early for the Aryabal Meditation Temple (the staircase shaped like an elephant&apos;s trunk). Walk or ride to Turtle Rock. Afternoon free — nap, swim, or head up a hill with the family kids." },
-          { n: "03", t: "Terelj → UB", d: "Slow morning. Pack up after a final family breakfast, drive back via a viewpoint. Drop-off in UB by mid-afternoon." },
+          {
+            n: "01", t: "UB → Terelj",
+            stops: ["Ulaanbaatar", "Chinggis Khaan Statue", "Family ger camp"],
+            acts: ["drive", "visit", "horse", "ger", "meal"],
+            d: "Drive out late morning. Stop at the Chinggis Khaan Equestrian Statue on the way. Arrive at the family ger camp for lunch, afternoon horseback, hot-stone khorkhog dinner.",
+            more: "Late-morning start so we beat UB traffic. The Chinggis Statue is worth the 40-minute stop — climb inside if you want the view. At the ger camp the family will have lunch ready (probably bansh and milk tea), then we saddle up for a couple of hours in the meadows. Khorkhog goes on the fire while you're still riding.",
+          },
+          {
+            n: "02", t: "Turtle Rock · Aryabal Monastery",
+            stops: ["Aryabal Meditation Temple", "Turtle Rock", "Family ger"],
+            acts: ["hike", "visit", "horse"],
+            d: "Up early for the Aryabal Meditation Temple (the staircase shaped like an elephant's trunk). Walk or ride to Turtle Rock. Afternoon free — nap, swim, or head up a hill with the family kids.",
+            more: "Aryabal is quiet if we get there before the day-trippers — the elephant-trunk staircase is the photo, but the temple itself is worth the slow walk-through. Turtle Rock is more of a stretch than a hike. Free afternoon means you choose: nap in the ger, swim in the river, or ride up a ridge with the family kids who'd love to take you.",
+          },
+          {
+            n: "03", t: "Terelj → UB",
+            stops: ["Family ger", "Park viewpoint", "Ulaanbaatar"],
+            acts: ["meal", "drive", "city"],
+            d: "Slow morning. Pack up after a final family breakfast, drive back via a viewpoint. Drop-off in UB by mid-afternoon.",
+            more: "No rush — final breakfast with the family, slow pack-up, photos. We stop at a viewpoint on the way back if the light is good. Drop-off in central UB by mid-afternoon, giving you the evening for showers and dinner if you're staying on.",
+          },
         ]}
       />
 
@@ -203,7 +221,7 @@ export default function TerelJEscapePage() {
           { q: "Is it okay if I don't ride horses?", a: "Totally fine. The horseback session is optional. There are plenty of walks, river spots, and a ger to read in." },
           { q: "What if the weather turns?", a: "We run rain or shine. Ger is warm, khorkhog is better in the rain, and Turtle Rock looks incredible with clouds rolling in. Only cancellation would be an actual safety issue like a flooded road — which is rare." },
           { q: "How many people in the group?", a: "8–16. These departures often book up with families and friend groups, so the vibe tilts social. If you want a smaller private version, message me." },
-          { q: "Can I combine this with another tour?", a: "Yes — many people do Terelj (Jun 4–6) then rest a couple days and join Southern Gobi + Central (Jun 8–18). Or Terelj (Aug 11–13) right after Gobi Glimpse. Tell me what you're thinking and I'll suggest a combo." },
+          { q: "Can I combine this with another tour?", a: "Yes — many people do Terelj (Jun 5–7) then rest a couple days and join Gobi Glimpse (Jun 10–18). Or Terelj (Aug 11–13) right before Southern Gobi + Central (Aug 18–28). Tell me what you're thinking and I'll suggest a combo." },
         ]}
       />
 

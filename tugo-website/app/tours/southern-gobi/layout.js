@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Southern Gobi + Central · Jun 8–18 2026",
+  title: "Southern Gobi + Central · Aug 18–28 2026",
   description:
-    "Eleven days through Umnugobi and central Mongolia — Yoliin Am ice canyon, desert nights, camels at Khongoriin Els, hot springs, horse riding, hiking. From $1,100.",
+    "Eleven days through the southern Gobi and central Mongolia — Dalanzadgad gateway, Yoliin Am, a night with a camel family in the open Gobi, Khongoriin Els dunes, Flaming Cliffs, hot springs. The properly-paced version. From $1,300.",
 };
 
 export default function Layout({ children }) {

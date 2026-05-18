@@ -112,7 +112,6 @@ export default function AltaiTavanBogdPage() {
       <Departures
         accent={ACCENT}
         list={[
-          { label: "June departure", dates: "Jun 8 – 13, 2026", days: 6 },
           { label: "August departure", dates: "Aug 3 – 8, 2026", days: 6 },
         ]}
       />
@@ -131,12 +130,48 @@ export default function AltaiTavanBogdPage() {
         accent={ACCENT}
         title="Four days on the ground, two on the wing."
         days={[
-          { n: "01", t: "UB → Ölgii · Khoton Lake", d: "Morning flight west to Ölgii (~3 hours). Scenic 170 km drive to the twin Khoton–Khurgan lakes. Stop with an eagle-hunter family — hold the eagle. Night with a nomad family on the shore." },
-          { n: "02", t: "Horse ride to Baga Turgen Waterfall", d: "Saddle up on Mongolia&apos;s tough little horses. 22 km round-trip to the waterfall, ~6 hours total. Forest, icy rivers, green pasture, snow-line at the China border. Drive to another family camp to stay." },
-          { n: "03", t: "Northern Altai Tavan Bogd", d: "Drive deep into the national park. High passes, hour-by-hour shifts in terrain, the Yak Milk White River. Night with a nomad family near the ranger station." },
-          { n: "04", t: "Sacred Ovoo · Potanin Glacier · petroglyphs", d: "10 km to the sacred Ovoo — the viewpoint for the Five Holy Peaks and the Potanin Ice Glacier. Optional 3.5 km hike to the glacier. Return to Ölgii via 3,000–4,000 BC petroglyphs." },
-          { n: "05", t: "Ölgii · rest + culture", d: "Recovery day. Explore Ölgii bazaar, meet Kazakh artisans, visit the Museum of Natural History. Dinner at a local spot." },
-          { n: "06", t: "Ölgii → UB", d: "Morning flight back east. Arrive in UB by afternoon with time for a shower before your onward plans." },
+          {
+            n: "01", t: "UB → Ölgii · Khoton Lake",
+            stops: ["Ulaanbaatar", "Ölgii", "Eagle-hunter family", "Khoton Lake shore"],
+            acts: ["drive", "visit", "ger"],
+            d: "Morning flight west to Ölgii (~3 hours). Scenic 170 km drive to the twin Khoton–Khurgan lakes. Stop with an eagle-hunter family — hold the eagle. Night with a nomad family on the shore.",
+            more: "Flight from UB to Ölgii is the cheapest way to start — the alternative is a 3-day drive. Once we land, scenic 170 km west to the lakes. We stop with a Kazakh eagle-hunter family; you can hold the bird if you want (heavy). Sleep in a family ger on the lakeshore.",
+          },
+          {
+            n: "02", t: "Horse ride · Baga Turgen Waterfall",
+            stops: ["Khoton Lake", "Baga Turgen Waterfall", "Family camp"],
+            acts: ["horse", "hike", "water", "ger"],
+            d: "Saddle up on Mongolia's tough little horses. 22 km round-trip to the waterfall, ~6 hours total. Forest, icy rivers, green pasture, snow-line at the China border. Drive to another family camp to stay.",
+            more: "Mongolian horses are stockier and tougher than they look — they handle the rocky trails fine. The ride to Baga Turgen passes through larch forest, fords a few icy streams, and ends at a 30m waterfall basically at the China border. Long day in the saddle but easy pace. Family camp for the night.",
+          },
+          {
+            n: "03", t: "Northern Altai Tavan Bogd",
+            stops: ["Family camp", "High passes", "Yak Milk River", "Ranger station camp"],
+            acts: ["drive", "peak"],
+            d: "Drive deep into the national park. High passes, hour-by-hour shifts in terrain, the Yak Milk White River. Night with a nomad family near the ranger station.",
+            more: "This is the day the landscape really opens up. We climb through high passes; the colour of the rock changes every hour. The Yak Milk River is exactly what it sounds like — milk-white glacial runoff. Sleep with a nomad family near the ranger station, deep inside the park.",
+          },
+          {
+            n: "04", t: "Sacred Ovoo · Potanin Glacier",
+            stops: ["Ranger station", "Sacred Ovoo viewpoint", "Potanin Glacier", "Petroglyph site"],
+            acts: ["hike", "peak", "visit"],
+            d: "10 km to the sacred Ovoo — the viewpoint for the Five Holy Peaks and the Potanin Ice Glacier. Optional 3.5 km hike to the glacier. Return to Ölgii via 3,000–4,000 BC petroglyphs.",
+            more: "Big day. The hike to the Ovoo is moderate — 10 km out, 2,500m elevation, mostly walking grade. From there, the Five Holy Peaks of Tavan Bogd are right in front of you. Optional extension to the glacier itself adds 3.5 km and gets you onto the ice. Back to Ölgii via Bronze Age petroglyphs on the way.",
+          },
+          {
+            n: "05", t: "Ölgii · rest + culture",
+            stops: ["Ölgii bazaar", "Kazakh artisan studios", "Museum of Natural History"],
+            acts: ["city", "visit", "meal"],
+            d: "Recovery day. Explore Ölgii bazaar, meet Kazakh artisans, visit the Museum of Natural History. Dinner at a local spot.",
+            more: "Ölgii is the most distinctly Kazakh town in Mongolia — different language, different food, different mosques. The bazaar is the centre of life. We visit a couple of artisans (embroidery, leather), the museum has a small but worthwhile exhibit, and dinner is somewhere local — usually beshbarmak.",
+          },
+          {
+            n: "06", t: "Ölgii → UB",
+            stops: ["Ölgii airport", "Ulaanbaatar"],
+            acts: ["drive", "city"],
+            d: "Morning flight back east. Arrive in UB by afternoon with time for a shower before your onward plans.",
+            more: "Morning flight back to UB. We drop you at your hotel or the airport, whichever your next stop is. About 3 hours door-to-door.",
+          },
         ]}
       />
 
@@ -232,14 +267,14 @@ export default function AltaiTavanBogdPage() {
           { q: "How cold does it get?", a: "Days 10–20 °C, nights can drop to 0–5 °C. The wind is the real factor — it cuts through thin layers. Wool or synthetic mid-layer + wind shell beats any fleece." },
           { q: "Do I have to ride a horse?", a: "The Baga Turgen day is on horseback with a local guide leading. If you really can&apos;t ride, we can swap it for a shorter hike — but the waterfall is the highlight and the horses are famously gentle." },
           { q: "Is the eagle hunter real or a show?", a: "Real. We visit a hunting family that actually uses their eagles for winter hunting. Summer they&apos;re training and mostly welcoming guests like us. Most famous training grounds are within a 2-hour drive." },
-          { q: "Can I do this + North & Central?", a: "Yes — the June Altai (Jun 8–13) leaves 6 weeks before the N&C Loop (Jul 21–31). Plenty of time to reset. Or: August Altai (Aug 3–8) → Gobi Glimpse (Aug 18–28). Ask and I'll plan the combo." },
+          { q: "Can I do this + another tour?", a: "Yes — August Altai (Aug 3–8) leaves you ten days to recover before Gobi Glimpse (Aug 18–28). Or pair with Terelj (Aug 11–13) in between for a long, slow summer. Ask and I'll plan the combo." },
         ]}
       />
 
       <TourCTA
         accent={ACCENT}
         title="$900 per person · flight included"
-        subtitle="Two departures in 2026 — June 8–13 or Aug 3–8. Small groups of 6–8. Bring a friend and save 15% each."
+        subtitle="One departure in 2026 — Aug 3–8. Small group of 5–7. Bring a friend and save 15% each."
         emailSubject="Altai Tavan Bogd · 2026"
       />
     </div>

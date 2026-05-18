@@ -85,6 +85,29 @@ const trailGradientMap = {
 };
 
 // ============================================================================
+// ACTIVITY ICONS — short tokens used in day.acts arrays.
+// ============================================================================
+
+export const ACT_ICONS = {
+  drive:     { i: "🚐", l: "Drive day" },
+  horse:     { i: "🐎", l: "Horseback" },
+  hike:      { i: "🥾", l: "Hike" },
+  camp:      { i: "🏕️", l: "Tent camp" },
+  ger:       { i: "🛖", l: "Family ger stay" },
+  meal:      { i: "🍴", l: "Special meal" },
+  peak:      { i: "🏔️", l: "Mountain / peak" },
+  water:     { i: "🌊", l: "Lake / boat / swim" },
+  visit:     { i: "🛕", l: "Cultural visit" },
+  hotspring: { i: "♨️", l: "Hot springs" },
+  morning:   { i: "🌅", l: "Early start" },
+  festival:  { i: "🎉", l: "Festival" },
+  fish:      { i: "🎣", l: "Fishing" },
+  camel:     { i: "🐪", l: "Camel ride" },
+  star:      { i: "✨", l: "Stargazing" },
+  city:      { i: "🏙️", l: "City time" },
+};
+
+// ============================================================================
 // PRIMITIVES
 // ============================================================================
 
@@ -265,8 +288,58 @@ export function Itinerary({ kicker = "Itinerary", title = "Day by day.", days, a
                     <div className={`absolute left-0 md:left-2 top-0 w-6 h-6 md:w-8 md:h-8 rounded-full border flex items-center justify-center font-display text-[10px] md:text-xs ${nodeColorMap[dayAccent]}`}>
                       {day.n}
                     </div>
-                    <h3 className="font-display text-lg md:text-xl text-sand-100 mb-1">{day.t}</h3>
+                    <h3 className="font-display text-lg md:text-xl text-sand-100 mb-1.5">{day.t}</h3>
+
+                    {/* Stops */}
+                    {Array.isArray(day.stops) && day.stops.length > 0 && (
+                      <p className="text-sand-500 text-[11px] md:text-xs mb-1.5 flex items-baseline gap-1.5 flex-wrap leading-relaxed">
+                        <span className="text-sand-600">📍</span>
+                        {day.stops.map((s, i) => (
+                          <span key={i} className="inline">
+                            {s}
+                            {i < day.stops.length - 1 && <span className="text-sand-700 mx-1">·</span>}
+                          </span>
+                        ))}
+                      </p>
+                    )}
+
+                    {/* Activity icons */}
+                    {Array.isArray(day.acts) && day.acts.length > 0 && (
+                      <p className="flex items-center gap-2 mb-2 text-base">
+                        {day.acts.map((tok) => {
+                          const a = ACT_ICONS[tok];
+                          if (!a) return null;
+                          return (
+                            <span
+                              key={tok}
+                              title={a.l}
+                              aria-label={a.l}
+                              className="leading-none opacity-90"
+                            >
+                              {a.i}
+                            </span>
+                          );
+                        })}
+                      </p>
+                    )}
+
                     <p className="text-sand-400 text-base leading-relaxed">{day.d}</p>
+
+                    {/* Expandable details */}
+                    {day.more && (
+                      <details className="group/details mt-3">
+                        <summary
+                          className="cursor-pointer list-none inline-flex items-center gap-1 text-sand-500 text-[10px] md:text-[11px] tracking-[0.2em] uppercase hover:text-sand-200 transition-colors select-none"
+                        >
+                          <span className="group-open/details:hidden">More details</span>
+                          <span className="hidden group-open/details:inline">Show less</span>
+                          <span className="text-[8px] transition-transform group-open/details:rotate-180">▾</span>
+                        </summary>
+                        <p className="text-sand-400 text-sm md:text-[15px] leading-relaxed mt-3 pl-3 border-l border-sand-800/40">
+                          {day.more}
+                        </p>
+                      </details>
+                    )}
                   </motion.div>
                 </div>
               );

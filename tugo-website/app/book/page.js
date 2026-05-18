@@ -15,16 +15,16 @@ import { FadeIn } from "@/components/animations/FadeIn";
 const PAIR_DISCOUNT = 0.15; // 15% off per person when booking a pair
 
 const tourOptions = [
-  { id: "terelj-jun",        title: "Terelj Escape",              dates: "Jun 4 – 6",    days: 3,  price: 350,   emoji: "🌲" },
-  { id: "southern-gobi",     title: "Southern Gobi + Central",    dates: "Jun 8 – 18",   days: 11, price: 1100,  emoji: "🏜️" },
+  { id: "terelj-jun",        title: "Terelj Escape",              dates: "Jun 5 – 7",    days: 3,  price: 350,   emoji: "🌲" },
+  { id: "gobi-glimpse",      title: "Gobi Glimpse + Central",     dates: "Jun 10 – 18",  days: 9,  price: 1100,  emoji: "🏜️" },
   { id: "khagiin-khar-nuur", title: "Horse Trek · Khagiin Khar",  dates: "Jun 22 – 27",  days: 6,  price: 700,   emoji: "🐎", soldOut: true },
   { id: "playtime",          title: "Playtime Music Festival",    dates: "Jul 1 – 4",    days: 4,  price: 650,   emoji: "🎶" },
   { id: "naadam",            title: "Naadam Festival",            dates: "Jul 8 – 14",   days: 7,  price: 700,   emoji: "🏇" },
   { id: "terelj-jul",        title: "Terelj Escape",              dates: "Jul 16 – 18",  days: 3,  price: 350,   emoji: "🌲" },
-  { id: "north-central",     title: "North & Central Loop",       dates: "Jul 21 – 31",  days: 11, price: 1100,  emoji: "🐪" },
+  { id: "north-central",     title: "North & Central Loop",       dates: "Jul 21 – 31",  days: 11, price: 1300,  emoji: "🐪" },
   { id: "altai-aug",         title: "Altai Tavan Bogd",           dates: "Aug 3 – 8",    days: 6,  price: 900,   emoji: "🏔️" },
   { id: "terelj-aug",        title: "Terelj Escape",              dates: "Aug 11 – 13",  days: 3,  price: 350,   emoji: "🌲" },
-  { id: "gobi-glimpse",      title: "Gobi Glimpse + Central",     dates: "Aug 18 – 28",  days: 11, price: 1100,  emoji: "🌅" },
+  { id: "southern-gobi",     title: "Southern Gobi + Central",    dates: "Aug 18 – 28",  days: 11, price: 1300,  emoji: "🏜️" },
 ];
 
 const formatUSD = (n) => `$${n.toLocaleString()}`;

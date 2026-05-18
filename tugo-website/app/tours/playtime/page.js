@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { ACT_ICONS } from "@/components/tours/kit";
 
 const P = "/images/playtime";
 
@@ -54,7 +55,10 @@ const itinerary = [
     n: "01",
     day: "Wed Jul 1",
     title: "Pre-party in UB",
+    stops: ["UB airport / hostel pickup", "Gandan Monastery", "Zaisan viewpoint", "Group dinner"],
+    acts: ["city", "visit", "meal"],
     body: "Pickup from UB airport or your hostel. Half-day city tour — Gandan, Zaisan. Group dinner — Mongolian BBQ, cheap beer, introductions. You'll know everyone&apos;s name before you hear any music.",
+    more: "We meet everyone at the airport or your hostels, do a relaxed half-day around UB so you have a frame of reference for the country before the festival noise. Gandan is the working Buddhist monastery in the city centre; Zaisan has the view. Group dinner that night is the usual Mongolian BBQ + cheap beer combo. Sleep in a UB hostel — last real bed for a few days.",
     color: "from-fuchsia-500/20 to-violet-500/10",
     nodeColor: "bg-fuchsia-500/20 border-fuchsia-400/40 text-fuchsia-200",
   },
@@ -62,7 +66,10 @@ const itinerary = [
     n: "02",
     day: "Thu Jul 2",
     title: "Festival opens — Molchat Doma night",
+    stops: ["UB", "Playtime Field · Nalaikh", "Festival camp"],
+    acts: ["drive", "camp", "festival"],
     body: "40-min drive out to Playtime Field, Nalaikh. Set up camp. Day stages from 2pm. Molchat Doma headlines after dark. Stay overnight in your festival tent.",
+    more: "Short drive to Playtime Field in Nalaikh — about 40 minutes out of UB. We set up camp at the dedicated festival camping area; your tent is pre-pitched. Day stages open at 2pm, things build through afternoon. Molchat Doma headlines after dark — Belarusian post-punk synth, intense crowd. You sleep when you sleep.",
     color: "from-violet-500/20 to-pink-500/10",
     nodeColor: "bg-violet-500/20 border-violet-400/40 text-violet-200",
   },
@@ -70,15 +77,21 @@ const itinerary = [
     n: "03",
     day: "Fri Jul 3",
     title: "Kings of Convenience + DIIV",
+    stops: ["Festival camp", "International stage", "Dance tent"],
+    acts: ["festival", "camp"],
     body: "Second festival day. The international stage builds late — Aisha Devi and JASSS pull the night, then DIIV's wall of guitars, then Kings of Convenience close it acoustic.",
-    color: "from-violet-500/20 to-pink-500/10",
+    more: "Day two. Filling breakfast at our camp, then you wander on your schedule. The international stage builds late — Aisha Devi and JASSS do experimental electronic in the dance tent, then DIIV layers a wall of guitars, then Kings of Convenience close the main stage acoustic. Long, varied night.",
+  color: "from-violet-500/20 to-pink-500/10",
     nodeColor: "bg-violet-500/20 border-violet-400/40 text-violet-200",
   },
   {
     n: "04",
     day: "Sat Jul 4",
     title: "Stereolab + Hyukoh — final night",
+    stops: ["Festival camp", "Main stage", "UB"],
+    acts: ["festival", "drive", "city"],
     body: "Closing day. Helena Hauff and DJ Stingray 313 push the dance tent. Hyukoh and Stereolab close it on the main stage. Late drive back to UB — drop-off at airport or hostel by midnight.",
+    more: "Closing day. Helena Hauff and DJ Stingray 313 push the dance tent until late. Hyukoh (Korean indie) and Stereolab (returning UK legends) trade the main stage to close the festival. We pack up after the last set and drive back to UB — drop-off at airport or hostel by midnight. Long day, worth it.",
     color: "from-pink-500/20 to-orange-400/10",
     nodeColor: "bg-pink-500/20 border-pink-400/40 text-pink-200",
   },
@@ -292,7 +305,47 @@ export default function PlaytimeMusicFestivalPage() {
                     <h3 className="font-display text-xl md:text-2xl text-sand-100 mb-2">
                       {d.title}
                     </h3>
+
+                    {Array.isArray(d.stops) && d.stops.length > 0 && (
+                      <p className="text-sand-400 text-[11px] md:text-xs mb-1.5 flex items-baseline gap-1.5 flex-wrap leading-relaxed">
+                        <span className="text-sand-500">📍</span>
+                        {d.stops.map((s, i) => (
+                          <span key={i} className="inline">
+                            {s}
+                            {i < d.stops.length - 1 && <span className="text-sand-600 mx-1">·</span>}
+                          </span>
+                        ))}
+                      </p>
+                    )}
+
+                    {Array.isArray(d.acts) && d.acts.length > 0 && (
+                      <p className="flex items-center gap-2 mb-2 text-base">
+                        {d.acts.map((tok) => {
+                          const a = ACT_ICONS[tok];
+                          if (!a) return null;
+                          return (
+                            <span key={tok} title={a.l} aria-label={a.l} className="leading-none opacity-90">
+                              {a.i}
+                            </span>
+                          );
+                        })}
+                      </p>
+                    )}
+
                     <p className="text-sand-400 text-sm md:text-base leading-relaxed" dangerouslySetInnerHTML={{ __html: d.body }} />
+
+                    {d.more && (
+                      <details className="group/details mt-3">
+                        <summary className="cursor-pointer list-none inline-flex items-center gap-1 text-sand-400 text-[10px] md:text-[11px] tracking-[0.2em] uppercase hover:text-sand-200 transition-colors select-none">
+                          <span className="group-open/details:hidden">More details</span>
+                          <span className="hidden group-open/details:inline">Show less</span>
+                          <span className="text-[8px] transition-transform group-open/details:rotate-180">▾</span>
+                        </summary>
+                        <p className="text-sand-400 text-sm md:text-[15px] leading-relaxed mt-3 pl-3 border-l border-sand-700/40">
+                          {d.more}
+                        </p>
+                      </details>
+                    )}
                   </div>
                 </div>
               </motion.div>

@@ -114,14 +114,57 @@ export default function NaadamPage() {
 
       <Itinerary
         accent={ACCENT}
-        title="Six days with the holiday at the middle."
+        title="Seven days with the holiday at the middle."
         days={[
-          { n: "01", t: "UB → Central Mongolia", d: "Morning drive west out of UB. Lunch at a roadside <em>guanz</em>. Arrive at our first family ger camp by evening." },
-          { n: "02", t: "Local Naadam — opening day", d: "Horse race in the morning (riders are kids aged 6–12 on Mongolian horses, some galloping 25 km). Wrestling in the afternoon. Archery alongside. Holiday food all day." },
-          { n: "03", t: "Naadam finals", d: "Second day of the village Naadam. Final wrestling matches, the horse races that crown the champions, costumes and speeches. Night around a fire." },
-          { n: "04", t: "Terkhiin Tsagaan Nuur + Khorgo", d: "Drive east to the lava-dammed White Lake. Hike the crater rim of Khorgo volcano (~40 min up). Swim in the lake if you&apos;re brave." },
-          { n: "05", t: "Tsenkher hot springs", d: "South to the springs. 86 °C water piped into wooden pools under the stars. A proper reset after three hard-and-happy days." },
-          { n: "06", t: "Back to UB", d: "Slow morning at the springs, then the drive back east. Stop at Erdene Zuu Monastery and Karakorum ruins. UB by evening." },
+          {
+            n: "01", t: "UB → Central Mongolia",
+            stops: ["Ulaanbaatar", "Roadside guanz lunch", "Family ger camp"],
+            acts: ["drive", "ger", "meal"],
+            d: "Morning drive west out of UB. Lunch at a roadside guanz. Arrive at our first family ger camp by evening.",
+            more: "We leave UB about 8am and drive west through the steppe — paved road most of the way. Lunch at a guanz (roadside diner) — the kind with sheep on the floor and a hot meal for $3. Settle into the family ger by sundown.",
+          },
+          {
+            n: "02", t: "Pre-Naadam · settle in",
+            stops: ["Family camp", "Village square", "Naadam grounds"],
+            acts: ["ger", "visit", "meal"],
+            d: "Slow morning at the family camp. Walk into the village for the Naadam opening preparations — costumes, kids racing horses to warm up, the smell of buuz everywhere.",
+            more: "Naadam is a holiday, and like any holiday the day before is half the fun. The village will be in motion — kids in deels, jockeys on the warm-up track, women cooking enormous trays of buuz. We walk through, meet people, settle in. Quiet ger night.",
+          },
+          {
+            n: "03", t: "Naadam · opening day",
+            stops: ["Village Naadam grounds", "Horse-race track", "Wrestling ring"],
+            acts: ["festival", "horse", "meal"],
+            d: "Horse race in the morning (riders are kids aged 6–12, some galloping 25 km). Wrestling in the afternoon. Archery alongside. Holiday food all day.",
+            more: "Opening day. We're at the track for the long-distance race — kids on Mongolian horses, no saddles in some cases, a 25 km gallop across the steppe. After lunch, wrestling and archery. Holiday food is its own event: buuz, khuushuur, aaruul, milk vodka if someone presses some on you.",
+          },
+          {
+            n: "04", t: "Naadam · finals",
+            stops: ["Naadam grounds", "Champion's tent", "Family camp fire"],
+            acts: ["festival", "meal", "star"],
+            d: "Second day of the village Naadam. Final wrestling matches, the horse races that crown the champions, costumes and speeches. Night around a fire.",
+            more: "Finals day. The wrestling brackets are down to the last few, the horse races crown a champion, there are costumes and speeches and a lot of milk tea. Evening is back at the family camp with a fire — by now you're part of the group.",
+          },
+          {
+            n: "05", t: "Terkhiin Tsagaan Nuur + Khorgo",
+            stops: ["Family camp", "Khorgo volcano", "Terkhiin Tsagaan Nuur"],
+            acts: ["drive", "peak", "hike", "water"],
+            d: "Drive east to the lava-dammed White Lake. Hike the crater rim of Khorgo volcano (~40 min up). Swim in the lake if you're brave.",
+            more: "Khorgo is a dormant volcano whose lava once dammed a river to create Terkhiin Tsagaan Nuur — a lake nobody expected, sitting in basalt. Crater rim walk is about 40 minutes up, easy grade. Lake is COLD. Swim or don't; either is fine.",
+          },
+          {
+            n: "06", t: "Tsenkher hot springs",
+            stops: ["Terkhiin", "Tsenkher springs", "Wooden pool camp"],
+            acts: ["drive", "hotspring", "star"],
+            d: "South to the springs. 86 °C water piped into wooden pools under the stars. A proper reset after three hard-and-happy days.",
+            more: "Tsenkher is the antidote to four busy days. 86°C at the source, piped into wooden tubs at varying temperatures. You soak, you read, you soak again. By dark there's nothing but you, the water, and the stars.",
+          },
+          {
+            n: "07", t: "Back to UB",
+            stops: ["Tsenkher", "Karakorum", "Erdene Zuu Monastery", "Ulaanbaatar"],
+            acts: ["drive", "visit", "city"],
+            d: "Slow morning at the springs, then the drive back east. Stop at Erdene Zuu Monastery and Karakorum ruins. UB by evening.",
+            more: "Final stretch. Erdene Zuu is the oldest surviving Buddhist monastery in Mongolia — 16th century, built from the stones of the old Mongol capital. Slow walk through the courtyards, then we point east. UB by evening.",
+          },
         ]}
       />
 

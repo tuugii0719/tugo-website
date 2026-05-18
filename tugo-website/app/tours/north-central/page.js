@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import CentralMongoliaSection from "@/components/tours/CentralMongoliaSection";
+import { ACT_ICONS } from "@/components/tours/kit";
 
 const IMG = "/images/tours/north-central";
 const G = "/images/gallery";
@@ -43,17 +44,94 @@ const acts = [
 ];
 
 const itinerary = [
-  { n: "01", act: 0, t: "UB → Bulgan",           d: "Early drive north, ~330 km on paved road. First night in Huuchin ger camp — warm stove, tea, quiet." },
-  { n: "02", act: 0, t: "Bulgan → Khuvsgul",     d: "Through Mörön and up to the lake shore, ~470 km in two long stints. Arrive by evening. Cold swim if you dare." },
-  { n: "03", act: 0, t: "Khuvsgul · shore",      d: "Slow day. Kayak, shore hikes, fish for dinner, stargaze. Sauna if the camp has one." },
-  { n: "04", act: 0, t: "Khuvsgul · boat day",   d: "On the water — cliff lookouts, rocky islands, the opposite shore. Grill on a beach." },
-  { n: "05", act: 0, t: "Taiga · horseback",     d: "Half-day ride up into the larch forest with a local horse family. Picnic lunch on a ridge. Easy pace." },
-  { n: "06", act: 1, t: "Khuvsgul → Tosontsengel", d: "The hard day — ~450 km south-west, much of it off-road. We stop often. Camp by a river on the way." },
-  { n: "07", act: 1, t: "Zavkhan",               d: "Explore the lakes and dunes. Visit a herder family, taste fresh aaruul, dinner around a fire." },
-  { n: "08", act: 2, t: "Zavkhan → Khorgo",      d: "~240 km east to Terkhiin Tsagaan Nuur, the lava-dammed 'White Lake'. Walk the crater rim at sunset." },
-  { n: "09", act: 2, t: "Tsenkher hot springs",  d: "~180 km south. 86°C spring water piped into wooden pools under the stars. A proper reset." },
-  { n: "10", act: 2, t: "Orkhon Valley",         d: "Drop into the Orkhon gorge to the waterfall. Family camp for the night; khorkhog on the fire." },
-  { n: "11", act: 2, t: "Karakorum → UB",        d: "Erdene Zuu Monastery in the morning, then ~380 km back to the city. Late-afternoon arrival." },
+  {
+    n: "01", act: 0,
+    t: "UB → Bulgan",
+    stops: ["Ulaanbaatar", "Mörön highway", "Huuchin ger camp"],
+    acts: ["drive", "ger", "meal"],
+    d: "Early drive north, ~330 km on paved road. First night in Huuchin ger camp — warm stove, tea, quiet.",
+    more: "We leave UB around 8am to catch good light on the central steppe. Paved road all the way to Bulgan — long but smooth. By late afternoon we settle into the family ger at Huuchin: hot stove, milk tea, slow dinner. Early to bed; tomorrow is the long one.",
+  },
+  {
+    n: "02", act: 0,
+    t: "Bulgan → Khuvsgul",
+    stops: ["Bulgan", "Mörön", "Khuvsgul east shore"],
+    acts: ["drive", "camp", "water"],
+    d: "Through Mörön and up to the lake shore, ~470 km in two long stints. Arrive by evening. Cold swim if you dare.",
+    more: "Big driving day. We break in Mörön for fuel and hot soup, then push north into the Khuvsgul valley. First sight of the lake from the eastern ridge is one of those views that doesn't translate to a photo. We camp right at the water. The brave swim; the wise watch.",
+  },
+  {
+    n: "03", act: 0,
+    t: "Khuvsgul · shore day",
+    stops: ["Khuvsgul east shore", "Larch forest edge"],
+    acts: ["water", "hike", "fish", "star"],
+    d: "Slow day. Kayak, shore hikes, fish for dinner, stargaze. Sauna if the camp has one.",
+    more: "Nothing scheduled. You wake when you wake. Kayaks are free for the morning; hike to one of the small waterfalls or just sit on the rocks. Some camps have a Russian-style banya we can fire up. Dinner is whatever we caught.",
+  },
+  {
+    n: "04", act: 0,
+    t: "Khuvsgul · boat day",
+    stops: ["Khuvsgul shore", "Cliff lookouts", "Far-shore beach"],
+    acts: ["water", "meal"],
+    d: "On the water — cliff lookouts, rocky islands, the opposite shore. Grill on a beach.",
+    more: "Local boatman takes us out for the full lake. We stop at the cliffs on the east side, motor across to the far shore, pull up on an empty beach for a grill lunch. Back by late afternoon, fire pit by sundown.",
+  },
+  {
+    n: "05", act: 0,
+    t: "Taiga · horseback",
+    stops: ["Larch taiga", "Ridge picnic spot", "Khuvsgul ger camp"],
+    acts: ["horse", "hike", "meal"],
+    d: "Half-day ride up into the larch forest with a local horse family. Picnic lunch on a ridge. Easy pace.",
+    more: "Horses, not snowmobiles. The family that runs the trek has been there since the lake was a Soviet outpost — they read the weather by the trees. Easy pace, no riding experience needed. We picnic on a ridge with the whole lake at our feet, then back down by mid-afternoon.",
+  },
+  {
+    n: "06", act: 1,
+    t: "Khuvsgul → Tosontsengel",
+    stops: ["Khuvsgul south", "Tosontsengel pass", "River camp"],
+    acts: ["drive", "camp"],
+    d: "The hard day — ~450 km south-west, much of it off-road. We stop often. Camp by a river on the way.",
+    more: "This is the leg that earns you Zavkhan. Most of it is unpaved — we move with the country, not against it. Stops for tea, for views, for the herders who flag us down. By nightfall we're set up by a river, fire going, dinner from the cooler.",
+  },
+  {
+    n: "07", act: 1,
+    t: "Zavkhan · lakes & dunes",
+    stops: ["Khar Nuur", "Sand dunes", "Herder family ger"],
+    acts: ["hike", "ger", "meal"],
+    d: "Explore the lakes and dunes. Visit a herder family, taste fresh aaruul, dinner around a fire.",
+    more: "Zavkhan is Mongolia's strangest, most beautiful province — sand dunes pressed against larch forest, turquoise lakes that shouldn't exist there. We move slowly between them, visit a herder family in the afternoon (fresh aaruul, milk vodka if you want it), and end with fire and stew.",
+  },
+  {
+    n: "08", act: 2,
+    t: "Zavkhan → Khorgo",
+    stops: ["Tosontsengel", "Terkhiin Tsagaan Nuur", "Khorgo crater"],
+    acts: ["drive", "peak", "hike", "camp"],
+    d: "~240 km east to Terkhiin Tsagaan Nuur, the lava-dammed \"White Lake\". Walk the crater rim at sunset.",
+    more: "We swap one weird landscape for another. Khorgo is a dormant volcano whose lava once dammed a river to create Terkhiin Tsagaan Nuur — a lake nobody expected, sitting in basalt. Crater rim walk at sunset, then camp by the lake.",
+  },
+  {
+    n: "09", act: 2,
+    t: "Tsenkher hot springs",
+    stops: ["Terkhiin", "Tsenkher", "Pool camp"],
+    acts: ["drive", "hotspring", "star"],
+    d: "~180 km south. 86°C spring water piped into wooden pools under the stars. A proper reset.",
+    more: "Day nine and your body knows it. Tsenkher is 86°C at the source — piped into wooden tubs at varying temperatures. You soak, you read, you soak again. By dark there's nothing but you, the water, and the stars. Sleep is deep.",
+  },
+  {
+    n: "10", act: 2,
+    t: "Orkhon Valley",
+    stops: ["Tsenkher", "Orkhon waterfall", "Family camp"],
+    acts: ["drive", "water", "meal", "ger"],
+    d: "Drop into the Orkhon gorge to the waterfall. Family camp for the night; khorkhog on the fire.",
+    more: "The Orkhon is the river that birthed the Mongol empire — the valley is heavy with that history. We hike down to the waterfall in the late morning, hang around for swims and photos, then spend the night with a family I've known for years. Khorkhog (sealed-pot lamb cooked on hot stones) is on the menu.",
+  },
+  {
+    n: "11", act: 2,
+    t: "Karakorum → UB",
+    stops: ["Orkhon", "Karakorum", "Erdene Zuu", "Ulaanbaatar"],
+    acts: ["visit", "drive", "city"],
+    d: "Erdene Zuu Monastery in the morning, then ~380 km back to the city. Late-afternoon arrival.",
+    more: "Erdene Zuu is the oldest surviving Buddhist monastery in Mongolia — 16th century, built from the stones of the old Mongol capital. Slow morning walk through the courtyards, then we point east. Back in UB by late afternoon. Group dinner that night if you're up for it.",
+  },
 ];
 
 // Drive legs for the data strip
@@ -313,8 +391,8 @@ export default function NorthCentralPage() {
           {[
             { l: "Dates", v: "Jul 21 – 31, 2026" },
             { l: "Days", v: "11" },
-            { l: "Group", v: "4–6" },
-            { l: "Price", v: "$1,800" },
+            { l: "Group", v: "5–7" },
+            { l: "Price", v: "$1,300" },
             { l: "Lodging", v: "Camp + ger" },
             { l: "Pace", v: "Slow, drive days" },
           ].map((x) => (
@@ -522,8 +600,53 @@ export default function NorthCentralPage() {
                       <div className={`absolute left-0 md:left-2 top-0 w-6 h-6 md:w-8 md:h-8 rounded-full border flex items-center justify-center font-display text-[10px] md:text-xs ${nodeColor}`}>
                         {day.n}
                       </div>
-                      <h3 className="font-display text-lg md:text-xl text-sand-100 mb-1">{day.t}</h3>
+                      <h3 className="font-display text-lg md:text-xl text-sand-100 mb-1.5">{day.t}</h3>
+
+                      {Array.isArray(day.stops) && day.stops.length > 0 && (
+                        <p className="text-sand-500 text-[11px] md:text-xs mb-1.5 flex items-baseline gap-1.5 flex-wrap leading-relaxed">
+                          <span className="text-sand-600">📍</span>
+                          {day.stops.map((s, i) => (
+                            <span key={i} className="inline">
+                              {s}
+                              {i < day.stops.length - 1 && <span className="text-sand-700 mx-1">·</span>}
+                            </span>
+                          ))}
+                        </p>
+                      )}
+
+                      {Array.isArray(day.acts) && day.acts.length > 0 && (
+                        <p className="flex items-center gap-2 mb-2 text-base">
+                          {day.acts.map((tok) => {
+                            const a = ACT_ICONS[tok];
+                            if (!a) return null;
+                            return (
+                              <span
+                                key={tok}
+                                title={a.l}
+                                aria-label={a.l}
+                                className="leading-none opacity-90"
+                              >
+                                {a.i}
+                              </span>
+                            );
+                          })}
+                        </p>
+                      )}
+
                       <p className="text-sand-400 text-base leading-relaxed">{day.d}</p>
+
+                      {day.more && (
+                        <details className="group/details mt-3">
+                          <summary className="cursor-pointer list-none inline-flex items-center gap-1 text-sand-500 text-[10px] md:text-[11px] tracking-[0.2em] uppercase hover:text-sand-200 transition-colors select-none">
+                            <span className="group-open/details:hidden">More details</span>
+                            <span className="hidden group-open/details:inline">Show less</span>
+                            <span className="text-[8px] transition-transform group-open/details:rotate-180">▾</span>
+                          </summary>
+                          <p className="text-sand-400 text-sm md:text-[15px] leading-relaxed mt-3 pl-3 border-l border-sand-800/40">
+                            {day.more}
+                          </p>
+                        </details>
+                      )}
                     </motion.div>
                   </div>
                 );
@@ -681,7 +804,7 @@ export default function NorthCentralPage() {
             <div className="rounded-2xl border border-sky-800/30 bg-sky-900/10 p-6 md:p-8">
               <h3 className="font-display text-xl text-sand-100 mb-5 flex items-center gap-2">
                 <span className="text-sky-400">✓</span>
-                Included in $1,800
+                Included in $1,300
               </h3>
               <ul className="space-y-3 text-sand-300 text-sm leading-relaxed">
                 {included.map((i) => (
@@ -751,7 +874,7 @@ export default function NorthCentralPage() {
           >
             <Kicker>Come with me</Kicker>
             <h2 className="font-display text-3xl md:text-4xl text-sand-100 mb-4">
-              July 21 – 31, 2026 · $1,800
+              July 21 – 31, 2026 · $1,300
             </h2>
             <p className="text-sand-300 text-lg mb-8 max-w-xl leading-relaxed">
               Small group of 4 – 6. Bring a friend and save 15% each. Application, not checkout — I read every one personally and reply within 48 hours.

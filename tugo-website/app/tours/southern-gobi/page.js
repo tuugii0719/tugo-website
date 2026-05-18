@@ -13,25 +13,25 @@ import CentralMongoliaSection from "@/components/tours/CentralMongoliaSection";
 const G = "/images/gallery";
 const D = "/images/destinations";
 
-const ACCENT = "orange";
+const ACCENT = "amber";
 
 const acts = [
-  { label: "Gobi", accent: "orange" },
+  { label: "Gobi", accent: "amber" },
   { label: "Central", accent: "rose" },
 ];
 
-export default function SouthernGobiPage() {
+export default function GobiGlimpsePage() {
   return (
     <div className="min-h-screen bg-night-950 text-sand-100 overflow-x-hidden">
 
-      {/* HERO — desert sunset gradient */}
+      {/* HERO — golden hour / slower pace */}
       <section className="relative pt-24 md:pt-32 pb-16 md:pb-20 px-4 md:px-8 overflow-hidden min-h-[80vh] flex items-center">
         <div className="absolute inset-0">
-          <Image src={`${D}/khongoryn-1.jpg`} alt="Khongoryn Els sand dunes" fill priority className="object-cover" sizes="100vw" />
-          <div className="absolute inset-0 bg-gradient-to-br from-orange-900/85 via-amber-900/60 to-red-900/40" />
+          <Image src={`${D}/khongoryn-2.jpg`} alt="Khongoryn Els at golden hour" fill priority className="object-cover" sizes="100vw" />
+          <div className="absolute inset-0 bg-gradient-to-br from-amber-900/80 via-yellow-900/55 to-orange-900/60" />
         </div>
-        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-orange-500/20 blur-3xl pointer-events-none" />
-        <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] rounded-full bg-amber-500/20 blur-3xl pointer-events-none" />
+        <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-amber-400/20 blur-3xl pointer-events-none" />
+        <div className="absolute -bottom-40 -left-40 w-[600px] h-[600px] rounded-full bg-yellow-400/15 blur-3xl pointer-events-none" />
 
         <div className="max-w-7xl mx-auto relative w-full">
           <Link href="/tours" className="inline-flex items-center gap-2 text-sand-200 text-[11px] tracking-[0.3em] uppercase mb-8 hover:text-amber-200 transition-colors">
@@ -42,24 +42,24 @@ export default function SouthernGobiPage() {
             <div className="lg:col-span-7">
               <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
                 <p className="text-amber-200 text-[11px] tracking-[0.4em] uppercase mb-4 font-medium">
-                  Long Gobi loop · 11 days · 5 – 7 pax
+                  Slow Gobi · 11 days · golden hour
                 </p>
                 <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-white leading-[0.92] mb-6">
                   <span className="block">Southern Gobi</span>
-                  <span className="block bg-gradient-to-r from-amber-300 via-orange-300 to-red-300 bg-clip-text text-transparent italic">
+                  <span className="block bg-gradient-to-r from-amber-300 via-yellow-300 to-orange-300 bg-clip-text text-transparent italic">
                     + Central
                   </span>
                 </h1>
                 <p className="text-sand-100 text-lg md:text-xl max-w-xl leading-relaxed mb-8">
-                  For young travellers who want to cover ground. Yoliin Am ice canyon, a night in the desert, camels at Khongoryn Els, the Flaming Cliffs, then central Mongolia on the way home. Tight, adventure-packed, lots of driving.
+                  The iconic southern Gobi loop, extended. Same places as June&apos;s fast run — with three extra days to actually <em>be</em> in them. Late August: warmer light, cooler nights, fewer flies.
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-8">
                   {[
-                    { l: "Tour", v: "Jun 8 – 18" },
+                    { l: "Tour", v: "Aug 18 – 28" },
                     { l: "Days", v: "11" },
                     { l: "Group", v: "5 – 7" },
-                    { l: "Price", v: "$1,100" },
+                    { l: "Price", v: "$1,300" },
                   ].map((p) => (
                     <span key={p.l} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-night-950/50 backdrop-blur-md border border-amber-300/30">
                       <span className="text-amber-200 text-[10px] tracking-[0.2em] uppercase">{p.l}</span>
@@ -68,26 +68,21 @@ export default function SouthernGobiPage() {
                   ))}
                 </div>
 
-                <div className="flex flex-wrap gap-3">
-                  <Link href="/book" className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-400 hover:to-amber-400 text-night-950 px-7 py-3.5 rounded-full text-xs uppercase tracking-[0.15em] font-semibold transition-all shadow-[0_10px_30px_-10px_rgba(249,115,22,0.7)]">
-                    Reserve a Spot
-                  </Link>
-                </div>
+                <Link href="/book" className="inline-flex items-center gap-2 bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-night-950 px-7 py-3.5 rounded-full text-xs uppercase tracking-[0.15em] font-semibold transition-all shadow-[0_10px_30px_-10px_rgba(245,158,11,0.7)]">
+                  Reserve a Spot
+                </Link>
               </motion.div>
             </div>
 
             <div className="lg:col-span-5">
               <motion.div initial={{ opacity: 0, x: 30 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.9, delay: 0.2 }} className="relative">
-                <div className="absolute -inset-4 bg-gradient-to-br from-orange-500/40 to-amber-500/40 rounded-3xl blur-2xl" />
-                <div className="relative grid grid-cols-2 gap-2">
-                  <div className="relative col-span-2 aspect-[16/10] rounded-2xl overflow-hidden border-2 border-amber-200/30 shadow-2xl">
-                    <Image src={`${D}/khongoryn-2.jpg`} alt="Khongoryn Els dunes from above" fill className="object-cover" />
-                  </div>
-                  <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-amber-200/30 shadow-xl">
-                    <Image src={`${D}/yolyn-am.jpg`} alt="Yoliin Am ice canyon" fill className="object-cover" />
-                  </div>
-                  <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-amber-200/30 shadow-xl">
-                    <Image src={`${G}/DSC08000.jpg`} alt="Gobi desert footprints" fill className="object-cover" />
+                <div className="absolute -inset-4 bg-gradient-to-br from-amber-400/40 to-yellow-400/40 rounded-3xl blur-2xl" />
+                <div className="relative aspect-[3/4] rounded-2xl overflow-hidden border-2 border-amber-200/30 shadow-2xl">
+                  <Image src={`${D}/khongoryn-1.jpg`} alt="Sand dunes at Khongoryn Els" fill className="object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                  <div className="absolute bottom-4 left-4 right-4 text-white">
+                    <p className="text-[10px] tracking-[0.3em] uppercase opacity-80">Khongoryn Els</p>
+                    <p className="font-display text-lg leading-tight">The Singing Dunes</p>
                   </div>
                 </div>
               </motion.div>
@@ -98,45 +93,125 @@ export default function SouthernGobiPage() {
 
       <VitalsStrip
         items={[
-          { l: "Dates", v: "Jun 8 – 18, 2026" },
+          { l: "Dates", v: "Aug 18 – 28, 2026" },
           { l: "Days", v: "11" },
           { l: "Group", v: "5 – 7" },
           { l: "Region", v: "South + Central" },
-          { l: "Pace", v: "Tight · lots of driving" },
-          { l: "Price", v: "$1,100" },
+          { l: "Pace", v: "Medium · breathing room" },
+          { l: "Price", v: "$1,300" },
         ]}
       />
 
       <Prologue
         accent={ACCENT}
-        title="Eight days. Desert to steppe. One loop."
+        title="Same country, three extra days."
         paragraphs={[
-          "This is the tour I built for the young crew on a tight window. You&apos;ve got a week-plus in Mongolia, you want the Gobi, and you still want the central steppe. The trade-off is a lot of driving — and the driving is worth it.",
-          "We push hard the first half: UB to the Gobi in two days, then 2 – 3 days moving between the desert&apos;s big three — Yoliin Am ice canyon, Khongoriin Els singing dunes, and the Flaming Cliffs. Camel trek included. Desert night included.",
-          "The back half is the reset. We roll north through central Mongolia, stop for hot springs, horseback, hikes, one last khorkhog dinner with a family. Then home. If you want more chill, take Gobi Glimpse in August instead — this one is for people who like the pace.",
+          "Southern Gobi is the slower, better-paced version of the June Gobi Glimpse tour. The route covers the same essentials — Dalanzadgad, Yoliin Am, a night with a camel family in the open Gobi, Khongoriin Els, Flaming Cliffs, then north through central — but we take eleven days, which changes everything.",
+          "Extra time means extra hikes. Extra time at the dunes. A proper second night in the desert. A real day hiking into the Orkhon waterfall gorge. A longer soak at Tsenkher. A hot-spring morning instead of rushing out.",
+          "Late August is also when the Gobi cools off and the central steppe turns golden — different colour palette than the June version, quieter light, fewer flies. If you can only pick one Gobi trip, this one is my favourite.",
         ]}
       />
 
       <Itinerary
         accent={ACCENT}
         acts={acts}
-        title="Eight days, two acts."
+        title="Eleven days, properly paced."
         days={[
-          { n: "01", act: 0, t: "UB → Middle Gobi", d: "Early drive south. Stop at the Baga Gazriin Chuluu granite outcrops. Tonight: ger camp on the edge of the steppe." },
-          { n: "02", act: 0, t: "Middle → Yoliin Am", d: "Drive into Umnugobi. Yoliin Am ice canyon — a valley that holds ice into July. Walk 2 km up the gorge and back. Overnight at a family camp." },
-          { n: "03", act: 0, t: "Khongoriin Els", d: "Four hours driving to the Singing Dunes. Camel ride at golden hour (~2 hours). Climb the tallest dune for sunset. Sleep in the desert." },
-          { n: "04", act: 0, t: "Flaming Cliffs + dinosaur country", d: "Drive to Bayanzag (the Flaming Cliffs) — where the first dinosaur eggs were found in 1923. Red-rock hike at golden hour. Ger camp." },
-          { n: "05", act: 1, t: "Gobi → Orkhon Valley", d: "The long transition day, ~8 hours on the road. Camel saddle sore by now but the landscape starts to green up by afternoon. Orkhon Valley family camp for the night." },
-          { n: "06", act: 1, t: "Tsenkher hot springs", d: "Shorter drive, ~3 hours. Hot-spring soak. First proper bath since UB. Everyone sleeps well." },
-          { n: "07", act: 1, t: "Central family day", d: "A chill day — optional horseback in the morning, hike up the hill behind the family camp, help cook dinner. Khorkhog night." },
-          { n: "08", act: 1, t: "Back to UB", d: "Drive back east, ~6 hours. Stop at Erdene Zuu Monastery in Karakorum. UB by evening." },
+          {
+            n: "01", act: 0,
+            t: "UB → Dalanzadgad",
+            stops: ["Ulaanbaatar", "Dalanzadgad"],
+            acts: ["drive", "city"],
+            d: "Down to the gateway of the Gobi — ~560 km south, or a 1-hour flight if you'd rather save the day. Hotel night in Dalanzadgad.",
+            more: "Most groups choose to fly down — saves a day, costs a bit more. If we drive, we split it with stops at Baga Gazriin Chuluu rock formations and a lunch break in Mandalgovi. Either way, we sleep in Dalanzadgad — last hot shower for a few days. Walk the bazaar in the evening if you want.",
+          },
+          {
+            n: "02", act: 0,
+            t: "Dalanzadgad → Yoliin Am",
+            stops: ["Dalanzadgad", "Gurvansaikhan park", "Yoliin Am ice canyon", "Family ger"],
+            acts: ["drive", "hike", "ger"],
+            d: "Two-hour drive into Gurvansaikhan National Park. Afternoon walk up the ice canyon — narrow gorge with ice that holds till August.",
+            more: "Yoliin Am is the most famous of the Gobi canyons for good reason — it's narrow enough that the sun barely touches the floor, which keeps ice on the riverbed deep into summer. We walk in about 3 km on the first afternoon, get a feel for the place, then back to the family ger for dinner.",
+          },
+          {
+            n: "03", act: 0,
+            t: "Yoliin Am · hike day",
+            stops: ["Yoliin Am gorge", "Vulture cliffs", "Family ger"],
+            acts: ["hike", "peak"],
+            d: "Full day in the canyon. Hike where the ice sits deepest, watch for lammergeier vultures. Slow evening at camp.",
+            more: "Today belongs to the canyon. Bring water and a layer — even in August, the cliff shadows are cold. Vultures nest on the upper rocks; you'll usually see at least one circling. We picnic where the gorge opens and walk back down by mid-afternoon.",
+          },
+          {
+            n: "04", act: 0,
+            t: "Camel family · open-space camp",
+            stops: ["Gobi steppe", "Camel herder family", "Open-space camp"],
+            acts: ["camel", "camp", "meal", "star"],
+            d: "Morning with a camel-herder family — learn the harness, ride for a few hours into the open Gobi. No ger, no walls — we sleep in the open with the family, dinner around the fire.",
+            more: "This is the kind of night you remember years later. The family has around 200 camels; they move twice a year and we catch them at their summer ground. We help set up the evening camp (mostly they let us help), share dinner — boiled mutton, milk tea, maybe some airag if they offer — and sleep on thick felt mats out under the sky. Stars unfiltered. Camels close by.",
+          },
+          {
+            n: "05", act: 0,
+            t: "Khongoriin Els",
+            stops: ["Open Gobi", "Khongoriin Els · Singing Dunes"],
+            acts: ["drive", "hike", "peak"],
+            d: "Short drive to the Singing Dunes. Climb the main dune at sunset, walk the ridge, photography all evening. Camp at the foot.",
+            more: "Khongoriin Els is 100 km long and tops out at 800 m of sand. The 'singing' is the sound the dune face makes when sand slides — like a low drone, eerie the first time. We aim to be on top for sunset; coming down is much easier (and faster) than going up.",
+          },
+          {
+            n: "06", act: 0,
+            t: "Flaming Cliffs",
+            stops: ["Khongoriin", "Bayanzag · Flaming Cliffs", "Red-rock canyon"],
+            acts: ["drive", "hike", "visit"],
+            d: "~250 km east to Bayanzag — the Flaming Cliffs. Dinosaur eggs were first discovered here in 1923. Red-rock hike at golden hour. Ger camp.",
+            more: "Roy Chapman Andrews' 1923 expedition found the first dinosaur eggs ever identified, right at these cliffs. The rock turns to a deep red at golden hour — about as Mars-on-Earth as it gets. We hike the rim trail then drop into a small canyon for the last light.",
+          },
+          {
+            n: "07", act: 1,
+            t: "Gobi → Orkhon",
+            stops: ["Bayanzag", "Mandalgovi", "Orkhon Valley family camp"],
+            acts: ["drive"],
+            d: "The long transition day — ~8 hours on the road. Desert greens into steppe by afternoon. Orkhon Valley family camp for the night.",
+            more: "This is the leg that earns you the second half. Mostly paved, occasionally washboard. We stop at a few overlooks, pick up groceries somewhere along the way. By dusk the landscape has changed completely — grass, herds, the first proper rivers.",
+          },
+          {
+            n: "08", act: 1,
+            t: "Orkhon waterfall",
+            stops: ["Orkhon Valley", "Ulaan Tsutgalan waterfall", "River gorge"],
+            acts: ["hike", "water", "meal"],
+            d: "Drive and hike to Ulaan Tsutgalan waterfall. Walk down into the gorge. Slow afternoon. Khorkhog for dinner.",
+            more: "The waterfall is small but the gorge is genuinely beautiful — basalt walls, swallows nesting in the cracks. We pack a lunch, walk in for swims and photos, hang around till mid-afternoon. Family camp again that night with khorkhog (lamb cooked on hot stones in a sealed pot).",
+          },
+          {
+            n: "09", act: 1,
+            t: "Tsenkher hot springs",
+            stops: ["Orkhon", "Tsenkher springs", "Wooden pool camp"],
+            acts: ["drive", "hotspring", "star"],
+            d: "South to the springs — 86°C at the source, piped into wooden tubs. Long soak under the stars. First real bath in a week.",
+            more: "By day nine your body knows it's been to the desert and back. Tsenkher answers the question with hot mineral water. Tubs at varying temperatures — soak, read, soak again. Dinner at the camp, then a final hot soak after dark.",
+          },
+          {
+            n: "10", act: 1,
+            t: "Family day + Karakorum",
+            stops: ["Tsenkher", "Family camp · lunch", "Karakorum", "Erdene Zuu Monastery"],
+            acts: ["drive", "visit", "ger"],
+            d: "Short drive to Karakorum via a family camp for lunch. Erdene Zuu Monastery in the afternoon. Ger night near the ruins.",
+            more: "Erdene Zuu is the oldest surviving Buddhist monastery in Mongolia — 16th century, built from the stones of the old Mongol capital. Slow afternoon walk through the courtyards, then a final ger night nearby.",
+          },
+          {
+            n: "11", act: 1,
+            t: "Back to UB",
+            stops: ["Karakorum", "Ulaanbaatar"],
+            acts: ["drive", "city"],
+            d: "~6 hours back east on paved road. Drop-off in UB by late afternoon. Group dinner that night if you're up for it.",
+            more: "Last drive. Most groups want a real shower and a real bed first; we can do an optional group dinner around 7pm at a place I like in central UB. Flights home the next day.",
+          },
         ]}
       />
 
       {/* GOBI PHOTO ESSAY */}
       <section className="py-20 md:py-28 border-b border-sand-900/30">
         <div className="max-w-6xl mx-auto px-6">
-          <SectionHead kicker="Act I · The Gobi" title="Sand, ice, and red rock." center accent={ACCENT} />
+          <SectionHead kicker="Act I · The Gobi" title="Dunes, canyon, red rock." center accent={ACCENT} />
 
           <div className="space-y-6 md:space-y-8">
             <motion.div
@@ -151,12 +226,12 @@ export default function SouthernGobiPage() {
 
             <PullQuote
               accent={ACCENT}
-              quote="The Singing Dunes actually sing. Sit at the top for five minutes and you hear the sand slide — a low hum you feel in your chest."
-              attribution="— Worth the climb."
+              quote="In August the Gobi loses its glare. The light goes warm, the wind drops, the country finally lets you sit with it."
+              attribution="— Why I prefer the August run."
             />
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3">
-              {[`${G}/DSC07959.jpg`, `${G}/DSC08023.jpg`, `${G}/DSC08144.jpg`].map((src) => (
+              {[`${G}/DSC08023.jpg`, `${G}/DSC07959.jpg`, `${G}/DSC08144.jpg`].map((src) => (
                 <div key={src} className="relative aspect-square overflow-hidden rounded-lg group">
                   <Image src={src} alt="" fill className="object-cover transition-transform duration-500 group-hover:scale-[1.04]" sizes="33vw" />
                 </div>
@@ -168,19 +243,19 @@ export default function SouthernGobiPage() {
 
       {/* CENTRAL reusable */}
       <div className="border-b border-sand-900/30">
-        <CentralMongoliaSection accent="rose" compact />
+        <CentralMongoliaSection accent="amber" compact />
       </div>
 
       {/* GER + FOOD */}
       <section className="py-20 md:py-28 border-b border-sand-900/30">
         <div className="max-w-5xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
           <div>
-            <SectionHead kicker="Nomadic stays" title="Four nights with families, three in tents." accent={ACCENT} />
+            <SectionHead kicker="Family stays" title="Most nights in a ger." accent={ACCENT} />
             <p className="text-sand-300 text-lg leading-relaxed mb-4">
-              In the Gobi we alternate desert tents and ger camps. In the central leg you&apos;re guests of families I already know — <em>buuz</em> on the table, milk tea going, kids teaching you to throw ankle bones.
+              On this trip you get seven nights with nomadic families and two in the desert itself. The food is <em>buuz</em>, <em>khuushuur</em>, <em>khorkhog</em>, endless milk tea, and whatever the camp is harvesting (late August means wild onions, roots, and berries).
             </p>
             <p className="text-sand-400 leading-relaxed">
-              If you&apos;ve never been to a ger, these pages help. The short version: right foot in, move clockwise, say yes to the tea.
+              Kids, dogs, goats, wind, sunset. This is the part of the trip you remember most clearly a year later.
             </p>
           </div>
           <GerEtiquette />
@@ -189,46 +264,47 @@ export default function SouthernGobiPage() {
 
       <IncludedBring
         accent={ACCENT}
-        priceLabel="$1,100"
+        priceLabel="$1,300"
         included={[
           "4×4 Russian van, fuel, driver",
           "English/Mongolian guide (Tugi)",
           "All meals on the road",
-          "Nomadic family ger stays (4 nights)",
-          "Desert tent night (1 night)",
+          "Family ger stays (7 nights)",
+          "Desert tent nights (2 nights)",
           "Hot-spring camp (1 night)",
-          "Ger camp + UB arrival/departure (2 nights)",
           "Camel ride at Khongoriin Els",
           "All park permits and entrance fees",
+          "UB airport pickup + drop-off",
         ]}
         bring={[
-          "Sturdy shoes for dune climbs and canyon walks",
-          "Layers — Gobi days are hot, nights are cold",
-          "Sun hat, sunglasses, lip balm, SPF 50",
-          "Scarf or buff (dust in the Gobi)",
-          "Swimsuit (hot springs)",
-          "Sleeping bag rated to 5 °C",
-          "A 40 L duffel (no hard suitcases)",
+          "Hiking shoes (canyon + dune + waterfall walks)",
+          "Layers — August Gobi nights can drop to 4 °C",
+          "Sun hat + scarf for dust",
+          "Swimsuit (hot springs + small oases)",
+          "Sleeping bag rated to 0 °C (optional — we can lend)",
+          "Water bottle — we refill from a jerry can",
+          "Photography: dust-sealed gear or a rain sleeve",
         ]}
-        note="This tour has the longest driving days of the season. If that&rsquo;s a hard no, take Gobi Glimpse in August instead — same places, more time."
+        note="If June fits better, Gobi Glimpse + Central (June 10 – 18) covers similar ground earlier in the season."
       />
 
       <TourFAQ
         accent={ACCENT}
         items={[
-          { q: "How hard are the drive days really?", a: "Day 5 (Gobi → Orkhon) is ~8 hours and most of it is off-road. It&apos;s the longest. Days 1, 2, 3, and 8 are 5–7 hours each. Day 6 is 3. We stop every 90 min or so. It&apos;s doable — but you&apos;ll earn your hot-spring night." },
-          { q: "Can I skip the camel ride?", a: "Yes — some travellers prefer a dune walk at sunset instead. No judgement, no price difference." },
-          { q: "What&apos;s the temperature range?", a: "Gobi in June: 15–28 °C days, 5–12 °C nights. Central: 12–24 °C days, 5–15 °C nights. Wind is the bigger factor — it can turn a warm day cold in 10 minutes." },
-          { q: "Is this good for photographers?", a: "Gobi at golden hour (dunes + Flaming Cliffs) is unreal. Long days with dust mean lens cleaning kit, not just a cloth. A dust-sealed zoom is ideal." },
-          { q: "Can I combine this with another tour?", a: "It ends Jun 23. The Horse Trek (Jun 25–30) starts 2 days later — tight but doable. Or the July 1 Playtime. Ask and I'll sort." },
+          { q: "How is this different from Gobi Glimpse?", a: "Same places. Three more days. Gobi Glimpse (June) is tight — long driving days back-to-back. Southern Gobi (August) has breathing room — full days <em>at</em> the dunes, the canyon, the family camp. Same price-per-day, different experience." },
+          { q: "Is late August cold in the Gobi?", a: "Days 18–26 °C, nights 4–12 °C. Much gentler than June. Bring a real sleeping bag and you&apos;ll love the desert nights." },
+          { q: "Will the hot springs be crowded?", a: "No. Tsenkher gets busier in July for Naadam, but by late August it&apos;s mostly locals and our group. You&apos;ll have a pool to yourselves most evenings." },
+          { q: "What&apos;s the riding like?", a: "Camel at Khongoriin Els (~2 hours, gentle). Optional horse day at the Orkhon family camp. No technical riding required." },
+          { q: "Can I bring my camera drone?", a: "Most areas yes, but always check with me first — Bayanzag and the monastery have rules. I know where flying is fine and where it&apos;ll get you yelled at." },
+          { q: "How many in the group?", a: "4 – 6. Smaller than Naadam or the festival — the drive days work better with fewer people." },
         ]}
       />
 
       <TourCTA
         accent={ACCENT}
-        title="June 8 – 18, 2026 · $1,100"
-        subtitle="Small group of 5 – 7. Deeper Gobi loop with a swing through central Mongolia on the way back. Bring a friend and save 15% each."
-        emailSubject="Southern Gobi + Central · June 8"
+        title="August 18 – 28, 2026 · $1,300"
+        subtitle="The Gobi with time to breathe. Small group of 4 – 6. Bring a friend and save 15% each."
+        emailSubject="Southern Gobi + Central · August 18"
       />
     </div>
   );

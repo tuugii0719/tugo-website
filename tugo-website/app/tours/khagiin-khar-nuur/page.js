@@ -109,12 +109,48 @@ export default function KhagiinKharNuurPage() {
         accent={ACCENT}
         title="Six days in the saddle."
         days={[
-          { n: "01", t: "UB → Terelj", d: "Leave Ulaanbaatar in the morning, drive to Gorkhi-Terelj. Turtle Rock, a visit to Aryabal Meditation Temple, crossing the Terelj River. Night in a traditional family ger." },
-          { n: "02", t: "Heading to Khagiin Khar Lake", d: "Pack the kitchen and bags onto the horses. Ride out across Khavirga Pass and into the quiet taiga. A long day in the saddle — tents set up for the night under the stars." },
-          { n: "03", t: "Arriving at Khagiin Khar Lake", d: "By late afternoon we reach the Pearl of the Taiga — the southern edge of the Siberian forest. Camp by the lake with mountains all around. A short canter along the shore if the ground allows." },
-          { n: "04", t: "Return ride to Khavirga Pass camp", d: "Back along the same trail through the taiga. Reach the area below Khavirga Pass in the afternoon and set up tents. Campfire, stories, quiet wilderness after a long day." },
-          { n: "05", t: "Last day of riding", d: "Pack up and ride back to the family camp. Night in gers, cooking traditional dishes with the local women — a warm evening and a taste of everyday nomad life." },
-          { n: "06", t: "Chinggis Khaan Statue & UB", d: "Drive back to the city. Stop at the iconic Chinggis Khaan Equestrian Statue on the way. Arrive in UB late afternoon." },
+          {
+            n: "01", t: "UB → Terelj",
+            stops: ["Ulaanbaatar", "Turtle Rock", "Aryabal Meditation Temple", "Family ger"],
+            acts: ["drive", "visit", "ger", "meal"],
+            d: "Leave UB in the morning, drive to Gorkhi-Terelj. Turtle Rock, a visit to Aryabal Meditation Temple, crossing the Terelj River. Night in a traditional family ger.",
+            more: "Morning drive out of UB to Gorkhi-Terelj. We stop at Turtle Rock for a stretch and the Aryabal Meditation Temple for the climb (the elephant-trunk staircase). Cross the Terelj River into the family's land — they'll have dinner waiting. This is the soft start; tomorrow gets real.",
+          },
+          {
+            n: "02", t: "Into the taiga",
+            stops: ["Family ger", "Khavirga Pass", "Taiga tent camp"],
+            acts: ["horse", "camp", "morning"],
+            d: "Pack the kitchen and bags onto the horses. Ride out across Khavirga Pass into the quiet taiga. Long day in the saddle. Tents set up for the night under the stars.",
+            more: "Up early to load kitchen and bags onto the pack horses. The trail climbs into the Khentii taiga — birch and larch, no people. Khavirga Pass is the high point of the day; then a gradual descent. We set up tents in a clearing by water before dark.",
+          },
+          {
+            n: "03", t: "Arriving at Khagiin Khar Lake",
+            stops: ["Taiga trail", "Khagiin Khar Lake", "Lake camp"],
+            acts: ["horse", "water", "camp", "peak"],
+            d: "By late afternoon we reach the Pearl of the Taiga — the southern edge of the Siberian forest. Camp by the lake with mountains all around. A short canter along the shore if the ground allows.",
+            more: "Second day of riding, into the heart of the Khentii. By late afternoon the lake opens up below — glacial-fed, slate-coloured, surrounded by larch. Camp on the shore. Cold water, but if you've made it this far you'll swim.",
+          },
+          {
+            n: "04", t: "Return ride to Khavirga camp",
+            stops: ["Khagiin Khar Lake", "Taiga trail", "Khavirga camp"],
+            acts: ["horse", "camp", "meal"],
+            d: "Back along the same trail through the taiga. Reach the area below Khavirga Pass in the afternoon and set up tents. Campfire, stories, quiet wilderness after a long day.",
+            more: "Same trail, different light, different mood. Saddle-time is real by now. We make a fire at the Khavirga area, have a proper dinner — vodka if anyone brought some, stories whether you brought any or not.",
+          },
+          {
+            n: "05", t: "Back to the family",
+            stops: ["Khavirga trail", "Family ger", "Ger kitchen"],
+            acts: ["horse", "ger", "meal"],
+            d: "Pack up and ride back to the family camp. Night in gers, cooking traditional dishes with the local women — a warm evening, a taste of everyday nomad life.",
+            more: "Final ride out of the taiga. Reach the family camp by late afternoon. The women of the family will be cooking — buuz, khuushuur, things you didn't know you needed. Hot wash if the camp has the setup. Real ger bed for the first time in four nights.",
+          },
+          {
+            n: "06", t: "Chinggis Statue & UB",
+            stops: ["Family ger", "Chinggis Khaan Statue", "Ulaanbaatar"],
+            acts: ["drive", "visit", "city"],
+            d: "Drive back to the city. Stop at the iconic Chinggis Khaan Equestrian Statue on the way. Arrive in UB late afternoon.",
+            more: "Goodbye to the family and the horses. The statue is on the route back — 40 metres of stainless-steel Chinggis on a horse, with a viewing platform on top. UB by late afternoon.",
+          },
         ]}
       />
 
