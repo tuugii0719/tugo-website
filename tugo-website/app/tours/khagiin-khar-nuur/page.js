@@ -52,7 +52,7 @@ export default function KhagiinKharNuurPage() {
                     { l: "Tour", v: "Jun 22 – 27" },
                     { l: "Days", v: "6" },
                     { l: "Group", v: "5 – 7" },
-                    { l: "Price", v: "$700" },
+                    { l: "Price", v: "$900" },
                   ].map((p) => (
                     <span key={p.l} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-night-950/55 backdrop-blur-md border border-lime-300/30">
                       <span className="text-lime-200 text-[10px] tracking-[0.2em] uppercase">{p.l}</span>
@@ -91,7 +91,7 @@ export default function KhagiinKharNuurPage() {
           { l: "Group", v: "5 – 7" },
           { l: "Region", v: "Khan Khentii taiga" },
           { l: "Start / end", v: "Ulaanbaatar" },
-          { l: "Price", v: "$700" },
+          { l: "Price", v: "$900" },
         ]}
       />
 
@@ -218,7 +218,7 @@ export default function KhagiinKharNuurPage() {
 
       <IncludedBring
         accent={ACCENT}
-        priceLabel="$700"
+        priceLabel="$900"
         included={[
           "UB ↔ Terelj transfers (private car)",
           "Horses, tack, and local horse guide for 4 riding days",
@@ -255,7 +255,7 @@ export default function KhagiinKharNuurPage() {
 
       <TourCTA
         accent={ACCENT}
-        title="June 22 – 27, 2026 · $700"
+        title="June 22 – 27, 2026 · $900"
         subtitle="Small group of 6 – 8. Limited horses — reserve early. Bring a friend and save 15% each."
         emailSubject="Khagiin Khar Nuur horse trek · June 22"
       />

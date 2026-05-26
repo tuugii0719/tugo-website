@@ -53,7 +53,7 @@ export default function TerelJEscapePage() {
                     { l: "Departures", v: "3" },
                     { l: "Days", v: "3 each" },
                     { l: "Group", v: "8 – 16" },
-                    { l: "Price", v: "$350" },
+                    { l: "Price", v: "$300" },
                   ].map((p) => (
                     <span key={p.l} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-night-950/55 backdrop-blur-md border border-teal-300/30">
                       <span className="text-teal-200 text-[10px] tracking-[0.2em] uppercase">{p.l}</span>
@@ -88,7 +88,7 @@ export default function TerelJEscapePage() {
       <VitalsStrip
         items={[
           { l: "Days", v: "3" },
-          { l: "Price", v: "$350" },
+          { l: "Price", v: "$300" },
           { l: "Group", v: "8 – 16" },
           { l: "Region", v: "Khentii foothills" },
           { l: "Pace", v: "Easy · any age" },
@@ -194,7 +194,7 @@ export default function TerelJEscapePage() {
 
       <IncludedBring
         accent={ACCENT}
-        priceLabel="$350"
+        priceLabel="$300"
         included={[
           "Return transfer from UB (private car, ~90 min each way)",
           "2 nights in a family ger camp (shared)",
@@ -227,7 +227,7 @@ export default function TerelJEscapePage() {
 
       <TourCTA
         accent={ACCENT}
-        title="3 departures · $350 each"
+        title="3 departures · $300 each"
         subtitle="Pick the weekend that fits. Bring a friend and save 15% each. Applications open now."
         emailSubject="Terelj Escape · 2026"
       />

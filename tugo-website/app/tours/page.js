@@ -26,7 +26,7 @@ const tours = [
     emoji: "🌲",
     dates: "June 5 – 7",
     days: 3,
-    price: "$350",
+    price: "$300",
     groupSize: "6–8",
     status: "available",
     description:
@@ -45,7 +45,7 @@ const tours = [
     emoji: "🏜️",
     dates: "Aug 18 – 28",
     days: 11,
-    price: "$1,300",
+    price: "$1,200",
     groupSize: "5–7",
     status: "available",
     description:
@@ -64,7 +64,7 @@ const tours = [
     emoji: "🐎",
     dates: "June 22 – 27",
     days: 6,
-    price: "$700",
+    price: "$900",
     groupSize: "5–7",
     status: "sold_out",
     description:
@@ -83,7 +83,7 @@ const tours = [
     emoji: "🎶",
     dates: "July 1 – 4",
     days: 4,
-    price: "$650",
+    price: "$450",
     groupSize: "6–8",
     status: "available",
     description:
@@ -121,7 +121,7 @@ const tours = [
     emoji: "🌲",
     dates: "July 16 – 18",
     days: 3,
-    price: "$350",
+    price: "$300",
     groupSize: "6–8",
     status: "available",
     description:
@@ -159,7 +159,7 @@ const tours = [
     emoji: "🌲",
     dates: "Aug 11 – 13",
     days: 3,
-    price: "$350",
+    price: "$300",
     groupSize: "6–8",
     status: "available",
     description:
@@ -178,7 +178,7 @@ const tours = [
     emoji: "🏜️",
     dates: "June 10 – 18",
     days: 9,
-    price: "$1,100",
+    price: "$1,000",
     groupSize: "5–7",
     status: "available",
     description:
@@ -197,7 +197,7 @@ const tours = [
     emoji: "🐪",
     dates: "July 21 – 31",
     days: 11,
-    price: "$1,300",
+    price: "$1,200",
     groupSize: "5–7",
     status: "available",
     description:
@@ -936,7 +936,7 @@ export default function ToursPage() {
             { label: "Season", value: "June – August" },
             { label: "Departures", value: "10 Scheduled" },
             { label: "Group Size", value: "5–8" },
-            { label: "Starting From", value: "$350" },
+            { label: "Starting From", value: "$300" },
           ].map((stat, i) => (
             <div key={i}>
               <p className="text-sand-500 text-xs tracking-wider uppercase mb-1">{stat.label}</p>
@@ -962,7 +962,7 @@ export default function ToursPage() {
               {
                 title: "Weekend Escapes",
                 duration: "3 Days",
-                price: "$350",
+                price: "$300",
                 items: ["Terelj Escape × 3", "Any age welcome"],
                 desc: "Three Terelj weekends across June and July. Gentle, ger-camp vibe, close to the city.",
                 color: "from-teal-400 to-teal-600",
@@ -980,7 +980,7 @@ export default function ToursPage() {
               {
                 title: "Grand Expeditions",
                 duration: "6–11 Days",
-                price: "From $1,300",
+                price: "From $1,000",
                 items: ["Altai Tavan Bogd · Aug", "North & Central Loop"],
                 desc: "The flagship tours — western peaks with Kazakh eagle hunters, and the long flexible north route through taiga, Khuvsgul, and Zavkhan.",
                 color: "from-indigo-500 to-sky-600",

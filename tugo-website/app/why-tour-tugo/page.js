@@ -76,58 +76,6 @@ export default function WhyTourTugoPage() {
       </section>
 
       {/* ============================================================ */}
-      {/* WHO I AM, BRIEFLY — humble portrait section                   */}
-      {/* ============================================================ */}
-      <section className="py-20 md:py-28 border-b border-sand-900/30">
-        <div className="max-w-6xl mx-auto px-6">
-          <FadeIn>
-            <p className="text-sand-400 text-[11px] tracking-[0.3em] uppercase mb-3">A few moments</p>
-            <h2 className="font-display text-2xl md:text-4xl text-sand-100 leading-tight mb-3">
-              The version of me that doesn&apos;t fit on a tour page.
-            </h2>
-            <p className="text-sand-400 text-sm md:text-base max-w-xl mb-12">
-              I&apos;m not the most polished operator. I&apos;m a Mongolian guy who travelled, learned, came home, and decided this is the work I want to do. Here&apos;s a slower look.
-            </p>
-          </FadeIn>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-            {[
-              {
-                src: "/images/tugi/tugi-on-horse.jpg",
-                caption: "Home ground — central steppe, summer. This is where most of my work happens, and where most of my favourite mornings have been.",
-              },
-              {
-                src: "/images/tugi/tugi-marathon.jpg",
-                caption: "Marathon. I&apos;m not the fastest finisher. I just don&apos;t stop. It&apos;s the same temperament that gets a group across the country.",
-              },
-              {
-                src: "/images/tugi/tugi-zion-canyon.jpg",
-                caption: "Zion, Utah — a few years ago. Travel taught me what good guiding feels like from the other side. I try to do that, here.",
-              },
-            ].map((m, i) => (
-              <FadeIn key={m.src} delay={i * 0.08}>
-                <figure className="flex flex-col gap-4">
-                  <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-sand-800/40">
-                    <Image
-                      src={m.src}
-                      alt=""
-                      fill
-                      sizes="(max-width: 768px) 100vw, 33vw"
-                      className="object-cover"
-                    />
-                  </div>
-                  <figcaption
-                    className="text-sand-300 text-sm leading-relaxed"
-                    dangerouslySetInnerHTML={{ __html: m.caption }}
-                  />
-                </figure>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ============================================================ */}
       {/* WHAT A DAY LOOKS LIKE */}
       {/* ============================================================ */}
       <section className="py-24 md:py-32 border-b border-sand-900/30">

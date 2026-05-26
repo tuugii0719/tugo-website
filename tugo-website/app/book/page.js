@@ -15,16 +15,16 @@ import { FadeIn } from "@/components/animations/FadeIn";
 const PAIR_DISCOUNT = 0.15; // 15% off per person when booking a pair
 
 const tourOptions = [
-  { id: "terelj-jun",        title: "Terelj Escape",              dates: "Jun 5 – 7",    days: 3,  price: 350,   emoji: "🌲" },
-  { id: "gobi-glimpse",      title: "Gobi Glimpse + Central",     dates: "Jun 10 – 18",  days: 9,  price: 1100,  emoji: "🏜️" },
-  { id: "khagiin-khar-nuur", title: "Horse Trek · Khagiin Khar",  dates: "Jun 22 – 27",  days: 6,  price: 700,   emoji: "🐎", soldOut: true },
-  { id: "playtime",          title: "Playtime Music Festival",    dates: "Jul 1 – 4",    days: 4,  price: 650,   emoji: "🎶" },
+  { id: "terelj-jun",        title: "Terelj Escape",              dates: "Jun 5 – 7",    days: 3,  price: 300,   emoji: "🌲" },
+  { id: "gobi-glimpse",      title: "Gobi Glimpse + Central",     dates: "Jun 10 – 18",  days: 9,  price: 1000,  emoji: "🏜️" },
+  { id: "khagiin-khar-nuur", title: "Horse Trek · Khagiin Khar",  dates: "Jun 22 – 27",  days: 6,  price: 900,   emoji: "🐎", soldOut: true },
+  { id: "playtime",          title: "Playtime Music Festival",    dates: "Jul 1 – 4",    days: 4,  price: 450,   emoji: "🎶" },
   { id: "naadam",            title: "Naadam Festival",            dates: "Jul 8 – 14",   days: 7,  price: 700,   emoji: "🏇" },
-  { id: "terelj-jul",        title: "Terelj Escape",              dates: "Jul 16 – 18",  days: 3,  price: 350,   emoji: "🌲" },
-  { id: "north-central",     title: "North & Central Loop",       dates: "Jul 21 – 31",  days: 11, price: 1300,  emoji: "🐪" },
+  { id: "terelj-jul",        title: "Terelj Escape",              dates: "Jul 16 – 18",  days: 3,  price: 300,   emoji: "🌲" },
+  { id: "north-central",     title: "North & Central Loop",       dates: "Jul 21 – 31",  days: 11, price: 1200,  emoji: "🐪" },
   { id: "altai-aug",         title: "Altai Tavan Bogd",           dates: "Aug 3 – 8",    days: 6,  price: 900,   emoji: "🏔️" },
-  { id: "terelj-aug",        title: "Terelj Escape",              dates: "Aug 11 – 13",  days: 3,  price: 350,   emoji: "🌲" },
-  { id: "southern-gobi",     title: "Southern Gobi + Central",    dates: "Aug 18 – 28",  days: 11, price: 1300,  emoji: "🏜️" },
+  { id: "terelj-aug",        title: "Terelj Escape",              dates: "Aug 11 – 13",  days: 3,  price: 300,   emoji: "🌲" },
+  { id: "southern-gobi",     title: "Southern Gobi + Central",    dates: "Aug 18 – 28",  days: 11, price: 1200,  emoji: "🏜️" },
 ];
 
 const formatUSD = (n) => `$${n.toLocaleString()}`;
@@ -358,7 +358,7 @@ export default function BookPage() {
                         checked={formData.agreeTerms}
                         onChange={onField}
                       >
-                        I&apos;ve read the <button type="button" onClick={() => document.getElementById("agreements")?.scrollIntoView({ behavior: "smooth" })} className="text-sand-300 underline underline-offset-4">booking terms</button> — 30% deposit confirms, balance 45 days out, cancellation schedule applies.
+                        I&apos;ve read the <button type="button" onClick={() => document.getElementById("agreements")?.scrollIntoView({ behavior: "smooth" })} className="text-sand-300 underline underline-offset-4">booking terms</button> — 30% deposit confirms, balance before departure (timing depends on how close we are).
                       </Checkbox>
                       <Checkbox
                         name="agreeInsurance"
@@ -478,7 +478,7 @@ export default function BookPage() {
               {[
                 {
                   t: "Deposit & payment",
-                  d: "A 30% deposit confirms your spot. The remaining balance is due 45 days before departure. We accept bank transfer (preferred — zero fees) or card (adds 3% processing). Late balances (inside 45 days) risk losing your spot.",
+                  d: "A 30% deposit confirms your spot. The remaining balance is due before departure — the exact timing depends on how close we are when you book (45 days out is the standard window for tours further away; full payment is required up front for tours less than ~2 weeks away). Bank transfer preferred (zero fees) or card (adds 3%).",
                 },
                 {
                   t: "Cancellation & refunds",
@@ -659,7 +659,7 @@ function FeeWaiverSection({ tourOptions }) {
 
           <div className="grid md:grid-cols-3 gap-4 mb-10">
             {[
-              { n: "As many as fit", l: "Open spots / season" },
+              { n: "As many as circumstances allow", l: "Open spots / season" },
               { n: "$0 – posted", l: "Sliding scale, no shame" },
               { n: "48h", l: "Personal reply" },
             ].map((s) => (

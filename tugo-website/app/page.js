@@ -33,14 +33,14 @@ const heroSlides = [
 ];
 
 const sliderTours = [
-  { slug: "terelj-escape",     title: "Terelj Escape",            emoji: "🌲", dates: "Jun 5 – 7",   days: 3,  price: "$350",   img: "/images/destinations/terelj-park.jpg",        accent: "text-teal-300" },
-  { slug: "gobi-glimpse",      title: "Gobi Glimpse + Central",   emoji: "🏜️", dates: "Jun 10 – 18", days: 9,  price: "$1,100", img: "/images/gallery/DSC08000.jpg",                accent: "text-orange-300" },
-  { slug: "khagiin-khar-nuur", title: "Horse Trek · Khagiin Khar",emoji: "🐎", dates: "Jun 22 – 27", days: 6,  price: "$700",   img: "/images/gallery/DSC01684.jpg",                accent: "text-lime-300", soldOut: true },
-  { slug: "playtime",          title: "Playtime Music Festival",  emoji: "🎶", dates: "Jul 1 – 4",   days: 4,  price: "$650",   img: "/images/playtime/poster.jpg",                 accent: "text-fuchsia-300" },
+  { slug: "terelj-escape",     title: "Terelj Escape",            emoji: "🌲", dates: "Jun 5 – 7",   days: 3,  price: "$300",   img: "/images/destinations/terelj-park.jpg",        accent: "text-teal-300" },
+  { slug: "gobi-glimpse",      title: "Gobi Glimpse + Central",   emoji: "🏜️", dates: "Jun 10 – 18", days: 9,  price: "$1,000", img: "/images/gallery/DSC08000.jpg",                accent: "text-orange-300" },
+  { slug: "khagiin-khar-nuur", title: "Horse Trek · Khagiin Khar",emoji: "🐎", dates: "Jun 22 – 27", days: 6,  price: "$900",   img: "/images/gallery/DSC01684.jpg",                accent: "text-lime-300", soldOut: true },
+  { slug: "playtime",          title: "Playtime Music Festival",  emoji: "🎶", dates: "Jul 1 – 4",   days: 4,  price: "$450",   img: "/images/playtime/poster.jpg",                 accent: "text-fuchsia-300" },
   { slug: "naadam",            title: "Naadam Festival",          emoji: "🏇", dates: "Jul 8 – 14",  days: 7,  price: "$700",   img: "/images/destinations/naadam-horse-racer.jpg", accent: "text-red-300" },
-  { slug: "north-central",     title: "North & Central Loop",     emoji: "🐪", dates: "Jul 21 – 31", days: 11, price: "$1,300", img: "/images/tours/north-central/DSC02464.jpg",    accent: "text-sky-300" },
+  { slug: "north-central",     title: "North & Central Loop",     emoji: "🐪", dates: "Jul 21 – 31", days: 11, price: "$1,200", img: "/images/tours/north-central/DSC02464.jpg",    accent: "text-sky-300" },
   { slug: "altai-tavan-bogd",  title: "Altai Tavan Bogd",         emoji: "🏔️", dates: "Aug 3 – 8",   days: 6,  price: "$900",   img: "/images/destinations/altai-peaks.jpg",        accent: "text-indigo-300" },
-  { slug: "southern-gobi",     title: "Southern Gobi + Central",  emoji: "🏜️", dates: "Aug 18 – 28", days: 11, price: "$1,300", img: "/images/destinations/khongoryn-1.jpg",        accent: "text-amber-300" },
+  { slug: "southern-gobi",     title: "Southern Gobi + Central",  emoji: "🏜️", dates: "Aug 18 – 28", days: 11, price: "$1,200", img: "/images/destinations/khongoryn-1.jpg",        accent: "text-amber-300" },
 ];
 
 // ============================================================================

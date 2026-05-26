@@ -392,7 +392,7 @@ export default function NorthCentralPage() {
             { l: "Dates", v: "Jul 21 – 31, 2026" },
             { l: "Days", v: "11" },
             { l: "Group", v: "5–7" },
-            { l: "Price", v: "$1,300" },
+            { l: "Price", v: "$1,200" },
             { l: "Lodging", v: "Camp + ger" },
             { l: "Pace", v: "Slow, drive days" },
           ].map((x) => (
@@ -804,7 +804,7 @@ export default function NorthCentralPage() {
             <div className="rounded-2xl border border-sky-800/30 bg-sky-900/10 p-6 md:p-8">
               <h3 className="font-display text-xl text-sand-100 mb-5 flex items-center gap-2">
                 <span className="text-sky-400">✓</span>
-                Included in $1,300
+                Included in $1,200
               </h3>
               <ul className="space-y-3 text-sand-300 text-sm leading-relaxed">
                 {included.map((i) => (
@@ -874,7 +874,7 @@ export default function NorthCentralPage() {
           >
             <Kicker>Come with me</Kicker>
             <h2 className="font-display text-3xl md:text-4xl text-sand-100 mb-4">
-              July 21 – 31, 2026 · $1,300
+              July 21 – 31, 2026 · $1,200
             </h2>
             <p className="text-sand-300 text-lg mb-8 max-w-xl leading-relaxed">
               Small group of 4 – 6. Bring a friend and save 15% each. Application, not checkout — I read every one personally and reply within 48 hours.
