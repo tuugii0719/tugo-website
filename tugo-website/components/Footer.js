@@ -19,7 +19,9 @@ export default function Footer() {
               <UlziiKnot color="var(--color-sand-400)" size={26} className="mt-4 opacity-60" />
             </div>
             <p className="text-sand-400 text-sm leading-relaxed max-w-xs">
-              Small-group adventure tours across Mongolia&apos;s wild landscapes. Not a tour company — a side quest worth taking.
+              It&apos;s not a tour company.
+              <br />
+              <span className="text-sand-200 italic">It&apos;s me, showing you around.</span>
             </p>
           </div>
 

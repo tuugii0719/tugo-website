@@ -285,7 +285,7 @@ export default function GobiGlimpsePage() {
           "Water bottle — we refill from a jerry can",
           "Photography: dust-sealed gear or a rain sleeve",
         ]}
-        note="If June fits better, Gobi Glimpse + Central (June 10 – 18) covers similar ground earlier in the season."
+        note="If June fits better, Gobi Glimpse + Central (June 10 – 19) covers similar ground earlier in the season."
       />
 
       <TourFAQ

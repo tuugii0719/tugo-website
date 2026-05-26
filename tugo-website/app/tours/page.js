@@ -39,6 +39,24 @@ const tours = [
     endDay: 7,
   },
   {
+    id: "booked-jun",
+    slug: null,
+    title: "Booked · private window",
+    emoji: "🚫",
+    dates: "Jun 20 – 27",
+    days: 8,
+    price: null,
+    groupSize: null,
+    status: "booked",
+    description: "I'm on a private trip that week — not running anything new.",
+    highlights: [],
+    theme: "booked",
+    startMonth: 5,
+    startDay: 20,
+    endMonth: 5,
+    endDay: 27,
+  },
+  {
     id: "southern-gobi",
     slug: "southern-gobi",
     title: "Southern Gobi + Central",
@@ -157,38 +175,38 @@ const tours = [
     slug: "gobi-glimpse",
     title: "Gobi Glimpse + Central",
     emoji: "🏜️",
-    dates: "June 10 – 18",
-    days: 9,
+    dates: "June 10 – 19",
+    days: 10,
     price: "$1,000",
     groupSize: "5–7",
     status: "available",
     description:
-      "Nine days through Umnugobi and central Mongolia — Yoliin Am ice canyon, camels at Khongoriin Els, the Flaming Cliffs, then central Mongolia on the way back with hot springs, horse riding, and family camps. The June glimpse of the Gobi loop.",
-    highlights: ["Yoliin Am", "Desert camp", "Khongoriin Els", "Hot springs", "Horse riding"],
+      "Ten days through Umnugobi and central Mongolia — Yoliin Am ice canyon, camels at Khongoriin Els, the Flaming Cliffs, then central Mongolia on the way back with a full horse-trek day in Tsetserleg, hot springs, and family camps. The June glimpse of the Gobi loop.",
+    highlights: ["Yoliin Am", "Desert camp", "Khongoriin Els", "Tsetserleg horse trek", "Hot springs"],
     theme: "southern-gobi",
     startMonth: 5,
     startDay: 10,
     endMonth: 5,
-    endDay: 18,
+    endDay: 19,
   },
   {
     id: "north-central",
     slug: "north-central",
     title: "North & Central Loop",
     emoji: "🐪",
-    dates: "July 21 – 31",
-    days: 11,
+    dates: "July 21 – Aug 1",
+    days: 12,
     price: "$1,200",
     groupSize: "5–7",
     status: "available",
     description:
-      "The northern route — Huuchin Bulgan ger camp, Khuvsgul Lake camping and hiking, the taiga, Zavkhan, hot springs, many lakes, a horse-riding day, and central Mongolia on the way home.",
-    highlights: ["Bulgan ger camp", "Khuvsgul Lake", "Taiga", "Hot springs", "Horse day"],
+      "The northern route — Huuchin Bulgan ger camp, Khuvsgul Lake camping and hiking, the taiga, a full horse-trek day in Zavkhan, hot springs, lakes, and central Mongolia on the way home.",
+    highlights: ["Bulgan ger camp", "Khuvsgul Lake", "Taiga", "Zavkhan horse trek", "Hot springs"],
     theme: "north-central",
     startMonth: 6,
     startDay: 21,
-    endMonth: 6,
-    endDay: 31,
+    endMonth: 7,
+    endDay: 1,
   },
 ];
 
@@ -266,6 +284,16 @@ const themeMap = {
     bar: "from-amber-500 to-amber-600",
     pattern: "dunes",
     short: "Gobi + Central",
+  },
+  booked: {
+    bg: "bg-sand-800/20",
+    bgHover: "group-hover:bg-sand-700/30",
+    border: "border-sand-600/30",
+    text: "text-sand-400",
+    dot: "bg-sand-500",
+    bar: "from-sand-700 to-sand-600",
+    pattern: "booked",
+    short: "Booked · private",
   },
 };
 
@@ -449,6 +477,13 @@ function DayCell({ monthIndex, day, isEmpty, onHover, onLeave, hoveredId, dayOfW
   const isAnchor = isFirstDay; // popover renders only on the first cell of the tour
   const isDimmed = hoveredId && hoveredId !== tour.id;
   const isSoldOut = tour.status === "sold_out";
+  const isBooked = tour.status === "booked";
+
+  // Cell becomes a Link for sellable tours; an inert div for the booked window.
+  const CellWrapper = tour.slug ? Link : "div";
+  const wrapperProps = tour.slug
+    ? { href: `/tours/${tour.slug}` }
+    : { "aria-disabled": "true" };
 
   const roundLeft = isFirstDay || dayOfWeek === 0;
   const roundRight = isLastDay || dayOfWeek === 6;
@@ -468,15 +503,17 @@ function DayCell({ monthIndex, day, isEmpty, onHover, onLeave, hoveredId, dayOfW
 
   return (
     <div className="relative aspect-square">
-      <Link
-        href={`/tours/${tour.slug}`}
+      <CellWrapper
+        {...wrapperProps}
         onMouseEnter={() => onHover(tour.id)}
         onMouseLeave={onLeave}
         aria-label={`${tour.title} · ${tour.dates}`}
         className={`
           relative w-full h-full flex flex-col items-center justify-center
           border ${theme.border} ${theme.bg} ${theme.bgHover} ${roundingClass}
-          transition-all duration-300 ease-out group cursor-pointer overflow-hidden
+          transition-all duration-300 ease-out group overflow-hidden
+          ${tour.slug ? "cursor-pointer" : "cursor-not-allowed"}
+          ${isBooked ? "border-dashed" : ""}
           ${isHovered ? "scale-[1.1] z-20 shadow-lg shadow-black/40" : ""}
           ${isDimmed ? "opacity-25" : "opacity-100"}
           ${isSoldOut ? "ring-1 ring-red-500/30" : ""}
@@ -511,7 +548,7 @@ function DayCell({ monthIndex, day, isEmpty, onHover, onLeave, hoveredId, dayOfW
           className={`absolute bottom-1 left-1 px-1 py-px text-[8px] uppercase tracking-wider leading-none rounded ${status.cls}`}
           title={status.label}
         >
-          {tour.status === "sold_out" ? "✕" : "!"}
+          {tour.status === "sold_out" ? "✕" : tour.status === "booked" ? "—" : "!"}
         </span>
       )}
 
@@ -524,7 +561,7 @@ function DayCell({ monthIndex, day, isEmpty, onHover, onLeave, hoveredId, dayOfW
           end
         </span>
       )}
-      </Link>
+      </CellWrapper>
 
       {/* Popover renders inside the cell, only on the FIRST day of the tour, only when hovered */}
       <AnimatePresence>
@@ -554,6 +591,7 @@ const statusConfig = {
   available: { cls: "bg-emerald-500/15 text-emerald-300 border-emerald-500/30", label: "Spots Available", short: "Available" },
   limited:   { cls: "bg-amber-500/15 text-amber-300 border-amber-500/30",       label: "Limited Spots",   short: "Limited" },
   sold_out:  { cls: "bg-red-500/15 text-red-300 border-red-500/30",             label: "Fully Booked",    short: "Fully Booked" },
+  booked:    { cls: "bg-sand-700/20 text-sand-300 border-sand-600/40",          label: "Booked · private", short: "Booked" },
 };
 
 // ============================================================================
@@ -563,6 +601,34 @@ const statusConfig = {
 function TourPopover({ tour, onMouseEnter, onMouseLeave }) {
   const theme = themeMap[tour.theme];
   const s = statusConfig[tour.status];
+
+  // Booked window: render a compact, non-clickable popover.
+  if (tour.status === "booked") {
+    return (
+      <motion.div
+        initial={{ opacity: 0, y: -8, scale: 0.96 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        exit={{ opacity: 0, y: -8, scale: 0.96 }}
+        transition={{ duration: 0.18, ease: "easeOut" }}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+        className="pointer-events-auto absolute z-50"
+      >
+        <div className="block bg-night-900/95 backdrop-blur-lg border border-dashed border-sand-700/50 rounded-2xl shadow-2xl overflow-hidden w-[280px] max-w-[92vw] p-5">
+          <p className={`text-[10px] tracking-[0.18em] uppercase mb-2 ${theme.text}`}>
+            {theme.short}
+          </p>
+          <h3 className="font-display text-lg text-sand-100 leading-tight mb-2">
+            <span className="mr-2">{tour.emoji}</span>
+            {tour.dates}
+          </h3>
+          <p className="text-sand-400 text-[13px] leading-relaxed">
+            {tour.description}
+          </p>
+        </div>
+      </motion.div>
+    );
+  }
 
   return (
     <motion.div
@@ -719,17 +785,24 @@ function Legend({ onHover, onLeave, hoveredId }) {
             const status = statusConfig[tour.status];
             const showStatus = tour.status !== "available";
             const active = hoveredId === tour.id;
+            const RowWrapper = tour.slug ? Link : "div";
+            const rowProps = tour.slug
+              ? { href: `/tours/${tour.slug}` }
+              : { "aria-disabled": "true" };
             return (
-              <Link
+              <RowWrapper
                 key={tour.id}
-                href={`/tours/${tour.slug}`}
+                {...rowProps}
                 onMouseEnter={() => onHover(tour.id)}
                 onMouseLeave={onLeave}
                 className={`
                   group flex items-center gap-3 px-3 py-2.5 rounded-xl border transition-all
+                  ${tour.slug ? "" : "cursor-not-allowed"}
                   ${active
                     ? "border-sand-500/60 bg-night-900/70 scale-[1.02] shadow-lg shadow-black/30"
-                    : "border-sand-800/40 bg-night-900/40 hover:border-sand-600/50 hover:bg-night-900/70"}
+                    : tour.slug
+                      ? "border-sand-800/40 bg-night-900/40 hover:border-sand-600/50 hover:bg-night-900/70"
+                      : "border-sand-800/40 border-dashed bg-night-900/20"}
                 `}
               >
                 <span className={`shrink-0 w-2 h-2 rounded-full ${theme.dot}`} />
@@ -739,8 +812,18 @@ function Legend({ onHover, onLeave, hoveredId }) {
                     {tour.title}
                   </p>
                   <p className="text-sand-500 text-[11px] mt-0.5">
-                    {tour.dates} · {tour.days}d ·{" "}
-                    <span className="text-sand-300 font-medium">{tour.price}</span>
+                    {tour.dates}
+                    {tour.days != null && (
+                      <>
+                        {" · "}{tour.days}d
+                      </>
+                    )}
+                    {tour.price && (
+                      <>
+                        {" · "}
+                        <span className="text-sand-300 font-medium">{tour.price}</span>
+                      </>
+                    )}
                   </p>
                 </div>
                 {showStatus && status && (
@@ -750,7 +833,7 @@ function Legend({ onHover, onLeave, hoveredId }) {
                     {status.short}
                   </span>
                 )}
-              </Link>
+              </RowWrapper>
             );
           })}
         </div>
@@ -811,13 +894,6 @@ function CalendarSection() {
             </p>
           </div>
         </FadeIn>
-
-        <div className="max-w-2xl mx-auto mb-8">
-          <div className="rounded-xl border border-dashed border-sand-700/40 bg-night-900/30 px-5 py-3 flex items-center justify-center gap-3 text-sand-400 text-xs md:text-sm">
-            <span className="text-base">🚫</span>
-            <span><span className="text-sand-300 font-medium">Jun 20–27 · booked.</span> I&apos;m on a private trip that week — not running anything new.</span>
-          </div>
-        </div>
 
         <Legend onHover={onHover} onLeave={onLeave} hoveredId={hoveredId} />
 
@@ -957,8 +1033,8 @@ export default function ToursPage() {
               },
               {
                 title: "Grand Expeditions",
-                duration: "6–11 Days",
-                price: "From $1,000",
+                duration: "6–12 Days",
+                price: "From $900",
                 items: ["Altai Tavan Bogd · Aug", "North & Central Loop"],
                 desc: "The flagship tours — western peaks with Kazakh eagle hunters, and the long flexible north route through taiga, Khuvsgul, and Zavkhan.",
                 color: "from-indigo-500 to-sky-600",
