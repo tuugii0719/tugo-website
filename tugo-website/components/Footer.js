@@ -89,7 +89,27 @@ export default function Footer() {
               Privacy &amp; Terms
             </Link>
           </div>
-          <p className="text-sand-600 text-xs italic">Designed with adventure in mind.</p>
+          <p className="text-sand-600 text-xs italic">
+            Built by{" "}
+            <a
+              href="https://www.instagram.com/tugi.mongolia/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-sand-300 transition-colors"
+            >
+              Tugi
+            </a>
+            {" "}&amp;{" "}
+            <a
+              href="https://claude.com/claude-code"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-sand-300 transition-colors"
+            >
+              Claude
+            </a>
+            .
+          </p>
         </div>
       </div>
     </footer>
