@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Instagram, Mail, MessageCircle } from "lucide-react";
 import { UlziiKnot } from "./Ornaments";
 
 export default function Footer() {
@@ -48,11 +49,32 @@ export default function Footer() {
           <div>
             <h4 className="text-sand-300 text-xs uppercase tracking-[0.2em] mb-4">Connect</h4>
             <div className="flex flex-col gap-3 text-sm text-sand-400">
-              <a href="mailto:tuklobin@gmail.com" className="hover:text-sand-200 transition-colors">
+              <a
+                href="mailto:tuklobin@gmail.com"
+                className="inline-flex items-center gap-2 hover:text-sand-200 transition-colors"
+              >
+                <Mail size={16} strokeWidth={1.75} className="text-sand-500" />
                 tuklobin@gmail.com
               </a>
-              <a href="https://www.instagram.com/mongoladventure/" target="_blank" rel="noopener noreferrer" className="hover:text-sand-200 transition-colors">
-                @mongoladventure
+              <a
+                href="https://www.instagram.com/tugi.mongolia/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Tugi on Instagram"
+                className="inline-flex items-center gap-2 hover:text-sand-200 transition-colors"
+              >
+                <Instagram size={16} strokeWidth={1.75} className="text-sand-500" />
+                @tugi.mongolia
+              </a>
+              <a
+                href="https://wa.me/66818910766"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Message Tugi on WhatsApp"
+                className="inline-flex items-center gap-2 hover:text-sand-200 transition-colors"
+              >
+                <MessageCircle size={16} strokeWidth={1.75} className="text-sand-500" />
+                WhatsApp · +66 81 891 0766
               </a>
             </div>
           </div>

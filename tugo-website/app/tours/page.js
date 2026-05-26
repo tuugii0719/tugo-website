@@ -58,25 +58,6 @@ const tours = [
     endDay: 28,
   },
   {
-    id: "khagiin-khar-nuur",
-    slug: "khagiin-khar-nuur",
-    title: "Horse Trek · Khagiin Khar Nuur",
-    emoji: "🐎",
-    dates: "June 22 – 27",
-    days: 6,
-    price: "$900",
-    groupSize: "5–7",
-    status: "sold_out",
-    description:
-      "Starting from UB. Horseback into the Khan Khentii taiga to Khagiin Khar Nuur — the Pearl of the Taiga. Ger stays, tent camps, riding through forest and over Khavirga Pass, a night by the alpine lake.",
-    highlights: ["Terelj ger", "Khavirga Pass", "Khagiin Khar Lake", "Chinggis statue"],
-    theme: "khentii",
-    startMonth: 5,
-    startDay: 22,
-    endMonth: 5,
-    endDay: 27,
-  },
-  {
     id: "playtime",
     slug: "playtime",
     title: "Playtime Music Festival",
@@ -225,16 +206,6 @@ const themeMap = {
     bar: "from-teal-500 to-teal-600",
     pattern: "terelj",
     short: "Forest Weekend",
-  },
-  khentii: {
-    bg: "bg-lime-500/25",
-    bgHover: "group-hover:bg-lime-500/50",
-    border: "border-lime-400/40",
-    text: "text-lime-200",
-    dot: "bg-lime-400",
-    bar: "from-lime-500 to-lime-600",
-    pattern: "horse",
-    short: "Taiga Horse Trek",
   },
   "southern-gobi": {
     bg: "bg-orange-500/30",
@@ -836,10 +807,17 @@ function CalendarSection() {
               Pick Your Month
             </h2>
             <p className="text-sand-400 max-w-2xl mx-auto leading-relaxed">
-              Ten departures across June, July, and August — weekend escapes, festivals, horse treks into the taiga, long flagship expeditions. Skim the agenda below for the full picture, or scroll the calendar to see how it lines up. Hover any highlighted day to peek inside.
+              Nine departures across June, July, and August — weekend escapes, festivals, long flagship expeditions. Skim the agenda below for the full picture, or scroll the calendar to see how it lines up. Hover any highlighted day to peek inside.
             </p>
           </div>
         </FadeIn>
+
+        <div className="max-w-2xl mx-auto mb-8">
+          <div className="rounded-xl border border-dashed border-sand-700/40 bg-night-900/30 px-5 py-3 flex items-center justify-center gap-3 text-sand-400 text-xs md:text-sm">
+            <span className="text-base">🚫</span>
+            <span><span className="text-sand-300 font-medium">Jun 20–27 · booked.</span> I&apos;m on a private trip that week — not running anything new.</span>
+          </div>
+        </div>
 
         <Legend onHover={onHover} onLeave={onLeave} hoveredId={hoveredId} />
 
@@ -923,7 +901,7 @@ export default function ToursPage() {
             <p className="text-xs tracking-[0.3em] uppercase text-sand-400 mb-4">2026 SEASON</p>
             <h1 className="font-display text-4xl md:text-6xl text-white mb-4">Your Journey Starts Here</h1>
             <p className="text-sand-300 max-w-xl mx-auto px-6">
-              Three months, ten departures. Pick a date on the calendar and we&apos;ll take you there.
+              Three months, nine departures. Pick a date on the calendar and we&apos;ll take you there.
             </p>
           </motion.div>
         </div>

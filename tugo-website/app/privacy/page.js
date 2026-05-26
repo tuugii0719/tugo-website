@@ -89,8 +89,8 @@ export default function PrivacyPage() {
               tuklobin@gmail.com
             </a>
             <br />
-            <a href="https://www.instagram.com/mongoladventure/" target="_blank" rel="noopener noreferrer" className="text-sand-300 underline underline-offset-4 hover:text-sand-100">
-              @mongoladventure
+            <a href="https://www.instagram.com/tugi.mongolia/" target="_blank" rel="noopener noreferrer" className="text-sand-300 underline underline-offset-4 hover:text-sand-100">
+              @tugi.mongolia
             </a>
           </p>
         </section>

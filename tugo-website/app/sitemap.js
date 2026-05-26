@@ -3,7 +3,6 @@ const SITE_URL = "https://wildmongoliatugi.com";
 const tourSlugs = [
   "altai-tavan-bogd",
   "gobi-glimpse",
-  "khagiin-khar-nuur",
   "naadam",
   "north-central",
   "playtime",

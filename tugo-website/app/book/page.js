@@ -17,7 +17,7 @@ const PAIR_DISCOUNT = 0.15; // 15% off per person when booking a pair
 const tourOptions = [
   { id: "terelj-jun",        title: "Terelj Escape",              dates: "Jun 5 – 7",    days: 3,  price: 300,   emoji: "🌲" },
   { id: "gobi-glimpse",      title: "Gobi Glimpse + Central",     dates: "Jun 10 – 18",  days: 9,  price: 1000,  emoji: "🏜️" },
-  { id: "khagiin-khar-nuur", title: "Horse Trek · Khagiin Khar",  dates: "Jun 22 – 27",  days: 6,  price: 900,   emoji: "🐎", soldOut: true },
+  { id: "booked-jun",        title: "Booked · private window",    dates: "Jun 20 – 27",  days: null, price: null, emoji: "🚫", booked: true },
   { id: "playtime",          title: "Playtime Music Festival",    dates: "Jul 1 – 4",    days: 4,  price: 450,   emoji: "🎶" },
   { id: "naadam",            title: "Naadam Festival",            dates: "Jul 8 – 14",   days: 7,  price: 700,   emoji: "🏇" },
   { id: "terelj-jul",        title: "Terelj Escape",              dates: "Jul 16 – 18",  days: 3,  price: 300,   emoji: "🌲" },
@@ -84,7 +84,8 @@ export default function BookPage() {
     agreeTerms: false,
     agreeInsurance: false,
   });
-  const [submitted, setSubmitted] = useState(false);
+  // null = not submitted, "sent" = Formspree confirmed, "fallback" = mailto fired
+  const [submitted, setSubmitted] = useState(null);
 
   const selectedTour = tourOptions.find((t) => t.id === selectedTourId);
   const perPerson = selectedTour
@@ -116,8 +117,10 @@ export default function BookPage() {
     // the user can still send the application from their own inbox.
     if (!result.ok && typeof window !== "undefined") {
       window.location.href = buildMailto("booking", payload);
+      setSubmitted("fallback");
+    } else {
+      setSubmitted("sent");
     }
-    setSubmitted(true);
   };
 
   const resetForm = () => {
@@ -128,7 +131,7 @@ export default function BookPage() {
       dietary: "", experience: "", priorTravel: "", whyThis: "",
       agreeTerms: false, agreeInsurance: false,
     });
-    setSubmitted(false);
+    setSubmitted(null);
   };
 
   return (
@@ -181,6 +184,39 @@ export default function BookPage() {
         </div>
       </section>
 
+      {/* FIRST-SEASON NOTE */}
+      <section className="border-b border-sand-900/30">
+        <div className="max-w-3xl mx-auto px-6 py-10">
+          <div className="rounded-xl border border-sand-800/40 bg-night-900/30 p-6 md:p-7">
+            <p className="text-sand-400 text-[10px] tracking-[0.3em] uppercase mb-3">
+              Before you pick
+            </p>
+            <p className="text-sand-200 text-sm md:text-base leading-relaxed mb-4">
+              2026 is my first full season hosting. I&apos;ve travelled these routes many times solo and with friends, and ran one paid trip last year. You&apos;re applying directly to the person who&apos;ll be on the road with you.
+            </p>
+            <p className="text-sand-500 text-xs md:text-sm">
+              Questions before applying?{" "}
+              <a
+                href="https://wa.me/66818910766"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-emerald-300 hover:text-emerald-200 underline underline-offset-4 transition"
+              >
+                Message me on WhatsApp
+              </a>
+              {" "}or email{" "}
+              <a
+                href="mailto:tuklobin@gmail.com"
+                className="text-sand-200 hover:text-sand-100 underline underline-offset-4 transition"
+              >
+                tuklobin@gmail.com
+              </a>
+              .
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* TOUR PICKER */}
       <section className="max-w-6xl mx-auto px-6 py-20">
         <FadeIn>
@@ -190,13 +226,42 @@ export default function BookPage() {
               Pick your tour
             </h2>
             <p className="text-sand-400 max-w-xl mx-auto">
-              Ten departures across June, July, and August.{" "}
+              Nine departures across June, July, and August.{" "}
               <span className="text-sand-200">Bring a friend — save 15% each.</span>
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {tourOptions.map((t) => {
+              if (t.booked) {
+                return (
+                  <div
+                    key={t.id}
+                    aria-disabled="true"
+                    className="text-left p-5 rounded-xl border border-dashed border-sand-700/40 bg-night-900/20 opacity-75 cursor-not-allowed"
+                  >
+                    <div className="flex items-start justify-between gap-4">
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-center gap-2 mb-1">
+                          <span className="text-xl">{t.emoji}</span>
+                          <h3 className="font-display text-lg text-sand-200 truncate">{t.title}</h3>
+                        </div>
+                        <p className="text-sand-500 text-xs tracking-wider uppercase">
+                          {t.dates}
+                        </p>
+                        <p className="text-sand-500 text-xs italic mt-1.5">
+                          I&apos;m booked elsewhere this week — pick another date.
+                        </p>
+                      </div>
+                      <div className="text-right whitespace-nowrap">
+                        <p className="text-[10px] tracking-[0.2em] uppercase text-sand-500">
+                          Unavailable
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                );
+              }
               const active = t.id === selectedTourId;
               const pairPrice = Math.round(t.price * (1 - PAIR_DISCOUNT));
               return (
@@ -400,17 +465,17 @@ export default function BookPage() {
           )}
         </AnimatePresence>
 
-        {/* SUCCESS */}
-        {submitted && (
+        {/* SUCCESS — Formspree confirmed */}
+        {submitted === "sent" && (
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             className="mt-12 rounded-2xl border border-emerald-800/30 bg-emerald-900/10 p-10 text-center"
           >
-            <p className="text-emerald-300 text-xs tracking-[0.3em] uppercase mb-3">✓ Sent</p>
+            <p className="text-emerald-300 text-xs tracking-[0.3em] uppercase mb-3">✓ Application received</p>
             <h3 className="font-display text-2xl text-sand-100 mb-3">Thanks — your application is in.</h3>
             <p className="text-sand-400 max-w-lg mx-auto">
-              I read every one personally. Expect a reply within 48 hours. If you don&apos;t see anything, check spam, then message tuklobin@gmail.com.
+              I read every one personally. Expect a reply within 48 hours.
             </p>
             <button
               onClick={resetForm}
@@ -418,6 +483,36 @@ export default function BookPage() {
             >
               Apply to another tour
             </button>
+          </motion.div>
+        )}
+
+        {/* FALLBACK — Formspree unavailable, mailto was opened */}
+        {submitted === "fallback" && (
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="mt-12 rounded-2xl border border-amber-800/30 bg-amber-900/10 p-10 text-center"
+          >
+            <p className="text-amber-300 text-xs tracking-[0.3em] uppercase mb-3">One more step</p>
+            <h3 className="font-display text-2xl text-sand-100 mb-3">Your email client should have opened.</h3>
+            <p className="text-sand-400 max-w-lg mx-auto mb-4">
+              Hit send on the draft to finish the application. If nothing opened, email me directly —
+              I&apos;ll reply within 48 hours either way.
+            </p>
+            <a
+              href="mailto:tuklobin@gmail.com"
+              className="inline-block bg-sand-400 hover:bg-sand-300 text-night-950 px-6 py-2.5 text-sm uppercase tracking-[0.15em] font-semibold rounded-sm transition"
+            >
+              Email tuklobin@gmail.com
+            </a>
+            <div className="mt-4">
+              <button
+                onClick={resetForm}
+                className="text-sand-500 text-xs uppercase tracking-[0.15em] hover:text-sand-200 transition"
+              >
+                Start over
+              </button>
+            </div>
           </motion.div>
         )}
       </section>
@@ -547,7 +642,7 @@ export default function BookPage() {
                 },
                 {
                   q: "Wifi & phone?",
-                  a: "Ulaanbaatar has excellent wifi and 4G. Outside the city, signal is intermittent. On remote tours (Altai, Khuvsgul, horse trek) expect several days fully off-grid. If you need to stay reachable, let us know — satellite messenger can be arranged.",
+                  a: "Ulaanbaatar has excellent wifi and 4G. Outside the city, signal is intermittent. On the remote tours (Altai and the North &amp; Central Loop through Khuvsgul) expect several days fully off-grid. If you need to stay reachable, let me know — a satellite messenger can be arranged.",
                 },
                 {
                   q: "Meals & dietary stuff?",
@@ -555,7 +650,7 @@ export default function BookPage() {
                 },
                 {
                   q: "How physical is it?",
-                  a: "Ranges by tour. Terelj Escape is easy. North & Central is moderate (long drives, some hiking). Altai and Horse Trek are the most demanding — altitude and saddle time. You don't need to be an athlete; you do need to be OK with discomfort.",
+                  a: "Ranges by tour. Terelj Escape is easy. Southern Gobi is moderate (long drives, some hiking). Altai and the North & Central Loop are the most demanding — altitude, long days, and a lot of road. You don't need to be an athlete; you do need to be OK with discomfort.",
                 },
                 {
                   q: "Can I join part of a tour?",
@@ -609,7 +704,8 @@ export default function BookPage() {
 
 function FeeWaiverSection({ tourOptions }) {
   const [open, setOpen] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
+  // null = not submitted, "sent" = Formspree confirmed, "fallback" = mailto fired
+  const [submitted, setSubmitted] = useState(null);
   const [data, setData] = useState({
     name: "", email: "", country: "", pronouns: "",
     tour: "",
@@ -630,16 +726,18 @@ function FeeWaiverSection({ tourOptions }) {
   const onSubmit = async (e) => {
     e.preventDefault();
     if (!data.commit) return;
-    await submitApplication("waiver", data);
-    if (typeof window !== "undefined") {
+    const result = await submitApplication("waiver", data);
+    if (!result.ok && typeof window !== "undefined") {
       window.location.href = buildMailto("waiver", data);
+      setSubmitted("fallback");
+    } else {
+      setSubmitted("sent");
     }
-    setSubmitted(true);
   };
 
   const reset = () => {
     setOpen(false);
-    setSubmitted(false);
+    setSubmitted(null);
     setData({ name: "", email: "", country: "", pronouns: "", tour: "", contribution: "", why: "", what: "", context: "", vibesProof: "", links: "", commit: false });
   };
 
@@ -823,7 +921,7 @@ function FeeWaiverSection({ tourOptions }) {
             )}
           </AnimatePresence>
 
-          {submitted && (
+          {submitted === "sent" && (
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -840,6 +938,34 @@ function FeeWaiverSection({ tourOptions }) {
               >
                 Close
               </button>
+            </motion.div>
+          )}
+
+          {submitted === "fallback" && (
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="mt-6 rounded-2xl border border-amber-800/30 bg-amber-900/10 p-10 text-center"
+            >
+              <p className="text-amber-300 text-xs tracking-[0.3em] uppercase mb-3">One more step</p>
+              <h3 className="font-display text-2xl text-sand-100 mb-3">Your email client should have opened.</h3>
+              <p className="text-sand-400 max-w-lg mx-auto mb-4">
+                Hit send on the draft to finish the application. If nothing opened, email me directly.
+              </p>
+              <a
+                href="mailto:tuklobin@gmail.com"
+                className="inline-block bg-sand-400 hover:bg-sand-300 text-night-950 px-6 py-2.5 text-sm uppercase tracking-[0.15em] font-semibold rounded-sm transition"
+              >
+                Email tuklobin@gmail.com
+              </a>
+              <div className="mt-4">
+                <button
+                  onClick={reset}
+                  className="text-sand-500 text-xs uppercase tracking-[0.15em] hover:text-sand-200 transition"
+                >
+                  Close
+                </button>
+              </div>
             </motion.div>
           )}
         </FadeIn>

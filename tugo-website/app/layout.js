@@ -18,7 +18,7 @@ export const metadata = {
       "Small-group adventure tours across Mongolia — Altai peaks, Gobi dunes, Khövsgöl lake, Naadam, Playtime festival.",
     url: "/",
     siteName: "Wild Mongolia with Tugi",
-    images: ["/og.jpg"],
+    images: ["/images/tours/north-central/DSC02464-hero.jpg"],
     locale: "en_US",
     type: "website",
   },
@@ -27,7 +27,7 @@ export const metadata = {
     title: "Wild Mongolia with Tugi",
     description:
       "Small-group adventure tours across Mongolia — Altai peaks, Gobi dunes, Khövsgöl lake.",
-    images: ["/og.jpg"],
+    images: ["/images/tours/north-central/DSC02464-hero.jpg"],
   },
   robots: { index: true, follow: true },
 };

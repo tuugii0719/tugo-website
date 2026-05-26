@@ -110,7 +110,7 @@ export default function TerelJEscapePage() {
         title="The easiest yes of the season."
         paragraphs={[
           "Ninety minutes from Ulaanbaatar and you&apos;re in a different country. Terelj is where I take my own family — the granite stacks in the forest, the little meandering river, the one ger camp that makes the best khorkhog on the shoulder of Khentii.",
-          "This is the tour I run three times a year on purpose. It&apos;s short, it&apos;s warm, it&apos;s any-age. First-time travellers come out of this one ready for the bigger trips. Longer-time Mongolia friends come back just to sit by the fire.",
+          "This is the tour I&apos;m running three times in 2026 on purpose. It&apos;s short, it&apos;s warm, it&apos;s any-age. The easy yes for a first visit to Mongolia — and the easiest weekend to bolt onto a longer trip.",
           "If the rest of the calendar is too much, this is the one. I can all but guarantee you&apos;ll want to stay an extra night.",
         ]}
       />

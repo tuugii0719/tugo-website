@@ -275,7 +275,7 @@ export default function SouthernGobiPage() {
           { q: "Can I skip the camel ride?", a: "Yes — some travellers prefer a dune walk at sunset instead. No judgement, no price difference." },
           { q: "What&apos;s the temperature range?", a: "Gobi in June: 15–28 °C days, 5–12 °C nights. Central: 12–24 °C days, 5–15 °C nights. Wind is the bigger factor — it can turn a warm day cold in 10 minutes." },
           { q: "Is this good for photographers?", a: "Gobi at golden hour (dunes + Flaming Cliffs) is unreal. Long days with dust mean lens cleaning kit, not just a cloth. A dust-sealed zoom is ideal." },
-          { q: "Can I combine this with another tour?", a: "It ends Jun 23. The Horse Trek (Jun 25–30) starts 2 days later — tight but doable. Or the July 1 Playtime. Ask and I'll sort." },
+          { q: "Can I combine this with another tour?", a: "Playtime starts Jul 1 — a few days of rest in UB between the two works well. Naadam (Jul 8–14) is the other natural pairing. Ask and I'll sort." },
         ]}
       />
 
