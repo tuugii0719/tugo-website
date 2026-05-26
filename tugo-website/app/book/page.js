@@ -82,7 +82,6 @@ export default function BookPage() {
     priorTravel: "",
     whyThis: "",
     agreeTerms: false,
-    agreePace: false,
     agreeInsurance: false,
   });
   const [submitted, setSubmitted] = useState(false);
@@ -100,7 +99,7 @@ export default function BookPage() {
     setFormData((p) => ({ ...p, [name]: type === "checkbox" ? checked : value }));
   };
 
-  const allAgreed = formData.agreeTerms && formData.agreePace && formData.agreeInsurance;
+  const allAgreed = formData.agreeTerms && formData.agreeInsurance;
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -127,7 +126,7 @@ export default function BookPage() {
     setFormData({
       name: "", email: "", country: "", phone: "", partnerName: "",
       dietary: "", experience: "", priorTravel: "", whyThis: "",
-      agreeTerms: false, agreePace: false, agreeInsurance: false,
+      agreeTerms: false, agreeInsurance: false,
     });
     setSubmitted(false);
   };
@@ -359,21 +358,14 @@ export default function BookPage() {
                         checked={formData.agreeTerms}
                         onChange={onField}
                       >
-                        I&apos;ve read the <button type="button" onClick={() => document.getElementById("agreements")?.scrollIntoView({ behavior: "smooth" })} className="text-sand-300 underline underline-offset-4">booking terms</button> — 30% deposit to confirm, balance 45 days before departure, cancellation schedule applies.
-                      </Checkbox>
-                      <Checkbox
-                        name="agreePace"
-                        checked={formData.agreePace}
-                        onChange={onField}
-                      >
-                        I understand this is a <em>small-group adventure</em>, not luxury tourism — there will be camping, long drive days, variable weather, and limited comms.
+                        I&apos;ve read the <button type="button" onClick={() => document.getElementById("agreements")?.scrollIntoView({ behavior: "smooth" })} className="text-sand-300 underline underline-offset-4">booking terms</button> — 30% deposit confirms, balance 45 days out, cancellation schedule applies.
                       </Checkbox>
                       <Checkbox
                         name="agreeInsurance"
                         checked={formData.agreeInsurance}
                         onChange={onField}
                       >
-                        I&apos;ll travel with insurance covering medical, evacuation, and trip cancellation — and if I don&apos;t have a plan yet, I&apos;ll let Tugi know so we can sort one together.
+                        I&apos;ll travel with insurance (medical, evacuation, trip cancellation). If I don&apos;t have a plan, I&apos;ll tell Tugi and we&apos;ll sort it.
                       </Checkbox>
                     </div>
                   </div>
@@ -400,7 +392,7 @@ export default function BookPage() {
                     </button>
                   </div>
                   {!allAgreed && (
-                    <p className="text-xs text-sand-600">Tick all three agreements to enable submit.</p>
+                    <p className="text-xs text-sand-600">Tick both agreements to enable submit.</p>
                   )}
                 </form>
               </div>

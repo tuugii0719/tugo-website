@@ -73,17 +73,17 @@ export default function NaadamPage() {
                 <div className="absolute -inset-4 bg-gradient-to-br from-red-500/40 via-amber-500/30 to-orange-500/40 rounded-3xl blur-2xl" />
                 <div className="relative grid grid-cols-2 grid-rows-2 gap-2">
                   <div className="relative col-span-2 aspect-[16/10] rounded-2xl overflow-hidden border-2 border-white/20 shadow-2xl">
-                    <Image src={`${D}/naadam-horse-race.jpg`} alt="Naadam horse race" fill className="object-cover" priority />
+                    <Image src="/images/tugi/naadam-wide-field.jpg" alt="A local Naadam field, opening morning — cars, gers, tents along the steppe" fill className="object-cover" priority sizes="(max-width: 1024px) 100vw, 40vw" />
                   </div>
                   <div className="relative aspect-square rounded-2xl overflow-hidden border-2 border-white/20 shadow-xl">
                     <Image src={`${D}/naadam-wrestling.jpg`} alt="Mongolian wrestling at Naadam" fill className="object-cover" />
                   </div>
                   <div className="relative aspect-square rounded-2xl overflow-hidden border-2 border-white/20 shadow-xl">
-                    <Image src={`${D}/naadam-archery.jpg`} alt="Naadam archery" fill className="object-cover" />
+                    <Image src={`${D}/naadam-horse-race.jpg`} alt="Naadam horse race" fill className="object-cover" />
                   </div>
                 </div>
                 <p className="text-center text-amber-300/70 text-[10px] tracking-[0.3em] uppercase mt-4">
-                  The three manly sports
+                  Last year&apos;s field · the wrestling · the race
                 </p>
               </motion.div>
             </div>

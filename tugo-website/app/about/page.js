@@ -3,24 +3,54 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { Camera, HeartHandshake, Compass, UsersRound } from "lucide-react";
 import { FadeIn } from "@/components/animations/FadeIn";
+import { GradientCard } from "@/components/ui/GradientCard";
 
 const values = [
   {
     title: "Through the Lens",
-    body: "From golden steppes to weathered faces, capturing life in its most natural form is something I treasure. Every photo is a story, and Mongolia has so many stories worth telling.",
+    description:
+      "From golden steppes to weathered faces, capturing life in its most natural form is something I treasure. Every photo is a story, and Mongolia has so many stories worth telling.",
+    badgeText: "How I see it",
+    badgeColor: "#F59E0B",
+    gradient: "amber",
+    icon: Camera,
+    ctaText: "See the gallery",
+    ctaHref: "/gallery",
   },
   {
     title: "A Life of Service",
-    body: "My grandparents taught me to lead with empathy. Whether offering a warm meal or guiding someone through unfamiliar terrain, I find joy in caring for others.",
+    description:
+      "My grandparents taught me to lead with empathy. Whether offering a warm meal or guiding someone through unfamiliar terrain, I find joy in caring for others.",
+    badgeText: "Where I find true meaning",
+    badgeColor: "#F43F5E",
+    gradient: "rose",
+    icon: HeartHandshake,
+    ctaText: "How I host trips",
+    ctaHref: "/why-tour-tugo",
   },
   {
     title: "Fuel for the Soul",
-    body: "Give me a dusty road, a new horizon, or an untouched valley, and I&apos;m home. I live for the thrill of discovery — long drives, hiking into the wild, conversations with locals along the way.",
+    description:
+      "Give me a dusty road, a new horizon, or an untouched valley, and I'm home. I live for the thrill of discovery — long drives, hiking into the wild, conversations with locals along the way.",
+    badgeText: "What I live for",
+    badgeColor: "#10B981",
+    gradient: "emerald",
+    icon: Compass,
+    ctaText: "See the routes",
+    ctaHref: "/tours",
   },
   {
     title: "People, Always",
-    body: "Making a friend on the road feels like a little gift from the universe. Those unexpected connections are the heartbeat of every great journey.",
+    description:
+      "Making a friend on the road feels like a little gift from the universe. Those unexpected connections are the heartbeat of every great journey.",
+    badgeText: "The point of it all",
+    badgeColor: "#38BDF8",
+    gradient: "sky",
+    icon: UsersRound,
+    ctaText: "Come along",
+    ctaHref: "/book",
   },
 ];
 
@@ -63,9 +93,10 @@ export default function AboutPage() {
             <div className="lg:sticky lg:top-32">
               <div className="relative aspect-[3/4] overflow-hidden rounded ring-1 ring-sand-800/20">
                 <Image
-                  src="/images/about/guide.jpg"
-                  alt="Tugi"
+                  src="/images/tugi/tugi-on-horse.jpg"
+                  alt="Tugi on horseback in the central Mongolian steppe"
                   fill
+                  sizes="(max-width: 1024px) 100vw, 40vw"
                   className="object-cover"
                 />
               </div>
@@ -113,21 +144,19 @@ export default function AboutPage() {
             More Than a Guide
           </h2>
 
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:gap-8">
             {values.map((value, index) => (
-              <FadeIn
-                key={index}
-                delay={index * 0.1}
-                direction="up"
-              >
-                <div className="border border-sand-900/15 bg-night-950/60 p-8 transition-all hover:border-sand-800/30">
-                  <h3 className="mb-3 font-display text-xl text-sand-100">
-                    {value.title}
-                  </h3>
-                  <p className="text-sm leading-relaxed text-sand-400">
-                    {value.body}
-                  </p>
-                </div>
+              <FadeIn key={value.title} delay={index * 0.08} direction="up">
+                <GradientCard
+                  gradient={value.gradient}
+                  badgeText={value.badgeText}
+                  badgeColor={value.badgeColor}
+                  title={value.title}
+                  description={value.description}
+                  ctaText={value.ctaText}
+                  ctaHref={value.ctaHref}
+                  Icon={value.icon}
+                />
               </FadeIn>
             ))}
           </div>
@@ -149,10 +178,58 @@ export default function AboutPage() {
             </blockquote>
           </div>
 
-          <div className="flex flex-col gap-4 text-sm text-sand-300">
-            <p>→ Come as travelers, leave as friends</p>
-            <p>→ Step away from the mainstream, discover the real Mongolia</p>
-            <p>→ Every journey is personal — no two trips are the same</p>
+        </div>
+      </section>
+
+      {/* Moments — humble portrait of who I am off the trail */}
+      <section className="border-t border-sand-900/20 py-20 md:py-28">
+        <div className="mx-auto max-w-6xl px-6">
+          <FadeIn>
+            <p className="mb-3 text-xs uppercase tracking-[0.3em] text-sand-400">A few moments</p>
+            <h2 className="mb-3 font-display text-3xl md:text-4xl text-sand-100">
+              Off the trail.
+            </h2>
+            <p className="mb-12 text-sand-400 text-sm md:text-base max-w-lg">
+              I wasn&apos;t born guiding. Here&apos;s a slower look at the years that got me here.
+            </p>
+          </FadeIn>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+            {[
+              {
+                src: "/images/tugi/tugi-marathon.jpg",
+                caption: "Finishing a marathon. I&apos;m not the fastest. I just don&apos;t stop. Same legs that walk you across the Gobi.",
+              },
+              {
+                src: "/images/tugi/tugi-with-kids.jpg",
+                caption: "Mentoring at the San Francisco Junior Memory League. Some of the best days of my year happen when I get to host kids instead of strangers.",
+              },
+              {
+                src: "/images/tugi/tugi-meditation.jpg",
+                caption: "On a granite boulder, somewhere between trips. The country teaches you to sit still. I&apos;m a slow learner.",
+              },
+              {
+                src: "/images/tugi/tugi-grand-canyon.jpg",
+                caption: "Five years in California taught me what travel can do to a person. I came home wanting to share the version of this country I grew up in.",
+              },
+            ].map((m, i) => (
+              <FadeIn key={m.src} delay={i * 0.08}>
+                <figure className="flex flex-col gap-4">
+                  <div className="relative aspect-[4/3] overflow-hidden rounded-2xl border border-sand-800/40">
+                    <Image
+                      src={m.src}
+                      alt=""
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      className="object-cover"
+                    />
+                  </div>
+                  <figcaption className="text-sand-300 text-sm md:text-[15px] leading-relaxed max-w-md">
+                    {m.caption.replace(/&apos;/g, "’")}
+                  </figcaption>
+                </figure>
+              </FadeIn>
+            ))}
           </div>
         </div>
       </section>

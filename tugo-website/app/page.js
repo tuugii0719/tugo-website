@@ -188,7 +188,7 @@ function TaglineSection() {
                   <span className="text-sand-300 italic">It&apos;s me, showing you around.</span>
                 </h2>
                 <p className="text-sand-400 text-sm md:text-base leading-relaxed mb-6">
-                  Hi — I&apos;m Tugi. Camp by Khuvsgul, ride into the taiga, stand below the Altai peaks with Kazakh eagle hunters, sleep under Gobi dunes, soak in central hot springs. Routes I already know and love.
+                  If you love life, exploring the unknown and yourself — I&apos;m glad you&apos;re here. I&apos;m here with burning passion to give you an amazing, maybe even life-changing journey.
                 </p>
                 <Link
                   href="/why-tour-tugo"

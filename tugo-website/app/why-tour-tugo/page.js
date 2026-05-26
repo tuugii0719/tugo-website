@@ -3,7 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { Languages, Map, Wrench, HeartHandshake, ShieldCheck, CloudSun } from "lucide-react";
 import { FadeIn } from "@/components/animations/FadeIn";
+import { GradientCard } from "@/components/ui/GradientCard";
 
 export default function WhyTourTugoPage() {
   return (
@@ -38,7 +40,7 @@ export default function WhyTourTugoPage() {
                 <span className="text-sand-300 italic">It&apos;s me, showing you around.</span>
               </h1>
               <p className="text-sand-200 text-lg md:text-xl max-w-xl leading-relaxed">
-                I&apos;m a Mongolian guide who fell hard for the country early — the quiet, the wind, the way a day feels out there. This is how I like to travel, and I&apos;m inviting you along.
+                I&apos;m a Mongolian guy who fell hard for the country — the peace, the wind, the way a day feels, the hospitality of the people. This is how I like to travel, and I&apos;m inviting you along.
               </p>
             </motion.div>
           </div>
@@ -70,6 +72,58 @@ export default function WhyTourTugoPage() {
               </p>
             </div>
           </FadeIn>
+        </div>
+      </section>
+
+      {/* ============================================================ */}
+      {/* WHO I AM, BRIEFLY — humble portrait section                   */}
+      {/* ============================================================ */}
+      <section className="py-20 md:py-28 border-b border-sand-900/30">
+        <div className="max-w-6xl mx-auto px-6">
+          <FadeIn>
+            <p className="text-sand-400 text-[11px] tracking-[0.3em] uppercase mb-3">A few moments</p>
+            <h2 className="font-display text-2xl md:text-4xl text-sand-100 leading-tight mb-3">
+              The version of me that doesn&apos;t fit on a tour page.
+            </h2>
+            <p className="text-sand-400 text-sm md:text-base max-w-xl mb-12">
+              I&apos;m not the most polished operator. I&apos;m a Mongolian guy who travelled, learned, came home, and decided this is the work I want to do. Here&apos;s a slower look.
+            </p>
+          </FadeIn>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+            {[
+              {
+                src: "/images/tugi/tugi-on-horse.jpg",
+                caption: "Home ground — central steppe, summer. This is where most of my work happens, and where most of my favourite mornings have been.",
+              },
+              {
+                src: "/images/tugi/tugi-marathon.jpg",
+                caption: "Marathon. I&apos;m not the fastest finisher. I just don&apos;t stop. It&apos;s the same temperament that gets a group across the country.",
+              },
+              {
+                src: "/images/tugi/tugi-zion-canyon.jpg",
+                caption: "Zion, Utah — a few years ago. Travel taught me what good guiding feels like from the other side. I try to do that, here.",
+              },
+            ].map((m, i) => (
+              <FadeIn key={m.src} delay={i * 0.08}>
+                <figure className="flex flex-col gap-4">
+                  <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-sand-800/40">
+                    <Image
+                      src={m.src}
+                      alt=""
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-cover"
+                    />
+                  </div>
+                  <figcaption
+                    className="text-sand-300 text-sm leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: m.caption }}
+                  />
+                </figure>
+              </FadeIn>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -164,44 +218,77 @@ export default function WhyTourTugoPage() {
                 I&apos;ve got you
               </p>
               <h2 className="font-display text-3xl md:text-5xl text-sand-100 leading-tight">
-                Everything handled — quietly.
+                Everything handled — smoothly.
               </h2>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               {[
                 {
-                  t: "Mongolian and English",
-                  d: "I translate both ways — the words and the meaning behind them. No awkward silences at the ger table.",
+                  title: "Mongolian and English",
+                  description:
+                    "I translate both ways — the words and the meaning behind them. No awkward silences at the ger table.",
+                  badgeText: "Language bridge",
+                  badgeColor: "#38BDF8",
+                  gradient: "sky",
+                  icon: Languages,
                 },
                 {
-                  t: "The routes I know",
-                  d: "Years of going up and down these roads means I have people I trust all over the country — family camps, drivers, herders — and I can lean on them when it matters.",
+                  title: "The routes I know",
+                  description:
+                    "Years of going up and down these roads means I have people I trust all over the country — family camps, drivers, herders — and I can lean on them when it matters.",
+                  badgeText: "Local network",
+                  badgeColor: "#F59E0B",
+                  gradient: "amber",
+                  icon: Map,
                 },
                 {
-                  t: "Problem-solving, calmly",
-                  d: "Stuck van, bad weather, missed flight, altitude headache — things happen out there. My job is to keep a level head and sort it without adding stress to your trip.",
+                  title: "Problem-solving, calmly",
+                  description:
+                    "Stuck van, bad weather, missed flight, altitude headache — things happen out there. My job is to keep a level head and sort it without adding stress to your trip.",
+                  badgeText: "When it goes sideways",
+                  badgeColor: "#10B981",
+                  gradient: "emerald",
+                  icon: Wrench,
                 },
                 {
-                  t: "The cultural bridge",
-                  d: "Translating the jokes, the etiquette, why the grandmother is offering you that bowl. You&apos;ll never feel lost at a table.",
+                  title: "The cultural bridge",
+                  description:
+                    "Translating the jokes, the etiquette, why the grandmother is offering you that bowl. You'll never feel lost at a table.",
+                  badgeText: "Culture bridge",
+                  badgeColor: "#F43F5E",
+                  gradient: "rose",
+                  icon: HeartHandshake,
                 },
                 {
-                  t: "Safety-first, quietly",
-                  d: "Satellite comms on remote tours. First-aid trained. I know the evac options. I won&apos;t scare you with it — I&apos;ll just have it.",
+                  title: "Safety-first, smoothly",
+                  description:
+                    "Satellite comms on remote tours. First-aid trained. I know the evac options. I won't scare you with it — I'll just have it.",
+                  badgeText: "Quiet safety net",
+                  badgeColor: "#2DD4BF",
+                  gradient: "teal",
+                  icon: ShieldCheck,
                 },
                 {
-                  t: "Flexible on the day",
-                  d: "If the weather shifts or the mood shifts, the plan shifts. I&apos;d rather give you the right day than the scheduled one.",
+                  title: "Flexible on the day",
+                  description:
+                    "If the weather shifts or the mood shifts, the plan shifts. I'd rather give you the right day than the scheduled one.",
+                  badgeText: "Day-by-day",
+                  badgeColor: "#A78BFA",
+                  gradient: "violet",
+                  icon: CloudSun,
                 },
-              ].map((item) => (
-                <div
-                  key={item.t}
-                  className="p-5 rounded-xl border border-sand-800/40 bg-night-900/30"
-                >
-                  <h3 className="font-display text-lg text-sand-100 mb-2">{item.t}</h3>
-                  <p className="text-sand-400 text-sm leading-relaxed" dangerouslySetInnerHTML={{ __html: item.d }} />
-                </div>
+              ].map((item, idx) => (
+                <FadeIn key={item.title} delay={idx * 0.06} direction="up">
+                  <GradientCard
+                    gradient={item.gradient}
+                    badgeText={item.badgeText}
+                    badgeColor={item.badgeColor}
+                    title={item.title}
+                    description={item.description}
+                    Icon={item.icon}
+                  />
+                </FadeIn>
               ))}
             </div>
           </FadeIn>
