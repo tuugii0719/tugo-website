@@ -211,7 +211,7 @@ export default function WhyTourTugoPage() {
                 {
                   title: "Safety-first, smoothly",
                   description:
-                    "For remote tours I bring a satellite messenger and a proper first-aid kit, and I know the evac options if anything goes sideways. I won't scare you with it — I'll just have it.",
+                    "First-aid trained (certified 2025), with a proper kit in the truck. For remote tours I bring a satellite messenger and I know the evac options. I won't scare you with it — I'll just have it.",
                   badgeText: "Quiet safety net",
                   badgeColor: "#2DD4BF",
                   gradient: "teal",
