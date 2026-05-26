@@ -26,16 +26,16 @@ const acts = [
   {
     n: "II",
     label: "West",
-    days: "Days 6 – 7",
+    days: "Days 6 – 8",
     title: "Into Zavkhan",
-    body: "Sand dunes pressed against larch forest, turquoise lakes, the Otgontenger massif in the distance. The country's most underrated corner.",
+    body: "Sand dunes pressed against larch forest, turquoise lakes, the Otgontenger massif in the distance. A full day on horseback into the larch hills above Khar Nuur — Zavkhan the way it should be moved through.",
     image: `${G}/DSC02431.jpg`,
     accent: "violet",
   },
   {
     n: "III",
     label: "Central",
-    days: "Days 8 – 11",
+    days: "Days 9 – 12",
     title: "Volcano, hot spring, home",
     body: "Khorgo's crater rim, the pale water of Terkh, a long soak at Tsenkher, the Orkhon waterfall, and Erdene Zuu — one last khorkhog before the drive home.",
     image: `${G}/DSC01684.jpg`,
@@ -101,7 +101,15 @@ const itinerary = [
     more: "Zavkhan is Mongolia's strangest, most beautiful province — sand dunes pressed against larch forest, turquoise lakes that shouldn't exist there. We move slowly between them, visit a herder family in the afternoon (fresh aaruul, milk vodka if you want it), and end with fire and stew.",
   },
   {
-    n: "08", act: 2,
+    n: "08", act: 1,
+    t: "Zavkhan · horse-trek day",
+    stops: ["Khar Nuur foothills", "Larch ridge", "Herder camp"],
+    acts: ["horse", "hike", "meal"],
+    d: "Full day on horseback into the larch hills above Khar Nuur. Picnic lunch on a ridge, slow ride back to the family camp. Fire and stew that night.",
+    more: "Horses, not 4×4s. We meet the family that runs the trek at first light, pick our mounts — patient, sure-footed ones for whoever's never ridden — and head up into the larch hills above the lake. The pace is easy, the views are not. Picnic lunch on a ridge with Khar Nuur laid out below, ride back through the afternoon shadows. Another night in the herder ger; horsemeat stew if the family makes it, otherwise lamb.",
+  },
+  {
+    n: "09", act: 2,
     t: "Zavkhan → Khorgo",
     stops: ["Tosontsengel", "Terkhiin Tsagaan Nuur", "Khorgo crater"],
     acts: ["drive", "peak", "hike", "camp"],
@@ -109,15 +117,15 @@ const itinerary = [
     more: "We swap one weird landscape for another. Khorgo is a dormant volcano whose lava once dammed a river to create Terkhiin Tsagaan Nuur — a lake nobody expected, sitting in basalt. Crater rim walk at sunset, then camp by the lake.",
   },
   {
-    n: "09", act: 2,
+    n: "10", act: 2,
     t: "Tsenkher hot springs",
     stops: ["Terkhiin", "Tsenkher", "Pool camp"],
     acts: ["drive", "hotspring", "star"],
     d: "~180 km south. 86°C spring water piped into wooden pools under the stars. A proper reset.",
-    more: "Day nine and your body knows it. Tsenkher is 86°C at the source — piped into wooden tubs at varying temperatures. You soak, you read, you soak again. By dark there's nothing but you, the water, and the stars. Sleep is deep.",
+    more: "Day ten and your body knows it. Tsenkher is 86°C at the source — piped into wooden tubs at varying temperatures. You soak, you read, you soak again. By dark there's nothing but you, the water, and the stars. Sleep is deep.",
   },
   {
-    n: "10", act: 2,
+    n: "11", act: 2,
     t: "Orkhon Valley",
     stops: ["Tsenkher", "Orkhon waterfall", "Family camp"],
     acts: ["drive", "water", "meal", "ger"],
@@ -125,7 +133,7 @@ const itinerary = [
     more: "The Orkhon is the river that birthed the Mongol empire — the valley is heavy with that history. We hike down to the waterfall in the late morning, hang around for swims and photos, then spend the night with a family I've known for years. Khorkhog (sealed-pot lamb cooked on hot stones) is on the menu.",
   },
   {
-    n: "11", act: 2,
+    n: "12", act: 2,
     t: "Karakorum → UB",
     stops: ["Orkhon", "Karakorum", "Erdene Zuu", "Ulaanbaatar"],
     acts: ["visit", "drive", "city"],
@@ -353,11 +361,11 @@ export default function NorthCentralPage() {
                 </p>
                 <span className="text-sand-700">·</span>
                 <p className="text-sand-400 text-[11px] tracking-[0.3em] uppercase">
-                  11 days
+                  12 days
                 </p>
                 <span className="text-sand-700">·</span>
                 <p className="text-sand-400 text-[11px] tracking-[0.3em] uppercase">
-                  Jul 21 – 31, 2026
+                  Jul 21 – Aug 1, 2026
                 </p>
               </div>
               <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-white leading-[0.92] mb-6 max-w-3xl">
@@ -366,7 +374,7 @@ export default function NorthCentralPage() {
                 Loop
               </h1>
               <p className="text-sand-200 text-lg md:text-xl max-w-xl leading-relaxed">
-                Eleven days up to the Dark Blue Pearl and back. Lakeside camping, a day on the taiga, then the central country on the way home.
+                Twelve days up to the Dark Blue Pearl and back. Lakeside camping, a day on the taiga, a full horse-trek day in Zavkhan, then the central country on the way home.
               </p>
             </motion.div>
           </div>
@@ -389,8 +397,8 @@ export default function NorthCentralPage() {
       <section className="border-y border-sand-900/30 bg-night-900/40">
         <div className="max-w-6xl mx-auto px-6 py-6 grid grid-cols-2 md:grid-cols-6 gap-4 text-center text-sm">
           {[
-            { l: "Dates", v: "Jul 21 – 31, 2026" },
-            { l: "Days", v: "11" },
+            { l: "Dates", v: "Jul 21 – Aug 1, 2026" },
+            { l: "Days", v: "12" },
             { l: "Group", v: "5–7" },
             { l: "Price", v: "$1,200" },
             { l: "Lodging", v: "Camp + ger" },
@@ -427,7 +435,7 @@ export default function NorthCentralPage() {
                 People come in thinking the long drive days will be the hard part. They&apos;re actually the best part. The country changes texture hour by hour — steppe to larch forest to basalt to dune — and that only lands from the passenger seat. We stop for marmots. For herders moving livestock. For a roadside canteen with the best khuushuur you&apos;ll eat. For the ovoo on a pass where you circle three times and add a stone.
               </p>
               <p>
-                Eleven days is enough to hit the places that matter. Short enough to keep the group tight and the energy up, long enough that a morning at the lake can go three hours without anyone watching the clock. Ride the wind of the day — that&apos;s the whole idea.
+                Twelve days is enough to hit the places that matter. Short enough to keep the group tight and the energy up, long enough that a morning at the lake can go three hours without anyone watching the clock. Ride the wind of the day — that&apos;s the whole idea.
               </p>
             </div>
             <div className="mt-10 flex items-center gap-4">
@@ -559,7 +567,7 @@ export default function NorthCentralPage() {
       {/* =========================================================== */}
       <section className="py-20 md:py-28 border-b border-sand-900/30">
         <div className="max-w-4xl mx-auto px-6">
-          <SectionHead kicker="Day by day" title="Eleven days, one loop." center />
+          <SectionHead kicker="Day by day" title="Twelve days, one loop." center />
 
           <div className="relative">
             <div className="absolute left-3 md:left-6 top-2 bottom-2 w-px bg-gradient-to-b from-sky-500/30 via-violet-500/20 to-rose-500/20" />
@@ -874,7 +882,7 @@ export default function NorthCentralPage() {
           >
             <Kicker>Come with me</Kicker>
             <h2 className="font-display text-3xl md:text-4xl text-sand-100 mb-4">
-              July 21 – 31, 2026 · $1,200
+              July 21 – Aug 1, 2026 · $1,200
             </h2>
             <p className="text-sand-300 text-lg mb-8 max-w-xl leading-relaxed">
               Small group of 4 – 6. Bring a friend and save 15% each. Application, not checkout — I read every one personally and reply within 48 hours.

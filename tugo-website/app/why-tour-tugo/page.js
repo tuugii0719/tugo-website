@@ -211,7 +211,7 @@ export default function WhyTourTugoPage() {
                 {
                   title: "Safety-first, smoothly",
                   description:
-                    "Satellite comms on remote tours. First-aid trained. I know the evac options. I won't scare you with it — I'll just have it.",
+                    "First-aid trained (certified 2025), with a proper kit in the truck. For remote tours I bring a satellite messenger and I know the evac options. I won't scare you with it — I'll just have it.",
                   badgeText: "Quiet safety net",
                   badgeColor: "#2DD4BF",
                   gradient: "teal",
@@ -262,11 +262,11 @@ export default function WhyTourTugoPage() {
               The 2026 season
             </p>
             <h2 className="font-display text-3xl md:text-5xl text-sand-100 mb-6 leading-tight">
-              Ten departures.
+              Nine departures.
               <br />June to the end of August.
             </h2>
             <p className="text-sand-300 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-              Weekend escapes in Terelj. A horse trek into the taiga to a hidden alpine lake. A chill local Naadam in central Mongolia. The full Gobi loop. The Altai peaks with Kazakh eagle hunters. Pick what fits, or pick two.
+              Weekend escapes in Terelj. A chill local Naadam in central Mongolia. The full Gobi loop. The Altai peaks with Kazakh eagle hunters. The long North &amp; Central run through Khuvsgul and the Orkhon Valley. Pick what fits, or pick two.
             </p>
             <Link
               href="/tours"

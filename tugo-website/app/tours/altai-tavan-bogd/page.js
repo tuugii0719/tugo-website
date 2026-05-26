@@ -56,7 +56,7 @@ export default function AltaiTavanBogdPage() {
                   </span>
                 </h1>
                 <p className="text-sand-200 text-lg md:text-xl max-w-xl leading-relaxed mb-8">
-                  Glaciers, twin alpine lakes, Kazakh eagle hunters, 4,000-year-old petroglyphs. Flight in from UB, everything handled. The most remote tour I run — and the one most travellers come back for.
+                  Glaciers, twin alpine lakes, Kazakh eagle hunters, 4,000-year-old petroglyphs. Flight in from UB, everything handled. The most remote tour on the 2026 calendar — and the one I&apos;m most excited to share.
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-8">

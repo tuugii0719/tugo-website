@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import { Truck, Clock, UsersRound, Compass } from "lucide-react";
 import { FadeIn } from "@/components/animations/FadeIn";
 
 // ============================================================================
@@ -33,14 +34,14 @@ const heroSlides = [
 ];
 
 const sliderTours = [
-  { slug: "terelj-escape",     title: "Terelj Escape",            emoji: "🌲", dates: "Jun 5 – 7",   days: 3,  price: "$300",   img: "/images/destinations/terelj-park.jpg",        accent: "text-teal-300" },
-  { slug: "gobi-glimpse",      title: "Gobi Glimpse + Central",   emoji: "🏜️", dates: "Jun 10 – 18", days: 9,  price: "$1,000", img: "/images/gallery/DSC08000.jpg",                accent: "text-orange-300" },
-  { slug: "khagiin-khar-nuur", title: "Horse Trek · Khagiin Khar",emoji: "🐎", dates: "Jun 22 – 27", days: 6,  price: "$900",   img: "/images/gallery/DSC01684.jpg",                accent: "text-lime-300", soldOut: true },
-  { slug: "playtime",          title: "Playtime Music Festival",  emoji: "🎶", dates: "Jul 1 – 4",   days: 4,  price: "$450",   img: "/images/playtime/poster.jpg",                 accent: "text-fuchsia-300" },
-  { slug: "naadam",            title: "Naadam Festival",          emoji: "🏇", dates: "Jul 8 – 14",  days: 7,  price: "$700",   img: "/images/destinations/naadam-horse-racer.jpg", accent: "text-red-300" },
-  { slug: "north-central",     title: "North & Central Loop",     emoji: "🐪", dates: "Jul 21 – 31", days: 11, price: "$1,200", img: "/images/tours/north-central/DSC02464.jpg",    accent: "text-sky-300" },
-  { slug: "altai-tavan-bogd",  title: "Altai Tavan Bogd",         emoji: "🏔️", dates: "Aug 3 – 8",   days: 6,  price: "$900",   img: "/images/destinations/altai-peaks.jpg",        accent: "text-indigo-300" },
-  { slug: "southern-gobi",     title: "Southern Gobi + Central",  emoji: "🏜️", dates: "Aug 18 – 28", days: 11, price: "$1,200", img: "/images/destinations/khongoryn-1.jpg",        accent: "text-amber-300" },
+  { slug: "terelj-escape",     title: "Terelj Escape",            emoji: "🌲", dates: "Jun 5 – 7",   days: 3,  price: "$300",   img: "/images/destinations/terelj-park.jpg",        accent: "text-teal-300",    includes: "Transport · Meals · Ger · Guide" },
+  { slug: "gobi-glimpse",      title: "Gobi Glimpse + Central",   emoji: "🏜️", dates: "Jun 10 – 19", days: 10, price: "$1,000", img: "/images/gallery/DSC08000.jpg",                accent: "text-orange-300",  includes: "Transport · Meals · Lodging · Guide" },
+  { booked: true,              title: "Booked · private window",  emoji: "🚫", dates: "Jun 20 – 27", days: null, price: null,    img: "/images/gallery/DSC02365.jpg",                accent: "text-sand-500" },
+  { slug: "playtime",          title: "Playtime Music Festival",  emoji: "🎶", dates: "Jul 1 – 4",   days: 4,  price: "$450",   img: "/images/playtime/poster.jpg",                 accent: "text-fuchsia-300", includes: "Festival ticket · Camping · Breakfast" },
+  { slug: "naadam",            title: "Naadam Festival",          emoji: "🏇", dates: "Jul 8 – 14",  days: 7,  price: "$700",   img: "/images/destinations/naadam-horse-racer.jpg", accent: "text-red-300",     includes: "Transport · Meals · Lodging · Guide" },
+  { slug: "north-central",     title: "North & Central Loop",     emoji: "🐪", dates: "Jul 21 – Aug 1", days: 12, price: "$1,200", img: "/images/tours/north-central/DSC02464.jpg",    accent: "text-sky-300",     includes: "Transport · Meals · Lodging · Guide" },
+  { slug: "altai-tavan-bogd",  title: "Altai Tavan Bogd",         emoji: "🏔️", dates: "Aug 3 – 8",   days: 6,  price: "$900",   img: "/images/destinations/altai-peaks.jpg",        accent: "text-indigo-300",  includes: "UB↔Ölgii flight · Meals · Lodging · Guide" },
+  { slug: "southern-gobi",     title: "Southern Gobi + Central",  emoji: "🏜️", dates: "Aug 18 – 28", days: 11, price: "$1,200", img: "/images/destinations/khongoryn-1.jpg",        accent: "text-amber-300",   includes: "Transport · Meals · Lodging · Guide" },
 ];
 
 // ============================================================================
@@ -74,7 +75,7 @@ function HeroSection() {
               >
                 <Image
                   src={heroSlides[i].src}
-                  alt=""
+                  alt={`${heroSlides[i].kicker} — Mongolia tour photo`}
                   fill
                   priority={i === 0}
                   className="object-cover"
@@ -134,8 +135,8 @@ function HeroSection() {
             <div className="absolute bottom-4 md:bottom-6 left-1/2 -translate-x-1/2 hidden sm:flex items-center gap-1 md:gap-2 px-2 py-2 rounded-full bg-black/40 backdrop-blur-md border border-sand-300/30 text-[10px] md:text-xs">
               {[
                 { icon: "✉", label: "tuklobin@gmail.com" },
-                { icon: "@", label: "mongoladventure" },
-                { icon: "✦", label: "11 departures" },
+                { icon: "@", label: "tugi.mongolia" },
+                { icon: "✦", label: "9 departures" },
               ].map((c) => (
                 <span key={c.label} className="flex items-center gap-1.5 px-3 py-1 text-sand-100 whitespace-nowrap">
                   <span className="text-sand-300">{c.icon}</span>
@@ -158,6 +159,38 @@ function HeroSection() {
               ))}
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ============================================================================
+// TRUST BAND — quick, verifiable signals right under the hero
+// ============================================================================
+
+function TrustBand() {
+  const signals = [
+    { Icon: Truck,       label: "All in",        sub: "Transport, meals, guide, lodging" },
+    { Icon: Clock,       label: "48h reply",     sub: "I read every booking personally" },
+    { Icon: UsersRound,  label: "5–7 people",    sub: "Small groups, never more" },
+    { Icon: Compass,     label: "Routes I know", sub: "Driven many times, families I trust" },
+  ];
+  return (
+    <section className="bg-night-950 border-y border-sand-900/30 px-4 md:px-8 py-8 md:py-10">
+      <div className="max-w-[1400px] mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+          {signals.map(({ Icon, label, sub }) => (
+            <div key={label} className="flex items-start gap-3">
+              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-sand-400/10 border border-sand-400/30 flex items-center justify-center">
+                <Icon size={16} strokeWidth={1.75} className="text-sand-300" />
+              </div>
+              <div className="min-w-0">
+                <p className="text-sand-100 text-sm font-medium leading-tight">{label}</p>
+                <p className="text-sand-500 text-xs leading-snug mt-1">{sub}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -216,42 +249,85 @@ function TaglineSection() {
                 className="flex gap-3 md:gap-4 overflow-x-auto snap-x snap-mandatory pb-4 -mx-4 px-4 md:-mx-8 md:px-8 lg:-mr-12 lg:pr-12 [&::-webkit-scrollbar]:hidden"
                 style={{ scrollbarWidth: "none", WebkitOverflowScrolling: "touch" }}
               >
-                {sliderTours.map((t, i) => (
-                  <Link
-                    key={`${t.slug}-${i}`}
-                    href={`/tours/${t.slug}`}
-                    className="snap-start flex-shrink-0 w-[240px] md:w-[260px] rounded-[24px] overflow-hidden bg-night-900/60 border border-sand-800/40 hover:border-sand-600/60 hover:shadow-[0_20px_40px_-12px_rgba(0,0,0,0.6)] transition-all group"
-                  >
-                    <div className="relative aspect-[4/5]">
-                      <Image
-                        src={t.img}
-                        alt={t.title}
-                        fill
-                        className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
-                        sizes="260px"
-                      />
-                    </div>
-                    <div className="p-4 md:p-5">
-                      <p className={`${t.accent} text-[10px] tracking-[0.2em] uppercase mb-1.5 font-medium`}>
-                        {t.dates}
-                      </p>
-                      <h3 className="font-display text-base md:text-lg text-sand-100 leading-tight mb-1">
-                        <span className="mr-1.5">{t.emoji}</span>
-                        {t.title}
-                      </h3>
-                      <p className="text-sand-500 text-xs">
-                        {t.days} days · <span className="text-sand-300 font-medium">{t.price}</span>
-                      </p>
-                    </div>
-                  </Link>
-                ))}
+                {sliderTours.map((t, i) => {
+                  if (t.booked) {
+                    return (
+                      <div
+                        key={`booked-${i}`}
+                        aria-disabled="true"
+                        className="snap-start flex-shrink-0 w-[240px] md:w-[260px] rounded-[24px] overflow-hidden bg-night-900/40 border border-dashed border-sand-700/40 opacity-80"
+                      >
+                        <div className="relative aspect-[4/5]">
+                          <Image
+                            src={t.img}
+                            alt=""
+                            fill
+                            className="object-cover grayscale opacity-30"
+                            sizes="260px"
+                          />
+                          <div className="absolute inset-0 flex items-center justify-center">
+                            <span className="px-3 py-1 rounded-full bg-night-950/70 border border-sand-700/40 text-sand-300 text-[10px] tracking-[0.3em] uppercase">
+                              Unavailable
+                            </span>
+                          </div>
+                        </div>
+                        <div className="p-4 md:p-5">
+                          <p className={`${t.accent} text-[10px] tracking-[0.2em] uppercase mb-1.5 font-medium`}>
+                            {t.dates}
+                          </p>
+                          <h3 className="font-display text-base md:text-lg text-sand-200 leading-tight mb-1">
+                            <span className="mr-1.5">{t.emoji}</span>
+                            {t.title}
+                          </h3>
+                          <p className="text-sand-500 text-xs italic">
+                            I&apos;m booked elsewhere this week.
+                          </p>
+                        </div>
+                      </div>
+                    );
+                  }
+                  return (
+                    <Link
+                      key={`${t.slug}-${i}`}
+                      href={`/tours/${t.slug}`}
+                      className="snap-start flex-shrink-0 w-[240px] md:w-[260px] rounded-[24px] overflow-hidden bg-night-900/60 border border-sand-800/40 hover:border-sand-600/60 hover:shadow-[0_20px_40px_-12px_rgba(0,0,0,0.6)] transition-all group"
+                    >
+                      <div className="relative aspect-[4/5]">
+                        <Image
+                          src={t.img}
+                          alt={t.title}
+                          fill
+                          className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                          sizes="260px"
+                        />
+                      </div>
+                      <div className="p-4 md:p-5">
+                        <p className={`${t.accent} text-[10px] tracking-[0.2em] uppercase mb-1.5 font-medium`}>
+                          {t.dates}
+                        </p>
+                        <h3 className="font-display text-base md:text-lg text-sand-100 leading-tight mb-1">
+                          <span className="mr-1.5">{t.emoji}</span>
+                          {t.title}
+                        </h3>
+                        <p className="text-sand-500 text-xs mb-2">
+                          {t.days} days · <span className="text-sand-300 font-medium">{t.price}</span>
+                        </p>
+                        {t.includes && (
+                          <p className="text-sand-600 text-[10px] leading-snug border-t border-sand-800/40 pt-2">
+                            <span className="text-emerald-400/80">✓</span> {t.includes}
+                          </p>
+                        )}
+                      </div>
+                    </Link>
+                  );
+                })}
                 {/* End cap */}
                 <Link
                   href="/tours"
                   className="snap-start flex-shrink-0 w-[200px] md:w-[220px] rounded-[24px] border border-sand-400/40 bg-sand-400/5 hover:bg-sand-400/15 hover:border-sand-300/60 transition-colors flex items-center justify-center text-center p-6"
                 >
                   <div>
-                    <p className="font-display text-2xl text-sand-100 mb-2">See all 11 →</p>
+                    <p className="font-display text-2xl text-sand-100 mb-2">See all 9 →</p>
                     <p className="text-sand-400 text-xs">Calendar view</p>
                   </div>
                 </Link>
@@ -259,6 +335,40 @@ function TaglineSection() {
             </FadeIn>
           </div>
         </div>
+      </div>
+    </section>
+  );
+}
+
+// ============================================================================
+// FIRST-SEASON NOTE — honest framing
+// ============================================================================
+
+function FirstSeasonNote() {
+  return (
+    <section className="bg-night-950 px-4 md:px-8 pb-20 md:pb-28">
+      <div className="max-w-3xl mx-auto">
+        <FadeIn>
+          <div className="rounded-[28px] md:rounded-[36px] bg-night-900/40 border border-sand-800/40 p-8 md:p-12 backdrop-blur-sm">
+            <p className="text-sand-400 text-[10px] md:text-xs tracking-[0.3em] uppercase mb-5">
+              A note before you book
+            </p>
+            <h2 className="font-display text-2xl md:text-3xl lg:text-4xl text-sand-100 leading-[1.15] mb-6">
+              2026 is my first full season hosting.
+            </h2>
+            <div className="space-y-4 text-sand-300 text-sm md:text-base leading-relaxed">
+              <p>
+                I&apos;ve travelled these routes many times — with family, with friends, often alone with a camera. I know the long drives, the families along the way, the camps I&apos;d choose myself. Last year I hosted one paid trip and learned plenty from it. This year I&apos;m running nine small departures across June, July, and August.
+              </p>
+              <p>
+                You&apos;re not booking a brand. You&apos;re booking the person who&apos;ll be in the driver&apos;s seat — and I&apos;d rather you know that going in.
+              </p>
+              <p className="text-sand-400 italic">
+                — Tugi
+              </p>
+            </div>
+          </div>
+        </FadeIn>
       </div>
     </section>
   );
@@ -445,7 +555,9 @@ export default function Home() {
   return (
     <main className="w-full bg-night-950 text-sand-100">
       <HeroSection />
+      <TrustBand />
       <TaglineSection />
+      <FirstSeasonNote />
       <FeatureBand />
       <PillarsSection />
       <FinalCTA />

@@ -124,11 +124,20 @@ export default function AboutPage() {
                 my connection to people — naturally come together here.
               </p>
 
-              <p className="leading-relaxed text-sand-300">
+              <p className="mb-6 leading-relaxed text-sand-300">
                 This isn&apos;t just a tour business. It&apos;s my way of inviting you
                 into my world, where every journey is personal, every encounter
                 meaningful, and every moment a memory in the making.
               </p>
+
+              <div className="mt-8 border-l-2 border-sand-700/60 pl-5 py-1">
+                <p className="mb-2 text-[10px] uppercase tracking-[0.3em] text-sand-400">
+                  Year one
+                </p>
+                <p className="leading-relaxed text-sand-300">
+                  One thing to be upfront about: 2026 is my first full season hosting. I&apos;ve travelled these routes many times on my own — with family, friends, a camera — and last year I hosted one paid trip. This is me, year one. I&apos;d rather you know that going in than be sold a different story.
+                </p>
+              </div>
             </FadeIn>
           </div>
         </div>
