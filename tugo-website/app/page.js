@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
+import { Truck, Clock, UsersRound, Compass } from "lucide-react";
 import { FadeIn } from "@/components/animations/FadeIn";
 
 // ============================================================================
@@ -33,14 +34,14 @@ const heroSlides = [
 ];
 
 const sliderTours = [
-  { slug: "terelj-escape",     title: "Terelj Escape",            emoji: "🌲", dates: "Jun 5 – 7",   days: 3,  price: "$300",   img: "/images/destinations/terelj-park.jpg",        accent: "text-teal-300" },
-  { slug: "gobi-glimpse",      title: "Gobi Glimpse + Central",   emoji: "🏜️", dates: "Jun 10 – 18", days: 9,  price: "$1,000", img: "/images/gallery/DSC08000.jpg",                accent: "text-orange-300" },
+  { slug: "terelj-escape",     title: "Terelj Escape",            emoji: "🌲", dates: "Jun 5 – 7",   days: 3,  price: "$300",   img: "/images/destinations/terelj-park.jpg",        accent: "text-teal-300",    includes: "Transport · Meals · Ger · Guide" },
+  { slug: "gobi-glimpse",      title: "Gobi Glimpse + Central",   emoji: "🏜️", dates: "Jun 10 – 18", days: 9,  price: "$1,000", img: "/images/gallery/DSC08000.jpg",                accent: "text-orange-300",  includes: "Transport · Meals · Lodging · Guide" },
   { booked: true,              title: "Booked · private window",  emoji: "🚫", dates: "Jun 20 – 27", days: null, price: null,    img: "/images/gallery/DSC02365.jpg",                accent: "text-sand-500" },
-  { slug: "playtime",          title: "Playtime Music Festival",  emoji: "🎶", dates: "Jul 1 – 4",   days: 4,  price: "$450",   img: "/images/playtime/poster.jpg",                 accent: "text-fuchsia-300" },
-  { slug: "naadam",            title: "Naadam Festival",          emoji: "🏇", dates: "Jul 8 – 14",  days: 7,  price: "$700",   img: "/images/destinations/naadam-horse-racer.jpg", accent: "text-red-300" },
-  { slug: "north-central",     title: "North & Central Loop",     emoji: "🐪", dates: "Jul 21 – 31", days: 11, price: "$1,200", img: "/images/tours/north-central/DSC02464.jpg",    accent: "text-sky-300" },
-  { slug: "altai-tavan-bogd",  title: "Altai Tavan Bogd",         emoji: "🏔️", dates: "Aug 3 – 8",   days: 6,  price: "$900",   img: "/images/destinations/altai-peaks.jpg",        accent: "text-indigo-300" },
-  { slug: "southern-gobi",     title: "Southern Gobi + Central",  emoji: "🏜️", dates: "Aug 18 – 28", days: 11, price: "$1,200", img: "/images/destinations/khongoryn-1.jpg",        accent: "text-amber-300" },
+  { slug: "playtime",          title: "Playtime Music Festival",  emoji: "🎶", dates: "Jul 1 – 4",   days: 4,  price: "$450",   img: "/images/playtime/poster.jpg",                 accent: "text-fuchsia-300", includes: "Festival ticket · Camping · Breakfast" },
+  { slug: "naadam",            title: "Naadam Festival",          emoji: "🏇", dates: "Jul 8 – 14",  days: 7,  price: "$700",   img: "/images/destinations/naadam-horse-racer.jpg", accent: "text-red-300",     includes: "Transport · Meals · Lodging · Guide" },
+  { slug: "north-central",     title: "North & Central Loop",     emoji: "🐪", dates: "Jul 21 – 31", days: 11, price: "$1,200", img: "/images/tours/north-central/DSC02464.jpg",    accent: "text-sky-300",     includes: "Transport · Meals · Lodging · Guide" },
+  { slug: "altai-tavan-bogd",  title: "Altai Tavan Bogd",         emoji: "🏔️", dates: "Aug 3 – 8",   days: 6,  price: "$900",   img: "/images/destinations/altai-peaks.jpg",        accent: "text-indigo-300",  includes: "UB↔Ölgii flight · Meals · Lodging · Guide" },
+  { slug: "southern-gobi",     title: "Southern Gobi + Central",  emoji: "🏜️", dates: "Aug 18 – 28", days: 11, price: "$1,200", img: "/images/destinations/khongoryn-1.jpg",        accent: "text-amber-300",   includes: "Transport · Meals · Lodging · Guide" },
 ];
 
 // ============================================================================
@@ -74,7 +75,7 @@ function HeroSection() {
               >
                 <Image
                   src={heroSlides[i].src}
-                  alt=""
+                  alt={`${heroSlides[i].kicker} — Mongolia tour photo`}
                   fill
                   priority={i === 0}
                   className="object-cover"
@@ -158,6 +159,38 @@ function HeroSection() {
               ))}
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// ============================================================================
+// TRUST BAND — quick, verifiable signals right under the hero
+// ============================================================================
+
+function TrustBand() {
+  const signals = [
+    { Icon: Truck,       label: "All in",        sub: "Transport, meals, guide, lodging" },
+    { Icon: Clock,       label: "48h reply",     sub: "I read every booking personally" },
+    { Icon: UsersRound,  label: "5–7 people",    sub: "Small groups, never more" },
+    { Icon: Compass,     label: "Routes I know", sub: "Driven many times, families I trust" },
+  ];
+  return (
+    <section className="bg-night-950 border-y border-sand-900/30 px-4 md:px-8 py-8 md:py-10">
+      <div className="max-w-[1400px] mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+          {signals.map(({ Icon, label, sub }) => (
+            <div key={label} className="flex items-start gap-3">
+              <div className="flex-shrink-0 w-9 h-9 rounded-full bg-sand-400/10 border border-sand-400/30 flex items-center justify-center">
+                <Icon size={16} strokeWidth={1.75} className="text-sand-300" />
+              </div>
+              <div className="min-w-0">
+                <p className="text-sand-100 text-sm font-medium leading-tight">{label}</p>
+                <p className="text-sand-500 text-xs leading-snug mt-1">{sub}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -276,9 +309,14 @@ function TaglineSection() {
                           <span className="mr-1.5">{t.emoji}</span>
                           {t.title}
                         </h3>
-                        <p className="text-sand-500 text-xs">
+                        <p className="text-sand-500 text-xs mb-2">
                           {t.days} days · <span className="text-sand-300 font-medium">{t.price}</span>
                         </p>
+                        {t.includes && (
+                          <p className="text-sand-600 text-[10px] leading-snug border-t border-sand-800/40 pt-2">
+                            <span className="text-emerald-400/80">✓</span> {t.includes}
+                          </p>
+                        )}
                       </div>
                     </Link>
                   );
@@ -517,6 +555,7 @@ export default function Home() {
   return (
     <main className="w-full bg-night-950 text-sand-100">
       <HeroSection />
+      <TrustBand />
       <TaglineSection />
       <FirstSeasonNote />
       <FeatureBand />

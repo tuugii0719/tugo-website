@@ -51,7 +51,7 @@ export default function SouthernGobiPage() {
                   </span>
                 </h1>
                 <p className="text-sand-100 text-lg md:text-xl max-w-xl leading-relaxed mb-8">
-                  For young travellers who want to cover ground. Yoliin Am ice canyon, a night in the desert, camels at Khongoryn Els, the Flaming Cliffs, then central Mongolia on the way home. Tight, adventure-packed, lots of driving.
+                  The Gobi for people on the clock. Nine days to hit the desert&apos;s three icons — Yoliin Am ice canyon, the singing dunes at Khongoriin Els, the Flaming Cliffs — then north through central Mongolia for the reset. Heavy on road. Heavier on light.
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-8">
