@@ -132,10 +132,10 @@ export default function AboutPage() {
 
               <div className="mt-8 border-l-2 border-sand-700/60 pl-5 py-1">
                 <p className="mb-2 text-[10px] uppercase tracking-[0.3em] text-sand-400">
-                  Year one
+                  Why me
                 </p>
                 <p className="leading-relaxed text-sand-300">
-                  One thing to be upfront about: 2026 is my first full season hosting. I&apos;ve travelled these routes many times on my own — with family, friends, a camera — and last year I hosted one paid trip. This is me, year one. I&apos;d rather you know that going in than be sold a different story.
+                  I&apos;ll be straight with you: 2026 is my first full season hosting paid trips. But I&apos;ve spent years on these roads — with family, with friends, alone with a camera — and I know them cold. What I bring isn&apos;t a stack of past tours. It&apos;s the history, the hidden places, a real read on the people I&apos;m travelling with, and the kind of energy that turns a group into friends by the second morning. You&apos;re getting me at my most hands-on.
                 </p>
               </div>
             </FadeIn>

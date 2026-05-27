@@ -351,17 +351,17 @@ function FirstSeasonNote() {
         <FadeIn>
           <div className="rounded-[28px] md:rounded-[36px] bg-night-900/40 border border-sand-800/40 p-8 md:p-12 backdrop-blur-sm">
             <p className="text-sand-400 text-[10px] md:text-xs tracking-[0.3em] uppercase mb-5">
-              A note before you book
+              Why me
             </p>
             <h2 className="font-display text-2xl md:text-3xl lg:text-4xl text-sand-100 leading-[1.15] mb-6">
-              2026 is my first full season hosting.
+              The guide is the whole trip.
             </h2>
             <div className="space-y-4 text-sand-300 text-sm md:text-base leading-relaxed">
               <p>
-                I&apos;ve travelled these routes many times — with family, with friends, often alone with a camera. I know the long drives, the families along the way, the camps I&apos;d choose myself. Last year I hosted one paid trip and learned plenty from it. This year I&apos;m running nine small departures across June, July, and August.
+                I&apos;ll say it plainly: I believe I&apos;m the best guide you could travel with in Mongolia. Not for the number of tours I&apos;ve run — 2026 is my first full season hosting — but for what I actually bring. I know this country&apos;s history and its quiet corners the way you only do after years of chasing them yourself. I read the energy of a group and bend the day to fit it. And I genuinely love the people I end up on the road with.
               </p>
               <p>
-                You&apos;re not booking a brand. You&apos;re booking the person who&apos;ll be in the driver&apos;s seat — and I&apos;d rather you know that going in.
+                You&apos;re not booking a brand or a booking desk. You&apos;re booking me — driving, translating the jokes, reading the weather, picking the camp I&apos;d choose for myself. Nine small departures this summer, June through August.
               </p>
               <p className="text-sand-400 italic">
                 — Tugi
@@ -539,6 +539,15 @@ function FinalCTA() {
                   Apply to join
                 </Link>
               </div>
+              <p className="mt-5 text-sand-200/90 text-xs md:text-sm">
+                Travelling on a budget?{" "}
+                <Link
+                  href="/book#fee-waiver"
+                  className="text-amber-300 hover:text-amber-200 underline underline-offset-4 transition-colors"
+                >
+                  A few sliding-scale spots each season →
+                </Link>
+              </p>
             </div>
           </div>
         </div>

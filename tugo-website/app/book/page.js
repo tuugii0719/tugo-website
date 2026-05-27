@@ -192,7 +192,7 @@ export default function BookPage() {
               Before you pick
             </p>
             <p className="text-sand-200 text-sm md:text-base leading-relaxed mb-4">
-              2026 is my first full season hosting. I&apos;ve travelled these routes many times solo and with friends, and ran one paid trip last year. You&apos;re applying directly to the person who&apos;ll be on the road with you.
+              You&apos;re applying directly to me — the person in the driver&apos;s seat, not a booking desk. 2026 is my first full season hosting, and I run these trips on what I know best: this country&apos;s history, its hidden corners, and a real feel for the group I&apos;m with.
             </p>
             <p className="text-sand-500 text-xs md:text-sm">
               Questions before applying?{" "}
@@ -214,6 +214,25 @@ export default function BookPage() {
               .
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* FEE WAIVER TEASER */}
+      <section className="border-b border-sand-900/30">
+        <div className="max-w-3xl mx-auto px-6 py-6">
+          <a
+            href="#fee-waiver"
+            className="group flex items-center gap-4 rounded-xl border border-amber-500/30 bg-amber-900/10 px-5 py-4 hover:border-amber-400/50 hover:bg-amber-900/20 transition-colors"
+          >
+            <span className="text-2xl shrink-0">✦</span>
+            <span className="flex-1 text-sm md:text-base text-sand-200 leading-snug">
+              <span className="text-amber-300 font-medium">On a tight budget?</span>{" "}
+              Each season I keep a few spots on a sliding scale — for artists, students, journalists, and broke-but-cool people. Pay what you can, full waivers when I can swing it.
+            </span>
+            <span className="shrink-0 text-amber-300 text-xs uppercase tracking-[0.15em] group-hover:translate-x-0.5 transition-transform">
+              See the program →
+            </span>
+          </a>
         </div>
       </section>
 
@@ -747,7 +766,7 @@ function FeeWaiverSection({ tourOptions }) {
   };
 
   return (
-    <section className="border-t border-sand-900/30 py-24 bg-gradient-to-b from-night-900/30 to-night-950">
+    <section id="fee-waiver" className="scroll-mt-24 border-t border-sand-900/30 py-24 bg-gradient-to-b from-night-900/30 to-night-950">
       <div className="max-w-3xl mx-auto px-6">
         <FadeIn>
           <p className="text-amber-300/90 text-xs tracking-[0.3em] uppercase mb-3 text-center">
