@@ -145,7 +145,7 @@ export default function PlaytimeMusicFestivalPage() {
                     { l: "Tour", v: "Jul 1 – 4" },
                     { l: "Festival", v: "Jul 2 – 4" },
                     { l: "Group", v: "6 – 8" },
-                    { l: "Price", v: "$450" },
+                    { l: "Price", v: "$405" },
                   ].map((p) => (
                     <span
                       key={p.l}
@@ -361,7 +361,7 @@ export default function PlaytimeMusicFestivalPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10 md:mb-14">
             <p className="text-fuchsia-400 text-[11px] tracking-[0.4em] uppercase mb-3 font-medium">
-              All in $450
+              All in $405
             </p>
             <h2 className="font-display text-3xl md:text-5xl text-sand-100 leading-tight">
               Everything you need.
@@ -490,7 +490,7 @@ export default function PlaytimeMusicFestivalPage() {
                 Jul 1 – 4, 2026
                 <br />
                 <span className="bg-gradient-to-r from-pink-200 to-orange-200 bg-clip-text text-transparent italic">
-                  $450 all in.
+                  $405 all in.
                 </span>
               </h2>
               <p className="text-sand-100 text-base md:text-lg mb-8 max-w-xl mx-auto leading-relaxed">

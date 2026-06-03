@@ -25,7 +25,6 @@ import { FadeIn } from "@/components/animations/FadeIn";
 //   6. The group   → small group of 4–7 walking together, intimate scale, sun behind
 // ============================================================================
 const heroSlides = [
-  { src: "/images/tours/north-central/DSC02464-hero.jpg", kicker: "The vibe",    headline: "A trip, not a tour.",        tagline: "Slow, real, present." },
   { src: "/images/gallery/DSC08200.jpg",                  kicker: "The rhythm",  headline: "Flexible by design.",        tagline: "Plans bend to the weather, the herds, the people." },
   { src: "/images/gallery/DSC01810.jpg",                  kicker: "The care",    headline: "Looked after, always.",      tagline: "I notice when you’re cold, quiet, or worn down. I show up." },
   { src: "/images/gallery/DSC02431.jpg",                  kicker: "The camping", headline: "Gers & tents.",          tagline: "Cheaper, wilder, stars uninterrupted." },
@@ -34,14 +33,14 @@ const heroSlides = [
 ];
 
 const sliderTours = [
-  { slug: "terelj-escape",     title: "Terelj Escape",            emoji: "🌲", dates: "Jun 5 – 7",   days: 3,  price: "$300",   img: "/images/destinations/terelj-park.jpg",        accent: "text-teal-300",    includes: "Transport · Meals · Ger · Guide" },
-  { slug: "gobi-glimpse",      title: "Gobi Glimpse + Central",   emoji: "🏜️", dates: "Jun 10 – 19", days: 10, price: "$1,000", img: "/images/gallery/DSC08000.jpg",                accent: "text-orange-300",  includes: "Transport · Meals · Lodging · Guide" },
+  { slug: "terelj-escape",     title: "Terelj Escape",            emoji: "🌲", dates: "Jul 16 – 18", days: 3,  price: "$270",   img: "/images/destinations/terelj-park.jpg",        accent: "text-teal-300",    includes: "Transport · Meals · Ger · Guide" },
+  { slug: "gobi-glimpse",      title: "Gobi Glimpse + Central",   emoji: "🏜️", dates: "Jun 10 – 19", days: 10, price: "$900",   img: "/images/gallery/DSC08000.jpg",                accent: "text-orange-300",  includes: "Transport · Meals · Lodging · Guide" },
   { booked: true,              title: "Booked · private window",  emoji: "🚫", dates: "Jun 20 – 27", days: null, price: null,    img: "/images/gallery/DSC02365.jpg",                accent: "text-sand-500" },
-  { slug: "playtime",          title: "Playtime Music Festival",  emoji: "🎶", dates: "Jul 1 – 4",   days: 4,  price: "$450",   img: "/images/playtime/poster.jpg",                 accent: "text-fuchsia-300", includes: "Festival ticket · Camping · Breakfast" },
-  { slug: "naadam",            title: "Naadam Festival",          emoji: "🏇", dates: "Jul 8 – 14",  days: 7,  price: "$700",   img: "/images/destinations/naadam-horse-racer.jpg", accent: "text-red-300",     includes: "Transport · Meals · Lodging · Guide" },
-  { slug: "north-central",     title: "North & Central Loop",     emoji: "🐪", dates: "Jul 21 – Aug 1", days: 12, price: "$1,200", img: "/images/tours/north-central/DSC02464.jpg",    accent: "text-sky-300",     includes: "Transport · Meals · Lodging · Guide" },
-  { slug: "altai-tavan-bogd",  title: "Altai Tavan Bogd",         emoji: "🏔️", dates: "Aug 3 – 8",   days: 6,  price: "$900",   img: "/images/destinations/altai-peaks.jpg",        accent: "text-indigo-300",  includes: "UB↔Ölgii flight · Meals · Lodging · Guide" },
-  { slug: "southern-gobi",     title: "Southern Gobi + Central",  emoji: "🏜️", dates: "Aug 18 – 28", days: 11, price: "$1,200", img: "/images/destinations/khongoryn-1.jpg",        accent: "text-amber-300",   includes: "Transport · Meals · Lodging · Guide" },
+  { slug: "playtime",          title: "Playtime Music Festival",  emoji: "🎶", dates: "Jul 1 – 4",   days: 4,  price: "$405",   img: "/images/playtime/poster.jpg",                 accent: "text-fuchsia-300", includes: "Festival ticket · Camping · Breakfast" },
+  { slug: "naadam",            title: "Naadam Festival",          emoji: "🏇", dates: "Jul 8 – 14",  days: 7,  price: "$630",   img: "/images/destinations/naadam-horse-racer.jpg", accent: "text-red-300",     includes: "Transport · Meals · Lodging · Guide" },
+  { slug: "north-central",     title: "North & Central Loop",     emoji: "🐪", dates: "Jul 21 – Aug 1", days: 12, price: "$1,080", img: "/images/tours/north-central/DSC02464.jpg",    accent: "text-sky-300",     includes: "Transport · Meals · Lodging · Guide" },
+  { slug: "altai-tavan-bogd",  title: "Altai Tavan Bogd",         emoji: "🏔️", dates: "Aug 3 – 8",   days: 6,  price: "$810",   img: "/images/destinations/altai-peaks.jpg",        accent: "text-indigo-300",  includes: "UB↔Ölgii flight · Meals · Lodging · Guide" },
+  { slug: "southern-gobi",     title: "Southern Gobi + Central",  emoji: "🏜️", dates: "Aug 18 – 28", days: 11, price: "$1,080", img: "/images/destinations/khongoryn-1.jpg",        accent: "text-amber-300",   includes: "Transport · Meals · Lodging · Guide" },
 ];
 
 // ============================================================================
@@ -136,7 +135,7 @@ function HeroSection() {
               {[
                 { icon: "✉", label: "tuklobin@gmail.com" },
                 { icon: "@", label: "tugi.mongolia" },
-                { icon: "✦", label: "9 departures" },
+                { icon: "✦", label: "8 departures" },
               ].map((c) => (
                 <span key={c.label} className="flex items-center gap-1.5 px-3 py-1 text-sand-100 whitespace-nowrap">
                   <span className="text-sand-300">{c.icon}</span>
@@ -327,7 +326,7 @@ function TaglineSection() {
                   className="snap-start flex-shrink-0 w-[200px] md:w-[220px] rounded-[24px] border border-sand-400/40 bg-sand-400/5 hover:bg-sand-400/15 hover:border-sand-300/60 transition-colors flex items-center justify-center text-center p-6"
                 >
                   <div>
-                    <p className="font-display text-2xl text-sand-100 mb-2">See all 9 →</p>
+                    <p className="font-display text-2xl text-sand-100 mb-2">See all 8 →</p>
                     <p className="text-sand-400 text-xs">Calendar view</p>
                   </div>
                 </Link>
@@ -361,7 +360,7 @@ function FirstSeasonNote() {
                 I&apos;ll say it plainly: I believe I&apos;m the best guide you could travel with in Mongolia. Not for the number of tours I&apos;ve run — 2026 is my first full season hosting — but for what I actually bring. I know this country&apos;s history and its quiet corners the way you only do after years of chasing them yourself. I read the energy of a group and bend the day to fit it. And I genuinely love the people I end up on the road with.
               </p>
               <p>
-                You&apos;re not booking a brand or a booking desk. You&apos;re booking me — driving, translating the jokes, reading the weather, picking the camp I&apos;d choose for myself. Nine small departures this summer, June through August.
+                You&apos;re not booking a brand or a booking desk. You&apos;re booking me — driving, translating the jokes, reading the weather, picking the camp I&apos;d choose for myself. Eight small departures this summer, June through August.
               </p>
               <p className="text-sand-400 italic">
                 — Tugi
@@ -458,6 +457,43 @@ function FeatureBand() {
 }
 
 // ============================================================================
+// NOT ABOUT THE MONEY — values + fee-waiver
+// ============================================================================
+
+function NotAboutMoney() {
+  return (
+    <section className="bg-night-950 px-4 md:px-8 pb-20 md:pb-28">
+      <div className="max-w-3xl mx-auto">
+        <FadeIn>
+          <div className="rounded-[28px] md:rounded-[36px] bg-night-900/40 border border-amber-800/30 p-8 md:p-12 backdrop-blur-sm">
+            <p className="text-amber-300/90 text-[10px] md:text-xs tracking-[0.3em] uppercase mb-5">
+              The fee waiver
+            </p>
+            <h2 className="font-display text-2xl md:text-3xl lg:text-4xl text-sand-100 leading-[1.15] mb-6">
+              It was never about the money.
+            </h2>
+            <div className="space-y-4 text-sand-300 text-sm md:text-base leading-relaxed">
+              <p>
+                This isn&apos;t a business with a UB office and an agency cut. The trips cost what they cost because there&apos;s no middleman — the money goes to the families that host you, the drivers, the camps. That&apos;s why they&apos;re already cheaper than the alternatives.
+              </p>
+              <p>
+                And for the people money would otherwise shut out — artists, students, journalists, anyone with a story worth telling — I keep a few sliding-scale spots every season. If money&apos;s the only thing in your way, talk to me. I&apos;d rather have you on the trip.
+              </p>
+            </div>
+            <Link
+              href="/book#fee-waiver"
+              className="mt-7 inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-amber-400/40 text-amber-200 text-xs tracking-wider hover:bg-amber-400/10 hover:border-amber-300 transition-colors"
+            >
+              See the fee-waiver program →
+            </Link>
+          </div>
+        </FadeIn>
+      </div>
+    </section>
+  );
+}
+
+// ============================================================================
 // FOUR PILLARS
 // ============================================================================
 
@@ -539,15 +575,6 @@ function FinalCTA() {
                   Apply to join
                 </Link>
               </div>
-              <p className="mt-5 text-sand-200/90 text-xs md:text-sm">
-                Travelling on a budget?{" "}
-                <Link
-                  href="/book#fee-waiver"
-                  className="text-amber-300 hover:text-amber-200 underline underline-offset-4 transition-colors"
-                >
-                  A few sliding-scale spots each season →
-                </Link>
-              </p>
             </div>
           </div>
         </div>
@@ -568,6 +595,7 @@ export default function Home() {
       <TaglineSection />
       <FirstSeasonNote />
       <FeatureBand />
+      <NotAboutMoney />
       <PillarsSection />
       <FinalCTA />
     </main>

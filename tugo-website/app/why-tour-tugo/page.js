@@ -262,7 +262,7 @@ export default function WhyTourTugoPage() {
               The 2026 season
             </p>
             <h2 className="font-display text-3xl md:text-5xl text-sand-100 mb-6 leading-tight">
-              Nine departures.
+              Eight departures.
               <br />June to the end of August.
             </h2>
             <p className="text-sand-300 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">

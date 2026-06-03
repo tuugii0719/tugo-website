@@ -20,25 +20,6 @@ import { FadeIn } from "@/components/animations/FadeIn";
 //   days where ranges overlap.
 const tours = [
   {
-    id: "terelj-jun",
-    slug: "terelj-escape",
-    title: "Terelj Escape",
-    emoji: "🌲",
-    dates: "June 5 – 7",
-    days: 3,
-    price: "$300",
-    groupSize: "6–8",
-    status: "available",
-    description:
-      "Any age. Season opener. Gorkhi-Terelj weekend — we base at a family ger camp and explore the park on our own rhythm. Turtle Rock, Aryabal Monastery, horseback through alpine meadows, hiking, khorkhog. Lots of free time to wander at your own pace.",
-    highlights: ["Turtle Rock", "Aryabal Monastery", "Khorkhog", "Ger stay"],
-    theme: "terelj",
-    startMonth: 5,
-    startDay: 5,
-    endMonth: 5,
-    endDay: 7,
-  },
-  {
     id: "booked-jun",
     slug: null,
     title: "Booked · private window",
@@ -63,7 +44,7 @@ const tours = [
     emoji: "🏜️",
     dates: "Aug 18 – 28",
     days: 11,
-    price: "$1,200",
+    price: "$1,080",
     groupSize: "5–7",
     status: "available",
     description:
@@ -82,7 +63,7 @@ const tours = [
     emoji: "🎶",
     dates: "July 1 – 4",
     days: 4,
-    price: "$450",
+    price: "$405",
     groupSize: "6–8",
     status: "available",
     description:
@@ -101,7 +82,7 @@ const tours = [
     emoji: "🏇",
     dates: "July 8 – 14",
     days: 7,
-    price: "$700",
+    price: "$630",
     groupSize: "5–7",
     status: "available",
     description:
@@ -120,7 +101,7 @@ const tours = [
     emoji: "🌲",
     dates: "July 16 – 18",
     days: 3,
-    price: "$300",
+    price: "$270",
     groupSize: "6–8",
     status: "available",
     description:
@@ -139,7 +120,7 @@ const tours = [
     emoji: "🏔️",
     dates: "Aug 3 – 8",
     days: 6,
-    price: "$900",
+    price: "$810",
     groupSize: "5–7",
     status: "available",
     description:
@@ -158,7 +139,7 @@ const tours = [
     emoji: "🌲",
     dates: "Aug 11 – 13",
     days: 3,
-    price: "$300",
+    price: "$270",
     groupSize: "6–8",
     status: "available",
     description:
@@ -177,7 +158,7 @@ const tours = [
     emoji: "🏜️",
     dates: "June 10 – 19",
     days: 10,
-    price: "$1,000",
+    price: "$900",
     groupSize: "5–7",
     status: "available",
     description:
@@ -196,7 +177,7 @@ const tours = [
     emoji: "🐪",
     dates: "July 21 – Aug 1",
     days: 12,
-    price: "$1,200",
+    price: "$1,080",
     groupSize: "5–7",
     status: "available",
     description:
@@ -890,7 +871,7 @@ function CalendarSection() {
               Pick Your Month
             </h2>
             <p className="text-sand-400 max-w-2xl mx-auto leading-relaxed">
-              Nine departures across June, July, and August — weekend escapes, festivals, long flagship expeditions. Skim the agenda below for the full picture, or scroll the calendar to see how it lines up. Hover any highlighted day to peek inside.
+              Eight departures across June, July, and August — weekend escapes, festivals, long flagship expeditions. Skim the agenda below for the full picture, or scroll the calendar to see how it lines up. Hover any highlighted day to peek inside.
             </p>
           </div>
         </FadeIn>
@@ -977,7 +958,7 @@ export default function ToursPage() {
             <p className="text-xs tracking-[0.3em] uppercase text-sand-400 mb-4">2026 SEASON</p>
             <h1 className="font-display text-4xl md:text-6xl text-white mb-4">Your Journey Starts Here</h1>
             <p className="text-sand-300 max-w-xl mx-auto px-6">
-              Three months, nine departures. Pick a date on the calendar and we&apos;ll take you there.
+              Three months, eight departures. Pick a date on the calendar and we&apos;ll take you there.
             </p>
           </motion.div>
         </div>
@@ -988,9 +969,9 @@ export default function ToursPage() {
         <div className="max-w-5xl mx-auto px-6 py-8 flex flex-wrap justify-center gap-8 md:gap-14 text-center">
           {[
             { label: "Season", value: "June – August" },
-            { label: "Departures", value: "10 Scheduled" },
+            { label: "Departures", value: "8 Scheduled" },
             { label: "Group Size", value: "5–8" },
-            { label: "Starting From", value: "$300" },
+            { label: "Starting From", value: "$270" },
           ].map((stat, i) => (
             <div key={i}>
               <p className="text-sand-500 text-xs tracking-wider uppercase mb-1">{stat.label}</p>
@@ -1016,16 +997,16 @@ export default function ToursPage() {
               {
                 title: "Weekend Escapes",
                 duration: "3 Days",
-                price: "$300",
-                items: ["Terelj Escape × 3", "Any age welcome"],
-                desc: "Three Terelj weekends across June and July. Gentle, ger-camp vibe, close to the city.",
+                price: "$270",
+                items: ["Terelj Escape × 2", "Any age welcome"],
+                desc: "Two Terelj weekends in July and August. Gentle, ger-camp vibe, close to the city.",
                 color: "from-teal-400 to-teal-600",
                 border: "border-teal-700/20 hover:border-teal-600/40",
               },
               {
                 title: "Festival & Adventure",
                 duration: "6–11 Days",
-                price: "From $950",
+                price: "From $405",
                 items: ["Southern Gobi + Central", "Playtime Music Festival", "Local Naadam", "Gobi Glimpse + Central"],
                 desc: "Mid-length departures — festivals, desert nights, and nomadic immersion. For travellers who want to get into it.",
                 color: "from-emerald-500 to-amber-600",
@@ -1034,7 +1015,7 @@ export default function ToursPage() {
               {
                 title: "Grand Expeditions",
                 duration: "6–12 Days",
-                price: "From $900",
+                price: "From $810",
                 items: ["Altai Tavan Bogd · Aug", "North & Central Loop"],
                 desc: "The flagship tours — western peaks with Kazakh eagle hunters, and the long flexible north route through taiga, Khuvsgul, and Zavkhan.",
                 color: "from-indigo-500 to-sky-600",

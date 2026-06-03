@@ -59,7 +59,7 @@ export default function GobiGlimpsePage() {
                     { l: "Tour", v: "Aug 18 – 28" },
                     { l: "Days", v: "11" },
                     { l: "Group", v: "5 – 7" },
-                    { l: "Price", v: "$1,200" },
+                    { l: "Price", v: "$1,080" },
                   ].map((p) => (
                     <span key={p.l} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-night-950/50 backdrop-blur-md border border-amber-300/30">
                       <span className="text-amber-200 text-[10px] tracking-[0.2em] uppercase">{p.l}</span>
@@ -98,7 +98,7 @@ export default function GobiGlimpsePage() {
           { l: "Group", v: "5 – 7" },
           { l: "Region", v: "South + Central" },
           { l: "Pace", v: "Medium · breathing room" },
-          { l: "Price", v: "$1,200" },
+          { l: "Price", v: "$1,080" },
         ]}
       />
 
@@ -264,7 +264,7 @@ export default function GobiGlimpsePage() {
 
       <IncludedBring
         accent={ACCENT}
-        priceLabel="$1,200"
+        priceLabel="$1,080"
         included={[
           "4×4 Russian van, fuel, driver",
           "English/Mongolian guide (Tugi)",
@@ -302,7 +302,7 @@ export default function GobiGlimpsePage() {
 
       <TourCTA
         accent={ACCENT}
-        title="August 18 – 28, 2026 · $1,200"
+        title="August 18 – 28, 2026 · $1,080"
         subtitle="The Gobi with time to breathe. Small group of 4 – 6. Bring a friend and save 15% each."
         emailSubject="Southern Gobi + Central · August 18"
       />

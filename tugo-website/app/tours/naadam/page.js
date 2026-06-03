@@ -51,7 +51,7 @@ export default function NaadamPage() {
                     { l: "Tour", v: "Jul 8 – 14" },
                     { l: "Days", v: "7" },
                     { l: "Group", v: "5 – 7" },
-                    { l: "Price", v: "$700" },
+                    { l: "Price", v: "$630" },
                   ].map((p) => (
                     <span key={p.l} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-night-950/60 backdrop-blur-md border border-amber-400/30">
                       <span className="text-amber-300 text-[10px] tracking-[0.2em] uppercase">{p.l}</span>
@@ -98,7 +98,7 @@ export default function NaadamPage() {
           { l: "Group", v: "6 – 8" },
           { l: "Region", v: "Zavkhan + central" },
           { l: "Festival", v: "Local village" },
-          { l: "Price", v: "$700" },
+          { l: "Price", v: "$630" },
         ]}
       />
 
@@ -234,7 +234,7 @@ export default function NaadamPage() {
 
       <IncludedBring
         accent={ACCENT}
-        priceLabel="$700"
+        priceLabel="$630"
         included={[
           "4×4 vehicle, fuel, driver",
           "English/Mongolian guide (Tugi)",
@@ -270,7 +270,7 @@ export default function NaadamPage() {
 
       <TourCTA
         accent={ACCENT}
-        title="July 8 – 14, 2026 · $700"
+        title="July 8 – 14, 2026 · $630"
         subtitle="One village, one holiday, one small group. Bring a friend and save 15% each. Limited seats — Naadam is the year&rsquo;s busiest week."
         emailSubject="Naadam · July 8 – 14"
       />

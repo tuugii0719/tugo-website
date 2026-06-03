@@ -15,16 +15,15 @@ import { FadeIn } from "@/components/animations/FadeIn";
 const PAIR_DISCOUNT = 0.15; // 15% off per person when booking a pair
 
 const tourOptions = [
-  { id: "terelj-jun",        title: "Terelj Escape",              dates: "Jun 5 – 7",    days: 3,  price: 300,   emoji: "🌲", includes: "Transport · Meals · Ger · Guide" },
-  { id: "gobi-glimpse",      title: "Gobi Glimpse + Central",     dates: "Jun 10 – 19",  days: 10, price: 1000,  emoji: "🏜️", includes: "Transport · Meals · Lodging · Guide" },
+  { id: "gobi-glimpse",      title: "Gobi Glimpse + Central",     dates: "Jun 10 – 19",  days: 10, price: 900,   emoji: "🏜️", includes: "Transport · Meals · Lodging · Guide" },
   { id: "booked-jun",        title: "Booked · private window",    dates: "Jun 20 – 27",  days: null, price: null, emoji: "🚫", booked: true },
-  { id: "playtime",          title: "Playtime Music Festival",    dates: "Jul 1 – 4",    days: 4,  price: 450,   emoji: "🎶", includes: "Festival ticket · Camping · Breakfast" },
-  { id: "naadam",            title: "Naadam Festival",            dates: "Jul 8 – 14",   days: 7,  price: 700,   emoji: "🏇", includes: "Transport · Meals · Lodging · Guide" },
-  { id: "terelj-jul",        title: "Terelj Escape",              dates: "Jul 16 – 18",  days: 3,  price: 300,   emoji: "🌲", includes: "Transport · Meals · Ger · Guide" },
-  { id: "north-central",     title: "North & Central Loop",       dates: "Jul 21 – Aug 1",  days: 12, price: 1200,  emoji: "🐪", includes: "Transport · Meals · Lodging · Guide" },
-  { id: "altai-aug",         title: "Altai Tavan Bogd",           dates: "Aug 3 – 8",    days: 6,  price: 900,   emoji: "🏔️", includes: "UB↔Ölgii flight · Meals · Lodging · Guide" },
-  { id: "terelj-aug",        title: "Terelj Escape",              dates: "Aug 11 – 13",  days: 3,  price: 300,   emoji: "🌲", includes: "Transport · Meals · Ger · Guide" },
-  { id: "southern-gobi",     title: "Southern Gobi + Central",    dates: "Aug 18 – 28",  days: 11, price: 1200,  emoji: "🏜️", includes: "Transport · Meals · Lodging · Guide" },
+  { id: "playtime",          title: "Playtime Music Festival",    dates: "Jul 1 – 4",    days: 4,  price: 405,   emoji: "🎶", includes: "Festival ticket · Camping · Breakfast" },
+  { id: "naadam",            title: "Naadam Festival",            dates: "Jul 8 – 14",   days: 7,  price: 630,   emoji: "🏇", includes: "Transport · Meals · Lodging · Guide" },
+  { id: "terelj-jul",        title: "Terelj Escape",              dates: "Jul 16 – 18",  days: 3,  price: 270,   emoji: "🌲", includes: "Transport · Meals · Ger · Guide" },
+  { id: "north-central",     title: "North & Central Loop",       dates: "Jul 21 – Aug 1",  days: 12, price: 1080, emoji: "🐪", includes: "Transport · Meals · Lodging · Guide" },
+  { id: "altai-aug",         title: "Altai Tavan Bogd",           dates: "Aug 3 – 8",    days: 6,  price: 810,   emoji: "🏔️", includes: "UB↔Ölgii flight · Meals · Lodging · Guide" },
+  { id: "terelj-aug",        title: "Terelj Escape",              dates: "Aug 11 – 13",  days: 3,  price: 270,   emoji: "🌲", includes: "Transport · Meals · Ger · Guide" },
+  { id: "southern-gobi",     title: "Southern Gobi + Central",    dates: "Aug 18 – 28",  days: 11, price: 1080,  emoji: "🏜️", includes: "Transport · Meals · Lodging · Guide" },
 ];
 
 const formatUSD = (n) => `$${n.toLocaleString()}`;
@@ -245,7 +244,7 @@ export default function BookPage() {
               Pick your tour
             </h2>
             <p className="text-sand-400 max-w-xl mx-auto">
-              Nine departures across June, July, and August.{" "}
+              Eight departures across June, July, and August.{" "}
               <span className="text-sand-200">Bring a friend — save 15% each.</span>
             </p>
           </div>
