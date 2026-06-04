@@ -42,7 +42,7 @@ export default function SouthernGobiPage() {
             <div className="lg:col-span-7">
               <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
                 <p className="text-amber-200 text-[11px] tracking-[0.4em] uppercase mb-4 font-medium">
-                  Long Gobi loop · 10 days · 5 – 7 pax
+                  Long Gobi loop · 8 days · 5 – 7 pax
                 </p>
                 <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-white leading-[0.92] mb-6">
                   <span className="block">Gobi Glimpse</span>
@@ -51,13 +51,13 @@ export default function SouthernGobiPage() {
                   </span>
                 </h1>
                 <p className="text-sand-100 text-lg md:text-xl max-w-xl leading-relaxed mb-8">
-                  The Gobi for people on the clock. Ten days to hit the desert&apos;s three icons — Yoliin Am ice canyon, the singing dunes at Khongoriin Els, the Flaming Cliffs — then north through central Mongolia with a full horse-trek day in Tsetserleg. Heavy on road. Heavier on light.
+                  The Gobi for people on the clock. Eight days to hit the desert&apos;s three icons — Yoliin Am ice canyon, the singing dunes at Khongoriin Els, the Flaming Cliffs — then north through central Mongolia with a full horse-trek day in Tsetserleg. Heavy on road. Heavier on light.
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-8">
                   {[
-                    { l: "Tour", v: "Jun 10 – 19" },
-                    { l: "Days", v: "10" },
+                    { l: "Tour", v: "Jun 13 – 20" },
+                    { l: "Days", v: "8" },
                     { l: "Group", v: "5 – 7" },
                     { l: "Price", v: "$900" },
                   ].map((p) => (
@@ -98,8 +98,8 @@ export default function SouthernGobiPage() {
 
       <VitalsStrip
         items={[
-          { l: "Dates", v: "Jun 10 – 19, 2026" },
-          { l: "Days", v: "9" },
+          { l: "Dates", v: "Jun 13 – 20, 2026" },
+          { l: "Days", v: "8" },
           { l: "Group", v: "5 – 7" },
           { l: "Region", v: "South + Central" },
           { l: "Pace", v: "Tight · lots of driving" },
@@ -109,18 +109,18 @@ export default function SouthernGobiPage() {
 
       <Prologue
         accent={ACCENT}
-        title="Ten days. Desert to steppe. One loop."
+        title="Eight days. Desert to steppe. One loop."
         paragraphs={[
           "This is the tour I built for the young crew on a tight window. You&apos;ve got a week-plus in Mongolia, you want the Gobi, and you still want the central steppe. The trade-off is a lot of driving — and the driving is worth it.",
-          "We push hard the first half: UB to the Gobi in two days, then 2 – 3 days moving between the desert&apos;s big three — Yoliin Am ice canyon, Khongoriin Els singing dunes, and the Flaming Cliffs. Camel trek included. Desert night included.",
-          "The back half is the reset. We roll north through central Mongolia, stop for hot springs, horseback, hikes, one last khorkhog dinner with a family. Then home. If you want more chill, take Southern Gobi in August instead — this one is for people who like the pace.",
+          "We push hard the first half: UB to the Gobi in two days, then two days moving between the desert&apos;s big three — Yoliin Am ice canyon, Khongoriin Els singing dunes, and the Flaming Cliffs. Camel trek included. Desert night included.",
+          "The back half is the reset. We roll north through central Mongolia, soak at Tsenkher hot springs, then a full day on horseback in the hills above Tsetserleg — fire and stew that night. Then home. If you want a slower pace, take Southern Gobi in August instead — same stops, three extra days.",
         ]}
       />
 
       <Itinerary
         accent={ACCENT}
         acts={acts}
-        title="Ten days, two acts."
+        title="Eight days, two acts."
         days={[
           {
             n: "01", act: 0, t: "UB → Middle Gobi",
@@ -133,60 +133,46 @@ export default function SouthernGobiPage() {
             n: "02", act: 0, t: "Middle → Yoliin Am",
             stops: ["Steppe", "Umnugobi province", "Yoliin Am gorge", "Family ger"],
             acts: ["drive", "hike", "ger"],
-            d: "Drive into Umnugobi. Yoliin Am ice canyon — a valley that holds ice into July. Walk 2 km up the gorge and back. Overnight at a family camp.",
-            more: "Into proper Gobi. Yoliin Am is the famous ice canyon — even in June it holds slabs of ice on the river floor. We walk in about 2 km on the first afternoon, get a sense of the place. Family ger for the night.",
+            d: "Drive into Umnugobi. Yoliin Am ice canyon — a valley that holds ice into July. Walk 2 km up the gorge to where the ice still sits. Overnight at a family camp.",
+            more: "Into proper Gobi. Yoliin Am is the famous ice canyon — even in June it holds slabs of ice on the river floor. We walk in about 2 km in the afternoon, get to where the cliff shadows turn cold and the vultures circle overhead. Family ger for the night.",
           },
           {
-            n: "03", act: 0, t: "Yoliin Am · hike day",
-            stops: ["Yoliin Am gorge", "Vulture cliffs", "Family ger"],
-            acts: ["hike", "peak"],
-            d: "Full day in the canyon — hike deeper where the ice sits longest. Vultures on the upper cliffs. Picnic lunch in the gorge. Evening back at the family ger.",
-            more: "Full day in the canyon. Walk deeper than yesterday — where the ice still sits, where vultures nest. Bring water and a layer (the cliff shadows are cold). Picnic lunch, slow afternoon back at camp.",
-          },
-          {
-            n: "04", act: 0, t: "Khongoriin Els",
+            n: "03", act: 0, t: "Khongoriin Els",
             stops: ["Yoliin Am", "Khongoriin Els · Singing Dunes"],
             acts: ["drive", "camel", "peak"],
             d: "Four hours driving to the Singing Dunes. Camel ride at golden hour (~2 hours). Climb the tallest dune for sunset. Sleep in the desert.",
             more: "Four-hour drive to the Singing Dunes — 100 km of sand, up to 800m tall. Camel ride at golden hour, gentle pace, about two hours. Climb the main dune for sunset. Sleep at the foot of the sand.",
           },
           {
-            n: "05", act: 0, t: "Flaming Cliffs + dinosaur country",
+            n: "04", act: 0, t: "Flaming Cliffs + dinosaur country",
             stops: ["Khongoriin", "Bayanzag · Flaming Cliffs", "Red canyon", "Ger camp"],
             acts: ["drive", "hike", "visit"],
             d: "Drive to Bayanzag (the Flaming Cliffs) — where the first dinosaur eggs were found in 1923. Red-rock hike at golden hour. Ger camp.",
             more: "Drive east to Bayanzag — where dinosaur eggs were first identified in 1923 by Roy Chapman Andrews' expedition. The rock turns deep red at golden hour. We walk the rim, drop into a small side canyon for the last light. Ger camp for the night.",
           },
           {
-            n: "06", act: 1, t: "Gobi → Orkhon Valley",
+            n: "05", act: 1, t: "Gobi → Orkhon Valley",
             stops: ["Bayanzag", "Mandalgovi", "Orkhon Valley family camp"],
             acts: ["drive"],
             d: "The long transition day, ~8 hours on the road. Camel saddle sore by now but the landscape starts to green up by afternoon. Orkhon Valley family camp for the night.",
             more: "This is the leg that earns you the second half. Mostly paved, occasionally washboard. We stop at a few overlooks, pick up groceries somewhere along the way. By dusk the landscape has changed completely — grass, herds, the first proper rivers.",
           },
           {
-            n: "07", act: 1, t: "Tsenkher hot springs",
+            n: "06", act: 1, t: "Tsenkher hot springs",
             stops: ["Orkhon", "Tsenkher springs", "Wooden pool camp"],
             acts: ["drive", "hotspring", "star"],
             d: "Shorter drive, ~3 hours. Hot-spring soak. First proper bath since UB. Everyone sleeps well.",
             more: "Tsenkher is 86°C at the source, piped into wooden tubs at varying temperatures. First proper bath in a week. You soak, you read, you soak again. By dark there's nothing but you, the water, and the stars.",
           },
           {
-            n: "08", act: 1, t: "Tsetserleg · horse-trek day",
+            n: "07", act: 1, t: "Tsetserleg · horse-trek day",
             stops: ["Tsenkher", "Tsetserleg", "Family horse camp"],
             acts: ["drive", "horse", "meal"],
-            d: "Short drive to Tsetserleg in Arkhangai. Full day on horseback into the surrounding hills with a local horse family. Picnic lunch on a ridge. Family camp for the night.",
-            more: "Tsetserleg is the capital of Arkhangai — small green provincial town built into a hillside, the kind of place you'd happily get stuck in. We meet the horse family by mid-morning and spend the day in the saddle: gentle climb into the larch hills behind the town, picnic on a ridge with the valley spread out below, slow ride back as the light goes long. Night at the family camp — fire, milk vodka if you want it, stars if the sky cooperates.",
+            d: "Short drive to Tsetserleg in Arkhangai. Full day on horseback into the surrounding hills with a local horse family. Picnic lunch on a ridge. Family camp for the night — fire, khorkhog, stars.",
+            more: "Tsetserleg is the capital of Arkhangai — small green provincial town built into a hillside, the kind of place you'd happily get stuck in. We meet the horse family by mid-morning and spend the day in the saddle: gentle climb into the larch hills behind the town, picnic on a ridge with the valley spread out below, slow ride back as the light goes long. Night at the family camp — fire, khorkhog (lamb cooked on hot stones), milk vodka if you want it, stars if the sky cooperates.",
           },
           {
-            n: "09", act: 1, t: "Central family day",
-            stops: ["Tsetserleg area", "Family camp", "Ridge above the camp"],
-            acts: ["hike", "meal"],
-            d: "A chill day after the saddle. Short hike up the ridge behind the camp, help cook dinner. Khorkhog night.",
-            more: "Chill day after yesterday's ride. Short hike up the ridge behind the camp, help cook dinner if you want. Khorkhog (lamb cooked on hot stones in a sealed pot) goes on the fire.",
-          },
-          {
-            n: "10", act: 1, t: "Back to UB",
+            n: "08", act: 1, t: "Back to UB",
             stops: ["Family camp", "Karakorum", "Erdene Zuu Monastery", "Ulaanbaatar"],
             acts: ["drive", "visit", "city"],
             d: "Drive back east, ~6 hours. Stop at Erdene Zuu Monastery in Karakorum. UB by evening.",
@@ -256,11 +242,12 @@ export default function SouthernGobiPage() {
           "4×4 Russian van, fuel, driver",
           "English/Mongolian guide (Tugi)",
           "All meals on the road",
-          "Nomadic family ger stays (4 nights)",
+          "Nomadic family ger stays (3 nights)",
           "Desert tent night (1 night)",
           "Hot-spring camp (1 night)",
-          "Ger camp + UB arrival/departure (2 nights)",
+          "Ger camp nights (2 nights)",
           "Camel ride at Khongoriin Els",
+          "Full horse-trek day in Tsetserleg",
           "All park permits and entrance fees",
         ]}
         bring={[
@@ -278,19 +265,19 @@ export default function SouthernGobiPage() {
       <TourFAQ
         accent={ACCENT}
         items={[
-          { q: "How hard are the drive days really?", a: "Day 5 (Gobi → Orkhon) is ~8 hours and most of it is off-road. It&apos;s the longest. Days 1, 2, 3, and 8 are 5–7 hours each. Day 6 is 3. We stop every 90 min or so. It&apos;s doable — but you&apos;ll earn your hot-spring night." },
+          { q: "How hard are the drive days really?", a: "Day 5 (Gobi → Orkhon) is ~8 hours and most of it is off-road. It&apos;s the longest. Days 1, 2, and 8 are 5–6 hours each. Days 3, 4, 6, and 7 are short drives (1–4 hours). We stop every 90 min or so. It&apos;s doable — but you&apos;ll earn your hot-spring night." },
           { q: "Can I skip the camel ride?", a: "Yes — some travellers prefer a dune walk at sunset instead. No judgement, no price difference." },
           { q: "What&apos;s the temperature range?", a: "Gobi in June: 15–28 °C days, 5–12 °C nights. Central: 12–24 °C days, 5–15 °C nights. Wind is the bigger factor — it can turn a warm day cold in 10 minutes." },
           { q: "Is this good for photographers?", a: "Gobi at golden hour (dunes + Flaming Cliffs) is unreal. Long days with dust mean lens cleaning kit, not just a cloth. A dust-sealed zoom is ideal." },
-          { q: "Can I combine this with another tour?", a: "Playtime starts Jul 1 — a few days of rest in UB between the two works well. Naadam (Jul 8–14) is the other natural pairing. Ask and I'll sort." },
+          { q: "Can I combine this with another tour?", a: "Gobi ends Jun 20. There&apos;s a 10-day gap before Playtime (Jul 1 – 4) — plenty of room to explore UB or take a side trip. Naadam (Jul 8 – 14) pairs even better with that breathing room. Ask and I&apos;ll help you sort it." },
         ]}
       />
 
       <TourCTA
         accent={ACCENT}
-        title="June 10 – 19, 2026 · $900"
-        subtitle="Small group of 5 – 7. Deeper Gobi loop with a swing through central Mongolia on the way back. Bring a friend and save 15% each."
-        emailSubject="Gobi Glimpse + Central · June 10"
+        title="June 13 – 20, 2026 · $900"
+        subtitle="Small group of 5 – 7. The Gobi loop with a swing through central Mongolia and a full horse-trek day in Tsetserleg. Bring a friend and save 15% each."
+        emailSubject="Gobi Glimpse + Central · June 13"
       />
     </div>
   );

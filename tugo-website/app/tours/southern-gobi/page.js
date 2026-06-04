@@ -285,13 +285,13 @@ export default function GobiGlimpsePage() {
           "Water bottle — we refill from a jerry can",
           "Photography: dust-sealed gear or a rain sleeve",
         ]}
-        note="If June fits better, Gobi Glimpse + Central (June 10 – 19) covers similar ground earlier in the season."
+        note="If June fits better, Gobi Glimpse + Central (June 13 – 20) covers similar ground earlier in the season."
       />
 
       <TourFAQ
         accent={ACCENT}
         items={[
-          { q: "How is this different from Gobi Glimpse?", a: "Same places. Three more days. Gobi Glimpse (June) is tight — long driving days back-to-back. Southern Gobi (August) has breathing room — full days <em>at</em> the dunes, the canyon, the family camp. Same price-per-day, different experience." },
+          { q: "How is this different from Gobi Glimpse?", a: "Same places. Three more days. Gobi Glimpse (June) is tight — long driving days, less time at each stop. Southern Gobi (August) has breathing room — full days <em>at</em> the dunes, the canyon, the family camp. Different experience for the same kind of money." },
           { q: "Is late August cold in the Gobi?", a: "Days 18–26 °C, nights 4–12 °C. Much gentler than June. Bring a real sleeping bag and you&apos;ll love the desert nights." },
           { q: "Will the hot springs be crowded?", a: "No. Tsenkher gets busier in July for Naadam, but by late August it&apos;s mostly locals and our group. You&apos;ll have a pool to yourselves most evenings." },
           { q: "What&apos;s the riding like?", a: "Camel at Khongoriin Els (~2 hours, gentle). Optional horse day at the Orkhon family camp. No technical riding required." },
