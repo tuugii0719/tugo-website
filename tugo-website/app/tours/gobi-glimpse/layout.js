@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Gobi Glimpse + Central · Jun 13–20 2026",
   description:
-    "Eight days through Umnugobi and central Mongolia — Yoliin Am ice canyon, camels at Khongoriin Els, Flaming Cliffs, a full horse-trek day in Tsetserleg, hot springs. The June glimpse of the Gobi loop. From $900.",
+    "Eight days through Umnugobi and central Mongolia — Yoliin Am ice canyon, camels at Khongoriin Els, Flaming Cliffs, a full horse-trek day in Tsetserleg, hot springs. The June glimpse of the Gobi loop. From $700.",
 };
 
 export default function Layout({ children }) {

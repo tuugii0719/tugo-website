@@ -59,7 +59,7 @@ export default function SouthernGobiPage() {
                     { l: "Tour", v: "Jun 13 – 20" },
                     { l: "Days", v: "8" },
                     { l: "Group", v: "5 – 7" },
-                    { l: "Price", v: "$900" },
+                    { l: "Price", v: "$700" },
                   ].map((p) => (
                     <span key={p.l} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-night-950/50 backdrop-blur-md border border-amber-300/30">
                       <span className="text-amber-200 text-[10px] tracking-[0.2em] uppercase">{p.l}</span>
@@ -103,7 +103,7 @@ export default function SouthernGobiPage() {
           { l: "Group", v: "5 – 7" },
           { l: "Region", v: "South + Central" },
           { l: "Pace", v: "Tight · lots of driving" },
-          { l: "Price", v: "$900" },
+          { l: "Price", v: "$700" },
         ]}
       />
 
@@ -237,7 +237,7 @@ export default function SouthernGobiPage() {
 
       <IncludedBring
         accent={ACCENT}
-        priceLabel="$900"
+        priceLabel="$700"
         included={[
           "4×4 Russian van, fuel, driver",
           "English/Mongolian guide (Tugi)",
@@ -275,7 +275,7 @@ export default function SouthernGobiPage() {
 
       <TourCTA
         accent={ACCENT}
-        title="June 13 – 20, 2026 · $900"
+        title="June 13 – 20, 2026 · $700"
         subtitle="Small group of 5 – 7. The Gobi loop with a swing through central Mongolia and a full horse-trek day in Tsetserleg. Bring a friend and save 15% each."
         emailSubject="Gobi Glimpse + Central · June 13"
       />

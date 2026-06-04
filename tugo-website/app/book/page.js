@@ -15,7 +15,7 @@ import { FadeIn } from "@/components/animations/FadeIn";
 const PAIR_DISCOUNT = 0.15; // 15% off per person when booking a pair
 
 const tourOptions = [
-  { id: "gobi-glimpse",      title: "Gobi Glimpse + Central",     dates: "Jun 13 – 20",  days: 8,  price: 900,   emoji: "🏜️", includes: "Transport · Meals · Lodging · Guide" },
+  { id: "gobi-glimpse",      title: "Gobi Glimpse + Central",     dates: "Jun 13 – 20",  days: 8,  price: 700,   emoji: "🏜️", includes: "Transport · Meals · Lodging · Guide" },
   { id: "booked-jun",        title: "Booked · private window",    dates: "Jun 21 – 27",  days: null, price: null, emoji: "🚫", booked: true },
   { id: "playtime",          title: "Playtime Music Festival",    dates: "Jul 1 – 4",    days: 4,  price: 405,   emoji: "🎶", includes: "Festival ticket · Camping · Breakfast" },
   { id: "naadam",            title: "Naadam Festival",            dates: "Jul 8 – 14",   days: 7,  price: 630,   emoji: "🏇", includes: "Transport · Meals · Lodging · Guide" },

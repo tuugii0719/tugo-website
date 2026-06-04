@@ -34,7 +34,7 @@ const heroSlides = [
 
 const sliderTours = [
   { slug: "terelj-escape",     title: "Terelj Escape",            emoji: "🌲", dates: "Jul 16 – 18", days: 3,  price: "$270",   img: "/images/destinations/terelj-park.jpg",        accent: "text-teal-300",    includes: "Transport · Meals · Ger · Guide" },
-  { slug: "gobi-glimpse",      title: "Gobi Glimpse + Central",   emoji: "🏜️", dates: "Jun 13 – 20", days: 8,  price: "$900",   img: "/images/gallery/DSC08000.jpg",                accent: "text-orange-300",  includes: "Transport · Meals · Lodging · Guide" },
+  { slug: "gobi-glimpse",      title: "Gobi Glimpse + Central",   emoji: "🏜️", dates: "Jun 13 – 20", days: 8,  price: "$700",   img: "/images/gallery/DSC08000.jpg",                accent: "text-orange-300",  includes: "Transport · Meals · Lodging · Guide" },
   { booked: true,              title: "Booked · private window",  emoji: "🚫", dates: "Jun 21 – 27", days: null, price: null,    img: "/images/gallery/DSC02365.jpg",                accent: "text-sand-500" },
   { slug: "playtime",          title: "Playtime Music Festival",  emoji: "🎶", dates: "Jul 1 – 4",   days: 4,  price: "$405",   img: "/images/playtime/poster.jpg",                 accent: "text-fuchsia-300", includes: "Festival ticket · Camping · Breakfast" },
   { slug: "naadam",            title: "Naadam Festival",          emoji: "🏇", dates: "Jul 8 – 14",  days: 7,  price: "$630",   img: "/images/destinations/naadam-horse-racer.jpg", accent: "text-red-300",     includes: "Transport · Meals · Lodging · Guide" },
