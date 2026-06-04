@@ -3,7 +3,7 @@ import { Analytics } from "@vercel/analytics/react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-const SITE_URL = "https://wildmongoliatugi.com";
+const SITE_URL = "https://wildmongoliawithtugi.com";
 
 export const metadata = {
   metadataBase: new URL(SITE_URL),

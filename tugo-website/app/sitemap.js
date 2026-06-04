@@ -1,4 +1,4 @@
-const SITE_URL = "https://wildmongoliatugi.com";
+const SITE_URL = "https://wildmongoliawithtugi.com";
 
 const tourSlugs = [
   "altai-tavan-bogd",
