@@ -43,7 +43,7 @@ export default function NaadamPage() {
                   </span>
                 </h1>
                 <p className="text-sand-200 text-lg md:text-xl max-w-xl leading-relaxed mb-8">
-                  The three sports — wrestling, racing, archery — the way the country actually does them. Not the Ulaanbaatar stadium. A soum Naadam in Arkhangai, hosted by my own relatives, where the whole valley turns out for the races.
+                  The three sports — wrestling, racing, archery — the way the country actually does them. Not the Ulaanbaatar stadium. A local Naadam in Arkhangai, hosted by my own relatives, the whole valley out for the races — and all of it during ARA Fest, the month-long festival at the complex just down the road.
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-8">
@@ -97,7 +97,7 @@ export default function NaadamPage() {
           { l: "Days", v: "7" },
           { l: "Group", v: "5 – 7" },
           { l: "Region", v: "Orkhon → Arkhangai" },
-          { l: "Festival", v: "Local soum" },
+          { l: "Festival", v: "Naadam + ARA Fest" },
           { l: "Price", v: "$630" },
         ]}
       />
@@ -107,7 +107,8 @@ export default function NaadamPage() {
         title="Mongolia&rsquo;s biggest holiday, without the crowd."
         paragraphs={[
           "Naadam is the three-day national holiday — wrestling, horse racing, archery — that takes over the whole country every July. Most travellers see it in Ulaanbaatar: a stadium, assigned seats, thousands of other tourists. A great show, but a show.",
-          "I run it the way my family does it. We base in Arkhangai with my own relatives and go to the <em>local</em> soum Naadam — a roped-off field instead of a stadium, neighbours wrestling, kids racing horses across open valley, women in full holiday <em>deel</em>, and the best <em>khuushuur</em> you&apos;ll ever burn your fingers on. Being there with family is what gets you past the tourist distance: a seat in the shade, the introductions, the running commentary on who&apos;s who.",
+          "I run it the way my family does it. We base in Arkhangai with my own relatives and go to the <em>local</em> Naadam — a field in Tsetserleg instead of the UB stadium, neighbours wrestling, kids racing horses across open valley, women in full holiday <em>deel</em>, and the best <em>khuushuur</em> you&apos;ll ever burn your fingers on. Being there with family is what gets you past the tourist distance: a seat in the shade, the introductions, the running commentary on who&apos;s who.",
+          "Here&apos;s the bonus: all of this lands during <em>ARA Fest</em> — a month of concerts, shows, and sport that takes over the ARA Complex just outside Tsetserleg, minutes from where we&apos;re staying. The Arkhangai Naadam is part of it. On a festival night we wander over for whatever&apos;s on — a concert, a laser show, the mas-wrestling.",
           "We bookend the festival with the best of the central country — the Orkhon Valley on the way out, then Terkhiin Tsagaan Nuur, Khorgo&apos;s crater rim, and the Tsenkher hot springs to soak it all off before we turn for home. The route bends with the festival schedule — which is the whole idea.",
         ]}
       />
@@ -118,17 +119,17 @@ export default function NaadamPage() {
         days={[
           {
             n: "01", t: "UB → Orkhon Valley",
-            stops: ["Ulaanbaatar", "Roadside guanz", "Orkhon Valley camp"],
-            acts: ["drive", "ger", "meal"],
-            d: "Drive southwest out of UB into the Orkhon Valley — the river country that cradled the Mongol empire. A long road day; we settle by a riverside camp in the evening.",
-            more: "We leave UB around 8am and follow the road into Övörkhangai, roughly 6–7 hours with a guanz (roadside diner) lunch along the way. The Orkhon opens into a wide green valley — herds, the waterfall not far off, the first real quiet of the trip. Camp by the water.",
+            stops: ["Ulaanbaatar", "Roadside guanz", "Orkhon Valley tent camp"],
+            acts: ["drive", "camp", "meal"],
+            d: "Drive southwest out of UB into the Orkhon Valley — the river country that cradled the Mongol empire. A long road day; we settle into a riverside tent camp in the evening.",
+            more: "We leave UB around 8am and follow the road into Övörkhangai, roughly 6–7 hours with a guanz (roadside diner) lunch along the way. The Orkhon opens into a wide green valley — herds, the waterfall not far off, the first real quiet of the trip. We pitch the tents by the water.",
           },
           {
             n: "02", t: "Into Arkhangai · my family",
             stops: ["Orkhon Valley", "Tsetserleg", "My relatives' home"],
             acts: ["drive", "ger", "meal"],
             d: "Half-day north into Arkhangai, to my relatives' place near Tsetserleg. This is our base for the festival — a real family, a real kitchen, not a tourist camp.",
-            more: "Arkhangai is my family's country — green hills, the Tamir river, larch on the ridgelines. We drive up from the Orkhon and settle in with relatives who host us for the Naadam days. Over milk tea we plan the next two days around the soum's schedule. You're not a guest at a camp — you're a guest in a family.",
+            more: "Arkhangai is my family's country — green hills, the Tamir river, larch on the ridgelines. We drive up from the Orkhon and settle in with relatives who host us for the festival days. Over milk tea we plan around the Naadam schedule — and ARA Fest is already running at the ARA Complex just outside Tsetserleg, a few minutes from the house. You're not a guest at a camp — you're a guest in a family.",
           },
           {
             n: "03", t: "Village Naadam · opening",
@@ -141,15 +142,15 @@ export default function NaadamPage() {
             n: "04", t: "Valley horse races",
             stops: ["Race start, open steppe", "The finish line", "Family camp"],
             acts: ["horse", "festival", "meal"],
-            d: "The races are the heart of it — kids 6–12 galloping in from kilometres out across open valley, no track, the whole district turned out at the line. We follow it the local way, by jeep.",
-            more: "Naadam horse racing isn't a stadium event — it's run across open country, the finish line out on the valley floor. The jockeys are children, bareheaded, riding 15–25 km. We drive out to watch them set off, then race the dust back to the finish, where the winning horse is washed with airag and sung to. Last evening with the family — fire, stew, and by now you're part of the group.",
+            d: "The races are the heart of it — kids 6–12 galloping in from kilometres out across open valley, no track, the whole district turned out at the line. We follow it the local way, by jeep — then close the day with a festival night at the ARA Complex.",
+            more: "Naadam horse racing isn't a stadium event — it's run across open country, the finish line out on the valley floor. The jockeys are children, bareheaded, riding 15–25 km. We drive out to watch them set off, then race the dust back to the finish, where the winning horse is washed with airag and sung to. In the evening we head over to the ARA Complex for whatever the festival's got on — a concert, a show, the mas-wrestling — then back to the family for fire and stew.",
           },
           {
             n: "05", t: "Terkhiin Tsagaan Nuur + Khorgo",
-            stops: ["Khorgo volcano", "Terkhiin Tsagaan Nuur", "Lakeside camp"],
+            stops: ["Khorgo volcano", "Terkhiin Tsagaan Nuur", "Lakeside tent camp"],
             acts: ["drive", "peak", "hike", "water"],
-            d: "West to the lava-dammed White Lake. Hike the crater rim of Khorgo volcano (~40 min up), camp by the water. Swim if you're brave — it's cold.",
-            more: "Khorgo is a dormant volcano whose lava once dammed a river to create Terkhiin Tsagaan Nuur — a lake sitting in black basalt. The crater rim walk is about 40 minutes, easy grade, big views the whole way. We camp on the lakeshore. The water is COLD; swim or just sit by the fire — both count.",
+            d: "West to the lava-dammed White Lake. Hike the crater rim of Khorgo volcano (~40 min up), then pitch the tents by the water. Swim if you're brave — it's cold.",
+            more: "Khorgo is a dormant volcano whose lava once dammed a river to create Terkhiin Tsagaan Nuur — a lake sitting in black basalt. The crater rim walk is about 40 minutes, easy grade, big views the whole way. We pitch camp on the lakeshore. The water is COLD; swim or just sit by the fire — both count.",
           },
           {
             n: "06", t: "Tsenkher hot springs",
@@ -240,13 +241,16 @@ export default function NaadamPage() {
           "English/Mongolian guide (Tugi)",
           "All meals on the road",
           "3 nights with my relatives in Arkhangai",
-          "Riverside camp, Orkhon Valley (1 night)",
-          "Lakeside camp, Terkhiin Tsagaan Nuur (1 night)",
+          "Riverside tent camp, Orkhon Valley (1 night)",
+          "Lakeside tent camp, Terkhiin Tsagaan Nuur (1 night)",
           "Hot-spring camp, Tsenkher (1 night)",
+          "Camping gear — tent, sleeping mat, stove",
+          "An ARA Fest evening — concert or show (schedule permitting)",
           "All Naadam, park, and site entry fees",
           "UB airport pickup + drop-off",
         ]}
         bring={[
+          "Sleeping bag rated to 5 °C (for the tent nights)",
           "Festival-friendly clothes — sun hat, sunglasses",
           "Warm layer for evenings (down to 10 °C)",
           "Rain shell (afternoon storms in July)",
@@ -261,7 +265,8 @@ export default function NaadamPage() {
         accent={ACCENT}
         items={[
           { q: "Why a village Naadam instead of the big one in UB?", a: "The UB stadium Naadam is a huge show — and heavily commercial: thousands of tourists, assigned seats, everything behind a fence. A soum Naadam is what the holiday actually <em>is</em> — your neighbours wrestling, kids racing, grandmothers selling khuushuur from a tent. I wrote more about the difference <a href=\"/journal/naadam-village-vs-ulaanbaatar\">here</a>." },
-          { q: "Where do we stay?", a: "Three nights with my relatives near Tsetserleg in Arkhangai — actual family, not a tourist camp. The rest: a riverside camp in the Orkhon Valley, a night by Terkhiin Tsagaan Nuur, and the Tsenkher hot-spring camp." },
+          { q: "Where do we stay?", a: "Three nights with my relatives near Tsetserleg in Arkhangai — actual family, not a tourist camp. The other nights are tent camps: a riverside one in the Orkhon Valley and a lakeside one at Terkhiin Tsagaan Nuur, plus the ger camp at the Tsenkher hot springs. I bring the tents, mats, and stove — you bring a sleeping bag." },
+          { q: "What&apos;s the ARA Festival?", a: "ARA Fest is a month-long music-and-culture festival at the ARA Complex just outside Tsetserleg — concerts, theatrical shows, mas-wrestling, art camps — and the Arkhangai Naadam falls right inside it. Since we&apos;re based minutes away, we catch a festival night while we&apos;re there. One note: ARA&apos;s headline live-music weekend usually lands mid-to-late July, just after our dates — if you want to build around that too, tell me and we&apos;ll extend the trip." },
           { q: "How far is the driving?", a: "UB to the Orkhon Valley is ~6–7 hours on day one. From there it&apos;s a half-day up to Arkhangai, and the Naadam grounds are close to my family&apos;s place. The later legs — Terkh, Tsenkher, the run home — are 3–6 hours each, all stopping at real places." },
           { q: "Can I still see the UB opening ceremony?", a: "The soum ceremony is smaller — a horse parade, speeches, the wrestlers&apos; entrance. The famous stadium opening is its own spectacle. If you want both, add a day in UB around July 11 (the official holiday) before or after, and I&apos;ll help you line it up." },
           { q: "What about the weather?", a: "July in central Mongolia: 15–26 °C days, down to 10 °C at night. Pleasant. Afternoon thunderstorms are common but usually pass in half an hour — bring a shell." },

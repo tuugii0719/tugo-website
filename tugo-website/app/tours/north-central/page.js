@@ -118,11 +118,11 @@ const itinerary = [
   },
   {
     n: "10", act: 2,
-    t: "Tsenkher hot springs",
-    stops: ["Terkhiin", "Tsenkher", "Pool camp"],
+    t: "Tsetserleg → Tsenkher springs",
+    stops: ["Terkhiin", "Tsetserleg", "Tsenkher", "Pool camp"],
     acts: ["drive", "hotspring", "star"],
-    d: "~180 km south. 86°C spring water piped into wooden pools under the stars. A proper reset.",
-    more: "Day ten and your body knows it. Tsenkher is 86°C at the source — piped into wooden tubs at varying temperatures. You soak, you read, you soak again. By dark there's nothing but you, the water, and the stars. Sleep is deep.",
+    d: "South toward the springs, passing through Tsetserleg — Arkhangai's leafy capital and home of ARA Fest. If the festival has a show on, we stop in. Tonight: Tsenkher, 86 °C water in wooden pools under the stars.",
+    more: "We come down through Tsetserleg, where the ARA Complex runs a summer of concerts, shows, and sport. If the timing lines up we catch an evening of it on the way through — a bonus, not a fixed stop. Then Tsenkher: 86°C at the source, piped into wooden tubs at varying temperatures. You soak, you read, you soak again, and the stars do the rest.",
   },
   {
     n: "11", act: 2,
@@ -185,6 +185,10 @@ const faq = [
     a: "Days 10 – 26 °C, nights 5 – 12 °C. North is the coldest, Zavkhan the windiest, central Mongolia can throw afternoon thunderstorms. Pack layers, not bulk.",
   },
   {
+    q: "Do we catch the ARA Festival?",
+    a: "Maybe — and it's a bonus, not a fixed stop. Near the end we pass through Tsetserleg in Arkhangai, where ARA Fest runs concerts, shows, and sport across July. If our dates line up with something good, we stop in for an evening. The route bends to what's on.",
+  },
+  {
     q: "How reliable is mobile signal?",
     a: "Ulaanbaatar and the provincial towns (Mörön, Tsetserleg) are excellent. Outside of those, expect patchy 4G for 1–2 hours a day and 2–3 fully off-grid days around Khuvsgul and Zavkhan.",
   },
@@ -208,15 +212,20 @@ const waypoints = [
   { name: "Tosontsengel",lon:  98.3, lat: 48.8 },
   { name: "Zavkhan",     lon:  96.4, lat: 47.8 },
   { name: "Terkh",       lon: 100.0, lat: 48.0 },
+  { name: "Tsetserleg",  lon: 101.45, lat: 47.47 },
   { name: "Tsenkher",    lon: 101.8, lat: 47.3 },
   { name: "Orkhon",      lon: 102.9, lat: 46.9 },
   { name: "Bulgan",      lon: 103.5, lat: 48.8 },
   { name: "UB",          lon: 106.9, lat: 47.9 },
 ];
-const routeOrder = ["UB", "Bulgan", "Khuvsgul", "Mörön", "Tosontsengel", "Zavkhan", "Terkh", "Tsenkher", "Orkhon", "UB"];
+const routeOrder = ["UB", "Bulgan", "Mörön", "Khuvsgul", "Tosontsengel", "Zavkhan", "Terkh", "Tsetserleg", "Tsenkher", "Orkhon", "UB"];
 
-const projectLon = (lon) => ((lon - 87) / 33) * 100;
-const projectLat = (lat) => ((52 - lat) / 10) * 100;
+// Project lon/lat into the stylised map's viewBox (100 wide × 50 tall),
+// aligned to the hand-drawn country outline: lon 87–120 → x 3–96,
+// lat 41.5–52 → y 6–42. (Previously lat was scaled ×100 into a 50-tall box,
+// which pushed the southern stops below the country shape and off-canvas.)
+const projectLon = (lon) => ((lon - 87) / 33) * 93 + 3;
+const projectLat = (lat) => ((52 - lat) / 10.5) * 36 + 6;
 
 function MongoliaRouteMap() {
   const wp = Object.fromEntries(waypoints.map((p) => [p.name, p]));

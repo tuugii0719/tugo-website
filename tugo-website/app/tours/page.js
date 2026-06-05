@@ -86,8 +86,8 @@ const tours = [
     groupSize: "5–7",
     status: "available",
     description:
-      "A local soum Naadam in Arkhangai, based with the guide's own relatives — wrestling, archery, valley horse races, holiday food and deel. Wrapped with the Orkhon Valley, Terkhiin Tsagaan Nuur, Khorgo volcano, and Tsenkher hot springs. The route bends with the festival schedule.",
-    highlights: ["Village Naadam", "Family-hosted", "Orkhon Valley", "Terkh Lake", "Hot springs"],
+      "A local Naadam in Arkhangai during ARA Fest, based with the guide's own relatives — wrestling, archery, valley horse races, holiday food and deel, and a festival night at the ARA Complex. Wrapped with the Orkhon Valley, Terkhiin Tsagaan Nuur, Khorgo volcano, and Tsenkher hot springs. Route bends with the festival schedule.",
+    highlights: ["Arkhangai Naadam", "ARA Fest", "Family-hosted", "Terkh + Khorgo", "Hot springs"],
     theme: "naadam",
     startMonth: 6,
     startDay: 8,
