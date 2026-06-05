@@ -83,8 +83,8 @@ export default function NaadamArticlePage() {
           </p>
 
           <Figure
-            src="/images/tugi/naadam-wide-field.jpg"
-            alt="A village Naadam ground — gers, market tents, parked cars, and the roped arena on the open steppe"
+            src="/images/journal/naadam-ground.jpg"
+            alt="A village Naadam ground — gers, market tents, a bouncy castle, parked cars, and the roped arena on the open steppe"
             caption="A soum Naadam in full swing — gers, market tents, a bouncy castle, the roped arena, and half the province parked on the grass."
           />
           <p>
@@ -120,9 +120,9 @@ export default function NaadamArticlePage() {
           </p>
 
           <Figure
-            src="/images/destinations/naadam-horse-race.jpg"
-            alt="Child jockeys racing Mongolian horses across open steppe at Naadam"
-            caption="The jockeys are six to twelve, riding bareheaded across open valley. No track, no helmets — just kids, horses, and grass."
+            src="/images/journal/naadam-riders.jpg"
+            alt="Two riders grinning on Mongolian horses along an open steppe track in Arkhangai"
+            caption="Horse country, Arkhangai. The races run across open ground exactly like this — though on race day the riders are kids."
           />
           <p>
             The horses are bred and trained by the families that race them. A winning horse is more famous in its village than its rider. After the race, the families wash the lead horse with <em>airag</em> (fermented mare&apos;s milk) and sing songs to it.
@@ -144,6 +144,12 @@ export default function NaadamArticlePage() {
           <p>
             The real way in is to stay with a family near the event instead of day-tripping. Help cook, help prep the horses, sit through the long lunch — and somewhere in there you stop being a spectator and start being part of the day.
           </p>
+
+          <Figure
+            src="/images/journal/naadam-family.jpg"
+            alt="A Mongolian family gathered for a meal beside their ger on the green steppe during Naadam"
+            caption="Stay with a family near the festival and you stop being a spectator — this is lunch, and you're at the table."
+          />
 
           <h2>How to choose</h2>
           <p>
