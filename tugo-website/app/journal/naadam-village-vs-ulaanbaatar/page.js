@@ -71,7 +71,7 @@ export default function NaadamArticlePage() {
             Every soum (district) and every aimag (province) in Mongolia runs its own Naadam, usually a week or two before or after the national one. Same three sports, same costumes, same songs. Dramatically different scale.
           </p>
           <p>
-            In a place like Tosontsengel in Zavkhan province — population around 6,000 — the local Naadam is the biggest event of the year. Families ride in from camps 50 km out. The wrestling happens on a grass field marked with rope. Twenty wrestlers compete instead of 512. You stand five meters from the bouts. You can talk to the wrestlers afterwards. Their grandmother is selling <em>khuushuur</em> (deep-fried mutton pancakes) two stalls over.
+            Take a soum in Arkhangai — a district center of a few thousand — where the local Naadam is the biggest day of the year. Families ride in from camps 50 km out. The wrestling happens on a grass field marked with rope. Twenty wrestlers compete instead of 512. You stand five meters from the bouts. You can talk to the wrestlers afterwards. Their grandmother is selling <em>khuushuur</em> (deep-fried mutton pancakes) two stalls over.
           </p>
           <p>
             The horse races aren&apos;t broadcast. They happen on the open steppe with no track and no fence. You drive your jeep along the route to follow the finish.
@@ -131,10 +131,10 @@ export default function NaadamArticlePage() {
               The trip
             </p>
             <h3 className="font-display text-xl md:text-2xl text-sand-100 mb-3">
-              I run a Naadam tour in Zavkhan province.
+              I run a Naadam tour in Arkhangai.
             </h3>
             <p className="text-sand-300 text-sm md:text-base leading-relaxed mb-5">
-              Seven days, July 8–14, 2026. Local village Naadams (not the UB stadium), nomadic family stays, Tsenkher hot springs. Small group of 5–7.
+              Seven days, July 8–14, 2026 — based with my own relatives near Tsetserleg for a local soum Naadam (not the UB stadium), plus the Orkhon Valley, Terkhiin Tsagaan Nuur, and Tsenkher hot springs. Small group of 5–7.
             </p>
             <Link
               href="/tours/naadam"

@@ -5,7 +5,7 @@ const trip = {
   "@type": "TouristTrip",
   name: "Naadam Festival",
   description:
-    "Local-village Naadam in Zavkhan — horse racing, wrestling, archery, holiday foods and costumes, Terkhiin Tsagaan Nuur, Khorgo volcano, Tsenkher hot springs, nomadic family stays.",
+    "A local soum Naadam in Arkhangai, hosted by the guide's own relatives — wrestling, archery, valley horse races, plus the Orkhon Valley, Terkhiin Tsagaan Nuur, Khorgo volcano, and Tsenkher hot springs.",
   url: `${SITE_URL}/tours/naadam`,
   image: `${SITE_URL}/images/destinations/naadam-horse-racer.jpg`,
   touristType: "Cultural festival traveler",
@@ -27,7 +27,7 @@ const trip = {
 export const metadata = {
   title: "Naadam Festival · Jul 8–14 2026",
   description:
-    "Local-village Naadam in Zavkhan — horse racing, wrestling, holiday foods and costumes, Terkhiin Tsagaan Nuur, Khorgo volcano, Tsenkher hot springs, nomadic family stays. From $630.",
+    "A local soum Naadam in Arkhangai — wrestling, archery, valley horse races, hosted by the guide's own relatives. Plus the Orkhon Valley, Terkhiin Tsagaan Nuur, Khorgo volcano, and Tsenkher hot springs. From $630.",
 };
 
 export default function Layout({ children }) {

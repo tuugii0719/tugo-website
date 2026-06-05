@@ -86,8 +86,8 @@ const tours = [
     groupSize: "5–7",
     status: "available",
     description:
-      "Chill take on Naadam with deeper cultural immersion — local village Naadams, horse racing, wrestling, holiday foods and costumes, Zavkhan province, Terkhiin Tsagaan Nuur, Khorgo volcano, Tsenkher hot springs, nomadic family stays. Route bends with the festival schedule.",
-    highlights: ["Horse racing", "Wrestling", "Zavkhan", "Terkh Lake", "Hot springs"],
+      "A local soum Naadam in Arkhangai, based with the guide's own relatives — wrestling, archery, valley horse races, holiday food and deel. Wrapped with the Orkhon Valley, Terkhiin Tsagaan Nuur, Khorgo volcano, and Tsenkher hot springs. The route bends with the festival schedule.",
+    highlights: ["Village Naadam", "Family-hosted", "Orkhon Valley", "Terkh Lake", "Hot springs"],
     theme: "naadam",
     startMonth: 6,
     startDay: 8,

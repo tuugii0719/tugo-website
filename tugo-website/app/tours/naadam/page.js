@@ -34,7 +34,7 @@ export default function NaadamPage() {
             <div className="lg:col-span-7 lg:order-1 order-2">
               <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
                 <p className="text-amber-300 text-[11px] tracking-[0.4em] uppercase mb-4 font-medium">
-                  Mongolia&apos;s national holiday · 820th anniversary
+                  A local Naadam in Arkhangai · July 2026
                 </p>
                 <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-white leading-[0.92] mb-6">
                   <span className="block">Naadam</span>
@@ -43,7 +43,7 @@ export default function NaadamPage() {
                   </span>
                 </h1>
                 <p className="text-sand-200 text-lg md:text-xl max-w-xl leading-relaxed mb-8">
-                  The Three Manly Sports — wrestling, horse racing, archery — done right. Not the UB stadium spectacle. A single central province, a village stadium, the families who&apos;ve hosted me for years.
+                  The three sports — wrestling, racing, archery — the way the country actually does them. Not the Ulaanbaatar stadium. A soum Naadam in Arkhangai, hosted by my own relatives, where the whole valley turns out for the races.
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-8">
@@ -83,7 +83,7 @@ export default function NaadamPage() {
                   </div>
                 </div>
                 <p className="text-center text-amber-300/70 text-[10px] tracking-[0.3em] uppercase mt-4">
-                  Last year&apos;s field · the wrestling · the race
+                  A soum Naadam · the wrestling · the race
                 </p>
               </motion.div>
             </div>
@@ -94,10 +94,10 @@ export default function NaadamPage() {
       <VitalsStrip
         items={[
           { l: "Dates", v: "Jul 8 – 14, 2026" },
-          { l: "Days", v: "6" },
-          { l: "Group", v: "6 – 8" },
-          { l: "Region", v: "Zavkhan + central" },
-          { l: "Festival", v: "Local village" },
+          { l: "Days", v: "7" },
+          { l: "Group", v: "5 – 7" },
+          { l: "Region", v: "Orkhon → Arkhangai" },
+          { l: "Festival", v: "Local soum" },
           { l: "Price", v: "$630" },
         ]}
       />
@@ -106,64 +106,64 @@ export default function NaadamPage() {
         accent={ACCENT}
         title="Mongolia&rsquo;s biggest holiday, without the crowd."
         paragraphs={[
-          "Naadam is the three-day national holiday — wrestling, horse racing, archery — that happens every July. Most travellers see it in Ulaanbaatar: a stadium, a lot of tourists, a great show but a packaged one.",
-          "I run this one differently. We drive out to a single central-Mongolian province and catch the <em>local</em> Naadam there — the village version. Smaller stadium (sometimes just a roped-off field), actual neighbours wrestling, horse races you can watch from the fence, women in full holiday <em>deel</em>, the best <em>khuushuur</em> you&apos;ll ever eat.",
-          "Around it we wrap the central highlights — Zavkhan&apos;s lakes and forests, Terkhiin Tsagaan Nuur, Khorgo&apos;s crater rim, Tsenkher hot springs, and a couple of nights with a nomadic family we know. The route bends with the festival schedule — which is the whole idea.",
+          "Naadam is the three-day national holiday — wrestling, horse racing, archery — that takes over the whole country every July. Most travellers see it in Ulaanbaatar: a stadium, assigned seats, thousands of other tourists. A great show, but a show.",
+          "I run it the way my family does it. We base in Arkhangai with my own relatives and go to the <em>local</em> soum Naadam — a roped-off field instead of a stadium, neighbours wrestling, kids racing horses across open valley, women in full holiday <em>deel</em>, and the best <em>khuushuur</em> you&apos;ll ever burn your fingers on. Being there with family is what gets you past the tourist distance: a seat in the shade, the introductions, the running commentary on who&apos;s who.",
+          "We bookend the festival with the best of the central country — the Orkhon Valley on the way out, then Terkhiin Tsagaan Nuur, Khorgo&apos;s crater rim, and the Tsenkher hot springs to soak it all off before we turn for home. The route bends with the festival schedule — which is the whole idea.",
         ]}
       />
 
       <Itinerary
         accent={ACCENT}
-        title="Seven days with the holiday at the middle."
+        title="Seven days, the festival at the heart."
         days={[
           {
-            n: "01", t: "UB → Central Mongolia",
-            stops: ["Ulaanbaatar", "Roadside guanz lunch", "Family ger camp"],
+            n: "01", t: "UB → Orkhon Valley",
+            stops: ["Ulaanbaatar", "Roadside guanz", "Orkhon Valley camp"],
             acts: ["drive", "ger", "meal"],
-            d: "Morning drive west out of UB. Lunch at a roadside guanz. Arrive at our first family ger camp by evening.",
-            more: "We leave UB about 8am and drive west through the steppe — paved road most of the way. Lunch at a guanz (roadside diner) — the kind with sheep on the floor and a hot meal for $3. Settle into the family ger by sundown.",
+            d: "Drive southwest out of UB into the Orkhon Valley — the river country that cradled the Mongol empire. A long road day; we settle by a riverside camp in the evening.",
+            more: "We leave UB around 8am and follow the road into Övörkhangai, roughly 6–7 hours with a guanz (roadside diner) lunch along the way. The Orkhon opens into a wide green valley — herds, the waterfall not far off, the first real quiet of the trip. Camp by the water.",
           },
           {
-            n: "02", t: "Pre-Naadam · settle in",
-            stops: ["Family camp", "Village square", "Naadam grounds"],
-            acts: ["ger", "visit", "meal"],
-            d: "Slow morning at the family camp. Walk into the village for the Naadam opening preparations — costumes, kids racing horses to warm up, the smell of buuz everywhere.",
-            more: "Naadam is a holiday, and like any holiday the day before is half the fun. The village will be in motion — kids in deels, jockeys on the warm-up track, women cooking enormous trays of buuz. We walk through, meet people, settle in. Quiet ger night.",
+            n: "02", t: "Into Arkhangai · my family",
+            stops: ["Orkhon Valley", "Tsetserleg", "My relatives' home"],
+            acts: ["drive", "ger", "meal"],
+            d: "Half-day north into Arkhangai, to my relatives' place near Tsetserleg. This is our base for the festival — a real family, a real kitchen, not a tourist camp.",
+            more: "Arkhangai is my family's country — green hills, the Tamir river, larch on the ridgelines. We drive up from the Orkhon and settle in with relatives who host us for the Naadam days. Over milk tea we plan the next two days around the soum's schedule. You're not a guest at a camp — you're a guest in a family.",
           },
           {
-            n: "03", t: "Naadam · opening day",
-            stops: ["Village Naadam grounds", "Horse-race track", "Wrestling ring"],
-            acts: ["festival", "horse", "meal"],
-            d: "Horse race in the morning (riders are kids aged 6–12, some galloping 25 km). Wrestling in the afternoon. Archery alongside. Holiday food all day.",
-            more: "Opening day. We're at the track for the long-distance race — kids on Mongolian horses, no saddles in some cases, a 25 km gallop across the steppe. After lunch, wrestling and archery. Holiday food is its own event: buuz, khuushuur, aaruul, milk vodka if someone presses some on you.",
+            n: "03", t: "Village Naadam · opening",
+            stops: ["Soum Naadam grounds", "Wrestling field", "Archery line"],
+            acts: ["festival", "meal", "visit"],
+            d: "The local soum Naadam opens — wrestling on a roped field, archery alongside, the whole district in holiday deel. We move through it with family, not as outsiders.",
+            more: "Opening day at the village Naadam. Wrestlers in lambskin and silk, archers loosing at leather targets while the judges chant, kids everywhere, grandmothers selling khuushuur from tents. Being there with my relatives gets you past the tourist distance — a seat in the shade, the introductions, the running commentary on who's who and who's favoured to win.",
           },
           {
-            n: "04", t: "Naadam · finals",
-            stops: ["Naadam grounds", "Champion's tent", "Family camp fire"],
-            acts: ["festival", "meal", "star"],
-            d: "Second day of the village Naadam. Final wrestling matches, the horse races that crown the champions, costumes and speeches. Night around a fire.",
-            more: "Finals day. The wrestling brackets are down to the last few, the horse races crown a champion, there are costumes and speeches and a lot of milk tea. Evening is back at the family camp with a fire — by now you're part of the group.",
+            n: "04", t: "Valley horse races",
+            stops: ["Race start, open steppe", "The finish line", "Family camp"],
+            acts: ["horse", "festival", "meal"],
+            d: "The races are the heart of it — kids 6–12 galloping in from kilometres out across open valley, no track, the whole district turned out at the line. We follow it the local way, by jeep.",
+            more: "Naadam horse racing isn't a stadium event — it's run across open country, the finish line out on the valley floor. The jockeys are children, bareheaded, riding 15–25 km. We drive out to watch them set off, then race the dust back to the finish, where the winning horse is washed with airag and sung to. Last evening with the family — fire, stew, and by now you're part of the group.",
           },
           {
             n: "05", t: "Terkhiin Tsagaan Nuur + Khorgo",
-            stops: ["Family camp", "Khorgo volcano", "Terkhiin Tsagaan Nuur"],
+            stops: ["Khorgo volcano", "Terkhiin Tsagaan Nuur", "Lakeside camp"],
             acts: ["drive", "peak", "hike", "water"],
-            d: "Drive east to the lava-dammed White Lake. Hike the crater rim of Khorgo volcano (~40 min up). Swim in the lake if you're brave.",
-            more: "Khorgo is a dormant volcano whose lava once dammed a river to create Terkhiin Tsagaan Nuur — a lake nobody expected, sitting in basalt. Crater rim walk is about 40 minutes up, easy grade. Lake is COLD. Swim or don't; either is fine.",
+            d: "West to the lava-dammed White Lake. Hike the crater rim of Khorgo volcano (~40 min up), camp by the water. Swim if you're brave — it's cold.",
+            more: "Khorgo is a dormant volcano whose lava once dammed a river to create Terkhiin Tsagaan Nuur — a lake sitting in black basalt. The crater rim walk is about 40 minutes, easy grade, big views the whole way. We camp on the lakeshore. The water is COLD; swim or just sit by the fire — both count.",
           },
           {
             n: "06", t: "Tsenkher hot springs",
             stops: ["Terkhiin", "Tsenkher springs", "Wooden pool camp"],
             acts: ["drive", "hotspring", "star"],
-            d: "South to the springs. 86 °C water piped into wooden pools under the stars. A proper reset after three hard-and-happy days.",
-            more: "Tsenkher is the antidote to four busy days. 86°C at the source, piped into wooden tubs at varying temperatures. You soak, you read, you soak again. By dark there's nothing but you, the water, and the stars.",
+            d: "Back southeast to Tsenkher. 86 °C spring water piped into wooden pools under the stars — the reset after the festival.",
+            more: "Tsenkher is the antidote to a big week. 86°C at the source, piped into wooden tubs at varying temperatures. You soak, you read, you soak again. By dark there's nothing but you, the water, and the stars.",
           },
           {
-            n: "07", t: "Back to UB",
-            stops: ["Tsenkher", "Karakorum", "Erdene Zuu Monastery", "Ulaanbaatar"],
+            n: "07", t: "Tsenkher → UB",
+            stops: ["Tsenkher", "Kharkhorin", "Erdene Zuu Monastery", "Ulaanbaatar"],
             acts: ["drive", "visit", "city"],
-            d: "Slow morning at the springs, then the drive back east. Stop at Erdene Zuu Monastery and Karakorum ruins. UB by evening.",
-            more: "Final stretch. Erdene Zuu is the oldest surviving Buddhist monastery in Mongolia — 16th century, built from the stones of the old Mongol capital. Slow walk through the courtyards, then we point east. UB by evening.",
+            d: "Slow morning, then east toward home. Stop at Erdene Zuu Monastery in Kharkhorin — the old imperial capital. UB by evening.",
+            more: "On the way back we stop at Erdene Zuu — the oldest surviving Buddhist monastery in Mongolia, 16th century, walled with 108 stupas and built from the stones of Karakorum, Chinggis Khaan's old capital. A slow walk through the courtyards, then the last stretch east. UB by evening — group dinner if you're up for it.",
           },
         ]}
       />
@@ -215,7 +215,7 @@ export default function NaadamPage() {
           <div className="md:col-span-3">
             <SectionHead kicker="Holiday food" title="Khuushuur, airag, and then some." accent={ACCENT} />
             <p className="text-sand-300 text-lg leading-relaxed mb-4">
-              Naadam is the biggest <em>khuushuur</em> weekend of the year — deep-fried mutton hand-pies eaten straight off the pan by the stadium fence. Everyone has a count. Ten is modest. The record on one of my trips is twenty-three.
+              Naadam is the biggest <em>khuushuur</em> weekend of the year — deep-fried mutton hand-pies eaten straight off the pan by the field. Everyone keeps a count. Ten is modest. The most I&apos;ve watched someone put away is twenty-three.
             </p>
             <p className="text-sand-400 leading-relaxed mb-6">
               Add fermented mare&apos;s milk (<em>airag</em>), dried curds (<em>aaruul</em>), milk tea, and the occasional glass of vodka someone&apos;s grandfather insists you try. We eat well.
@@ -239,15 +239,16 @@ export default function NaadamPage() {
           "4×4 vehicle, fuel, driver",
           "English/Mongolian guide (Tugi)",
           "All meals on the road",
-          "Nomadic family ger stays (4 nights)",
-          "Hot-spring camp (1 night)",
-          "Local village Naadam entry / seating",
-          "All park and site entrance fees",
+          "3 nights with my relatives in Arkhangai",
+          "Riverside camp, Orkhon Valley (1 night)",
+          "Lakeside camp, Terkhiin Tsagaan Nuur (1 night)",
+          "Hot-spring camp, Tsenkher (1 night)",
+          "All Naadam, park, and site entry fees",
           "UB airport pickup + drop-off",
         ]}
         bring={[
           "Festival-friendly clothes — sun hat, sunglasses",
-          "Warm layer for evenings (10–12 °C)",
+          "Warm layer for evenings (down to 10 °C)",
           "Rain shell (afternoon storms in July)",
           "Swimsuit (hot springs + lake)",
           "Hiking shoes for the Khorgo crater",
@@ -259,19 +260,20 @@ export default function NaadamPage() {
       <TourFAQ
         accent={ACCENT}
         items={[
-          { q: "Why the local Naadam instead of the big UB one?", a: "The stadium Naadam in UB is a huge show but also heavily commercial — thousands of tourists, assigned seats, everything behind a fence. Village Naadam is what the holiday actually is: your neighbours wrestling, kids racing, grandmothers selling khuushuur from a tent. Real." },
-          { q: "Will I see opening ceremony fireworks?", a: "The village ceremony is smaller — speeches, a horse parade, maybe a military honor march. The UB ceremony is the bigger spectacle. If that matters, pair this with a day in UB around July 11 (the official holiday) for the stadium opening." },
-          { q: "How far is the drive?", a: "UB to the province is ~6 – 7 hours on day 1. The festival site is close to the family camp. Day 4 – 6 are shorter drives, 3 – 5 hours each, all stopping at real places." },
-          { q: "What about the heat?", a: "July in central Mongolia: 15–26 °C, which is pleasant. Evenings drop to 10 °C. Afternoon thunderstorms are common but usually pass in 30 min." },
-          { q: "Is this good for photographers?", a: "Yes — the light is clean, the subjects are striking, the access is personal. Long lens for horse racing, wide for the crowd, fast prime for portraits. Tugi will help you get close without being in the way." },
-          { q: "What if Naadam dates shift?", a: "Naadam falls on July 11–13 nationally. Village Naadam starts a few days earlier or later. We confirm exact dates 60 days out — the Jul 8–13 window catches most cycles." },
+          { q: "Why a village Naadam instead of the big one in UB?", a: "The UB stadium Naadam is a huge show — and heavily commercial: thousands of tourists, assigned seats, everything behind a fence. A soum Naadam is what the holiday actually <em>is</em> — your neighbours wrestling, kids racing, grandmothers selling khuushuur from a tent. I wrote more about the difference <a href=\"/journal/naadam-village-vs-ulaanbaatar\">here</a>." },
+          { q: "Where do we stay?", a: "Three nights with my relatives near Tsetserleg in Arkhangai — actual family, not a tourist camp. The rest: a riverside camp in the Orkhon Valley, a night by Terkhiin Tsagaan Nuur, and the Tsenkher hot-spring camp." },
+          { q: "How far is the driving?", a: "UB to the Orkhon Valley is ~6–7 hours on day one. From there it&apos;s a half-day up to Arkhangai, and the Naadam grounds are close to my family&apos;s place. The later legs — Terkh, Tsenkher, the run home — are 3–6 hours each, all stopping at real places." },
+          { q: "Can I still see the UB opening ceremony?", a: "The soum ceremony is smaller — a horse parade, speeches, the wrestlers&apos; entrance. The famous stadium opening is its own spectacle. If you want both, add a day in UB around July 11 (the official holiday) before or after, and I&apos;ll help you line it up." },
+          { q: "What about the weather?", a: "July in central Mongolia: 15–26 °C days, down to 10 °C at night. Pleasant. Afternoon thunderstorms are common but usually pass in half an hour — bring a shell." },
+          { q: "Is this good for photographers?", a: "Very. Clean light, striking subjects, and — through my family — access most visitors don&apos;t get. Long lens for the races, wide for the crowd, a fast prime for portraits. Always ask before shooting people; I&apos;ll help with the hello." },
+          { q: "What if the Naadam dates shift?", a: "Naadam falls July 11–13 nationally; the soum festivals run a few days either side. The Jul 8–14 window catches the Arkhangai cycle. We confirm exact dates about 60 days out and bend the plan to fit." },
         ]}
       />
 
       <TourCTA
         accent={ACCENT}
         title="July 8 – 14, 2026 · $630"
-        subtitle="One village, one holiday, one small group. Bring a friend and save 15% each. Limited seats — Naadam is the year&rsquo;s busiest week."
+        subtitle="One soum Naadam, my family&rsquo;s valley, one small group. Bring a friend and save 15% each. Limited seats — Naadam is the year&rsquo;s busiest week."
         emailSubject="Naadam · July 8 – 14"
       />
     </div>
