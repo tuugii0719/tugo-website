@@ -1,6 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 
+function Figure({ src, alt, caption }) {
+  return (
+    <figure className="not-prose my-8 md:my-10">
+      <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-sand-800/40">
+        <Image src={src} alt={alt} fill className="object-cover" sizes="(max-width: 768px) 100vw, 672px" />
+      </div>
+      <figcaption className="mt-2 text-sand-500 text-[13px] leading-snug">{caption}</figcaption>
+    </figure>
+  );
+}
+
 export default function NaadamArticlePage() {
   return (
     <article className="min-h-screen bg-night-950 text-sand-100">
@@ -70,6 +81,12 @@ export default function NaadamArticlePage() {
           <p>
             Every soum (district) and every aimag (province) in Mongolia runs its own Naadam, usually a week or two before or after the national one. Same three sports, same costumes, same songs. Dramatically different scale.
           </p>
+
+          <Figure
+            src="/images/tugi/naadam-wide-field.jpg"
+            alt="A village Naadam ground — gers, market tents, parked cars, and the roped arena on the open steppe"
+            caption="A soum Naadam in full swing — gers, market tents, a bouncy castle, the roped arena, and half the province parked on the grass."
+          />
           <p>
             Take a soum in Arkhangai — a district center of a few thousand — where the local Naadam is the biggest day of the year. Families ride in from camps 50 km out. The wrestling happens on a grass field marked with rope. Twenty wrestlers compete instead of 512. You stand five meters from the bouts. You can talk to the wrestlers afterwards. Their grandmother is selling <em>khuushuur</em> (deep-fried mutton pancakes) two stalls over.
           </p>
@@ -84,6 +101,12 @@ export default function NaadamArticlePage() {
           <p>
             Mongolian wrestling (<em>bökh</em>) has no weight classes and no time limits. Two men, leather boots, embroidered shorts. First one whose knee, elbow, or back touches the ground loses. That&apos;s it.
           </p>
+
+          <Figure
+            src="/images/destinations/naadam-wrestling.jpg"
+            alt="Two Mongolian wrestlers in traditional zodog and shuudag locked in a bout at Naadam"
+            caption="Bökh: no weight classes, no clock. First to touch a knee, elbow, or back to the ground loses."
+          />
           <p>
             At the village level you&apos;ll see matches that last 30 seconds and matches that last 25 minutes. Pre-match, wrestlers do the <em>devekh</em> — the eagle dance — a slow circling stretch that imitates the takeoff of an eagle, hands extended, knees flexed. After winning, the eagle dance happens again — a victory lap, slower, with the wrestler eating <em>aaruul</em> (dried curd) from his pocket like nothing happened.
           </p>
@@ -95,6 +118,12 @@ export default function NaadamArticlePage() {
           <p>
             This is the bit no tour ever shows you properly: in Mongolia, the riders are children. Aged 6 to 12. They ride bareheaded on small Mongolian horses across distances up to 25 km on open steppe. There&apos;s no track, no protective gear, no padded landing. Just kids, horses, and grass.
           </p>
+
+          <Figure
+            src="/images/destinations/naadam-horse-race.jpg"
+            alt="Child jockeys racing Mongolian horses across open steppe at Naadam"
+            caption="The jockeys are six to twelve, riding bareheaded across open valley. No track, no helmets — just kids, horses, and grass."
+          />
           <p>
             The horses are bred and trained by the families that race them. A winning horse is more famous in its village than its rider. After the race, the families wash the lead horse with <em>airag</em> (fermented mare&apos;s milk) and sing songs to it.
           </p>
@@ -103,6 +132,17 @@ export default function NaadamArticlePage() {
           </p>
           <p>
             That&apos;s Naadam. Not the stadium version.
+          </p>
+
+          <h2>Can you take part?</h2>
+          <p>
+            You can watch all of it up close, for free — no ticket, no registration. Walk right up to the wrestling field, stand at the horse-race finish, watch the archery from a few meters away.
+          </p>
+          <p>
+            The official competition is for locals — the jockeys are herding-family kids, the wrestlers register through the soum. But getting hands-on is easier than you&apos;d think. Families will put a bow in your hands at the archery, pour you <em>airag</em>, pull you into the dancing. And the wrestling: outside the official bracket, a friendly bout with a local is fair game. Test your strength — you&apos;ll lose, and the crowd will love you for trying. Honestly it makes their day too; a foreigner stepping onto the grass is half the entertainment.
+          </p>
+          <p>
+            The real way in is to stay with a family near the event instead of day-tripping. Help cook, help prep the horses, sit through the long lunch — and somewhere in there you stop being a spectator and start being part of the day.
           </p>
 
           <h2>How to choose</h2>
