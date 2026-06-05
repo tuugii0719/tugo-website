@@ -9,6 +9,17 @@ export const metadata = {
 
 const posts = [
   {
+    slug: "what-to-bring-to-a-mongolian-ger",
+    title: "What to bring to a Mongolian ger — and a few things not to do",
+    blurb:
+      "A practical guide to staying overnight with a nomadic family — what to pack, what to gift, the threshold rule, the milk-tea rule, and the mistakes foreigners make.",
+    image: "/images/gallery/DSC01558.jpg",
+    date: "June 2026",
+    read: "7 min",
+    kicker: "Mongolia 101 · Ger etiquette",
+    accent: "text-teal-200",
+  },
+  {
     slug: "naadam-village-vs-ulaanbaatar",
     title: "Naadam in a village vs. Naadam in Ulaanbaatar",
     blurb:

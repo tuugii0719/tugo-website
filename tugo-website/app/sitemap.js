@@ -12,7 +12,10 @@ const tourSlugs = [
 
 const topRoutes = ["", "/about", "/tours", "/book", "/gallery", "/why-tour-tugo", "/journal"];
 
-const journalPosts = ["naadam-village-vs-ulaanbaatar"];
+const journalPosts = [
+  "naadam-village-vs-ulaanbaatar",
+  "what-to-bring-to-a-mongolian-ger",
+];
 
 export default function sitemap() {
   const now = new Date();
