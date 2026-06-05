@@ -212,13 +212,12 @@ const waypoints = [
   { name: "Tosontsengel",lon:  98.3, lat: 48.8 },
   { name: "Zavkhan",     lon:  96.4, lat: 47.8 },
   { name: "Terkh",       lon: 100.0, lat: 48.0 },
-  { name: "Tsetserleg",  lon: 101.45, lat: 47.47 },
   { name: "Tsenkher",    lon: 101.8, lat: 47.3 },
   { name: "Orkhon",      lon: 102.9, lat: 46.9 },
   { name: "Bulgan",      lon: 103.5, lat: 48.8 },
   { name: "UB",          lon: 106.9, lat: 47.9 },
 ];
-const routeOrder = ["UB", "Bulgan", "Mörön", "Khuvsgul", "Tosontsengel", "Zavkhan", "Terkh", "Tsetserleg", "Tsenkher", "Orkhon", "UB"];
+const routeOrder = ["UB", "Bulgan", "Mörön", "Khuvsgul", "Tosontsengel", "Zavkhan", "Terkh", "Tsenkher", "Orkhon", "UB"];
 
 // Project lon/lat into the stylised map's viewBox (100 wide × 50 tall),
 // aligned to the hand-drawn country outline: lon 87–120 → x 3–96,
