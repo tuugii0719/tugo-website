@@ -31,8 +31,6 @@ const photos = [
   { id: "DSC01820", region: "central", tags: ["food", "khorkhog"] },
   { id: "DSC01843", region: "central", tags: ["family"] },
   { id: "DSC01846", region: "central", tags: ["family"] },
-  { id: "DSC01847", region: "central", tags: ["family"] },
-  { id: "DSC01857", region: "central", tags: ["family"] },
   { id: "DSC01861", region: "central", tags: ["family"] },
   { id: "DSC01967", region: "central", tags: ["horses"] },
   { id: "DSC02090", region: "central", tags: ["horses"] },

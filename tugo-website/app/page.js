@@ -28,7 +28,7 @@ const heroSlides = [
   { src: "/images/gallery/DSC08200.jpg",                  kicker: "The rhythm",  headline: "Flexible by design.",        tagline: "Plans bend to the weather, the herds, the people." },
   { src: "/images/gallery/DSC01810.jpg",                  kicker: "The care",    headline: "Looked after, always.",      tagline: "I notice when you’re cold, quiet, or worn down. I show up." },
   { src: "/images/gallery/DSC02431.jpg",                  kicker: "The camping", headline: "Gers & tents.",          tagline: "Cheaper, wilder, stars uninterrupted." },
-  { src: "/images/gallery/DSC01857.jpg",                  kicker: "The hosts",   headline: "Guest, not tourist.",        tagline: "Real homes. Real food. Real welcome." },
+  { src: "/images/gallery/DSC01861.jpg",                  kicker: "The hosts",   headline: "Guest, not tourist.",        tagline: "Real homes. Real food. Real welcome." },
   { src: "/images/gallery/DSC02365.jpg",                  kicker: "The group",   headline: "Four to seven. Never more.", tagline: "Small enough to actually know each other." },
 ];
 
