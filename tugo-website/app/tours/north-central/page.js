@@ -17,18 +17,18 @@ const acts = [
   {
     n: "I",
     label: "North",
-    days: "Days 1 – 5",
+    days: "Days 1 – 4",
     title: "The Dark Blue Pearl",
-    body: "Two drive days earn you three at the lake. Camp on the shore, ride into the larch taiga, take a boat to the opposite cliffs, fall asleep to water.",
+    body: "A night at Huuchin ger camp — hiking, a boat ride, a big fire — then north to Khatgal on the shore of Khuvsgul. A day at the lake before we turn west.",
     image: `${IMG}/DSC02464.jpg`,
     accent: "sky",
   },
   {
     n: "II",
     label: "West",
-    days: "Days 6 – 8",
-    title: "Into Zavkhan",
-    body: "Sand dunes pressed against larch forest, turquoise lakes, the Otgontenger massif in the distance. A full day on horseback into the larch hills above Khar Nuur — Zavkhan the way it should be moved through.",
+    days: "Days 5 – 8",
+    title: "Chuka's mountains",
+    body: "Two days on the road bring you to Zavkhan and Ikh-Uul — the home of Chuka, my western co-host. From his family camp, a two-day horse trek up into the Otgontenger high country, sleeping in tents under the peaks.",
     image: `${G}/DSC02431.jpg`,
     accent: "violet",
   },
@@ -36,8 +36,8 @@ const acts = [
     n: "III",
     label: "Central",
     days: "Days 9 – 12",
-    title: "Volcano, hot spring, home",
-    body: "Khorgo's crater rim, the pale water of Terkh, a long soak at Tsenkher, the Orkhon waterfall, and Erdene Zuu — one last khorkhog before the drive home.",
+    title: "Volcano, spring, dunes, home",
+    body: "Khorgo's crater rim and the pale water of Terkh, a long soak at Tsenkher, the Orkhon waterfall, Erdene Zuu, and the sand dunes of Elsen Tasarkhai on the last run home.",
     image: `${G}/DSC01684.jpg`,
     accent: "rose",
   },
@@ -47,74 +47,74 @@ const itinerary = [
   {
     n: "01", act: 0,
     t: "UB → Bulgan",
-    stops: ["Ulaanbaatar", "Mörön highway", "Huuchin ger camp"],
+    stops: ["Ulaanbaatar", "Central steppe", "Huuchin ger camp"],
     acts: ["drive", "ger", "meal"],
-    d: "Early drive north, ~330 km on paved road. First night in Huuchin ger camp — warm stove, tea, quiet.",
-    more: "We leave UB around 8am to catch good light on the central steppe. Paved road all the way to Bulgan — long but smooth. By late afternoon we settle into the family ger at Huuchin: hot stove, milk tea, slow dinner. Early to bed; tomorrow is the long one.",
+    d: "Leave UB at 7am and drive north to Bulgan — Huuchin ger camp for the night. A long first day on paved road, easing into the country.",
+    more: "We roll out of the city early, ~330 km north on tarmac, watching the steppe open up. By late afternoon we settle into Huuchin ger camp — warm stove, milk tea, a slow first dinner. Early night; tomorrow we don't drive.",
   },
   {
     n: "02", act: 0,
-    t: "Bulgan → Khuvsgul",
-    stops: ["Bulgan", "Mörön", "Khuvsgul east shore"],
-    acts: ["drive", "camp", "water"],
-    d: "Through Mörön and up to the lake shore, ~470 km in two long stints. Arrive by evening. Cold swim if you dare.",
-    more: "Big driving day. We break in Mörön for fuel and hot soup, then push north into the Khuvsgul valley. First sight of the lake from the eastern ridge is one of those views that doesn't translate to a photo. We camp right at the water. The brave swim; the wise watch.",
+    t: "Huuchin · settle in",
+    stops: ["Huuchin ger camp", "Hills & water", "Big campfire"],
+    acts: ["hike", "water", "meal"],
+    d: "A full day at Huuchin — hiking, a boat ride, and a big campfire after dark. No driving, just arriving.",
+    more: "A day to actually land. We hike the hills around camp, take a boat out on the water, laze in the afternoon. After sunset there's a proper fire — the first unhurried evening of the trip, and the night everyone in the group starts learning each other's names.",
   },
   {
     n: "03", act: 0,
-    t: "Khuvsgul · shore day",
-    stops: ["Khuvsgul east shore", "Larch forest edge"],
-    acts: ["water", "hike", "fish", "star"],
-    d: "Slow day. Kayak, shore hikes, fish for dinner, stargaze. Sauna if the camp has one.",
-    more: "Nothing scheduled. You wake when you wake. Kayaks are free for the morning; hike to one of the small waterfalls or just sit on the rocks. Some camps have a Russian-style banya we can fire up. Dinner is whatever we caught.",
+    t: "Bulgan → Khatgal · Khuvsgul",
+    stops: ["Bulgan", "Khatgal", "Khuvsgul Lake"],
+    acts: ["drive", "water", "camp"],
+    d: "Depart 8am, drive north to Khatgal on the southern shore of Khuvsgul — the Dark Blue Pearl. Arrive by the lake.",
+    more: "A big day north into the Khuvsgul valley. First sight of the lake from the ridge is one of those views a photo can't hold. We base at Khatgal, the gateway town on the south shore — cold, clear, enormous water hemmed by larch and mountains.",
   },
   {
     n: "04", act: 0,
-    t: "Khuvsgul · boat day",
-    stops: ["Khuvsgul shore", "Cliff lookouts", "Far-shore beach"],
-    acts: ["water", "meal"],
-    d: "On the water — cliff lookouts, rocky islands, the opposite shore. Grill on a beach.",
-    more: "Local boatman takes us out for the full lake. We stop at the cliffs on the east side, motor across to the far shore, pull up on an empty beach for a grill lunch. Back by late afternoon, fire pit by sundown.",
+    t: "Khuvsgul · hike day",
+    stops: ["Khuvsgul shore", "Forest trails", "Lakeside"],
+    acts: ["hike", "water", "star"],
+    d: "A day at the lake. Hike the shoreline and into the larch, swim if you're brave, fall asleep to the water.",
+    more: "Nothing to chase today. Hike along the shore or up into the forest, kayak if the camp has boats, swim (it's cold enough to make you yell), and let the lake do its work. Stars over the water at night — this far north, the dark comes late and deep.",
   },
   {
-    n: "05", act: 0,
-    t: "Taiga · horseback",
-    stops: ["Larch taiga", "Ridge picnic spot", "Khuvsgul ger camp"],
-    acts: ["horse", "hike", "meal"],
-    d: "Half-day ride up into the larch forest with a local horse family. Picnic lunch on a ridge. Easy pace.",
-    more: "Horses, not snowmobiles. The family that runs the trek has been there since the lake was a Soviet outpost — they read the weather by the trees. Easy pace, no riding experience needed. We picnic on a ridge with the whole lake at our feet, then back down by mid-afternoon.",
+    n: "05", act: 1,
+    t: "Khuvsgul → Tosontsengel",
+    stops: ["Khuvsgul", "Mörön", "Tosontsengel", "River tent camp"],
+    acts: ["drive", "camp"],
+    d: "Leave the lake at 3pm, down through Mörön toward Tosontsengel. We pitch tents somewhere on the road as the light goes.",
+    more: "The leg that earns you Zavkhan. South through Mörön for fuel and hot soup, then west on rougher road. We don't race to a fixed bed — we camp in tents wherever the day runs out, fire going, dinner from the cooler, the sky enormous.",
   },
   {
     n: "06", act: 1,
-    t: "Khuvsgul → Tosontsengel",
-    stops: ["Khuvsgul south", "Tosontsengel pass", "River camp"],
-    acts: ["drive", "camp"],
-    d: "The hard day — ~450 km south-west, much of it off-road. We stop often. Camp by a river on the way.",
-    more: "This is the leg that earns you Zavkhan. Most of it is unpaved — we move with the country, not against it. Stops for tea, for views, for the herders who flag us down. By nightfall we're set up by a river, fire going, dinner from the cooler.",
+    t: "Into Zavkhan · Chuka's home",
+    stops: ["Tosontsengel", "Ikh-Uul", "Chuka's family camp"],
+    acts: ["drive", "ger", "meal"],
+    d: "Depart 10am to Ikh-Uul in Zavkhan — the home of Chuka, my western co-host. Settle in with his family under the mountains.",
+    more: "We reach Ikh-Uul around midday and move in with Chuka — my co-host out west, who knows the Otgontenger high country the way I know the central steppe. His family hosts us: their ger, their food, their kitchen. Over milk tea we sort out the horses for tomorrow.",
   },
   {
     n: "07", act: 1,
-    t: "Zavkhan · lakes & dunes",
-    stops: ["Khar Nuur", "Sand dunes", "Herder family ger"],
-    acts: ["hike", "ger", "meal"],
-    d: "Explore the lakes and dunes. Visit a herder family, taste fresh aaruul, dinner around a fire.",
-    more: "Zavkhan is Mongolia's strangest, most beautiful province — sand dunes pressed against larch forest, turquoise lakes that shouldn't exist there. We move slowly between them, visit a herder family in the afternoon (fresh aaruul, milk vodka if you want it), and end with fire and stew.",
+    t: "Horse trek into the mountains",
+    stops: ["Chuka's camp", "Mountain trail", "High tent camp"],
+    acts: ["horse", "camp", "meal"],
+    d: "A full day on horseback up into the mountains with Chuka, to a tent camp high under the Otgontenger peaks. Fire, stew, stars.",
+    more: "Horses, not 4×4s. Chuka leads us up into the high country at an easy pace — sure-footed mountain horses, patient ones for whoever's never ridden. We climb out of the valley and make camp in tents up under the peaks: fire, stew, and a night sky with nothing in the way.",
   },
   {
     n: "08", act: 1,
-    t: "Zavkhan · horse-trek day",
-    stops: ["Khar Nuur foothills", "Larch ridge", "Herder camp"],
-    acts: ["horse", "hike", "meal"],
-    d: "Full day on horseback into the larch hills above Khar Nuur. Picnic lunch on a ridge, slow ride back to the family camp. Fire and stew that night.",
-    more: "Horses, not 4×4s. We meet the family that runs the trek at first light, pick our mounts — patient, sure-footed ones for whoever's never ridden — and head up into the larch hills above the lake. The pace is easy, the views are not. Picnic lunch on a ridge with Khar Nuur laid out below, ride back through the afternoon shadows. Another night in the herder ger; horsemeat stew if the family makes it, otherwise lamb.",
+    t: "Back to Chuka's home",
+    stops: ["High camp", "Mountain trail", "Chuka's family camp"],
+    acts: ["horse", "meal", "ger"],
+    d: "Ride back down the same high country to Chuka's home. A softer evening with the family after two days in the saddle.",
+    more: "We ride down through the morning, stopping where the light or the herders ask us to. Back at Chuka's by afternoon — a wash, a rest, a long family dinner. Two days on a horse leaves you pleasantly wrecked; tonight you sleep hard.",
   },
   {
     n: "09", act: 2,
-    t: "Zavkhan → Khorgo",
-    stops: ["Tosontsengel", "Terkhiin Tsagaan Nuur", "Khorgo crater"],
+    t: "Zavkhan → Terkhiin + Khorgo",
+    stops: ["Ikh-Uul", "Terkhiin Tsagaan Nuur", "Khorgo crater"],
     acts: ["drive", "peak", "hike", "camp"],
-    d: "~240 km east to Terkhiin Tsagaan Nuur, the lava-dammed \"White Lake\". Walk the crater rim at sunset.",
-    more: "We swap one weird landscape for another. Khorgo is a dormant volcano whose lava once dammed a river to create Terkhiin Tsagaan Nuur — a lake nobody expected, sitting in basalt. Crater rim walk at sunset, then camp by the lake.",
+    d: "Say goodbye to Chuka at noon and drive east to the lava-dammed White Lake. Walk the crater rim of Khorgo volcano; camp by the water.",
+    more: "We leave Chuka's around midday and point east. Khorgo is a dormant volcano whose lava once dammed a river to create Terkhiin Tsagaan Nuur — a lake nobody expected, sitting in black basalt. Crater rim walk at sunset, then camp on the lakeshore.",
   },
   {
     n: "10", act: 2,
@@ -126,7 +126,7 @@ const itinerary = [
   },
   {
     n: "11", act: 2,
-    t: "Orkhon Valley",
+    t: "Tsenkher → Orkhon Valley",
     stops: ["Tsenkher", "Orkhon waterfall", "Family camp"],
     acts: ["drive", "water", "meal", "ger"],
     d: "Drop into the Orkhon gorge to the waterfall. Family camp for the night; khorkhog on the fire.",
@@ -134,25 +134,25 @@ const itinerary = [
   },
   {
     n: "12", act: 2,
-    t: "Karakorum → UB",
-    stops: ["Orkhon", "Karakorum", "Erdene Zuu", "Ulaanbaatar"],
+    t: "Orkhon → Kharkhorin → Elsen Tasarkhai → UB",
+    stops: ["Orkhon", "Kharkhorin · Erdene Zuu", "Elsen Tasarkhai dunes", "Ulaanbaatar"],
     acts: ["visit", "drive", "city"],
-    d: "Erdene Zuu Monastery in the morning, then ~380 km back to the city. Late-afternoon arrival.",
-    more: "Erdene Zuu is the oldest surviving Buddhist monastery in Mongolia — 16th century, built from the stones of the old Mongol capital. Slow morning walk through the courtyards, then we point east. Back in UB by late afternoon. Group dinner that night if you're up for it.",
+    d: "Erdene Zuu Monastery at Kharkhorin, then the sand dunes of Elsen Tasarkhai, then the road home. UB by evening.",
+    more: "Two stops on the way out. Erdene Zuu at Kharkhorin is Mongolia's oldest surviving monastery — 16th century, walled with 108 stupas, built from the stones of Chinggis Khaan's old capital. Then Elsen Tasarkhai, a ribbon of real sand dunes in the middle of the steppe — a last taste of the Gobi without the long drive south. Then east to UB, in by evening. Group dinner if you're up for it.",
   },
 ];
 
 // Drive legs for the data strip
 const legs = [
   ["UB", "Bulgan", "330", "6"],
-  ["Bulgan", "Mörön", "370", "7"],
-  ["Mörön", "Khuvsgul", "100", "2.5"],
+  ["Bulgan", "Khatgal", "470", "9"],
   ["Khuvsgul", "Tosontsengel", "450", "9–10"],
-  ["Tosontsengel", "Terkhiin", "240", "5–6"],
+  ["Tosontsengel", "Ikh-Uul", "150", "4"],
+  ["Ikh-Uul", "Terkhiin", "250", "6"],
   ["Terkhiin", "Tsenkher", "180", "4–5"],
   ["Tsenkher", "Orkhon", "140", "3–4"],
-  ["Orkhon", "Karakorum", "70", "1.5"],
-  ["Karakorum", "UB", "380", "6"],
+  ["Orkhon", "Kharkhorin", "70", "1.5"],
+  ["Kharkhorin", "UB", "380", "6"],
 ];
 
 const included = [
@@ -210,14 +210,14 @@ const waypoints = [
   { name: "Khuvsgul",    lon: 100.5, lat: 51.0 },
   { name: "Mörön",       lon: 100.1, lat: 49.6 },
   { name: "Tosontsengel",lon:  98.3, lat: 48.8 },
-  { name: "Zavkhan",     lon:  96.4, lat: 47.8 },
+  { name: "Ikh-Uul",     lon:  96.8, lat: 48.1 },
   { name: "Terkh",       lon: 100.0, lat: 48.0 },
   { name: "Tsenkher",    lon: 101.8, lat: 47.3 },
   { name: "Orkhon",      lon: 102.9, lat: 46.9 },
   { name: "Bulgan",      lon: 103.5, lat: 48.8 },
   { name: "UB",          lon: 106.9, lat: 47.9 },
 ];
-const routeOrder = ["UB", "Bulgan", "Mörön", "Khuvsgul", "Tosontsengel", "Zavkhan", "Terkh", "Tsenkher", "Orkhon", "UB"];
+const routeOrder = ["UB", "Bulgan", "Mörön", "Khuvsgul", "Tosontsengel", "Ikh-Uul", "Terkh", "Tsenkher", "Orkhon", "UB"];
 
 // Project lon/lat into the stylised map's viewBox (100 wide × 50 tall),
 // aligned to the hand-drawn country outline: lon 87–120 → x 3–96,
@@ -382,7 +382,7 @@ export default function NorthCentralPage() {
                 Loop
               </h1>
               <p className="text-sand-200 text-lg md:text-xl max-w-xl leading-relaxed">
-                Twelve days up to the Dark Blue Pearl and back. Lakeside camping, a day on the taiga, a full horse-trek day in Zavkhan, then the central country on the way home.
+                Twelve days up to the Dark Blue Pearl and back. Khuvsgul, a two-day horse trek with my co-host Chuka in the Zavkhan mountains, the central volcano-and-hot-spring country, and the Elsen Tasarkhai dunes on the way home.
               </p>
             </motion.div>
           </div>
@@ -483,7 +483,7 @@ export default function NorthCentralPage() {
               className="lg:col-span-2"
             >
               <p className="text-sand-300 text-lg leading-relaxed mb-6">
-                One loop. A hard push north to the lake, five days around it, then a slow working back through Zavkhan and the central highlights.
+                One loop. North to the Dark Blue Pearl, west to Chuka&apos;s mountains in Zavkhan for the horse trek, then a slow working back through the central highlights — volcano, hot spring, dunes — and home.
               </p>
 
               {/* Drive distances */}
