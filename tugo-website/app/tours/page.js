@@ -118,36 +118,17 @@ const tours = [
     slug: "altai-tavan-bogd",
     title: "Altai Tavan Bogd",
     emoji: "🏔️",
-    dates: "Aug 3 – 8",
-    days: 6,
+    dates: "Aug 5 – 13",
+    days: 9,
     price: "$810",
     groupSize: "5–7",
     status: "available",
     description:
-      "Second Altai departure — same route, same everything included. Ölgii flight, Khoton Lake, eagle hunters, horseback to Baga Turgen waterfall, Potanin Glacier, petroglyphs. Co-hosted with a local Altai guide.",
-    highlights: ["UB flight inc.", "Khoton Lake", "Kazakh eagles", "Potanin Glacier"],
+      "Overland in 2026 — no flight. We drive the full width of the country to the Altai: the Khangai, the great lakes, Khovd, Tolbo Lake, then four days deep in the mountains — Khoton Lake, eagle hunters, Baga Turgen waterfall on horseback, the Potanin Glacier, petroglyphs. Co-hosted with a local Kazakh guide.",
+    highlights: ["Overland west", "Khoton Lake", "Kazakh eagles", "Potanin Glacier"],
     theme: "altai",
     startMonth: 7,
-    startDay: 3,
-    endMonth: 7,
-    endDay: 8,
-  },
-  {
-    id: "terelj-aug",
-    slug: "terelj-escape",
-    title: "Terelj Escape",
-    emoji: "🌲",
-    dates: "Aug 11 – 13",
-    days: 3,
-    price: "$270",
-    groupSize: "6–8",
-    status: "available",
-    description:
-      "Third Terelj weekend — end-of-summer departure. Same gentle setup — family ger camp as base, Turtle Rock, Aryabal Monastery, horseback, hiking, khorkhog. Plenty of free time to explore on your own.",
-    highlights: ["Turtle Rock", "Aryabal Monastery", "Khorkhog", "Ger stay"],
-    theme: "terelj",
-    startMonth: 7,
-    startDay: 11,
+    startDay: 5,
     endMonth: 7,
     endDay: 13,
   },
@@ -871,7 +852,7 @@ function CalendarSection() {
               Pick Your Month
             </h2>
             <p className="text-sand-400 max-w-2xl mx-auto leading-relaxed">
-              Eight departures across June, July, and August — weekend escapes, festivals, long flagship expeditions. Skim the agenda below for the full picture, or scroll the calendar to see how it lines up. Hover any highlighted day to peek inside.
+              Seven departures across June, July, and August — weekend escapes, festivals, long flagship expeditions. Skim the agenda below for the full picture, or scroll the calendar to see how it lines up. Hover any highlighted day to peek inside.
             </p>
           </div>
         </FadeIn>
@@ -958,7 +939,7 @@ export default function ToursPage() {
             <p className="text-xs tracking-[0.3em] uppercase text-sand-400 mb-4">2026 SEASON</p>
             <h1 className="font-display text-4xl md:text-6xl text-white mb-4">Your Journey Starts Here</h1>
             <p className="text-sand-300 max-w-xl mx-auto px-6">
-              Three months, eight departures. Pick a date on the calendar and we&apos;ll take you there.
+              Three months, seven departures. Pick a date on the calendar and we&apos;ll take you there.
             </p>
           </motion.div>
         </div>
@@ -969,7 +950,7 @@ export default function ToursPage() {
         <div className="max-w-5xl mx-auto px-6 py-8 flex flex-wrap justify-center gap-8 md:gap-14 text-center">
           {[
             { label: "Season", value: "June – August" },
-            { label: "Departures", value: "8 Scheduled" },
+            { label: "Departures", value: "7 Scheduled" },
             { label: "Group Size", value: "5–8" },
             { label: "Starting From", value: "$270" },
           ].map((stat, i) => (
@@ -998,8 +979,8 @@ export default function ToursPage() {
                 title: "Weekend Escapes",
                 duration: "3 Days",
                 price: "$270",
-                items: ["Terelj Escape × 2", "Any age welcome"],
-                desc: "Two Terelj weekends in July and August. Gentle, ger-camp vibe, close to the city.",
+                items: ["Terelj Escape", "Any age welcome"],
+                desc: "A Gorkhi-Terelj weekend in mid-July. Gentle, ger-camp vibe, 90 minutes from the city.",
                 color: "from-teal-400 to-teal-600",
                 border: "border-teal-700/20 hover:border-teal-600/40",
               },

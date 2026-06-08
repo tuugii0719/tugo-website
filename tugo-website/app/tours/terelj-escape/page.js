@@ -36,7 +36,7 @@ export default function TerelJEscapePage() {
             <div className="lg:col-span-7">
               <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
                 <p className="text-teal-200 text-[11px] tracking-[0.4em] uppercase mb-4 font-medium">
-                  Forest weekend · 3 departures · any age
+                  Forest weekend · Jul 16 – 18 · any age
                 </p>
                 <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-white leading-[0.92] mb-6">
                   <span className="block">Terelj</span>
@@ -45,7 +45,7 @@ export default function TerelJEscapePage() {
                   </span>
                 </h1>
                 <p className="text-sand-100 text-lg md:text-xl max-w-xl leading-relaxed mb-8">
-                  A gentle weekend in Gorkhi-Terelj — Turtle Rock, alpine rides, Aryabal Monastery, khorkhog with a family, and a night in a ger camp 90 minutes from the city. Three weekends across the season.
+                  A gentle weekend in Gorkhi-Terelj — Turtle Rock, alpine rides, Aryabal Monastery, khorkhog with a family, and a night in a ger camp 90 minutes from the city. One weekend departure this season.
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-8">
@@ -99,9 +99,7 @@ export default function TerelJEscapePage() {
       <Departures
         accent={ACCENT}
         list={[
-          { label: "Jun departure", dates: "Jun 5 – 7, 2026", days: 3 },
-          { label: "Jul departure", dates: "Jul 16 – 18, 2026", days: 3 },
-          { label: "Aug departure", dates: "Aug 11 – 13, 2026", days: 3 },
+          { label: "Summer departure", dates: "Jul 16 – 18, 2026", days: 3 },
         ]}
       />
 
@@ -110,7 +108,7 @@ export default function TerelJEscapePage() {
         title="The easiest yes of the season."
         paragraphs={[
           "Ninety minutes from Ulaanbaatar and you&apos;re in a different country. Terelj is where I take my own family — the granite stacks in the forest, the little meandering river, the one ger camp that makes the best khorkhog on the shoulder of Khentii.",
-          "This is the tour I&apos;m running three times in 2026 on purpose. It&apos;s short, it&apos;s warm, it&apos;s any-age. The easy yes for a first visit to Mongolia — and the easiest weekend to bolt onto a longer trip.",
+          "This is the easy one — short, warm, any-age. The simplest yes for a first taste of Mongolia, and the easiest weekend to bolt onto a longer trip. One departure in 2026, mid-July.",
           "If the rest of the calendar is too much, this is the one. I can all but guarantee you&apos;ll want to stay an extra night.",
         ]}
       />
@@ -221,14 +219,14 @@ export default function TerelJEscapePage() {
           { q: "Is it okay if I don't ride horses?", a: "Totally fine. The horseback session is optional. There are plenty of walks, river spots, and a ger to read in." },
           { q: "What if the weather turns?", a: "We run rain or shine. Ger is warm, khorkhog is better in the rain, and Turtle Rock looks incredible with clouds rolling in. Only cancellation would be an actual safety issue like a flooded road — which is rare." },
           { q: "How many people in the group?", a: "8–16. These departures often book up with families and friend groups, so the vibe tilts social. If you want a smaller private version, message me." },
-          { q: "Can I combine this with another tour?", a: "Yes — many people do Terelj (Jun 5–7) then rest a couple days and join Gobi Glimpse (Jun 10–18). Or Terelj (Aug 11–13) right before Southern Gobi + Central (Aug 18–28). Tell me what you're thinking and I'll suggest a combo." },
+          { q: "Can I combine this with another tour?", a: "Yes — Terelj (Jul 16–18) sits right between Naadam (Jul 8–14) and the North & Central Loop (Jul 21 – Aug 1), so it's an easy warm-up or a breather between bigger trips. Tell me what you're thinking and I'll suggest a combo." },
         ]}
       />
 
       <TourCTA
         accent={ACCENT}
-        title="3 departures · $270 each"
-        subtitle="Pick the weekend that fits. Bring a friend and save 15% each. Applications open now."
+        title="Jul 16 – 18, 2026 · $270"
+        subtitle="One weekend departure. Bring a friend and save 15% each. Applications open now."
         emailSubject="Terelj Escape · 2026"
       />
     </div>

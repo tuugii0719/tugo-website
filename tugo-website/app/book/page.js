@@ -21,8 +21,7 @@ const tourOptions = [
   { id: "naadam",            title: "Naadam Festival",            dates: "Jul 8 – 14",   days: 7,  price: 630,   emoji: "🏇", includes: "Transport · Meals · Lodging · Guide" },
   { id: "terelj-jul",        title: "Terelj Escape",              dates: "Jul 16 – 18",  days: 3,  price: 270,   emoji: "🌲", includes: "Transport · Meals · Ger · Guide" },
   { id: "north-central",     title: "North & Central Loop",       dates: "Jul 21 – Aug 1",  days: 12, price: 1080, emoji: "🐪", includes: "Transport · Meals · Lodging · Guide" },
-  { id: "altai-aug",         title: "Altai Tavan Bogd",           dates: "Aug 3 – 8",    days: 6,  price: 810,   emoji: "🏔️", includes: "UB↔Ölgii flight · Meals · Lodging · Guide" },
-  { id: "terelj-aug",        title: "Terelj Escape",              dates: "Aug 11 – 13",  days: 3,  price: 270,   emoji: "🌲", includes: "Transport · Meals · Ger · Guide" },
+  { id: "altai-aug",         title: "Altai Tavan Bogd",           dates: "Aug 5 – 13",   days: 9,  price: 810,   emoji: "🏔️", includes: "Overland · Meals · Lodging · Guide" },
   { id: "southern-gobi",     title: "Southern Gobi + Central",    dates: "Aug 18 – 28",  days: 11, price: 1080,  emoji: "🏜️", includes: "Transport · Meals · Lodging · Guide" },
 ];
 
@@ -244,7 +243,7 @@ export default function BookPage() {
               Pick your tour
             </h2>
             <p className="text-sand-400 max-w-xl mx-auto">
-              Eight departures across June, July, and August.{" "}
+              Seven departures across June, July, and August.{" "}
               <span className="text-sand-200">Bring a friend — save 15% each.</span>
             </p>
           </div>

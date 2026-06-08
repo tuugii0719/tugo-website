@@ -56,14 +56,14 @@ export default function AltaiTavanBogdPage() {
                   </span>
                 </h1>
                 <p className="text-sand-200 text-lg md:text-xl max-w-xl leading-relaxed mb-8">
-                  Glaciers, twin alpine lakes, Kazakh eagle hunters, 4,000-year-old petroglyphs. Flight in from UB, everything handled. The most remote tour on the 2026 calendar — and the one I&apos;m most excited to share.
+                  Glaciers, twin alpine lakes, Kazakh eagle hunters, 4,000-year-old petroglyphs. Overland across western Mongolia — the drive west is half the trip. The most remote tour on the 2026 calendar, and the one I&apos;m most excited to share.
                 </p>
 
                 <div className="flex flex-wrap gap-2 mb-8">
                   {[
-                    { l: "Duration", v: "6 days" },
-                    { l: "Departures", v: "2 / season" },
-                    { l: "Flight", v: "Included" },
+                    { l: "Duration", v: "9 days" },
+                    { l: "Style", v: "Overland" },
+                    { l: "Group", v: "5 – 7" },
                     { l: "Price", v: "$810" },
                   ].map((p) => (
                     <span key={p.l} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-night-950/60 backdrop-blur-md border border-indigo-300/30">
@@ -100,8 +100,8 @@ export default function AltaiTavanBogdPage() {
 
       <VitalsStrip
         items={[
-          { l: "Duration", v: "6 days" },
-          { l: "Departures", v: "2 in 2026" },
+          { l: "Duration", v: "9 days" },
+          { l: "Style", v: "Overland" },
           { l: "Group", v: "5 – 7" },
           { l: "Region", v: "Western Mongolia" },
           { l: "Price", v: "$810" },
@@ -112,65 +112,86 @@ export default function AltaiTavanBogdPage() {
       <Departures
         accent={ACCENT}
         list={[
-          { label: "August departure", dates: "Aug 3 – 8, 2026", days: 6 },
+          { label: "August departure", dates: "Aug 5 – 13, 2026", days: 9 },
         ]}
       />
 
       <Prologue
         accent={ACCENT}
-        title="Mongolia&rsquo;s wildest corner, all included."
+        title="Mongolia&rsquo;s wildest corner — the long way."
         paragraphs={[
           "The Altai is where Mongolia meets Russia, Kazakhstan, and China in a single mountain range. It&apos;s not like anywhere else in the country — the people are Kazakh, the culture is eagle-hunters, and the peaks start above 4,000 m.",
-          "I run this as the budget version on purpose. We fly you from UB to Ölgii so no wasted drive days, stay with nomad families (not fancy hotels), eat what they eat, and cover the absolute highlights — Khoton Lake, Baga Turgen waterfall on horseback, the Potanin Glacier viewpoint, petroglyphs older than the pyramids.",
-          "Everything is included — flight, food, guides, horses, permits. You bring your boots and a warm layer. I hand off to a local Altai co-host the moment we land in Ölgii; you get the warmth of a personal tour AND the depth of someone who grew up in this specific landscape.",
+          "In 2026 we do it overland. No flight — we drive west across the whole country, and that drive is half the reason to come: the Khangai, the great salt lakes, Khovd, the deep blue of Tolbo Lake, the land drying and rising under you for three days until the Altai finally stands up on the horizon. Then four days deep in the mountains, and the long road home.",
+          "We stay with nomad families, eat what they eat, and cover the highlights — Khoton Lake, Baga Turgen waterfall on horseback, the Potanin Glacier viewpoint, petroglyphs older than the pyramids. When we reach Ölgii a local Kazakh co-host takes the lead: you get the warmth of a personal trip AND the depth of someone who grew up in these peaks. Bring your boots, a warm layer, and a tolerance for long, beautiful drives.",
         ]}
       />
 
       <Itinerary
         accent={ACCENT}
-        title="Four days on the ground, two on the wing."
+        title="Three days west, three in the mountains, three home."
         days={[
           {
-            n: "01", t: "UB → Ölgii · Khoton Lake",
-            stops: ["Ulaanbaatar", "Ölgii", "Eagle-hunter family", "Khoton Lake shore"],
-            acts: ["drive", "visit", "ger"],
-            d: "Morning flight west to Ölgii (~3 hours). Scenic 170 km drive to the twin Khoton–Khurgan lakes. Stop with an eagle-hunter family — hold the eagle. Night with a nomad family on the shore.",
-            more: "Flight from UB to Ölgii is the cheapest way to start — the alternative is a 3-day drive. Once we land, scenic 170 km west to the lakes. We stop with a Kazakh eagle-hunter family; you can hold the bird if you want (heavy). Sleep in a family ger on the lakeshore.",
+            n: "01", t: "UB → central Mongolia",
+            stops: ["Ulaanbaatar", "Kharkhorin", "Khangai ger camp"],
+            acts: ["drive", "ger", "meal"],
+            d: "Leave UB early and drive west on the paved road, through Kharkhorin and up into the Khangai. A long first day; ger camp in central Mongolia.",
+            more: "We break the back of the distance on day one — pavement most of the way now. Pass Kharkhorin, the old imperial capital, then climb into the green Khangai. Ger camp for the night. The Altai is far; the road there is the trip.",
           },
           {
-            n: "02", t: "Horse ride · Baga Turgen Waterfall",
+            n: "02", t: "Across the great lakes",
+            stops: ["Khangai", "Zavkhan", "Great-lakes basin", "Lakeside camp"],
+            acts: ["drive", "water", "camp"],
+            d: "West again, through Zavkhan and into the great-lakes basin. The land dries and opens. Camp by the water as the steppe turns to desert-steppe.",
+            more: "The country changes texture hour by hour — green Khangai to the huge salt and freshwater lakes of the west, ringed by nothing. We camp by a lake. A long driving day, but this emptiness is exactly what you came west for.",
+          },
+          {
+            n: "03", t: "→ Khovd → Tolbo Lake → Ölgii",
+            stops: ["Khovd", "Tolbo Lake", "Ölgii"],
+            acts: ["drive", "visit", "ger"],
+            d: "Into Khovd, then up past the deep-blue Tolbo Lake to Ölgii — Mongolia's Kazakh capital, gateway to the Altai. Our local co-host takes the lead.",
+            more: "We reach Khovd around midday, then climb west and north — Tolbo Lake is a startling blue slab at altitude. Into Ölgii by evening: a different language, different food, mosques on the skyline. This is where my Kazakh co-host joins and leads. First night in the Altai.",
+          },
+          {
+            n: "04", t: "Khoton Lake · eagle hunters",
+            stops: ["Ölgii", "Khoton–Khurgan lakes", "Eagle-hunter family"],
+            acts: ["drive", "visit", "ger"],
+            d: "Scenic drive to the twin Khoton–Khurgan lakes. Stop with an eagle-hunter family — hold the bird if you dare. Night with a nomad family on the shore.",
+            more: "West from Ölgii to the lakes. We stop with a Kazakh eagle-hunter family; you can hold the eagle if you want (heavy — about seven kilos). Sleep in a family ger on the Khoton lakeshore, snow-line mountains across the water.",
+          },
+          {
+            n: "05", t: "Baga Turgen waterfall · horseback",
             stops: ["Khoton Lake", "Baga Turgen Waterfall", "Family camp"],
             acts: ["horse", "hike", "water", "ger"],
-            d: "Saddle up on Mongolia's tough little horses. 22 km round-trip to the waterfall, ~6 hours total. Forest, icy rivers, green pasture, snow-line at the China border. Drive to another family camp to stay.",
-            more: "Mongolian horses are stockier and tougher than they look — they handle the rocky trails fine. The ride to Baga Turgen passes through larch forest, fords a few icy streams, and ends at a 30m waterfall basically at the China border. Long day in the saddle but easy pace. Family camp for the night.",
+            d: "Saddle up on Mongolia's tough little horses — a ~22 km round trip to the waterfall, around 6 hours. Forest, icy fords, the snow-line at the China border. Family camp for the night.",
+            more: "Mongolian horses are stockier than they look and handle the rocky trails fine. The ride to Baga Turgen crosses larch forest and a few icy streams and ends at a 30 m waterfall basically on the China border. Long day in the saddle, easy pace. Family camp at night.",
           },
           {
-            n: "03", t: "Northern Altai Tavan Bogd",
-            stops: ["Family camp", "High passes", "Yak Milk River", "Ranger station camp"],
-            acts: ["drive", "peak"],
-            d: "Drive deep into the national park. High passes, hour-by-hour shifts in terrain, the Yak Milk White River. Night with a nomad family near the ranger station.",
-            more: "This is the day the landscape really opens up. We climb through high passes; the colour of the rock changes every hour. The Yak Milk River is exactly what it sounds like — milk-white glacial runoff. Sleep with a nomad family near the ranger station, deep inside the park.",
+            n: "06", t: "Tavan Bogd · Potanin Glacier",
+            stops: ["High passes", "Ranger station", "Sacred Ovoo", "Potanin Glacier", "Petroglyphs"],
+            acts: ["drive", "hike", "peak", "visit"],
+            d: "Deep into the national park — high passes, the Yak-Milk glacial river, the sacred Ovoo with the Five Holy Peaks and the Potanin Glacier laid out in front of you. Petroglyphs on the way back.",
+            more: "The big mountain day. We drive in through high passes — the rock changes colour every hour — to the ranger station, then walk up to the sacred Ovoo: the Five Holy Peaks of Tavan Bogd and the Potanin Glacier right there. Optional extra push gets you onto the ice. Bronze Age petroglyphs on the way out. Last night in the Altai.",
           },
           {
-            n: "04", t: "Sacred Ovoo · Potanin Glacier",
-            stops: ["Ranger station", "Sacred Ovoo viewpoint", "Potanin Glacier", "Petroglyph site"],
-            acts: ["hike", "peak", "visit"],
-            d: "10 km to the sacred Ovoo — the viewpoint for the Five Holy Peaks and the Potanin Ice Glacier. Optional 3.5 km hike to the glacier. Return to Ölgii via 3,000–4,000 BC petroglyphs.",
-            more: "Big day. The hike to the Ovoo is moderate — 10 km out, 2,500m elevation, mostly walking grade. From there, the Five Holy Peaks of Tavan Bogd are right in front of you. Optional extension to the glacier itself adds 3.5 km and gets you onto the ice. Back to Ölgii via Bronze Age petroglyphs on the way.",
+            n: "07", t: "Ölgii → Khovd",
+            stops: ["Ölgii bazaar", "Tolbo Lake", "Khovd"],
+            acts: ["city", "drive", "meal"],
+            d: "A morning in Ölgii — the bazaar, a Kazakh artisan or two — then we point east and start the long road home. Overnight in Khovd.",
+            more: "We say goodbye to the co-host after a slow morning in Ölgii: the bazaar is the centre of life here, and there's time for embroidery and leather from a couple of artisans, plus beshbarmak before the road. Then back down past Tolbo Lake to Khovd for the night.",
           },
           {
-            n: "05", t: "Ölgii · rest + culture",
-            stops: ["Ölgii bazaar", "Kazakh artisan studios", "Museum of Natural History"],
-            acts: ["city", "visit", "meal"],
-            d: "Recovery day. Explore Ölgii bazaar, meet Kazakh artisans, visit the Museum of Natural History. Dinner at a local spot.",
-            more: "Ölgii is the most distinctly Kazakh town in Mongolia — different language, different food, different mosques. The bazaar is the centre of life. We visit a couple of artisans (embroidery, leather), the museum has a small but worthwhile exhibit, and dinner is somewhere local — usually beshbarmak.",
+            n: "08", t: "Khovd → the great lakes",
+            stops: ["Khovd", "Great-lakes basin", "Khangai", "Camp"],
+            acts: ["drive", "water", "camp"],
+            d: "The long drive back east, retracing the lakes and the rising steppe. Camp on the way as the Altai drops behind you.",
+            more: "A full day on the road, but a different trip in reverse — the light is different, you know the country now, and the talk in the van is all about the week behind you. We camp somewhere on the central-west steppe.",
           },
           {
-            n: "06", t: "Ölgii → UB",
-            stops: ["Ölgii airport", "Ulaanbaatar"],
+            n: "09", t: "→ Ulaanbaatar",
+            stops: ["Central Mongolia", "Kharkhorin highway", "Ulaanbaatar"],
             acts: ["drive", "city"],
-            d: "Morning flight back east. Arrive in UB by afternoon with time for a shower before your onward plans.",
-            more: "Morning flight back to UB. We drop you at your hotel or the airport, whichever your next stop is. About 3 hours door-to-door.",
+            d: "Last stretch east on the paved road. Back in UB by evening — dusty, tired, and a long way from where you started the week.",
+            more: "Home run. We roll back into UB in the evening and drop you at your hotel. Nine days and the whole width of the country behind you. Group dinner that night if anyone still has the legs.",
           },
         ]}
       />
@@ -239,12 +260,11 @@ export default function AltaiTavanBogdPage() {
         accent={ACCENT}
         priceLabel="$810"
         included={[
-          "Round-trip flight: Ulaanbaatar ↔ Ölgii",
+          "All overland transport — 4×4 van, driver, fuel (UB ↔ Altai round trip)",
           "All meals (breakfast, lunch, dinner)",
-          "4×4 Russian van, driver, and fuel",
-          "English/Mongolian guide (Tugi) + local Altai co-host",
+          "English/Mongolian guide (Tugi) + local Kazakh co-host",
           "Horses and local riding guide for Baga Turgen",
-          "Ger camps and nomad family stays",
+          "Nomad family ger stays + tent camps on the road",
           "All park permits and site entrance fees",
           "Eagle-hunter visit fee",
         ]}
@@ -257,25 +277,25 @@ export default function AltaiTavanBogdPage() {
           "Altitude is up to ~3,000 m — flag any heart conditions",
           "A 40 L duffel (no hard suitcases)",
         ]}
-        note="Altai is physically the most demanding of our tours. The horse day is 6 hours in the saddle; the glacier hike is 3.5 km each way at altitude. Most ages handle it — just come with something in the tank."
+        note="This is now our longest tour and the biggest drive — six of the nine days have real road time, and the Altai is ~1,600 km from UB each way. On top of that the horse day is ~6 hours in the saddle and the glacier hike is at altitude. Come with patience for long, beautiful drives and something in the tank."
       />
 
       <TourFAQ
         accent={ACCENT}
         items={[
-          { q: "Is the flight really included?", a: "Yes. Round-trip UB ↔ Ölgii is built into the $810 price. Flight tickets go non-refundable ~45 days before departure, so if you need to cancel after that the flight portion is forfeit." },
+          { q: "How much of this is driving?", a: "A lot — that's the trade for no flight in 2026. Six of the nine days have real road time, three of them long (the Altai is ~1,600 km from UB each way). But the drive west is genuinely the trip — the Khangai, the great lakes, Khovd, Tolbo Lake. If long days in a van aren't your thing, this isn't your tour." },
           { q: "How cold does it get?", a: "Days 10–20 °C, nights can drop to 0–5 °C. The wind is the real factor — it cuts through thin layers. Wool or synthetic mid-layer + wind shell beats any fleece." },
           { q: "Do I have to ride a horse?", a: "The Baga Turgen day is on horseback with a local guide leading. If you really can&apos;t ride, we can swap it for a shorter hike — but the waterfall is the highlight and the horses are famously gentle." },
           { q: "Is the eagle hunter real or a show?", a: "Real. We visit a hunting family that actually uses their eagles for winter hunting. Summer they&apos;re training and mostly welcoming guests like us. Most famous training grounds are within a 2-hour drive." },
-          { q: "Can I do this + another tour?", a: "Yes — August Altai (Aug 3–8) leaves you ten days to recover before Gobi Glimpse (Aug 18–28). Or pair with Terelj (Aug 11–13) in between for a long, slow summer. Ask and I'll plan the combo." },
+          { q: "Can I do this + another tour?", a: "August Altai ends Aug 13, which leaves a few days before Gobi Glimpse + Central (Aug 18–28) — west then south, if you want to keep going. Ask and I'll plan the combo." },
         ]}
       />
 
       <TourCTA
         accent={ACCENT}
-        title="$810 per person · flight included"
-        subtitle="One departure in 2026 — Aug 3–8. Small group of 5–7. Bring a friend and save 15% each."
-        emailSubject="Altai Tavan Bogd · 2026"
+        title="$810 per person · overland, all in"
+        subtitle="One departure in 2026 — Aug 5–13, nine days overland. Small group of 5–7. Bring a friend and save 15% each."
+        emailSubject="Altai Tavan Bogd · Aug 5 – 13"
       />
     </div>
   );
