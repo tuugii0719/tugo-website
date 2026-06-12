@@ -39,7 +39,7 @@ const sliderTours = [
   { slug: "playtime",          title: "Playtime Music Festival",  emoji: "🎶", dates: "Jul 1 – 4",   days: 4,  price: "$405",   img: "/images/playtime/poster.jpg",                 accent: "text-fuchsia-300", includes: "Festival ticket · Camping · Breakfast" },
   { slug: "naadam",            title: "Naadam Festival",          emoji: "🏇", dates: "Jul 8 – 14",  days: 7,  price: "$630",   img: "/images/destinations/naadam-horse-racer.jpg", accent: "text-red-300",     includes: "Transport · Meals · Lodging · Guide" },
   { slug: "north-central",     title: "North & Central Loop",     emoji: "🐪", dates: "Jul 21 – Aug 1", days: 12, price: "$1,080", img: "/images/tours/north-central/DSC02464.jpg",    accent: "text-sky-300",     includes: "Transport · Meals · Lodging · Guide" },
-  { slug: "altai-tavan-bogd",  title: "Altai Tavan Bogd",         emoji: "🏔️", dates: "Aug 5 – 13", days: 9,  price: "$810",   img: "/images/destinations/altai-peaks.jpg",        accent: "text-indigo-300",  includes: "Overland · Meals · Lodging · Guide" },
+  { slug: "altai-tavan-bogd",  title: "Altai Tavan Bogd",         emoji: "🏔️", dates: "Aug 4 – 14", days: 11,  price: "$1,080",   img: "/images/destinations/altai-peaks.jpg",        accent: "text-indigo-300",  includes: "Overland · Meals · Lodging · Guide" },
   { slug: "southern-gobi",     title: "Southern Gobi + Central",  emoji: "🏜️", dates: "Aug 18 – 28", days: 11, price: "$1,080", img: "/images/destinations/khongoryn-1.jpg",        accent: "text-amber-300",   includes: "Transport · Meals · Lodging · Guide" },
 ];
 
