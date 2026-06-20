@@ -17,6 +17,7 @@ export default function Navigation() {
     { href: "/about", label: "About" },
     { href: "/tours", label: "Tours" },
     { href: "/gallery", label: "Gallery" },
+    { href: "/guides", label: "Guides" },
     { href: "/why-tour-tugo", label: "Why Tugi" },
   ];
 

@@ -34,13 +34,13 @@ const heroSlides = [
 
 const sliderTours = [
   { slug: "terelj-escape",     title: "Terelj Escape",            emoji: "🌲", dates: "Jul 16 – 18", days: 3,  price: "$270",   img: "/images/destinations/terelj-park.jpg",        accent: "text-teal-300",    includes: "Transport · Meals · Ger · Guide" },
-  { slug: "gobi-glimpse",      title: "Gobi Glimpse + Central",   emoji: "🏜️", dates: "Jun 13 – 20", days: 8,  price: "$700",   img: "/images/gallery/DSC08000.jpg",                accent: "text-orange-300",  includes: "Transport · Meals · Lodging · Guide" },
+  { slug: "gobi-glimpse",      title: "Gobi Glimpse + Central",   emoji: "🏜️", dates: "Jun 13 – 20", days: 8,  price: "$700",   img: "/images/gallery/DSC08000.jpg",                accent: "text-orange-300",  includes: "Transport · Meals · Lodging · Guide", again2027: true },
   { booked: true,              title: "Booked · private window",  emoji: "🚫", dates: "Jun 21 – 27", days: null, price: null,    img: "/images/gallery/DSC02365.jpg",                accent: "text-sand-500" },
   { slug: "playtime",          title: "Playtime Music Festival",  emoji: "🎶", dates: "Jul 1 – 4",   days: 4,  price: "$405",   img: "/images/playtime/poster.jpg",                 accent: "text-fuchsia-300", includes: "Festival ticket · Camping · Breakfast" },
-  { slug: "naadam",            title: "Naadam Festival",          emoji: "🏇", dates: "Jul 8 – 14",  days: 7,  price: "$630",   img: "/images/destinations/naadam-horse-racer.jpg", accent: "text-red-300",     includes: "Transport · Meals · Lodging · Guide" },
+  { slug: "naadam",            title: "Naadam Festival",          emoji: "🏇", dates: "Jul 8 – 14",  days: 7,  price: "$630",   img: "/images/destinations/naadam-horse-racer.jpg", accent: "text-red-300",     includes: "Transport · Meals · Lodging · Guide", limited: true },
   { slug: "north-central",     title: "North & Central Loop",     emoji: "🐪", dates: "Jul 21 – Aug 1", days: 12, price: "$1,080", img: "/images/tours/north-central/DSC02464.jpg",    accent: "text-sky-300",     includes: "Transport · Meals · Lodging · Guide" },
   { slug: "altai-tavan-bogd",  title: "Altai Tavan Bogd",         emoji: "🏔️", dates: "Aug 4 – 14", days: 11,  price: "$1,080",   img: "/images/destinations/altai-peaks.jpg",        accent: "text-indigo-300",  includes: "Overland · Meals · Lodging · Guide" },
-  { slug: "southern-gobi",     title: "Southern Gobi + Central",  emoji: "🏜️", dates: "Aug 18 – 28", days: 11, price: "$1,080", img: "/images/destinations/khongoryn-1.jpg",        accent: "text-amber-300",   includes: "Transport · Meals · Lodging · Guide" },
+  { slug: "southern-gobi",     title: "Southern Gobi + Central",  emoji: "🏜️", dates: "Aug 18 – 28", days: 11, price: "$1,080", img: "/images/destinations/khongoryn-1.jpg",        accent: "text-amber-300",   includes: "Transport · Meals · Lodging · Guide", limited: true },
 ];
 
 // ============================================================================
@@ -289,19 +289,29 @@ function TaglineSection() {
                     <Link
                       key={`${t.slug}-${i}`}
                       href={`/tours/${t.slug}`}
-                      className="snap-start flex-shrink-0 w-[240px] md:w-[260px] rounded-[24px] overflow-hidden bg-night-900/60 border border-sand-800/40 hover:border-sand-600/60 hover:shadow-[0_20px_40px_-12px_rgba(0,0,0,0.6)] transition-all group"
+                      className={`snap-start flex-shrink-0 w-[240px] md:w-[260px] rounded-[24px] overflow-hidden bg-night-900/60 border border-sand-800/40 hover:border-sand-600/60 hover:shadow-[0_20px_40px_-12px_rgba(0,0,0,0.6)] transition-all group ${t.again2027 ? "opacity-75 hover:opacity-100" : ""}`}
                     >
                       <div className="relative aspect-[4/5]">
                         <Image
                           src={t.img}
                           alt={t.title}
                           fill
-                          className="object-cover transition-transform duration-700 group-hover:scale-[1.04]"
+                          className={`object-cover transition-transform duration-700 group-hover:scale-[1.04] ${t.again2027 ? "grayscale opacity-40" : ""}`}
                           sizes="260px"
                         />
+                        {t.limited && (
+                          <span className="absolute top-3 left-3 inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-amber-500/20 backdrop-blur-md border border-amber-400/40 text-amber-200 text-[9px] tracking-[0.2em] uppercase font-medium">
+                            <span aria-hidden="true">⚠</span> Limited spots
+                          </span>
+                        )}
+                        {t.again2027 && (
+                          <span className="absolute top-3 left-3 inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-night-950/70 backdrop-blur-md border border-sand-600/40 text-sand-300 text-[9px] tracking-[0.2em] uppercase font-medium">
+                            <span aria-hidden="true">↻</span> Again in 2027
+                          </span>
+                        )}
                       </div>
                       <div className="p-4 md:p-5">
-                        <p className={`${t.accent} text-[10px] tracking-[0.2em] uppercase mb-1.5 font-medium`}>
+                        <p className={`${t.again2027 ? "text-sand-500" : t.accent} text-[10px] tracking-[0.2em] uppercase mb-1.5 font-medium`}>
                           {t.dates}
                         </p>
                         <h3 className="font-display text-base md:text-lg text-sand-100 leading-tight mb-1">

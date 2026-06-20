@@ -46,6 +46,12 @@ export default function NaadamPage() {
                   The three sports — wrestling, racing, archery — the way the country actually does them. Not the Ulaanbaatar stadium. A local Naadam in Arkhangai, hosted by my own relatives, the whole valley out for the races — and all of it during ARA Fest, the month-long festival at the complex just down the road.
                 </p>
 
+                <div className="mb-5">
+                  <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/20 border border-amber-400/50 text-amber-200 text-[11px] tracking-[0.2em] uppercase font-semibold">
+                    <span aria-hidden="true">⚠</span> Limited spots available
+                  </span>
+                </div>
+
                 <div className="flex flex-wrap gap-2 mb-8">
                   {[
                     { l: "Tour", v: "Jul 8 – 14" },
@@ -264,7 +270,7 @@ export default function NaadamPage() {
       <TourFAQ
         accent={ACCENT}
         items={[
-          { q: "Why a village Naadam instead of the big one in UB?", a: "The UB stadium Naadam is a huge show — and heavily commercial: thousands of tourists, assigned seats, everything behind a fence. A soum Naadam is what the holiday actually <em>is</em> — your neighbours wrestling, kids racing, grandmothers selling khuushuur from a tent. I wrote more about the difference <a href=\"/journal/naadam-village-vs-ulaanbaatar\">here</a>." },
+          { q: "Why a village Naadam instead of the big one in UB?", a: "The UB stadium Naadam is a huge show — and heavily commercial: thousands of tourists, assigned seats, everything behind a fence. A soum Naadam is what the holiday actually <em>is</em> — your neighbours wrestling, kids racing, grandmothers selling khuushuur from a tent. I wrote more about the difference <a href=\"/guides/naadam-village-vs-ulaanbaatar\">here</a>." },
           { q: "Where do we stay?", a: "Three nights with my relatives near Tsetserleg in Arkhangai — actual family, not a tourist camp. The other nights are tent camps: a riverside one in the Orkhon Valley and a lakeside one at Terkhiin Tsagaan Nuur, plus the ger camp at the Tsenkher hot springs. I bring the tents, mats, and stove — you bring a sleeping bag." },
           { q: "What&apos;s the ARA Festival?", a: "ARA Fest is a month-long music-and-culture festival at the ARA Complex just outside Tsetserleg — concerts, theatrical shows, mas-wrestling, art camps — and the Arkhangai Naadam falls right inside it. Since we&apos;re based minutes away, we catch a festival night while we&apos;re there. One note: ARA&apos;s headline live-music weekend usually lands mid-to-late July, just after our dates — if you want to build around that too, tell me and we&apos;ll extend the trip." },
           { q: "How far is the driving?", a: "UB to the Orkhon Valley is ~6–7 hours on day one. From there it&apos;s a half-day up to Arkhangai, and the Naadam grounds are close to my family&apos;s place. The later legs — Terkh, Tsenkher, the run home — are 3–6 hours each, all stopping at real places." },

@@ -33,7 +33,7 @@ export default function Footer() {
                 { href: "/about", label: "About" },
                 { href: "/tours", label: "Tours" },
                 { href: "/gallery", label: "Gallery" },
-                { href: "/journal", label: "Journal" },
+                { href: "/guides", label: "Guides" },
                 { href: "/why-tour-tugo", label: "Why Tugi" },
                 { href: "/book", label: "Book Now" },
               ].map((link) => (

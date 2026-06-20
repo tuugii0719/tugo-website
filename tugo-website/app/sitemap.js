@@ -10,9 +10,9 @@ const tourSlugs = [
   "terelj-escape",
 ];
 
-const topRoutes = ["", "/about", "/tours", "/book", "/gallery", "/why-tour-tugo", "/journal"];
+const topRoutes = ["", "/about", "/tours", "/book", "/gallery", "/why-tour-tugo", "/guides"];
 
-const journalPosts = [
+const guidePosts = [
   "naadam-village-vs-ulaanbaatar",
   "what-to-bring-to-a-mongolian-ger",
 ];
@@ -32,8 +32,8 @@ export default function sitemap() {
       changeFrequency: "monthly",
       priority: 0.7,
     })),
-    ...journalPosts.map((slug) => ({
-      url: `${SITE_URL}/journal/${slug}`,
+    ...guidePosts.map((slug) => ({
+      url: `${SITE_URL}/guides/${slug}`,
       lastModified: now,
       changeFrequency: "monthly",
       priority: 0.6,

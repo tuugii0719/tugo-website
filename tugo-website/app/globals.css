@@ -37,7 +37,7 @@ body {
   font-family: var(--font-display);
 }
 
-/* Long-form article styling — used in /journal/* */
+/* Long-form article styling — used in /guides/* */
 .prose-tugi {
   color: var(--color-sand-300);
   font-size: 1rem;

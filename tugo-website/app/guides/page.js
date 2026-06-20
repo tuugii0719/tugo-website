@@ -2,23 +2,12 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Journal",
+  title: "Guides",
   description:
-    "Field notes on Mongolia from Tugi — long-form pieces about the country, the festivals, and what tours often get wrong.",
+    "Practical guides to Mongolia from Tugi — the festivals, the routes, the markets, and what tours often get wrong.",
 };
 
 const posts = [
-  {
-    slug: "what-to-bring-to-a-mongolian-ger",
-    title: "What to bring to a Mongolian ger — and a few things not to do",
-    blurb:
-      "A practical guide to staying overnight with a nomadic family — what to pack, what to gift, the threshold rule, the milk-tea rule, and the mistakes foreigners make.",
-    image: "/images/gallery/DSC01558.jpg",
-    date: "June 2026",
-    read: "7 min",
-    kicker: "Mongolia 101 · Ger etiquette",
-    accent: "text-teal-200",
-  },
   {
     slug: "naadam-village-vs-ulaanbaatar",
     title: "Naadam in a village vs. Naadam in Ulaanbaatar",
@@ -27,24 +16,35 @@ const posts = [
     image: "/images/destinations/naadam-horse-racer.jpg",
     date: "June 2026",
     read: "6 min",
-    kicker: "Mongolia 101",
+    kicker: "Mongolia 101 · Naadam",
     accent: "text-red-200",
+  },
+  {
+    slug: "what-to-bring-to-a-mongolian-ger",
+    title: "Before you stay with a nomad family: the ger guide",
+    blurb:
+      "Staying overnight with a nomad family in their own ger — what a family ger is, what to bring and gift, ger etiquette, and the things foreigners worry about that don’t matter.",
+    image: "/images/gallery/DSC01558.jpg",
+    date: "June 2026",
+    read: "8 min",
+    kicker: "Mongolia 101 · Staying with a family",
+    accent: "text-teal-200",
   },
 ];
 
-export default function JournalPage() {
+export default function GuidesPage() {
   return (
     <div className="min-h-screen bg-night-950 text-sand-100">
       <section className="px-6 pt-24 pb-12 md:pt-32 md:pb-16">
         <div className="max-w-4xl mx-auto">
           <p className="text-sand-400 text-xs tracking-[0.3em] uppercase mb-4">
-            Journal
+            Guides
           </p>
           <h1 className="font-display text-4xl md:text-6xl text-sand-100 leading-[1.05] mb-5">
-            Field notes from Mongolia.
+            Guides to Mongolia.
           </h1>
           <p className="text-sand-300 text-base md:text-lg max-w-xl leading-relaxed">
-            Longer pieces I&apos;ve been meaning to write — about the festivals, the routes, the parts of the country tours often skip or get wrong.
+            Practical pieces I&apos;ve been meaning to write — about the festivals, the routes, the markets, and the parts of the country tours often skip or get wrong.
           </p>
         </div>
       </section>
@@ -54,7 +54,7 @@ export default function JournalPage() {
           {posts.map((post) => (
             <Link
               key={post.slug}
-              href={`/journal/${post.slug}`}
+              href={`/guides/${post.slug}`}
               className="group grid grid-cols-1 md:grid-cols-5 gap-6 rounded-2xl overflow-hidden bg-night-900/40 border border-sand-800/40 hover:border-sand-600/60 transition-colors"
             >
               <div className="relative aspect-[16/10] md:aspect-auto md:col-span-2 md:min-h-[200px]">

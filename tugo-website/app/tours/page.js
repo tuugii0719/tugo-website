@@ -46,7 +46,7 @@ const tours = [
     days: 11,
     price: "$1,080",
     groupSize: "5–7",
-    status: "available",
+    status: "limited",
     description:
       "Eleven days, properly paced — Dalanzadgad gateway, Yoliin Am ice canyon, a night with a camel family in the open Gobi, Khongoriin Els dunes, the Flaming Cliffs, then north through central Mongolia with hot springs, horseback, and family camps. The deeper version of the Gobi loop.",
     highlights: ["Dalanzadgad", "Yoliin Am", "Camel family", "Khongoriin Els", "Hot springs"],
@@ -84,7 +84,7 @@ const tours = [
     days: 7,
     price: "$630",
     groupSize: "5–7",
-    status: "available",
+    status: "limited",
     description:
       "A local Naadam in Arkhangai during ARA Fest, based with the guide's own relatives — wrestling, archery, valley horse races, holiday food and deel, and a festival night at the ARA Complex. Wrapped with the Orkhon Valley, Terkhiin Tsagaan Nuur, Khorgo volcano, and Tsenkher hot springs. Route bends with the festival schedule.",
     highlights: ["Arkhangai Naadam", "ARA Fest", "Family-hosted", "Terkh + Khorgo", "Hot springs"],
@@ -141,11 +141,11 @@ const tours = [
     days: 8,
     price: "$700",
     groupSize: "5–7",
-    status: "available",
+    status: "next_2027",
     description:
-      "Eight days through Umnugobi and central Mongolia — Yoliin Am ice canyon, camels at Khongoriin Els, the Flaming Cliffs, then central Mongolia on the way back with a full horse-trek day in Tsetserleg, hot springs, and family camps. The June glimpse of the Gobi loop — tighter, harder driving, every signature stop.",
+      "Eight days through Umnugobi and central Mongolia — Yoliin Am ice canyon, camels at Khongoriin Els, the Flaming Cliffs, then central Mongolia on the way back with a full horse-trek day in Tsetserleg, hot springs, and family camps. The June glimpse of the Gobi loop — tighter, harder driving, every signature stop. This early-season departure has wrapped for 2026; it runs again in 2027.",
     highlights: ["Yoliin Am", "Desert camp", "Khongoriin Els", "Tsetserleg horse trek", "Hot springs"],
-    theme: "southern-gobi",
+    theme: "dormant",
     startMonth: 5,
     startDay: 13,
     endMonth: 5,
@@ -256,6 +256,16 @@ const themeMap = {
     bar: "from-sand-700 to-sand-600",
     pattern: "booked",
     short: "Booked · private",
+  },
+  dormant: {
+    bg: "bg-sand-800/15",
+    bgHover: "group-hover:bg-sand-700/25",
+    border: "border-sand-700/30",
+    text: "text-sand-500",
+    dot: "bg-sand-600",
+    bar: "from-sand-700 to-sand-600",
+    pattern: "dunes",
+    short: "Again in 2027",
   },
 };
 
@@ -510,7 +520,7 @@ function DayCell({ monthIndex, day, isEmpty, onHover, onLeave, hoveredId, dayOfW
           className={`absolute bottom-1 left-1 px-1 py-px text-[8px] uppercase tracking-wider leading-none rounded ${status.cls}`}
           title={status.label}
         >
-          {tour.status === "sold_out" ? "✕" : tour.status === "booked" ? "—" : "!"}
+          {tour.status === "sold_out" ? "✕" : tour.status === "booked" ? "—" : tour.status === "next_2027" ? "↻" : "!"}
         </span>
       )}
 
@@ -554,6 +564,7 @@ const statusConfig = {
   limited:   { cls: "bg-amber-500/15 text-amber-300 border-amber-500/30",       label: "Limited Spots",   short: "Limited" },
   sold_out:  { cls: "bg-red-500/15 text-red-300 border-red-500/30",             label: "Fully Booked",    short: "Fully Booked" },
   booked:    { cls: "bg-sand-700/20 text-sand-300 border-sand-600/40",          label: "Booked · private", short: "Booked" },
+  next_2027: { cls: "bg-sand-700/20 text-sand-400 border-sand-600/40",          label: "Runs again in 2027", short: "2027" },
 };
 
 // ============================================================================

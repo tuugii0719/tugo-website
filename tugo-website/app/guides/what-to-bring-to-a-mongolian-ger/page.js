@@ -1,6 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 
+function Figure({ src, alt, caption }) {
+  return (
+    <figure className="not-prose my-8 md:my-10">
+      <div className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-sand-800/40">
+        <Image src={src} alt={alt} fill className="object-cover" sizes="(max-width: 768px) 100vw, 672px" />
+      </div>
+      <figcaption className="mt-2 text-sand-500 text-[13px] leading-snug">{caption}</figcaption>
+    </figure>
+  );
+}
+
 export default function GerArticlePage() {
   return (
     <article className="min-h-screen bg-night-950 text-sand-100">
@@ -18,22 +29,22 @@ export default function GerArticlePage() {
         <div className="absolute inset-x-0 bottom-0 px-6 pb-12 md:pb-16">
           <div className="max-w-3xl mx-auto">
             <Link
-              href="/journal"
+              href="/guides"
               className="inline-flex items-center gap-2 text-sand-300 text-[11px] tracking-[0.3em] uppercase mb-5 hover:text-sand-100 transition-colors"
             >
-              ← Journal
+              ← Guides
             </Link>
             <p className="text-teal-200 text-[11px] tracking-[0.3em] uppercase mb-4 font-medium">
-              Mongolia 101 · Ger etiquette
+              Mongolia 101 · Staying with a family
             </p>
             <h1
               className="font-display text-3xl md:text-5xl lg:text-6xl text-white leading-[1.05] max-w-3xl"
               style={{ textShadow: "0 2px 8px rgba(0,0,0,0.85)" }}
             >
-              What to bring to a Mongolian ger — and a few things not to do.
+              Before you stay with a nomad family: the ger guide.
             </h1>
             <p className="mt-4 text-sand-300 text-sm">
-              By Tugi · June 2026 · 7 min read
+              By Tugi · June 2026 · 8 min read
             </p>
           </div>
         </div>
@@ -43,52 +54,53 @@ export default function GerArticlePage() {
       <section className="px-6 py-16 md:py-24">
         <div className="max-w-2xl mx-auto prose-tugi">
           <p>
-            Sleeping in a ger with a nomadic family is the best night of most Mongolia trips. It&apos;s also the night people worry about most — what do I wear, where do I sit, am I going to accidentally insult someone&apos;s grandmother?
+            Sleeping in a ger with a nomadic family is the best night of most Mongolia trips. It&apos;s also the night people worry about most — what do I bring, where do I sit, am I going to accidentally insult someone&apos;s grandmother?
           </p>
           <p>
             Short answer: no. Mongolian families are some of the most forgiving hosts on earth. You will not be quietly judged for getting things wrong. They expect foreigners to not know.
           </p>
           <p>
-            But there&apos;s a small list of things that&apos;ll make the night smoother — for you and for them — and a couple of small things that genuinely matter. Here it is, the version I&apos;d give a friend before their first ger night.
+            One quick note on scope: this guide is about staying with a family in <em>their own ger</em> — a real home, not a tourist ger camp. That&apos;s the night worth planning for, and it&apos;s what every tour I run is built around. Here&apos;s the version I&apos;d give a friend before their first one.
           </p>
 
-          <h2>What a ger actually is</h2>
+          <h2>What a family ger actually is</h2>
           <p>
-            A ger is the white round tent you&apos;ve seen in every Mongolia photo. Felt walls over a collapsible wooden frame, central stove, smoke hole at the top. Most herding families have one as their permanent home. They take about two hours to assemble or take down.
+            A ger is the white round tent you&apos;ve seen in every Mongolia photo. Felt walls over a collapsible wooden frame, central stove, smoke hole at the top. Most herding families have one as their permanent home — it takes about two hours to assemble or take down.
           </p>
           <p>
-            Inside, the layout is the same in every ger in the country, because it&apos;s tied to direction. The door faces south. The back (the wall opposite the door) is north — that&apos;s the <em>khoimor</em>, where the family altar sits and where honored guests are seated. East side is traditionally the women&apos;s side (kitchen, water, food). West side is the men&apos;s side (saddles, tools, men&apos;s belongings). The center is the stove.
+            When you stay, you&apos;re either sharing the family&apos;s ger or sleeping in a spare one pitched a few meters away — the one they keep for relatives and guests. There&apos;s no reception and no menu. There&apos;s a family, their animals, and you, dropped into the middle of an ordinary working day.
           </p>
+
+          <Figure
+            src="/images/gallery/DSC01810.jpg"
+            alt="A nomadic family preparing a meal together inside their ger"
+            caption="Dinner is whatever the day gave, cooked on the stove in the middle of the room — and you eat it with them."
+          />
+
           <p>
-            None of this is enforced strictly with foreigners. But if you understand the geometry, the rest of the etiquette makes sense.
+            What that looks like in practice:
+          </p>
+          <ul>
+            <li><strong>Real life happens around you.</strong> Milking at dawn, the goats coming in, the kids doing homework by solar lamp, a neighbour dropping by for tea. You&apos;re not a guest at a show — you&apos;re just part of the day.</li>
+            <li><strong>The food is the family&apos;s food.</strong> Whatever&apos;s on the stove — <em>buuz</em>, mutton and noodles, fresh <em>aaruul</em> off the drying rack, milk tea that never stops coming.</li>
+            <li><strong>Amenities are basic and honest.</strong> An outhouse over a hole, a wash bowl, electricity only when the solar panel cooperates. Bedding is provided and usually clean.</li>
+            <li><strong>It&apos;s unpredictable, and that&apos;s the point.</strong> The best moments — being handed a newborn goat, a wrestling lesson from a teenager, a grandfather&apos;s throat-singing after dinner — are the ones nobody scheduled.</li>
+          </ul>
+          <p>
+            Inside, the layout is the same in every ger in the country, because it&apos;s tied to direction. The door faces south. The back wall (opposite the door) is north — the <em>khoimor</em>, where the family altar sits and where honored guests are seated. The east side is traditionally the women&apos;s side (kitchen, water, food); the west side is the men&apos;s (saddles, tools). The center is the stove. None of this is enforced strictly with foreigners — but if you understand the geometry, the rest of the etiquette makes sense.
           </p>
 
           <h2>What to bring</h2>
-
-          <h3>The actual essentials</h3>
-          <ul>
-            <li><strong>A headlamp.</strong> No electricity, or electricity only when the solar panel cooperates. A phone torch works but eats battery.</li>
-            <li><strong>Earplugs.</strong> Dogs bark at night. Livestock moves. The wind hits the felt walls. Some people sleep through it; some really don&apos;t.</li>
-            <li><strong>Wet wipes.</strong> No running water. You wash from a bowl in the morning. Wipes cover the gap.</li>
-            <li><strong>A sleeping bag liner</strong> if you&apos;re particular. Most families provide bedding and most bedding is clean — but some camps wash less often than you&apos;d like. A silk or cotton liner solves it.</li>
-            <li><strong>Thick socks.</strong> You take your shoes off inside. The floor is felt over wood; cold in the morning before the stove gets going.</li>
-            <li><strong>Toilet paper.</strong> The outhouse is usually a wooden hut over a hole, 20–30 meters from the ger. No paper. Bring your own.</li>
-            <li><strong>Cash in tugrik.</strong> If you want to tip the family or buy something from them (a small leather thing, a jar of <em>aaruul</em>), Mongolian cash. They don&apos;t take cards and dollars are awkward for them to spend.</li>
-          </ul>
-
-          <h3>Good gifts (small, practical)</h3>
           <p>
-            Don&apos;t bring money. It makes things weird. Bring something small from your country:
+            You don&apos;t need much for yourself — the family provides bedding and food, and your guide carries the rest. What actually matters is what you give. Don&apos;t bring money; it makes things weird. Bring something small from your country:
           </p>
           <ul>
             <li>Sweets or chocolate (kids love these; adults eat them with tea)</li>
             <li>A scarf, a postcard, a coin from where you&apos;re from</li>
-            <li>School supplies if you&apos;re going to a family with kids — pens, notebooks, simple toys</li>
+            <li>School supplies if the family has kids — pens, notebooks, simple toys</li>
             <li>Reading glasses (cheap drugstore ones; older herders often need them and can&apos;t get them locally)</li>
+            <li>A good bottle of vodka — in the right setting it&apos;s a respectful gift between adults. Offer it to the head of the household and let them do the pouring.</li>
           </ul>
-          <p>
-            <strong>Don&apos;t bring alcohol.</strong> Some families don&apos;t drink. Some really shouldn&apos;t. It&apos;s never wrong to skip this.
-          </p>
 
           <h2>The actual rules — the ones that matter</h2>
 
@@ -161,7 +173,7 @@ export default function GerArticlePage() {
               Every tour I run includes nights with families.
             </h3>
             <p className="text-sand-300 text-sm md:text-base leading-relaxed mb-5">
-              Not staged camps for tourists — actual families I know, in their actual gers. I handle the etiquette so you don&apos;t have to memorize this list. You just show up.
+              Actual families I know, in their actual gers. I handle the etiquette and the logistics so you don&apos;t have to memorize this list — you just show up.
             </p>
             <Link
               href="/tours"

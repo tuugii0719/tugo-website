@@ -54,6 +54,12 @@ export default function GobiGlimpsePage() {
                   The iconic southern Gobi loop, extended. Same places as June&apos;s fast run — with three extra days to actually <em>be</em> in them. Late August: warmer light, cooler nights, fewer flies.
                 </p>
 
+                <div className="mb-5">
+                  <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/20 border border-amber-400/50 text-amber-200 text-[11px] tracking-[0.2em] uppercase font-semibold">
+                    <span aria-hidden="true">⚠</span> Limited spots available
+                  </span>
+                </div>
+
                 <div className="flex flex-wrap gap-2 mb-8">
                   {[
                     { l: "Tour", v: "Aug 18 – 28" },

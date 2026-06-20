@@ -29,10 +29,10 @@ export default function NaadamArticlePage() {
         <div className="absolute inset-x-0 bottom-0 px-6 pb-12 md:pb-16">
           <div className="max-w-3xl mx-auto">
             <Link
-              href="/journal"
+              href="/guides"
               className="inline-flex items-center gap-2 text-sand-300 text-[11px] tracking-[0.3em] uppercase mb-5 hover:text-sand-100 transition-colors"
             >
-              ← Journal
+              ← Guides
             </Link>
             <p className="text-red-200 text-[11px] tracking-[0.3em] uppercase mb-4 font-medium">
               Mongolia 101 · Naadam
