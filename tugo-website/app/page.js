@@ -39,7 +39,6 @@ const sliderTours = [
   { slug: "playtime",          title: "Playtime Music Festival",  emoji: "🎶", dates: "Jul 1 – 4",   days: 4,  price: "$405",   img: "/images/playtime/poster.jpg",                 accent: "text-fuchsia-300", includes: "Festival ticket · Camping · Breakfast" },
   { slug: "naadam",            title: "Naadam Festival",          emoji: "🏇", dates: "Jul 8 – 14",  days: 7,  price: "$630",   img: "/images/destinations/naadam-horse-racer.jpg", accent: "text-red-300",     includes: "Transport · Meals · Lodging · Guide", limited: true },
   { slug: "north-central",     title: "North & Central Loop",     emoji: "🐪", dates: "Jul 21 – Aug 1", days: 12, price: "$1,080", img: "/images/tours/north-central/DSC02464.jpg",    accent: "text-sky-300",     includes: "Transport · Meals · Lodging · Guide" },
-  { slug: "altai-tavan-bogd",  title: "Altai Tavan Bogd",         emoji: "🏔️", dates: "Aug 4 – 14", days: 11,  price: "$1,080",   img: "/images/destinations/altai-peaks.jpg",        accent: "text-indigo-300",  includes: "Overland · Meals · Lodging · Guide" },
   { slug: "southern-gobi",     title: "Southern Gobi + Central",  emoji: "🏜️", dates: "Aug 18 – 28", days: 11, price: "$1,080", img: "/images/destinations/khongoryn-1.jpg",        accent: "text-amber-300",   includes: "Transport · Meals · Lodging · Guide", limited: true },
 ];
 
@@ -509,6 +508,7 @@ function NotAboutMoney() {
 
 function PillarsSection() {
   const pillars = [
+    { icon: "❋", title: "Authentic & alive", body: "Real families, real roads, real life — you meet Mongolia as it lives and breathes, not a version staged for a coach bus." },
     { icon: "✦", title: "Routes I know", body: "Every trip is a road I&apos;ve driven many times — families I trust, weather I read, camps I&apos;d stay at myself." },
     { icon: "♦", title: "Small group", body: "5 to 7 people max. Real conversations, real depth, no losing your group at lunch." },
     { icon: "○", title: "All in", body: "Most tours include flight, food, lodging, guide, permits — show up with your boots and a warm layer." },
@@ -521,10 +521,10 @@ function PillarsSection() {
           What you&rsquo;re getting
         </p>
         <h2 className="font-display text-3xl md:text-4xl text-sand-100 text-center leading-tight mb-12 md:mb-16">
-          Four things I promise.
+          Five things I promise.
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-5">
           {pillars.map((p) => (
             <FadeIn key={p.title}>
               <div className="rounded-[20px] bg-night-900/60 border border-sand-800/40 p-6 md:p-7 h-full">
