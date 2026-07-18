@@ -266,7 +266,7 @@ export default function WhyTourTugoPage() {
               <br />June to the end of August.
             </h2>
             <p className="text-sand-300 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
-              Weekend escapes in Terelj. A chill local Naadam in central Mongolia. The full Gobi loop. The Altai peaks with Kazakh eagle hunters. The long North &amp; Central run through Khuvsgul and the Orkhon Valley. Pick what fits, or pick two.
+              Weekend escapes in Terelj. A chill local Naadam in central Mongolia. The full Gobi loop. The long North &amp; Central run through Khuvsgul and the Orkhon Valley. Pick what fits, or pick two.
             </p>
             <Link
               href="/tours"

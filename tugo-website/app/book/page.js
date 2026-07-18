@@ -21,7 +21,6 @@ const tourOptions = [
   { id: "naadam",            title: "Naadam Festival",            dates: "Jul 8 – 14",   days: 7,  price: 630,   emoji: "🏇", includes: "Transport · Meals · Lodging · Guide" },
   { id: "terelj-jul",        title: "Terelj Escape",              dates: "Jul 16 – 18",  days: 3,  price: 270,   emoji: "🌲", includes: "Transport · Meals · Ger · Guide" },
   { id: "north-central",     title: "North & Central Loop",       dates: "Jul 21 – Aug 1",  days: 12, price: 1080, emoji: "🐪", includes: "Transport · Meals · Lodging · Guide" },
-  { id: "altai-aug",         title: "Altai Tavan Bogd",           dates: "Aug 4 – 14",   days: 11, price: 1080,  emoji: "🏔️", includes: "Overland · Meals · Lodging · Guide" },
   { id: "southern-gobi",     title: "Southern Gobi + Central",    dates: "Aug 18 – 28",  days: 11, price: 1080,  emoji: "🏜️", includes: "Transport · Meals · Lodging · Guide" },
 ];
 
@@ -602,10 +601,6 @@ export default function BookPage() {
                   d: "90+ days before departure: full refund minus a $100 admin fee. 60–89 days: 50% refund. 30–59 days: 25% refund OR full credit toward any 2027 departure (your choice). Inside 30 days: non-refundable — we've paid for your seat by then. No partial refunds for unused days, late arrivals, or early departures.",
                 },
                 {
-                  t: "Non-refundable costs",
-                  d: "Altai departures include a round-trip flight to Ölgii that's non-refundable once booked (typically 45 days before departure). If you cancel after flight ticketing, you forfeit that portion in addition to the schedule above.",
-                },
-                {
                   t: "We&apos;re moving — guaranteed",
                   d: "Every departure on the calendar runs. People are already lining up. If something unexpected happens in-country (weather, road closure), we re-route — we don&apos;t cancel.",
                 },
@@ -615,7 +610,7 @@ export default function BookPage() {
                 },
                 {
                   t: "Physical & pace",
-                  d: "Small-group adventure, not luxury. Long drive days, camping nights, basic facilities, altitudes up to 3,000 m on Altai, weather that changes hourly. Flag any health conditions when you apply so we can plan with you.",
+                  d: "Small-group adventure, not luxury. Long drive days, camping nights, basic facilities, weather that changes hourly. Flag any health conditions when you apply so we can plan with you.",
                 },
                 {
                   t: "Liability",
@@ -664,7 +659,7 @@ export default function BookPage() {
                 },
                 {
                   q: "Wifi & phone?",
-                  a: "Ulaanbaatar has excellent wifi and 4G. Outside the city, signal is intermittent. On the remote tours (Altai and the North &amp; Central Loop through Khuvsgul) expect several days fully off-grid. If you need to stay reachable, let me know — a satellite messenger can be arranged.",
+                  a: "Ulaanbaatar has excellent wifi and 4G. Outside the city, signal is intermittent. On the remote tours (the North &amp; Central Loop through Khuvsgul and Zavkhan) expect several days fully off-grid. If you need to stay reachable, let me know — a satellite messenger can be arranged.",
                 },
                 {
                   q: "Meals & dietary stuff?",
@@ -672,7 +667,7 @@ export default function BookPage() {
                 },
                 {
                   q: "How physical is it?",
-                  a: "Ranges by tour. Terelj Escape is easy. Southern Gobi is moderate (long drives, some hiking). Altai and the North & Central Loop are the most demanding — altitude, long days, and a lot of road. You don't need to be an athlete; you do need to be OK with discomfort.",
+                  a: "Ranges by tour. Terelj Escape is easy. Southern Gobi is moderate (long drives, some hiking). The North & Central Loop is the most demanding — long days and a lot of road. You don't need to be an athlete; you do need to be OK with discomfort.",
                 },
                 {
                   q: "Can I join part of a tour?",

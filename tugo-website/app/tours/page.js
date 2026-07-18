@@ -114,25 +114,6 @@ const tours = [
     endDay: 18,
   },
   {
-    id: "altai-aug",
-    slug: "altai-tavan-bogd",
-    title: "Altai Tavan Bogd",
-    emoji: "🏔️",
-    dates: "Aug 4 – 14",
-    days: 11,
-    price: "$1,080",
-    groupSize: "5–7",
-    status: "available",
-    description:
-      "Overland in 2026 — no flight. We drive the full width of the country to the Altai: Bayankhongor, Khovd, Tolbo Lake, then four days deep in the mountains out of Ölgii — Khoton Lake, eagle hunters, the Turgen waterfalls, the Potanin Glacier, petroglyphs. Then a loop home through the great lakes, Chuka's Zavkhan mountains, and a soak at Tsenkher hot springs. Co-hosted with a local Kazakh guide.",
-    highlights: ["Overland loop", "Khoton Lake", "Kazakh eagles", "Potanin Glacier"],
-    theme: "altai",
-    startMonth: 7,
-    startDay: 4,
-    endMonth: 7,
-    endDay: 14,
-  },
-  {
     id: "gobi-glimpse",
     slug: "gobi-glimpse",
     title: "Gobi Glimpse + Central",
@@ -226,16 +207,6 @@ const themeMap = {
     bar: "from-sky-500 to-sky-600",
     pattern: "loop",
     short: "Long North Route",
-  },
-  altai: {
-    bg: "bg-indigo-500/30",
-    bgHover: "group-hover:bg-indigo-500/55",
-    border: "border-indigo-400/40",
-    text: "text-indigo-100",
-    dot: "bg-indigo-400",
-    bar: "from-indigo-500 to-indigo-600",
-    pattern: "peaks",
-    short: "Western Heights",
   },
   gobi: {
     bg: "bg-amber-500/30",
@@ -863,7 +834,7 @@ function CalendarSection() {
               Pick Your Month
             </h2>
             <p className="text-sand-400 max-w-2xl mx-auto leading-relaxed">
-              Seven departures across June, July, and August — weekend escapes, festivals, long flagship expeditions. Skim the agenda below for the full picture, or scroll the calendar to see how it lines up. Hover any highlighted day to peek inside.
+              Six departures across June, July, and August — weekend escapes, festivals, long flagship expeditions. Skim the agenda below for the full picture, or scroll the calendar to see how it lines up. Hover any highlighted day to peek inside.
             </p>
           </div>
         </FadeIn>
@@ -950,7 +921,7 @@ export default function ToursPage() {
             <p className="text-xs tracking-[0.3em] uppercase text-sand-400 mb-4">2026 SEASON</p>
             <h1 className="font-display text-4xl md:text-6xl text-white mb-4">Your Journey Starts Here</h1>
             <p className="text-sand-300 max-w-xl mx-auto px-6">
-              Three months, seven departures. Pick a date on the calendar and we&apos;ll take you there.
+              Three months, six departures. Pick a date on the calendar and we&apos;ll take you there.
             </p>
           </motion.div>
         </div>
@@ -961,7 +932,7 @@ export default function ToursPage() {
         <div className="max-w-5xl mx-auto px-6 py-8 flex flex-wrap justify-center gap-8 md:gap-14 text-center">
           {[
             { label: "Season", value: "June – August" },
-            { label: "Departures", value: "7 Scheduled" },
+            { label: "Departures", value: "6 Scheduled" },
             { label: "Group Size", value: "5–8" },
             { label: "Starting From", value: "$270" },
           ].map((stat, i) => (
@@ -1008,7 +979,7 @@ export default function ToursPage() {
                 title: "Grand Expeditions",
                 duration: "6–12 Days",
                 price: "From $1,080",
-                items: ["Altai Tavan Bogd · Aug", "North & Central Loop"],
+                items: ["North & Central Loop"],
                 desc: "The flagship tours — western peaks with Kazakh eagle hunters, and the long flexible north route through taiga, Khuvsgul, and Zavkhan.",
                 color: "from-indigo-500 to-sky-600",
                 border: "border-indigo-700/20 hover:border-sky-600/40",

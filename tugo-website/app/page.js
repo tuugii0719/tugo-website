@@ -134,7 +134,7 @@ function HeroSection() {
               {[
                 { icon: "✉", label: "tuklobin@gmail.com" },
                 { icon: "@", label: "tugi.mongolia" },
-                { icon: "✦", label: "7 departures" },
+                { icon: "✦", label: "6 departures" },
               ].map((c) => (
                 <span key={c.label} className="flex items-center gap-1.5 px-3 py-1 text-sand-100 whitespace-nowrap">
                   <span className="text-sand-300">{c.icon}</span>
@@ -335,7 +335,7 @@ function TaglineSection() {
                   className="snap-start flex-shrink-0 w-[200px] md:w-[220px] rounded-[24px] border border-sand-400/40 bg-sand-400/5 hover:bg-sand-400/15 hover:border-sand-300/60 transition-colors flex items-center justify-center text-center p-6"
                 >
                   <div>
-                    <p className="font-display text-2xl text-sand-100 mb-2">See all 7 →</p>
+                    <p className="font-display text-2xl text-sand-100 mb-2">See all 6 →</p>
                     <p className="text-sand-400 text-xs">Calendar view</p>
                   </div>
                 </Link>

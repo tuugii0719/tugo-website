@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Tours · 2026 Season",
   description:
-    "Seven departures across Mongolia this summer — Altai peaks, Gobi dunes, Khövsgöl taiga, Naadam, Playtime festival. Small groups of 5–7.",
+    "Six departures across Mongolia this summer — Gobi dunes, Khövsgöl taiga, Zavkhan mountains, Naadam, Playtime festival. Small groups of 5–7.",
 };
 
 export default function Layout({ children }) {

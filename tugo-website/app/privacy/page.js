@@ -49,7 +49,6 @@ export default function PrivacyPage() {
             <li><strong className="text-sand-100">30% deposit</strong> confirms your spot.</li>
             <li>Balance due <strong className="text-sand-100">45 days before departure</strong>.</li>
             <li>Cancellation schedule — see the full detail on the <Link href="/book" className="text-sand-300 underline underline-offset-4 hover:text-sand-100">/book</Link> page.</li>
-            <li>Altai departures include a flight ticket that becomes non-refundable once issued (typically ~45 days before departure). If you cancel after that, that portion is forfeit.</li>
             <li>If I have to cancel a tour for safety or insufficient signups, you get a full refund or a swap to another date.</li>
           </ul>
         </section>
