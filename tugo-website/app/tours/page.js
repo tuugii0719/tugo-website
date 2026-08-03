@@ -57,6 +57,25 @@ const tours = [
     endDay: 28,
   },
   {
+    id: "gobi-central",
+    slug: "gobi-central",
+    title: "Gobi + Central",
+    emoji: "🏜️",
+    dates: "Aug 7 – 16",
+    days: 10,
+    price: "$950",
+    groupSize: "6–8",
+    status: "limited",
+    description:
+      "The full Gobi loop over ten days in early August — Dalanzadgad gateway, Yoliin Am ice canyon, a night with a camel family in the open Gobi, Khongoriin Els dunes, the Flaming Cliffs, then north through central Mongolia with the Orkhon waterfall, hot springs, and family camps. Every signature stop, at a comfortable pace.",
+    highlights: ["Yoliin Am", "Camel family", "Khongoriin Els", "Flaming Cliffs", "Hot springs"],
+    theme: "gobi",
+    startMonth: 7,
+    startDay: 7,
+    endMonth: 7,
+    endDay: 16,
+  },
+  {
     id: "playtime",
     slug: "playtime",
     title: "Playtime Music Festival",
@@ -834,7 +853,7 @@ function CalendarSection() {
               Pick Your Month
             </h2>
             <p className="text-sand-400 max-w-2xl mx-auto leading-relaxed">
-              Six departures across June, July, and August — weekend escapes, festivals, long flagship expeditions. Skim the agenda below for the full picture, or scroll the calendar to see how it lines up. Hover any highlighted day to peek inside.
+              Seven departures across June, July, and August — weekend escapes, festivals, long flagship expeditions. Skim the agenda below for the full picture, or scroll the calendar to see how it lines up. Hover any highlighted day to peek inside.
             </p>
           </div>
         </FadeIn>
@@ -921,7 +940,7 @@ export default function ToursPage() {
             <p className="text-xs tracking-[0.3em] uppercase text-sand-400 mb-4">2026 SEASON</p>
             <h1 className="font-display text-4xl md:text-6xl text-white mb-4">Your Journey Starts Here</h1>
             <p className="text-sand-300 max-w-xl mx-auto px-6">
-              Three months, six departures. Pick a date on the calendar and we&apos;ll take you there.
+              Three months, seven departures. Pick a date on the calendar and we&apos;ll take you there.
             </p>
           </motion.div>
         </div>
@@ -932,7 +951,7 @@ export default function ToursPage() {
         <div className="max-w-5xl mx-auto px-6 py-8 flex flex-wrap justify-center gap-8 md:gap-14 text-center">
           {[
             { label: "Season", value: "June – August" },
-            { label: "Departures", value: "6 Scheduled" },
+            { label: "Departures", value: "7 Scheduled" },
             { label: "Group Size", value: "5–8" },
             { label: "Starting From", value: "$270" },
           ].map((stat, i) => (
@@ -970,7 +989,7 @@ export default function ToursPage() {
                 title: "Festival & Adventure",
                 duration: "6–11 Days",
                 price: "From $405",
-                items: ["Southern Gobi + Central", "Playtime Music Festival", "Local Naadam", "Gobi Glimpse + Central"],
+                items: ["Gobi + Central", "Southern Gobi + Central", "Playtime Music Festival", "Local Naadam", "Gobi Glimpse + Central"],
                 desc: "Mid-length departures — festivals, desert nights, and nomadic immersion. For travellers who want to get into it.",
                 color: "from-emerald-500 to-amber-600",
                 border: "border-emerald-700/20 hover:border-amber-600/40",

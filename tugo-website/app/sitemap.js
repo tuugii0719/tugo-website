@@ -2,6 +2,7 @@ const SITE_URL = "https://wildmongoliawithtugi.com";
 
 const tourSlugs = [
   "altai-tavan-bogd",
+  "gobi-central",
   "gobi-glimpse",
   "naadam",
   "north-central",

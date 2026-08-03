@@ -21,6 +21,7 @@ const tourOptions = [
   { id: "naadam",            title: "Naadam Festival",            dates: "Jul 8 – 14",   days: 7,  price: 630,   emoji: "🏇", includes: "Transport · Meals · Lodging · Guide" },
   { id: "terelj-jul",        title: "Terelj Escape",              dates: "Jul 16 – 18",  days: 3,  price: 270,   emoji: "🌲", includes: "Transport · Meals · Ger · Guide" },
   { id: "north-central",     title: "North & Central Loop",       dates: "Jul 21 – Aug 1",  days: 12, price: 1080, emoji: "🐪", includes: "Transport · Meals · Lodging · Guide" },
+  { id: "gobi-central",      title: "Gobi + Central",             dates: "Aug 7 – 16",   days: 10, price: 950,   emoji: "🏜️", includes: "Transport · Meals · Lodging · Guide" },
   { id: "southern-gobi",     title: "Southern Gobi + Central",    dates: "Aug 18 – 28",  days: 11, price: 1080,  emoji: "🏜️", includes: "Transport · Meals · Lodging · Guide" },
 ];
 
@@ -167,7 +168,7 @@ export default function BookPage() {
       <section className="border-b border-sand-900/30 bg-night-900/30">
         <div className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-6">
           {[
-            { n: "01", title: "Pick a tour", body: "Scan the ten 2026 departures below. Each has its own vibe." },
+            { n: "01", title: "Pick a tour", body: "Scan the 2026 departures below. Each has its own vibe." },
             { n: "02", title: "Apply", body: "Short application — who you are, why this one, any heads-ups." },
             { n: "03", title: "Hear back in 48h", body: "I'll reply personally. If we're a fit, you'll get the deposit link." },
             { n: "04", title: "Get ready", body: "Visa notes, packing list, logistics. I'll hold your hand through the prep." },

@@ -39,6 +39,7 @@ const sliderTours = [
   { slug: "playtime",          title: "Playtime Music Festival",  emoji: "🎶", dates: "Jul 1 – 4",   days: 4,  price: "$405",   img: "/images/playtime/poster.jpg",                 accent: "text-fuchsia-300", includes: "Festival ticket · Camping · Breakfast" },
   { slug: "naadam",            title: "Naadam Festival",          emoji: "🏇", dates: "Jul 8 – 14",  days: 7,  price: "$630",   img: "/images/destinations/naadam-horse-racer.jpg", accent: "text-red-300",     includes: "Transport · Meals · Lodging · Guide", limited: true },
   { slug: "north-central",     title: "North & Central Loop",     emoji: "🐪", dates: "Jul 21 – Aug 1", days: 12, price: "$1,080", img: "/images/tours/north-central/DSC02464.jpg",    accent: "text-sky-300",     includes: "Transport · Meals · Lodging · Guide" },
+  { slug: "gobi-central",      title: "Gobi + Central",           emoji: "🏜️", dates: "Aug 7 – 16",  days: 10, price: "$950",   img: "/images/destinations/khongoryn-2.jpg",        accent: "text-amber-300",   includes: "Transport · Meals · Lodging · Guide", limited: true },
   { slug: "southern-gobi",     title: "Southern Gobi + Central",  emoji: "🏜️", dates: "Aug 18 – 28", days: 11, price: "$1,080", img: "/images/destinations/khongoryn-1.jpg",        accent: "text-amber-300",   includes: "Transport · Meals · Lodging · Guide", limited: true },
 ];
 
@@ -134,7 +135,7 @@ function HeroSection() {
               {[
                 { icon: "✉", label: "tuklobin@gmail.com" },
                 { icon: "@", label: "tugi.mongolia" },
-                { icon: "✦", label: "6 departures" },
+                { icon: "✦", label: "7 departures" },
               ].map((c) => (
                 <span key={c.label} className="flex items-center gap-1.5 px-3 py-1 text-sand-100 whitespace-nowrap">
                   <span className="text-sand-300">{c.icon}</span>
@@ -369,7 +370,7 @@ function FirstSeasonNote() {
                 I&apos;ll say it plainly: I believe I&apos;m the best guide you could travel with in Mongolia. Not for the number of tours I&apos;ve run — 2026 is my first full season hosting — but for what I actually bring. I know this country&apos;s history and its quiet corners the way you only do after years of chasing them yourself. I read the energy of a group and bend the day to fit it. And I genuinely love the people I end up on the road with.
               </p>
               <p>
-                You&apos;re not booking a brand or a booking desk. You&apos;re booking me — driving, translating the jokes, reading the weather, picking the camp I&apos;d choose for myself. Seven small departures this summer, June through August.
+                You&apos;re not booking a brand or a booking desk. You&apos;re booking me — driving, translating the jokes, reading the weather, picking the camp I&apos;d choose for myself. Eight small departures this summer, June through August.
               </p>
               <p className="text-sand-400 italic">
                 — Tugi
