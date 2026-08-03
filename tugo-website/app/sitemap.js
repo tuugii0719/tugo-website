@@ -11,7 +11,7 @@ const tourSlugs = [
   "terelj-escape",
 ];
 
-const topRoutes = ["", "/about", "/tours", "/book", "/gallery", "/why-tour-tugo", "/guides"];
+const topRoutes = ["", "/about", "/tours", "/book", "/gallery", "/why-tour-tugo", "/guides", "/trail-tales"];
 
 const guidePosts = [
   "naadam-village-vs-ulaanbaatar",

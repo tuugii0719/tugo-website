@@ -34,6 +34,7 @@ export default function Footer() {
                 { href: "/tours", label: "Tours" },
                 { href: "/gallery", label: "Gallery" },
                 { href: "/guides", label: "Guides" },
+                { href: "/trail-tales", label: "Trail Tales" },
                 { href: "/why-tour-tugo", label: "Why Tugi" },
                 { href: "/book", label: "Book Now" },
               ].map((link) => (
