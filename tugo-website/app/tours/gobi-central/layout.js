@@ -17,7 +17,7 @@ const trip = {
   },
   offers: {
     "@type": "Offer",
-    price: "950",
+    price: "980",
     priceCurrency: "USD",
     availability: "https://schema.org/LimitedAvailability",
     url: `${SITE_URL}/book`,
@@ -27,7 +27,7 @@ const trip = {
 export const metadata = {
   title: "Gobi + Central · Aug 7–16 2026",
   description:
-    "Ten days through the southern Gobi and central Mongolia — Dalanzadgad gateway, Yoliin Am, a night with a camel family in the open Gobi, Khongoriin Els dunes, Flaming Cliffs, hot springs. The full Gobi loop, comfortably paced. From $950.",
+    "Ten days through the southern Gobi and central Mongolia — Dalanzadgad gateway, Yoliin Am, a night with a camel family in the open Gobi, Khongoriin Els dunes, Flaming Cliffs, hot springs. The full Gobi loop, comfortably paced. From $980.",
 };
 
 export default function Layout({ children }) {

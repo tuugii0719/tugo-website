@@ -21,7 +21,7 @@ const tourOptions = [
   { id: "naadam",            title: "Naadam Festival",            dates: "Jul 8 – 14",   days: 7,  price: 630,   emoji: "🏇", includes: "Transport · Meals · Lodging · Guide", inactive: true, note: "Not on the 2026 schedule — see the trip page." },
   { id: "terelj-jul",        title: "Terelj Escape",              dates: "Jul 16 – 18",  days: 3,  price: 270,   emoji: "🌲", includes: "Transport · Meals · Ger · Guide", inactive: true, note: "Not on the 2026 schedule — see the trip page." },
   { id: "north-central",     title: "North & Central Loop",       dates: "Jul 21 – Aug 1",  days: 12, price: 1080, emoji: "🐪", includes: "Transport · Meals · Lodging · Guide", inactive: true, note: "Not on the 2026 schedule — see the trip page." },
-  { id: "gobi-central",      title: "Gobi + Central",             dates: "Aug 7 – 16",   days: 10, price: 950,   emoji: "🏜️", includes: "Transport · Meals · Lodging · Guide" },
+  { id: "gobi-central",      title: "Gobi + Central",             dates: "Aug 7 – 16",   days: 10, price: 980,   emoji: "🏜️", includes: "Transport · Meals · Lodging · Guide" },
   { id: "southern-gobi",     title: "Southern Gobi + Central",    dates: "Aug 18 – 28",  days: 11, price: 1080,  emoji: "🏜️", includes: "Transport · Meals · Lodging · Guide" },
 ];
 

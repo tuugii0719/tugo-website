@@ -63,7 +63,7 @@ const tours = [
     emoji: "🏜️",
     dates: "Aug 7 – 16",
     days: 10,
-    price: "$950",
+    price: "$980",
     groupSize: "3–5",
     status: "limited",
     description:

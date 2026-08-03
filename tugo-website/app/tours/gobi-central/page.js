@@ -65,7 +65,7 @@ export default function GobiCentralPage() {
                     { l: "Tour", v: "Aug 7 – 16" },
                     { l: "Days", v: "10" },
                     { l: "Group", v: "3 – 5" },
-                    { l: "Price", v: "$950" },
+                    { l: "Price", v: "$980" },
                   ].map((p) => (
                     <span key={p.l} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-night-950/50 backdrop-blur-md border border-amber-300/30">
                       <span className="text-amber-200 text-[10px] tracking-[0.2em] uppercase">{p.l}</span>
@@ -104,7 +104,7 @@ export default function GobiCentralPage() {
           { l: "Group", v: "3 – 5" },
           { l: "Region", v: "South + Central" },
           { l: "Pace", v: "Medium · breathing room" },
-          { l: "Price", v: "$950" },
+          { l: "Price", v: "$980" },
         ]}
       />
 
@@ -262,7 +262,7 @@ export default function GobiCentralPage() {
 
       <IncludedBring
         accent={ACCENT}
-        priceLabel="$950"
+        priceLabel="$980"
         included={[
           "4×4 Russian van, fuel, driver",
           "English/Mongolian guide (Tugi)",
@@ -300,7 +300,7 @@ export default function GobiCentralPage() {
 
       <TourCTA
         accent={ACCENT}
-        title="August 7 – 16, 2026 · $950"
+        title="August 7 – 16, 2026 · $980"
         subtitle="The full Gobi loop in ten days. Small group of 3 – 5. Bring a friend and save 15% each."
         emailSubject="Gobi + Central · August 7"
       />
