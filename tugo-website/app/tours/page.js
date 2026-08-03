@@ -84,11 +84,11 @@ const tours = [
     days: 4,
     price: "$405",
     groupSize: "6–8",
-    status: "available",
+    status: "inactive",
     description:
       "Mongolia's biggest music festival — Molchat Doma, Kings of Convenience, DIIV, Stereolab, Hyukoh. Festival ticket, transfers, camping, and a filling breakfast each morning — all in. Lunch and dinner are on you (festival has stalls). Pre-party Wednesday, three days at Playtime Field.",
     highlights: ["Festival ticket inc.", "3-night camping", "Pre-party", "Filling breakfast"],
-    theme: "playtime",
+    theme: "dormant",
     startMonth: 6,
     startDay: 1,
     endMonth: 6,
@@ -103,11 +103,11 @@ const tours = [
     days: 7,
     price: "$630",
     groupSize: "5–7",
-    status: "limited",
+    status: "inactive",
     description:
       "A local Naadam in Arkhangai during ARA Fest, based with the guide's own relatives — wrestling, archery, valley horse races, holiday food and deel, and a festival night at the ARA Complex. Wrapped with the Orkhon Valley, Terkhiin Tsagaan Nuur, Khorgo volcano, and Tsenkher hot springs. Route bends with the festival schedule.",
     highlights: ["Arkhangai Naadam", "ARA Fest", "Family-hosted", "Terkh + Khorgo", "Hot springs"],
-    theme: "naadam",
+    theme: "dormant",
     startMonth: 6,
     startDay: 8,
     endMonth: 6,
@@ -122,11 +122,11 @@ const tours = [
     days: 3,
     price: "$270",
     groupSize: "6–8",
-    status: "available",
+    status: "inactive",
     description:
       "Second Terelj departure, right after Naadam. Same idea — family ger camp as base, Turtle Rock, Aryabal Monastery, horseback, hiking, khorkhog. Free time to explore the park at your own pace.",
     highlights: ["Turtle Rock", "Aryabal Monastery", "Khorkhog", "Ger stay"],
-    theme: "terelj",
+    theme: "dormant",
     startMonth: 6,
     startDay: 16,
     endMonth: 6,
@@ -160,11 +160,11 @@ const tours = [
     days: 12,
     price: "$1,080",
     groupSize: "5–7",
-    status: "available",
+    status: "inactive",
     description:
       "The northern route — Huuchin Bulgan ger camp, Khuvsgul Lake camping and hiking, the taiga, a full horse-trek day in Zavkhan, hot springs, lakes, and central Mongolia on the way home.",
     highlights: ["Bulgan ger camp", "Khuvsgul Lake", "Taiga", "Zavkhan horse trek", "Hot springs"],
-    theme: "north-central",
+    theme: "dormant",
     startMonth: 6,
     startDay: 21,
     endMonth: 7,
@@ -188,14 +188,14 @@ const themeMap = {
     short: "Forest Weekend",
   },
   "southern-gobi": {
-    bg: "bg-orange-500/30",
-    bgHover: "group-hover:bg-orange-500/55",
-    border: "border-orange-400/40",
-    text: "text-orange-100",
-    dot: "bg-orange-400",
-    bar: "from-orange-500 to-orange-600",
+    bg: "bg-rose-500/30",
+    bgHover: "group-hover:bg-rose-500/55",
+    border: "border-rose-400/45",
+    text: "text-rose-100",
+    dot: "bg-rose-400",
+    bar: "from-rose-500 to-rose-600",
     pattern: "dunes",
-    short: "Fast Gobi Run",
+    short: "Slow Gobi Run",
   },
   playtime: {
     bg: "bg-emerald-500/25",
@@ -510,7 +510,7 @@ function DayCell({ monthIndex, day, isEmpty, onHover, onLeave, hoveredId, dayOfW
           className={`absolute bottom-1 left-1 px-1 py-px text-[8px] uppercase tracking-wider leading-none rounded ${status.cls}`}
           title={status.label}
         >
-          {tour.status === "sold_out" ? "✕" : tour.status === "booked" ? "—" : tour.status === "next_2027" ? "↻" : "!"}
+          {tour.status === "sold_out" ? "✕" : tour.status === "booked" ? "—" : tour.status === "next_2027" ? "↻" : tour.status === "inactive" ? "—" : "!"}
         </span>
       )}
 
@@ -555,6 +555,7 @@ const statusConfig = {
   sold_out:  { cls: "bg-red-500/15 text-red-300 border-red-500/30",             label: "Fully Booked",    short: "Fully Booked" },
   booked:    { cls: "bg-sand-700/20 text-sand-300 border-sand-600/40",          label: "Booked · private", short: "Booked" },
   next_2027: { cls: "bg-sand-700/20 text-sand-400 border-sand-600/40",          label: "Runs again in 2027", short: "2027" },
+  inactive:  { cls: "bg-sand-700/20 text-sand-400 border-sand-600/40",          label: "Not running in 2026", short: "Inactive" },
 };
 
 // ============================================================================

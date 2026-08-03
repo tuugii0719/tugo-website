@@ -15,12 +15,12 @@ import { FadeIn } from "@/components/animations/FadeIn";
 const PAIR_DISCOUNT = 0.15; // 15% off per person when booking a pair
 
 const tourOptions = [
-  { id: "gobi-glimpse",      title: "Gobi Glimpse + Central",     dates: "Jun 13 – 20",  days: 8,  price: 700,   emoji: "🏜️", includes: "Transport · Meals · Lodging · Guide" },
+  { id: "gobi-glimpse",      title: "Gobi Glimpse + Central",     dates: "Jun 13 – 20",  days: 8,  price: 700,   emoji: "🏜️", includes: "Transport · Meals · Lodging · Guide", inactive: true, note: "Runs again in 2027 — see the trip page." },
   { id: "booked-jun",        title: "Booked · private window",    dates: "Jun 21 – 27",  days: null, price: null, emoji: "🚫", booked: true },
-  { id: "playtime",          title: "Playtime Music Festival",    dates: "Jul 1 – 4",    days: 4,  price: 405,   emoji: "🎶", includes: "Festival ticket · Camping · Breakfast" },
-  { id: "naadam",            title: "Naadam Festival",            dates: "Jul 8 – 14",   days: 7,  price: 630,   emoji: "🏇", includes: "Transport · Meals · Lodging · Guide" },
-  { id: "terelj-jul",        title: "Terelj Escape",              dates: "Jul 16 – 18",  days: 3,  price: 270,   emoji: "🌲", includes: "Transport · Meals · Ger · Guide" },
-  { id: "north-central",     title: "North & Central Loop",       dates: "Jul 21 – Aug 1",  days: 12, price: 1080, emoji: "🐪", includes: "Transport · Meals · Lodging · Guide" },
+  { id: "playtime",          title: "Playtime Music Festival",    dates: "Jul 1 – 4",    days: 4,  price: 405,   emoji: "🎶", includes: "Festival ticket · Camping · Breakfast", inactive: true, note: "Not on the 2026 schedule — see the trip page." },
+  { id: "naadam",            title: "Naadam Festival",            dates: "Jul 8 – 14",   days: 7,  price: 630,   emoji: "🏇", includes: "Transport · Meals · Lodging · Guide", inactive: true, note: "Not on the 2026 schedule — see the trip page." },
+  { id: "terelj-jul",        title: "Terelj Escape",              dates: "Jul 16 – 18",  days: 3,  price: 270,   emoji: "🌲", includes: "Transport · Meals · Ger · Guide", inactive: true, note: "Not on the 2026 schedule — see the trip page." },
+  { id: "north-central",     title: "North & Central Loop",       dates: "Jul 21 – Aug 1",  days: 12, price: 1080, emoji: "🐪", includes: "Transport · Meals · Lodging · Guide", inactive: true, note: "Not on the 2026 schedule — see the trip page." },
   { id: "gobi-central",      title: "Gobi + Central",             dates: "Aug 7 – 16",   days: 10, price: 950,   emoji: "🏜️", includes: "Transport · Meals · Lodging · Guide" },
   { id: "southern-gobi",     title: "Southern Gobi + Central",    dates: "Aug 18 – 28",  days: 11, price: 1080,  emoji: "🏜️", includes: "Transport · Meals · Lodging · Guide" },
 ];
@@ -250,7 +250,7 @@ export default function BookPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {tourOptions.map((t) => {
-              if (t.booked) {
+              if (t.booked || t.inactive) {
                 return (
                   <div
                     key={t.id}
@@ -267,12 +267,12 @@ export default function BookPage() {
                           {t.dates}
                         </p>
                         <p className="text-sand-500 text-xs italic mt-1.5">
-                          I&apos;m booked elsewhere this week — pick another date.
+                          {t.note || "I'm booked elsewhere this week — pick another date."}
                         </p>
                       </div>
                       <div className="text-right whitespace-nowrap">
                         <p className="text-[10px] tracking-[0.2em] uppercase text-sand-500">
-                          Unavailable
+                          {t.booked ? "Unavailable" : "Inactive"}
                         </p>
                       </div>
                     </div>
