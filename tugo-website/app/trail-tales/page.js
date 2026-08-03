@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 import { FadeIn } from "@/components/animations/FadeIn";
 
 // ============================================================================
-// TRAIL TALES — where past travelers send back a story (and a photo).
-// Submissions go to Formspree as multipart/form-data so the photo comes
-// through as an attachment. If Formspree isn't wired (or fails), we fall
-// back to a mailto draft and ask them to attach the photo themselves.
+// TRAIL TALES — a warm note-back from friends who've already travelled with me.
+// Submissions go to Formspree as multipart/form-data so a photo comes through
+// as an attachment. If Formspree isn't wired (or fails), we fall back to a
+// mailto draft and ask them to attach the photo themselves.
 // ============================================================================
 
 // Trips a traveler might have done — kept loosely in sync with /tours.
@@ -22,6 +22,17 @@ const TRIPS = [
   "Playtime Music Festival",
   "Terelj Escape",
   "A custom / private trip",
+];
+
+// Optional prompts — answer the ones that spark something, skip the rest.
+const PROMPTS = [
+  { name: "surprise", label: "What caught you off guard?", placeholder: "The thing you didn't see coming — good or brutal." },
+  { name: "people", label: "Who or what stole the trip?", placeholder: "A family, a driver, a dog, a total stranger, a view you couldn't leave." },
+  { name: "funny", label: "Funniest / most chaotic moment?", placeholder: "The story you've already told ten times back home." },
+  { name: "food", label: "The food — honestly.", placeholder: "Buuz? Milk tea? The thing you'd never eat again? Spare no one." },
+  { name: "hard", label: "The realest / hardest bit?", placeholder: "Long drive, cold night, no signal, something that stuck with you. Be real." },
+  { name: "perfectFor", label: "Who should come on this?", placeholder: "The friend you'd drag along in a heartbeat." },
+  { name: "again", label: "Would you come back? Where next?", placeholder: "Be honest — and tell me where we're going." },
 ];
 
 async function submitStory(payload, photoFile) {
@@ -57,17 +68,16 @@ const buildMailto = (payload) => {
   return `mailto:tuklobin@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 };
 
+const EMPTY = {
+  name: "", from: "", trip: "", when: "",
+  story: "",
+  surprise: "", people: "", funny: "", food: "", hard: "", perfectFor: "", again: "",
+  forTugi: "",
+  email: "", consent: false,
+};
+
 export default function TrailTalesPage() {
-  const [data, setData] = useState({
-    name: "",
-    from: "",
-    trip: "",
-    when: "",
-    story: "",
-    highlight: "",
-    email: "",
-    consent: false,
-  });
+  const [data, setData] = useState(EMPTY);
   const [rating, setRating] = useState(0);
   const [hoverRating, setHoverRating] = useState(0);
   const [photoFile, setPhotoFile] = useState(null);
@@ -84,7 +94,7 @@ export default function TrailTalesPage() {
   const canSubmit = data.name.trim() && data.story.trim() && data.consent;
 
   const resetForm = () => {
-    setData({ name: "", from: "", trip: "", when: "", story: "", highlight: "", email: "", consent: false });
+    setData(EMPTY);
     setRating(0);
     setPhotoFile(null);
     setSubmitted(null);
@@ -99,8 +109,15 @@ export default function TrailTalesPage() {
       trip: data.trip,
       when: data.when,
       rating: rating ? `${rating}/5` : "",
-      highlight: data.highlight,
       story: data.story,
+      surprise: data.surprise,
+      people: data.people,
+      funny: data.funny,
+      food: data.food,
+      hard: data.hard,
+      perfectFor: data.perfectFor,
+      again: data.again,
+      forTugi: data.forTugi,
       email: data.email,
       consentToPublish: data.consent ? "Yes — OK to share on the site" : "No",
       photoAttached: photoFile ? photoFile.name : "none",
@@ -133,30 +150,30 @@ export default function TrailTalesPage() {
             transition={{ duration: 0.8, delay: 0.15 }}
           >
             <p className="mb-4 text-xs uppercase tracking-[0.3em] text-sand-300">
-              From the road
+              Hey, it&apos;s you again
             </p>
             <h1 className="font-display text-5xl text-white md:text-7xl leading-[0.95] mb-4">
               Trail Tales
             </h1>
             <p className="text-sand-200 text-lg max-w-xl leading-relaxed">
-              If you&apos;ve been out on the steppe with me — tell the next traveler what it was really like. A few lines, a photo if you&apos;ve got one. The good, the muddy, all of it.
+              So — you made it home. You slept in the gers, ate the buuz, survived my driving and my playlists. Now do me a favour and tell me how it <em>actually</em> was. Ramble as much as you want. I&apos;ll read every word, probably twice.
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* WHY SHARE */}
+      {/* THE VIBE */}
       <section className="border-b border-sand-900/30 bg-night-900/30">
         <div className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            { n: "01", title: "Say it straight", body: "No marketing voice needed. What surprised you, what you&apos;d tell a friend." },
-            { n: "02", title: "Drop a photo", body: "One shot from your trip — a camp, a face, a view. Optional, but it makes the tale." },
-            { n: "03", title: "Help the next crew", body: "Future travelers read these to decide. Your honesty is the whole point." },
+            { emoji: "💬", title: "Talk to me like you text me", body: "No polished review voice. Half-sentences, inside jokes, typos — all welcome. This is us." },
+            { emoji: "📷", title: "Chuck in a photo (or your best one)", body: "That shot you keep showing everyone back home. Drop it in — it makes the whole thing." },
+            { emoji: "🫶", title: "It helps the next crew", body: "Someone on the fence is going to read this and decide to come. Your honesty is the gift." },
           ].map((s) => (
-            <div key={s.n}>
-              <p className="text-sand-500 text-xs tracking-[0.3em] mb-2">{s.n}</p>
+            <div key={s.title}>
+              <p className="text-2xl mb-2">{s.emoji}</p>
               <h3 className="font-display text-lg text-sand-100 mb-1.5">{s.title}</h3>
-              <p className="text-sand-400 text-sm leading-relaxed" dangerouslySetInnerHTML={{ __html: s.body }} />
+              <p className="text-sand-400 text-sm leading-relaxed">{s.body}</p>
             </div>
           ))}
         </div>
@@ -166,78 +183,92 @@ export default function TrailTalesPage() {
       <section className="max-w-3xl mx-auto px-6 py-16 md:py-20">
         {!submitted && (
           <FadeIn>
-            <form onSubmit={onSubmit} className="space-y-5">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <Input label="Your name" name="name" value={data.name} onChange={onField} placeholder="First name is fine" required />
-                <Input label="Where you're from" name="from" value={data.from} onChange={onField} placeholder="City / country" />
-              </div>
+            <form onSubmit={onSubmit} className="space-y-8">
+              {/* The basics */}
+              <div className="space-y-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <Input label="Your name" name="name" value={data.name} onChange={onField} placeholder="First name is plenty" required />
+                  <Input label="Where you're from" name="from" value={data.from} onChange={onField} placeholder="City / country" />
+                </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <label className="block">
-                  <span className="block text-sm text-sand-400 mb-2">Which trip?</span>
-                  <select
-                    name="trip"
-                    value={data.trip}
-                    onChange={onField}
-                    className="w-full bg-night-950/60 border border-sand-800/40 px-4 py-3 text-sand-100 rounded-md focus:border-sand-400/50 focus:outline-none transition"
-                  >
-                    <option value="">Pick one…</option>
-                    {TRIPS.map((t) => (
-                      <option key={t} value={t}>{t}</option>
-                    ))}
-                  </select>
-                </label>
-                <Input label="When (roughly)" name="when" value={data.when} onChange={onField} placeholder="e.g. August 2025" />
-              </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <label className="block">
+                    <span className="block text-sm text-sand-400 mb-2">Which trip did we do?</span>
+                    <select
+                      name="trip"
+                      value={data.trip}
+                      onChange={onField}
+                      className="w-full bg-night-950/60 border border-sand-800/40 px-4 py-3 text-sand-100 rounded-md focus:border-sand-400/50 focus:outline-none transition"
+                    >
+                      <option value="">Pick one…</option>
+                      {TRIPS.map((t) => (
+                        <option key={t} value={t}>{t}</option>
+                      ))}
+                    </select>
+                  </label>
+                  <Input label="When (roughly)" name="when" value={data.when} onChange={onField} placeholder="e.g. August 2025" />
+                </div>
 
-              {/* Star rating */}
-              <div>
-                <span className="block text-sm text-sand-400 mb-2">How was it?</span>
-                <div className="flex items-center gap-1.5">
-                  {[1, 2, 3, 4, 5].map((n) => {
-                    const on = (hoverRating || rating) >= n;
-                    return (
-                      <button
-                        key={n}
-                        type="button"
-                        onClick={() => setRating(n === rating ? 0 : n)}
-                        onMouseEnter={() => setHoverRating(n)}
-                        onMouseLeave={() => setHoverRating(0)}
-                        aria-label={`${n} star${n > 1 ? "s" : ""}`}
-                        className={`text-2xl leading-none transition-transform hover:scale-110 ${on ? "text-amber-300" : "text-sand-700"}`}
-                      >
-                        ★
-                      </button>
-                    );
-                  })}
-                  {rating > 0 && (
-                    <span className="ml-2 text-sand-500 text-xs tracking-wider">{rating}/5</span>
-                  )}
+                {/* Star rating */}
+                <div>
+                  <span className="block text-sm text-sand-400 mb-2">Out of five, no pressure 😅</span>
+                  <div className="flex items-center gap-1.5">
+                    {[1, 2, 3, 4, 5].map((n) => {
+                      const on = (hoverRating || rating) >= n;
+                      return (
+                        <button
+                          key={n}
+                          type="button"
+                          onClick={() => setRating(n === rating ? 0 : n)}
+                          onMouseEnter={() => setHoverRating(n)}
+                          onMouseLeave={() => setHoverRating(0)}
+                          aria-label={`${n} star${n > 1 ? "s" : ""}`}
+                          className={`text-2xl leading-none transition-transform hover:scale-110 ${on ? "text-amber-300" : "text-sand-700"}`}
+                        >
+                          ★
+                        </button>
+                      );
+                    })}
+                    {rating > 0 && (
+                      <span className="ml-2 text-sand-500 text-xs tracking-wider">{rating}/5</span>
+                    )}
+                  </div>
                 </div>
               </div>
 
-              <Textarea
-                label="Your tale — what stuck with you?"
-                name="story"
-                rows={5}
-                value={data.story}
-                onChange={onField}
-                placeholder="The moment you'd tell someone about. A camp, a family, a drive, a night sky. Write it how you'd say it."
-                required
-              />
+              {/* The big one */}
+              <div>
+                <Textarea
+                  label="The big one — what stuck with you?"
+                  name="story"
+                  rows={6}
+                  value={data.story}
+                  onChange={onField}
+                  placeholder="The story you'd lead with. The moment you still think about. Write it how you'd say it to me over a beer."
+                  required
+                />
+                <p className="text-sand-600 text-xs -mt-2">This one&apos;s the heart of it. Everything below is bonus — answer whatever sparks something.</p>
+              </div>
 
-              <Textarea
-                label="Anything the next traveler should know? (optional)"
-                name="highlight"
-                rows={2}
-                value={data.highlight}
-                onChange={onField}
-                placeholder="A tip, a warning, who this trip is perfect for…"
-              />
+              {/* Extra prompts */}
+              <div className="space-y-4">
+                <p className="text-sand-400 text-[11px] tracking-[0.25em] uppercase">A few more, if you&apos;re in the mood</p>
+                {PROMPTS.map((p) => (
+                  <Textarea
+                    key={p.name}
+                    label={p.label}
+                    name={p.name}
+                    rows={2}
+                    value={data[p.name]}
+                    onChange={onField}
+                    placeholder={p.placeholder}
+                  />
+                ))}
+              </div>
 
               {/* Photo upload */}
               <div>
-                <span className="block text-sm text-sand-400 mb-2">A photo from your trip (optional)</span>
+                <span className="block text-sm text-sand-400 mb-2">A photo from the trip (please? 🙏)</span>
                 <label className="flex items-center gap-4 cursor-pointer rounded-md border border-dashed border-sand-800/50 bg-night-950/40 px-4 py-4 hover:border-sand-600/60 transition">
                   <span className="shrink-0 text-2xl">📷</span>
                   <span className="flex-1 text-sm text-sand-400">
@@ -261,11 +292,21 @@ export default function TrailTalesPage() {
                 )}
               </div>
 
-              <Input label="Your email (optional — so I can say thanks)" name="email" type="email" value={data.email} onChange={onField} placeholder="you@email.com" />
+              {/* Just for Tugi */}
+              <Textarea
+                label="Anything just for me? (I won't publish this bit)"
+                name="forTugi"
+                rows={2}
+                value={data.forTugi}
+                onChange={onField}
+                placeholder="A note, a gripe, a thank-you, something I should fix next time. Between us."
+              />
+
+              <Input label="Your email (so I can write back)" name="email" type="email" value={data.email} onChange={onField} placeholder="you@email.com" />
 
               <div className="rounded-lg border border-sand-800/40 bg-night-950/40 p-5">
                 <Checkbox name="consent" checked={data.consent} onChange={onField}>
-                  You can share my tale (and photo) on the site and socials, with my first name. I&apos;m the author and it&apos;s really me.
+                  You can put my words (and photo) on the site and socials, with just my first name. It&apos;s really me — promise.
                 </Checkbox>
               </div>
 
@@ -278,10 +319,10 @@ export default function TrailTalesPage() {
                     : "bg-sand-900/50 text-sand-600 cursor-not-allowed"
                 }`}
               >
-                Send my tale
+                Send it over
               </button>
               <p className="text-center text-sand-600 text-xs">
-                Name and a few words are all that&apos;s required. Everything else is a bonus.
+                Just your name and the big one are required. The rest is however much you feel like giving me.
               </p>
             </form>
           </FadeIn>
@@ -293,16 +334,16 @@ export default function TrailTalesPage() {
             animate={{ opacity: 1, y: 0 }}
             className="rounded-2xl border border-emerald-800/30 bg-emerald-900/10 p-10 text-center"
           >
-            <p className="text-emerald-300 text-xs tracking-[0.3em] uppercase mb-3">✓ Tale received</p>
-            <h3 className="font-display text-2xl text-sand-100 mb-3">Thank you — this means a lot.</h3>
+            <p className="text-emerald-300 text-xs tracking-[0.3em] uppercase mb-3">✓ Got it</p>
+            <h3 className="font-display text-2xl text-sand-100 mb-3">Ah, thank you. Genuinely.</h3>
             <p className="text-sand-400 max-w-lg mx-auto">
-              I read every one. If it&apos;s a fit for the site, you&apos;ll see it go up soon — with just your first name.
+              I&apos;ll read this properly — twice, knowing me. If it&apos;s alright with you it&apos;ll go up on the site with just your first name. Miss you already. Come back soon. 🫶
             </p>
             <button
               onClick={resetForm}
               className="mt-6 border border-sand-400/40 px-6 py-2.5 text-sm uppercase tracking-[0.15em] text-sand-200 hover:bg-sand-400/10 rounded-sm transition"
             >
-              Share another
+              Add another
             </button>
           </motion.div>
         )}
@@ -313,10 +354,10 @@ export default function TrailTalesPage() {
             animate={{ opacity: 1, y: 0 }}
             className="rounded-2xl border border-amber-800/30 bg-amber-900/10 p-10 text-center"
           >
-            <p className="text-amber-300 text-xs tracking-[0.3em] uppercase mb-3">One more step</p>
-            <h3 className="font-display text-2xl text-sand-100 mb-3">Your email client should have opened.</h3>
+            <p className="text-amber-300 text-xs tracking-[0.3em] uppercase mb-3">One more tap</p>
+            <h3 className="font-display text-2xl text-sand-100 mb-3">Your email should&apos;ve popped open.</h3>
             <p className="text-sand-400 max-w-lg mx-auto mb-4">
-              Hit send to finish. <span className="text-sand-200">If you picked a photo, attach it to that email</span> — it can&apos;t ride along automatically. If nothing opened, email me directly.
+              Just hit send. <span className="text-sand-200">If you picked a photo, drag it onto that email</span> — it can&apos;t ride along on its own. Nothing opened? Just email me straight.
             </p>
             <a
               href="mailto:tuklobin@gmail.com"
