@@ -64,7 +64,7 @@ export default function GobiCentralPage() {
                   {[
                     { l: "Tour", v: "Aug 7 – 16" },
                     { l: "Days", v: "10" },
-                    { l: "Group", v: "6 – 8" },
+                    { l: "Group", v: "3 – 5" },
                     { l: "Price", v: "$950" },
                   ].map((p) => (
                     <span key={p.l} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-night-950/50 backdrop-blur-md border border-amber-300/30">
@@ -101,7 +101,7 @@ export default function GobiCentralPage() {
         items={[
           { l: "Dates", v: "Aug 7 – 16, 2026" },
           { l: "Days", v: "10" },
-          { l: "Group", v: "6 – 8" },
+          { l: "Group", v: "3 – 5" },
           { l: "Region", v: "South + Central" },
           { l: "Pace", v: "Medium · breathing room" },
           { l: "Price", v: "$950" },
@@ -294,14 +294,14 @@ export default function GobiCentralPage() {
           { q: "Is early August hot in the Gobi?", a: "Days 22–30 °C, nights 6–14 °C. Warm, dry days and comfortable evenings. Bring a real sleeping bag and you&apos;ll love the desert nights." },
           { q: "What&apos;s the riding like?", a: "Camel at Khongoriin Els (~2 hours, gentle). Optional horse day at the Orkhon family camp. No technical riding required." },
           { q: "Can I bring my camera drone?", a: "Most areas yes, but always check with me first — Bayanzag and the monastery have rules. I know where flying is fine and where it&apos;ll get you yelled at." },
-          { q: "How many in the group?", a: "6 – 8. Small enough that the drive days stay comfortable and everyone gets to know each other." },
+          { q: "How many in the group?", a: "3 – 5. Kept deliberately small — the drive days stay comfortable and everyone gets to know each other." },
         ]}
       />
 
       <TourCTA
         accent={ACCENT}
         title="August 7 – 16, 2026 · $950"
-        subtitle="The full Gobi loop in ten days. Small group of 6 – 8. Bring a friend and save 15% each."
+        subtitle="The full Gobi loop in ten days. Small group of 3 – 5. Bring a friend and save 15% each."
         emailSubject="Gobi + Central · August 7"
       />
     </div>

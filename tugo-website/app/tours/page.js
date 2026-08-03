@@ -64,7 +64,7 @@ const tours = [
     dates: "Aug 7 – 16",
     days: 10,
     price: "$950",
-    groupSize: "6–8",
+    groupSize: "3–5",
     status: "limited",
     description:
       "The full Gobi loop over ten days in early August — Dalanzadgad gateway, Yoliin Am ice canyon, a night with a camel family in the open Gobi, Khongoriin Els dunes, the Flaming Cliffs, then north through central Mongolia with the Orkhon waterfall, hot springs, and family camps. Every signature stop, at a comfortable pace.",
@@ -952,7 +952,7 @@ export default function ToursPage() {
           {[
             { label: "Season", value: "June – August" },
             { label: "Departures", value: "7 Scheduled" },
-            { label: "Group Size", value: "5–8" },
+            { label: "Group Size", value: "3–8" },
             { label: "Starting From", value: "$270" },
           ].map((stat, i) => (
             <div key={i}>
