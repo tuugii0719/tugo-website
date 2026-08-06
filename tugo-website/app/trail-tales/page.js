@@ -73,7 +73,7 @@ const EMPTY = {
   story: "",
   surprise: "", people: "", funny: "", food: "", hard: "", perfectFor: "", again: "",
   forTugi: "",
-  email: "", consent: false,
+  email: "", consent: false, consentPhotos: false, willingRec: false,
 };
 
 export default function TrailTalesPage() {
@@ -120,6 +120,8 @@ export default function TrailTalesPage() {
       forTugi: data.forTugi,
       email: data.email,
       consentToPublish: data.consent ? "Yes — OK to share on the site" : "No",
+      consentPhotosForSocial: data.consentPhotos ? "Yes — OK to use our trip photos on Instagram/socials" : "No",
+      willingToRecommend: data.willingRec ? "Yes — happy to post a recommendation in a travel group" : "No",
       photoAttached: photoFile ? photoFile.name : "none",
     };
     const result = await submitStory(payload, photoFile);
@@ -150,13 +152,13 @@ export default function TrailTalesPage() {
             transition={{ duration: 0.8, delay: 0.15 }}
           >
             <p className="mb-4 text-xs uppercase tracking-[0.3em] text-sand-300">
-              Hey, it&apos;s you again
+              You made it back
             </p>
             <h1 className="font-display text-5xl text-white md:text-7xl leading-[0.95] mb-4">
               Trail Tales
             </h1>
             <p className="text-sand-200 text-lg max-w-xl leading-relaxed">
-              So — you made it home. You slept in the gers, ate the buuz, survived my driving and my playlists. Now do me a favour and tell me how it <em>actually</em> was. Ramble as much as you want. I&apos;ll read every word, probably twice.
+              You got this link from me, which means we&apos;ve shared some road — gers, buuz, a few very long drives. Before it all blurs together, tell me how it actually went. Ramble as long as you like; I read every one.
             </p>
           </motion.div>
         </div>
@@ -166,9 +168,9 @@ export default function TrailTalesPage() {
       <section className="border-b border-sand-900/30 bg-night-900/30">
         <div className="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            { emoji: "💬", title: "Talk to me like you text me", body: "No polished review voice. Half-sentences, inside jokes, typos — all welcome. This is us." },
-            { emoji: "📷", title: "Chuck in a photo (or your best one)", body: "That shot you keep showing everyone back home. Drop it in — it makes the whole thing." },
-            { emoji: "🫶", title: "It helps the next crew", body: "Someone on the fence is going to read this and decide to come. Your honesty is the gift." },
+            { emoji: "💬", title: "Say it how it was", body: "No review voice, no polish. Half-sentences and inside jokes are perfect — just be honest." },
+            { emoji: "📷", title: "Bring a photo", body: "One shot from the trip — the one you keep showing people back home. It makes the whole thing." },
+            { emoji: "🧭", title: "It helps whoever's next", body: "Someone on the fence will read this and decide to come. That's really the whole point." },
           ].map((s) => (
             <div key={s.title}>
               <p className="text-2xl mb-2">{s.emoji}</p>
@@ -211,7 +213,7 @@ export default function TrailTalesPage() {
 
                 {/* Star rating */}
                 <div>
-                  <span className="block text-sm text-sand-400 mb-2">Out of five, no pressure 😅</span>
+                  <span className="block text-sm text-sand-400 mb-2">Out of five — gut feeling.</span>
                   <div className="flex items-center gap-1.5">
                     {[1, 2, 3, 4, 5].map((n) => {
                       const on = (hoverRating || rating) >= n;
@@ -244,7 +246,7 @@ export default function TrailTalesPage() {
                   rows={6}
                   value={data.story}
                   onChange={onField}
-                  placeholder="The story you'd lead with. The moment you still think about. Write it how you'd say it to me over a beer."
+                  placeholder="The story you'd lead with — the moment you still think about. Write it how you'd tell me over dinner."
                   required
                 />
                 <p className="text-sand-600 text-xs -mt-2">This one&apos;s the heart of it. Everything below is bonus — answer whatever sparks something.</p>
@@ -304,9 +306,16 @@ export default function TrailTalesPage() {
 
               <Input label="Your email (so I can write back)" name="email" type="email" value={data.email} onChange={onField} placeholder="you@email.com" />
 
-              <div className="rounded-lg border border-sand-800/40 bg-night-950/40 p-5">
+              <div className="rounded-lg border border-sand-800/40 bg-night-950/40 p-5 space-y-4">
+                <p className="text-sand-400 text-[11px] tracking-[0.25em] uppercase">A few quick yes/no&apos;s</p>
                 <Checkbox name="consent" checked={data.consent} onChange={onField}>
                   You can put my words (and photo) on the site and socials, with just my first name. It&apos;s really me — promise.
+                </Checkbox>
+                <Checkbox name="consentPhotos" checked={data.consentPhotos} onChange={onField}>
+                  You can use our trip photos — the shared album — in future Instagram and social posts.
+                </Checkbox>
+                <Checkbox name="willingRec" checked={data.willingRec} onChange={onField}>
+                  I&apos;d be up for posting a quick recommendation in a travel group (Facebook, Reddit, wherever) — send me something easy to copy-paste.
                 </Checkbox>
               </div>
 
@@ -335,9 +344,9 @@ export default function TrailTalesPage() {
             className="rounded-2xl border border-emerald-800/30 bg-emerald-900/10 p-10 text-center"
           >
             <p className="text-emerald-300 text-xs tracking-[0.3em] uppercase mb-3">✓ Got it</p>
-            <h3 className="font-display text-2xl text-sand-100 mb-3">Ah, thank you. Genuinely.</h3>
+            <h3 className="font-display text-2xl text-sand-100 mb-3">Ah, thank you — genuinely.</h3>
             <p className="text-sand-400 max-w-lg mx-auto">
-              I&apos;ll read this properly — twice, knowing me. If it&apos;s alright with you it&apos;ll go up on the site with just your first name. Miss you already. Come back soon. 🫶
+              I&apos;ll read it properly (twice, knowing me). If you&apos;re good with it, it&apos;ll go up on the site with just your first name. See you down the road.
             </p>
             <button
               onClick={resetForm}
